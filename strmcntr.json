@@ -1,42 +1,8 @@
 {
-  "last_updated": "Oct 22, 2026, 03:28:09 AM",
-  "event_count": 16,
+  "last_updated": "Oct 22, 2026, 03:33:06 AM",
+  "event_count": 15,
   "events": {
     "events": [
-      {
-        "title": "Sporting CPvs.LASK Linz",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "sporting-cpvs-lask-linz",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 22, 2026, 01:00:00 AM",
-          "end_time_bst": "Oct 22, 2026, 04:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Sporting CPvs.LASK Linz"
-          },
-          "team_b": {
-            "name": "Sporting CPvs.LASK Linz"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/24b6435e-a404-4d7b-af71-f85afaba306d.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/dza5z8f69.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/dza5z8f69.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "Atlanta Hawksvs.Orlando Magic",
         "sport": "Basketball",

@@ -1,7 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/24b6435e-a404-4d7b-af71-f85afaba306d.webp" group-title="Football",[Football] Sporting CPvs.LASK Linz | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/dza5z8f69.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/ff2b21cf-70b5-4245-adbb-f66d06cb644c.webp" group-title="Basketball",[Basketball] Atlanta Hawksvs.Orlando Magic | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/mlkijfezag65.m3u8
