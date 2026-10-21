@@ -23,7 +23,7 @@ jobs:
         run: pip install httpx[http2] selectolax
 
       - name: Run Scraper
-        run: scraper.py  # আপনার মূল স্ক্র্যাপার ফাইলের নাম দিন
+        run: python scraper.py  # আপনার মূল স্ক্র্যাপার ফাইলের নাম দিন
 
       - name: Commit and Push changes
         run: |
