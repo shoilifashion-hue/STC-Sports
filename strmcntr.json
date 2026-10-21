@@ -1,6 +1,6 @@
 {
-  "last_updated": "Oct 22, 2026, 01:22:20 AM",
-  "event_count": 22,
+  "last_updated": "Oct 22, 2026, 01:23:25 AM",
+  "event_count": 23,
   "events": {
     "events": [
       {
@@ -550,6 +550,40 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8",
             "raw_link": "https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Utah Jazzvs.Memphis Grizzlies",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "utah-jazzvs-memphis-grizzlies",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 06:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 09:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Utah Jazzvs.Memphis Grizzlies"
+          },
+          "team_b": {
+            "name": "Utah Jazzvs.Memphis Grizzlies"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/83529492-e38a-4c43-8110-7e94386b52fe.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
