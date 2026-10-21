@@ -1,42 +1,8 @@
 {
-  "last_updated": "Oct 22, 2026, 01:36:17 AM",
-  "event_count": 23,
+  "last_updated": "Oct 22, 2026, 02:37:57 AM",
+  "event_count": 22,
   "events": {
     "events": [
-      {
-        "title": "Levantevs.Athletic Club",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "levantevs-athletic-club",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 22, 2026, 12:00:00 AM",
-          "end_time_bst": "Oct 22, 2026, 03:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Levantevs.Athletic Club"
-          },
-          "team_b": {
-            "name": "Levantevs.Athletic Club"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/f54b4922-b3cc-4754-8541-ae03dcdf9dd6.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/ueyeztrazb4.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/ueyeztrazb4.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "Bayern Munichvs.Arsenal",
         "sport": "Football",
