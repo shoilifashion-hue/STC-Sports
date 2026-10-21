@@ -1,0 +1,878 @@
+{
+  "last_updated": "Oct 22, 2026, 12:54:51 AM",
+  "event_count": 25,
+  "events": {
+    "events": [
+      {
+        "title": "Comovs.Manchester United",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": false,
+        "slug": "comovs-manchester-united",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 21, 2026, 10:45:00 PM",
+          "end_time_bst": "Oct 22, 2026, 01:45:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Comovs.Manchester United"
+          },
+          "team_b": {
+            "name": "Comovs.Manchester United"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/54cd557a-0f70-4bf9-91d2-84b6b85c856c.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/eJmauBDCIf.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/eJmauBDCIf.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          },
+          {
+            "channel_name": "Spanish Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/hflfkrtib42.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/hflfkrtib42.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Lillevs.Galatasaray",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": false,
+        "slug": "lillevs-galatasaray",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 21, 2026, 10:45:00 PM",
+          "end_time_bst": "Oct 22, 2026, 01:45:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Lillevs.Galatasaray"
+          },
+          "team_b": {
+            "name": "Lillevs.Galatasaray"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/992deb22-7cda-4a10-ba56-b08f0119f148.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/b0h5fNwDKH.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/b0h5fNwDKH.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Levantevs.Athletic Club",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": false,
+        "slug": "levantevs-athletic-club",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 12:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 03:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Levantevs.Athletic Club"
+          },
+          "team_b": {
+            "name": "Levantevs.Athletic Club"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/f54b4922-b3cc-4754-8541-ae03dcdf9dd6.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/ueyeztrazb4.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/ueyeztrazb4.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Bayern Munichvs.Arsenal",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": false,
+        "slug": "bayern-munichvs-arsenal",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 01:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 04:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Bayern Munichvs.Arsenal"
+          },
+          "team_b": {
+            "name": "Bayern Munichvs.Arsenal"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/0cce41bf-a96a-42ef-83d7-2e7dd3f5a736.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/24SDAZFcsqnj24.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/24SDAZFcsqnj24.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Real Madridvs.RB Leipzig",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": false,
+        "slug": "real-madridvs-rb-leipzig",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 01:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 04:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Real Madridvs.RB Leipzig"
+          },
+          "team_b": {
+            "name": "Real Madridvs.RB Leipzig"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/feeeda49-99f8-4759-8a9b-6546559f1689.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/sqdahach1ax.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/sqdahach1ax.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          },
+          {
+            "channel_name": "Spanish Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/hflfkrtib42.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/hflfkrtib42.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Club Bruggevs.Lens",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": false,
+        "slug": "club-bruggevs-lens",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 01:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 04:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Club Bruggevs.Lens"
+          },
+          "team_b": {
+            "name": "Club Bruggevs.Lens"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/3383774f-414d-4dec-87dd-0684c72458d6.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/377qj1h2727.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/377qj1h2727.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Real Betisvs.Feyenoord Rotterdam",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": false,
+        "slug": "real-betisvs-feyenoord-rotterdam",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 01:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 04:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Real Betisvs.Feyenoord Rotterdam"
+          },
+          "team_b": {
+            "name": "Real Betisvs.Feyenoord Rotterdam"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/e69dedb6-d773-4a13-804e-b9504a28e9f2.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/b0h5fNwDKH.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/b0h5fNwDKH.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Internazionalevs.Shakhtar Donetsk",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": false,
+        "slug": "internazionalevs-shakhtar-donetsk",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 01:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 04:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Internazionalevs.Shakhtar Donetsk"
+          },
+          "team_b": {
+            "name": "Internazionalevs.Shakhtar Donetsk"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/e59f2577-bd35-468b-a9af-9c6526db3661.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/griogoehvn2.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/griogoehvn2.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Sporting CPvs.LASK Linz",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": false,
+        "slug": "sporting-cpvs-lask-linz",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 01:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 04:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Sporting CPvs.LASK Linz"
+          },
+          "team_b": {
+            "name": "Sporting CPvs.LASK Linz"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/24b6435e-a404-4d7b-af71-f85afaba306d.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/dza5z8f69.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/dza5z8f69.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Aston Villavs.Viking FK",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": false,
+        "slug": "aston-villavs-viking-fk",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 01:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 04:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Aston Villavs.Viking FK"
+          },
+          "team_b": {
+            "name": "Aston Villavs.Viking FK"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/c138e625-67f2-481a-8b06-31a703302ff1.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/eJmauBDCIf.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/eJmauBDCIf.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Atlanta Hawksvs.Orlando Magic",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "atlanta-hawksvs-orlando-magic",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 05:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 08:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Atlanta Hawksvs.Orlando Magic"
+          },
+          "team_b": {
+            "name": "Atlanta Hawksvs.Orlando Magic"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/ff2b21cf-70b5-4245-adbb-f66d06cb644c.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/mlkijfezag65.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/mlkijfezag65.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Milwaukee Bucksvs.Washington Wizards",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "milwaukee-bucksvs-washington-wizards",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 05:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 08:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Milwaukee Bucksvs.Washington Wizards"
+          },
+          "team_b": {
+            "name": "Milwaukee Bucksvs.Washington Wizards"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/1e7d7289-c94a-4896-9b74-ed4d2d337f4d.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/wfazgsqtrezu66.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/wfazgsqtrezu66.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Minnesota Timberwolvesvs.Miami Heat",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "minnesota-timberwolvesvs-miami-heat",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 05:30:00 AM",
+          "end_time_bst": "Oct 22, 2026, 08:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Minnesota Timberwolvesvs.Miami Heat"
+          },
+          "team_b": {
+            "name": "Minnesota Timberwolvesvs.Miami Heat"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/1f813ba9-db28-4662-a801-cccecea4dcff.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/hfsdqtaxvb67.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/hfsdqtaxvb67.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Charlotte Hornetsvs.Brooklyn Nets",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "charlotte-hornetsvs-brooklyn-nets",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 05:30:00 AM",
+          "end_time_bst": "Oct 22, 2026, 08:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Charlotte Hornetsvs.Brooklyn Nets"
+          },
+          "team_b": {
+            "name": "Charlotte Hornetsvs.Brooklyn Nets"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/0494a5d3-2758-4599-8add-b06144a2a4d2.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/zayrtezafgvdv68.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/zayrtezafgvdv68.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Chicago Bullsvs.Toronto Raptors",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "chicago-bullsvs-toronto-raptors",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 05:30:00 AM",
+          "end_time_bst": "Oct 22, 2026, 08:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Chicago Bullsvs.Toronto Raptors"
+          },
+          "team_b": {
+            "name": "Chicago Bullsvs.Toronto Raptors"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/37b86493-9307-46a3-aa5c-9a24138ff0cb.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/zeafwqvhfe69.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/zeafwqvhfe69.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Philadelphia Flyersvs.Buffalo Sabres",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "philadelphia-flyersvs-buffalo-sabres",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 05:30:00 AM",
+          "end_time_bst": "Oct 22, 2026, 08:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Philadelphia Flyersvs.Buffalo Sabres"
+          },
+          "team_b": {
+            "name": "Philadelphia Flyersvs.Buffalo Sabres"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/36cc4665-ff40-4500-9daf-7822a241548a.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/uyopzarf50.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/uyopzarf50.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Florida Panthersvs.Ottawa Senators",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "florida-panthersvs-ottawa-senators",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 05:30:00 AM",
+          "end_time_bst": "Oct 22, 2026, 08:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Florida Panthersvs.Ottawa Senators"
+          },
+          "team_b": {
+            "name": "Florida Panthersvs.Ottawa Senators"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/a0eb86ca-70d8-45b3-a484-43668ec8d94d.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/hjksgdfauzy51.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/hjksgdfauzy51.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "New Mexico State Aggiesvs.Sam Houston Bearkats",
+        "sport": "American Football",
+        "sub_category": "American Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "new-mexico-state-aggiesvs-sam-houston-bearkats",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 06:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 09:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "New Mexico State Aggiesvs.Sam Houston Bearkats"
+          },
+          "team_b": {
+            "name": "New Mexico State Aggiesvs.Sam Houston Bearkats"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/130b9db5-9e8f-4c01-9b73-033d28bbfb28.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Utah Jazzvs.Memphis Grizzlies",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "utah-jazzvs-memphis-grizzlies",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 06:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 09:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Utah Jazzvs.Memphis Grizzlies"
+          },
+          "team_b": {
+            "name": "Utah Jazzvs.Memphis Grizzlies"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/83529492-e38a-4c43-8110-7e94386b52fe.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Indiana Pacersvs.New Orleans Pelicans",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "indiana-pacersvs-new-orleans-pelicans",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 06:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 09:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Indiana Pacersvs.New Orleans Pelicans"
+          },
+          "team_b": {
+            "name": "Indiana Pacersvs.New Orleans Pelicans"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/b1c74876-0e79-46fc-be96-7661fe865c04.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/ztyarueaghj71.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/ztyarueaghj71.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Golden State Valkyriesvs.Atlanta Dream",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "golden-state-valkyriesvs-atlanta-dream",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 06:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 09:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Golden State Valkyriesvs.Atlanta Dream"
+          },
+          "team_b": {
+            "name": "Golden State Valkyriesvs.Atlanta Dream"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/6fc1f7c0-ce6f-47c3-9e76-a22ab3cb1ea3.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/sdghjvqazhvg80.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/sdghjvqazhvg80.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Dallas Mavericksvs.Houston Rockets",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "dallas-mavericksvs-houston-rockets",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 06:30:00 AM",
+          "end_time_bst": "Oct 22, 2026, 09:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Dallas Mavericksvs.Houston Rockets"
+          },
+          "team_b": {
+            "name": "Dallas Mavericksvs.Houston Rockets"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/5a3ac75c-7122-4ece-aad5-2dc3550a0e4d.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/pllmazjkdzajh72.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/pllmazjkdzajh72.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Golden State Warriorsvs.Los Angeles Lakers",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "golden-state-warriorsvs-los-angeles-lakers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 08:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 11:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Golden State Warriorsvs.Los Angeles Lakers"
+          },
+          "team_b": {
+            "name": "Golden State Warriorsvs.Los Angeles Lakers"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/bb768ee2-3abb-4176-927b-9953c09c2385.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/fdgsqdfawa73.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/fdgsqdfawa73.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Phoenix Sunsvs.Portland Trail Blazers",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "phoenix-sunsvs-portland-trail-blazers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 08:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 11:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Phoenix Sunsvs.Portland Trail Blazers"
+          },
+          "team_b": {
+            "name": "Phoenix Sunsvs.Portland Trail Blazers"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/ccbf7ba3-313c-47a9-a817-65309344418e.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/yjtzafghvjza74.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/yjtzafghvjza74.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Sacramento Kingsvs.LA Clippers",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "sacramento-kingsvs-la-clippers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 08:30:00 AM",
+          "end_time_bst": "Oct 22, 2026, 11:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Sacramento Kingsvs.LA Clippers"
+          },
+          "team_b": {
+            "name": "Sacramento Kingsvs.LA Clippers"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/90261af4-da9d-483f-b317-7d808e76e3b8.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/sqhdghzavbxu75.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/sqhdghzavbxu75.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      }
+    ]
+  }
+}
