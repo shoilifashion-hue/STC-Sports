@@ -1,86 +1,8 @@
 {
-  "last_updated": "Oct 22, 2026, 12:54:51 AM",
-  "event_count": 25,
+  "last_updated": "Oct 22, 2026, 01:15:18 AM",
+  "event_count": 23,
   "events": {
     "events": [
-      {
-        "title": "Comovs.Manchester United",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "comovs-manchester-united",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 21, 2026, 10:45:00 PM",
-          "end_time_bst": "Oct 22, 2026, 01:45:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Comovs.Manchester United"
-          },
-          "team_b": {
-            "name": "Comovs.Manchester United"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/54cd557a-0f70-4bf9-91d2-84b6b85c856c.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/eJmauBDCIf.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/eJmauBDCIf.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          },
-          {
-            "channel_name": "Spanish Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/hflfkrtib42.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/hflfkrtib42.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Lillevs.Galatasaray",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "lillevs-galatasaray",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 21, 2026, 10:45:00 PM",
-          "end_time_bst": "Oct 22, 2026, 01:45:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Lillevs.Galatasaray"
-          },
-          "team_b": {
-            "name": "Lillevs.Galatasaray"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/992deb22-7cda-4a10-ba56-b08f0119f148.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/b0h5fNwDKH.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/b0h5fNwDKH.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "Levantevs.Athletic Club",
         "sport": "Football",
