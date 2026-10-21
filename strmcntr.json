@@ -1,6 +1,6 @@
 {
-  "last_updated": "Oct 22, 2026, 04:48:24 AM",
-  "event_count": 14,
+  "last_updated": "Oct 22, 2026, 05:18:29 AM",
+  "event_count": 15,
   "events": {
     "events": [
       {
@@ -75,7 +75,7 @@
         "title": "Minnesota Timberwolvesvs.Miami Heat",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "minnesota-timberwolvesvs-miami-heat",
         "schedule": {
@@ -109,7 +109,7 @@
         "title": "Charlotte Hornetsvs.Brooklyn Nets",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "charlotte-hornetsvs-brooklyn-nets",
         "schedule": {
@@ -143,7 +143,7 @@
         "title": "Chicago Bullsvs.Toronto Raptors",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "chicago-bullsvs-toronto-raptors",
         "schedule": {
@@ -177,7 +177,7 @@
         "title": "Philadelphia Flyersvs.Buffalo Sabres",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "philadelphia-flyersvs-buffalo-sabres",
         "schedule": {
@@ -211,7 +211,7 @@
         "title": "Florida Panthersvs.Ottawa Senators",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "florida-panthersvs-ottawa-senators",
         "schedule": {
@@ -302,6 +302,40 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8",
             "raw_link": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Indiana Pacersvs.New Orleans Pelicans",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "indiana-pacersvs-new-orleans-pelicans",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 22, 2026, 06:00:00 AM",
+          "end_time_bst": "Oct 22, 2026, 09:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Indiana Pacersvs.New Orleans Pelicans"
+          },
+          "team_b": {
+            "name": "Indiana Pacersvs.New Orleans Pelicans"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/b1c74876-0e79-46fc-be96-7661fe865c04.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/ztyarueaghj71.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/ztyarueaghj71.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
