@@ -1,28 +1,7 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/0cce41bf-a96a-42ef-83d7-2e7dd3f5a736.webp" group-title="Football",[Football] Bayern Munichvs.Arsenal | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/24SDAZFcsqnj24.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/feeeda49-99f8-4759-8a9b-6546559f1689.webp" group-title="Football",[Football] Real Madridvs.RB Leipzig | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/sqdahach1ax.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/feeeda49-99f8-4759-8a9b-6546559f1689.webp" group-title="Football",[Football] Real Madridvs.RB Leipzig | Spanish Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/hflfkrtib42.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/3383774f-414d-4dec-87dd-0684c72458d6.webp" group-title="Football",[Football] Club Bruggevs.Lens | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/377qj1h2727.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/e69dedb6-d773-4a13-804e-b9504a28e9f2.webp" group-title="Football",[Football] Real Betisvs.Feyenoord Rotterdam | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/b0h5fNwDKH.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/e59f2577-bd35-468b-a9af-9c6526db3661.webp" group-title="Football",[Football] Internazionalevs.Shakhtar Donetsk | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/griogoehvn2.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/24b6435e-a404-4d7b-af71-f85afaba306d.webp" group-title="Football",[Football] Sporting CPvs.LASK Linz | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/dza5z8f69.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/c138e625-67f2-481a-8b06-31a703302ff1.webp" group-title="Football",[Football] Aston Villavs.Viking FK | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/eJmauBDCIf.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/ff2b21cf-70b5-4245-adbb-f66d06cb644c.webp" group-title="Basketball",[Basketball] Atlanta Hawksvs.Orlando Magic | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/mlkijfezag65.m3u8
