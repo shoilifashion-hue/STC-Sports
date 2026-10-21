@@ -1,13 +1,13 @@
 {
-  "last_updated": "Oct 22, 2026, 03:33:06 AM",
-  "event_count": 15,
+  "last_updated": "Oct 22, 2026, 04:48:24 AM",
+  "event_count": 14,
   "events": {
     "events": [
       {
         "title": "Atlanta Hawksvs.Orlando Magic",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "atlanta-hawksvs-orlando-magic",
         "schedule": {
@@ -41,7 +41,7 @@
         "title": "Milwaukee Bucksvs.Washington Wizards",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "milwaukee-bucksvs-washington-wizards",
         "schedule": {
@@ -302,40 +302,6 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8",
             "raw_link": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Indiana Pacersvs.New Orleans Pelicans",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "indiana-pacersvs-new-orleans-pelicans",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 22, 2026, 06:00:00 AM",
-          "end_time_bst": "Oct 22, 2026, 09:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Indiana Pacersvs.New Orleans Pelicans"
-          },
-          "team_b": {
-            "name": "Indiana Pacersvs.New Orleans Pelicans"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/b1c74876-0e79-46fc-be96-7661fe865c04.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/ztyarueaghj71.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/ztyarueaghj71.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
