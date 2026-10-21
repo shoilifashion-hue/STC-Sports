@@ -1,6 +1,6 @@
 {
-  "last_updated": "Oct 22, 2026, 01:23:25 AM",
-  "event_count": 23,
+  "last_updated": "Oct 22, 2026, 01:24:29 AM",
+  "event_count": 22,
   "events": {
     "events": [
       {
@@ -448,40 +448,6 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/zeafwqvhfe69.m3u8",
             "raw_link": "https://edgestream2.pro/hls/zeafwqvhfe69.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Philadelphia Flyersvs.Buffalo Sabres",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "philadelphia-flyersvs-buffalo-sabres",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 22, 2026, 05:30:00 AM",
-          "end_time_bst": "Oct 22, 2026, 08:30:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Philadelphia Flyersvs.Buffalo Sabres"
-          },
-          "team_b": {
-            "name": "Philadelphia Flyersvs.Buffalo Sabres"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/36cc4665-ff40-4500-9daf-7822a241548a.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/uyopzarf50.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/uyopzarf50.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
