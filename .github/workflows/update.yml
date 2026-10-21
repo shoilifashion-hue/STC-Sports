@@ -1,0 +1,34 @@
+name: Update STC Sports Playlist
+
+on:
+  repository_dispatch:
+    types: [source_updated]
+  workflow_dispatch:
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install httpx[http2] selectolax
+
+      - name: Run Scraper
+        run: python your_scraper_script.py  # আপনার মূল স্ক্র্যাপার ফাইলের নাম দিন
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add strmcntr.json strmcntr.m3u caches/state.txt || true
+          git diff --staged --quiet || git commit -m "Auto-update sports playlist [skip ci]"
+          git push
