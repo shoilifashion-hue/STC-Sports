@@ -29,6 +29,10 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add strmcntr.json strmcntr.m3u caches/state.txt || true
-          git diff --staged --quiet || git commit -m "Auto-update sports playlist [skip ci]"
-          git push
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-update sports playlist [skip ci]"
+            git push origin main
+          fi
