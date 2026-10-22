@@ -1,7 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/d9ec7cc4-c6f9-4164-b8b9-dce688998cbf.webp" group-title="Football",[Football] Besiktasvs.Crystal Palace | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/eJmauBDCIf.m3u8
 #EXTINF:-1 tvg-logo="None" group-title="Racing",[Racing] MotoGP Australian Grand Prix | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/oeenzgezcz47.m3u8

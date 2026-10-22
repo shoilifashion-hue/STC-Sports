@@ -1,42 +1,8 @@
 {
-  "last_updated": "Oct 23, 2026, 03:26:50 AM",
-  "event_count": 20,
+  "last_updated": "Oct 23, 2026, 03:31:47 AM",
+  "event_count": 19,
   "events": {
     "events": [
-      {
-        "title": "Besiktasvs.Crystal Palace",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "besiktasvs-crystal-palace",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 23, 2026, 01:00:00 AM",
-          "end_time_bst": "Oct 23, 2026, 04:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Besiktasvs.Crystal Palace"
-          },
-          "team_b": {
-            "name": "Besiktasvs.Crystal Palace"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/d9ec7cc4-c6f9-4164-b8b9-dce688998cbf.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/eJmauBDCIf.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/eJmauBDCIf.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "MotoGP Australian Grand Prix",
         "sport": "Racing",
