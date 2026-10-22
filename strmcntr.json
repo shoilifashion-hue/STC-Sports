@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 23, 2026, 05:17:16 AM",
+  "last_updated": "Oct 23, 2026, 05:47:25 AM",
   "event_count": 19,
   "events": {
     "events": [
@@ -381,7 +381,7 @@
         "title": "Vegas Golden Knightsvs.St. Louis Blues",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "vegas-golden-knightsvs-st-louis-blues",
         "schedule": {
@@ -415,7 +415,7 @@
         "title": "Winnipeg Jetsvs.Dallas Stars",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "winnipeg-jetsvs-dallas-stars",
         "schedule": {
