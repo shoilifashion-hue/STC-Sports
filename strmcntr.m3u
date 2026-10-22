@@ -1,7 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/b199e86c-c430-472f-a087-6f3d5e78c1f3.webp" group-title="Football",[Football] Lech Poznanvs.Sunderland | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/24SDAZFcsqnj24.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/a1366ed7-9800-4020-b14e-205964217c4b.webp" group-title="Football",[Football] Juventusvs.Stade Rennais | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/sqdahach1ax.m3u8
