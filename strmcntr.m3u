@@ -1,4 +1,16 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/90261af4-da9d-483f-b317-7d808e76e3b8.webp" group-title="Basketball",[Basketball] Sacramento Kingsvs.LA Clippers | English Stream
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/b199e86c-c430-472f-a087-6f3d5e78c1f3.webp" group-title="Football",[Football] Lech Poznanvs.Sunderland | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/sqhdghzavbxu75.m3u8
+https://edgestream2.pro/hls/24SDAZFcsqnj24.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/a1366ed7-9800-4020-b14e-205964217c4b.webp" group-title="Football",[Football] Juventusvs.Stade Rennais | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/sqdahach1ax.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/7a9ed5ec-257b-4843-a438-a39afb7389c7.webp" group-title="Football",[Football] AFC Bournemouthvs.AC Milan | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/24SDAZFcsqnj24.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/d9ec7cc4-c6f9-4164-b8b9-dce688998cbf.webp" group-title="Football",[Football] Besiktasvs.Crystal Palace | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/eJmauBDCIf.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/9e289888-7d02-4f58-af57-cf24602d1c7a.webp" group-title="Football",[Football] Celticvs.Celta Vigo | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/b0h5fNwDKH.m3u8
