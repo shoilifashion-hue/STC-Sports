@@ -1,76 +1,8 @@
 {
-  "last_updated": "Oct 22, 2026, 07:49:11 AM",
-  "event_count": 15,
+  "last_updated": "Oct 22, 2026, 08:04:14 AM",
+  "event_count": 13,
   "events": {
     "events": [
-      {
-        "title": "Atlanta Hawksvs.Orlando Magic",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "atlanta-hawksvs-orlando-magic",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 22, 2026, 05:00:00 AM",
-          "end_time_bst": "Oct 22, 2026, 08:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Atlanta Hawksvs.Orlando Magic"
-          },
-          "team_b": {
-            "name": "Atlanta Hawksvs.Orlando Magic"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/ff2b21cf-70b5-4245-adbb-f66d06cb644c.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/mlkijfezag65.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/mlkijfezag65.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Milwaukee Bucksvs.Washington Wizards",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "milwaukee-bucksvs-washington-wizards",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 22, 2026, 05:00:00 AM",
-          "end_time_bst": "Oct 22, 2026, 08:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Milwaukee Bucksvs.Washington Wizards"
-          },
-          "team_b": {
-            "name": "Milwaukee Bucksvs.Washington Wizards"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/1e7d7289-c94a-4896-9b74-ed4d2d337f4d.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/wfazgsqtrezu66.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/wfazgsqtrezu66.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "Minnesota Timberwolvesvs.Miami Heat",
         "sport": "Basketball",

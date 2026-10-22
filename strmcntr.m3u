@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/ff2b21cf-70b5-4245-adbb-f66d06cb644c.webp" group-title="Basketball",[Basketball] Atlanta Hawksvs.Orlando Magic | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/mlkijfezag65.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/1e7d7289-c94a-4896-9b74-ed4d2d337f4d.webp" group-title="Basketball",[Basketball] Milwaukee Bucksvs.Washington Wizards | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/wfazgsqtrezu66.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/1f813ba9-db28-4662-a801-cccecea4dcff.webp" group-title="Basketball",[Basketball] Minnesota Timberwolvesvs.Miami Heat | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/hfsdqtaxvb67.m3u8
