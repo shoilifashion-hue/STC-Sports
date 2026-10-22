@@ -1,6 +1,6 @@
 {
-  "last_updated": "Oct 22, 2026, 12:00:07 PM",
-  "event_count": 17,
+  "last_updated": "Oct 22, 2026, 12:05:10 PM",
+  "event_count": 24,
   "events": {
     "events": [
       {
@@ -166,6 +166,40 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/b0h5fNwDKH.m3u8",
             "raw_link": "https://edgestream2.pro/hls/b0h5fNwDKH.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "MotoGP Australian Grand Prix",
+        "sport": "Racing",
+        "sub_category": "Racing",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "motogp-australian-grand-prix",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 04:00:00 AM",
+          "end_time_bst": "Oct 23, 2026, 07:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "MotoGP Australian Grand Prix"
+          },
+          "team_b": {
+            "name": "MotoGP Australian Grand Prix"
+          }
+        },
+        "logo": null,
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/eJmauBDCIf.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/eJmauBDCIf.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
@@ -514,6 +548,74 @@
         ]
       },
       {
+        "title": "Vegas Golden Knightsvs.St. Louis Blues",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "vegas-golden-knightsvs-st-louis-blues",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 06:00:00 AM",
+          "end_time_bst": "Oct 23, 2026, 09:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Vegas Golden Knightsvs.St. Louis Blues"
+          },
+          "team_b": {
+            "name": "Vegas Golden Knightsvs.St. Louis Blues"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/15506e97-07f7-4138-8d2f-48830c5f4445.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/poiryezafv56.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/poiryezafv56.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Winnipeg Jetsvs.Dallas Stars",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "winnipeg-jetsvs-dallas-stars",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 06:00:00 AM",
+          "end_time_bst": "Oct 23, 2026, 09:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Winnipeg Jetsvs.Dallas Stars"
+          },
+          "team_b": {
+            "name": "Winnipeg Jetsvs.Dallas Stars"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/e9c9d69e-f985-482e-89b0-d86503d5daa5.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/rzavbdyua57.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/rzavbdyua57.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
         "title": "New England Patriotsvs.Chicago Bears",
         "sport": "American Football",
         "sub_category": "American Football",
@@ -548,6 +650,74 @@
         ]
       },
       {
+        "title": "Minnesota Wildvs.Calgary Flames",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "minnesota-wildvs-calgary-flames",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 07:00:00 AM",
+          "end_time_bst": "Oct 23, 2026, 10:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Minnesota Wildvs.Calgary Flames"
+          },
+          "team_b": {
+            "name": "Minnesota Wildvs.Calgary Flames"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/7280c674-1cd2-4120-ac33-602759ffa569.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/earzfddshg58.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/earzfddshg58.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Carolina Hurricanesvs.Edmonton Oilers",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "carolina-hurricanesvs-edmonton-oilers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 07:00:00 AM",
+          "end_time_bst": "Oct 23, 2026, 10:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Carolina Hurricanesvs.Edmonton Oilers"
+          },
+          "team_b": {
+            "name": "Carolina Hurricanesvs.Edmonton Oilers"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/851def80-1466-4a0d-92b4-de8a24e103ae.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/bvnzadfvyt59.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/bvnzadfvyt59.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
         "title": "Denver Nuggetsvs.Oklahoma City Thunder",
         "sport": "Basketball",
         "sub_category": "Basketball",
@@ -574,6 +744,74 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/wfazgsqtrezu66.m3u8",
             "raw_link": "https://edgestream2.pro/hls/wfazgsqtrezu66.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Utah Mammothvs.Seattle Kraken",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "utah-mammothvs-seattle-kraken",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 08:00:00 AM",
+          "end_time_bst": "Oct 23, 2026, 11:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Utah Mammothvs.Seattle Kraken"
+          },
+          "team_b": {
+            "name": "Utah Mammothvs.Seattle Kraken"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/9bbc874b-2df6-44ce-a6b4-52b0f47d9514.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/cwxvbnfghq60.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/cwxvbnfghq60.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Detroit Red Wingsvs.Vancouver Canucks",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "detroit-red-wingsvs-vancouver-canucks",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 08:00:00 AM",
+          "end_time_bst": "Oct 23, 2026, 11:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Detroit Red Wingsvs.Vancouver Canucks"
+          },
+          "team_b": {
+            "name": "Detroit Red Wingsvs.Vancouver Canucks"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/6086a21f-0c8e-48b8-8899-3bb8c76d68d4.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/gfhfgsqda61.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/gfhfgsqda61.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },

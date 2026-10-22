@@ -14,6 +14,9 @@ https://edgestream2.pro/hls/eJmauBDCIf.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/9e289888-7d02-4f58-af57-cf24602d1c7a.webp" group-title="Football",[Football] Celticvs.Celta Vigo | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/b0h5fNwDKH.m3u8
+#EXTINF:-1 tvg-logo="None" group-title="Racing",[Racing] MotoGP Australian Grand Prix | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/eJmauBDCIf.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/d6b26a3e-090d-4c70-9fe4-04b1dec66730.webp" group-title="American Football",[American Football] James Madison Dukesvs.App State Mountaineers | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/sfjnzabacah31.m3u8
@@ -44,9 +47,27 @@ https://edgestream2.pro/hls/oipozuezeji33.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/707e05f4-9023-4a40-bd65-08d88a4614d5.webp" group-title="Hockey",[Hockey] Los Angeles Kingsvs.New York Islanders | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/sdezqfza55.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/15506e97-07f7-4138-8d2f-48830c5f4445.webp" group-title="Hockey",[Hockey] Vegas Golden Knightsvs.St. Louis Blues | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/poiryezafv56.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/e9c9d69e-f985-482e-89b0-d86503d5daa5.webp" group-title="Hockey",[Hockey] Winnipeg Jetsvs.Dallas Stars | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/rzavbdyua57.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/4bf6cf98-fb60-4d9c-8f3e-ced4bf6ff19a.webp" group-title="American Football",[American Football] New England Patriotsvs.Chicago Bears | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/7280c674-1cd2-4120-ac33-602759ffa569.webp" group-title="Hockey",[Hockey] Minnesota Wildvs.Calgary Flames | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/earzfddshg58.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/851def80-1466-4a0d-92b4-de8a24e103ae.webp" group-title="Hockey",[Hockey] Carolina Hurricanesvs.Edmonton Oilers | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/bvnzadfvyt59.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/0acf1a39-8f3a-48e3-91f3-d16ed98e27cd.webp" group-title="Basketball",[Basketball] Denver Nuggetsvs.Oklahoma City Thunder | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/wfazgsqtrezu66.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/9bbc874b-2df6-44ce-a6b4-52b0f47d9514.webp" group-title="Hockey",[Hockey] Utah Mammothvs.Seattle Kraken | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/cwxvbnfghq60.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/6086a21f-0c8e-48b8-8899-3bb8c76d68d4.webp" group-title="Hockey",[Hockey] Detroit Red Wingsvs.Vancouver Canucks | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/gfhfgsqda61.m3u8
