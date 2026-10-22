@@ -1,13 +1,13 @@
 {
-  "last_updated": "Oct 23, 2026, 03:31:47 AM",
-  "event_count": 19,
+  "last_updated": "Oct 23, 2026, 03:46:53 AM",
+  "event_count": 18,
   "events": {
     "events": [
       {
         "title": "MotoGP Australian Grand Prix",
         "sport": "Racing",
         "sub_category": "Racing",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "motogp-australian-grand-prix",
         "schedule": {
@@ -268,40 +268,6 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/rtzaeyvhb53.m3u8",
             "raw_link": "https://edgestream2.pro/hls/rtzaeyvhb53.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Florida Panthersvs.Pittsburgh Penguins",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "florida-panthersvs-pittsburgh-penguins",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 23, 2026, 05:00:00 AM",
-          "end_time_bst": "Oct 23, 2026, 08:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Florida Panthersvs.Pittsburgh Penguins"
-          },
-          "team_b": {
-            "name": "Florida Panthersvs.Pittsburgh Penguins"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/a0eb86ca-70d8-45b3-a484-43668ec8d94d.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/bnvcxwhfg54.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/bnvcxwhfg54.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
