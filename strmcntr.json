@@ -1,42 +1,8 @@
 {
-  "last_updated": "Oct 23, 2026, 01:16:08 AM",
-  "event_count": 22,
+  "last_updated": "Oct 23, 2026, 03:26:50 AM",
+  "event_count": 20,
   "events": {
     "events": [
-      {
-        "title": "AFC Bournemouthvs.AC Milan",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "afc-bournemouthvs-ac-milan",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 23, 2026, 01:00:00 AM",
-          "end_time_bst": "Oct 23, 2026, 04:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "AFC Bournemouthvs.AC Milan"
-          },
-          "team_b": {
-            "name": "AFC Bournemouthvs.AC Milan"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/7a9ed5ec-257b-4843-a438-a39afb7389c7.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/24SDAZFcsqnj24.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/24SDAZFcsqnj24.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "Besiktasvs.Crystal Palace",
         "sport": "Football",
@@ -64,40 +30,6 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/eJmauBDCIf.m3u8",
             "raw_link": "https://edgestream2.pro/hls/eJmauBDCIf.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Celticvs.Celta Vigo",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "celticvs-celta-vigo",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 23, 2026, 01:00:00 AM",
-          "end_time_bst": "Oct 23, 2026, 04:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Celticvs.Celta Vigo"
-          },
-          "team_b": {
-            "name": "Celticvs.Celta Vigo"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/9e289888-7d02-4f58-af57-cf24602d1c7a.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/b0h5fNwDKH.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/b0h5fNwDKH.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
