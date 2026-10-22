@@ -1,6 +1,6 @@
 {
-  "last_updated": "Oct 22, 2026, 11:55:02 AM",
-  "event_count": 5,
+  "last_updated": "Oct 22, 2026, 12:00:07 PM",
+  "event_count": 17,
   "events": {
     "events": [
       {
@@ -166,6 +166,414 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/b0h5fNwDKH.m3u8",
             "raw_link": "https://edgestream2.pro/hls/b0h5fNwDKH.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "James Madison Dukesvs.App State Mountaineers",
+        "sport": "American Football",
+        "sub_category": "American Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "james-madison-dukesvs-app-state-mountaineers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 05:00:00 AM",
+          "end_time_bst": "Oct 23, 2026, 08:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "James Madison Dukesvs.App State Mountaineers"
+          },
+          "team_b": {
+            "name": "James Madison Dukesvs.App State Mountaineers"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/d6b26a3e-090d-4c70-9fe4-04b1dec66730.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/sfjnzabacah31.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/sfjnzabacah31.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Liberty Flamesvs.Kennesaw State Owls",
+        "sport": "American Football",
+        "sub_category": "American Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "liberty-flamesvs-kennesaw-state-owls",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 05:00:00 AM",
+          "end_time_bst": "Oct 23, 2026, 08:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Liberty Flamesvs.Kennesaw State Owls"
+          },
+          "team_b": {
+            "name": "Liberty Flamesvs.Kennesaw State Owls"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/84d062b9-9903-442a-af92-295cc392961f.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/qsdnajbq32.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/qsdnajbq32.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Cleveland Cavaliersvs.Philadelphia 76ers",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "cleveland-cavaliersvs-philadelphia-76ers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 05:00:00 AM",
+          "end_time_bst": "Oct 23, 2026, 08:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Cleveland Cavaliersvs.Philadelphia 76ers"
+          },
+          "team_b": {
+            "name": "Cleveland Cavaliersvs.Philadelphia 76ers"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/34976ee6-0def-4ee5-b23f-3d67b151e780.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/mlkijfezag65.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/mlkijfezag65.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Nashville Predatorsvs.Boston Bruins",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "nashville-predatorsvs-boston-bruins",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 05:00:00 AM",
+          "end_time_bst": "Oct 23, 2026, 08:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Nashville Predatorsvs.Boston Bruins"
+          },
+          "team_b": {
+            "name": "Nashville Predatorsvs.Boston Bruins"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/c5124d32-cc38-4513-ab70-f67698171bff.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/uyopzarf50.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/uyopzarf50.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "New York Rangersvs.Toronto Maple Leafs",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "new-york-rangersvs-toronto-maple-leafs",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 05:00:00 AM",
+          "end_time_bst": "Oct 23, 2026, 08:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "New York Rangersvs.Toronto Maple Leafs"
+          },
+          "team_b": {
+            "name": "New York Rangersvs.Toronto Maple Leafs"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/2b61dab9-9852-430e-8f29-91e4adb82bbf.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/hjksgdfauzy51.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/hjksgdfauzy51.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "San Jose Sharksvs.Ottawa Senators",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "san-jose-sharksvs-ottawa-senators",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 05:00:00 AM",
+          "end_time_bst": "Oct 23, 2026, 08:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "San Jose Sharksvs.Ottawa Senators"
+          },
+          "team_b": {
+            "name": "San Jose Sharksvs.Ottawa Senators"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/b35c349b-ef6c-4208-87f0-2c7ba21071ab.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/lmdsjkfgv52.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/lmdsjkfgv52.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Anaheim Ducksvs.New Jersey Devils",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "anaheim-ducksvs-new-jersey-devils",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 05:00:00 AM",
+          "end_time_bst": "Oct 23, 2026, 08:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Anaheim Ducksvs.New Jersey Devils"
+          },
+          "team_b": {
+            "name": "Anaheim Ducksvs.New Jersey Devils"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/8d661920-97ad-4e18-9ae1-5943982608a0.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/rtzaeyvhb53.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/rtzaeyvhb53.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Florida Panthersvs.Pittsburgh Penguins",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "florida-panthersvs-pittsburgh-penguins",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 05:00:00 AM",
+          "end_time_bst": "Oct 23, 2026, 08:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Florida Panthersvs.Pittsburgh Penguins"
+          },
+          "team_b": {
+            "name": "Florida Panthersvs.Pittsburgh Penguins"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/a0eb86ca-70d8-45b3-a484-43668ec8d94d.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/bnvcxwhfg54.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/bnvcxwhfg54.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "East Carolina Piratesvs.Memphis Tigers",
+        "sport": "American Football",
+        "sub_category": "American Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "east-carolina-piratesvs-memphis-tigers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 05:30:00 AM",
+          "end_time_bst": "Oct 23, 2026, 08:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "East Carolina Piratesvs.Memphis Tigers"
+          },
+          "team_b": {
+            "name": "East Carolina Piratesvs.Memphis Tigers"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/a556e167-3fd8-430f-bd57-162d9da875ef.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/oipozuezeji33.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/oipozuezeji33.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Los Angeles Kingsvs.New York Islanders",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "los-angeles-kingsvs-new-york-islanders",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 05:30:00 AM",
+          "end_time_bst": "Oct 23, 2026, 08:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Los Angeles Kingsvs.New York Islanders"
+          },
+          "team_b": {
+            "name": "Los Angeles Kingsvs.New York Islanders"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/707e05f4-9023-4a40-bd65-08d88a4614d5.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/sdezqfza55.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/sdezqfza55.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "New England Patriotsvs.Chicago Bears",
+        "sport": "American Football",
+        "sub_category": "American Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "new-england-patriotsvs-chicago-bears",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 06:15:00 AM",
+          "end_time_bst": "Oct 23, 2026, 09:15:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "New England Patriotsvs.Chicago Bears"
+          },
+          "team_b": {
+            "name": "New England Patriotsvs.Chicago Bears"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/4bf6cf98-fb60-4d9c-8f3e-ced4bf6ff19a.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Denver Nuggetsvs.Oklahoma City Thunder",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "denver-nuggetsvs-oklahoma-city-thunder",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 07:30:00 AM",
+          "end_time_bst": "Oct 23, 2026, 10:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Denver Nuggetsvs.Oklahoma City Thunder"
+          },
+          "team_b": {
+            "name": "Denver Nuggetsvs.Oklahoma City Thunder"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/0acf1a39-8f3a-48e3-91f3-d16ed98e27cd.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/wfazgsqtrezu66.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/wfazgsqtrezu66.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
