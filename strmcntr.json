@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 22, 2026, 10:34:42 PM",
+  "last_updated": "Oct 23, 2026, 12:45:46 AM",
   "event_count": 24,
   "events": {
     "events": [
@@ -75,7 +75,7 @@
         "title": "AFC Bournemouthvs.AC Milan",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "afc-bournemouthvs-ac-milan",
         "schedule": {
@@ -109,7 +109,7 @@
         "title": "Besiktasvs.Crystal Palace",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "besiktasvs-crystal-palace",
         "schedule": {
@@ -143,7 +143,7 @@
         "title": "Celticvs.Celta Vigo",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "celticvs-celta-vigo",
         "schedule": {
