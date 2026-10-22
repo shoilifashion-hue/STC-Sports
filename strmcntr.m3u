@@ -1,19 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/1f813ba9-db28-4662-a801-cccecea4dcff.webp" group-title="Basketball",[Basketball] Minnesota Timberwolvesvs.Miami Heat | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/hfsdqtaxvb67.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/0494a5d3-2758-4599-8add-b06144a2a4d2.webp" group-title="Basketball",[Basketball] Charlotte Hornetsvs.Brooklyn Nets | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/zayrtezafgvdv68.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/37b86493-9307-46a3-aa5c-9a24138ff0cb.webp" group-title="Basketball",[Basketball] Chicago Bullsvs.Toronto Raptors | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/zeafwqvhfe69.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/36cc4665-ff40-4500-9daf-7822a241548a.webp" group-title="Hockey",[Hockey] Philadelphia Flyersvs.Buffalo Sabres | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/uyopzarf50.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/a0eb86ca-70d8-45b3-a484-43668ec8d94d.webp" group-title="Hockey",[Hockey] Florida Panthersvs.Ottawa Senators | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/hjksgdfauzy51.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/130b9db5-9e8f-4c01-9b73-033d28bbfb28.webp" group-title="American Football",[American Football] New Mexico State Aggiesvs.Sam Houston Bearkats | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8
