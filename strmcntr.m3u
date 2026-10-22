@@ -1,7 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/a1366ed7-9800-4020-b14e-205964217c4b.webp" group-title="Football",[Football] Juventusvs.Stade Rennais | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/sqdahach1ax.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/7a9ed5ec-257b-4843-a438-a39afb7389c7.webp" group-title="Football",[Football] AFC Bournemouthvs.AC Milan | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/24SDAZFcsqnj24.m3u8
