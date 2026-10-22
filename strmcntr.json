@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 23, 2026, 04:47:11 AM",
+  "last_updated": "Oct 23, 2026, 05:17:16 AM",
   "event_count": 19,
   "events": {
     "events": [
@@ -313,7 +313,7 @@
         "title": "East Carolina Piratesvs.Memphis Tigers",
         "sport": "American Football",
         "sub_category": "American Football",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "east-carolina-piratesvs-memphis-tigers",
         "schedule": {
@@ -347,7 +347,7 @@
         "title": "Los Angeles Kingsvs.New York Islanders",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "los-angeles-kingsvs-new-york-islanders",
         "schedule": {
