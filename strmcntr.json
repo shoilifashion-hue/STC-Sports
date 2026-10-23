@@ -1,42 +1,8 @@
 {
-  "last_updated": "Oct 24, 2026, 04:45:22 AM",
-  "event_count": 23,
+  "last_updated": "Oct 24, 2026, 05:00:27 AM",
+  "event_count": 21,
   "events": {
     "events": [
-      {
-        "title": "Chicago Bullsvs.Milwaukee Bucks",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "chicago-bullsvs-milwaukee-bucks",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 02:00:00 AM",
-          "end_time_bst": "Oct 24, 2026, 05:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Chicago Bullsvs.Milwaukee Bucks"
-          },
-          "team_b": {
-            "name": "Chicago Bullsvs.Milwaukee Bucks"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/37b86493-9307-46a3-aa5c-9a24138ff0cb.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/mlkijfezag65.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/mlkijfezag65.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "MSC Cruises United States Grand Prix — FP2",
         "sport": "Racing",
@@ -404,40 +370,6 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/uyopzarf50.m3u8",
             "raw_link": "https://edgestream2.pro/hls/uyopzarf50.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Friday Night Smackdown",
-        "sport": "WWE",
-        "sub_category": "WWE",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "friday-night-smackdown",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 06:00:00 AM",
-          "end_time_bst": "Oct 24, 2026, 09:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Friday Night Smackdown"
-          },
-          "team_b": {
-            "name": "Friday Night Smackdown"
-          }
-        },
-        "logo": null,
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/zeuryuegn48.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/zeuryuegn48.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
