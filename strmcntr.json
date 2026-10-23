@@ -1,76 +1,8 @@
 {
-  "last_updated": "Oct 23, 2026, 09:38:32 AM",
-  "event_count": 32,
+  "last_updated": "Oct 23, 2026, 10:03:34 AM",
+  "event_count": 31,
   "events": {
     "events": [
-      {
-        "title": "Minnesota Wildvs.Calgary Flames",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "minnesota-wildvs-calgary-flames",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 23, 2026, 07:00:00 AM",
-          "end_time_bst": "Oct 23, 2026, 10:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Minnesota Wildvs.Calgary Flames"
-          },
-          "team_b": {
-            "name": "Minnesota Wildvs.Calgary Flames"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/7280c674-1cd2-4120-ac33-602759ffa569.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/earzfddshg58.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/earzfddshg58.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Carolina Hurricanesvs.Edmonton Oilers",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "carolina-hurricanesvs-edmonton-oilers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 23, 2026, 07:00:00 AM",
-          "end_time_bst": "Oct 23, 2026, 10:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Carolina Hurricanesvs.Edmonton Oilers"
-          },
-          "team_b": {
-            "name": "Carolina Hurricanesvs.Edmonton Oilers"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/851def80-1466-4a0d-92b4-de8a24e103ae.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/bvnzadfvyt59.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/bvnzadfvyt59.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "Denver Nuggetsvs.Oklahoma City Thunder",
         "sport": "Basketball",
@@ -642,6 +574,40 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/zeafwqvhfe69.m3u8",
             "raw_link": "https://edgestream2.pro/hls/zeafwqvhfe69.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Toronto Raptorsvs.Washington Wizards",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "toronto-raptorsvs-washington-wizards",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 05:00:00 AM",
+          "end_time_bst": "Oct 24, 2026, 08:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Toronto Raptorsvs.Washington Wizards"
+          },
+          "team_b": {
+            "name": "Toronto Raptorsvs.Washington Wizards"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/7a826d96-3fb0-4155-8f60-208e8e94e207.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
