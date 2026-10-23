@@ -1,7 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/4bf6cf98-fb60-4d9c-8f3e-ced4bf6ff19a.webp" group-title="American Football",[American Football] New England Patriotsvs.Chicago Bears | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/7280c674-1cd2-4120-ac33-602759ffa569.webp" group-title="Hockey",[Hockey] Minnesota Wildvs.Calgary Flames | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/earzfddshg58.m3u8
