@@ -1,42 +1,8 @@
 {
-  "last_updated": "Oct 23, 2026, 10:03:34 AM",
-  "event_count": 31,
+  "last_updated": "Oct 23, 2026, 10:33:47 AM",
+  "event_count": 30,
   "events": {
     "events": [
-      {
-        "title": "Denver Nuggetsvs.Oklahoma City Thunder",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "denver-nuggetsvs-oklahoma-city-thunder",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 23, 2026, 07:30:00 AM",
-          "end_time_bst": "Oct 23, 2026, 10:30:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Denver Nuggetsvs.Oklahoma City Thunder"
-          },
-          "team_b": {
-            "name": "Denver Nuggetsvs.Oklahoma City Thunder"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/0acf1a39-8f3a-48e3-91f3-d16ed98e27cd.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/wfazgsqtrezu66.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/wfazgsqtrezu66.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "Utah Mammothvs.Seattle Kraken",
         "sport": "Hockey",
@@ -344,23 +310,23 @@
         ]
       },
       {
-        "title": "NASCAR Truck Series at Talladega",
+        "title": "MSC Cruises United States Grand Prix — FP2",
         "sport": "Racing",
         "sub_category": "Racing",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "nascar-truck-series-at-talladega",
+        "slug": "msc-cruises-united-states-grand-prix-fp2",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 02:00:00 AM",
-          "end_time_bst": "Oct 24, 2026, 05:00:00 AM"
+          "start_time_bst": "Oct 24, 2026, 03:00:00 AM",
+          "end_time_bst": "Oct 24, 2026, 06:00:00 AM"
         },
         "teams": {
           "team_a": {
-            "name": "NASCAR Truck Series at Talladega"
+            "name": "MSC Cruises United States Grand Prix — FP2"
           },
           "team_b": {
-            "name": "NASCAR Truck Series at Talladega"
+            "name": "MSC Cruises United States Grand Prix — FP2"
           }
         },
         "logo": null,
