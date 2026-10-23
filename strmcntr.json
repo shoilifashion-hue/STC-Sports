@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 24, 2026, 12:33:58 AM",
+  "last_updated": "Oct 24, 2026, 12:48:58 AM",
   "event_count": 29,
   "events": {
     "events": [
@@ -143,7 +143,7 @@
         "title": "Ipswich Townvs.Nottingham Forest",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "ipswich-townvs-nottingham-forest",
         "schedule": {
@@ -177,7 +177,7 @@
         "title": "Alavésvs.Málaga",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "alavésvs-málaga",
         "schedule": {
