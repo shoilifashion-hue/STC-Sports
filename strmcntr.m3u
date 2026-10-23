@@ -1,10 +1,10 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/b5788f63-fd64-49a5-a304-a834a59b03ce.webp" group-title="American Football",[American Football] Massachusetts Minutemenvs.UConn Huskies | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/sfjnzabacah31.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/61230d5c-8612-4504-9edb-3fe6b7e75172.webp" group-title="American Football",[American Football] Duke Blue Devilsvs.Virginia Cavaliers | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/b5788f63-fd64-49a5-a304-a834a59b03ce.webp" group-title="American Football",[American Football] Massachusetts Minutemenvs.UConn Huskies | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/sfjnzabacah31.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/5587d210-84a7-4697-8a3d-543013b9d427.webp" group-title="Basketball",[Basketball] New York Knicksvs.Boston Celtics | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/wfazgsqtrezu66.m3u8

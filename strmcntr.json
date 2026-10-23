@@ -1,42 +1,8 @@
 {
-  "last_updated": "Oct 24, 2026, 05:05:22 AM",
+  "last_updated": "Oct 24, 2026, 05:45:40 AM",
   "event_count": 21,
   "events": {
     "events": [
-      {
-        "title": "Massachusetts Minutemenvs.UConn Huskies",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "massachusetts-minutemenvs-uconn-huskies",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 05:00:00 AM",
-          "end_time_bst": "Oct 24, 2026, 08:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Massachusetts Minutemenvs.UConn Huskies"
-          },
-          "team_b": {
-            "name": "Massachusetts Minutemenvs.UConn Huskies"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/b5788f63-fd64-49a5-a304-a834a59b03ce.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/sfjnzabacah31.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/sfjnzabacah31.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "Duke Blue Devilsvs.Virginia Cavaliers",
         "sport": "American Football",
@@ -64,6 +30,40 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8",
             "raw_link": "https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Massachusetts Minutemenvs.UConn Huskies",
+        "sport": "American Football",
+        "sub_category": "American Football",
+        "status": "LIVE",
+        "is_hot": false,
+        "slug": "massachusetts-minutemenvs-uconn-huskies",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 05:00:00 AM",
+          "end_time_bst": "Oct 24, 2026, 08:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Massachusetts Minutemenvs.UConn Huskies"
+          },
+          "team_b": {
+            "name": "Massachusetts Minutemenvs.UConn Huskies"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/b5788f63-fd64-49a5-a304-a834a59b03ce.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/sfjnzabacah31.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/sfjnzabacah31.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
@@ -245,7 +245,7 @@
         "title": "Detroit Pistonsvs.Miami Heat",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "detroit-pistonsvs-miami-heat",
         "schedule": {
@@ -279,7 +279,7 @@
         "title": "Tampa Bay Raysvs.Milwaukee Brewers",
         "sport": "Baseball",
         "sub_category": "Baseball",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "tampa-bay-raysvs-milwaukee-brewers",
         "schedule": {
@@ -313,7 +313,7 @@
         "title": "Montreal Canadiensvs.Chicago Blackhawks",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "montreal-canadiensvs-chicago-blackhawks",
         "schedule": {
@@ -347,7 +347,7 @@
         "title": "Friday Night Smackdown",
         "sport": "WWE",
         "sub_category": "WWE",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "friday-night-smackdown",
         "schedule": {
