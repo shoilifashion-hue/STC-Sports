@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/15506e97-07f7-4138-8d2f-48830c5f4445.webp" group-title="Hockey",[Hockey] Vegas Golden Knightsvs.St. Louis Blues | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/poiryezafv56.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/e9c9d69e-f985-482e-89b0-d86503d5daa5.webp" group-title="Hockey",[Hockey] Winnipeg Jetsvs.Dallas Stars | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/rzavbdyua57.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/4bf6cf98-fb60-4d9c-8f3e-ced4bf6ff19a.webp" group-title="American Football",[American Football] New England Patriotsvs.Chicago Bears | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8

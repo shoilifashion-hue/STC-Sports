@@ -1,76 +1,8 @@
 {
-  "last_updated": "Oct 23, 2026, 08:33:04 AM",
-  "event_count": 13,
+  "last_updated": "Oct 23, 2026, 09:03:12 AM",
+  "event_count": 11,
   "events": {
     "events": [
-      {
-        "title": "Vegas Golden Knightsvs.St. Louis Blues",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "vegas-golden-knightsvs-st-louis-blues",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 23, 2026, 06:00:00 AM",
-          "end_time_bst": "Oct 23, 2026, 09:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Vegas Golden Knightsvs.St. Louis Blues"
-          },
-          "team_b": {
-            "name": "Vegas Golden Knightsvs.St. Louis Blues"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/15506e97-07f7-4138-8d2f-48830c5f4445.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/poiryezafv56.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/poiryezafv56.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Winnipeg Jetsvs.Dallas Stars",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "winnipeg-jetsvs-dallas-stars",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 23, 2026, 06:00:00 AM",
-          "end_time_bst": "Oct 23, 2026, 09:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Winnipeg Jetsvs.Dallas Stars"
-          },
-          "team_b": {
-            "name": "Winnipeg Jetsvs.Dallas Stars"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/e9c9d69e-f985-482e-89b0-d86503d5daa5.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/rzavbdyua57.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/rzavbdyua57.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "New England Patriotsvs.Chicago Bears",
         "sport": "American Football",
