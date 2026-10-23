@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/9bbc874b-2df6-44ce-a6b4-52b0f47d9514.webp" group-title="Hockey",[Hockey] Utah Mammothvs.Seattle Kraken | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/cwxvbnfghq60.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/6086a21f-0c8e-48b8-8899-3bb8c76d68d4.webp" group-title="Hockey",[Hockey] Detroit Red Wingsvs.Vancouver Canucks | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/gfhfgsqda61.m3u8
 #EXTINF:-1 tvg-logo="None" group-title="Racing",[Racing] MSC Cruises United States Grand Prix — FP1 | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/hbfkazbkaznc49.m3u8

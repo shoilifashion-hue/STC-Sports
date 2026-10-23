@@ -1,76 +1,8 @@
 {
-  "last_updated": "Oct 23, 2026, 10:33:47 AM",
-  "event_count": 30,
+  "last_updated": "Oct 23, 2026, 11:03:56 AM",
+  "event_count": 28,
   "events": {
     "events": [
-      {
-        "title": "Utah Mammothvs.Seattle Kraken",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "utah-mammothvs-seattle-kraken",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 23, 2026, 08:00:00 AM",
-          "end_time_bst": "Oct 23, 2026, 11:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Utah Mammothvs.Seattle Kraken"
-          },
-          "team_b": {
-            "name": "Utah Mammothvs.Seattle Kraken"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/9bbc874b-2df6-44ce-a6b4-52b0f47d9514.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/cwxvbnfghq60.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/cwxvbnfghq60.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Detroit Red Wingsvs.Vancouver Canucks",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "detroit-red-wingsvs-vancouver-canucks",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 23, 2026, 08:00:00 AM",
-          "end_time_bst": "Oct 23, 2026, 11:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Detroit Red Wingsvs.Vancouver Canucks"
-          },
-          "team_b": {
-            "name": "Detroit Red Wingsvs.Vancouver Canucks"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/6086a21f-0c8e-48b8-8899-3bb8c76d68d4.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/gfhfgsqda61.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/gfhfgsqda61.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "MSC Cruises United States Grand Prix — FP1",
         "sport": "Racing",
