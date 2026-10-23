@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 24, 2026, 03:30:03 AM",
+  "last_updated": "Oct 24, 2026, 04:45:22 AM",
   "event_count": 23,
   "events": {
     "events": [
@@ -75,7 +75,7 @@
         "title": "Duke Blue Devilsvs.Virginia Cavaliers",
         "sport": "American Football",
         "sub_category": "American Football",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "duke-blue-devilsvs-virginia-cavaliers",
         "schedule": {
@@ -109,7 +109,7 @@
         "title": "Massachusetts Minutemenvs.UConn Huskies",
         "sport": "American Football",
         "sub_category": "American Football",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "massachusetts-minutemenvs-uconn-huskies",
         "schedule": {
@@ -143,7 +143,7 @@
         "title": "New York Knicksvs.Boston Celtics",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "new-york-knicksvs-boston-celtics",
         "schedule": {
@@ -177,7 +177,7 @@
         "title": "Atlanta Hawksvs.Charlotte Hornets",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "atlanta-hawksvs-charlotte-hornets",
         "schedule": {
@@ -211,7 +211,7 @@
         "title": "Dallas Mavericksvs.Indiana Pacers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "dallas-mavericksvs-indiana-pacers",
         "schedule": {
@@ -245,7 +245,7 @@
         "title": "Minnesota Timberwolvesvs.Orlando Magic",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "minnesota-timberwolvesvs-orlando-magic",
         "schedule": {
@@ -279,7 +279,7 @@
         "title": "Toronto Raptorsvs.Washington Wizards",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "toronto-raptorsvs-washington-wizards",
         "schedule": {
