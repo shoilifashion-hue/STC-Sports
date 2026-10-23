@@ -1,6 +1,6 @@
 {
-  "last_updated": "Oct 23, 2026, 09:28:20 AM",
-  "event_count": 15,
+  "last_updated": "Oct 23, 2026, 09:33:25 AM",
+  "event_count": 18,
   "events": {
     "events": [
       {
@@ -166,6 +166,40 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/gfhfgsqda61.m3u8",
             "raw_link": "https://edgestream2.pro/hls/gfhfgsqda61.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "MSC Cruises United States Grand Prix — FP1",
+        "sport": "Racing",
+        "sub_category": "Racing",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "msc-cruises-united-states-grand-prix-fp1",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 23, 2026, 11:30:00 PM",
+          "end_time_bst": "Oct 24, 2026, 02:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "MSC Cruises United States Grand Prix — FP1"
+          },
+          "team_b": {
+            "name": "MSC Cruises United States Grand Prix — FP1"
+          }
+        },
+        "logo": null,
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/hbfkazbkaznc49.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/hbfkazbkaznc49.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
@@ -344,6 +378,40 @@
         ]
       },
       {
+        "title": "NASCAR Truck Series at Talladega",
+        "sport": "Racing",
+        "sub_category": "Racing",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "nascar-truck-series-at-talladega",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 02:00:00 AM",
+          "end_time_bst": "Oct 24, 2026, 05:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "NASCAR Truck Series at Talladega"
+          },
+          "team_b": {
+            "name": "NASCAR Truck Series at Talladega"
+          }
+        },
+        "logo": null,
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/hbfkazbkaznc49.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/hbfkazbkaznc49.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
         "title": "Duke Blue Devilsvs.Virginia Cavaliers",
         "sport": "American Football",
         "sub_category": "American Football",
@@ -404,6 +472,40 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/sfjnzabacah31.m3u8",
             "raw_link": "https://edgestream2.pro/hls/sfjnzabacah31.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Tampa Bay Raysvs.Milwaukee Brewers",
+        "sport": "Baseball",
+        "sub_category": "Baseball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "tampa-bay-raysvs-milwaukee-brewers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 06:00:00 AM",
+          "end_time_bst": "Oct 24, 2026, 09:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Tampa Bay Raysvs.Milwaukee Brewers"
+          },
+          "team_b": {
+            "name": "Tampa Bay Raysvs.Milwaukee Brewers"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/8803b03e-ded9-4854-b197-38c192d0ed1c.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/dazhfiach15.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/dazhfiach15.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
