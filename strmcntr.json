@@ -1,6 +1,6 @@
 {
-  "last_updated": "Oct 23, 2026, 07:17:50 AM",
-  "event_count": 18,
+  "last_updated": "Oct 23, 2026, 07:47:56 AM",
+  "event_count": 17,
   "events": {
     "events": [
       {
@@ -166,40 +166,6 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/hjksgdfauzy51.m3u8",
             "raw_link": "https://edgestream2.pro/hls/hjksgdfauzy51.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "San Jose Sharksvs.Ottawa Senators",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "san-jose-sharksvs-ottawa-senators",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 23, 2026, 05:00:00 AM",
-          "end_time_bst": "Oct 23, 2026, 08:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "San Jose Sharksvs.Ottawa Senators"
-          },
-          "team_b": {
-            "name": "San Jose Sharksvs.Ottawa Senators"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/b35c349b-ef6c-4208-87f0-2c7ba21071ab.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/lmdsjkfgv52.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/lmdsjkfgv52.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
@@ -551,7 +517,7 @@
         "title": "Utah Mammothvs.Seattle Kraken",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "utah-mammothvs-seattle-kraken",
         "schedule": {
@@ -585,7 +551,7 @@
         "title": "Detroit Red Wingsvs.Vancouver Canucks",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "detroit-red-wingsvs-vancouver-canucks",
         "schedule": {
