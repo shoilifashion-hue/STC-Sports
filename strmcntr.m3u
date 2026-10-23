@@ -1,7 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="None" group-title="Racing",[Racing] MotoGP Australian Grand Prix | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/oeenzgezcz47.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/d6b26a3e-090d-4c70-9fe4-04b1dec66730.webp" group-title="American Football",[American Football] James Madison Dukesvs.App State Mountaineers | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/sfjnzabacah31.m3u8
