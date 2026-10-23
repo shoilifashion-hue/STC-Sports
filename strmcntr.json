@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 23, 2026, 06:32:39 AM",
+  "last_updated": "Oct 23, 2026, 06:47:38 AM",
   "event_count": 18,
   "events": {
     "events": [
@@ -449,7 +449,7 @@
         "title": "Minnesota Wildvs.Calgary Flames",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "minnesota-wildvs-calgary-flames",
         "schedule": {
@@ -483,7 +483,7 @@
         "title": "Carolina Hurricanesvs.Edmonton Oilers",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "carolina-hurricanesvs-edmonton-oilers",
         "schedule": {
