@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 24, 2026, 03:14:55 AM",
+  "last_updated": "Oct 24, 2026, 03:24:58 AM",
   "event_count": 24,
   "events": {
     "events": [
@@ -30,40 +30,6 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/24SDAZFcsqnj24.m3u8",
             "raw_link": "https://edgestream2.pro/hls/24SDAZFcsqnj24.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Alavésvs.Málaga",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "alavésvs-málaga",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 01:00:00 AM",
-          "end_time_bst": "Oct 24, 2026, 04:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Alavésvs.Málaga"
-          },
-          "team_b": {
-            "name": "Alavésvs.Málaga"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/323c4e4f-eb71-4b5d-8f6b-875ad34de1b6.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/377qj1h2727.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/377qj1h2727.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
@@ -370,6 +336,40 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8",
             "raw_link": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Detroit Pistonsvs.Miami Heat",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "detroit-pistonsvs-miami-heat",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 06:00:00 AM",
+          "end_time_bst": "Oct 24, 2026, 09:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Detroit Pistonsvs.Miami Heat"
+          },
+          "team_b": {
+            "name": "Detroit Pistonsvs.Miami Heat"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/ae652cc7-9bf8-4fa1-8ded-2290a991c592.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/ztyarueaghj71.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/ztyarueaghj71.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
