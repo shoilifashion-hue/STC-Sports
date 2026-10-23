@@ -1,25 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/d6b26a3e-090d-4c70-9fe4-04b1dec66730.webp" group-title="American Football",[American Football] James Madison Dukesvs.App State Mountaineers | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/sfjnzabacah31.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/84d062b9-9903-442a-af92-295cc392961f.webp" group-title="American Football",[American Football] Liberty Flamesvs.Kennesaw State Owls | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/qsdnajbq32.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/34976ee6-0def-4ee5-b23f-3d67b151e780.webp" group-title="Basketball",[Basketball] Cleveland Cavaliersvs.Philadelphia 76ers | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/mlkijfezag65.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/c5124d32-cc38-4513-ab70-f67698171bff.webp" group-title="Hockey",[Hockey] Nashville Predatorsvs.Boston Bruins | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/uyopzarf50.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/2b61dab9-9852-430e-8f29-91e4adb82bbf.webp" group-title="Hockey",[Hockey] New York Rangersvs.Toronto Maple Leafs | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/hjksgdfauzy51.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/8d661920-97ad-4e18-9ae1-5943982608a0.webp" group-title="Hockey",[Hockey] Anaheim Ducksvs.New Jersey Devils | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/rtzaeyvhb53.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/a0eb86ca-70d8-45b3-a484-43668ec8d94d.webp" group-title="Hockey",[Hockey] Florida Panthersvs.Pittsburgh Penguins | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/bnvcxwhfg54.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/a556e167-3fd8-430f-bd57-162d9da875ef.webp" group-title="American Football",[American Football] East Carolina Piratesvs.Memphis Tigers | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/oipozuezeji33.m3u8
@@ -50,3 +29,18 @@ https://edgestream2.pro/hls/cwxvbnfghq60.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/6086a21f-0c8e-48b8-8899-3bb8c76d68d4.webp" group-title="Hockey",[Hockey] Detroit Red Wingsvs.Vancouver Canucks | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/gfhfgsqda61.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/fcb9f740-d80e-4041-86a0-560f75d185a2.webp" group-title="Football",[Football] VfB Stuttgartvs.Borussia Mönchengladbach | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/ueyeztrazb4.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/cde4aa8d-710e-4658-b136-1ed069923674.webp" group-title="Football",[Football] Brestvs.Nice | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/syaLqucEne4k.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/d4d6c96b-dd85-4a68-8eff-e6a24346518a.webp" group-title="Football",[Football] Torinovs.Monza | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/syaLqucEne4k.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/fe586456-b3d8-47c0-abf4-c6279940a7f4.webp" group-title="Football",[Football] Ipswich Townvs.Nottingham Forest | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/24SDAZFcsqnj24.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/323c4e4f-eb71-4b5d-8f6b-875ad34de1b6.webp" group-title="Football",[Football] Alavésvs.Málaga | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/377qj1h2727.m3u8
