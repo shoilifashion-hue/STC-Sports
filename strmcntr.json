@@ -1,42 +1,8 @@
 {
-  "last_updated": "Oct 24, 2026, 03:24:58 AM",
-  "event_count": 24,
+  "last_updated": "Oct 24, 2026, 03:30:03 AM",
+  "event_count": 23,
   "events": {
     "events": [
-      {
-        "title": "Ipswich Townvs.Nottingham Forest",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "ipswich-townvs-nottingham-forest",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 01:00:00 AM",
-          "end_time_bst": "Oct 24, 2026, 04:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Ipswich Townvs.Nottingham Forest"
-          },
-          "team_b": {
-            "name": "Ipswich Townvs.Nottingham Forest"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/fe586456-b3d8-47c0-abf4-c6279940a7f4.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/24SDAZFcsqnj24.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/24SDAZFcsqnj24.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "Chicago Bullsvs.Milwaukee Bucks",
         "sport": "Basketball",
