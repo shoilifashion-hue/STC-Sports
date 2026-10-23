@@ -1,6 +1,6 @@
 {
-  "last_updated": "Oct 24, 2026, 01:49:26 AM",
-  "event_count": 28,
+  "last_updated": "Oct 24, 2026, 02:49:51 AM",
+  "event_count": 27,
   "events": {
     "events": [
       {
@@ -64,40 +64,6 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/dza5z8f69.m3u8",
             "raw_link": "https://edgestream2.pro/hls/dza5z8f69.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Torinovs.Monza",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "torinovs-monza",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 12:45:00 AM",
-          "end_time_bst": "Oct 24, 2026, 03:45:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Torinovs.Monza"
-          },
-          "team_b": {
-            "name": "Torinovs.Monza"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/d4d6c96b-dd85-4a68-8eff-e6a24346518a.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/syaLqucEne4k.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/syaLqucEne4k.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
@@ -211,7 +177,7 @@
         "title": "MSC Cruises United States Grand Prix — FP2",
         "sport": "Racing",
         "sub_category": "Racing",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "msc-cruises-united-states-grand-prix-fp2",
         "schedule": {
