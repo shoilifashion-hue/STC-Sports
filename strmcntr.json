@@ -1,76 +1,8 @@
 {
-  "last_updated": "Oct 24, 2026, 02:59:57 AM",
-  "event_count": 25,
+  "last_updated": "Oct 24, 2026, 03:14:55 AM",
+  "event_count": 24,
   "events": {
     "events": [
-      {
-        "title": "Brestvs.Nice",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "brestvs-nice",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 12:45:00 AM",
-          "end_time_bst": "Oct 24, 2026, 03:45:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Brestvs.Nice"
-          },
-          "team_b": {
-            "name": "Brestvs.Nice"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/cde4aa8d-710e-4658-b136-1ed069923674.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/dza5z8f69.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/dza5z8f69.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Torinovs.Monza",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "torinovs-monza",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 12:45:00 AM",
-          "end_time_bst": "Oct 24, 2026, 03:45:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Torinovs.Monza"
-          },
-          "team_b": {
-            "name": "Torinovs.Monza"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/d4d6c96b-dd85-4a68-8eff-e6a24346518a.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/syaLqucEne4k.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/syaLqucEne4k.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "Ipswich Townvs.Nottingham Forest",
         "sport": "Football",
@@ -132,6 +64,40 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/377qj1h2727.m3u8",
             "raw_link": "https://edgestream2.pro/hls/377qj1h2727.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Chicago Bullsvs.Milwaukee Bucks",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "LIVE",
+        "is_hot": false,
+        "slug": "chicago-bullsvs-milwaukee-bucks",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 02:00:00 AM",
+          "end_time_bst": "Oct 24, 2026, 05:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Chicago Bullsvs.Milwaukee Bucks"
+          },
+          "team_b": {
+            "name": "Chicago Bullsvs.Milwaukee Bucks"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/37b86493-9307-46a3-aa5c-9a24138ff0cb.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/mlkijfezag65.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/mlkijfezag65.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
@@ -378,32 +344,32 @@
         ]
       },
       {
-        "title": "Detroit Pistonsvs.Miami Heat",
+        "title": "Toronto Raptorsvs.Washington Wizards",
         "sport": "Basketball",
         "sub_category": "Basketball",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "detroit-pistonsvs-miami-heat",
+        "slug": "toronto-raptorsvs-washington-wizards",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 06:00:00 AM",
-          "end_time_bst": "Oct 24, 2026, 09:00:00 AM"
+          "start_time_bst": "Oct 24, 2026, 05:00:00 AM",
+          "end_time_bst": "Oct 24, 2026, 08:00:00 AM"
         },
         "teams": {
           "team_a": {
-            "name": "Detroit Pistonsvs.Miami Heat"
+            "name": "Toronto Raptorsvs.Washington Wizards"
           },
           "team_b": {
-            "name": "Detroit Pistonsvs.Miami Heat"
+            "name": "Toronto Raptorsvs.Washington Wizards"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/ae652cc7-9bf8-4fa1-8ded-2290a991c592.webp",
+        "logo": "https://streamecenter.live/api/images/badge/7a826d96-3fb0-4155-8f60-208e8e94e207.webp",
         "channels": [
           {
             "channel_name": "English Stream",
             "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/ztyarueaghj71.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/ztyarueaghj71.m3u8|Referer=https://streame.center",
+            "url": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
