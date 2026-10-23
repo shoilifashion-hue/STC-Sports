@@ -1,35 +1,35 @@
 {
-  "last_updated": "Oct 24, 2026, 05:00:27 AM",
+  "last_updated": "Oct 24, 2026, 05:05:22 AM",
   "event_count": 21,
   "events": {
     "events": [
       {
-        "title": "MSC Cruises United States Grand Prix — FP2",
-        "sport": "Racing",
-        "sub_category": "Racing",
+        "title": "Massachusetts Minutemenvs.UConn Huskies",
+        "sport": "American Football",
+        "sub_category": "American Football",
         "status": "LIVE",
         "is_hot": false,
-        "slug": "msc-cruises-united-states-grand-prix-fp2",
+        "slug": "massachusetts-minutemenvs-uconn-huskies",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 03:00:00 AM",
-          "end_time_bst": "Oct 24, 2026, 06:00:00 AM"
+          "start_time_bst": "Oct 24, 2026, 05:00:00 AM",
+          "end_time_bst": "Oct 24, 2026, 08:00:00 AM"
         },
         "teams": {
           "team_a": {
-            "name": "MSC Cruises United States Grand Prix — FP2"
+            "name": "Massachusetts Minutemenvs.UConn Huskies"
           },
           "team_b": {
-            "name": "MSC Cruises United States Grand Prix — FP2"
+            "name": "Massachusetts Minutemenvs.UConn Huskies"
           }
         },
-        "logo": null,
+        "logo": "https://streamecenter.live/api/images/badge/b5788f63-fd64-49a5-a304-a834a59b03ce.webp",
         "channels": [
           {
             "channel_name": "English Stream",
             "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/hbfkazbkaznc49.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/hbfkazbkaznc49.m3u8|Referer=https://streame.center",
+            "url": "https://edgestream2.pro/hls/sfjnzabacah31.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/sfjnzabacah31.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
@@ -64,40 +64,6 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8",
             "raw_link": "https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Massachusetts Minutemenvs.UConn Huskies",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "massachusetts-minutemenvs-uconn-huskies",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 05:00:00 AM",
-          "end_time_bst": "Oct 24, 2026, 08:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Massachusetts Minutemenvs.UConn Huskies"
-          },
-          "team_b": {
-            "name": "Massachusetts Minutemenvs.UConn Huskies"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/b5788f63-fd64-49a5-a304-a834a59b03ce.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/sfjnzabacah31.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/sfjnzabacah31.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
@@ -370,6 +336,40 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/uyopzarf50.m3u8",
             "raw_link": "https://edgestream2.pro/hls/uyopzarf50.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Friday Night Smackdown",
+        "sport": "WWE",
+        "sub_category": "WWE",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "friday-night-smackdown",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 06:00:00 AM",
+          "end_time_bst": "Oct 24, 2026, 09:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Friday Night Smackdown"
+          },
+          "team_b": {
+            "name": "Friday Night Smackdown"
+          }
+        },
+        "logo": null,
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/zeuryuegn48.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/zeuryuegn48.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
