@@ -1,76 +1,8 @@
 {
-  "last_updated": "Oct 23, 2026, 08:02:58 AM",
-  "event_count": 15,
+  "last_updated": "Oct 23, 2026, 08:33:04 AM",
+  "event_count": 13,
   "events": {
     "events": [
-      {
-        "title": "East Carolina Piratesvs.Memphis Tigers",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "east-carolina-piratesvs-memphis-tigers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 23, 2026, 05:30:00 AM",
-          "end_time_bst": "Oct 23, 2026, 08:30:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "East Carolina Piratesvs.Memphis Tigers"
-          },
-          "team_b": {
-            "name": "East Carolina Piratesvs.Memphis Tigers"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/a556e167-3fd8-430f-bd57-162d9da875ef.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/oipozuezeji33.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/oipozuezeji33.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Los Angeles Kingsvs.New York Islanders",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "los-angeles-kingsvs-new-york-islanders",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 23, 2026, 05:30:00 AM",
-          "end_time_bst": "Oct 23, 2026, 08:30:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Los Angeles Kingsvs.New York Islanders"
-          },
-          "team_b": {
-            "name": "Los Angeles Kingsvs.New York Islanders"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/707e05f4-9023-4a40-bd65-08d88a4614d5.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/sdezqfza55.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/sdezqfza55.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "Vegas Golden Knightsvs.St. Louis Blues",
         "sport": "Hockey",

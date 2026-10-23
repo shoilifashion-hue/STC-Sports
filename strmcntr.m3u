@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/a556e167-3fd8-430f-bd57-162d9da875ef.webp" group-title="American Football",[American Football] East Carolina Piratesvs.Memphis Tigers | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/oipozuezeji33.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/707e05f4-9023-4a40-bd65-08d88a4614d5.webp" group-title="Hockey",[Hockey] Los Angeles Kingsvs.New York Islanders | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/sdezqfza55.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/15506e97-07f7-4138-8d2f-48830c5f4445.webp" group-title="Hockey",[Hockey] Vegas Golden Knightsvs.St. Louis Blues | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/poiryezafv56.m3u8
