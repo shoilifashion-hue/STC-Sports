@@ -1,42 +1,8 @@
 {
-  "last_updated": "Oct 24, 2026, 12:48:58 AM",
-  "event_count": 29,
+  "last_updated": "Oct 24, 2026, 01:29:14 AM",
+  "event_count": 26,
   "events": {
     "events": [
-      {
-        "title": "MSC Cruises United States Grand Prix — FP1",
-        "sport": "Racing",
-        "sub_category": "Racing",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "msc-cruises-united-states-grand-prix-fp1",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 23, 2026, 11:30:00 PM",
-          "end_time_bst": "Oct 24, 2026, 02:30:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "MSC Cruises United States Grand Prix — FP1"
-          },
-          "team_b": {
-            "name": "MSC Cruises United States Grand Prix — FP1"
-          }
-        },
-        "logo": null,
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/hbfkazbkaznc49.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/hbfkazbkaznc49.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "VfB Stuttgartvs.Borussia Mönchengladbach",
         "sport": "Football",
@@ -268,40 +234,6 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/hbfkazbkaznc49.m3u8",
             "raw_link": "https://edgestream2.pro/hls/hbfkazbkaznc49.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Duke Blue Devilsvs.Virginia Cavaliers",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "duke-blue-devilsvs-virginia-cavaliers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 05:00:00 AM",
-          "end_time_bst": "Oct 24, 2026, 08:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Duke Blue Devilsvs.Virginia Cavaliers"
-          },
-          "team_b": {
-            "name": "Duke Blue Devilsvs.Virginia Cavaliers"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/61230d5c-8612-4504-9edb-3fe6b7e75172.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
@@ -880,40 +812,6 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/sqhdghzavbxu75.m3u8",
             "raw_link": "https://edgestream2.pro/hls/sqhdghzavbxu75.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Portland Trail Blazersvs.Sacramento Kings",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "portland-trail-blazersvs-sacramento-kings",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 08:00:00 AM",
-          "end_time_bst": "Oct 24, 2026, 11:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Portland Trail Blazersvs.Sacramento Kings"
-          },
-          "team_b": {
-            "name": "Portland Trail Blazersvs.Sacramento Kings"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/07acbbef-f561-4dba-b997-cf04c1e62ccc.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/xcsfadafgzfg76.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/xcsfadafgzfg76.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
