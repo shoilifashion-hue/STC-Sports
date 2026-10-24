@@ -31,7 +31,8 @@ UA = (
     "Chrome/134.0.0.0 Safari/537.36"
 )
 
-HTTP_SEMAPHORE = asyncio.Semaphore(15)
+# সার্ভার যাতে রেট-লিমিট বা ব্লক না করে সেজন্য সেমাফোর ১০ করা হলো
+HTTP_SEMAPHORE = asyncio.Semaphore(10)
 BST_TZ = ZoneInfo("Asia/Dhaka")
 
 logging.basicConfig(level=logging.INFO, format="[%(asctime)s] %(levelname)s: %(message)s")
@@ -66,12 +67,18 @@ def create_slug(text: str) -> str:
 def parse_event_time(value: str) -> datetime | None:
     try:
         value = value.strip()
+        if not value:
+            return None
         if value.endswith("Z"):
             value = value[:-1] + "+00:00"
         dt = datetime.fromisoformat(value)
         return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt
     except Exception:
-        return None
+        try:
+            # ইউনিক্স টাইমস্ট্যাম্প হ্যান্ডেল করার জন্য
+            return datetime.fromtimestamp(float(value), tz=timezone.utc)
+        except Exception:
+            return None
 
 def parse_teams(title: str) -> dict:
     delimiters = [" vs. ", " vs ", " - ", " @ "]
@@ -94,28 +101,50 @@ def determine_status(start_dt: datetime, early_minutes: int = 15) -> str:
 async def process_stream(client: httpx.AsyncClient, url: str) -> str | None:
     async with HTTP_SEMAPHORE:
         try:
-            resp = await client.get(url, timeout=8.0)
+            # হেডার এবং টাইমআউট ১২ সেকেন্ড করা হলো
+            resp = await client.get(
+                url, 
+                headers={"Referer": BASE_URL, "User-Agent": UA}, 
+                timeout=12.0
+            )
             if resp.status_code != 200:
                 return None
+
+            stream_id = None
             soup = HTMLParser(resp.content)
+            
+            # ১. HTML iframe খোঁজা
             iframe = soup.css_first("iframe")
-            if not iframe:
-                return None
-            src = iframe.attributes.get("src", "")
-            params = dict(parse_qsl(urlsplit(src).query))
-            stream_id = params.get("stream")
+            if iframe:
+                src = iframe.attributes.get("src", "")
+                params = dict(parse_qsl(urlsplit(src).query))
+                stream_id = params.get("stream")
+
+            # ২. Regex ফলব্যাক (iframe না পেলে স্ক্রিপ্টের ভেতর stream= আইডি খোঁজা)
+            if not stream_id:
+                match = re.search(r'[\?&]stream=([a-zA-Z0-9_\-]+)', resp.text)
+                if match:
+                    stream_id = match.group(1)
+
             if not stream_id:
                 return None
-            return f"https://edgestream3.pro/stream/{stream_id}.m3u8" if stream_id.isdigit() else f"https://edgestream2.pro/hls/{stream_id}.m3u8"
+
+            return (
+                f"https://edgestream3.pro/stream/{stream_id}.m3u8"
+                if stream_id.isdigit()
+                else f"https://edgestream2.pro/hls/{stream_id}.m3u8"
+            )
         except Exception:
             return None
 
 async def get_raw_events(client: httpx.AsyncClient) -> list[RawEvent]:
     events = []
     try:
-        resp = await client.get(urljoin(BASE_URL, "game-cards/embed"), timeout=10.0)
+        resp = await client.get(urljoin(BASE_URL, "game-cards/embed"), timeout=15.0)
         if resp.status_code != 200:
+            log.error(f"Embed page failed with status: {resp.status_code}")
             return events
+
         soup = HTMLParser(resp.content)
         now_utc = datetime.now(timezone.utc)
 
@@ -136,7 +165,9 @@ async def get_raw_events(client: httpx.AsyncClient) -> list[RawEvent]:
                     continue
 
                 event_dt_utc = event_dt.astimezone(timezone.utc)
-                if event_dt_utc < now_utc - timedelta(hours=3) or event_dt_utc > now_utc + timedelta(hours=24):
+                
+                # অতীত ৩ ঘণ্টা থেকে পরবর্তী ৪৮ ঘণ্টার ইভেন্ট নেওয়া হচ্ছে
+                if event_dt_utc < (now_utc - timedelta(hours=3)) or event_dt_utc > (now_utc + timedelta(hours=48)):
                     continue
 
                 img_elem = game.css_first("img") or card.css_first("img")
@@ -153,7 +184,15 @@ async def get_raw_events(client: httpx.AsyncClient) -> list[RawEvent]:
                 ]
 
                 if sources:
-                    events.append(RawEvent(sport=fix_sport(sport), title=name_elem.text(strip=True), start_dt=event_dt, sources=sources, logo=event_logo))
+                    events.append(RawEvent(
+                        sport=fix_sport(sport),
+                        title=name_elem.text(strip=True),
+                        start_dt=event_dt,
+                        sources=sources,
+                        logo=event_logo
+                    ))
+                    
+        log.info(f"Scraped {len(events)} raw events from source page.")
     except Exception as e:
         log.error(f"Error scraping events: {e}")
     return events
@@ -168,7 +207,6 @@ async def main():
 
         final_playlist = []
 
-        # একযোগে দ্রুত কাজ করার জন্য টাস্ক তৈরি
         for ev in raw_events:
             tasks = [process_stream(client, src.url) for src in ev.sources]
             results = await asyncio.gather(*tasks)
@@ -185,13 +223,16 @@ async def main():
                         "drm_key": None
                     })
 
-            if event_channels:
-                start_bst = ev.start_dt.astimezone(BST_TZ)
+            start_bst = ev.start_dt.astimezone(BST_TZ)
+            status = determine_status(ev.start_dt, early_minutes=15)
+
+            # স্ট্রিম পেলেই শুধু প্লেলিস্টে যাবে, তবে আপকামিং ইভেন্টও যেন JSON-এ থাকে তাই যোগ করা হচ্ছে
+            if event_channels or status == "UPCOMING":
                 final_playlist.append({
                     "title": ev.title,
                     "sport": ev.sport,
                     "sub_category": ev.sport,
-                    "status": determine_status(ev.start_dt, early_minutes=15),
+                    "status": status,
                     "is_hot": False,
                     "slug": create_slug(ev.title),
                     "schedule": {
@@ -210,17 +251,30 @@ async def main():
         for item in final_playlist:
             item.pop("_timestamp", None)
 
-        # JSON ও M3U ফাইল সেভ
-        JSON_OUTPUT.write_text(json.dumps({"last_updated": datetime.now(BST_TZ).strftime("%b %d, %Y, %I:%M:%S %p"), "event_count": len(final_playlist), "events": {"events": final_playlist}}, indent=2, ensure_ascii=False), encoding="utf-8")
+        # JSON ফাইল সেভ
+        JSON_OUTPUT.write_text(
+            json.dumps(
+                {
+                    "last_updated": datetime.now(BST_TZ).strftime("%b %d, %Y, %I:%M:%S %p"),
+                    "event_count": len(final_playlist),
+                    "events": {"events": final_playlist}
+                },
+                indent=2,
+                ensure_ascii=False
+            ),
+            encoding="utf-8"
+        )
         
+        # M3U ফাইল সেভ (শুধুমাত্র যাদের সক্রিয় চ্যানেল লিংক আছে)
         m3u_lines = ["#EXTM3U"]
         for ev in final_playlist:
-            for ch in ev["channels"]:
-                m3u_lines.append(f'#EXTINF:-1 tvg-logo="{ev["logo"]}" group-title="{ev["sport"]}",[{ev["sport"]}] {ev["title"]} | {ch["channel_name"]}')
+            for ch in ev.get("channels", []):
+                m3u_lines.append(f'#EXTINF:-1 tvg-logo="{ev["logo"] or ""}" group-title="{ev["sport"]}",[{ev["sport"]}] {ev["title"]} | {ch["channel_name"]}')
                 m3u_lines.append(f'#EXTVLCOPT:http-referrer={ALT_BASE}\n{ch["url"]}')
+                
         M3U_OUTPUT.write_text("\n".join(m3u_lines) + "\n", encoding="utf-8")
         
-        log.info(f"Done! Generated {len(final_playlist)} events. Exiting.")
+        log.info(f"Done! Successfully generated {len(final_playlist)} events in JSON. Exiting.")
 
 if __name__ == "__main__":
     asyncio.run(main())
