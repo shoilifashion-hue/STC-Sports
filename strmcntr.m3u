@@ -26,6 +26,9 @@ https://edgestream2.pro/hls/syaLqucEne4k.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/54cd557a-0f70-4bf9-91d2-84b6b85c856c.webp" group-title="Football",[Football] Comovs.Sassuolo | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/hflfkrtib42.m3u8
+#EXTINF:-1 tvg-logo="None" group-title="MMA",[MMA] UFC 333: Volkanovski vs. Evloev | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/zeuryuegn48.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/6d1809bd-3fb2-4a40-85db-e4abb120f8f0.webp" group-title="Football",[Football] Coventry Cityvs.Fulham | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/eJmauBDCIf.m3u8
