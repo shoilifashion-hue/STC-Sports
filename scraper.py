@@ -16,7 +16,8 @@ from selectolax.lexbor import LexborHTMLParser as HTMLParser
 # রুট পাথ ও কনফিগারেশন
 ROOT_DIR = Path(__file__).resolve().parent
 
-BASE_URL = "https://streamec.st"
+BASE_URL = "https://streamcenter.st"
+ALT_URL = "https://streamec.st"
 EMBED_REFERER = "https://embedcenter.st"
 TAG = "STRMCNTR"
 
@@ -81,18 +82,18 @@ def parse_match_datetime(time_str: str) -> datetime:
     return datetime.now(timezone.utc)
 
 def extract_m3u8(text: str, base_url: str = "") -> str | None:
-    """HTML বা JS রেসপন্স থেকে টোকেনসহ সম্পূর্ণ m3u8 লিংক এক্সট্রাক্ট করে"""
+    """HTML বা Clappr স্ক্রিপ্ট থেকে আসল edgestream টোকেনসহ m3u8 লিংক এক্সট্রাক্ট করে"""
     if not text:
         return None
 
     clean_text = html.unescape(text).replace(r"\/", "/")
 
-    # ১. edgestream টোকেনসহ লিঙ্ক
+    # ১. edgestream টোকেনসহ লিঙ্ক (যেমন: https://edgestream7.pro/hls/...m3u8?st=...&e=...)
     edge_match = re.search(r'(https?://[a-zA-Z0-9_\-\.]*edgestream[^\s"\'<>\\]*?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
     if edge_match:
         return edge_match.group(1).strip("\"' ")
 
-    # ২. Clappr বা HLS প্লেয়ারের সোর্স কনফিগ
+    # ২. Clappr বা Player কনফিগে source / file প্যারামিটার
     source_match = re.search(r'(?:source|file|src|stream|hls)\s*[:=]\s*["\'](https?://[^"\']+\.m3u8(?:\?[^"\']*)?)["\']', clean_text, re.IGNORECASE)
     if source_match:
         return source_match.group(1).strip("\"' ")
@@ -102,12 +103,7 @@ def extract_m3u8(text: str, base_url: str = "") -> str | None:
     if generic_match:
         return generic_match.group(1).strip("\"' ")
 
-    # ৪. রিলেটিভ m3u8
-    rel_match = re.search(r'["\']([a-zA-Z0-9_\-\.]+\.m3u8(?:\?[^"\'\s]*)?)["\']', clean_text)
-    if rel_match and base_url:
-        return urljoin(base_url, rel_match.group(1)).strip("\"' ")
-
-    # ৫. Base64 ডিকোড চেক
+    # ৪. Base64 atob() থাকলে ডিকোড করে চেক করা
     for b64 in re.findall(r'atob\(["\']([A-Za-z0-9+/=]{20,})["\']\)', text):
         try:
             decoded = base64.b64decode(b64).decode("utf-8", errors="ignore")
@@ -121,72 +117,69 @@ def extract_m3u8(text: str, base_url: str = "") -> str | None:
 
 async def resolve_full_stream_chain(client: httpx.AsyncClient, link_url: str) -> str | None:
     """
-    স্ক্রিনশটের পুরো চেইন এক্সিকিউট করে:
-    /api/stream-link/iframe/... -> chXX.php -> hls.php?stream=... -> edgestream1.pro/...m3u8?st=...
+    নিখুঁত ৪-ধাপের রেজোলিউশন:
+    ১. /api/stream-link/iframe/... -> 302 রিডাইরেক্ট
+    ২. streamec.st/embed/chXX.php
+    ৩. embedcenter.st/embed/chXX.php
+    ৪. embedcenter.st/embed/hls.php?stream=... (এখানে Clappr প্লেয়ার ও edgestream m3u8 থাকে)
     """
     async with HTTP_SEMAPHORE:
-        try:
-            # ধাপ ১: /api/stream-link/iframe/... ফেচ করা (রিডাইরেক্ট হয়ে chXX.php এ যাবে)
-            headers = {
-                "User-Agent": STREAM_UA,
-                "Referer": f"{BASE_URL}/game-cards",
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
-            }
-            resp = await client.get(link_url, headers=headers, follow_redirects=True, timeout=12.0)
-            if resp.status_code != 200:
-                return None
+        visited = set()
+        queue = [link_url]
 
-            # পেজের ভেতর সরাসরি m3u8 থাকলে
-            m3u8 = extract_m3u8(resp.text, base_url=str(resp.url))
-            if m3u8:
-                return m3u8
+        for _ in range(6):  # সর্বোচ্চ ৬ লেভেল পর্যন্ত আইফ্রেম ট্র্যাকিং
+            if not queue:
+                break
+            current_url = queue.pop(0)
+            if current_url in visited:
+                continue
+            visited.add(current_url)
 
-            # ধাপ ২: স্ক্রিনশটে থাকা hls.php?stream=... আইফ্রেম খোঁজা
-            soup = HTMLParser(resp.content)
-            
-            # সব iframe চেক
-            for iframe in soup.css("iframe"):
-                src = iframe.attributes.get("src", "")
-                if src and not src.startswith("javascript:"):
-                    iframe_url = urljoin(str(resp.url), src)
-                    resp_iframe = await client.get(
-                        iframe_url,
-                        headers={"User-Agent": STREAM_UA, "Referer": str(resp.url)},
-                        timeout=10.0
-                    )
-                    if resp_iframe.status_code == 200:
-                        inner_m3u8 = extract_m3u8(resp_iframe.text, base_url=iframe_url)
-                        if inner_m3u8:
-                            return inner_m3u8
+            try:
+                headers = {
+                    "User-Agent": STREAM_UA,
+                    "Referer": "https://embedcenter.st/",
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+                }
+                resp = await client.get(current_url, headers=headers, follow_redirects=True, timeout=12.0)
+                if resp.status_code != 200:
+                    continue
 
-            # ধাপ ৩: স্ক্রিপ্টের ভেতর hls.php এর লিঙ্ক খোঁজা
-            hls_match = re.search(r'["\']([^"\']*hls\.php\?[^"\']+)["\']', resp.text)
-            if hls_match:
-                hls_url = urljoin(str(resp.url), hls_match.group(1))
-                resp_hls = await client.get(
-                    hls_url,
-                    headers={"User-Agent": STREAM_UA, "Referer": str(resp.url)},
-                    timeout=10.0
-                )
-                if resp_hls.status_code == 200:
-                    found = extract_m3u8(resp_hls.text, base_url=hls_url)
-                    if found:
-                        return found
+                # পেজে সরাসরি m3u8 লিংক থাকলে নিয়ে নেওয়া
+                m3u8 = extract_m3u8(resp.text, base_url=str(resp.url))
+                if m3u8:
+                    return m3u8
 
-        except Exception as e:
-            log.debug(f"Chain resolution error: {e}")
+                # hls.php?stream=... এর প্যাটার্ন থাকলে সবার আগে কিউতে রাখা
+                hls_matches = re.findall(r'["\']([^"\']*hls\.php\?stream=[^"\']+)["\']', resp.text)
+                for hls_path in hls_matches:
+                    full_hls = urljoin(str(resp.url), hls_path)
+                    if full_hls not in visited:
+                        queue.insert(0, full_hls)
+
+                # আইফ্রেম ট্যাগ থাকলে সেগুলো কিউতে যুক্ত করা
+                soup = HTMLParser(resp.content)
+                for iframe in soup.css("iframe"):
+                    src = iframe.attributes.get("src", "")
+                    if src and not src.startswith("javascript:"):
+                        iframe_url = urljoin(str(resp.url), src)
+                        if iframe_url not in visited:
+                            if "hls.php" in iframe_url:
+                                queue.insert(0, iframe_url)  # hls.php কে অগ্রাধিকার
+                            else:
+                                queue.append(iframe_url)
+
+            except Exception:
+                pass
+
         return None
 
 def parse_cards_soup(soup: HTMLParser, source_page_url: str) -> list[ScrapedMatch]:
     raw_matches: list[ScrapedMatch] = []
-
-    # স্ক্রিনশটের আসল ট্যাগ: <article class="game-card-row">
     rows = soup.css("article.game-card-row, .game-card-row")
 
     for row in rows:
-        # ১. টাইটেল বের করা
         title = ""
-        # স্ক্রিনশট ৩ এ দেখা যাচ্ছে aria-label="Sources for Boston College Eagles vs. Georgia Tech Yellow Jackets"
         sources_div = row.css_first(".game-card-sources")
         if sources_div:
             label = sources_div.attributes.get("aria-label", "")
@@ -199,7 +192,6 @@ def parse_cards_soup(soup: HTMLParser, source_page_url: str) -> list[ScrapedMatc
             title = cleanup_text(t_elem.text()) if t_elem else ""
 
         if not title:
-            # টেক্সট থেকে vs খুঁজে টাইটেল বের করা
             for line in row.text().split("\n"):
                 cl = cleanup_text(line)
                 if "vs" in cl.lower() or " - " in cl:
@@ -211,16 +203,13 @@ def parse_cards_soup(soup: HTMLParser, source_page_url: str) -> list[ScrapedMatc
 
         title = cleanup_text(title)
 
-        # ২. টাইম বের করা
         time_node = row.css_first(".game-card-when, time, [class*='when']")
         time_str = cleanup_text(time_node.text()) if time_node else ""
         dt = parse_match_datetime(time_str)
 
-        # ৩. স্ট্যাটাস (লাইভ স্কোরবোর্ড থাকলে অথবা LIVE লেখা থাকলে)
         has_scoreboard = bool(row.css_first(".live-scoreboard, [class*='live-score']"))
         status = "LIVE" if (has_scoreboard or "LIVE" in row.text().upper()) else "UPCOMING"
 
-        # ৪. স্পোর্টস ক্যাটাগরি
         sport = "Sports"
         parent = row.parent
         while parent:
@@ -230,7 +219,6 @@ def parse_cards_soup(soup: HTMLParser, source_page_url: str) -> list[ScrapedMatc
                 break
             parent = parent.parent
 
-        # ৫. স্ক্রিনশট ২ ও ৩ এর আসল লিঙ্ক: <a class="game-card-open-link" href="/api/stream-link/iframe/...">
         links = []
         for a in row.css("a.game-card-open-link, a[href*='/api/stream-link/']"):
             href = a.attributes.get("href", "")
@@ -239,7 +227,6 @@ def parse_cards_soup(soup: HTMLParser, source_page_url: str) -> list[ScrapedMatc
                 if full_url not in links:
                     links.append(full_url)
 
-        # ৬. লোগো
         img = row.css_first("img")
         logo = urljoin(source_page_url, img.attributes.get("src")) if img and img.attributes.get("src") else None
 
@@ -253,7 +240,6 @@ def parse_cards_soup(soup: HTMLParser, source_page_url: str) -> list[ScrapedMatc
                 logo=logo
             ))
 
-    # ডুপ্লিকেশন দূর করা
     unique_matches: dict[str, ScrapedMatch] = {}
     for m in raw_matches:
         slug = create_slug(m.title)
@@ -269,8 +255,8 @@ def parse_cards_soup(soup: HTMLParser, source_page_url: str) -> list[ScrapedMatc
 async def scrape_all_sources(client: httpx.AsyncClient) -> list[ScrapedMatch]:
     PAGES_TO_TRY = [
         f"{BASE_URL}/game-cards",
-        f"{BASE_URL}/game-cards/embed",
-        "https://streamcenter.st/game-cards"
+        f"{ALT_URL}/game-cards",
+        f"{BASE_URL}/game-cards/embed"
     ]
 
     for target_url in PAGES_TO_TRY:
@@ -298,12 +284,12 @@ async def main():
         final_playlist = []
 
         for m in scraped_matches:
-            # সময় সেকেন্ড ছাড়া ফরম্যাট (যেমন: Oct 25, 2026, 01:30 AM)
+            # সেকেন্ড ছাড়া পারফেক্ট টাইম ফরম্যাট (যেমন: Oct 25, 2026, 01:30 AM)
             start_bst = m.start_dt.astimezone(BST_TZ)
             start_time_str = start_bst.strftime("%b %d, %Y, %I:%M %p")
             end_time_str = (start_bst + timedelta(hours=3)).strftime("%b %d, %Y, %I:%M %p")
 
-            # প্রতিটি ওপেন-লিঙ্কের রিডাইরেক্ট চেইন সমাধান করে আসল m3u8 আনা
+            # hls.php?stream=... পর্যন্ত পুরো চেইন সমাধান করে আসল edgestream m3u8 আনা
             tasks = [resolve_full_stream_chain(client, url) for url in m.stream_links]
             results = await asyncio.gather(*tasks)
 
@@ -365,7 +351,7 @@ async def main():
             encoding="utf-8"
         )
 
-        # M3U ফাইল সেভ
+        # M3U প্লেলিস্ট সেভ
         m3u_lines = ["#EXTM3U"]
         stream_count = 0
         for ev in final_playlist:
