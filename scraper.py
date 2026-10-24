@@ -42,7 +42,7 @@ log = logging.getLogger(TAG)
 class ScrapedMatch:
     sport: str
     title: str
-    site_status: str
+    row_text: str
     start_dt: datetime
     stream_links: list[str] = field(default_factory=list)
     team_a_logo: str | None = None
@@ -75,10 +75,7 @@ def parse_teams(title: str, team_a_logo: str | None = None, team_b_logo: str | N
     }
 
 def extract_match_datetime_from_row(row_elem) -> datetime:
-    """
-    পুরো রো স্ক্যান করে নিখুঁতভাবে খেলা শুরুর আসল সময় বের করে (যেমন: Oct 25, 2026, 8:15 AM)
-    """
-    # ১. <time datetime="..."> বা যেকোনো datetime অ্যাট্রিবিউট চেক করা
+    """পুরো রো স্ক্যান করে খেলা শুরুর আসল সময় বের করা"""
     for elem in row_elem.css("[datetime], time"):
         iso_val = elem.attributes.get("datetime", "").strip()
         if iso_val:
@@ -99,7 +96,6 @@ def extract_match_datetime_from_row(row_elem) -> datetime:
         except Exception:
             pass
 
-    # ২. পুরো রো-এর টেক্সট ক্লিন করে Regex দিয়ে তারিখ ও সময় আলাদা করা
     clean_txt = cleanup_text(row_elem.text())
     m = re.search(r'([A-Za-z]{3})\s+(\d{1,2}),?\s+(\d{4}),?\s+(\d{1,2}):(\d{2})\s*(AM|PM)?', clean_txt, re.IGNORECASE)
     if m:
@@ -120,28 +116,37 @@ def extract_match_datetime_from_row(row_elem) -> datetime:
                     hour += 12
                 elif ampm == "AM" and hour == 12:
                     hour = 0
-
-                # সাইটের রেন্ডার করা টাইম সরাসরি UTC-তে পার্স করা
                 return datetime(year, month, day, hour, minute, tzinfo=timezone.utc)
         except Exception:
             pass
 
     return datetime.now(timezone.utc)
 
-def calculate_match_status(start_dt: datetime, site_status: str, early_minutes: int = 15) -> str:
-    """ম্যাচ শুরুর ঠিক ১৫ মিনিট আগে স্ট্যাটাস LIVE হবে"""
+def calculate_match_status(start_dt: datetime, row_text: str, early_minutes: int = 15) -> str:
+    """
+    ১. মেইন সোর্সে ended/finish/final হলে কেবল ENDED হবে।
+    ২. শুরু হতে ১৫ মিনিটের বেশি বাকি থাকলে UPCOMING।
+    ৩. ১৫ মিনিট সময় এলে এবং সোর্সে শেষ না হওয়া পর্যন্ত LIVE থাকবে।
+    """
+    upper_txt = row_text.upper()
+
+    # ১. সোর্স চেক: খেলা কি সত্যি শেষ হয়েছে? (ENDED, FINISHED, FINAL, COMPLETED, FT)
+    is_ended_in_source = bool(
+        re.search(r'\b(ENDED|FINISHED|FINAL|COMPLETED|FULL[\s-]?TIME|\bFT\b)\b', upper_txt)
+    )
+    if is_ended_in_source:
+        return "ENDED"
+
     now_utc = datetime.now(timezone.utc)
     start_utc = start_dt.astimezone(timezone.utc)
+    live_start_window = start_utc - timedelta(minutes=early_minutes)
 
-    # শুরু হতে ১৫ মিনিটের বেশি বাকি থাকলে নিশ্চিতভাবে UPCOMING
-    if now_utc < (start_utc - timedelta(minutes=early_minutes)):
+    # ২. খেলা শুরুর ১৫ মিনিট আগে পর্যন্ত UPCOMING
+    if now_utc < live_start_window:
         return "UPCOMING"
 
-    # শুরু হওয়ার ১৫ মিনিট আগে থেকে পরবর্তী ৩ ঘণ্টা পর্যন্ত LIVE
-    if (start_utc - timedelta(minutes=early_minutes)) <= now_utc <= (start_utc + timedelta(hours=3, minutes=30)):
-        return "LIVE"
-
-    return "ENDED"
+    # ৩. ১৫ মিনিট পার হয়ে গেলে এবং সোর্সে শেষ না হওয়া পর্যন্ত LIVE থাকবে
+    return "LIVE"
 
 def extract_m3u8(text: str, base_url: str = "") -> str | None:
     if not text:
@@ -249,12 +254,7 @@ def parse_cards_soup(soup: HTMLParser, source_page_url: str) -> list[ScrapedMatc
             continue
 
         title = cleanup_text(title)
-
-        # পুরো রো থেকে আসল তারিখ ও সময় পার্স করা
         dt = extract_match_datetime_from_row(row)
-
-        row_txt = row.text().upper()
-        site_status = "SCHEDULED" if "SCHEDULED" in row_txt else ("LIVE" if "LIVE" in row_txt else "UPCOMING")
 
         sport = "Sports"
         parent = row.parent
@@ -291,7 +291,7 @@ def parse_cards_soup(soup: HTMLParser, source_page_url: str) -> list[ScrapedMatc
             raw_matches.append(ScrapedMatch(
                 sport=sport,
                 title=title,
-                site_status=site_status,
+                row_text=row.text(),
                 start_dt=dt,
                 stream_links=links,
                 team_a_logo=team_a_logo,
@@ -348,7 +348,6 @@ async def main():
         final_playlist = []
 
         for m in scraped_matches:
-            # বাংলাদেশ সময় অনুযায়ী সঠিক ফরম্যাট (যেমন: Oct 25, 2026, 08:15 AM)
             start_bst = m.start_dt.astimezone(BST_TZ)
             start_time_str = start_bst.strftime("%b %d, %Y, %I:%M %p")
             end_time_str = (start_bst + timedelta(hours=3)).strftime("%b %d, %Y, %I:%M %p")
@@ -376,8 +375,8 @@ async def main():
                     })
                     idx += 1
 
-            # সঠিক সময় ভিত্তিক স্ট্যাটাস (১৫ মিনিট আগের লজিক)
-            actual_status = calculate_match_status(m.start_dt, m.site_status, early_minutes=15)
+            # আপডেট করা স্ট্যাটাস লজিক (১৫ মিনিট আগে LIVE, এবং সোর্সে শেষ হলেই কেবল ENDED)
+            actual_status = calculate_match_status(m.start_dt, m.row_text, early_minutes=15)
 
             teams_data = parse_teams(m.title, team_a_logo=m.team_a_logo, team_b_logo=m.team_b_logo)
             primary_logo = m.team_a_logo or m.logo or m.team_b_logo
@@ -400,7 +399,7 @@ async def main():
                 "_timestamp": m.start_dt.timestamp()
             })
 
-        # সর্টিং: LIVE ম্যাচ সবার আগে, তারপর ক্রমান্বয়ে UPCOMING ম্যাচগুলো আসবে
+        # সর্টিং: LIVE ম্যাচ সবার আগে, তারপর ক্রমান্বয়ে UPCOMING এবং শেষে ENDED
         priority = {"LIVE": 0, "UPCOMING": 1, "ENDED": 2}
         final_playlist.sort(key=lambda x: (priority.get(x["status"], 99), x["_timestamp"]))
         for item in final_playlist:
