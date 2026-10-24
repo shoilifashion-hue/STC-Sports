@@ -5,7 +5,7 @@ import re
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import parse_qsl, urljoin, urlsplit
+from urllib.parse import urljoin, urlsplit
 from zoneinfo import ZoneInfo
 
 import httpx
@@ -15,23 +15,22 @@ from selectolax.lexbor import LexborHTMLParser as HTMLParser
 ROOT_DIR = Path(__file__).resolve().parent
 
 BASE_URL = "https://streamecenter.live"
-ALT_BASE = "https://streame.center"
+EMBED_REFERER = "https://embedcenter.st"
 TAG = "STRMCNTR"
 
 JSON_OUTPUT = ROOT_DIR / "strmcntr.json"
 M3U_OUTPUT = ROOT_DIR / "strmcntr.m3u"
 CACHE_DIR = ROOT_DIR / "caches"
-STATE_FILE = CACHE_DIR / "state.txt"
 
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
-UA = (
+# আপনার পছন্দের Chrome User-Agent
+STREAM_UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/134.0.0.0 Safari/537.36"
+    "Chrome/111.0.0.0 Safari/537.36"
 )
 
-# সার্ভার যাতে রেট-লিমিট বা ব্লক না করে সেজন্য সেমাফোর ১০ করা হলো
 HTTP_SEMAPHORE = asyncio.Semaphore(10)
 BST_TZ = ZoneInfo("Asia/Dhaka")
 
@@ -75,7 +74,6 @@ def parse_event_time(value: str) -> datetime | None:
         return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt
     except Exception:
         try:
-            # ইউনিক্স টাইমস্ট্যাম্প হ্যান্ডেল করার জন্য
             return datetime.fromtimestamp(float(value), tz=timezone.utc)
         except Exception:
             return None
@@ -98,42 +96,54 @@ def determine_status(start_dt: datetime, early_minutes: int = 15) -> str:
         return "UPCOMING"
     return "ENDED"
 
+def find_m3u8_in_text(text: str) -> str | None:
+    """JS বা HTML সোর্স কোড থেকে টোকেনসহ m3u8 লিংক খুঁজে বের করে"""
+    # JSON এসকেপড স্ল্যাশ (\/) স্বাভাবিক করা
+    clean_text = text.replace(r"\/", "/")
+    
+    # টোকেন ও কুয়েরি প্যারামিটারসহ m3u8 খোঁজার Regex
+    match = re.search(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/[^\s"\'<>\\]+?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
+    if match:
+        return match.group(1)
+    return None
+
 async def process_stream(client: httpx.AsyncClient, url: str) -> str | None:
+    """ইভেন্ট পেজ এবং প্রয়োজনে ভেতরের iframe থেকে সরাসরি টোকেনসহ রিয়েল m3u8 এক্সট্রাক্ট করে"""
     async with HTTP_SEMAPHORE:
         try:
-            # হেডার এবং টাইমআউট ১২ সেকেন্ড করা হলো
-            resp = await client.get(
-                url, 
-                headers={"Referer": BASE_URL, "User-Agent": UA}, 
-                timeout=12.0
-            )
+            resp = await client.get(url, headers={"Referer": BASE_URL, "User-Agent": STREAM_UA}, timeout=12.0)
             if resp.status_code != 200:
                 return None
 
-            stream_id = None
+            # ১. সরাসরি পেজের ভেতর m3u8 আছে কি না চেক
+            m3u8_url = find_m3u8_in_text(resp.text)
+            if m3u8_url:
+                return m3u8_url
+
+            # ২. যদি পেজের ভেতর iframe থাকে
             soup = HTMLParser(resp.content)
-            
-            # ১. HTML iframe খোঁজা
             iframe = soup.css_first("iframe")
-            if iframe:
-                src = iframe.attributes.get("src", "")
-                params = dict(parse_qsl(urlsplit(src).query))
-                stream_id = params.get("stream")
-
-            # ২. Regex ফলব্যাক (iframe না পেলে স্ক্রিপ্টের ভেতর stream= আইডি খোঁজা)
-            if not stream_id:
-                match = re.search(r'[\?&]stream=([a-zA-Z0-9_\-]+)', resp.text)
-                if match:
-                    stream_id = match.group(1)
-
-            if not stream_id:
+            if not iframe:
                 return None
 
-            return (
-                f"https://edgestream3.pro/stream/{stream_id}.m3u8"
-                if stream_id.isdigit()
-                else f"https://edgestream2.pro/hls/{stream_id}.m3u8"
+            src = iframe.attributes.get("src", "")
+            if not src:
+                return None
+
+            iframe_url = urljoin(url, src)
+
+            # ৩. iframe পেজ ফেচ করে ভেতরের রিয়েল স্ক্রিপ্ট থেকে টোকেনসহ m3u8 এক্সট্রাক্ট করা
+            resp_iframe = await client.get(
+                iframe_url,
+                headers={"Referer": url, "User-Agent": STREAM_UA},
+                timeout=12.0
             )
+            if resp_iframe.status_code == 200:
+                m3u8_url = find_m3u8_in_text(resp_iframe.text)
+                if m3u8_url:
+                    return m3u8_url
+
+            return None
         except Exception:
             return None
 
@@ -142,7 +152,6 @@ async def get_raw_events(client: httpx.AsyncClient) -> list[RawEvent]:
     try:
         resp = await client.get(urljoin(BASE_URL, "game-cards/embed"), timeout=15.0)
         if resp.status_code != 200:
-            log.error(f"Embed page failed with status: {resp.status_code}")
             return events
 
         soup = HTMLParser(resp.content)
@@ -165,8 +174,6 @@ async def get_raw_events(client: httpx.AsyncClient) -> list[RawEvent]:
                     continue
 
                 event_dt_utc = event_dt.astimezone(timezone.utc)
-                
-                # অতীত ৩ ঘণ্টা থেকে পরবর্তী ৪৮ ঘণ্টার ইভেন্ট নেওয়া হচ্ছে
                 if event_dt_utc < (now_utc - timedelta(hours=3)) or event_dt_utc > (now_utc + timedelta(hours=48)):
                     continue
 
@@ -199,7 +206,7 @@ async def get_raw_events(client: httpx.AsyncClient) -> list[RawEvent]:
 
 async def main():
     log.info("Starting one-time playlist generation...")
-    async with httpx.AsyncClient(headers={"User-Agent": UA}, follow_redirects=True, http2=True) as client:
+    async with httpx.AsyncClient(headers={"User-Agent": STREAM_UA}, follow_redirects=True, http2=True) as client:
         raw_events = await get_raw_events(client)
         if not raw_events:
             log.warning("No events found!")
@@ -214,19 +221,25 @@ async def main():
             event_channels = []
             for src, m3u8_url in zip(ev.sources, results):
                 if m3u8_url:
+                    # আপনার দেওয়া ফরম্যাট অনুযায়ী হেডার পাইপলাইন তৈরি
+                    raw_link = f"{m3u8_url}|User-Agent={STREAM_UA}&Referer={EMBED_REFERER}&Origin={EMBED_REFERER}"
+                    
                     event_channels.append({
                         "channel_name": f"{src.name} Stream",
                         "stream_type": "HLS",
                         "url": m3u8_url,
-                        "raw_link": f"{m3u8_url}|Referer={ALT_BASE}",
-                        "headers": {"Referer": ALT_BASE},
+                        "raw_link": raw_link,
+                        "headers": {
+                            "User-Agent": STREAM_UA,
+                            "Referer": EMBED_REFERER,
+                            "Origin": EMBED_REFERER
+                        },
                         "drm_key": None
                     })
 
             start_bst = ev.start_dt.astimezone(BST_TZ)
             status = determine_status(ev.start_dt, early_minutes=15)
 
-            # স্ট্রিম পেলেই শুধু প্লেলিস্টে যাবে, তবে আপকামিং ইভেন্টও যেন JSON-এ থাকে তাই যোগ করা হচ্ছে
             if event_channels or status == "UPCOMING":
                 final_playlist.append({
                     "title": ev.title,
@@ -251,7 +264,7 @@ async def main():
         for item in final_playlist:
             item.pop("_timestamp", None)
 
-        # JSON ফাইল সেভ
+        # JSON সেভ
         JSON_OUTPUT.write_text(
             json.dumps(
                 {
@@ -265,16 +278,20 @@ async def main():
             encoding="utf-8"
         )
         
-        # M3U ফাইল সেভ (শুধুমাত্র যাদের সক্রিয় চ্যানেল লিংক আছে)
+        # M3U ফাইল সেভ (হুবহু আপনার দেওয়া ফরম্যাটে তৈরি)
         m3u_lines = ["#EXTM3U"]
         for ev in final_playlist:
             for ch in ev.get("channels", []):
-                m3u_lines.append(f'#EXTINF:-1 tvg-logo="{ev["logo"] or ""}" group-title="{ev["sport"]}",[{ev["sport"]}] {ev["title"]} | {ch["channel_name"]}')
-                m3u_lines.append(f'#EXTVLCOPT:http-referrer={ALT_BASE}\n{ch["url"]}')
+                tvg_logo = ev["logo"] or ""
+                # আপনার দেওয়া স্ট্যান্ডার্ড লাইন ফরম্যাট
+                m3u_lines.append(f'#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="{tvg_logo}" group-title="{ev["sport"]}", {ev["title"]} | {ch["channel_name"]}')
+                m3u_lines.append(f'#EXTVLCOPT:http-referrer={EMBED_REFERER}')
+                m3u_lines.append(f'#EXTVLCOPT:http-user-agent={STREAM_UA}')
+                m3u_lines.append(ch["raw_link"])
                 
         M3U_OUTPUT.write_text("\n".join(m3u_lines) + "\n", encoding="utf-8")
         
-        log.info(f"Done! Successfully generated {len(final_playlist)} events in JSON. Exiting.")
+        log.info(f"Done! Saved {len(final_playlist)} events to JSON and M3U. Exiting.")
 
 if __name__ == "__main__":
     asyncio.run(main())
