@@ -1,6 +1,6 @@
 {
-  "last_updated": "Oct 24, 2026, 05:45:40 AM",
-  "event_count": 21,
+  "last_updated": "Oct 24, 2026, 06:15:47 AM",
+  "event_count": 20,
   "events": {
     "events": [
       {
@@ -166,40 +166,6 @@
             "stream_type": "HLS",
             "url": "https://edgestream2.pro/hls/zayrtezafgvdv68.m3u8",
             "raw_link": "https://edgestream2.pro/hls/zayrtezafgvdv68.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Minnesota Timberwolvesvs.Orlando Magic",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "minnesota-timberwolvesvs-orlando-magic",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 05:00:00 AM",
-          "end_time_bst": "Oct 24, 2026, 08:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Minnesota Timberwolvesvs.Orlando Magic"
-          },
-          "team_b": {
-            "name": "Minnesota Timberwolvesvs.Orlando Magic"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/1f813ba9-db28-4662-a801-cccecea4dcff.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/zeafwqvhfe69.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/zeafwqvhfe69.m3u8|Referer=https://streame.center",
             "headers": {
               "Referer": "https://streame.center"
             },
@@ -381,7 +347,7 @@
         "title": "Army Black Knightsvs.Tulsa Golden Hurricane",
         "sport": "American Football",
         "sub_category": "American Football",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "army-black-knightsvs-tulsa-golden-hurricane",
         "schedule": {
