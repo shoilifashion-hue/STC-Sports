@@ -1,42 +1,8 @@
 {
-  "last_updated": "Oct 24, 2026, 11:27:17 AM",
-  "event_count": 2,
+  "last_updated": "Oct 24, 2026, 11:32:22 AM",
+  "event_count": 1,
   "events": {
     "events": [
-      {
-        "title": "NC State Wolfpackvs.Stanford Cardinal",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "nc-state-wolfpackvs-stanford-cardinal",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 08:30:00 AM",
-          "end_time_bst": "Oct 24, 2026, 11:30:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "NC State Wolfpackvs.Stanford Cardinal"
-          },
-          "team_b": {
-            "name": "NC State Wolfpackvs.Stanford Cardinal"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/202ac68f-11ee-4cb1-91d5-da28b913945d.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/uheyztezgj34.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/uheyztezgj34.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "Miami Heatvs.Charlotte Hornets",
         "sport": "Basketball",

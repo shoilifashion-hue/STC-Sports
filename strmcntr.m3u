@@ -1,7 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/202ac68f-11ee-4cb1-91d5-da28b913945d.webp" group-title="American Football",[American Football] NC State Wolfpackvs.Stanford Cardinal | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/uheyztezgj34.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/3967b4fa-d3db-4c52-8523-bece9b205c5e.webp" group-title="Basketball",[Basketball] Miami Heatvs.Charlotte Hornets | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/mlkijfezag65.m3u8
