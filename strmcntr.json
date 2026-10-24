@@ -1,6 +1,6 @@
 {
-  "last_updated": "Oct 25, 2026, 02:54 AM",
-  "event_count": 55,
+  "last_updated": "Oct 25, 2026, 03:02 AM",
+  "event_count": 54,
   "events": {
     "events": [
       {
@@ -12,8 +12,8 @@
         "slug": "ufc-333-volkano-vs-ki-vs-evloev",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -50,8 +50,8 @@
         "slug": "espn-news",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -68,8 +68,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/xscqqza8740.m3u8?st=Ykvl8o0k9U1REFe2L7hRFPXND7OQGTx4NOILHlSa92k",
-            "raw_link": "https://edgestream5.pro/hls/xscqqza8740.m3u8?st=Ykvl8o0k9U1REFe2L7hRFPXND7OQGTx4NOILHlSa92k|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/xscqqza8740.m3u8?st=juk5gk3GNYtolNsHA13RgBH08QwU5QcLXHfvHC_-7Ew",
+            "raw_link": "https://edgestream2.pro/hls/xscqqza8740.m3u8?st=juk5gk3GNYtolNsHA13RgBH08QwU5QcLXHfvHC_-7Ew|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -88,8 +88,8 @@
         "slug": "espn2",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -106,46 +106,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/okhrtofm78.m3u8?st=fQIUY35zr1yiCQWwthjy-8UquHBv1b6xf4-tjUBZVa8",
-            "raw_link": "https://edgestream5.pro/hls/okhrtofm78.m3u8?st=fQIUY35zr1yiCQWwthjy-8UquHBv1b6xf4-tjUBZVa8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Baylor Bears vs. Kansas Jayhawks",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "baylor-bears-vs-kansas-jayhawks",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Baylor Bears",
-            "logo": "https://streamcenter.st/api/images/badge/35a17779-6184-4bb0-8a21-4f5939f9616d.webp"
-          },
-          "team_b": {
-            "name": "Kansas Jayhawks",
-            "logo": "https://streamcenter.st/api/images/badge/3935e301-0134-4769-ac40-3788a8e5cde6.webp"
-          }
-        },
-        "logo": "https://streamcenter.st/api/images/badge/35a17779-6184-4bb0-8a21-4f5939f9616d.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/kjhfzua25.m3u8?st=gvzis-aDaD35MB6_FmZk-qcx0trWyniqU2CwvvjMykA",
-            "raw_link": "https://edgestream5.pro/hls/kjhfzua25.m3u8?st=gvzis-aDaD35MB6_FmZk-qcx0trWyniqU2CwvvjMykA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/okhrtofm78.m3u8?st=oABDPqPCO6guSsp_v82263Jv1Hxlrhy5H14jpjDk5dA",
+            "raw_link": "https://edgestream2.pro/hls/okhrtofm78.m3u8?st=oABDPqPCO6guSsp_v82263Jv1Hxlrhy5H14jpjDk5dA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -164,8 +126,8 @@
         "slug": "oregon-ducks-vs-illinois-fighting-illini",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -182,8 +144,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/dzjhkfazbka26.m3u8?st=5X8ZmXEFNHBaGaW_5Tm-bgczpsHDCpc3PyiYLi-ftrA",
-            "raw_link": "https://edgestream7.pro/hls/dzjhkfazbka26.m3u8?st=5X8ZmXEFNHBaGaW_5Tm-bgczpsHDCpc3PyiYLi-ftrA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/dzjhkfazbka26.m3u8?st=BqTfraqubx1ugjqvYTVNussw_62ar62oUQXY7_DTTWg",
+            "raw_link": "https://edgestream2.pro/hls/dzjhkfazbka26.m3u8?st=BqTfraqubx1ugjqvYTVNussw_62ar62oUQXY7_DTTWg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -202,8 +164,8 @@
         "slug": "texas-a-m-aggies-vs-alabama-crimson-tide",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -220,8 +182,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/jzabfazkbf27.m3u8?st=GfLo37D6B0cNdwqVVEEBWVjLW-1L280iVDEkK7gxlJ4",
-            "raw_link": "https://edgestream7.pro/hls/jzabfazkbf27.m3u8?st=GfLo37D6B0cNdwqVVEEBWVjLW-1L280iVDEkK7gxlJ4|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/jzabfazkbf27.m3u8?st=_nV8Fznx0Q4952q7OjlYVoM7Hyaa2FcXIFG5qkZkFzs",
+            "raw_link": "https://edgestream2.pro/hls/jzabfazkbf27.m3u8?st=_nV8Fznx0Q4952q7OjlYVoM7Hyaa2FcXIFG5qkZkFzs|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -240,8 +202,8 @@
         "slug": "oklahoma-sooners-vs-mississippi-state-bulldogs",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -258,8 +220,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/hefbafbakx28.m3u8?st=4Rl83xBM48NPlItZIsFQbtwOccqGDfcPqoSWsTb2IM4",
-            "raw_link": "https://edgestream7.pro/hls/hefbafbakx28.m3u8?st=4Rl83xBM48NPlItZIsFQbtwOccqGDfcPqoSWsTb2IM4|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/hefbafbakx28.m3u8?st=tNoKYGgJpDFsnID5wXzu34ufuQqb5nLC__QB1HTY1Qw",
+            "raw_link": "https://edgestream6.pro/hls/hefbafbakx28.m3u8?st=tNoKYGgJpDFsnID5wXzu34ufuQqb5nLC__QB1HTY1Qw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -278,8 +240,8 @@
         "slug": "tennessee-volunteers-vs-south-carolina-gamecocks",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -296,8 +258,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/hfzljfahzcax29.m3u8?st=D9DPtHbr71Hyq0AinS19ct3dONIqsyb074vFc5cJ-Os",
-            "raw_link": "https://edgestream5.pro/hls/hfzljfahzcax29.m3u8?st=D9DPtHbr71Hyq0AinS19ct3dONIqsyb074vFc5cJ-Os|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/hfzljfahzcax29.m3u8?st=lEuHFwfczmzBrsYZd4HSVbY67UGFz26E0HheHqgJQ5g",
+            "raw_link": "https://edgestream6.pro/hls/hfzljfahzcax29.m3u8?st=lEuHFwfczmzBrsYZd4HSVbY67UGFz26E0HheHqgJQ5g|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -316,8 +278,8 @@
         "slug": "byu-cougars-vs-ucf-knights",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -334,8 +296,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/JHDAJBDnjdna30.m3u8?st=EE4viVsOLd7E2j93vO9Ybpm_oUhkiviYqKHX1UY3CrE",
-            "raw_link": "https://edgestream5.pro/hls/JHDAJBDnjdna30.m3u8?st=EE4viVsOLd7E2j93vO9Ybpm_oUhkiviYqKHX1UY3CrE|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/JHDAJBDnjdna30.m3u8?st=k6HHjrNAZL2z18ZtJqRKRbDKoDCGs1Xx-OPdM1R5gTY",
+            "raw_link": "https://edgestream6.pro/hls/JHDAJBDnjdna30.m3u8?st=k6HHjrNAZL2z18ZtJqRKRbDKoDCGs1Xx-OPdM1R5gTY|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -354,8 +316,8 @@
         "slug": "boston-college-eagles-vs-georgia-tech-yellow-jackets",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -372,8 +334,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/sfjnzabacah31.m3u8?st=A5LcHKwgOkldB8VObYdzUeJiJYJpJbkK58cavXn5Adc",
-            "raw_link": "https://edgestream5.pro/hls/sfjnzabacah31.m3u8?st=A5LcHKwgOkldB8VObYdzUeJiJYJpJbkK58cavXn5Adc|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/sfjnzabacah31.m3u8?st=vBNpda58e9ps0v1CDbMUHyxCc5Omzn7ZQXMRUYIjNw8",
+            "raw_link": "https://edgestream2.pro/hls/sfjnzabacah31.m3u8?st=vBNpda58e9ps0v1CDbMUHyxCc5Omzn7ZQXMRUYIjNw8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -392,8 +354,8 @@
         "slug": "iowa-hawkeyes-vs-minnesota-golden-gophers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -410,8 +372,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/qsdnajbq32.m3u8?st=FuTrCC9Q-esgWSQGUU7eKhQMvO34BXahJ1OFPB5UbCM",
-            "raw_link": "https://edgestream5.pro/hls/qsdnajbq32.m3u8?st=FuTrCC9Q-esgWSQGUU7eKhQMvO34BXahJ1OFPB5UbCM|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/qsdnajbq32.m3u8?st=_pykprb6kiohuiXXjqIo7TNFjkRDF7GfENEQrrORCNY",
+            "raw_link": "https://edgestream2.pro/hls/qsdnajbq32.m3u8?st=_pykprb6kiohuiXXjqIo7TNFjkRDF7GfENEQrrORCNY|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -430,8 +392,8 @@
         "slug": "michigan-state-spartans-vs-ucla-bruins",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -448,8 +410,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/oipozuezeji33.m3u8?st=grER-EMoPCQvk_yCWUAL82A9xTFTvMrUtQcypTn2IPM",
-            "raw_link": "https://edgestream5.pro/hls/oipozuezeji33.m3u8?st=grER-EMoPCQvk_yCWUAL82A9xTFTvMrUtQcypTn2IPM|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/oipozuezeji33.m3u8?st=6_SGTQDBN6JzBFCBpf7hW0IcD_LqckBhViVBJbAHNpE",
+            "raw_link": "https://edgestream2.pro/hls/oipozuezeji33.m3u8?st=6_SGTQDBN6JzBFCBpf7hW0IcD_LqckBhViVBJbAHNpE|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -468,8 +430,8 @@
         "slug": "hawai-i-rainbow-warriors-vs-northern-illinois-huskies",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -486,8 +448,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/uheyztezgj34.m3u8?st=17IBmD6CziKekn3Yz7EBP7171r9n_GNk-Nc-sv1O_OY",
-            "raw_link": "https://edgestream5.pro/hls/uheyztezgj34.m3u8?st=17IBmD6CziKekn3Yz7EBP7171r9n_GNk-Nc-sv1O_OY|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/uheyztezgj34.m3u8?st=NZ5XQLRKfs6zuv3Ir3nA2NdN2w4KBiccFtlRdfNAW5E",
+            "raw_link": "https://edgestream2.pro/hls/uheyztezgj34.m3u8?st=NZ5XQLRKfs6zuv3Ir3nA2NdN2w4KBiccFtlRdfNAW5E|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -506,8 +468,8 @@
         "slug": "kansas-state-wildcats-vs-arizona-state-sun-devils",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -524,8 +486,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/jnknjfzbk35.m3u8?st=MSsnxNpAf1785yDQyxzvr_oS2B_uLZl8rLAnGb6BKKI",
-            "raw_link": "https://edgestream5.pro/hls/jnknjfzbk35.m3u8?st=MSsnxNpAf1785yDQyxzvr_oS2B_uLZl8rLAnGb6BKKI|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/jnknjfzbk35.m3u8?st=BihFP1joeNZ3zQ54tOTQdhf5SH2pfNK7HOToQoGzkBE",
+            "raw_link": "https://edgestream2.pro/hls/jnknjfzbk35.m3u8?st=BihFP1joeNZ3zQ54tOTQdhf5SH2pfNK7HOToQoGzkBE|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -544,8 +506,8 @@
         "slug": "eastern-michigan-eagles-vs-ohio-bobcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -562,8 +524,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/dsqhjbjhsqd81.m3u8?st=7INeVSJnAJ3s4CbMXSw4ASAG5sgyqz2gumDlMd4jT3U",
-            "raw_link": "https://edgestream2.pro/hls/dsqhjbjhsqd81.m3u8?st=7INeVSJnAJ3s4CbMXSw4ASAG5sgyqz2gumDlMd4jT3U|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/dsqhjbjhsqd81.m3u8?st=hMrG2oIu-YXp_MEWLCr_g39Pp8JZKggvwe71IN7NqZg",
+            "raw_link": "https://edgestream2.pro/hls/dsqhjbjhsqd81.m3u8?st=hMrG2oIu-YXp_MEWLCr_g39Pp8JZKggvwe71IN7NqZg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -582,8 +544,8 @@
         "slug": "san-josé-state-spartans-vs-nevada-wolf-pack",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -600,8 +562,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/iozauyezaioyur82.m3u8?st=ZqE67hIOzdr8T5mgcdqq7IfYQqjjJeFJrIu3_wFXMTw",
-            "raw_link": "https://edgestream2.pro/hls/iozauyezaioyur82.m3u8?st=ZqE67hIOzdr8T5mgcdqq7IfYQqjjJeFJrIu3_wFXMTw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/iozauyezaioyur82.m3u8?st=QFoZx033T_YPuEMOeMDUambgzDFAd9Bupd1qA_zEkaY",
+            "raw_link": "https://edgestream6.pro/hls/iozauyezaioyur82.m3u8?st=QFoZx033T_YPuEMOeMDUambgzDFAd9Bupd1qA_zEkaY|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -620,8 +582,8 @@
         "slug": "boise-state-broncos-vs-washington-state-cougars",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -638,8 +600,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/nbekiurtghjhfza83.m3u8?st=kxaFw1dS7YmmWpGhn4KnBsyyvcdkMNxPfNuYxglJuJA",
-            "raw_link": "https://edgestream5.pro/hls/nbekiurtghjhfza83.m3u8?st=kxaFw1dS7YmmWpGhn4KnBsyyvcdkMNxPfNuYxglJuJA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/nbekiurtghjhfza83.m3u8?st=kZ8okc562ipwh0dXtskZNZXG0V8-yUptNsD46XGCZFY",
+            "raw_link": "https://edgestream6.pro/hls/nbekiurtghjhfza83.m3u8?st=kZ8okc562ipwh0dXtskZNZXG0V8-yUptNsD46XGCZFY|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -658,8 +620,8 @@
         "slug": "san-diego-state-aztecs-vs-colorado-state-rams",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -676,8 +638,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/ioazuryeahrfvzed84.m3u8?st=EO_5CwHCaf9dLe_P397xlqcYrEL76VqsSECzuUnYwqg",
-            "raw_link": "https://edgestream5.pro/hls/ioazuryeahrfvzed84.m3u8?st=EO_5CwHCaf9dLe_P397xlqcYrEL76VqsSECzuUnYwqg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/ioazuryeahrfvzed84.m3u8?st=fNwc3_tsag0mV-ZFwuKjamBO1fB4JpYaTfZn4Gx0Hig",
+            "raw_link": "https://edgestream2.pro/hls/ioazuryeahrfvzed84.m3u8?st=fNwc3_tsag0mV-ZFwuKjamBO1fB4JpYaTfZn4Gx0Hig|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -696,8 +658,8 @@
         "slug": "colorado-buffaloes-vs-oklahoma-state-cowboys",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -714,8 +676,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/jkhfsgqghjqsd85.m3u8?st=f0-Lq6yZUTtxugOXnEtuIWCvsnq20Te428S3R9PgPuw",
-            "raw_link": "https://edgestream5.pro/hls/jkhfsgqghjqsd85.m3u8?st=f0-Lq6yZUTtxugOXnEtuIWCvsnq20Te428S3R9PgPuw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/jkhfsgqghjqsd85.m3u8?st=Wz8Ke4yBSzzgJGmw037lnIT3UrBtvt6BnvpjKJI45DI",
+            "raw_link": "https://edgestream2.pro/hls/jkhfsgqghjqsd85.m3u8?st=Wz8Ke4yBSzzgJGmw037lnIT3UrBtvt6BnvpjKJI45DI|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -734,8 +696,8 @@
         "slug": "virginia-tech-hokies-vs-clemson-tigers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -752,8 +714,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/xcxvvghzsadau86.m3u8?st=YVeqWYqhtcynTFEMYMjebBwiDZ479cEx3ewCuEx7zH8",
-            "raw_link": "https://edgestream2.pro/hls/xcxvvghzsadau86.m3u8?st=YVeqWYqhtcynTFEMYMjebBwiDZ479cEx3ewCuEx7zH8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream4.pro/hls/xcxvvghzsadau86.m3u8?st=Su3xWeXEHuazScGIRI5JZHqZ_vHkSPWD015wGH9eczs",
+            "raw_link": "https://edgestream4.pro/hls/xcxvvghzsadau86.m3u8?st=Su3xWeXEHuazScGIRI5JZHqZ_vHkSPWD015wGH9eczs|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -772,8 +734,8 @@
         "slug": "vanderbilt-commodores-vs-kentucky-wildcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -790,8 +752,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/nbvevzaheafgu87.m3u8?st=GtLaAJzM12mWZ-w5EqZdqCigsXDsWIh0pWB6tDSZfiE",
-            "raw_link": "https://edgestream2.pro/hls/nbvevzaheafgu87.m3u8?st=GtLaAJzM12mWZ-w5EqZdqCigsXDsWIh0pWB6tDSZfiE|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/nbvevzaheafgu87.m3u8?st=qbNLUhCXJz3ZXuONJAmZC9kjGGTOxRVAzc9y-U8b_o0",
+            "raw_link": "https://edgestream2.pro/hls/nbvevzaheafgu87.m3u8?st=qbNLUhCXJz3ZXuONJAmZC9kjGGTOxRVAzc9y-U8b_o0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -810,8 +772,8 @@
         "slug": "ole-miss-rebels-vs-texas-longhorns",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -828,8 +790,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/fghsqdgauduyagz88.m3u8?st=FdnYXdO3hUErnHkXhZPZMX8GBpup_UOwoOUVeE6Y7ls",
-            "raw_link": "https://edgestream2.pro/hls/fghsqdgauduyagz88.m3u8?st=FdnYXdO3hUErnHkXhZPZMX8GBpup_UOwoOUVeE6Y7ls|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream4.pro/hls/fghsqdgauduyagz88.m3u8?st=UcPdLwHqm70bVg8S8sFHPiU32TXlApYkYQj9HCoWb8A",
+            "raw_link": "https://edgestream4.pro/hls/fghsqdgauduyagz88.m3u8?st=UcPdLwHqm70bVg8S8sFHPiU32TXlApYkYQj9HCoWb8A|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -848,8 +810,8 @@
         "slug": "iowa-state-cyclones-vs-arizona-wildcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -866,8 +828,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/ozeiruzhurfxcwas89.m3u8?st=aKQYcOgoEwg4RzWZ-Iij4f2f6DdKJwB0nDJiOLK7Hxk",
-            "raw_link": "https://edgestream2.pro/hls/ozeiruzhurfxcwas89.m3u8?st=aKQYcOgoEwg4RzWZ-Iij4f2f6DdKJwB0nDJiOLK7Hxk|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/ozeiruzhurfxcwas89.m3u8?st=j-5JlccezyPfl4O15ntArbOGarYUk8HafpusJzqbJ0k",
+            "raw_link": "https://edgestream2.pro/hls/ozeiruzhurfxcwas89.m3u8?st=j-5JlccezyPfl4O15ntArbOGarYUk8HafpusJzqbJ0k|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -886,8 +848,8 @@
         "slug": "syracuse-orange-vs-north-carolina-tar-heels",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -904,8 +866,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/dzaugyvdgazc90.m3u8?st=jxVJLR7UbJjsi8y8kRNlbluwUoHolzNovjhxvBo2AZM",
-            "raw_link": "https://edgestream7.pro/hls/dzaugyvdgazc90.m3u8?st=jxVJLR7UbJjsi8y8kRNlbluwUoHolzNovjhxvBo2AZM|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/dzaugyvdgazc90.m3u8?st=1Irdc0e_tBwez7TFTqBkGH2yuVLKxussxA1qlQR2_Zw",
+            "raw_link": "https://edgestream6.pro/hls/dzaugyvdgazc90.m3u8?st=1Irdc0e_tBwez7TFTqBkGH2yuVLKxussxA1qlQR2_Zw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -924,8 +886,8 @@
         "slug": "usc-trojans-vs-wisconsin-badgers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -942,8 +904,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/fbnjzebjhcazhjg91.m3u8?st=sDDHBb_GZSaNz0HrK-kcqkl--xSiVxM15rWdiLvVHmI",
-            "raw_link": "https://edgestream7.pro/hls/fbnjzebjhcazhjg91.m3u8?st=sDDHBb_GZSaNz0HrK-kcqkl--xSiVxM15rWdiLvVHmI|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/fbnjzebjhcazhjg91.m3u8?st=rRKhr5Ybt-xMNfU-kuR6Rt0EH3sghFkk6WIdFXky_0g",
+            "raw_link": "https://edgestream6.pro/hls/fbnjzebjhcazhjg91.m3u8?st=rRKhr5Ybt-xMNfU-kuR6Rt0EH3sghFkk6WIdFXky_0g|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -962,8 +924,8 @@
         "slug": "utah-state-aggies-vs-texas-state-bobcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -980,8 +942,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/xwcbnfghqscxfghaz92.m3u8?st=0d2awFwbIl0ku-y_eat0UDNYJqvsGNySOYx938HLNAM",
-            "raw_link": "https://edgestream7.pro/hls/xwcbnfghqscxfghaz92.m3u8?st=0d2awFwbIl0ku-y_eat0UDNYJqvsGNySOYx938HLNAM|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/xwcbnfghqscxfghaz92.m3u8?st=szlW9v5MbiMwEJPf7ubaa92DJiQuJORLHjUAmIg5bdM",
+            "raw_link": "https://edgestream6.pro/hls/xwcbnfghqscxfghaz92.m3u8?st=szlW9v5MbiMwEJPf7ubaa92DJiQuJORLHjUAmIg5bdM|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1000,8 +962,8 @@
         "slug": "utsa-roadrunners-vs-tulane-green-wave",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1018,8 +980,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/etzrezbfezjhverf93.m3u8?st=JmqaE4UJvrpjyZ2De8BPEGWpWhdZ4bEgHxb5la9zJ4U",
-            "raw_link": "https://edgestream5.pro/hls/etzrezbfezjhverf93.m3u8?st=JmqaE4UJvrpjyZ2De8BPEGWpWhdZ4bEgHxb5la9zJ4U|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/etzrezbfezjhverf93.m3u8?st=L9M4hW8om-oXxlUQOLQEyzR_ACCgzOxxujAU0biPGHs",
+            "raw_link": "https://edgestream2.pro/hls/etzrezbfezjhverf93.m3u8?st=L9M4hW8om-oXxlUQOLQEyzR_ACCgzOxxujAU0biPGHs|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1038,8 +1000,8 @@
         "slug": "north-dakota-state-bison-vs-new-mexico-lobos",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1052,20 +1014,7 @@
           }
         },
         "logo": "https://streamcenter.st/api/images/badge/13c072f5-aa6c-4b3c-a03e-ecb0217b93d8.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/fgjhvebazfhgazf94.m3u8?st=CjMxdRU2OY2rRjq7SX9qsinzYxNZ94umghoXRQkCw4o",
-            "raw_link": "https://edgestream5.pro/hls/fgjhvebazfhgazf94.m3u8?st=CjMxdRU2OY2rRjq7SX9qsinzYxNZ94umghoXRQkCw4o|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "channels": []
       },
       {
         "title": "Houston Cougars vs. Utah Utes",
@@ -1076,8 +1025,8 @@
         "slug": "houston-cougars-vs-utah-utes",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1094,8 +1043,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/hgfdshkjsqkda95.m3u8?st=50qDrxMycHoWklTc42Mtj_9xDPBPT9mMEvv_FXGppuY",
-            "raw_link": "https://edgestream5.pro/hls/hgfdshkjsqkda95.m3u8?st=50qDrxMycHoWklTc42Mtj_9xDPBPT9mMEvv_FXGppuY|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/hgfdshkjsqkda95.m3u8?st=rXpBuTjDIp7KliiYq4OUWIjuNEjXRVYR2x0l2UZA20s",
+            "raw_link": "https://edgestream2.pro/hls/hgfdshkjsqkda95.m3u8?st=rXpBuTjDIp7KliiYq4OUWIjuNEjXRVYR2x0l2UZA20s|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1114,8 +1063,8 @@
         "slug": "lens-vs-paris-fc",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1132,8 +1081,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/dza5z8f69.m3u8?st=O-jLUKAU2gH-Hr1ooSB3PMeu_pUcKYsta1dbbFKJEjM",
-            "raw_link": "https://edgestream5.pro/hls/dza5z8f69.m3u8?st=O-jLUKAU2gH-Hr1ooSB3PMeu_pUcKYsta1dbbFKJEjM|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/dza5z8f69.m3u8?st=r6XFI0-HUNfuG7CLfHCE-BZxDliyfi9iNGIMs5iZI80",
+            "raw_link": "https://edgestream2.pro/hls/dza5z8f69.m3u8?st=r6XFI0-HUNfuG7CLfHCE-BZxDliyfi9iNGIMs5iZI80|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1152,8 +1101,8 @@
         "slug": "lazio-vs-parma",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1170,8 +1119,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/syaLqucEne4k.m3u8?st=ADk2ZOgMLkO9CKqGAhWh0SYOA1hxgjzI_SUx_ldahjM",
-            "raw_link": "https://edgestream5.pro/hls/syaLqucEne4k.m3u8?st=ADk2ZOgMLkO9CKqGAhWh0SYOA1hxgjzI_SUx_ldahjM|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/syaLqucEne4k.m3u8?st=ZMVcvFXSmLV1mhnJuwQDGh9B0NwmMROxE8BDsZi5e_s",
+            "raw_link": "https://edgestream2.pro/hls/syaLqucEne4k.m3u8?st=ZMVcvFXSmLV1mhnJuwQDGh9B0NwmMROxE8BDsZi5e_s|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1190,8 +1139,8 @@
         "slug": "atlético-madrid-vs-deportivo",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1208,8 +1157,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/377qj1h2727.m3u8?st=3j1fUqzEISd31y7oPDpF6bgeDroyzHXb8VWt20ydrTA",
-            "raw_link": "https://edgestream5.pro/hls/377qj1h2727.m3u8?st=3j1fUqzEISd31y7oPDpF6bgeDroyzHXb8VWt20ydrTA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/377qj1h2727.m3u8?st=QZMiDVlrtNGU146XcW3w3_jPxJgS4CpaGjGlsqpEb_U",
+            "raw_link": "https://edgestream2.pro/hls/377qj1h2727.m3u8?st=QZMiDVlrtNGU146XcW3w3_jPxJgS4CpaGjGlsqpEb_U|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1228,8 +1177,8 @@
         "slug": "miami-heat-vs-charlotte-hornets",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1246,8 +1195,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/mlkijfezag65.m3u8?st=obO7FIywmSChZq_J4SAdtns_bhRqydXxbg-mSPzQhMc",
-            "raw_link": "https://edgestream5.pro/hls/mlkijfezag65.m3u8?st=obO7FIywmSChZq_J4SAdtns_bhRqydXxbg-mSPzQhMc|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/mlkijfezag65.m3u8?st=O5MDi8N3kpv0qlZXZBiaFuEknlXcvyroZV7pzNvYHUM",
+            "raw_link": "https://edgestream6.pro/hls/mlkijfezag65.m3u8?st=O5MDi8N3kpv0qlZXZBiaFuEknlXcvyroZV7pzNvYHUM|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1266,8 +1215,8 @@
         "slug": "brooklyn-nets-vs-cleveland-cavaliers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1284,8 +1233,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/wfazgsqtrezu66.m3u8?st=HwN8_T-k93O-ZyL0Ft92FLOT8YjfqrKdblzeaU2wUWQ",
-            "raw_link": "https://edgestream7.pro/hls/wfazgsqtrezu66.m3u8?st=HwN8_T-k93O-ZyL0Ft92FLOT8YjfqrKdblzeaU2wUWQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/wfazgsqtrezu66.m3u8?st=909MajdUYVmoFYFMweDYsAnLFfcomKUhkwFIOjd_WOE",
+            "raw_link": "https://edgestream6.pro/hls/wfazgsqtrezu66.m3u8?st=909MajdUYVmoFYFMweDYsAnLFfcomKUhkwFIOjd_WOE|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1304,8 +1253,8 @@
         "slug": "milwaukee-bucks-vs-philadelphia-76ers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1322,8 +1271,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream4.pro/hls/hfsdqtaxvb67.m3u8?st=p5Ckbhd5_1Hh6jXn2F91Uum-rMwCGIFydVjdS2C0Ie4",
-            "raw_link": "https://edgestream4.pro/hls/hfsdqtaxvb67.m3u8?st=p5Ckbhd5_1Hh6jXn2F91Uum-rMwCGIFydVjdS2C0Ie4|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/hfsdqtaxvb67.m3u8?st=9CsWcg1eT5RrOrJ_w3hcXtb4GcJiNlJ8464SdiKQSPI",
+            "raw_link": "https://edgestream6.pro/hls/hfsdqtaxvb67.m3u8?st=9CsWcg1eT5RrOrJ_w3hcXtb4GcJiNlJ8464SdiKQSPI|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1342,8 +1291,8 @@
         "slug": "washington-wizards-vs-chicago-bulls",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1360,8 +1309,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream4.pro/hls/zayrtezafgvdv68.m3u8?st=IjoQ4WoCCyXQ4YOYB4XfIptrHO2aR5NPjiEDrMvGSDY",
-            "raw_link": "https://edgestream4.pro/hls/zayrtezafgvdv68.m3u8?st=IjoQ4WoCCyXQ4YOYB4XfIptrHO2aR5NPjiEDrMvGSDY|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/zayrtezafgvdv68.m3u8?st=DBZPns5Ac80lANLeMsZ2KCUmQAcszW18sSZA00-nQqA",
+            "raw_link": "https://edgestream2.pro/hls/zayrtezafgvdv68.m3u8?st=DBZPns5Ac80lANLeMsZ2KCUmQAcszW18sSZA00-nQqA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1380,8 +1329,8 @@
         "slug": "san-antonio-spurs-vs-dallas-mavericks",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1394,20 +1343,7 @@
           }
         },
         "logo": "https://streamcenter.st/api/images/badge/53c69c5f-5a1e-44a8-b7df-863eaac1cc06.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/zeafwqvhfe69.m3u8?st=vQ7Gy-Pveelb-fOGvwWjA8nF5d4xKG86CidG3LhqF3I",
-            "raw_link": "https://edgestream7.pro/hls/zeafwqvhfe69.m3u8?st=vQ7Gy-Pveelb-fOGvwWjA8nF5d4xKG86CidG3LhqF3I|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "channels": []
       },
       {
         "title": "Houston Rockets vs. Atlanta Hawks",
@@ -1418,8 +1354,8 @@
         "slug": "houston-rockets-vs-atlanta-hawks",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1436,8 +1372,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/bvnsqdfvgha70.m3u8?st=j_QhaMIwh5HDQ97ot4NmBgw7J_p4tizZq8w3-pakgmc",
-            "raw_link": "https://edgestream5.pro/hls/bvnsqdfvgha70.m3u8?st=j_QhaMIwh5HDQ97ot4NmBgw7J_p4tizZq8w3-pakgmc|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8?st=YE-kU3HgpRgChg_qZJAYUh6ZbaQsZWCJMrUZa5eH7hM",
+            "raw_link": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8?st=YE-kU3HgpRgChg_qZJAYUh6ZbaQsZWCJMrUZa5eH7hM|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1456,8 +1392,8 @@
         "slug": "new-orleans-pelicans-vs-denver-nuggets",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1474,8 +1410,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/ztyarueaghj71.m3u8?st=P401QARCVrudjnAdCwnl9cZkEC5VJ7l1VuPLgltYzkY",
-            "raw_link": "https://edgestream5.pro/hls/ztyarueaghj71.m3u8?st=P401QARCVrudjnAdCwnl9cZkEC5VJ7l1VuPLgltYzkY|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream4.pro/hls/ztyarueaghj71.m3u8?st=_SboWN8zI2r9RCcNJ0l9-UAqIh6VrgrWI5O4luVMKwI",
+            "raw_link": "https://edgestream4.pro/hls/ztyarueaghj71.m3u8?st=_SboWN8zI2r9RCcNJ0l9-UAqIh6VrgrWI5O4luVMKwI|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1494,8 +1430,8 @@
         "slug": "golden-state-warriors-vs-phoenix-suns",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1512,8 +1448,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/pllmazjkdzajh72.m3u8?st=GvwpmRZqC2g7Su6YEPA92-r5FbtM9h_pGy5BapCO3uM",
-            "raw_link": "https://edgestream5.pro/hls/pllmazjkdzajh72.m3u8?st=GvwpmRZqC2g7Su6YEPA92-r5FbtM9h_pGy5BapCO3uM|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream4.pro/hls/pllmazjkdzajh72.m3u8?st=jUifeClcbYlBNovlBujCduavlKAxesDKdp6YNAFxwfQ",
+            "raw_link": "https://edgestream4.pro/hls/pllmazjkdzajh72.m3u8?st=jUifeClcbYlBNovlBujCduavlKAxesDKdp6YNAFxwfQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1532,8 +1468,8 @@
         "slug": "msc-cruises-united-states-grand-prix-qual",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1550,8 +1486,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/hbfkazbkaznc49.m3u8?st=YXRl_5pTwHlGaW9Y9FoQzvFa6VYQ_w_OAaoe2SEBgEA",
-            "raw_link": "https://edgestream5.pro/hls/hbfkazbkaznc49.m3u8?st=YXRl_5pTwHlGaW9Y9FoQzvFa6VYQ_w_OAaoe2SEBgEA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream4.pro/hls/hbfkazbkaznc49.m3u8?st=c07mC5ajYPJnF0syEXplJ3bcSNq5YNwc-paUi6tDUKo",
+            "raw_link": "https://edgestream4.pro/hls/hbfkazbkaznc49.m3u8?st=c07mC5ajYPJnF0syEXplJ3bcSNq5YNwc-paUi6tDUKo|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1570,8 +1506,8 @@
         "slug": "tampa-bay-rays-vs-milwaukee-brewers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1588,8 +1524,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/dazhfiach15.m3u8?st=rzlWnlNPFr6cyw-H4tCrh63WVcICR5J9s2XWBu4qEvU",
-            "raw_link": "https://edgestream5.pro/hls/dazhfiach15.m3u8?st=rzlWnlNPFr6cyw-H4tCrh63WVcICR5J9s2XWBu4qEvU|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/dazhfiach15.m3u8?st=TiGTWZzKPYXnJ06C0CuoRizt24L_aQqpU0TND0edaBs",
+            "raw_link": "https://edgestream6.pro/hls/dazhfiach15.m3u8?st=TiGTWZzKPYXnJ06C0CuoRizt24L_aQqpU0TND0edaBs|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1608,8 +1544,8 @@
         "slug": "los-angeles-kings-vs-new-jersey-devils",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1626,8 +1562,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/hjksgdfauzy51.m3u8?st=mOFIEbfq9iEwpVC1ta06zGOlWi569Na21mVRAvYjarc",
-            "raw_link": "https://edgestream5.pro/hls/hjksgdfauzy51.m3u8?st=mOFIEbfq9iEwpVC1ta06zGOlWi569Na21mVRAvYjarc|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/hjksgdfauzy51.m3u8?st=ZUsnwKdJcPYSx5fkOThS0lcYASLjv7hetQRv0LL8XgY",
+            "raw_link": "https://edgestream6.pro/hls/hjksgdfauzy51.m3u8?st=ZUsnwKdJcPYSx5fkOThS0lcYASLjv7hetQRv0LL8XgY|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1646,8 +1582,8 @@
         "slug": "san-jose-sharks-vs-boston-bruins",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1664,8 +1600,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/lmdsjkfgv52.m3u8?st=9ytSqwSRW33NVLdsEr7bfAazFYq-sbKfxUEndXa-b1c",
-            "raw_link": "https://edgestream5.pro/hls/lmdsjkfgv52.m3u8?st=9ytSqwSRW33NVLdsEr7bfAazFYq-sbKfxUEndXa-b1c|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/lmdsjkfgv52.m3u8?st=Oup8o6_dLiDDGVrckezh3otGWQwp6OWtYLUpFUMrLHo",
+            "raw_link": "https://edgestream6.pro/hls/lmdsjkfgv52.m3u8?st=Oup8o6_dLiDDGVrckezh3otGWQwp6OWtYLUpFUMrLHo|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1684,8 +1620,8 @@
         "slug": "new-york-rangers-vs-ottawa-senators",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1702,8 +1638,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/rtzaeyvhb53.m3u8?st=fF817SrHvSztrJsFbUuzQ3sh2AkflYMVVG6r5PgGjeU",
-            "raw_link": "https://edgestream7.pro/hls/rtzaeyvhb53.m3u8?st=fF817SrHvSztrJsFbUuzQ3sh2AkflYMVVG6r5PgGjeU|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/rtzaeyvhb53.m3u8?st=VF_jX1SC5vNszPb7243errb9y5dUNNmpYIbv7kKOfyg",
+            "raw_link": "https://edgestream2.pro/hls/rtzaeyvhb53.m3u8?st=VF_jX1SC5vNszPb7243errb9y5dUNNmpYIbv7kKOfyg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1722,8 +1658,8 @@
         "slug": "nashville-predators-vs-pittsburgh-penguins",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1740,8 +1676,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/bnvcxwhfg54.m3u8?st=SRNaEz0w8kYH9RUhZ2DGm-L4hD4IXW_i6_h6w-272ns",
-            "raw_link": "https://edgestream7.pro/hls/bnvcxwhfg54.m3u8?st=SRNaEz0w8kYH9RUhZ2DGm-L4hD4IXW_i6_h6w-272ns|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/bnvcxwhfg54.m3u8?st=TRKpRwyIBXYRiBm64l_L0k7acr6Ta47XX8l7_NJUsAo",
+            "raw_link": "https://edgestream2.pro/hls/bnvcxwhfg54.m3u8?st=TRKpRwyIBXYRiBm64l_L0k7acr6Ta47XX8l7_NJUsAo|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1760,8 +1696,8 @@
         "slug": "buffalo-sabres-vs-washington-capitals",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1778,8 +1714,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/sdezqfza55.m3u8?st=RiFUM8Uwzce9TxLVk58K9XmFa04f9zYSJfDmQDAA41s",
-            "raw_link": "https://edgestream7.pro/hls/sdezqfza55.m3u8?st=RiFUM8Uwzce9TxLVk58K9XmFa04f9zYSJfDmQDAA41s|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/sdezqfza55.m3u8?st=AJj2NQPKtq9zvwZQhVmYgxAYBEz23yEfrBH-CLktoVI",
+            "raw_link": "https://edgestream2.pro/hls/sdezqfza55.m3u8?st=AJj2NQPKtq9zvwZQhVmYgxAYBEz23yEfrBH-CLktoVI|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1798,8 +1734,8 @@
         "slug": "vegas-golden-knights-vs-columbus-blue-jackets",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1816,8 +1752,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/poiryezafv56.m3u8?st=i4-jh7-f94rcNFhqQSy22lc0fK7XpQvUgRi3vuaz9MY",
-            "raw_link": "https://edgestream5.pro/hls/poiryezafv56.m3u8?st=i4-jh7-f94rcNFhqQSy22lc0fK7XpQvUgRi3vuaz9MY|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/poiryezafv56.m3u8?st=CkJG-8ByzBS-L7L5z1daDF04gv2JpxWGTB8h9qKaGOo",
+            "raw_link": "https://edgestream2.pro/hls/poiryezafv56.m3u8?st=CkJG-8ByzBS-L7L5z1daDF04gv2JpxWGTB8h9qKaGOo|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1836,8 +1772,8 @@
         "slug": "carolina-hurricanes-vs-st-louis-blues",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1854,8 +1790,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/rzavbdyua57.m3u8?st=pLZr1rnPt0fo4ayb-wkqqC65i5tW23uDPCuBctWwXAs",
-            "raw_link": "https://edgestream5.pro/hls/rzavbdyua57.m3u8?st=pLZr1rnPt0fo4ayb-wkqqC65i5tW23uDPCuBctWwXAs|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/rzavbdyua57.m3u8?st=5I5PyNyeFQjBWLsQIa2Q1NsRZYANDxqtFLeyHGEDm5Y",
+            "raw_link": "https://edgestream6.pro/hls/rzavbdyua57.m3u8?st=5I5PyNyeFQjBWLsQIa2Q1NsRZYANDxqtFLeyHGEDm5Y|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1874,8 +1810,8 @@
         "slug": "toronto-maple-leafs-vs-edmonton-oilers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1892,8 +1828,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/earzfddshg58.m3u8?st=Q389PCjTxW0ZgfXk06MJagXx9Rmz5K_QQW6mzKSlq6Y",
-            "raw_link": "https://edgestream5.pro/hls/earzfddshg58.m3u8?st=Q389PCjTxW0ZgfXk06MJagXx9Rmz5K_QQW6mzKSlq6Y|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/earzfddshg58.m3u8?st=eQIukLxWEQtx0aQQkXQLMR0GPLVuJt_dO-6tRPZv5jA",
+            "raw_link": "https://edgestream6.pro/hls/earzfddshg58.m3u8?st=eQIukLxWEQtx0aQQkXQLMR0GPLVuJt_dO-6tRPZv5jA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1912,8 +1848,8 @@
         "slug": "tampa-bay-lightning-vs-utah-mammoth",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1930,8 +1866,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/bvnzadfvyt59.m3u8?st=uXXRf3pV_XGSW3mqM6n7qdxBGoUm3pyEMZBqbtGyowA",
-            "raw_link": "https://edgestream5.pro/hls/bvnzadfvyt59.m3u8?st=uXXRf3pV_XGSW3mqM6n7qdxBGoUm3pyEMZBqbtGyowA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/bvnzadfvyt59.m3u8?st=i2XyCdijb2iLrnErAuIgS1qVUHX4aRA0eL031uuJQ_0",
+            "raw_link": "https://edgestream6.pro/hls/bvnzadfvyt59.m3u8?st=i2XyCdijb2iLrnErAuIgS1qVUHX4aRA0eL031uuJQ_0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1950,8 +1886,8 @@
         "slug": "detroit-red-wings-vs-calgary-flames",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -1968,8 +1904,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/cwxvbnfghq60.m3u8?st=0zED1OEIeq1Ra7a9pvbGI14Mo1DX0OoUPMVzt5hviGQ",
-            "raw_link": "https://edgestream5.pro/hls/cwxvbnfghq60.m3u8?st=0zED1OEIeq1Ra7a9pvbGI14Mo1DX0OoUPMVzt5hviGQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/cwxvbnfghq60.m3u8?st=FsdwhXcWDJ79Auk_Ktci5pNB_9mUjamdo4Ju05wh-ts",
+            "raw_link": "https://edgestream2.pro/hls/cwxvbnfghq60.m3u8?st=FsdwhXcWDJ79Auk_Ktci5pNB_9mUjamdo4Ju05wh-ts|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -1988,8 +1924,8 @@
         "slug": "minnesota-wild-vs-seattle-kraken",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -2006,8 +1942,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/gfhfgsqda61.m3u8?st=21-OP_SHwglbbhaK8vyfp3b4Zp1Ucqb-3NHZ015urDk",
-            "raw_link": "https://edgestream5.pro/hls/gfhfgsqda61.m3u8?st=21-OP_SHwglbbhaK8vyfp3b4Zp1Ucqb-3NHZ015urDk|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/gfhfgsqda61.m3u8?st=fYedVC3ciUNa19GWxe2pvUvIZ1fRi0XGmuF7QHB3W5A",
+            "raw_link": "https://edgestream2.pro/hls/gfhfgsqda61.m3u8?st=fYedVC3ciUNa19GWxe2pvUvIZ1fRi0XGmuF7QHB3W5A|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -2026,8 +1962,8 @@
         "slug": "dalton-smith-vs-alberto-puello-fight",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -2044,8 +1980,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/hbfhzbfzak46.m3u8?st=MQyLfJK_GWCXzgR7xoIW2v6dqwz7TdU23BVQHmLopzk",
-            "raw_link": "https://edgestream5.pro/hls/hbfhzbfzak46.m3u8?st=MQyLfJK_GWCXzgR7xoIW2v6dqwz7TdU23BVQHmLopzk|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream5.pro/hls/hbfhzbfzak46.m3u8?st=QibNBNux6Qj81uTbs4Ld7yQxY2dx-ri0fcZg8D0Ew4I",
+            "raw_link": "https://edgestream5.pro/hls/hbfhzbfzak46.m3u8?st=QibNBNux6Qj81uTbs4Ld7yQxY2dx-ri0fcZg8D0Ew4I|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -2064,8 +2000,8 @@
         "slug": "emanuel-navarrete-vs-o-shaquie-foster",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 02:53 AM",
-          "end_time_bst": "Oct 25, 2026, 05:53 AM"
+          "start_time_bst": "Oct 25, 2026, 03:02 AM",
+          "end_time_bst": "Oct 25, 2026, 06:02 AM"
         },
         "teams": {
           "team_a": {
@@ -2078,20 +2014,7 @@
           }
         },
         "logo": null,
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/hezfnezkfzk45.m3u8?st=HbluVMmsqICJOIzd3Jejwj7ZhRR4iVjQTq4yc9eIcaQ",
-            "raw_link": "https://edgestream7.pro/hls/hezfnezkfzk45.m3u8?st=HbluVMmsqICJOIzd3Jejwj7ZhRR4iVjQTq4yc9eIcaQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "channels": []
       }
     ]
   }
