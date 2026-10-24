@@ -1,13 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/0c0e8af3-39c3-4f52-8133-211109a34e41.webp" group-title="Basketball",[Basketball] Memphis Grizzliesvs.Golden State Warriors | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/yjtzafghvjza74.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/cb466bde-fc22-4665-9465-10ef862ab4de.webp" group-title="Basketball",[Basketball] LA Clippersvs.Los Angeles Lakers | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/sqhdghzavbxu75.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/07acbbef-f561-4dba-b997-cf04c1e62ccc.webp" group-title="Basketball",[Basketball] Portland Trail Blazersvs.Sacramento Kings | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/xcsfadafgzfg76.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/202ac68f-11ee-4cb1-91d5-da28b913945d.webp" group-title="American Football",[American Football] NC State Wolfpackvs.Stanford Cardinal | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/uheyztezgj34.m3u8
