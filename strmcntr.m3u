@@ -1,16 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/ae652cc7-9bf8-4fa1-8ded-2290a991c592.webp" group-title="Basketball",[Basketball] Detroit Pistonsvs.Miami Heat | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/ztyarueaghj71.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/8803b03e-ded9-4854-b197-38c192d0ed1c.webp" group-title="Baseball",[Baseball] Tampa Bay Raysvs.Milwaukee Brewers | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/dazhfiach15.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/567b123a-3a88-42a9-a809-020841c0c05f.webp" group-title="Hockey",[Hockey] Montreal Canadiensvs.Chicago Blackhawks | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/uyopzarf50.m3u8
-#EXTINF:-1 tvg-logo="None" group-title="WWE",[WWE] Friday Night Smackdown | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/zeuryuegn48.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/2fb3e8d4-647e-4194-967c-64a3858e5b08.webp" group-title="American Football",[American Football] Army Black Knightsvs.Tulsa Golden Hurricane | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/qsdnajbq32.m3u8
