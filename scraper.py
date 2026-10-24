@@ -14,7 +14,7 @@ from selectolax.lexbor import LexborHTMLParser as HTMLParser
 # রুট পাথ
 ROOT_DIR = Path(__file__).resolve().parent
 
-BASE_URL = "https://streamecenter.live"
+BASE_URL = "https://streamec.st"
 EMBED_REFERER = "https://embedcenter.st"
 TAG = "STRMCNTR"
 
