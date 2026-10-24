@@ -50,6 +50,7 @@ class ScrapedMatch:
     logo: str | None = None
 
 def cleanup_text(text: str) -> str:
+    text = text.replace('\xa0', ' ')
     text = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)
     text = re.sub(r'(vs\.?)([A-Za-z])', r'\1 \2', text, flags=re.IGNORECASE)
     text = re.sub(r'([A-Za-z])(vs\.?)', r'\1 \2', text, flags=re.IGNORECASE)
@@ -73,51 +74,66 @@ def parse_teams(title: str, team_a_logo: str | None = None, team_b_logo: str | N
         "team_b": {"name": title.strip(), "logo": team_b_logo}
     }
 
-def parse_match_datetime(time_elem) -> datetime:
-    """টেক্সটের ভেতর SCHEDULED বা LIVE লেখা থাকলেও শুধু আসল তারিখ পার্স করে"""
-    if not time_elem:
-        return datetime.now(timezone.utc)
-
-    # ১. <time datetime="..."> অ্যাট্রিবিউট চেক
-    iso_val = time_elem.attributes.get("datetime", "")
-    if iso_val:
-        try:
-            val = iso_val.strip().replace("Z", "+00:00")
-            dt = datetime.fromisoformat(val)
-            return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt
-        except Exception:
-            pass
-
-    # ২. Regex দিয়ে তারিখ অংশ বের করা (যেমন: Oct 25, 2026, 1:30 AM)
-    text = time_elem.text() or ""
-    m = re.search(r'([A-Za-z]{3}\s+\d{1,2},\s+\d{4},\s+\d{1,2}:\d{2}\s+(?:AM|PM))', text, re.IGNORECASE)
-    if m:
-        date_str = m.group(1).strip()
-        for fmt in ["%b %d, %Y, %I:%M %p", "%B %d, %Y, %I:%M %p"]:
+def extract_match_datetime_from_row(row_elem) -> datetime:
+    """
+    পুরো রো স্ক্যান করে নিখুঁতভাবে খেলা শুরুর আসল সময় বের করে (যেমন: Oct 25, 2026, 8:15 AM)
+    """
+    # ১. <time datetime="..."> বা যেকোনো datetime অ্যাট্রিবিউট চেক করা
+    for elem in row_elem.css("[datetime], time"):
+        iso_val = elem.attributes.get("datetime", "").strip()
+        if iso_val:
             try:
-                dt = datetime.strptime(date_str, fmt)
-                return dt.replace(tzinfo=timezone.utc)
+                clean_iso = iso_val.replace("Z", "+00:00")
+                dt = datetime.fromisoformat(clean_iso)
+                return dt.astimezone(timezone.utc)
             except Exception:
                 pass
 
-    # ৩. যদি শুধু সময় থাকে (যেমন: 1:30 AM)
-    m_time = re.search(r'(\d{1,2}:\d{2}\s+(?:AM|PM))', text, re.IGNORECASE)
-    if m_time:
+    raw_html = row_elem.html or ""
+    m_attr = re.search(r'(?:datetime|data-date|data-time)=["\']([^"\']+)["\']', raw_html)
+    if m_attr:
         try:
-            today = datetime.now(timezone.utc)
-            t = datetime.strptime(m_time.group(1).strip(), "%I:%M %p").time()
-            return datetime.combine(today.date(), t, tzinfo=timezone.utc)
+            clean_iso = m_attr.group(1).replace("Z", "+00:00")
+            dt = datetime.fromisoformat(clean_iso)
+            return dt.astimezone(timezone.utc)
+        except Exception:
+            pass
+
+    # ২. পুরো রো-এর টেক্সট ক্লিন করে Regex দিয়ে তারিখ ও সময় আলাদা করা
+    clean_txt = cleanup_text(row_elem.text())
+    m = re.search(r'([A-Za-z]{3})\s+(\d{1,2}),?\s+(\d{4}),?\s+(\d{1,2}):(\d{2})\s*(AM|PM)?', clean_txt, re.IGNORECASE)
+    if m:
+        month_map = {
+            "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+            "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12
+        }
+        try:
+            m_str = m.group(1)[:3].lower()
+            if m_str in month_map:
+                month = month_map[m_str]
+                day = int(m.group(2))
+                year = int(m.group(3))
+                hour = int(m.group(4))
+                minute = int(m.group(5))
+                ampm = m.group(6).upper() if m.group(6) else "AM"
+                if ampm == "PM" and hour < 12:
+                    hour += 12
+                elif ampm == "AM" and hour == 12:
+                    hour = 0
+
+                # সাইটের রেন্ডার করা টাইম সরাসরি UTC-তে পার্স করা
+                return datetime(year, month, day, hour, minute, tzinfo=timezone.utc)
         except Exception:
             pass
 
     return datetime.now(timezone.utc)
 
 def calculate_match_status(start_dt: datetime, site_status: str, early_minutes: int = 15) -> str:
-    """ম্যাচ শুরুর ঠিক ১৫ মিনিট আগে লাইভ স্ট্যাটাস হবে"""
+    """ম্যাচ শুরুর ঠিক ১৫ মিনিট আগে স্ট্যাটাস LIVE হবে"""
     now_utc = datetime.now(timezone.utc)
     start_utc = start_dt.astimezone(timezone.utc)
 
-    # শুরু হতে ১৫ মিনিটের বেশি বাকি থাকলে বাধ্যতামূলক UPCOMING
+    # শুরু হতে ১৫ মিনিটের বেশি বাকি থাকলে নিশ্চিতভাবে UPCOMING
     if now_utc < (start_utc - timedelta(minutes=early_minutes)):
         return "UPCOMING"
 
@@ -125,7 +141,6 @@ def calculate_match_status(start_dt: datetime, site_status: str, early_minutes: 
     if (start_utc - timedelta(minutes=early_minutes)) <= now_utc <= (start_utc + timedelta(hours=3, minutes=30)):
         return "LIVE"
 
-    # ৩ ঘণ্টা ৩০ মিনিট পার হয়ে গেলে ENDED
     return "ENDED"
 
 def extract_m3u8(text: str, base_url: str = "") -> str | None:
@@ -235,11 +250,9 @@ def parse_cards_soup(soup: HTMLParser, source_page_url: str) -> list[ScrapedMatc
 
         title = cleanup_text(title)
 
-        # সময় পার্স (SCHEDULED বা LIVE এর টেক্সট হ্যান্ডেল করা হয়েছে)
-        time_node = row.css_first(".game-card-when, time, [class*='when']")
-        dt = parse_match_datetime(time_node)
+        # পুরো রো থেকে আসল তারিখ ও সময় পার্স করা
+        dt = extract_match_datetime_from_row(row)
 
-        # সাইটের স্ট্যাটাস
         row_txt = row.text().upper()
         site_status = "SCHEDULED" if "SCHEDULED" in row_txt else ("LIVE" if "LIVE" in row_txt else "UPCOMING")
 
@@ -335,6 +348,7 @@ async def main():
         final_playlist = []
 
         for m in scraped_matches:
+            # বাংলাদেশ সময় অনুযায়ী সঠিক ফরম্যাট (যেমন: Oct 25, 2026, 08:15 AM)
             start_bst = m.start_dt.astimezone(BST_TZ)
             start_time_str = start_bst.strftime("%b %d, %Y, %I:%M %p")
             end_time_str = (start_bst + timedelta(hours=3)).strftime("%b %d, %Y, %I:%M %p")
