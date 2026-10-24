@@ -1,76 +1,8 @@
 {
-  "last_updated": "Oct 24, 2026, 09:31:31 AM",
-  "event_count": 9,
+  "last_updated": "Oct 24, 2026, 10:01:38 AM",
+  "event_count": 7,
   "events": {
     "events": [
-      {
-        "title": "Air Force Falconsvs.Wyoming Cowboys",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "air-force-falconsvs-wyoming-cowboys",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 07:00:00 AM",
-          "end_time_bst": "Oct 24, 2026, 10:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Air Force Falconsvs.Wyoming Cowboys"
-          },
-          "team_b": {
-            "name": "Air Force Falconsvs.Wyoming Cowboys"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/2438365a-cf5d-4ee0-959f-311104307475.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/oipozuezeji33.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/oipozuezeji33.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Tampa Bay Lightningvs.Colorado Avalanche",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "tampa-bay-lightningvs-colorado-avalanche",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 07:00:00 AM",
-          "end_time_bst": "Oct 24, 2026, 10:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Tampa Bay Lightningvs.Colorado Avalanche"
-          },
-          "team_b": {
-            "name": "Tampa Bay Lightningvs.Colorado Avalanche"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/341ae09d-6283-4d99-8b40-6bf0865884ab.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/hjksgdfauzy51.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/hjksgdfauzy51.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "Houston Rocketsvs.San Antonio Spurs",
         "sport": "Basketball",

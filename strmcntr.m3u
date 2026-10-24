@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/2438365a-cf5d-4ee0-959f-311104307475.webp" group-title="American Football",[American Football] Air Force Falconsvs.Wyoming Cowboys | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/oipozuezeji33.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/341ae09d-6283-4d99-8b40-6bf0865884ab.webp" group-title="Hockey",[Hockey] Tampa Bay Lightningvs.Colorado Avalanche | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/hjksgdfauzy51.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/dfe3cb29-7d2f-48e6-a383-39b1f314eb22.webp" group-title="Basketball",[Basketball] Houston Rocketsvs.San Antonio Spurs | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/pllmazjkdzajh72.m3u8
