@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 24, 2026, 07:16:00 AM",
+  "last_updated": "Oct 24, 2026, 07:46:08 AM",
   "event_count": 21,
   "events": {
     "events": [
@@ -480,40 +480,6 @@
         ]
       },
       {
-        "title": "Houston Rocketsvs.San Antonio Spurs",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": false,
-        "slug": "houston-rocketsvs-san-antonio-spurs",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 24, 2026, 07:30:00 AM",
-          "end_time_bst": "Oct 24, 2026, 10:30:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Houston Rocketsvs.San Antonio Spurs"
-          },
-          "team_b": {
-            "name": "Houston Rocketsvs.San Antonio Spurs"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/dfe3cb29-7d2f-48e6-a383-39b1f314eb22.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/pllmazjkdzajh72.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/pllmazjkdzajh72.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
         "title": "New Orleans Pelicansvs.Utah Jazz",
         "sport": "Basketball",
         "sub_category": "Basketball",
@@ -548,10 +514,44 @@
         ]
       },
       {
+        "title": "Houston Rocketsvs.San Antonio Spurs",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "LIVE",
+        "is_hot": false,
+        "slug": "houston-rocketsvs-san-antonio-spurs",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 07:30:00 AM",
+          "end_time_bst": "Oct 24, 2026, 10:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Houston Rocketsvs.San Antonio Spurs"
+          },
+          "team_b": {
+            "name": "Houston Rocketsvs.San Antonio Spurs"
+          }
+        },
+        "logo": "https://streamecenter.live/api/images/badge/dfe3cb29-7d2f-48e6-a383-39b1f314eb22.webp",
+        "channels": [
+          {
+            "channel_name": "English Stream",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/pllmazjkdzajh72.m3u8",
+            "raw_link": "https://edgestream2.pro/hls/pllmazjkdzajh72.m3u8|Referer=https://streame.center",
+            "headers": {
+              "Referer": "https://streame.center"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
         "title": "Memphis Grizzliesvs.Golden State Warriors",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "memphis-grizzliesvs-golden-state-warriors",
         "schedule": {
@@ -585,7 +585,7 @@
         "title": "LA Clippersvs.Los Angeles Lakers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "la-clippersvs-los-angeles-lakers",
         "schedule": {
@@ -619,7 +619,7 @@
         "title": "Portland Trail Blazersvs.Sacramento Kings",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
+        "status": "LIVE",
         "is_hot": false,
         "slug": "portland-trail-blazersvs-sacramento-kings",
         "schedule": {
