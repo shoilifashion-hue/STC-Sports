@@ -1,15 +1,521 @@
 {
-  "last_updated": "Oct 25, 2026, 12:50:37 AM",
-  "event_count": 46,
+  "last_updated": "Oct 25, 2026, 12:57:02 AM",
+  "event_count": 68,
   "events": {
     "events": [
       {
-        "title": "Texas A&M Aggiesvs.Alabama Crimson Tide",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "UFC 333: Volkanovski vs. Evloev",
+        "sport": "MMA",
+        "sub_category": "MMA",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "ufc-333-volkanovski-vs-evloev",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 08:00:00 PM",
+          "end_time_bst": "Oct 24, 2026, 11:00:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "UFC 333: Volkanovski"
+          },
+          "team_b": {
+            "name": "Evloev"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "ESPN News",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "espn-news",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 09:49:00 PM",
+          "end_time_bst": "Oct 25, 2026, 12:49:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "ESPN News"
+          },
+          "team_b": {
+            "name": "ESPN News"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "ESPN2",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "espn2",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 09:49:00 PM",
+          "end_time_bst": "Oct 25, 2026, 12:49:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "ESPN2"
+          },
+          "team_b": {
+            "name": "ESPN2"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "LSU Tigers at Auburn Tigers",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "lsu-tigers-at-auburn-tigers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 10:00:00 PM",
+          "end_time_bst": "Oct 25, 2026, 01:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "LSU Tigers at Auburn Tigers"
+          },
+          "team_b": {
+            "name": "LSU Tigers at Auburn Tigers"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Texas Tech Red Raiders at Cincinnati Bearcats",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "texas-tech-red-raiders-at-cincinnati-bearcats",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 10:00:00 PM",
+          "end_time_bst": "Oct 25, 2026, 01:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Texas Tech Red Raiders at Cincinnati Bearcats"
+          },
+          "team_b": {
+            "name": "Texas Tech Red Raiders at Cincinnati Bearcats"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "West Virginia Mountaineers at TCU Horned Frogs",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "west-virginia-mountaineers-at-tcu-horned-frogs",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 10:00:00 PM",
+          "end_time_bst": "Oct 25, 2026, 01:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "West Virginia Mountaineers at TCU Horned Frogs"
+          },
+          "team_b": {
+            "name": "West Virginia Mountaineers at TCU Horned Frogs"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "California Golden Bears at SMU Mustangs",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "california-golden-bears-at-smu-mustangs",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 10:00:00 PM",
+          "end_time_bst": "Oct 25, 2026, 01:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "California Golden Bears at SMU Mustangs"
+          },
+          "team_b": {
+            "name": "California Golden Bears at SMU Mustangs"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Pittsburgh Panthers at Miami Hurricanes",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "pittsburgh-panthers-at-miami-hurricanes",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 10:00:00 PM",
+          "end_time_bst": "Oct 25, 2026, 01:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Pittsburgh Panthers at Miami Hurricanes"
+          },
+          "team_b": {
+            "name": "Pittsburgh Panthers at Miami Hurricanes"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Indiana Hoosiers at Michigan Wolverines",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "indiana-hoosiers-at-michigan-wolverines",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 10:00:00 PM",
+          "end_time_bst": "Oct 25, 2026, 01:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Indiana Hoosiers at Michigan Wolverines"
+          },
+          "team_b": {
+            "name": "Indiana Hoosiers at Michigan Wolverines"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Rutgers Scarlet Knights at Northwestern Wildcats",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "rutgers-scarlet-knights-at-northwestern-wildcats",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 10:00:00 PM",
+          "end_time_bst": "Oct 25, 2026, 01:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Rutgers Scarlet Knights at Northwestern Wildcats"
+          },
+          "team_b": {
+            "name": "Rutgers Scarlet Knights at Northwestern Wildcats"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Rice Owls at Florida Atlantic Owls",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "rice-owls-at-florida-atlantic-owls",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 10:00:00 PM",
+          "end_time_bst": "Oct 25, 2026, 01:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Rice Owls at Florida Atlantic Owls"
+          },
+          "team_b": {
+            "name": "Rice Owls at Florida Atlantic Owls"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Western Michigan Broncos at Toledo Rockets",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "western-michigan-broncos-at-toledo-rockets",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 10:00:00 PM",
+          "end_time_bst": "Oct 25, 2026, 01:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Western Michigan Broncos at Toledo Rockets"
+          },
+          "team_b": {
+            "name": "Western Michigan Broncos at Toledo Rockets"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Villarreal at Valencia",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "villarreal-at-valencia",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 10:30:00 PM",
+          "end_time_bst": "Oct 25, 2026, 01:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Villarreal at Valencia"
+          },
+          "team_b": {
+            "name": "Villarreal at Valencia"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Golden State Valkyries at Atlanta Dream",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "golden-state-valkyries-at-atlanta-dream",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 11:00:00 PM",
+          "end_time_bst": "Oct 25, 2026, 02:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Golden State Valkyries at Atlanta Dream"
+          },
+          "team_b": {
+            "name": "Golden State Valkyries at Atlanta Dream"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Baylor Bears at Kansas Jayhawks",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "baylor-bears-at-kansas-jayhawks",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 11:00:00 PM",
+          "end_time_bst": "Oct 25, 2026, 02:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Baylor Bears at Kansas Jayhawks"
+          },
+          "team_b": {
+            "name": "Baylor Bears at Kansas Jayhawks"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Anaheim Ducks at Philadelphia Flyers",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "anaheim-ducks-at-philadelphia-flyers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 11:00:00 PM",
+          "end_time_bst": "Oct 25, 2026, 02:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Anaheim Ducks at Philadelphia Flyers"
+          },
+          "team_b": {
+            "name": "Anaheim Ducks at Philadelphia Flyers"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "MSC Cruises United States Grand Prix — FP3",
+        "sport": "Racing",
+        "sub_category": "Racing",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "msc-cruises-united-states-grand-prix-fp3",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 24, 2026, 11:30:00 PM",
+          "end_time_bst": "Oct 25, 2026, 02:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "MSC Cruises United States Grand Prix — FP3"
+          },
+          "team_b": {
+            "name": "MSC Cruises United States Grand Prix — FP3"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Dalton Smith vs Alberto Puello Fight",
+        "sport": "Boxing",
+        "sub_category": "Boxing",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "dalton-smith-vs-alberto-puello-fight",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 12:00:00 AM",
+          "end_time_bst": "Oct 25, 2026, 03:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Dalton Smith"
+          },
+          "team_b": {
+            "name": "Alberto Puello Fight"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Paris FC at Lens",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "paris-fc-at-lens",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 12:45:00 AM",
+          "end_time_bst": "Oct 25, 2026, 03:45:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Paris FC at Lens"
+          },
+          "team_b": {
+            "name": "Paris FC at Lens"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Parma at Lazio",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "parma-at-lazio",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 12:45:00 AM",
+          "end_time_bst": "Oct 25, 2026, 03:45:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Parma at Lazio"
+          },
+          "team_b": {
+            "name": "Parma at Lazio"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Oregon Ducks at Illinois Fighting Illini",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "oregon-ducks-at-illinois-fighting-illini",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 01:00:00 AM",
+          "end_time_bst": "Oct 25, 2026, 04:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Oregon Ducks at Illinois Fighting Illini"
+          },
+          "team_b": {
+            "name": "Oregon Ducks at Illinois Fighting Illini"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Deportivo at Atlético Madrid",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "deportivo-at-atlético-madrid",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 01:00:00 AM",
+          "end_time_bst": "Oct 25, 2026, 04:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Deportivo at Atlético Madrid"
+          },
+          "team_b": {
+            "name": "Deportivo at Atlético Madrid"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Texas A&M Aggies at Alabama Crimson Tide",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "texas-a-m-aggiesvs-alabama-crimson-tide",
+        "slug": "texas-a-m-aggies-at-alabama-crimson-tide",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 01:30:00 AM",
@@ -17,22 +523,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Texas A&M Aggiesvs.Alabama Crimson Tide"
+            "name": "Texas A&M Aggies at Alabama Crimson Tide"
           },
           "team_b": {
-            "name": "Texas A&M Aggiesvs.Alabama Crimson Tide"
+            "name": "Texas A&M Aggies at Alabama Crimson Tide"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/f1853927-7512-4ef0-adb7-9f16b92344e6.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Oklahoma Soonersvs.Mississippi State Bulldogs",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "Oklahoma Sooners at Mississippi State Bulldogs",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "oklahoma-soonersvs-mississippi-state-bulldogs",
+        "slug": "oklahoma-sooners-at-mississippi-state-bulldogs",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 01:30:00 AM",
@@ -40,22 +546,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Oklahoma Soonersvs.Mississippi State Bulldogs"
+            "name": "Oklahoma Sooners at Mississippi State Bulldogs"
           },
           "team_b": {
-            "name": "Oklahoma Soonersvs.Mississippi State Bulldogs"
+            "name": "Oklahoma Sooners at Mississippi State Bulldogs"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/dda84b93-d3ba-42ab-a9df-2b50cbddcaec.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Tennessee Volunteersvs.South Carolina Gamecocks",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "Tennessee Volunteers at South Carolina Gamecocks",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "tennessee-volunteersvs-south-carolina-gamecocks",
+        "slug": "tennessee-volunteers-at-south-carolina-gamecocks",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 01:30:00 AM",
@@ -63,22 +569,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Tennessee Volunteersvs.South Carolina Gamecocks"
+            "name": "Tennessee Volunteers at South Carolina Gamecocks"
           },
           "team_b": {
-            "name": "Tennessee Volunteersvs.South Carolina Gamecocks"
+            "name": "Tennessee Volunteers at South Carolina Gamecocks"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/5a99a92a-9d3e-4e27-a8ac-865f47c24d30.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "BYU Cougarsvs.UCF Knights",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "BYU Cougars at UCF Knights",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "byu-cougarsvs-ucf-knights",
+        "slug": "byu-cougars-at-ucf-knights",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 01:30:00 AM",
@@ -86,22 +592,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "BYU Cougarsvs.UCF Knights"
+            "name": "BYU Cougars at UCF Knights"
           },
           "team_b": {
-            "name": "BYU Cougarsvs.UCF Knights"
+            "name": "BYU Cougars at UCF Knights"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/35ac7848-b483-4f0b-ab05-860dd1b68c55.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Boston College Eaglesvs.Georgia Tech Yellow Jackets",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "Boston College Eagles at Georgia Tech Yellow Jackets",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "boston-college-eaglesvs-georgia-tech-yellow-jackets",
+        "slug": "boston-college-eagles-at-georgia-tech-yellow-jackets",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 01:30:00 AM",
@@ -109,22 +615,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Boston College Eaglesvs.Georgia Tech Yellow Jackets"
+            "name": "Boston College Eagles at Georgia Tech Yellow Jackets"
           },
           "team_b": {
-            "name": "Boston College Eaglesvs.Georgia Tech Yellow Jackets"
+            "name": "Boston College Eagles at Georgia Tech Yellow Jackets"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/4fcef70c-402c-441d-9545-93d1e773d72b.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Iowa Hawkeyesvs.Minnesota Golden Gophers",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "Iowa Hawkeyes at Minnesota Golden Gophers",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "iowa-hawkeyesvs-minnesota-golden-gophers",
+        "slug": "iowa-hawkeyes-at-minnesota-golden-gophers",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 01:30:00 AM",
@@ -132,22 +638,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Iowa Hawkeyesvs.Minnesota Golden Gophers"
+            "name": "Iowa Hawkeyes at Minnesota Golden Gophers"
           },
           "team_b": {
-            "name": "Iowa Hawkeyesvs.Minnesota Golden Gophers"
+            "name": "Iowa Hawkeyes at Minnesota Golden Gophers"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/1292a244-0921-4c5e-ad42-b76aef2e9ebb.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Michigan State Spartansvs.UCLA Bruins",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "Michigan State Spartans at UCLA Bruins",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "michigan-state-spartansvs-ucla-bruins",
+        "slug": "michigan-state-spartans-at-ucla-bruins",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 01:30:00 AM",
@@ -155,22 +661,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Michigan State Spartansvs.UCLA Bruins"
+            "name": "Michigan State Spartans at UCLA Bruins"
           },
           "team_b": {
-            "name": "Michigan State Spartansvs.UCLA Bruins"
+            "name": "Michigan State Spartans at UCLA Bruins"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/333ee286-e70c-4ebb-98fd-0fce47711c91.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Hawai'i Rainbow Warriorsvs.Northern Illinois Huskies",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "Hawai'i Rainbow Warriors at Northern Illinois Huskies",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "hawai-i-rainbow-warriorsvs-northern-illinois-huskies",
+        "slug": "hawai-i-rainbow-warriors-at-northern-illinois-huskies",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 01:30:00 AM",
@@ -178,22 +684,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Hawai'i Rainbow Warriorsvs.Northern Illinois Huskies"
+            "name": "Hawai'i Rainbow Warriors at Northern Illinois Huskies"
           },
           "team_b": {
-            "name": "Hawai'i Rainbow Warriorsvs.Northern Illinois Huskies"
+            "name": "Hawai'i Rainbow Warriors at Northern Illinois Huskies"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/6c9d8e55-3b55-421f-860f-c7fe085acd48.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Los Angeles Kingsvs.New Jersey Devils",
+        "title": "Los Angeles Kings at New Jersey Devils",
         "sport": "Hockey",
         "sub_category": "Hockey",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "los-angeles-kingsvs-new-jersey-devils",
+        "slug": "los-angeles-kings-at-new-jersey-devils",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 01:30:00 AM",
@@ -201,22 +707,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Los Angeles Kingsvs.New Jersey Devils"
+            "name": "Los Angeles Kings at New Jersey Devils"
           },
           "team_b": {
-            "name": "Los Angeles Kingsvs.New Jersey Devils"
+            "name": "Los Angeles Kings at New Jersey Devils"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/707e05f4-9023-4a40-bd65-08d88a4614d5.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Kansas State Wildcatsvs.Arizona State Sun Devils",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "Kansas State Wildcats at Arizona State Sun Devils",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "kansas-state-wildcatsvs-arizona-state-sun-devils",
+        "slug": "kansas-state-wildcats-at-arizona-state-sun-devils",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 01:45:00 AM",
@@ -224,22 +730,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Kansas State Wildcatsvs.Arizona State Sun Devils"
+            "name": "Kansas State Wildcats at Arizona State Sun Devils"
           },
           "team_b": {
-            "name": "Kansas State Wildcatsvs.Arizona State Sun Devils"
+            "name": "Kansas State Wildcats at Arizona State Sun Devils"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/8a86c4b1-9557-4bf5-a56c-575dbc82a3aa.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Eastern Michigan Eaglesvs.Ohio Bobcats",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "Eastern Michigan Eagles at Ohio Bobcats",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "eastern-michigan-eaglesvs-ohio-bobcats",
+        "slug": "eastern-michigan-eagles-at-ohio-bobcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 02:00:00 AM",
@@ -247,56 +753,10 @@
         },
         "teams": {
           "team_a": {
-            "name": "Eastern Michigan Eaglesvs.Ohio Bobcats"
+            "name": "Eastern Michigan Eagles at Ohio Bobcats"
           },
           "team_b": {
-            "name": "Eastern Michigan Eaglesvs.Ohio Bobcats"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/542b9490-8c02-496a-b210-3d0acd33414e.webp",
-        "channels": []
-      },
-      {
-        "title": "San José State Spartansvs.Nevada Wolf Pack",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "san-josé-state-spartansvs-nevada-wolf-pack",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 03:00:00 AM",
-          "end_time_bst": "Oct 25, 2026, 06:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "San José State Spartansvs.Nevada Wolf Pack"
-          },
-          "team_b": {
-            "name": "San José State Spartansvs.Nevada Wolf Pack"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/5d066cb6-e869-456c-beda-027c30e99b4e.webp",
-        "channels": []
-      },
-      {
-        "title": "MSC Cruises United States Grand Prix — Qual",
-        "sport": "Racing",
-        "sub_category": "Racing",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "msc-cruises-united-states-grand-prix-qual",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 03:00:00 AM",
-          "end_time_bst": "Oct 25, 2026, 06:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "MSC Cruises United States Grand Prix — Qual"
-          },
-          "team_b": {
-            "name": "MSC Cruises United States Grand Prix — Qual"
+            "name": "Eastern Michigan Eagles at Ohio Bobcats"
           }
         },
         "logo": null,
@@ -326,35 +786,58 @@
         "channels": []
       },
       {
-        "title": "Boise State Broncosvs.Washington State Cougars",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "San José State Spartans at Nevada Wolf Pack",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "boise-state-broncosvs-washington-state-cougars",
+        "slug": "san-josé-state-spartans-at-nevada-wolf-pack",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 04:00:00 AM",
-          "end_time_bst": "Oct 25, 2026, 07:00:00 AM"
+          "start_time_bst": "Oct 25, 2026, 03:00:00 AM",
+          "end_time_bst": "Oct 25, 2026, 06:00:00 AM"
         },
         "teams": {
           "team_a": {
-            "name": "Boise State Broncosvs.Washington State Cougars"
+            "name": "San José State Spartans at Nevada Wolf Pack"
           },
           "team_b": {
-            "name": "Boise State Broncosvs.Washington State Cougars"
+            "name": "San José State Spartans at Nevada Wolf Pack"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/c0a34b28-d270-4232-8529-eeee78ea3d4c.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Miami Heatvs.Charlotte Hornets",
+        "title": "MSC Cruises United States Grand Prix — Qual",
+        "sport": "Racing",
+        "sub_category": "Racing",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "msc-cruises-united-states-grand-prix-qual",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 03:00:00 AM",
+          "end_time_bst": "Oct 25, 2026, 06:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "MSC Cruises United States Grand Prix — Qual"
+          },
+          "team_b": {
+            "name": "MSC Cruises United States Grand Prix — Qual"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Miami Heat at Charlotte Hornets",
         "sport": "Basketball",
         "sub_category": "Basketball",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "miami-heatvs-charlotte-hornets",
+        "slug": "miami-heat-at-charlotte-hornets",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 04:00:00 AM",
@@ -362,22 +845,45 @@
         },
         "teams": {
           "team_a": {
-            "name": "Miami Heatvs.Charlotte Hornets"
+            "name": "Miami Heat at Charlotte Hornets"
           },
           "team_b": {
-            "name": "Miami Heatvs.Charlotte Hornets"
+            "name": "Miami Heat at Charlotte Hornets"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/3967b4fa-d3db-4c52-8523-bece9b205c5e.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "San Diego State Aztecsvs.Colorado State Rams",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "Boise State Broncos at Washington State Cougars",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "san-diego-state-aztecsvs-colorado-state-rams",
+        "slug": "boise-state-broncos-at-washington-state-cougars",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 04:00:00 AM",
+          "end_time_bst": "Oct 25, 2026, 07:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Boise State Broncos at Washington State Cougars"
+          },
+          "team_b": {
+            "name": "Boise State Broncos at Washington State Cougars"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "San Diego State Aztecs at Colorado State Rams",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "san-diego-state-aztecs-at-colorado-state-rams",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 04:30:00 AM",
@@ -385,22 +891,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "San Diego State Aztecsvs.Colorado State Rams"
+            "name": "San Diego State Aztecs at Colorado State Rams"
           },
           "team_b": {
-            "name": "San Diego State Aztecsvs.Colorado State Rams"
+            "name": "San Diego State Aztecs at Colorado State Rams"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/4e45e34c-9dbd-44cc-ad2e-28893444c08b.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Colorado Buffaloesvs.Oklahoma State Cowboys",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "Colorado Buffaloes at Oklahoma State Cowboys",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "colorado-buffaloesvs-oklahoma-state-cowboys",
+        "slug": "colorado-buffaloes-at-oklahoma-state-cowboys",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 05:00:00 AM",
@@ -408,22 +914,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Colorado Buffaloesvs.Oklahoma State Cowboys"
+            "name": "Colorado Buffaloes at Oklahoma State Cowboys"
           },
           "team_b": {
-            "name": "Colorado Buffaloesvs.Oklahoma State Cowboys"
+            "name": "Colorado Buffaloes at Oklahoma State Cowboys"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/58278fa1-544d-4439-889d-6ea5a5d7d04b.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Virginia Tech Hokiesvs.Clemson Tigers",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "Virginia Tech Hokies at Clemson Tigers",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "virginia-tech-hokiesvs-clemson-tigers",
+        "slug": "virginia-tech-hokies-at-clemson-tigers",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 05:00:00 AM",
@@ -431,22 +937,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Virginia Tech Hokiesvs.Clemson Tigers"
+            "name": "Virginia Tech Hokies at Clemson Tigers"
           },
           "team_b": {
-            "name": "Virginia Tech Hokiesvs.Clemson Tigers"
+            "name": "Virginia Tech Hokies at Clemson Tigers"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/ad69a4e7-73da-4d91-a5b5-00cbe98b9909.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "San Jose Sharksvs.Boston Bruins",
+        "title": "San Jose Sharks at Boston Bruins",
         "sport": "Hockey",
         "sub_category": "Hockey",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "san-jose-sharksvs-boston-bruins",
+        "slug": "san-jose-sharks-at-boston-bruins",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 05:00:00 AM",
@@ -454,22 +960,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "San Jose Sharksvs.Boston Bruins"
+            "name": "San Jose Sharks at Boston Bruins"
           },
           "team_b": {
-            "name": "San Jose Sharksvs.Boston Bruins"
+            "name": "San Jose Sharks at Boston Bruins"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/b35c349b-ef6c-4208-87f0-2c7ba21071ab.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "New York Rangersvs.Ottawa Senators",
+        "title": "New York Rangers at Ottawa Senators",
         "sport": "Hockey",
         "sub_category": "Hockey",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "new-york-rangersvs-ottawa-senators",
+        "slug": "new-york-rangers-at-ottawa-senators",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 05:00:00 AM",
@@ -477,22 +983,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "New York Rangersvs.Ottawa Senators"
+            "name": "New York Rangers at Ottawa Senators"
           },
           "team_b": {
-            "name": "New York Rangersvs.Ottawa Senators"
+            "name": "New York Rangers at Ottawa Senators"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/2b61dab9-9852-430e-8f29-91e4adb82bbf.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Nashville Predatorsvs.Pittsburgh Penguins",
+        "title": "Nashville Predators at Pittsburgh Penguins",
         "sport": "Hockey",
         "sub_category": "Hockey",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "nashville-predatorsvs-pittsburgh-penguins",
+        "slug": "nashville-predators-at-pittsburgh-penguins",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 05:00:00 AM",
@@ -500,22 +1006,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Nashville Predatorsvs.Pittsburgh Penguins"
+            "name": "Nashville Predators at Pittsburgh Penguins"
           },
           "team_b": {
-            "name": "Nashville Predatorsvs.Pittsburgh Penguins"
+            "name": "Nashville Predators at Pittsburgh Penguins"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/c5124d32-cc38-4513-ab70-f67698171bff.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Buffalo Sabresvs.Washington Capitals",
+        "title": "Buffalo Sabres at Washington Capitals",
         "sport": "Hockey",
         "sub_category": "Hockey",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "buffalo-sabresvs-washington-capitals",
+        "slug": "buffalo-sabres-at-washington-capitals",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 05:00:00 AM",
@@ -523,22 +1029,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Buffalo Sabresvs.Washington Capitals"
+            "name": "Buffalo Sabres at Washington Capitals"
           },
           "team_b": {
-            "name": "Buffalo Sabresvs.Washington Capitals"
+            "name": "Buffalo Sabres at Washington Capitals"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/37dee480-518e-47d7-ba31-78bdde627b16.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Vegas Golden Knightsvs.Columbus Blue Jackets",
+        "title": "Vegas Golden Knights at Columbus Blue Jackets",
         "sport": "Hockey",
         "sub_category": "Hockey",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "vegas-golden-knightsvs-columbus-blue-jackets",
+        "slug": "vegas-golden-knights-at-columbus-blue-jackets",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 05:00:00 AM",
@@ -546,22 +1052,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Vegas Golden Knightsvs.Columbus Blue Jackets"
+            "name": "Vegas Golden Knights at Columbus Blue Jackets"
           },
           "team_b": {
-            "name": "Vegas Golden Knightsvs.Columbus Blue Jackets"
+            "name": "Vegas Golden Knights at Columbus Blue Jackets"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/15506e97-07f7-4138-8d2f-48830c5f4445.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Carolina Hurricanesvs.St. Louis Blues",
+        "title": "Carolina Hurricanes at St. Louis Blues",
         "sport": "Hockey",
         "sub_category": "Hockey",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "carolina-hurricanesvs-st-louis-blues",
+        "slug": "carolina-hurricanes-at-st-louis-blues",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 05:00:00 AM",
@@ -569,22 +1075,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Carolina Hurricanesvs.St. Louis Blues"
+            "name": "Carolina Hurricanes at St. Louis Blues"
           },
           "team_b": {
-            "name": "Carolina Hurricanesvs.St. Louis Blues"
+            "name": "Carolina Hurricanes at St. Louis Blues"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/851def80-1466-4a0d-92b4-de8a24e103ae.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Toronto Maple Leafsvs.Edmonton Oilers",
+        "title": "Toronto Maple Leafs at Edmonton Oilers",
         "sport": "Hockey",
         "sub_category": "Hockey",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "toronto-maple-leafsvs-edmonton-oilers",
+        "slug": "toronto-maple-leafs-at-edmonton-oilers",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 05:00:00 AM",
@@ -592,160 +1098,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Toronto Maple Leafsvs.Edmonton Oilers"
+            "name": "Toronto Maple Leafs at Edmonton Oilers"
           },
           "team_b": {
-            "name": "Toronto Maple Leafsvs.Edmonton Oilers"
+            "name": "Toronto Maple Leafs at Edmonton Oilers"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/c8e7e89d-6d9b-430d-af6d-84936d17d75a.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Vanderbilt Commodoresvs.Kentucky Wildcats",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "vanderbilt-commodoresvs-kentucky-wildcats",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 05:30:00 AM",
-          "end_time_bst": "Oct 25, 2026, 08:30:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Vanderbilt Commodoresvs.Kentucky Wildcats"
-          },
-          "team_b": {
-            "name": "Vanderbilt Commodoresvs.Kentucky Wildcats"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/4aae09cd-6c81-4630-8508-b9824802dded.webp",
-        "channels": []
-      },
-      {
-        "title": "Ole Miss Rebelsvs.Texas Longhorns",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "ole-miss-rebelsvs-texas-longhorns",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 05:30:00 AM",
-          "end_time_bst": "Oct 25, 2026, 08:30:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Ole Miss Rebelsvs.Texas Longhorns"
-          },
-          "team_b": {
-            "name": "Ole Miss Rebelsvs.Texas Longhorns"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/0d124a12-2abc-4a79-bebc-88cf599111df.webp",
-        "channels": []
-      },
-      {
-        "title": "Iowa State Cyclonesvs.Arizona Wildcats",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "iowa-state-cyclonesvs-arizona-wildcats",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 05:30:00 AM",
-          "end_time_bst": "Oct 25, 2026, 08:30:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Iowa State Cyclonesvs.Arizona Wildcats"
-          },
-          "team_b": {
-            "name": "Iowa State Cyclonesvs.Arizona Wildcats"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/86c6aed3-aa4f-4827-aa5d-e1b08c71a2df.webp",
-        "channels": []
-      },
-      {
-        "title": "Syracuse Orangevs.North Carolina Tar Heels",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "syracuse-orangevs-north-carolina-tar-heels",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 05:30:00 AM",
-          "end_time_bst": "Oct 25, 2026, 08:30:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Syracuse Orangevs.North Carolina Tar Heels"
-          },
-          "team_b": {
-            "name": "Syracuse Orangevs.North Carolina Tar Heels"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/4970500d-8009-4ba7-8a6f-13260e92cbe5.webp",
-        "channels": []
-      },
-      {
-        "title": "USC Trojansvs.Wisconsin Badgers",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "usc-trojansvs-wisconsin-badgers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 05:30:00 AM",
-          "end_time_bst": "Oct 25, 2026, 08:30:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "USC Trojansvs.Wisconsin Badgers"
-          },
-          "team_b": {
-            "name": "USC Trojansvs.Wisconsin Badgers"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/9e0233f8-2ff6-48f2-9e85-c7cdf5481481.webp",
-        "channels": []
-      },
-      {
-        "title": "Utah State Aggiesvs.Texas State Bobcats",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "utah-state-aggiesvs-texas-state-bobcats",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 05:30:00 AM",
-          "end_time_bst": "Oct 25, 2026, 08:30:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Utah State Aggiesvs.Texas State Bobcats"
-          },
-          "team_b": {
-            "name": "Utah State Aggiesvs.Texas State Bobcats"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/e091b442-1ab3-4e15-8dd6-c9011f5e1378.webp",
-        "channels": []
-      },
-      {
-        "title": "Brooklyn Netsvs.Cleveland Cavaliers",
+        "title": "Brooklyn Nets at Cleveland Cavaliers",
         "sport": "Basketball",
         "sub_category": "Basketball",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "brooklyn-netsvs-cleveland-cavaliers",
+        "slug": "brooklyn-nets-at-cleveland-cavaliers",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 05:30:00 AM",
@@ -753,22 +1121,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Brooklyn Netsvs.Cleveland Cavaliers"
+            "name": "Brooklyn Nets at Cleveland Cavaliers"
           },
           "team_b": {
-            "name": "Brooklyn Netsvs.Cleveland Cavaliers"
+            "name": "Brooklyn Nets at Cleveland Cavaliers"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/ff3fac0c-fcff-45f0-b979-8a183d32390c.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Milwaukee Bucksvs.Philadelphia 76ers",
+        "title": "Milwaukee Bucks at Philadelphia 76ers",
         "sport": "Basketball",
         "sub_category": "Basketball",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "milwaukee-bucksvs-philadelphia-76ers",
+        "slug": "milwaukee-bucks-at-philadelphia-76ers",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 05:30:00 AM",
@@ -776,91 +1144,160 @@
         },
         "teams": {
           "team_a": {
-            "name": "Milwaukee Bucksvs.Philadelphia 76ers"
+            "name": "Milwaukee Bucks at Philadelphia 76ers"
           },
           "team_b": {
-            "name": "Milwaukee Bucksvs.Philadelphia 76ers"
+            "name": "Milwaukee Bucks at Philadelphia 76ers"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/1e7d7289-c94a-4896-9b74-ed4d2d337f4d.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "UTSA Roadrunnersvs.Tulane Green Wave",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "Vanderbilt Commodores at Kentucky Wildcats",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "utsa-roadrunnersvs-tulane-green-wave",
+        "slug": "vanderbilt-commodores-at-kentucky-wildcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 06:00:00 AM",
-          "end_time_bst": "Oct 25, 2026, 09:00:00 AM"
+          "start_time_bst": "Oct 25, 2026, 05:30:00 AM",
+          "end_time_bst": "Oct 25, 2026, 08:30:00 AM"
         },
         "teams": {
           "team_a": {
-            "name": "UTSA Roadrunnersvs.Tulane Green Wave"
+            "name": "Vanderbilt Commodores at Kentucky Wildcats"
           },
           "team_b": {
-            "name": "UTSA Roadrunnersvs.Tulane Green Wave"
+            "name": "Vanderbilt Commodores at Kentucky Wildcats"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/79d5db17-e627-4ff3-bcb5-166b63abb38c.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Washington Wizardsvs.Chicago Bulls",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
+        "title": "Ole Miss Rebels at Texas Longhorns",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "washington-wizardsvs-chicago-bulls",
+        "slug": "ole-miss-rebels-at-texas-longhorns",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 06:00:00 AM",
-          "end_time_bst": "Oct 25, 2026, 09:00:00 AM"
+          "start_time_bst": "Oct 25, 2026, 05:30:00 AM",
+          "end_time_bst": "Oct 25, 2026, 08:30:00 AM"
         },
         "teams": {
           "team_a": {
-            "name": "Washington Wizardsvs.Chicago Bulls"
+            "name": "Ole Miss Rebels at Texas Longhorns"
           },
           "team_b": {
-            "name": "Washington Wizardsvs.Chicago Bulls"
+            "name": "Ole Miss Rebels at Texas Longhorns"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/5209cf6f-a3aa-49c2-a31d-3171d477088e.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "San Antonio Spursvs.Dallas Mavericks",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
+        "title": "Iowa State Cyclones at Arizona Wildcats",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "san-antonio-spursvs-dallas-mavericks",
+        "slug": "iowa-state-cyclones-at-arizona-wildcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 06:00:00 AM",
-          "end_time_bst": "Oct 25, 2026, 09:00:00 AM"
+          "start_time_bst": "Oct 25, 2026, 05:30:00 AM",
+          "end_time_bst": "Oct 25, 2026, 08:30:00 AM"
         },
         "teams": {
           "team_a": {
-            "name": "San Antonio Spursvs.Dallas Mavericks"
+            "name": "Iowa State Cyclones at Arizona Wildcats"
           },
           "team_b": {
-            "name": "San Antonio Spursvs.Dallas Mavericks"
+            "name": "Iowa State Cyclones at Arizona Wildcats"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/53c69c5f-5a1e-44a8-b7df-863eaac1cc06.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Tampa Bay Raysvs.Milwaukee Brewers",
+        "title": "Syracuse Orange at North Carolina Tar Heels",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "syracuse-orange-at-north-carolina-tar-heels",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 05:30:00 AM",
+          "end_time_bst": "Oct 25, 2026, 08:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Syracuse Orange at North Carolina Tar Heels"
+          },
+          "team_b": {
+            "name": "Syracuse Orange at North Carolina Tar Heels"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "USC Trojans at Wisconsin Badgers",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "usc-trojans-at-wisconsin-badgers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 05:30:00 AM",
+          "end_time_bst": "Oct 25, 2026, 08:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "USC Trojans at Wisconsin Badgers"
+          },
+          "team_b": {
+            "name": "USC Trojans at Wisconsin Badgers"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Utah State Aggies at Texas State Bobcats",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "utah-state-aggies-at-texas-state-bobcats",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 05:30:00 AM",
+          "end_time_bst": "Oct 25, 2026, 08:30:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Utah State Aggies at Texas State Bobcats"
+          },
+          "team_b": {
+            "name": "Utah State Aggies at Texas State Bobcats"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Tampa Bay Rays at Milwaukee Brewers",
         "sport": "Baseball",
         "sub_category": "Baseball",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "tampa-bay-raysvs-milwaukee-brewers",
+        "slug": "tampa-bay-rays-at-milwaukee-brewers",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 06:00:00 AM",
@@ -868,22 +1305,91 @@
         },
         "teams": {
           "team_a": {
-            "name": "Tampa Bay Raysvs.Milwaukee Brewers"
+            "name": "Tampa Bay Rays at Milwaukee Brewers"
           },
           "team_b": {
-            "name": "Tampa Bay Raysvs.Milwaukee Brewers"
+            "name": "Tampa Bay Rays at Milwaukee Brewers"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/8803b03e-ded9-4854-b197-38c192d0ed1c.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Houston Rocketsvs.Atlanta Hawks",
+        "title": "Washington Wizards at Chicago Bulls",
         "sport": "Basketball",
         "sub_category": "Basketball",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "houston-rocketsvs-atlanta-hawks",
+        "slug": "washington-wizards-at-chicago-bulls",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 06:00:00 AM",
+          "end_time_bst": "Oct 25, 2026, 09:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Washington Wizards at Chicago Bulls"
+          },
+          "team_b": {
+            "name": "Washington Wizards at Chicago Bulls"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "San Antonio Spurs at Dallas Mavericks",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "san-antonio-spurs-at-dallas-mavericks",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 06:00:00 AM",
+          "end_time_bst": "Oct 25, 2026, 09:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "San Antonio Spurs at Dallas Mavericks"
+          },
+          "team_b": {
+            "name": "San Antonio Spurs at Dallas Mavericks"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "UTSA Roadrunners at Tulane Green Wave",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "utsa-roadrunners-at-tulane-green-wave",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 06:00:00 AM",
+          "end_time_bst": "Oct 25, 2026, 09:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "UTSA Roadrunners at Tulane Green Wave"
+          },
+          "team_b": {
+            "name": "UTSA Roadrunners at Tulane Green Wave"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Houston Rockets at Atlanta Hawks",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "houston-rockets-at-atlanta-hawks",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 06:30:00 AM",
@@ -891,22 +1397,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Houston Rocketsvs.Atlanta Hawks"
+            "name": "Houston Rockets at Atlanta Hawks"
           },
           "team_b": {
-            "name": "Houston Rocketsvs.Atlanta Hawks"
+            "name": "Houston Rockets at Atlanta Hawks"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/dfe3cb29-7d2f-48e6-a383-39b1f314eb22.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "New Orleans Pelicansvs.Denver Nuggets",
+        "title": "New Orleans Pelicans at Denver Nuggets",
         "sport": "Basketball",
         "sub_category": "Basketball",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "new-orleans-pelicansvs-denver-nuggets",
+        "slug": "new-orleans-pelicans-at-denver-nuggets",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 07:00:00 AM",
@@ -914,22 +1420,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "New Orleans Pelicansvs.Denver Nuggets"
+            "name": "New Orleans Pelicans at Denver Nuggets"
           },
           "team_b": {
-            "name": "New Orleans Pelicansvs.Denver Nuggets"
+            "name": "New Orleans Pelicans at Denver Nuggets"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/303d0ee1-c5f9-4ee2-a745-e01af517c96d.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Tampa Bay Lightningvs.Utah Mammoth",
+        "title": "Tampa Bay Lightning at Utah Mammoth",
         "sport": "Hockey",
         "sub_category": "Hockey",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "tampa-bay-lightningvs-utah-mammoth",
+        "slug": "tampa-bay-lightning-at-utah-mammoth",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 07:00:00 AM",
@@ -937,45 +1443,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Tampa Bay Lightningvs.Utah Mammoth"
+            "name": "Tampa Bay Lightning at Utah Mammoth"
           },
           "team_b": {
-            "name": "Tampa Bay Lightningvs.Utah Mammoth"
+            "name": "Tampa Bay Lightning at Utah Mammoth"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/341ae09d-6283-4d99-8b40-6bf0865884ab.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "North Dakota State Bisonvs.New Mexico Lobos",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "north-dakota-state-bisonvs-new-mexico-lobos",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 08:00:00 AM",
-          "end_time_bst": "Oct 25, 2026, 11:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "North Dakota State Bisonvs.New Mexico Lobos"
-          },
-          "team_b": {
-            "name": "North Dakota State Bisonvs.New Mexico Lobos"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/13c072f5-aa6c-4b3c-a03e-ecb0217b93d8.webp",
-        "channels": []
-      },
-      {
-        "title": "Golden State Warriorsvs.Phoenix Suns",
+        "title": "Golden State Warriors at Phoenix Suns",
         "sport": "Basketball",
         "sub_category": "Basketball",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "golden-state-warriorsvs-phoenix-suns",
+        "slug": "golden-state-warriors-at-phoenix-suns",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 08:00:00 AM",
@@ -983,22 +1466,45 @@
         },
         "teams": {
           "team_a": {
-            "name": "Golden State Warriorsvs.Phoenix Suns"
+            "name": "Golden State Warriors at Phoenix Suns"
           },
           "team_b": {
-            "name": "Golden State Warriorsvs.Phoenix Suns"
+            "name": "Golden State Warriors at Phoenix Suns"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/bb768ee2-3abb-4176-927b-9953c09c2385.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Detroit Red Wingsvs.Calgary Flames",
+        "title": "North Dakota State Bison at New Mexico Lobos",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "north-dakota-state-bison-at-new-mexico-lobos",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 08:00:00 AM",
+          "end_time_bst": "Oct 25, 2026, 11:00:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "North Dakota State Bison at New Mexico Lobos"
+          },
+          "team_b": {
+            "name": "North Dakota State Bison at New Mexico Lobos"
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Detroit Red Wings at Calgary Flames",
         "sport": "Hockey",
         "sub_category": "Hockey",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "detroit-red-wingsvs-calgary-flames",
+        "slug": "detroit-red-wings-at-calgary-flames",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 08:00:00 AM",
@@ -1006,22 +1512,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Detroit Red Wingsvs.Calgary Flames"
+            "name": "Detroit Red Wings at Calgary Flames"
           },
           "team_b": {
-            "name": "Detroit Red Wingsvs.Calgary Flames"
+            "name": "Detroit Red Wings at Calgary Flames"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/6086a21f-0c8e-48b8-8899-3bb8c76d68d4.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Minnesota Wildvs.Seattle Kraken",
+        "title": "Minnesota Wild at Seattle Kraken",
         "sport": "Hockey",
         "sub_category": "Hockey",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "minnesota-wildvs-seattle-kraken",
+        "slug": "minnesota-wild-at-seattle-kraken",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 08:00:00 AM",
@@ -1029,22 +1535,22 @@
         },
         "teams": {
           "team_a": {
-            "name": "Minnesota Wildvs.Seattle Kraken"
+            "name": "Minnesota Wild at Seattle Kraken"
           },
           "team_b": {
-            "name": "Minnesota Wildvs.Seattle Kraken"
+            "name": "Minnesota Wild at Seattle Kraken"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/7280c674-1cd2-4120-ac33-602759ffa569.webp",
+        "logo": null,
         "channels": []
       },
       {
-        "title": "Houston Cougarsvs.Utah Utes",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "Houston Cougars at Utah Utes",
+        "sport": "Football",
+        "sub_category": "Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "houston-cougarsvs-utah-utes",
+        "slug": "houston-cougars-at-utah-utes",
         "schedule": {
           "timezone": "BST (UTC+6)",
           "start_time_bst": "Oct 25, 2026, 08:15:00 AM",
@@ -1052,13 +1558,13 @@
         },
         "teams": {
           "team_a": {
-            "name": "Houston Cougarsvs.Utah Utes"
+            "name": "Houston Cougars at Utah Utes"
           },
           "team_b": {
-            "name": "Houston Cougarsvs.Utah Utes"
+            "name": "Houston Cougars at Utah Utes"
           }
         },
-        "logo": "https://streamecenter.live/api/images/badge/d6cc21b6-3402-43c7-89d5-a0a3b6d2284d.webp",
+        "logo": null,
         "channels": []
       }
     ]
