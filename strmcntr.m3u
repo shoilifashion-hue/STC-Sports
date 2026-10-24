@@ -8,9 +8,6 @@ https://edgestream2.pro/hls/sfjnzabacah31.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/5587d210-84a7-4697-8a3d-543013b9d427.webp" group-title="Basketball",[Basketball] New York Knicksvs.Boston Celtics | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/wfazgsqtrezu66.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/ff2b21cf-70b5-4245-adbb-f66d06cb644c.webp" group-title="Basketball",[Basketball] Atlanta Hawksvs.Charlotte Hornets | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/hfsdqtaxvb67.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/5a3ac75c-7122-4ece-aad5-2dc3550a0e4d.webp" group-title="Basketball",[Basketball] Dallas Mavericksvs.Indiana Pacers | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/zayrtezafgvdv68.m3u8
@@ -41,12 +38,12 @@ https://edgestream2.pro/hls/oipozuezeji33.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/341ae09d-6283-4d99-8b40-6bf0865884ab.webp" group-title="Hockey",[Hockey] Tampa Bay Lightningvs.Colorado Avalanche | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/hjksgdfauzy51.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/303d0ee1-c5f9-4ee2-a745-e01af517c96d.webp" group-title="Basketball",[Basketball] New Orleans Pelicansvs.Utah Jazz | English Stream
-#EXTVLCOPT:http-referrer=https://streame.center
-https://edgestream2.pro/hls/fdgsqdfawa73.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/dfe3cb29-7d2f-48e6-a383-39b1f314eb22.webp" group-title="Basketball",[Basketball] Houston Rocketsvs.San Antonio Spurs | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/pllmazjkdzajh72.m3u8
+#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/303d0ee1-c5f9-4ee2-a745-e01af517c96d.webp" group-title="Basketball",[Basketball] New Orleans Pelicansvs.Utah Jazz | English Stream
+#EXTVLCOPT:http-referrer=https://streame.center
+https://edgestream2.pro/hls/fdgsqdfawa73.m3u8
 #EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/0c0e8af3-39c3-4f52-8133-211109a34e41.webp" group-title="Basketball",[Basketball] Memphis Grizzliesvs.Golden State Warriors | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/yjtzafghvjza74.m3u8
