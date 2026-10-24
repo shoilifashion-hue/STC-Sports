@@ -1,100 +1,8 @@
 {
-  "last_updated": "Oct 25, 2026, 12:18:59 AM",
-  "event_count": 50,
+  "last_updated": "Oct 25, 2026, 12:50:37 AM",
+  "event_count": 46,
   "events": {
     "events": [
-      {
-        "title": "Lensvs.Paris FC",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "lensvs-paris-fc",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 12:45:00 AM",
-          "end_time_bst": "Oct 25, 2026, 03:45:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Lensvs.Paris FC"
-          },
-          "team_b": {
-            "name": "Lensvs.Paris FC"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/98931701-8d05-424c-961a-8f19781b74ca.webp",
-        "channels": []
-      },
-      {
-        "title": "Laziovs.Parma",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "laziovs-parma",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 12:45:00 AM",
-          "end_time_bst": "Oct 25, 2026, 03:45:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Laziovs.Parma"
-          },
-          "team_b": {
-            "name": "Laziovs.Parma"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/62bf701d-975c-4b10-a3e9-7620bf03b88a.webp",
-        "channels": []
-      },
-      {
-        "title": "Oregon Ducksvs.Illinois Fighting Illini",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "oregon-ducksvs-illinois-fighting-illini",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 01:00:00 AM",
-          "end_time_bst": "Oct 25, 2026, 04:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Oregon Ducksvs.Illinois Fighting Illini"
-          },
-          "team_b": {
-            "name": "Oregon Ducksvs.Illinois Fighting Illini"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/1da23903-f07d-468e-a5d6-871e829774d4.webp",
-        "channels": []
-      },
-      {
-        "title": "Atlético Madridvs.Deportivo",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "atlético-madridvs-deportivo",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 01:00:00 AM",
-          "end_time_bst": "Oct 25, 2026, 04:00:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Atlético Madridvs.Deportivo"
-          },
-          "team_b": {
-            "name": "Atlético Madridvs.Deportivo"
-          }
-        },
-        "logo": "https://streamecenter.live/api/images/badge/69a287b6-f749-461f-8975-51491520f1f1.webp",
-        "channels": []
-      },
       {
         "title": "Texas A&M Aggiesvs.Alabama Crimson Tide",
         "sport": "American Football",
@@ -461,18 +369,7 @@
           }
         },
         "logo": "https://streamecenter.live/api/images/badge/3967b4fa-d3db-4c52-8523-bece9b205c5e.webp",
-        "channels": [
-          {
-            "channel_name": "English Stream",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/mlkijfezag65.m3u8",
-            "raw_link": "https://edgestream2.pro/hls/mlkijfezag65.m3u8|Referer=https://streame.center",
-            "headers": {
-              "Referer": "https://streame.center"
-            },
-            "drm_key": null
-          }
-        ]
+        "channels": []
       },
       {
         "title": "San Diego State Aztecsvs.Colorado State Rams",
