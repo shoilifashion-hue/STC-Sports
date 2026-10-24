@@ -4,7 +4,6 @@ import os
 import re
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
-from urllib.parse import urljoin
 
 import httpx
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
@@ -14,11 +13,20 @@ GITHUB_TOKEN = os.getenv("GH_PAT")
 GITHUB_REPO = os.getenv("GH_REPO", "shoilifashion-hue/STC-Sports")
 EVENT_TYPE = os.getenv("EVENT_TYPE", "source_updated")
 
-BASE_URL = "https://streamecenter.live"
+# বর্তমান কার্যকর সোর্স ইউআরএলসমূহ
+BASE_URL = "https://streamcenter.st"
+ALT_URL = "https://streamec.st"
+
+PAGES_TO_TRY = [
+    f"{BASE_URL}/game-cards",
+    f"{ALT_URL}/game-cards",
+    f"{BASE_URL}/game-cards/embed"
+]
+
 UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/134.0.0.0 Safari/537.36"
+    "Chrome/111.0.0.0 Safari/537.36"
 )
 
 logging.basicConfig(
@@ -36,15 +44,53 @@ class RawEvent:
     sources_count: int
 
 
-def parse_event_time(value: str) -> datetime | None:
-    try:
-        value = value.strip()
-        if value.endswith("Z"):
-            value = value[:-1] + "+00:00"
-        dt = datetime.fromisoformat(value)
-        return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt
-    except Exception:
-        return None
+def cleanup_text(text: str) -> str:
+    text = text.replace('\xa0', ' ')
+    text = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)
+    text = re.sub(r'(vs\.?)([A-Za-z])', r'\1 \2', text, flags=re.IGNORECASE)
+    text = re.sub(r'([A-Za-z])(vs\.?)', r'\1 \2', text, flags=re.IGNORECASE)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def extract_match_datetime(row_elem) -> datetime:
+    """পুরো রো থেকে আসল সময় পার্স করে"""
+    # ১. <time datetime="..."> অ্যাট্রিবিউট চেক
+    for elem in row_elem.css("[datetime], time"):
+        iso_val = elem.attributes.get("datetime", "").strip()
+        if iso_val:
+            try:
+                clean_iso = iso_val.replace("Z", "+00:00")
+                dt = datetime.fromisoformat(clean_iso)
+                return dt.astimezone(timezone.utc)
+            except Exception:
+                pass
+
+    # ২. Regex দিয়ে তারিখ অংশ বের করা (যেমন: Oct 25, 2026, 8:15 AM)
+    clean_txt = cleanup_text(row_elem.text())
+    m = re.search(r'([A-Za-z]{3})\s+(\d{1,2}),?\s+(\d{4}),?\s+(\d{1,2}):(\d{2})\s*(AM|PM)?', clean_txt, re.IGNORECASE)
+    if m:
+        month_map = {
+            "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+            "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12
+        }
+        try:
+            m_str = m.group(1)[:3].lower()
+            if m_str in month_map:
+                month = month_map[m_str]
+                day = int(m.group(2))
+                year = int(m.group(3))
+                hour = int(m.group(4))
+                minute = int(m.group(5))
+                ampm = m.group(6).upper() if m.group(6) else "AM"
+                if ampm == "PM" and hour < 12:
+                    hour += 12
+                elif ampm == "AM" and hour == 12:
+                    hour = 0
+                return datetime(year, month, day, hour, minute, tzinfo=timezone.utc)
+        except Exception:
+            pass
+
+    return datetime.now(timezone.utc)
 
 
 # খেলা শুরুর ১৫ মিনিট আগে থেকে LIVE স্ট্যাটাস নির্ধারণ করার লজিক
@@ -52,7 +98,7 @@ def determine_status(start_dt: datetime, early_minutes: int = 15) -> str:
     now_utc = datetime.now(timezone.utc)
     start_utc = start_dt.astimezone(timezone.utc)
     live_start_utc = start_utc - timedelta(minutes=early_minutes)
-    end_utc = start_utc + timedelta(hours=3)
+    end_utc = start_utc + timedelta(hours=3, minutes=30)
 
     if live_start_utc <= now_utc <= end_utc:
         return "LIVE"
@@ -96,42 +142,61 @@ async def trigger_github_workflow(client: httpx.AsyncClient, reason: str = "") -
 
 
 async def get_raw_events(client: httpx.AsyncClient) -> list[RawEvent]:
-    """সোর্স ওয়েবসাইট থেকে বর্তমান খেলার তালিকা ফেচ করা"""
+    """বর্তমান সাইটের game-cards পেজ থেকে খেলার তালিকা ফেচ করা"""
     events = []
-    try:
-        resp = await client.get(urljoin(BASE_URL, "game-cards/embed"), timeout=15.0)
-        if resp.status_code != 200:
-            return events
-        soup = HTMLParser(resp.content)
-        now_utc = datetime.now(timezone.utc)
+    
+    for target_url in PAGES_TO_TRY:
+        try:
+            resp = await client.get(target_url, headers={"User-Agent": UA, "Referer": BASE_URL}, timeout=15.0)
+            if resp.status_code != 200:
+                continue
 
-        for card in soup.css(".game-card-group"):
-            for game in card.css(".game-card-row"):
-                name_elem = game.css_first("h3")
-                time_elem = game.css_first(".game-card-when > time")
-                if not name_elem or not time_elem:
+            soup = HTMLParser(resp.content)
+            rows = soup.css("article.game-card-row, .game-card-row")
+
+            for row in rows:
+                title = ""
+                # aria-label থেকে পরিষ্কার টাইটেল বের করা
+                sources_div = row.css_first(".game-card-sources")
+                if sources_div:
+                    label = sources_div.attributes.get("aria-label", "")
+                    if "Sources for " in label:
+                        title = label.replace("Sources for ", "").strip()
+
+                if not title:
+                    content_div = row.css_first(".game-card-content, .game-card-side")
+                    t_elem = content_div.css_first("h3, h4, .title, strong") if content_div else None
+                    title = cleanup_text(t_elem.text()) if t_elem else ""
+
+                if not title:
+                    for line in row.text().split("\n"):
+                        cl = cleanup_text(line)
+                        if "vs" in cl.lower() or " - " in cl:
+                            title = cl
+                            break
+
+                if not title or len(title) < 3:
                     continue
 
-                event_dt = parse_event_time(time_elem.attributes.get("datetime", ""))
-                if not event_dt:
-                    continue
+                event_dt = extract_match_datetime(row)
+                sources_count = len(row.css("a.game-card-open-link, a[href*='/api/stream-link/']"))
 
-                event_dt_utc = event_dt.astimezone(timezone.utc)
-                # ৩ ঘণ্টার বেশি পুরনো এবং ২৪ ঘণ্টার দূরের ম্যাচ বাদ
-                if event_dt_utc < now_utc - timedelta(hours=3) or event_dt_utc > now_utc + timedelta(hours=24):
-                    continue
-
-                sources_count = len(game.css(".game-card-source > a.game-card-open-link"))
                 if sources_count > 0:
                     events.append(
                         RawEvent(
-                            title=name_elem.text(strip=True),
+                            title=cleanup_text(title),
                             start_dt=event_dt,
                             sources_count=sources_count,
                         )
                     )
-    except Exception as e:
-        log.error(f"Error fetching source: {e}")
+
+            if events:
+                log.info(f"Loaded {len(events)} events from {target_url}")
+                return events
+
+        except Exception as e:
+            log.warning(f"Error fetching {target_url}: {e}")
+
     return events
 
 
@@ -147,7 +212,6 @@ async def check_and_monitor():
                 raw_events = await get_raw_events(client)
 
                 if raw_events:
-                    # প্রতিটি ম্যাচের নাম + ১৫ মিনিট আগের লাইভ স্ট্যাটাস + সোর্স সংখ্যা নিয়ে স্টেট তৈরি
                     state_list = []
                     live_matches = []
 
@@ -160,7 +224,7 @@ async def check_and_monitor():
                     state_list.sort()
                     new_state = "|".join(state_list)
 
-                    # ১. প্রথমবার রেন্ডার চালু হলে কেবল স্টেট মেমোরিতে রাখবে (অযথা ট্রিগার করবে না)
+                    # ১. প্রথমবার রেন্ডার চালু হলে স্টেট মেমোরিতে রাখা
                     if last_state is None:
                         last_state = new_state
                         log.info(
@@ -168,7 +232,7 @@ async def check_and_monitor():
                             f"(Currently LIVE: {len(live_matches)}). Waiting for future updates..."
                         )
 
-                    # ২. অবস্থার পরিবর্তন হলে (ম্যাচ ১৫ মিনিট আগে LIVE হলে, যোগ বা বাদ হলে)
+                    # ২. অবস্থার পরিবর্তন হলে (ম্যাচ ১৫ মিনিট আগে LIVE হলে বা নতুন ম্যাচ এলে)
                     elif last_state != new_state:
                         log.info(
                             f"State change detected! (Events: {len(raw_events)}, LIVE now: {len(live_matches)}). "
@@ -188,7 +252,7 @@ async def check_and_monitor():
             except Exception as e:
                 log.error(f"Unexpected monitor error: {e}")
 
-            # ৫ মিনিট অপেক্ষা করবে
+            # ৫ মিনিট অপেক্ষা
             await asyncio.sleep(300)
 
 
