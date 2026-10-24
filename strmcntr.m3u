@@ -1,7 +1,7 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/35ac7848-b483-4f0b-ab05-860dd1b68c55.webp" group-title="American Football",[American Football] BYU Cougarsvs.UCF Knights | English Stream
+#EXTINF:-1 tvg-logo="https://streamcenter.st/api/images/badge/35ac7848-b483-4f0b-ab05-860dd1b68c55.webp" group-title="American Football",[American Football] BYU Cougarsvs.UCF Knights | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/JHDAJBDnjdna30.m3u8
-#EXTINF:-1 tvg-logo="https://streamecenter.live/api/images/badge/3967b4fa-d3db-4c52-8523-bece9b205c5e.webp" group-title="Basketball",[Basketball] Miami Heatvs.Charlotte Hornets | English Stream
+#EXTINF:-1 tvg-logo="https://streamcenter.st/api/images/badge/3967b4fa-d3db-4c52-8523-bece9b205c5e.webp" group-title="Basketball",[Basketball] Miami Heatvs.Charlotte Hornets | English Stream
 #EXTVLCOPT:http-referrer=https://streame.center
 https://edgestream2.pro/hls/mlkijfezag65.m3u8
