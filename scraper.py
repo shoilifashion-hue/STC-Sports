@@ -73,54 +73,60 @@ def parse_teams(title: str, team_a_logo: str | None = None, team_b_logo: str | N
         "team_b": {"name": title.strip(), "logo": team_b_logo}
     }
 
-def calculate_match_status(start_dt: datetime, site_status: str, early_minutes: int = 15) -> str:
-    """
-    ম্যাচ শুরুর ঠিক ১৫ মিনিট আগে স্ট্যাটাস LIVE হবে।
-    ম্যাচ চলাকালীন ৩ ঘণ্টা পর্যন্ত LIVE থাকবে।
-    """
-    # যদি সাইটেই সরাসরি স্কোরবোর্ড চালু থাকে তবে সরাসরি LIVE
-    if site_status == "LIVE":
-        return "LIVE"
+def parse_match_datetime(time_elem) -> datetime:
+    """টেক্সটের ভেতর SCHEDULED বা LIVE লেখা থাকলেও শুধু আসল তারিখ পার্স করে"""
+    if not time_elem:
+        return datetime.now(timezone.utc)
 
-    now_utc = datetime.now(timezone.utc)
-    start_utc = start_dt.astimezone(timezone.utc)
-
-    live_start_window = start_utc - timedelta(minutes=early_minutes)
-    live_end_window = start_utc + timedelta(hours=3)
-
-    if live_start_window <= now_utc <= live_end_window:
-        return "LIVE"
-    elif now_utc < live_start_window:
-        return "UPCOMING"
-    else:
-        return "ENDED"
-
-def parse_match_datetime(time_str: str, iso_datetime: str = "") -> datetime:
-    """ISO ফরম্যাট অথবা টেক্সট থেকে সঠিক সময় পার্স করে"""
-    if iso_datetime:
+    # ১. <time datetime="..."> অ্যাট্রিবিউট চেক
+    iso_val = time_elem.attributes.get("datetime", "")
+    if iso_val:
         try:
-            val = iso_datetime.strip()
-            if val.endswith("Z"):
-                val = val[:-1] + "+00:00"
+            val = iso_val.strip().replace("Z", "+00:00")
             dt = datetime.fromisoformat(val)
             return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt
         except Exception:
             pass
 
-    time_str = cleanup_text(time_str)
-    formats = [
-        "%b %d, %Y, %I:%M %p",
-        "%b %d, %Y, %H:%M",
-        "%Y-%m-%d %H:%M:%S",
-        "%B %d, %Y, %I:%M %p"
-    ]
-    for fmt in formats:
+    # ২. Regex দিয়ে তারিখ অংশ বের করা (যেমন: Oct 25, 2026, 1:30 AM)
+    text = time_elem.text() or ""
+    m = re.search(r'([A-Za-z]{3}\s+\d{1,2},\s+\d{4},\s+\d{1,2}:\d{2}\s+(?:AM|PM))', text, re.IGNORECASE)
+    if m:
+        date_str = m.group(1).strip()
+        for fmt in ["%b %d, %Y, %I:%M %p", "%B %d, %Y, %I:%M %p"]:
+            try:
+                dt = datetime.strptime(date_str, fmt)
+                return dt.replace(tzinfo=timezone.utc)
+            except Exception:
+                pass
+
+    # ৩. যদি শুধু সময় থাকে (যেমন: 1:30 AM)
+    m_time = re.search(r'(\d{1,2}:\d{2}\s+(?:AM|PM))', text, re.IGNORECASE)
+    if m_time:
         try:
-            dt = datetime.strptime(time_str, fmt)
-            return dt.replace(tzinfo=timezone.utc)
+            today = datetime.now(timezone.utc)
+            t = datetime.strptime(m_time.group(1).strip(), "%I:%M %p").time()
+            return datetime.combine(today.date(), t, tzinfo=timezone.utc)
         except Exception:
             pass
+
     return datetime.now(timezone.utc)
+
+def calculate_match_status(start_dt: datetime, site_status: str, early_minutes: int = 15) -> str:
+    """ম্যাচ শুরুর ঠিক ১৫ মিনিট আগে লাইভ স্ট্যাটাস হবে"""
+    now_utc = datetime.now(timezone.utc)
+    start_utc = start_dt.astimezone(timezone.utc)
+
+    # শুরু হতে ১৫ মিনিটের বেশি বাকি থাকলে বাধ্যতামূলক UPCOMING
+    if now_utc < (start_utc - timedelta(minutes=early_minutes)):
+        return "UPCOMING"
+
+    # শুরু হওয়ার ১৫ মিনিট আগে থেকে পরবর্তী ৩ ঘণ্টা পর্যন্ত LIVE
+    if (start_utc - timedelta(minutes=early_minutes)) <= now_utc <= (start_utc + timedelta(hours=3, minutes=30)):
+        return "LIVE"
+
+    # ৩ ঘণ্টা ৩০ মিনিট পার হয়ে গেলে ENDED
+    return "ENDED"
 
 def extract_m3u8(text: str, base_url: str = "") -> str | None:
     if not text:
@@ -229,13 +235,13 @@ def parse_cards_soup(soup: HTMLParser, source_page_url: str) -> list[ScrapedMatc
 
         title = cleanup_text(title)
 
+        # সময় পার্স (SCHEDULED বা LIVE এর টেক্সট হ্যান্ডেল করা হয়েছে)
         time_node = row.css_first(".game-card-when, time, [class*='when']")
-        iso_val = time_node.attributes.get("datetime", "") if time_node else ""
-        time_str = cleanup_text(time_node.text()) if time_node else ""
-        dt = parse_match_datetime(time_str, iso_datetime=iso_val)
+        dt = parse_match_datetime(time_node)
 
-        has_scoreboard = bool(row.css_first(".live-scoreboard, [class*='live-score']"))
-        site_status = "LIVE" if (has_scoreboard or "LIVE" in row.text().upper()) else "UPCOMING"
+        # সাইটের স্ট্যাটাস
+        row_txt = row.text().upper()
+        site_status = "SCHEDULED" if "SCHEDULED" in row_txt else ("LIVE" if "LIVE" in row_txt else "UPCOMING")
 
         sport = "Sports"
         parent = row.parent
@@ -356,9 +362,7 @@ async def main():
                     })
                     idx += 1
 
-            # ========================================================
-            # ঠিক ১৫ মিনিট আগে লাইভ স্ট্যাটাস নির্ধারণের লজিক
-            # ========================================================
+            # সঠিক সময় ভিত্তিক স্ট্যাটাস (১৫ মিনিট আগের লজিক)
             actual_status = calculate_match_status(m.start_dt, m.site_status, early_minutes=15)
 
             teams_data = parse_teams(m.title, team_a_logo=m.team_a_logo, team_b_logo=m.team_b_logo)
@@ -382,7 +386,7 @@ async def main():
                 "_timestamp": m.start_dt.timestamp()
             })
 
-        # সর্টিং: LIVE ম্যাচ সবার আগে, তারপর শুরু হওয়ার সময় অনুযায়ী UPCOMING
+        # সর্টিং: LIVE ম্যাচ সবার আগে, তারপর ক্রমান্বয়ে UPCOMING ম্যাচগুলো আসবে
         priority = {"LIVE": 0, "UPCOMING": 1, "ENDED": 2}
         final_playlist.sort(key=lambda x: (priority.get(x["status"], 99), x["_timestamp"]))
         for item in final_playlist:
