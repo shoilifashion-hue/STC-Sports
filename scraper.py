@@ -5,406 +5,222 @@ import re
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import parse_qsl, quote_plus, urljoin, urlsplit
+from urllib.parse import parse_qsl, urljoin, urlsplit
 from zoneinfo import ZoneInfo
 
 import httpx
+from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
-# রিপোজিটরি রুট ডিরেক্টরি
-ROOT_DIR = Path(__file__).resolve().parent.parent
+# রুট পাথ
+ROOT_DIR = Path(__file__).resolve().parent
 
-BASE_URL = "https://streamcenter.st"
-API_SPORTS = f"{BASE_URL}/api/sports"
-
+BASE_URL = "https://streamecenter.live"
+ALT_BASE = "https://streame.center"
 TAG = "STRMCNTR"
 
-# আউটপুট পাথ
 JSON_OUTPUT = ROOT_DIR / "strmcntr.json"
 M3U_OUTPUT = ROOT_DIR / "strmcntr.m3u"
-LOG_DIR = ROOT_DIR / "logs"
-LOG_DIR.mkdir(parents=True, exist_ok=True)
+CACHE_DIR = ROOT_DIR / "caches"
+STATE_FILE = CACHE_DIR / "state.txt"
+
+CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
 UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+    "Chrome/134.0.0.0 Safari/537.36"
 )
 
-# API রেট-লিমিট (৬০ রিকোয়েস্ট/মিনিট) মেনে চলার জন্য সেমাফোর
-HTTP_SEMAPHORE = asyncio.Semaphore(8)
+HTTP_SEMAPHORE = asyncio.Semaphore(15)
 BST_TZ = ZoneInfo("Asia/Dhaka")
 
-LOG_FMT = (
-    "[%(asctime)s] "
-    "%(levelname)-8s "
-    "[%(name)s] "
-    "%(message)-70s "
-    "(%(filename)s:%(lineno)d)"
-)
-
+logging.basicConfig(level=logging.INFO, format="[%(asctime)s] %(levelname)s: %(message)s")
 log = logging.getLogger(TAG)
-log.setLevel(logging.INFO)
 
-if not log.handlers:
-    formatter = logging.Formatter(LOG_FMT, datefmt="%Y-%m-%d | %H:%M:%S")
-    file_handler = logging.FileHandler(LOG_DIR / "fetch.log", encoding="utf-8")
-    console_handler = logging.StreamHandler()
+@dataclass(slots=True)
+class SourceLink:
+    name: str
+    url: str
 
-    file_handler.setFormatter(formatter)
-    console_handler.setFormatter(formatter)
+@dataclass(slots=True)
+class RawEvent:
+    sport: str
+    title: str
+    start_dt: datetime
+    sources: list[SourceLink]
+    logo: str | None = None
 
-    log.addHandler(file_handler)
-    log.addHandler(console_handler)
-    log.propagate = False
+def cleanup(s: str) -> str:
+    return "".join(i for i in s.split("—")[-1] if i.isascii()).strip()
 
-
-# -----------------------------------------------------------------------------
-# টিম লোগো এবং ফ্ল্যাগ সিডিএন
-# -----------------------------------------------------------------------------
-KNOWN_TEAM_LOGOS = {
-    "arsenal": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png",
-    "chelsea": "https://images.fotmob.com/image_resources/logo/teamlogo/10260.png",
-    "liverpool": "https://images.fotmob.com/image_resources/logo/teamlogo/8650.png",
-    "manchester united": "https://images.fotmob.com/image_resources/logo/teamlogo/10267.png",
-    "manchester city": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png",
-    "tottenham": "https://images.fotmob.com/image_resources/logo/teamlogo/8586.png",
-    "real madrid": "https://images.fotmob.com/image_resources/logo/teamlogo/8633.png",
-    "barcelona": "https://images.fotmob.com/image_resources/logo/teamlogo/8634.png",
-    "atletico madrid": "https://images.fotmob.com/image_resources/logo/teamlogo/9906.png",
-    "juventus": "https://images.fotmob.com/image_resources/logo/teamlogo/9885.png",
-    "inter milan": "https://images.fotmob.com/image_resources/logo/teamlogo/8636.png",
-    "ac milan": "https://images.fotmob.com/image_resources/logo/teamlogo/8564.png",
-    "bayern munich": "https://images.fotmob.com/image_resources/logo/teamlogo/9823.png",
-    "dortmund": "https://images.fotmob.com/image_resources/logo/teamlogo/9789.png",
-    "psg": "https://images.fotmob.com/image_resources/logo/teamlogo/9847.png",
-    "csk": "https://images.fotmob.com/image_resources/logo/teamlogo/6573.png",
-    "mi": "https://images.fotmob.com/image_resources/logo/teamlogo/6576.png",
-    "rcb": "https://images.fotmob.com/image_resources/logo/teamlogo/6574.png",
-    "argentina": "https://flagcdn.com/w320/ar.png",
-    "brazil": "https://flagcdn.com/w320/br.png",
-    "england": "https://flagcdn.com/w320/gb-eng.png",
-    "france": "https://flagcdn.com/w320/fr.png",
-    "germany": "https://flagcdn.com/w320/de.png",
-    "spain": "https://flagcdn.com/w320/es.png",
-    "india": "https://flagcdn.com/w320/in.png",
-    "pakistan": "https://flagcdn.com/w320/pk.png",
-    "bangladesh": "https://flagcdn.com/w320/bd.png",
-}
-
-SPORT_ICONS = {
-    "football": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png",
-    "cricket": "https://cdn-icons-png.flaticon.com/512/1071/1071178.png",
-    "basketball": "https://cdn-icons-png.flaticon.com/512/889/889508.png",
-    "tennis": "https://cdn-icons-png.flaticon.com/512/709/709605.png",
-    "hockey": "https://cdn-icons-png.flaticon.com/512/2622/2622830.png",
-}
-
-DEFAULT_LOGO = "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png"
-
-
-def get_real_team_badge(team_name: str, sport: str = "Football") -> str:
-    cleaned = team_name.strip().lower()
-    for k, v in KNOWN_TEAM_LOGOS.items():
-        if k in cleaned or cleaned in k:
-            return v
-    for k, v in SPORT_ICONS.items():
-        if k in sport.lower():
-            return v
-    return DEFAULT_LOGO
-
-
-# -----------------------------------------------------------------------------
-# সাব-ক্যাটাগরি ও স্পোর্টস ক্লিনার
-# -----------------------------------------------------------------------------
-LEAGUE_PATTERNS = [
-    (r"premier league|epl", "Premier League"),
-    (r"la liga|laliga", "La Liga"),
-    (r"serie a", "Serie A"),
-    (r"bundesliga", "Bundesliga"),
-    (r"ligue 1", "Ligue 1"),
-    (r"champions league|ucl", "UEFA Champions League"),
-    (r"europa league|uel", "UEFA Europa League"),
-    (r"ipl|indian premier league", "Indian Premier League (IPL)"),
-    (r"bpl", "Bangladesh Premier League (BPL)"),
-    (r"nba", "NBA"),
-    (r"smackdown", "WWE SmackDown"),
-    (r"raw", "WWE Raw"),
-    (r"ufc", "UFC"),
-    (r"formula 1|f1", "Formula 1"),
-]
-
-
-def get_sub_category(sport: str, title: str) -> str:
-    comb = f"{sport} {title}".lower()
-    for pat, league in LEAGUE_PATTERNS:
-        if re.search(pat, comb):
-            return league
-    return sport.capitalize()
-
-
-def clean_sport_name(sport_slug: str) -> str:
-    slug = sport_slug.lower()
-    if "football" in slug or "soccer" in slug:
-        return "Football"
-    if "basketball" in slug:
-        return "Basketball"
-    if "baseball" in slug:
-        return "Baseball"
-    if "hockey" in slug:
-        return "Hockey"
-    if "cricket" in slug:
-        return "Cricket"
-    if "wwe" in slug or "wrestling" in slug:
-        return "Wrestling"
-    if "fighting" in slug or "ufc" in slug or "mma" in slug:
-        return "Fighting"
-    return sport_slug.replace("-", " ").title()
-
-
-def parse_team_names(title: str) -> dict[str, str]:
-    for d in [" vs. ", " vs ", " - ", " @ "]:
-        if d in title.lower():
-            parts = re.split(re.escape(d), title, maxsplit=1, flags=re.IGNORECASE)
-            if len(parts) == 2:
-                return {"team_a": parts[0].strip(), "team_b": parts[1].strip()}
-    return {"team_a": title.strip(), "team_b": title.strip()}
-
+def fix_sport(s: str) -> str:
+    splits = s.split()
+    if not splits:
+        return ""
+    first = splits[0]
+    return f"{first.upper() if len(first) < 5 else first.capitalize()} {' '.join(x.capitalize() for x in splits[1:])}".strip()
 
 def create_slug(text: str) -> str:
     return re.sub(r"[\W_]+", "-", text.lower().strip()).strip("-")
 
+def parse_event_time(value: str) -> datetime | None:
+    try:
+        value = value.strip()
+        if value.endswith("Z"):
+            value = value[:-1] + "+00:00"
+        dt = datetime.fromisoformat(value)
+        return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt
+    except Exception:
+        return None
 
-def determine_status(start_dt: datetime) -> str:
+def parse_teams(title: str) -> dict:
+    delimiters = [" vs. ", " vs ", " - ", " @ "]
+    for d in delimiters:
+        if d in title.lower():
+            parts = re.split(re.escape(d), title, maxsplit=1, flags=re.IGNORECASE)
+            if len(parts) == 2:
+                return {"team_a": {"name": parts[0].strip()}, "team_b": {"name": parts[1].strip()}}
+    return {"team_a": {"name": title.strip()}, "team_b": {"name": title.strip()}}
+
+def determine_status(start_dt: datetime, early_minutes: int = 15) -> str:
     now_utc = datetime.now(timezone.utc)
     start_utc = start_dt.astimezone(timezone.utc)
-    live_start = start_utc - timedelta(minutes=15)
-    end_time = start_utc + timedelta(hours=3)
-
-    if live_start <= now_utc <= end_time:
+    if (start_utc - timedelta(minutes=early_minutes)) <= now_utc <= (start_utc + timedelta(hours=3)):
         return "LIVE"
-    elif now_utc < live_start:
+    elif now_utc < (start_utc - timedelta(minutes=early_minutes)):
         return "UPCOMING"
     return "ENDED"
 
-
-def save_playlists(events: list[dict]) -> None:
-    now_bst = datetime.now(BST_TZ)
-    last_updated_str = now_bst.strftime("%b %d, %Y, %I:%M:%S %p")
-
-    json_payload = {
-        "last_updated": last_updated_str,
-        "event_count": len(events),
-        "events": {"events": events}
-    }
-
-    JSON_OUTPUT.write_text(json.dumps(json_payload, indent=2, ensure_ascii=False), encoding="utf-8")
-    log.info(f"Saved JSON: {JSON_OUTPUT}")
-
-    m3u_lines = ["#EXTM3U"]
-    for ev in events:
-        sub_cat = ev.get("sub_category", "Live")
-        logo = ev.get("logo", "")
-        status = ev.get("status", "")
-
-        for ch in ev.get("channels", []):
-            url = ch.get("url")
-            if not url:
-                continue
-
-            ch_name = ch.get("channel_name", "Stream")
-            referer = ch.get("headers", {}).get("Referer", "")
-            status_lbl = f" [{status}]" if status else ""
-            display_name = f"[{sub_cat}] {ev['title']} | {ch_name}{status_lbl}"
-
-            m3u_lines.append(f'#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="{logo}" group-title="{sub_cat}",{display_name}')
-            if referer:
-                m3u_lines.append(f'#EXTVLCOPT:http-referrer={referer}')
-            m3u_lines.append(url)
-
-    M3U_OUTPUT.write_text("\n".join(m3u_lines) + "\n", encoding="utf-8")
-    log.info(f"Saved M3U: {M3U_OUTPUT}")
-
-
-# -----------------------------------------------------------------------------
-# StreamCenter API থেকে স্ট্রিম রেজোলিউশন
-# -----------------------------------------------------------------------------
-async def resolve_stream_group(client: httpx.AsyncClient, source: str, match_id: str) -> list[dict]:
-    url = f"{BASE_URL}/api/stream/{quote_plus(source)}/{quote_plus(match_id)}"
-    try:
-        async with HTTP_SEMAPHORE:
-            res = await client.get(url, timeout=8.0)
-            if res.status_code != 200:
-                return []
-            data = res.json()
-            if not isinstance(data, list):
-                return []
-            return data
-    except Exception:
-        return []
-
-
-def parse_m3u8_from_embed(embed_url: str) -> str | None:
-    if not embed_url:
-        return None
-
-    if ".m3u8" in embed_url:
-        return embed_url
-
-    parsed = urlsplit(embed_url)
-    params = dict(parse_qsl(parsed.query))
-    stream_id = params.get("stream")
-
-    if stream_id:
-        if stream_id.isdigit():
-            return f"https://edgestream3.pro/stream/{stream_id}.m3u8"
-        return f"https://edgestream2.pro/hls/{stream_id}.m3u8"
-
-    return embed_url
-
-
-# -----------------------------------------------------------------------------
-# মূল স্ক্র্যাপার প্রসেস
-# -----------------------------------------------------------------------------
-async def scrape():
-    log.info(f"Scraping StreamCenter API from {API_SPORTS}...")
-
-    async with httpx.AsyncClient(headers={"User-Agent": UA, "Referer": f"{BASE_URL}/"}, timeout=12.0) as client:
-        # ১. স্পোর্টস ক্যাটালগ ফেচ করা
+async def process_stream(client: httpx.AsyncClient, url: str) -> str | None:
+    async with HTTP_SEMAPHORE:
         try:
-            sports_res = await client.get(API_SPORTS)
-            if sports_res.status_code != 200:
-                log.error(f"Failed to fetch sports catalog: {sports_res.status_code}")
-                return
-            sports_list = sports_res.json()
-        except Exception as e:
-            log.error(f"Error fetching sports: {e}")
+            resp = await client.get(url, timeout=8.0)
+            if resp.status_code != 200:
+                return None
+            soup = HTMLParser(resp.content)
+            iframe = soup.css_first("iframe")
+            if not iframe:
+                return None
+            src = iframe.attributes.get("src", "")
+            params = dict(parse_qsl(urlsplit(src).query))
+            stream_id = params.get("stream")
+            if not stream_id:
+                return None
+            return f"https://edgestream3.pro/stream/{stream_id}.m3u8" if stream_id.isdigit() else f"https://edgestream2.pro/hls/{stream_id}.m3u8"
+        except Exception:
+            return None
+
+async def get_raw_events(client: httpx.AsyncClient) -> list[RawEvent]:
+    events = []
+    try:
+        resp = await client.get(urljoin(BASE_URL, "game-cards/embed"), timeout=10.0)
+        if resp.status_code != 200:
+            return events
+        soup = HTMLParser(resp.content)
+        now_utc = datetime.now(timezone.utc)
+
+        for card in soup.css(".game-card-group"):
+            sport_elem = card.css_first("h2")
+            if not sport_elem:
+                continue
+            sport = cleanup(sport_elem.text(strip=True))
+
+            for game in card.css(".game-card-row"):
+                name_elem = game.css_first("h3")
+                time_elem = game.css_first(".game-card-when > time")
+                if not name_elem or not time_elem:
+                    continue
+
+                event_dt = parse_event_time(time_elem.attributes.get("datetime", ""))
+                if not event_dt:
+                    continue
+
+                event_dt_utc = event_dt.astimezone(timezone.utc)
+                if event_dt_utc < now_utc - timedelta(hours=3) or event_dt_utc > now_utc + timedelta(hours=24):
+                    continue
+
+                img_elem = game.css_first("img") or card.css_first("img")
+                event_logo = None
+                if img_elem:
+                    src = img_elem.attributes.get("src") or img_elem.attributes.get("data-src")
+                    if src and not src.startswith("data:"):
+                        event_logo = urljoin(BASE_URL, src)
+
+                sources = [
+                    SourceLink(name=s.text(strip=True) or "Default", url=urljoin(BASE_URL, s.attributes.get("href", "")))
+                    for s in game.css(".game-card-source > a.game-card-open-link")
+                    if s.attributes.get("href")
+                ]
+
+                if sources:
+                    events.append(RawEvent(sport=fix_sport(sport), title=name_elem.text(strip=True), start_dt=event_dt, sources=sources, logo=event_logo))
+    except Exception as e:
+        log.error(f"Error scraping events: {e}")
+    return events
+
+async def main():
+    log.info("Starting one-time playlist generation...")
+    async with httpx.AsyncClient(headers={"User-Agent": UA}, follow_redirects=True, http2=True) as client:
+        raw_events = await get_raw_events(client)
+        if not raw_events:
+            log.warning("No events found!")
             return
 
-        now_utc = datetime.now(timezone.utc)
-        all_raw_matches = []
-
-        # ২. প্রতিটি স্পোর্টের ম্যাচ ফেচ করা
-        async def fetch_sport_matches(sp):
-            sp_id = sp.get("id")
-            if not sp_id:
-                return
-            try:
-                m_res = await client.get(f"{BASE_URL}/api/matches/{sp_id}", timeout=8.0)
-                if m_res.status_code == 200:
-                    matches = m_res.json()
-                    if isinstance(matches, list):
-                        for m in matches:
-                            m["_sport_name"] = clean_sport_name(sp_id)
-                            all_raw_matches.append(m)
-            except Exception:
-                pass
-
-        await asyncio.gather(*(fetch_sport_matches(sp) for sp in sports_list))
-        log.info(f"Retrieved {len(all_raw_matches)} total matches across all sports.")
-
-        # ৩. সময় অনুযায়ী ফিল্টার (৩ ঘণ্টা আগের থেকে পরবর্তী ১৮ ঘণ্টার ম্যাচ)
-        valid_matches = []
-        for m in all_raw_matches:
-            title = m.get("title") or m.get("name")
-            date_ms = m.get("date")
-            sources = m.get("sources", [])
-
-            if not title or not date_ms or not sources:
-                continue
-
-            match_dt = datetime.fromtimestamp(date_ms / 1000.0, tz=timezone.utc)
-
-            if match_dt < now_utc - timedelta(hours=3):
-                continue
-            if match_dt > now_utc + timedelta(hours=18):
-                continue
-
-            valid_matches.append((match_dt, m))
-
-        log.info(f"Processing {len(valid_matches)} active matches in window...")
-
-        # ৪. স্ট্রিম গ্রুপ রেজোলিউশন
-        unique_groups = set()
-        for _, m in valid_matches:
-            for s in m.get("sources", []):
-                unique_groups.add((s["source"], s["id"]))
-
-        stream_cache = {}
-        async def fetch_stream_data(src, sid):
-            res = await resolve_stream_group(client, src, sid)
-            if res:
-                stream_cache[(src, sid)] = res
-
-        await asyncio.gather(*(fetch_stream_data(src, sid) for src, sid in unique_groups))
-
-        # ৫. প্লেলিস্ট তৈরি
         final_playlist = []
 
-        for match_dt, m in valid_matches:
-            title = m.get("title") or m.get("name")
-            sport_name = m.get("_sport_name", "Football")
+        # একযোগে দ্রুত কাজ করার জন্য টাস্ক তৈরি
+        for ev in raw_events:
+            tasks = [process_stream(client, src.url) for src in ev.sources]
+            results = await asyncio.gather(*tasks)
 
             event_channels = []
-            for s in m.get("sources", []):
-                key = (s["source"], s["id"])
-                stream_items = stream_cache.get(key, [])
-
-                for item in stream_items:
-                    raw_embed = item.get("embedUrl") or item.get("webUrl")
-                    stream_url = parse_m3u8_from_embed(raw_embed)
-
-                    if stream_url:
-                        ch_name = item.get("stream") or item.get("name") or s.get("source", "Stream")
-                        ref = BASE_URL
-                        event_channels.append({
-                            "channel_name": str(ch_name),
-                            "stream_type": "HLS",
-                            "url": stream_url,
-                            "raw_link": f"{stream_url}|Referer={ref}",
-                            "headers": {"Referer": ref},
-                            "drm_key": None
-                        })
+            for src, m3u8_url in zip(ev.sources, results):
+                if m3u8_url:
+                    event_channels.append({
+                        "channel_name": f"{src.name} Stream",
+                        "stream_type": "HLS",
+                        "url": m3u8_url,
+                        "raw_link": f"{m3u8_url}|Referer={ALT_BASE}",
+                        "headers": {"Referer": ALT_BASE},
+                        "drm_key": None
+                    })
 
             if event_channels:
-                start_bst = match_dt.astimezone(BST_TZ)
-                end_bst = start_bst + timedelta(hours=3)
-
-                t_names = parse_team_names(title)
-                t_a = t_names["team_a"]
-                t_b = t_names["team_b"]
-                flag_a = get_real_team_badge(t_a, sport_name)
-                flag_b = get_real_team_badge(t_b, sport_name)
-                sub_cat = get_sub_category(sport_name, title)
-
+                start_bst = ev.start_dt.astimezone(BST_TZ)
                 final_playlist.append({
-                    "title": title,
-                    "sport": sport_name,
-                    "sub_category": sub_cat,
-                    "status": determine_status(match_dt),
+                    "title": ev.title,
+                    "sport": ev.sport,
+                    "sub_category": ev.sport,
+                    "status": determine_status(ev.start_dt, early_minutes=15),
                     "is_hot": False,
-                    "slug": create_slug(title),
+                    "slug": create_slug(ev.title),
                     "schedule": {
                         "timezone": "BST (UTC+6)",
                         "start_time_bst": start_bst.strftime("%b %d, %Y, %I:%M:%S %p"),
-                        "end_time_bst": end_bst.strftime("%b %d, %Y, %I:%M:%S %p"),
+                        "end_time_bst": (start_bst + timedelta(hours=3)).strftime("%b %d, %Y, %I:%M:%S %p"),
                     },
-                    "teams": {
-                        "team_a": {"name": t_a, "flag": flag_a},
-                        "team_b": {"name": t_b, "flag": flag_b}
-                    },
-                    "logo": flag_a,
+                    "teams": parse_teams(ev.title),
+                    "logo": ev.logo,
                     "channels": event_channels,
-                    "_timestamp": match_dt.timestamp()
+                    "_timestamp": ev.start_dt.timestamp()
                 })
 
-        # সর্টিং (LIVE সবার উপরে)
-        final_playlist.sort(key=lambda x: ({"LIVE": 0, "UPCOMING": 1, "ENDED": 2}.get(x["status"], 99), x["_timestamp"]))
-        for it in final_playlist:
-            it.pop("_timestamp", None)
+        priority = {"LIVE": 0, "UPCOMING": 1, "ENDED": 2}
+        final_playlist.sort(key=lambda x: (priority.get(x["status"], 99), x["_timestamp"]))
+        for item in final_playlist:
+            item.pop("_timestamp", None)
 
-        save_playlists(final_playlist)
-        log.info("StreamCenter playlist generated successfully!")
-
+        # JSON ও M3U ফাইল সেভ
+        JSON_OUTPUT.write_text(json.dumps({"last_updated": datetime.now(BST_TZ).strftime("%b %d, %Y, %I:%M:%S %p"), "event_count": len(final_playlist), "events": {"events": final_playlist}}, indent=2, ensure_ascii=False), encoding="utf-8")
+        
+        m3u_lines = ["#EXTM3U"]
+        for ev in final_playlist:
+            for ch in ev["channels"]:
+                m3u_lines.append(f'#EXTINF:-1 tvg-logo="{ev["logo"]}" group-title="{ev["sport"]}",[{ev["sport"]}] {ev["title"]} | {ch["channel_name"]}')
+                m3u_lines.append(f'#EXTVLCOPT:http-referrer={ALT_BASE}\n{ch["url"]}')
+        M3U_OUTPUT.write_text("\n".join(m3u_lines) + "\n", encoding="utf-8")
+        
+        log.info(f"Done! Generated {len(final_playlist)} events. Exiting.")
 
 if __name__ == "__main__":
-    asyncio.run(scrape())
+    asyncio.run(main())
