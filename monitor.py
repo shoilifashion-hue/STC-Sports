@@ -13,7 +13,6 @@ GITHUB_TOKEN = os.getenv("GH_PAT")
 GITHUB_REPO = os.getenv("GH_REPO", "shoilifashion-hue/STC-Sports")
 EVENT_TYPE = os.getenv("EVENT_TYPE", "source_updated")
 
-# বর্তমান কার্যকর সোর্স ইউআরএলসমূহ
 BASE_URL = "https://streamcenter.st"
 ALT_URL = "https://streamec.st"
 
@@ -40,6 +39,7 @@ log = logging.getLogger("MONITOR")
 @dataclass(slots=True)
 class RawEvent:
     title: str
+    row_text: str
     start_dt: datetime
     sources_count: int
 
@@ -53,8 +53,6 @@ def cleanup_text(text: str) -> str:
 
 
 def extract_match_datetime(row_elem) -> datetime:
-    """পুরো রো থেকে আসল সময় পার্স করে"""
-    # ১. <time datetime="..."> অ্যাট্রিবিউট চেক
     for elem in row_elem.css("[datetime], time"):
         iso_val = elem.attributes.get("datetime", "").strip()
         if iso_val:
@@ -65,7 +63,6 @@ def extract_match_datetime(row_elem) -> datetime:
             except Exception:
                 pass
 
-    # ২. Regex দিয়ে তারিখ অংশ বের করা (যেমন: Oct 25, 2026, 8:15 AM)
     clean_txt = cleanup_text(row_elem.text())
     m = re.search(r'([A-Za-z]{3})\s+(\d{1,2}),?\s+(\d{4}),?\s+(\d{1,2}):(\d{2})\s*(AM|PM)?', clean_txt, re.IGNORECASE)
     if m:
@@ -93,22 +90,28 @@ def extract_match_datetime(row_elem) -> datetime:
     return datetime.now(timezone.utc)
 
 
-# খেলা শুরুর ১৫ মিনিট আগে থেকে LIVE স্ট্যাটাস নির্ধারণ করার লজিক
-def determine_status(start_dt: datetime, early_minutes: int = 15) -> str:
+def determine_status(start_dt: datetime, row_text: str, early_minutes: int = 15) -> str:
+    """১৫ মিনিট আগে LIVE হবে, এবং সোর্সে শেষ হলেই কেবল ENDED হবে"""
+    upper_txt = row_text.upper()
+
+    # সোর্সে খেলা শেষ হয়েছে কি না চেক
+    is_ended_in_source = bool(
+        re.search(r'\b(ENDED|FINISHED|FINAL|COMPLETED|FULL[\s-]?TIME|\bFT\b)\b', upper_txt)
+    )
+    if is_ended_in_source:
+        return "ENDED"
+
     now_utc = datetime.now(timezone.utc)
     start_utc = start_dt.astimezone(timezone.utc)
     live_start_utc = start_utc - timedelta(minutes=early_minutes)
-    end_utc = start_utc + timedelta(hours=3, minutes=30)
 
-    if live_start_utc <= now_utc <= end_utc:
-        return "LIVE"
-    elif now_utc < live_start_utc:
+    if now_utc < live_start_utc:
         return "UPCOMING"
-    return "ENDED"
+
+    return "LIVE"
 
 
 async def trigger_github_workflow(client: httpx.AsyncClient, reason: str = "") -> bool:
-    """GitHub Actions চালু করার জন্য সিগন্যাল পাঠানো"""
     if not GITHUB_TOKEN or not GITHUB_REPO:
         log.warning("GH_PAT or GH_REPO not found. Cannot trigger GitHub Actions.")
         return False
@@ -142,9 +145,7 @@ async def trigger_github_workflow(client: httpx.AsyncClient, reason: str = "") -
 
 
 async def get_raw_events(client: httpx.AsyncClient) -> list[RawEvent]:
-    """বর্তমান সাইটের game-cards পেজ থেকে খেলার তালিকা ফেচ করা"""
     events = []
-    
     for target_url in PAGES_TO_TRY:
         try:
             resp = await client.get(target_url, headers={"User-Agent": UA, "Referer": BASE_URL}, timeout=15.0)
@@ -156,7 +157,6 @@ async def get_raw_events(client: httpx.AsyncClient) -> list[RawEvent]:
 
             for row in rows:
                 title = ""
-                # aria-label থেকে পরিষ্কার টাইটেল বের করা
                 sources_div = row.css_first(".game-card-sources")
                 if sources_div:
                     label = sources_div.attributes.get("aria-label", "")
@@ -185,6 +185,7 @@ async def get_raw_events(client: httpx.AsyncClient) -> list[RawEvent]:
                     events.append(
                         RawEvent(
                             title=cleanup_text(title),
+                            row_text=row.text(),
                             start_dt=event_dt,
                             sources_count=sources_count,
                         )
@@ -201,7 +202,6 @@ async def get_raw_events(client: httpx.AsyncClient) -> list[RawEvent]:
 
 
 async def check_and_monitor():
-    """২৪ ঘণ্টা প্রতি ৫ মিনিট পর পর চেক করার মূল লুপ"""
     log.info("24/7 Monitor started. Checking source every 5 minutes...")
     last_state = None
 
@@ -216,7 +216,7 @@ async def check_and_monitor():
                     live_matches = []
 
                     for ev in raw_events:
-                        status = determine_status(ev.start_dt, early_minutes=15)
+                        status = determine_status(ev.start_dt, ev.row_text, early_minutes=15)
                         if status == "LIVE":
                             live_matches.append(ev.title)
                         state_list.append(f"{ev.title}_{status}_{ev.sources_count}")
@@ -224,7 +224,6 @@ async def check_and_monitor():
                     state_list.sort()
                     new_state = "|".join(state_list)
 
-                    # ১. প্রথমবার রেন্ডার চালু হলে স্টেট মেমোরিতে রাখা
                     if last_state is None:
                         last_state = new_state
                         log.info(
@@ -232,7 +231,6 @@ async def check_and_monitor():
                             f"(Currently LIVE: {len(live_matches)}). Waiting for future updates..."
                         )
 
-                    # ২. অবস্থার পরিবর্তন হলে (ম্যাচ ১৫ মিনিট আগে LIVE হলে বা নতুন ম্যাচ এলে)
                     elif last_state != new_state:
                         log.info(
                             f"State change detected! (Events: {len(raw_events)}, LIVE now: {len(live_matches)}). "
@@ -252,12 +250,10 @@ async def check_and_monitor():
             except Exception as e:
                 log.error(f"Unexpected monitor error: {e}")
 
-            # ৫ মিনিট অপেক্ষা
             await asyncio.sleep(300)
 
 
 async def run_render_health_server():
-    """Render Web Service-এর পোর্ট সক্রিয় রাখার জন্য ব্যাকগ্রাউন্ড সার্ভার"""
     port = int(os.getenv("PORT", 8080))
 
     async def handle_client(reader, writer):
