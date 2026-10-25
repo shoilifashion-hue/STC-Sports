@@ -1,6 +1,6 @@
 {
-  "last_updated": "Oct 25, 2026, 10:01 AM",
-  "event_count": 16,
+  "last_updated": "Oct 25, 2026, 10:06 AM",
+  "event_count": 21,
   "events": {
     "events": [
       {
@@ -30,84 +30,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/hezfnezkfzk45.m3u8?st=-555no2XPeDaT0q9XUgOhToj_Zwj43bNcHNfusAaxZI",
-            "raw_link": "https://edgestream7.pro/hls/hezfnezkfzk45.m3u8?st=-555no2XPeDaT0q9XUgOhToj_Zwj43bNcHNfusAaxZI|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Ole Miss Rebels vs. Texas Longhorns",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "ole-miss-rebels-vs-texas-longhorns",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 05:30 AM",
-          "end_time_bst": "Oct 25, 2026, 08:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Ole Miss Rebels",
-            "logo": "https://streamcenter.st/api/images/badge/0d124a12-2abc-4a79-bebc-88cf599111df.webp"
-          },
-          "team_b": {
-            "name": "Texas Longhorns",
-            "logo": "https://streamcenter.st/api/images/badge/bc115abb-68a4-4b87-b60d-e37c69ab2d5a.webp"
-          }
-        },
-        "logo": "https://streamcenter.st/api/images/badge/0d124a12-2abc-4a79-bebc-88cf599111df.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream4.pro/hls/fghsqdgauduyagz88.m3u8?st=pICfbOMeBtPKj4jh9ZZedi2ChrKVsrJ5vjkJyXBMTaY",
-            "raw_link": "https://edgestream4.pro/hls/fghsqdgauduyagz88.m3u8?st=pICfbOMeBtPKj4jh9ZZedi2ChrKVsrJ5vjkJyXBMTaY|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "UTSA Roadrunners vs. Tulane Green Wave",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "utsa-roadrunners-vs-tulane-green-wave",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 25, 2026, 06:00 AM",
-          "end_time_bst": "Oct 25, 2026, 09:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "UTSA Roadrunners",
-            "logo": "https://streamcenter.st/api/images/badge/79d5db17-e627-4ff3-bcb5-166b63abb38c.webp"
-          },
-          "team_b": {
-            "name": "Tulane Green Wave",
-            "logo": "https://streamcenter.st/api/images/badge/8d080361-7136-4ab6-ae0e-750ec254b340.webp"
-          }
-        },
-        "logo": "https://streamcenter.st/api/images/badge/79d5db17-e627-4ff3-bcb5-166b63abb38c.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream4.pro/hls/etzrezbfezjhverf93.m3u8?st=5CZw25mdQOLfiHjsBCJ_ETUvcIc6PDk6AznAbhlHxJ8",
-            "raw_link": "https://edgestream4.pro/hls/etzrezbfezjhverf93.m3u8?st=5CZw25mdQOLfiHjsBCJ_ETUvcIc6PDk6AznAbhlHxJ8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream7.pro/hls/hezfnezkfzk45.m3u8?st=MdQnDbiPfZBdapW0t7qMOx49zxu6jo5CBwl0CI5xoOs",
+            "raw_link": "https://edgestream7.pro/hls/hezfnezkfzk45.m3u8?st=MdQnDbiPfZBdapW0t7qMOx49zxu6jo5CBwl0CI5xoOs|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -144,8 +68,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/dazhfiach15.m3u8?st=dGcaxGa-6HRPV6U0E6NRUzUaskVhWI_GhJP9Fp778-4",
-            "raw_link": "https://edgestream5.pro/hls/dazhfiach15.m3u8?st=dGcaxGa-6HRPV6U0E6NRUzUaskVhWI_GhJP9Fp778-4|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream5.pro/hls/dazhfiach15.m3u8?st=DBWdnyuXwuAYpsWlq-hFKLcNvm-HZEmMvZwXeT5E3wk",
+            "raw_link": "https://edgestream5.pro/hls/dazhfiach15.m3u8?st=DBWdnyuXwuAYpsWlq-hFKLcNvm-HZEmMvZwXeT5E3wk|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -182,8 +106,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream4.pro/hls/ztyarueaghj71.m3u8?st=h-ZDsuEE0tljM5yG8tjYtDR8Xg7_0kvwO9m-ce5YwjI",
-            "raw_link": "https://edgestream4.pro/hls/ztyarueaghj71.m3u8?st=h-ZDsuEE0tljM5yG8tjYtDR8Xg7_0kvwO9m-ce5YwjI|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream5.pro/hls/ztyarueaghj71.m3u8?st=HlRKk3tyc89czQLrhEbnSAB25_3Bg4MhJgfOv12z_lQ",
+            "raw_link": "https://edgestream5.pro/hls/ztyarueaghj71.m3u8?st=HlRKk3tyc89czQLrhEbnSAB25_3Bg4MhJgfOv12z_lQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -220,8 +144,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/bvnzadfvyt59.m3u8?st=b_FDaYLuYFaU-LOm0ghdvMxpjadYar0myntPNGAIz6A",
-            "raw_link": "https://edgestream5.pro/hls/bvnzadfvyt59.m3u8?st=b_FDaYLuYFaU-LOm0ghdvMxpjadYar0myntPNGAIz6A|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream7.pro/hls/bvnzadfvyt59.m3u8?st=QsIgroXERMR5VL2MFPknSlLvyBX7Lk8DkhkX1baY6Zc",
+            "raw_link": "https://edgestream7.pro/hls/bvnzadfvyt59.m3u8?st=QsIgroXERMR5VL2MFPknSlLvyBX7Lk8DkhkX1baY6Zc|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -258,8 +182,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream4.pro/hls/pllmazjkdzajh72.m3u8?st=bZICjZYBhVkXFoFOxEapubKGRVYuXNx0Pt9PooxEPxE",
-            "raw_link": "https://edgestream4.pro/hls/pllmazjkdzajh72.m3u8?st=bZICjZYBhVkXFoFOxEapubKGRVYuXNx0Pt9PooxEPxE|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream5.pro/hls/pllmazjkdzajh72.m3u8?st=06fjaWlFL28ogO28QunIFDQvYmbMNe8Xqx9sgHzQZ9A",
+            "raw_link": "https://edgestream5.pro/hls/pllmazjkdzajh72.m3u8?st=06fjaWlFL28ogO28QunIFDQvYmbMNe8Xqx9sgHzQZ9A|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -296,8 +220,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/cwxvbnfghq60.m3u8?st=flnXOn4Y1UZcs_h-Sg8NUGFisv14zi9zICmSvtrBdOw",
-            "raw_link": "https://edgestream5.pro/hls/cwxvbnfghq60.m3u8?st=flnXOn4Y1UZcs_h-Sg8NUGFisv14zi9zICmSvtrBdOw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream7.pro/hls/cwxvbnfghq60.m3u8?st=eK_ZrH5qMiwOZ5u6wCurXXbkKV3PuAsHI5W1M6vOb1Q",
+            "raw_link": "https://edgestream7.pro/hls/cwxvbnfghq60.m3u8?st=eK_ZrH5qMiwOZ5u6wCurXXbkKV3PuAsHI5W1M6vOb1Q|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -334,8 +258,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/gfhfgsqda61.m3u8?st=YBeEV35ufbesKHa1aQgQjjYVzDK03Z2LBbF1CTr4xcI",
-            "raw_link": "https://edgestream7.pro/hls/gfhfgsqda61.m3u8?st=YBeEV35ufbesKHa1aQgQjjYVzDK03Z2LBbF1CTr4xcI|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream7.pro/hls/gfhfgsqda61.m3u8?st=wmqP7MzwX0ikkJ6gU5NlmI8Hgij7tom4LAvAnWM5k-o",
+            "raw_link": "https://edgestream7.pro/hls/gfhfgsqda61.m3u8?st=wmqP7MzwX0ikkJ6gU5NlmI8Hgij7tom4LAvAnWM5k-o|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -372,8 +296,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/hgfdshkjsqkda95.m3u8?st=8BBS6hQKRVUaIvU0QAiDTePVUphuGwKq1X82vXdDl5k",
-            "raw_link": "https://edgestream7.pro/hls/hgfdshkjsqkda95.m3u8?st=8BBS6hQKRVUaIvU0QAiDTePVUphuGwKq1X82vXdDl5k|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream7.pro/hls/hgfdshkjsqkda95.m3u8?st=Go2RZ0bWnWaDtC9fIXPqo-RpZzLYF5tw4s5ZuTWltfs",
+            "raw_link": "https://edgestream7.pro/hls/hgfdshkjsqkda95.m3u8?st=Go2RZ0bWnWaDtC9fIXPqo-RpZzLYF5tw4s5ZuTWltfs|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -410,8 +334,46 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/fgjhvebazfhgazf94.m3u8?st=nvy6Pm7FsJDy6zxdpU6GL1NC-ZDY35uuOJuv4wBin4E",
-            "raw_link": "https://edgestream7.pro/hls/fgjhvebazfhgazf94.m3u8?st=nvy6Pm7FsJDy6zxdpU6GL1NC-ZDY35uuOJuv4wBin4E|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream7.pro/hls/fgjhvebazfhgazf94.m3u8?st=eZ5_bMtbPJWwmG4s5JpCg_zIDrqLaZCdoF9UWUz9kig",
+            "raw_link": "https://edgestream7.pro/hls/fgjhvebazfhgazf94.m3u8?st=eZ5_bMtbPJWwmG4s5JpCg_zIDrqLaZCdoF9UWUz9kig|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Athletic Club vs. Getafe",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "athletic-club-vs-getafe",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 07:00 PM",
+          "end_time_bst": "Oct 25, 2026, 10:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Athletic Club",
+            "logo": "https://streamcenter.st/api/images/badge/fd3db922-f970-4441-86d7-587d52cf65ed.webp"
+          },
+          "team_b": {
+            "name": "Getafe",
+            "logo": "https://streamcenter.st/api/images/badge/f909a807-df33-4139-a204-c73d16eb9cb2.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/fd3db922-f970-4441-86d7-587d52cf65ed.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream7.pro/hls/377qj1h2727.m3u8?st=0tfEv0N8jfNGeEfnhECxVY6Kx3hmwF5sSswwNo82mGE",
+            "raw_link": "https://edgestream7.pro/hls/377qj1h2727.m3u8?st=0tfEv0N8jfNGeEfnhECxVY6Kx3hmwF5sSswwNo82mGE|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -448,8 +410,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/eJmauBDCIf.m3u8?st=GWrJgNTpVrTP9RJwmdLZ6DVO4cYpW2Kiy-QoEIOtyCA",
-            "raw_link": "https://edgestream7.pro/hls/eJmauBDCIf.m3u8?st=GWrJgNTpVrTP9RJwmdLZ6DVO4cYpW2Kiy-QoEIOtyCA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream1.pro/hls/eJmauBDCIf.m3u8?st=yOnD2kj1GWSoXeCDCyfUq5MvLYomltVkDRSwBabmCF0",
+            "raw_link": "https://edgestream1.pro/hls/eJmauBDCIf.m3u8?st=yOnD2kj1GWSoXeCDCyfUq5MvLYomltVkDRSwBabmCF0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -524,8 +486,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/sqdahach1ax.m3u8?st=7SlQhUml67VgflRwB306poe_p9dkV4JWUy2mBw5BW-Y",
-            "raw_link": "https://edgestream7.pro/hls/sqdahach1ax.m3u8?st=7SlQhUml67VgflRwB306poe_p9dkV4JWUy2mBw5BW-Y|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream1.pro/hls/sqdahach1ax.m3u8?st=m5MwU5qoTdXhn72DR836_yobTk5GAPB6lSXf06wt7_0",
+            "raw_link": "https://edgestream1.pro/hls/sqdahach1ax.m3u8?st=m5MwU5qoTdXhn72DR836_yobTk5GAPB6lSXf06wt7_0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -562,8 +524,160 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/24SDAZFcsqnj24.m3u8?st=YUu8Y955oWnEezCTPuj1iJlAJbJDJESf21pAmJXTUwQ",
-            "raw_link": "https://edgestream7.pro/hls/24SDAZFcsqnj24.m3u8?st=YUu8Y955oWnEezCTPuj1iJlAJbJDJESf21pAmJXTUwQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream5.pro/hls/24SDAZFcsqnj24.m3u8?st=INbhSuZz8spUwUJjAb9UEJpFRFhg0VRP5UHPKKr6EBc",
+            "raw_link": "https://edgestream5.pro/hls/24SDAZFcsqnj24.m3u8?st=INbhSuZz8spUwUJjAb9UEJpFRFhg0VRP5UHPKKr6EBc|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "AS Monaco vs. Lille",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "as-monaco-vs-lille",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 08:00 PM",
+          "end_time_bst": "Oct 25, 2026, 11:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "AS Monaco",
+            "logo": "https://streamcenter.st/api/images/badge/aa56435e-605f-4f0b-adde-78397c58a6c4.webp"
+          },
+          "team_b": {
+            "name": "Lille",
+            "logo": "https://streamcenter.st/api/images/badge/992deb22-7cda-4a10-ba56-b08f0119f148.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/aa56435e-605f-4f0b-adde-78397c58a6c4.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream6.pro/hls/dza5z8f69.m3u8?st=Emcl-8TWT7esbQ5mRRQVzl8Kxyol67pDQ9N4utDJJq0",
+            "raw_link": "https://edgestream6.pro/hls/dza5z8f69.m3u8?st=Emcl-8TWT7esbQ5mRRQVzl8Kxyol67pDQ9N4utDJJq0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Celta Vigo vs. Real Betis",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "celta-vigo-vs-real-betis",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 09:15 PM",
+          "end_time_bst": "Oct 26, 2026, 12:15 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Celta Vigo",
+            "logo": "https://streamcenter.st/api/images/badge/13755e23-6f6a-4d65-bb7a-0be2e91d9cf8.webp"
+          },
+          "team_b": {
+            "name": "Real Betis",
+            "logo": "https://streamcenter.st/api/images/badge/e69dedb6-d773-4a13-804e-b9504a28e9f2.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/13755e23-6f6a-4d65-bb7a-0be2e91d9cf8.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream6.pro/hls/377qj1h2727.m3u8?st=ipQk55Tshul8nRtRmZAnyMTCTdNHIJ-w97iLzVzP3mA",
+            "raw_link": "https://edgestream6.pro/hls/377qj1h2727.m3u8?st=ipQk55Tshul8nRtRmZAnyMTCTdNHIJ-w97iLzVzP3mA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Toulouse vs. Troyes",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "toulouse-vs-troyes",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 10:15 PM",
+          "end_time_bst": "Oct 26, 2026, 01:15 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Toulouse",
+            "logo": "https://streamcenter.st/api/images/badge/404d95b9-08fb-4f2a-80b6-11f85d1daa7a.webp"
+          },
+          "team_b": {
+            "name": "Troyes",
+            "logo": "https://streamcenter.st/api/images/badge/1440e940-7587-4ee6-a776-2c1f07a13ec5.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/404d95b9-08fb-4f2a-80b6-11f85d1daa7a.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream6.pro/hls/zauygazhjd.m3u8?st=Q4VjZIAmyzigIafOVTlHXWirV4WVob9jK5hi_S1tN-U",
+            "raw_link": "https://edgestream6.pro/hls/zauygazhjd.m3u8?st=Q4VjZIAmyzigIafOVTlHXWirV4WVob9jK5hi_S1tN-U|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Marseille vs. Le Havre AC",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "marseille-vs-le-havre-ac",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 10:15 PM",
+          "end_time_bst": "Oct 26, 2026, 01:15 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Marseille",
+            "logo": "https://streamcenter.st/api/images/badge/f49b67ae-bb69-4e68-a904-bc6636cd5e74.webp"
+          },
+          "team_b": {
+            "name": "Le Havre AC",
+            "logo": "https://streamcenter.st/api/images/badge/8917ff7a-8c7e-433f-8a3f-4aba60611a51.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/f49b67ae-bb69-4e68-a904-bc6636cd5e74.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream6.pro/hls/dza5z8f69.m3u8?st=Aw3G5i8ZhA9xaU-WUA9wHCm5hSw4s3gJT0ENtswOh04",
+            "raw_link": "https://edgestream6.pro/hls/dza5z8f69.m3u8?st=Aw3G5i8ZhA9xaU-WUA9wHCm5hSw4s3gJT0ENtswOh04|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -600,8 +714,108 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/24SDAZFcsqnj24.m3u8?st=tV955-K_rmdnoZ9jMmxVOik-oPWwqGpaN2-VMLwEAUs",
-            "raw_link": "https://edgestream7.pro/hls/24SDAZFcsqnj24.m3u8?st=tV955-K_rmdnoZ9jMmxVOik-oPWwqGpaN2-VMLwEAUs|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream5.pro/hls/24SDAZFcsqnj24.m3u8?st=6FWKqAyCZw7-AgQy5kE4Q-iIMys4iyrK591F-E7be5M",
+            "raw_link": "https://edgestream5.pro/hls/24SDAZFcsqnj24.m3u8?st=6FWKqAyCZw7-AgQy5kE4Q-iIMys4iyrK591F-E7be5M|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Real Sociedad vs. Levante",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "real-sociedad-vs-levante",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 25, 2026, 11:30 PM",
+          "end_time_bst": "Oct 26, 2026, 02:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Real Sociedad",
+            "logo": "https://streamcenter.st/api/images/badge/1eb1cacd-44ba-421f-b4a0-a131c0e1411d.webp"
+          },
+          "team_b": {
+            "name": "Levante",
+            "logo": "https://streamcenter.st/api/images/badge/f54b4922-b3cc-4754-8541-ae03dcdf9dd6.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/1eb1cacd-44ba-421f-b4a0-a131c0e1411d.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream5.pro/hls/377qj1h2727.m3u8?st=oqtQNxLCyF5OFxOmsEyiClwD1iZGnn-kgJRAQufDqeI",
+            "raw_link": "https://edgestream5.pro/hls/377qj1h2727.m3u8?st=oqtQNxLCyF5OFxOmsEyiClwD1iZGnn-kgJRAQufDqeI|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Barcelona vs. Real Madrid",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "barcelona-vs-real-madrid",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 26, 2026, 02:00 AM",
+          "end_time_bst": "Oct 26, 2026, 05:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Barcelona",
+            "logo": "https://streamcenter.st/api/images/badge/fe6bce31-04ae-4c55-9815-bddc630c0f64.webp"
+          },
+          "team_b": {
+            "name": "Real Madrid",
+            "logo": "https://streamcenter.st/api/images/badge/feeeda49-99f8-4759-8a9b-6546559f1689.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/fe6bce31-04ae-4c55-9815-bddc630c0f64.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream5.pro/hls/377qj1h2727.m3u8?st=oqtQNxLCyF5OFxOmsEyiClwD1iZGnn-kgJRAQufDqeI",
+            "raw_link": "https://edgestream5.pro/hls/377qj1h2727.m3u8?st=oqtQNxLCyF5OFxOmsEyiClwD1iZGnn-kgJRAQufDqeI|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          },
+          {
+            "channel_name": "Stream #2",
+            "stream_type": "HLS",
+            "url": "https://edgestream6.pro/hls/hflfkrtib42.m3u8?st=8fmCR3jPOA87gXIvHLs4daVL2hW0K6WKihjW_-1UkC0",
+            "raw_link": "https://edgestream6.pro/hls/hflfkrtib42.m3u8?st=8fmCR3jPOA87gXIvHLs4daVL2hW0K6WKihjW_-1UkC0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          },
+          {
+            "channel_name": "Stream #3",
+            "stream_type": "HLS",
+            "url": "https://edgestream5.pro/hls/2rB5nTKlP8mE.m3u8?st=K0mvR8JvwUZicoYqN8--pbz0ee7KpDO1ZIriAqJ7rLw",
+            "raw_link": "https://edgestream5.pro/hls/2rB5nTKlP8mE.m3u8?st=K0mvR8JvwUZicoYqN8--pbz0ee7KpDO1ZIriAqJ7rLw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
