@@ -1,46 +1,8 @@
 {
-  "last_updated": "Oct 27, 2026, 10:56 AM",
-  "event_count": 24,
+  "last_updated": "Oct 27, 2026, 11:01 AM",
+  "event_count": 23,
   "events": {
     "events": [
-      {
-        "title": "Golden State Warriors vs. Denver Nuggets",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "golden-state-warriors-vs-denver-nuggets",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 27, 2026, 08:00 AM",
-          "end_time_bst": "Oct 27, 2026, 11:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Golden State Warriors",
-            "logo": "https://streamcenter.st/api/images/badge/bb768ee2-3abb-4176-927b-9953c09c2385.webp"
-          },
-          "team_b": {
-            "name": "Denver Nuggets",
-            "logo": "https://streamcenter.st/api/images/badge/0acf1a39-8f3a-48e3-91f3-d16ed98e27cd.webp"
-          }
-        },
-        "logo": "https://streamcenter.st/api/images/badge/bb768ee2-3abb-4176-927b-9953c09c2385.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/fdgsqdfawa73.m3u8?st=n4padisci5EKvO2HJX2MaDxnbfTmvufcW-JozzItx_Y",
-            "raw_link": "https://edgestream5.pro/hls/fdgsqdfawa73.m3u8?st=n4padisci5EKvO2HJX2MaDxnbfTmvufcW-JozzItx_Y|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "Sassuolo vs. Lazio",
         "sport": "Football",
@@ -182,8 +144,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/griogoehvn2.m3u8?st=jeDdc8tp_TbDCoORb56pNl1iU6IMfo8hosMpqUIvWx4",
-            "raw_link": "https://edgestream5.pro/hls/griogoehvn2.m3u8?st=jeDdc8tp_TbDCoORb56pNl1iU6IMfo8hosMpqUIvWx4|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream4.pro/hls/griogoehvn2.m3u8?st=h1U-c-rxkY-R5s3UmmJ9REWOuT0oBEJXZhV6xkqYPGE",
+            "raw_link": "https://edgestream4.pro/hls/griogoehvn2.m3u8?st=h1U-c-rxkY-R5s3UmmJ9REWOuT0oBEJXZhV6xkqYPGE|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -258,8 +220,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream6.pro/hls/JHDAJBDnjdna30.m3u8?st=WPDbRGSpzDVlCoUvSn_oABgW6O7YSw7YIi3pzna9fo4",
-            "raw_link": "https://edgestream6.pro/hls/JHDAJBDnjdna30.m3u8?st=WPDbRGSpzDVlCoUvSn_oABgW6O7YSw7YIi3pzna9fo4|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream5.pro/hls/JHDAJBDnjdna30.m3u8?st=z36aLlL9UF47-0RnAFv7eARdBcaZGIZ0DXVsdIzQIws",
+            "raw_link": "https://edgestream5.pro/hls/JHDAJBDnjdna30.m3u8?st=z36aLlL9UF47-0RnAFv7eARdBcaZGIZ0DXVsdIzQIws|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -296,8 +258,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/uyopzarf50.m3u8?st=xDaiaf2aPnj8oHfs8WzORBLsl5lCd0Wp8_ZAJdHnSHA",
-            "raw_link": "https://edgestream5.pro/hls/uyopzarf50.m3u8?st=xDaiaf2aPnj8oHfs8WzORBLsl5lCd0Wp8_ZAJdHnSHA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream7.pro/hls/uyopzarf50.m3u8?st=ctMAEQWk-L7dF_Up_x4pUkQgqLhT80SBRalnkv3gFNU",
+            "raw_link": "https://edgestream7.pro/hls/uyopzarf50.m3u8?st=ctMAEQWk-L7dF_Up_x4pUkQgqLhT80SBRalnkv3gFNU|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -410,8 +372,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/wfazgsqtrezu66.m3u8?st=lF3RxuO5GVUxQa05Bq_4L-RRuhIqrzn9gHZ0fqc5cGA",
-            "raw_link": "https://edgestream7.pro/hls/wfazgsqtrezu66.m3u8?st=lF3RxuO5GVUxQa05Bq_4L-RRuhIqrzn9gHZ0fqc5cGA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/wfazgsqtrezu66.m3u8?st=sgYs_3utB17nWlystIRMZ7JQuhtIRfIKkEIim4Ep25g",
+            "raw_link": "https://edgestream2.pro/hls/wfazgsqtrezu66.m3u8?st=sgYs_3utB17nWlystIRMZ7JQuhtIRfIKkEIim4Ep25g|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -448,8 +410,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/hfsdqtaxvb67.m3u8?st=SxhsOC8YNp2zY200Q-qKtAybH5EsQe5AGwndyOXOqsw",
-            "raw_link": "https://edgestream2.pro/hls/hfsdqtaxvb67.m3u8?st=SxhsOC8YNp2zY200Q-qKtAybH5EsQe5AGwndyOXOqsw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream7.pro/hls/hfsdqtaxvb67.m3u8?st=2LE1V2PukIf745Q3CWHEwrv5gVqXOyrzdT6jZSC6sc0",
+            "raw_link": "https://edgestream7.pro/hls/hfsdqtaxvb67.m3u8?st=2LE1V2PukIf745Q3CWHEwrv5gVqXOyrzdT6jZSC6sc0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -486,8 +448,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/dazhfiach15.m3u8?st=F1s2XUikFlt2Nb7-q4RADjnjrMhvnjcTOImEWE7ImoA",
-            "raw_link": "https://edgestream5.pro/hls/dazhfiach15.m3u8?st=F1s2XUikFlt2Nb7-q4RADjnjrMhvnjcTOImEWE7ImoA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream4.pro/hls/dazhfiach15.m3u8?st=qS9v9v7lDTl1Vd4j7pd4bUgELM7OFPwS_UQ7vFa4rY0",
+            "raw_link": "https://edgestream4.pro/hls/dazhfiach15.m3u8?st=qS9v9v7lDTl1Vd4j7pd4bUgELM7OFPwS_UQ7vFa4rY0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -524,8 +486,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream1.pro/hls/hjksgdfauzy51.m3u8?st=YLwVP2UjaCtjyjpTbwqzG9kV5WfkkmzEPPP_SSzQimg",
-            "raw_link": "https://edgestream1.pro/hls/hjksgdfauzy51.m3u8?st=YLwVP2UjaCtjyjpTbwqzG9kV5WfkkmzEPPP_SSzQimg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream4.pro/hls/hjksgdfauzy51.m3u8?st=bzcEcSM1TTVGPWqPTFIN070QCE1LmUw0Y-FJYfe0y2E",
+            "raw_link": "https://edgestream4.pro/hls/hjksgdfauzy51.m3u8?st=bzcEcSM1TTVGPWqPTFIN070QCE1LmUw0Y-FJYfe0y2E|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -562,8 +524,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/lmdsjkfgv52.m3u8?st=GERw8kbUXxGZK-gWquXJwDeLZhHlTzQKz2fWpOLOFwM",
-            "raw_link": "https://edgestream2.pro/hls/lmdsjkfgv52.m3u8?st=GERw8kbUXxGZK-gWquXJwDeLZhHlTzQKz2fWpOLOFwM|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/lmdsjkfgv52.m3u8?st=DcX4-pburvi7FyJqSvmsDnfFljYHDk2JpzVJPksC-70",
+            "raw_link": "https://edgestream2.pro/hls/lmdsjkfgv52.m3u8?st=DcX4-pburvi7FyJqSvmsDnfFljYHDk2JpzVJPksC-70|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -600,8 +562,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream1.pro/hls/rtzaeyvhb53.m3u8?st=hF5zJPp39ZXATaezoyFfz0ju8ulUX2cn71Y9fd_dPQA",
-            "raw_link": "https://edgestream1.pro/hls/rtzaeyvhb53.m3u8?st=hF5zJPp39ZXATaezoyFfz0ju8ulUX2cn71Y9fd_dPQA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream1.pro/hls/rtzaeyvhb53.m3u8?st=b9O9BjVGihNlcbxvJ1lc_8FZMPqqVYJUZ-Ono6Db1Vo",
+            "raw_link": "https://edgestream1.pro/hls/rtzaeyvhb53.m3u8?st=b9O9BjVGihNlcbxvJ1lc_8FZMPqqVYJUZ-Ono6Db1Vo|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -638,8 +600,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/bnvcxwhfg54.m3u8?st=qJS-Hec5dPVvhPc-3ULVnnT0_K0mybwRnccnUQooxO4",
-            "raw_link": "https://edgestream2.pro/hls/bnvcxwhfg54.m3u8?st=qJS-Hec5dPVvhPc-3ULVnnT0_K0mybwRnccnUQooxO4|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream4.pro/hls/bnvcxwhfg54.m3u8?st=4fS-eKryZS6FsALaTKxdoBNPXrMQfNfn5_2g-mLrp2o",
+            "raw_link": "https://edgestream4.pro/hls/bnvcxwhfg54.m3u8?st=4fS-eKryZS6FsALaTKxdoBNPXrMQfNfn5_2g-mLrp2o|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -676,8 +638,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/sdezqfza55.m3u8?st=gQLchkszBDgMcCEwj8vGiBa-HAHxz5XMINulWydfTD8",
-            "raw_link": "https://edgestream7.pro/hls/sdezqfza55.m3u8?st=gQLchkszBDgMcCEwj8vGiBa-HAHxz5XMINulWydfTD8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream4.pro/hls/sdezqfza55.m3u8?st=szsgVh8EYUZjneCiMUvmPEoTjJmi6ax7GFTlOpDyPU8",
+            "raw_link": "https://edgestream4.pro/hls/sdezqfza55.m3u8?st=szsgVh8EYUZjneCiMUvmPEoTjJmi6ax7GFTlOpDyPU8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -714,8 +676,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream1.pro/hls/poiryezafv56.m3u8?st=zHEWSvoGjFvnIjpSMgwfMAylYv2fpvo2rdqX-NtGXWU",
-            "raw_link": "https://edgestream1.pro/hls/poiryezafv56.m3u8?st=zHEWSvoGjFvnIjpSMgwfMAylYv2fpvo2rdqX-NtGXWU|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/poiryezafv56.m3u8?st=QRw994LGap8ze7hGN7ye-_J60BSHv1rD1AnvIFQz114",
+            "raw_link": "https://edgestream2.pro/hls/poiryezafv56.m3u8?st=QRw994LGap8ze7hGN7ye-_J60BSHv1rD1AnvIFQz114|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -752,8 +714,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream4.pro/hls/rzavbdyua57.m3u8?st=Up_nlqZaFmJ1fuxczz7oKtAXfm4k2z6FZHJi1kJN6Ow",
-            "raw_link": "https://edgestream4.pro/hls/rzavbdyua57.m3u8?st=Up_nlqZaFmJ1fuxczz7oKtAXfm4k2z6FZHJi1kJN6Ow|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream4.pro/hls/rzavbdyua57.m3u8?st=ObwmmFZFrP_5SRqgyJgtyzMx2qdqVBjhDB6eHozqq18",
+            "raw_link": "https://edgestream4.pro/hls/rzavbdyua57.m3u8?st=ObwmmFZFrP_5SRqgyJgtyzMx2qdqVBjhDB6eHozqq18|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -790,8 +752,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/earzfddshg58.m3u8?st=yfVrXoDjS7jpAYm0Bj08u1Y-bNaTpa-XIL1qjbt2AXk",
-            "raw_link": "https://edgestream5.pro/hls/earzfddshg58.m3u8?st=yfVrXoDjS7jpAYm0Bj08u1Y-bNaTpa-XIL1qjbt2AXk|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream1.pro/hls/earzfddshg58.m3u8?st=po7X0AGIIR4dl2t22S6YurqcD30dlrdnP6au1_qXvfE",
+            "raw_link": "https://edgestream1.pro/hls/earzfddshg58.m3u8?st=po7X0AGIIR4dl2t22S6YurqcD30dlrdnP6au1_qXvfE|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -828,8 +790,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/bvnzadfvyt59.m3u8?st=rvGZt6YtwCuN_e-1t9PcMgeUv32Iy2rLbyLtnOxmr9o",
-            "raw_link": "https://edgestream5.pro/hls/bvnzadfvyt59.m3u8?st=rvGZt6YtwCuN_e-1t9PcMgeUv32Iy2rLbyLtnOxmr9o|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream7.pro/hls/bvnzadfvyt59.m3u8?st=WPNxSR7_2Tmq54-1ZSVBmCqe2nzG9gtE2R8mcrkxPVo",
+            "raw_link": "https://edgestream7.pro/hls/bvnzadfvyt59.m3u8?st=WPNxSR7_2Tmq54-1ZSVBmCqe2nzG9gtE2R8mcrkxPVo|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -866,8 +828,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/cwxvbnfghq60.m3u8?st=QqX9hTjIgXwxH8JX7ZhIPUgnx0WT9wSysIHl2iafeU4",
-            "raw_link": "https://edgestream7.pro/hls/cwxvbnfghq60.m3u8?st=QqX9hTjIgXwxH8JX7ZhIPUgnx0WT9wSysIHl2iafeU4|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream7.pro/hls/cwxvbnfghq60.m3u8?st=03ylINkX71f3LeADmCgG54-6iQ8nG5fAQw8ObjzRUHg",
+            "raw_link": "https://edgestream7.pro/hls/cwxvbnfghq60.m3u8?st=03ylINkX71f3LeADmCgG54-6iQ8nG5fAQw8ObjzRUHg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -904,8 +866,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/zayrtezafgvdv68.m3u8?st=cwITqMiTcSxx1ap440oJdcZx6dytxR5Nli_IB1j2cN0",
-            "raw_link": "https://edgestream7.pro/hls/zayrtezafgvdv68.m3u8?st=cwITqMiTcSxx1ap440oJdcZx6dytxR5Nli_IB1j2cN0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream4.pro/hls/zayrtezafgvdv68.m3u8?st=jBFwCYxVGUiFfjhImM2Lv34qgZcE-YQOftHDedUR1ow",
+            "raw_link": "https://edgestream4.pro/hls/zayrtezafgvdv68.m3u8?st=jBFwCYxVGUiFfjhImM2Lv34qgZcE-YQOftHDedUR1ow|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
