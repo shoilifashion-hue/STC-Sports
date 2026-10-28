@@ -1,52 +1,14 @@
 {
-  "last_updated": "Oct 29, 2026, 04:15 AM",
-  "event_count": 16,
+  "last_updated": "Oct 29, 2026, 04:45 AM",
+  "event_count": 15,
   "events": {
     "events": [
-      {
-        "title": "Liverpool vs. Chelsea",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "liverpool-vs-chelsea",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 29, 2026, 02:00 AM",
-          "end_time_bst": "Oct 29, 2026, 05:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Liverpool",
-            "logo": "https://streamcenter.st/api/images/badge/58ff2faf-d44e-49a8-824a-b89a876df5a2.webp"
-          },
-          "team_b": {
-            "name": "Chelsea",
-            "logo": "https://streamcenter.st/api/images/badge/14894e93-9bcf-4e17-b0db-ed7363d3bbfb.webp"
-          }
-        },
-        "logo": "https://streamcenter.st/api/images/badge/58ff2faf-d44e-49a8-824a-b89a876df5a2.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream3.pro/sh/cdn/hls/griogoehvn2.m3u8",
-            "raw_link": "https://edgestream3.pro/sh/cdn/hls/griogoehvn2.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "Kennesaw State Owls vs. Middle Tennessee Blue Raiders",
         "sport": "American Football",
         "sub_category": "American Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "kennesaw-state-owls-vs-middle-tennessee-blue-raiders",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -64,14 +26,27 @@
           }
         },
         "logo": "https://streamcenter.st/api/images/badge/0ad8ce4e-b643-4ea3-8110-f9e334f1984c.webp",
-        "channels": []
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream3.pro/sh/cdn/hls/JHDAJBDnjdna30.m3u8",
+            "raw_link": "https://edgestream3.pro/sh/cdn/hls/JHDAJBDnjdna30.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
       },
       {
         "title": "Miami Heat vs. Atlanta Hawks",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "miami-heat-vs-atlanta-hawks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -108,8 +83,8 @@
         "title": "Washington Wizards vs. Cleveland Cavaliers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "washington-wizards-vs-cleveland-cavaliers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -146,8 +121,8 @@
         "title": "Charlotte Hornets vs. Detroit Pistons",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "charlotte-hornets-vs-detroit-pistons",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -184,8 +159,8 @@
         "title": "Philadelphia 76ers vs. Indiana Pacers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "philadelphia-76ers-vs-indiana-pacers",
         "schedule": {
           "timezone": "BST (UTC+6)",
