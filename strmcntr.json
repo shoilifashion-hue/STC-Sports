@@ -1,46 +1,8 @@
 {
-  "last_updated": "Oct 29, 2026, 04:10 AM",
-  "event_count": 17,
+  "last_updated": "Oct 29, 2026, 04:15 AM",
+  "event_count": 16,
   "events": {
     "events": [
-      {
-        "title": "Genoa vs. Juventus",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "genoa-vs-juventus",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 29, 2026, 01:45 AM",
-          "end_time_bst": "Oct 29, 2026, 04:45 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Genoa",
-            "logo": "https://streamcenter.st/api/images/badge/8a143ca0-ba43-4818-a9b2-bd0052de9abc.webp"
-          },
-          "team_b": {
-            "name": "Juventus",
-            "logo": "https://streamcenter.st/api/images/badge/a1366ed7-9800-4020-b14e-205964217c4b.webp"
-          }
-        },
-        "logo": "https://streamcenter.st/api/images/badge/8a143ca0-ba43-4818-a9b2-bd0052de9abc.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream3.pro/sh/cdn/hls/hflfkrtib42.m3u8",
-            "raw_link": "https://edgestream3.pro/sh/cdn/hls/hflfkrtib42.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
-      },
       {
         "title": "Liverpool vs. Chelsea",
         "sport": "Football",
@@ -102,20 +64,7 @@
           }
         },
         "logo": "https://streamcenter.st/api/images/badge/0ad8ce4e-b643-4ea3-8110-f9e334f1984c.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream3.pro/sh/cdn/hls/JHDAJBDnjdna30.m3u8",
-            "raw_link": "https://edgestream3.pro/sh/cdn/hls/JHDAJBDnjdna30.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "channels": []
       },
       {
         "title": "Miami Heat vs. Atlanta Hawks",
