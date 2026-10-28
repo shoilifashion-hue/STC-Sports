@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 29, 2026, 05:00 AM",
+  "last_updated": "Oct 29, 2026, 05:15 AM",
   "event_count": 19,
   "events": {
     "events": [
@@ -197,8 +197,8 @@
         "title": "Orlando Magic vs. Toronto Raptors",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "orlando-magic-vs-toronto-raptors",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -235,8 +235,8 @@
         "title": "Philadelphia Flyers vs. Washington Capitals",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "philadelphia-flyers-vs-washington-capitals",
         "schedule": {
           "timezone": "BST (UTC+6)",
