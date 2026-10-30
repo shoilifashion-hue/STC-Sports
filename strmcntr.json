@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 31, 2026, 02:36 AM",
+  "last_updated": "Oct 31, 2026, 03:46 AM",
   "event_count": 31,
   "events": {
     "events": [
@@ -657,13 +657,13 @@
         "title": "Golden State Warriors vs. Los Angeles Lakers",
         "sport": "NBA",
         "sub_category": "NBA",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "golden-state-warriors-vs-los-angeles-lakers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 30, 2026, 01:00 PM",
-          "end_time_bst": "Oct 30, 2026, 04:00 PM"
+          "start_time_bst": "Oct 31, 2026, 01:00 PM",
+          "end_time_bst": "Oct 31, 2026, 04:00 PM"
         },
         "teams": {
           "team_a": {
@@ -682,13 +682,13 @@
         "title": "Phoenix Suns vs. Denver Nuggets",
         "sport": "NBA",
         "sub_category": "NBA",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "phoenix-suns-vs-denver-nuggets",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 30, 2026, 01:00 PM",
-          "end_time_bst": "Oct 30, 2026, 04:00 PM"
+          "start_time_bst": "Oct 31, 2026, 01:00 PM",
+          "end_time_bst": "Oct 31, 2026, 04:00 PM"
         },
         "teams": {
           "team_a": {
@@ -707,13 +707,13 @@
         "title": "Sacramento State Hornets vs. Kent State Golden Flashes",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "sacramento-state-hornets-vs-kent-state-golden-flashes",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 30, 2026, 01:30 PM",
-          "end_time_bst": "Oct 30, 2026, 04:30 PM"
+          "start_time_bst": "Oct 31, 2026, 01:30 PM",
+          "end_time_bst": "Oct 31, 2026, 04:30 PM"
         },
         "teams": {
           "team_a": {
