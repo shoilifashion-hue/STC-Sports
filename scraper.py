@@ -7,7 +7,7 @@ import re
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import parse_qs, unquote, urljoin, urlsplit
+from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
 import httpx
@@ -15,6 +15,8 @@ from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
 ROOT_DIR = Path(__file__).resolve().parent
 
+# স্ক্রিনশট থেকে পাওয়া আসল ডাটা এপিআই
+API_URL = "https://ovogoal.pages.dev/api/v2/flyembed2.json"
 BASE_URL = "https://pirlotvfr.online"
 TAG = "PIRLOTV"
 
@@ -39,9 +41,8 @@ log = logging.getLogger(TAG)
 class ScrapedMatch:
     sport: str
     title: str
-    row_text: str
     start_dt: datetime
-    watch_urls: list[str] = field(default_factory=list)
+    stream_urls: list[str] = field(default_factory=list)
     team_a_logo: str | None = None
     team_b_logo: str | None = None
     logo: str | None = None
@@ -71,31 +72,26 @@ def parse_teams(title: str, team_a_logo: str | None = None, team_b_logo: str | N
         "team_b": {"name": title.strip(), "logo": team_b_logo}
     }
 
-def calculate_match_status(start_dt: datetime, row_text: str, early_minutes: int = 15) -> str:
-    """১৫ মিনিট আগে LIVE হবে, এবং সোর্সে শেষ হলে কেবল ENDED হবে"""
-    upper_txt = row_text.upper()
-    is_ended = bool(re.search(r'\b(ENDED|FINISHED|FINAL|FINALIZADA|COMPLETED|FULL[\s-]?TIME|\bFT\b)\b', upper_txt))
-    if is_ended:
-        return "ENDED"
-
+def calculate_match_status(start_dt: datetime, early_minutes: int = 15) -> str:
     now_utc = datetime.now(timezone.utc)
     start_utc = start_dt.astimezone(timezone.utc)
     live_start = start_utc - timedelta(minutes=early_minutes)
 
     if now_utc < live_start:
         return "UPCOMING"
-    return "LIVE"
+    elif live_start <= now_utc <= (start_utc + timedelta(hours=3, minutes=30)):
+        return "LIVE"
+    return "ENDED"
 
-def parse_match_time(row_text: str) -> datetime:
-    """সাইটের '23:30 UTC' অথবা '01:00 UTC' ফরম্যাট থেকে নিখুঁত UTC সময় পার্স করে"""
+def parse_match_time(time_str: str) -> datetime:
+    """JSON-এর '23:30' বা '01:00' সময় পার্স করে UTC টাইমস্ট্যাম্প তৈরি করে"""
     now = datetime.now(timezone.utc)
-    m = re.search(r'(\d{1,2}):(\d{2})\s*(?:UTC)?', row_text, re.IGNORECASE)
+    m = re.search(r'(\d{1,2}):(\d{2})', str(time_str))
     if m:
         try:
             hour = int(m.group(1))
             minute = int(m.group(2))
             candidate = datetime(now.year, now.month, now.day, hour, minute, tzinfo=timezone.utc)
-            # যদি সময়টি ইতিমধ্যে ১৪ ঘণ্টার বেশি পেছনে চলে যায়, তবে এটি আগামীকালের ম্যাচ
             if candidate < now - timedelta(hours=14):
                 candidate += timedelta(days=1)
             elif candidate > now + timedelta(hours=14):
@@ -111,7 +107,7 @@ def extract_m3u8(text: str, base_url: str = "") -> str | None:
 
     clean_text = html.unescape(text).replace(r"\/", "/")
 
-    # ১. tims-001.sytes.net বা secure m3u8 প্যাটার্ন
+    # ১. tims-001.sytes.net ইত্যাদি প্যাটার্ন
     secure_match = re.search(r'(https?://[a-zA-Z0-9_\-\.]*sytes\.net[^\s"\'<>\\]*?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
     if secure_match:
         return secure_match.group(1).strip("\"' ")
@@ -126,7 +122,7 @@ def extract_m3u8(text: str, base_url: str = "") -> str | None:
     if generic_match:
         return generic_match.group(1).strip("\"' ")
 
-    # ৪. Base64 atob() থাকলে ডিকোড করে খোঁজা
+    # ৪. Base64 atob() চেক
     for b64 in re.findall(r'atob\(["\']([A-Za-z0-9+/=]{20,})["\']\)', text):
         try:
             decoded = base64.b64decode(b64).decode("utf-8", errors="ignore")
@@ -138,25 +134,17 @@ def extract_m3u8(text: str, base_url: str = "") -> str | None:
 
     return None
 
-async def resolve_pirlo_stream(client: httpx.AsyncClient, watch_url: str) -> tuple[str | None, str | None]:
-    """watch.html?url=... থেকে আসল flyembed প্লেয়ারে ঢুকে টোকেনযুক্ত m3u8 বের করে"""
+async def resolve_pirlo_stream(client: httpx.AsyncClient, iframe_url: str) -> tuple[str | None, str | None]:
+    """m.IframeURL থেকে সরাসরি প্লেয়ার ফেচ করে আসল m3u8 ও Referer বের করে"""
     async with HTTP_SEMAPHORE:
         try:
-            # watch.html এর কুয়েরি থেকে আসল embed লিঙ্ক বের করা (যেমন: https://flyembed.cfd/embed/41.php)
-            qs = parse_qs(urlsplit(watch_url).query)
-            embed_url = qs.get("url", [None])[0]
-            if embed_url:
-                embed_url = unquote(embed_url)
-            else:
-                embed_url = watch_url
-
             headers = {
                 "User-Agent": STREAM_UA,
                 "Referer": BASE_URL,
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
             }
 
-            resp = await client.get(embed_url, headers=headers, follow_redirects=True, timeout=12.0)
+            resp = await client.get(iframe_url, headers=headers, follow_redirects=True, timeout=12.0)
             if resp.status_code != 200:
                 return None, None
 
@@ -164,131 +152,92 @@ async def resolve_pirlo_stream(client: httpx.AsyncClient, watch_url: str) -> tup
             if m3u8:
                 return m3u8, str(resp.url)
 
-            # পেজের ভেতর আইফ্রেম থাকলে তাতে যাওয়া
+            # নেস্টেড আইফ্রেম চেক
             soup = HTMLParser(resp.content)
             for iframe in soup.css("iframe"):
                 src = iframe.attributes.get("src", "")
                 if src and not src.startswith("javascript:"):
-                    iframe_url = urljoin(str(resp.url), src)
-                    resp_iframe = await client.get(
-                        iframe_url,
+                    inner_url = urljoin(str(resp.url), src)
+                    resp_inner = await client.get(
+                        inner_url,
                         headers={"User-Agent": STREAM_UA, "Referer": str(resp.url)},
                         timeout=10.0
                     )
-                    if resp_iframe.status_code == 200:
-                        inner_m3u8 = extract_m3u8(resp_iframe.text, base_url=iframe_url)
+                    if resp_inner.status_code == 200:
+                        inner_m3u8 = extract_m3u8(resp_inner.text, base_url=inner_url)
                         if inner_m3u8:
-                            return inner_m3u8, iframe_url
+                            return inner_m3u8, inner_url
 
         except Exception as e:
-            log.debug(f"Stream resolution error: {e}")
+            log.debug(f"Stream resolution error for {iframe_url}: {e}")
         return None, None
 
-async def scrape_pirlotv_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]:
+async def fetch_pirlotv_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]:
     matches = []
     try:
-        resp = await client.get(BASE_URL, headers={"User-Agent": STREAM_UA}, timeout=15.0)
+        # সরাসরি ব্যাকএন্ড JSON কল
+        headers = {"User-Agent": STREAM_UA, "Referer": BASE_URL}
+        resp = await client.get(API_URL, headers=headers, timeout=15.0)
         if resp.status_code != 200:
-            log.error(f"Failed to fetch {BASE_URL}: Status {resp.status_code}")
+            log.error(f"API request failed: {resp.status_code}")
             return matches
 
-        soup = HTMLParser(resp.content)
-        # স্ক্রিনশটের আসল কার্ড ক্লাস: <div class="tr-event-card">
-        cards = soup.css(".tr-event-card, [class*='tr-event-card']")
+        data = resp.json()
+        if not isinstance(data, list):
+            return matches
 
-        for card in cards:
-            # ১. বাটন থেকে লিঙ্ক ও কুয়েরি ডাটা নেওয়া
-            link_elem = card.css_first("a.btn-direct-stream, a[href*='watch.html'], a[href*='url=']")
-            if not link_elem:
+        for m in data:
+            if not isinstance(m, dict):
                 continue
 
-            href = link_elem.attributes.get("href", "")
-            full_watch_url = urljoin(BASE_URL, href)
+            t1 = cleanup_text(str(m.get("Team1", "")).strip())
+            t2 = cleanup_text(str(m.get("Team2", "")).strip())
+            title = f"{t1} vs. {t2}" if (t1 and t2) else (t1 or t2 or "Sports Event")
 
-            # ২. কুয়েরি প্যারামিটার থেকে team1, team2, league বের করা
-            qs = parse_qs(urlsplit(full_watch_url).query)
-            team1_list = qs.get("team1", [])
-            team2_list = qs.get("team2", [])
-            league_list = qs.get("league", [])
+            sport = cleanup_text(str(m.get("League", "") or m.get("Sport", "") or "Football"))
+            start_time_raw = m.get("MatchStartTime", "")
+            dt = parse_match_time(start_time_raw)
 
-            sport = "Football"
-            if league_list:
-                sport = cleanup_text(unquote(league_list[0]))
+            team_a_logo = m.get("Team1Logo") or None
+            team_b_logo = m.get("Team2Logo") or None
+            main_logo = team_a_logo or m.get("LeagueLogo") or team_b_logo
 
-            title = ""
-            if team1_list and team2_list:
-                t1 = cleanup_text(unquote(team1_list[0]))
-                t2 = cleanup_text(unquote(team2_list[0]))
-                title = f"{t1} vs. {t2}"
-
-            # যদি কুয়েরিতে না থাকে, তবে কার্ডের টেক্সট বা info-col থেকে নেওয়া
-            if not title:
-                info_col = card.css_first(".tr-event-info-col")
-                if info_col:
-                    title = cleanup_text(info_col.text())
-
-            if not title:
-                # বাটন টাইটেল থেকে নেওয়া: title="Ver Mexico City Grand Prix vs Sky Sports f1 UK en vivo"
-                btn_title = link_elem.attributes.get("title", "")
-                if "Ver " in btn_title:
-                    clean_btn = btn_title.replace("Ver ", "").replace(" en vivo", "")
-                    title = cleanup_text(clean_btn)
-
-            if not title:
-                continue
-
-            # ৩. সময় বের করা (<div class="tr-event-time-col">)
-            time_col = card.css_first(".tr-event-time-col")
-            time_text = time_col.text() if time_col else card.text()
-            dt = parse_match_time(time_text)
-
-            # ৪. লোগো সংগ্রহ (<div class="tr-event-icon-col">)
-            valid_logos = []
-            for img in card.css("img"):
-                src = img.attributes.get("src", "")
-                if src and not src.startswith("data:"):
-                    full_img = urljoin(BASE_URL, src)
-                    if full_img not in valid_logos:
-                        valid_logos.append(full_img)
-
-            team_a_logo = valid_logos[0] if len(valid_logos) >= 1 else None
-            team_b_logo = valid_logos[1] if len(valid_logos) >= 2 else None
-            main_logo = team_a_logo or team_b_logo
+            iframe_url = m.get("IframeURL", "").strip()
+            stream_links = [iframe_url] if iframe_url else []
 
             matches.append(ScrapedMatch(
                 sport=sport,
                 title=title,
-                row_text=card.text(),
                 start_dt=dt,
-                watch_urls=[full_watch_url],
+                stream_urls=stream_links,
                 team_a_logo=team_a_logo,
                 team_b_logo=team_b_logo,
                 logo=main_logo
             ))
 
-        log.info(f"Successfully scraped {len(matches)} matches from {BASE_URL}")
+        log.info(f"Successfully loaded {len(matches)} matches directly from backend API!")
     except Exception as e:
-        log.error(f"Error scraping {BASE_URL}: {e}")
+        log.error(f"Error fetching API: {e}")
 
     # ডুপ্লিকেশন দূর করা
     unique_map: dict[str, ScrapedMatch] = {}
     for m in matches:
         slug = create_slug(m.title)
         if slug in unique_map:
-            for lk in m.watch_urls:
-                if lk not in unique_map[slug].watch_urls:
-                    unique_map[slug].watch_urls.append(lk)
+            for lk in m.stream_urls:
+                if lk not in unique_map[slug].stream_urls:
+                    unique_map[slug].stream_urls.append(lk)
         else:
             unique_map[slug] = m
 
     return list(unique_map.values())
 
 async def main():
-    log.info(f"Starting Pirlo TV Scraper execution ({BASE_URL})...")
+    log.info(f"Starting Pirlo TV Scraper execution...")
     async with httpx.AsyncClient(headers={"User-Agent": STREAM_UA}, follow_redirects=True, http2=True) as client:
-        matches = await scrape_pirlotv_matches(client)
+        matches = await fetch_pirlotv_matches(client)
         if not matches:
-            log.warning("No matches found from Pirlo TV!")
+            log.warning("No matches found from Pirlo TV API!")
             return
 
         final_playlist = []
@@ -299,12 +248,12 @@ async def main():
             end_time_str = (start_bst + timedelta(hours=3)).strftime("%b %d, %Y, %I:%M %p")
 
             # স্ট্রিম লিঙ্ক সংগ্রহ
-            tasks = [resolve_pirlo_stream(client, url) for url in m.watch_urls]
+            tasks = [resolve_pirlo_stream(client, url) for url in m.stream_urls]
             results = await asyncio.gather(*tasks)
 
             event_channels = []
             idx = 1
-            for req_url, (m3u8_url, referer_used) in zip(m.watch_urls, results):
+            for req_url, (m3u8_url, referer_used) in zip(m.stream_urls, results):
                 if m3u8_url:
                     ref = referer_used or "https://flyembed.cfd/"
                     raw_link = f"{m3u8_url}|User-Agent={STREAM_UA}&Referer={ref}&Origin={ref}"
@@ -322,7 +271,7 @@ async def main():
                     })
                     idx += 1
 
-            actual_status = calculate_match_status(m.start_dt, m.row_text, early_minutes=15)
+            actual_status = calculate_match_status(m.start_dt, early_minutes=15)
             teams_data = parse_teams(m.title, team_a_logo=m.team_a_logo, team_b_logo=m.team_b_logo)
             primary_logo = m.team_a_logo or m.logo or m.team_b_logo
 
