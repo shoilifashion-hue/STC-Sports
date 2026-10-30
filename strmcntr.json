@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 31, 2026, 01:58 AM",
+  "last_updated": "Oct 31, 2026, 02:01 AM",
   "event_count": 31,
   "events": {
     "events": [
@@ -895,13 +895,13 @@
         "title": "Atlético de San Luis vs. Atlas",
         "sport": "Liga MX",
         "sub_category": "Liga MX",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "atlético-de-san-luis-vs-atlas",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 30, 2026, 12:00 PM",
-          "end_time_bst": "Oct 30, 2026, 03:00 PM"
+          "start_time_bst": "Oct 31, 2026, 12:00 PM",
+          "end_time_bst": "Oct 31, 2026, 03:00 PM"
         },
         "teams": {
           "team_a": {
@@ -932,13 +932,13 @@
         "title": "FC Juárez vs. Querétaro",
         "sport": "Liga MX",
         "sub_category": "Liga MX",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "fc-juárez-vs-querétaro",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 30, 2026, 12:00 PM",
-          "end_time_bst": "Oct 30, 2026, 03:00 PM"
+          "start_time_bst": "Oct 31, 2026, 12:00 PM",
+          "end_time_bst": "Oct 31, 2026, 03:00 PM"
         },
         "teams": {
           "team_a": {
