@@ -24,11 +24,10 @@ M3U_OUTPUT = ROOT_DIR / "strmcntr.m3u"
 CACHE_DIR = ROOT_DIR / "caches"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
-# আপনার ব্রাউজারের হুবহু User-Agent
 STREAM_UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/156.0.0.0 Safari/537.36"
+    "Chrome/111.0.0.0 Safari/537.36"
 )
 
 HTTP_SEMAPHORE = asyncio.Semaphore(5)
@@ -73,7 +72,6 @@ def parse_teams(title: str, team_a_logo: str | None = None, team_b_logo: str | N
     }
 
 def calculate_match_status(start_dt: datetime, has_live_stream: bool, early_minutes: int = 15) -> str:
-    # যদি অলরেডি m3u8 স্ট্রিম চালু থাকে, তবে সরাসরি LIVE
     if has_live_stream:
         return "LIVE"
 
@@ -141,46 +139,70 @@ def unpack_dean_edwards(script: str) -> str:
 
     return "\n".join(unpacked_pieces)
 
-def extract_m3u8(text: str) -> str | None:
+def extract_jwplayer_and_m3u8(text: str) -> str | None:
+    """JW Player এবং Obfuscated Script থেকে আসল m3u8 এক্সট্রাক্ট করে"""
     if not text:
         return None
 
-    unpacked_text = unpack_dean_edwards(text)
-    full_text = text + "\n" + unpacked_text
+    unpacked = unpack_dean_edwards(text)
+    full_text = text + "\n" + unpacked
     clean_text = html.unescape(full_text).replace(r"\/", "/")
 
-    # ১. tims-001.sytes.net এর আসল লিঙ্ক (স্ক্রিনশট অনুযায়ী)
+    # ১. tims-001.sytes.net বা /main/secure/ এর টোকেনসহ আসল লিঙ্ক
     secure_match = re.search(r'(https?://[a-zA-Z0-9_\-\.]*sytes\.net[^\s"\'<>\\]*?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
     if secure_match:
         return secure_match.group(1).strip("\"' ")
 
-    # ২. Clappr বা Player এর source: "https://..."
-    source_match = re.search(r'(?:source|file|src|stream|hls)\s*[:=]\s*["\'](https?://[^"\']+\.m3u8(?:\?[^"\']*)?)["\']', clean_text, re.IGNORECASE)
-    if source_match:
-        return source_match.group(1).strip("\"' ")
+    # ২. JW Player 8 কনফিগারেশন: jwplayer().setup({file: "...", ...}) অথবা playlist: [{file: "..."}]
+    jw_file_match = re.search(r'(?:file|sources?|src)\s*:\s*["\'](https?://[^"\']+\.m3u8(?:\?[^"\']*)?)["\']', clean_text, re.IGNORECASE)
+    if jw_file_match:
+        return jw_file_match.group(1).strip("\"' ")
 
-    # ৩. যেকোনো সরাসরি .m3u8
+    # ৩. স্ক্রিনশট ৩ এ দেখা JWT বা Base64 টোকেন (eyJhbGci...) ডিকোড করা
+    for jwt_token in re.findall(r'(eyJ[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}(?:\.[A-Za-z0-9_-]+)?)', full_text):
+        for part in jwt_token.split('.'):
+            try:
+                # Base64 padding ঠিক করা
+                padded = part + '=' * (-len(part) % 4)
+                decoded = base64.urlsafe_b64decode(padded.encode()).decode('utf-8', errors='ignore')
+                found = extract_jwplayer_and_m3u8(decoded)
+                if found:
+                    return found
+            except Exception:
+                pass
+
+    # ৪. Base64 atob() চেক
+    for b64 in re.findall(r'atob\s*\(\s*["\']([A-Za-z0-9+/=]{20,})["\']\s*\)', full_text):
+        try:
+            decoded = base64.b64decode(b64).decode("utf-8", errors="ignore")
+            found = extract_jwplayer_and_m3u8(decoded)
+            if found:
+                return found
+        except Exception:
+            pass
+
+    # ৫. হেক্স এনকোডেড স্ট্রিং (\x68\x74\x74\x70 = http)
+    if r"\x68\x74\x74\x70" in full_text:
+        try:
+            unescaped_hex = re.sub(r'\\x([0-9a-fA-F]{2})', lambda m: chr(int(m.group(1), 16)), full_text)
+            found = extract_jwplayer_and_m3u8(unescaped_hex)
+            if found:
+                return found
+        except Exception:
+            pass
+
+    # ৬. যেকোনো স্ট্যান্ডার্ড .m3u8 লিংক
     generic_match = re.search(r'(https?://[^\s"\'<>\\]+?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
     if generic_match:
         url = generic_match.group(1).strip("\"' ")
         if "flyembed" not in url:
             return url
 
-    # ৪. Base64 atob() চেক
-    for b64 in re.findall(r'atob\s*\(\s*["\']([A-Za-z0-9+/=]{20,})["\']\s*\)', full_text):
-        try:
-            decoded = base64.b64decode(b64).decode("utf-8", errors="ignore")
-            found = extract_m3u8(decoded)
-            if found:
-                return found
-        except Exception:
-            pass
-
     return None
 
 async def resolve_pirlo_stream(client: httpx.AsyncClient, raw_iframe_url: str) -> tuple[str | None, str | None]:
     """
-    flyembed.cfd -> ehgembxe.cfd -> tims-001.sytes.net m3u8
+    flyembed.cfd -> ehgembxe.cfd -> JW Player -> tims-001.sytes.net m3u8
     """
     async with HTTP_SEMAPHORE:
         iframe_url = raw_iframe_url.strip()
@@ -190,7 +212,7 @@ async def resolve_pirlo_stream(client: httpx.AsyncClient, raw_iframe_url: str) -
             iframe_url = f"https://{iframe_url}"
 
         try:
-            # ধাপ ১: flyembed.cfd/embed/41.php ফেচ করা
+            # ধাপ ১: flyembed.cfd ফেচ করা
             headers_fly = {
                 "User-Agent": STREAM_UA,
                 "Referer": "https://pirlotvfr.online/",
@@ -204,27 +226,25 @@ async def resolve_pirlo_stream(client: httpx.AsyncClient, raw_iframe_url: str) -
             if resp.status_code != 200:
                 return None, None
 
-            # পেজে সরাসরি m3u8 পেলে
-            m3u8 = extract_m3u8(resp.text)
+            m3u8 = extract_jwplayer_and_m3u8(resp.text)
             if m3u8:
                 return m3u8, str(resp.url)
 
-            # ধাপ ২: ভেতরের আসল প্লেয়ার আইফ্রেম খোঁজা (ehgembxe.cfd)
+            # ধাপ ২: ভেতরের আসল প্লেয়ার লিঙ্ক (ehgembxe.cfd) খোঁজা
             soup = HTMLParser(resp.content)
-            target_iframes = []
+            target_urls = []
             for iframe in soup.css("iframe"):
                 src = iframe.attributes.get("src", "")
                 if src and not src.startswith("javascript:"):
-                    target_iframes.append(urljoin(str(resp.url), src))
+                    target_urls.append(urljoin(str(resp.url), src))
 
-            # regex দিয়েও কোনো লুকানো আইফ্রেম বা স্ক্রিপ্ট ইউআরএল খোঁজা
-            for match_src in re.findall(r'src=["\']([^"\']*(?:ehgembxe|embed|player|live)[^"\']*)["\']', resp.text):
+            for match_src in re.findall(r'src=["\']([^"\']*(?:ehgembxe|flyemb|player|embed)[^"\']*)["\']', resp.text):
                 full_src = urljoin(str(resp.url), match_src)
-                if full_src not in target_iframes:
-                    target_iframes.append(full_src)
+                if full_src not in target_urls:
+                    target_urls.append(full_src)
 
-            # ধাপ ৩: ehgembxe.cfd পেজগুলো ব্রাউজার হেডারে ফেচ করা
-            for inner_url in target_iframes:
+            # ধাপ ৩: ehgembxe.cfd এর JW Player পেজগুলো ফেচ করা
+            for inner_url in target_urls:
                 parsed_inner = urlsplit(inner_url)
                 origin_inner = f"{parsed_inner.scheme}://{parsed_inner.netloc}"
 
@@ -238,23 +258,24 @@ async def resolve_pirlo_stream(client: httpx.AsyncClient, raw_iframe_url: str) -
                     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
                 }
 
-                resp_inner = await client.get(inner_url, headers=headers_ehg, timeout=12.0)
+                # follow_redirects=True যাতে ehgembxe.cfd এর 302 রিডাইরেক্ট ফলো করে /flyemb/p1/*** এ পৌঁছায়
+                resp_inner = await client.get(inner_url, headers=headers_ehg, follow_redirects=True, timeout=12.0)
                 if resp_inner.status_code == 200:
-                    found_m3u8 = extract_m3u8(resp_inner.text)
+                    found_m3u8 = extract_jwplayer_and_m3u8(resp_inner.text)
                     if found_m3u8:
                         return found_m3u8, origin_inner
 
-                    # যদি ehgembxe এর ভেতরে আরও একটি নেস্টেড আইফ্রেম থাকে
-                    inner_soup = HTMLParser(resp_inner.content)
-                    for deep_iframe in inner_soup.css("iframe"):
-                        deep_src = deep_iframe.attributes.get("src", "")
-                        if deep_src and not deep_src.startswith("javascript:"):
-                            deep_url = urljoin(inner_url, deep_src)
-                            resp_deep = await client.get(deep_url, headers={"User-Agent": STREAM_UA, "Referer": inner_url}, timeout=10.0)
-                            if resp_deep.status_code == 200:
-                                deep_m3u8 = extract_m3u8(resp_deep.text)
-                                if deep_m3u8:
-                                    return deep_m3u8, origin_inner
+                    # যদি পেজের ভেতরে স্ক্রিপ্ট ফাইল (.js) লোড হয়, সেগুলোও স্ক্যান করা
+                    js_soup = HTMLParser(resp_inner.content)
+                    for script in js_soup.css("script"):
+                        js_src = script.attributes.get("src", "")
+                        if js_src and not js_src.startswith("http") and "google" not in js_src:
+                            full_js_url = urljoin(str(resp_inner.url), js_src)
+                            resp_js = await client.get(full_js_url, headers=headers_ehg, timeout=8.0)
+                            if resp_js.status_code == 200:
+                                js_m3u8 = extract_jwplayer_and_m3u8(resp_js.text)
+                                if js_m3u8:
+                                    return js_m3u8, origin_inner
 
         except Exception as e:
             log.debug(f"Stream resolution error for {iframe_url}: {e}")
@@ -337,7 +358,7 @@ async def main():
             start_time_str = start_bst.strftime("%b %d, %Y, %I:%M %p")
             end_time_str = (start_bst + timedelta(hours=3)).strftime("%b %d, %Y, %I:%M %p")
 
-            # স্ট্রিম লিঙ্ক রেজোলিউশন
+            # JW Player থেকে আসল m3u8 লিংক রেজোলিউশন
             tasks = [resolve_pirlo_stream(client, url) for url in m.stream_urls]
             results = await asyncio.gather(*tasks)
 
@@ -345,7 +366,6 @@ async def main():
             idx = 1
             for req_url, (m3u8_url, referer_used) in zip(m.stream_urls, results):
                 if m3u8_url:
-                    # আপনার ৩য় স্ক্রিনশট অনুযায়ী নিখুঁত Referer ও Origin
                     ref = referer_used or "https://ehgembxe.cfd/"
                     if not ref.endswith("/"):
                         ref += "/"
