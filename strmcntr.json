@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 31, 2026, 04:46 AM",
+  "last_updated": "Oct 31, 2026, 05:16 AM",
   "event_count": 31,
   "events": {
     "events": [
@@ -57,8 +57,8 @@
         "title": "Mexico City Grand Prix vs. Sky Sports f1 UK",
         "sport": "Formula 1",
         "sub_category": "Formula 1",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "mexico-city-grand-prix-vs-sky-sports-f1-uk",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -82,8 +82,8 @@
         "title": "Mexico City Grand Prix vs. Dazn F1 Spain",
         "sport": "Formula 1",
         "sub_category": "Formula 1",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "mexico-city-grand-prix-vs-dazn-f1-spain",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -107,8 +107,8 @@
         "title": "Mexico City Grand Prix vs. Sky Sports 1 NZ",
         "sport": "Formula 1",
         "sub_category": "Formula 1",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "mexico-city-grand-prix-vs-sky-sports-1-nz",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -132,8 +132,8 @@
         "title": "Mexico City Grand Prix vs. Fox Sports 506 AU",
         "sport": "Formula 1",
         "sub_category": "Formula 1",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "mexico-city-grand-prix-vs-fox-sports-506-au",
         "schedule": {
           "timezone": "BST (UTC+6)",
