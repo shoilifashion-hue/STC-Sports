@@ -2,19 +2,15 @@
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="" group-title="Racing", Moto GP
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream2.pro/hls/oeenzgezcz47.m3u8?st=sk0V1j0jOqHy0YmOUDNOLmyzPEUTjHyPAV4LoKqwxKU|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/967db9c2-4152-4893-b255-df00248b82d1.webp" group-title="Hockey", Ottawa Senators vs. Los Angeles Kings
-#EXTVLCOPT:http-referrer=https://embedcenter.st
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream6.pro/hls/bvnzadfvyt59.m3u8?st=P50ckAheLOZJAQqcGuDUPNN4bEAkO9mcS2hErozhdWA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
+https://edgestream6.pro/hls/oeenzgezcz47.m3u8?st=raDeGPxBoEJj0VRxWWQ45yOlOwzDenAZdQR09tTVSDM|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/d5bbc59f-e8d7-45ee-b60f-c426475ba403.webp" group-title="Football", Nice vs. Stade Rennais
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream6.pro/hls/griogoehvn2.m3u8?st=_T_5Cye_WGyLPdn1dkuYbvJmymNfN0nTzecUVf5BlZo|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
+https://edgestream1.pro/hls/griogoehvn2.m3u8?st=kwkn-tP5jEQJChhPSF2K9EykwNCMRqHUNWz-dfFg9IY|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/8917ff7a-8c7e-433f-8a3f-4aba60611a51.webp" group-title="Football", Le Havre AC vs. Paris Saint-Germain
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream4.pro/hls/dza5z8f69.m3u8?st=tHwzrJFHgRoGnsK6Ujz92z295u-EYvitQNkvm3_866g|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
+https://edgestream2.pro/hls/dza5z8f69.m3u8?st=HGAYX-DeFQkJDiXv_tXpRD9itBMXaXpQAaYVUReg7xw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="" group-title="Racing", Mexico City Grand Prix — FP1
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
@@ -22,23 +18,23 @@ https://edgestream3.pro/sh/cdn/hls/hbfkazbkaznc49.m3u8|User-Agent=Mozilla/5.0 (W
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/a393c378-5e1f-4327-871c-d9d20a4051b9.webp" group-title="Football", SV Elversberg vs. Mainz
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream4.pro/hls/ueyeztrazb4.m3u8?st=t6Loh-7bBXZIGA5nZsJ41jrv1XY8w3L-i1a-Ax7_ER8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
+https://edgestream4.pro/hls/ueyeztrazb4.m3u8?st=f64TeB_k4Pf6GWGbQnY3V_uB-bq_kjqkMk_TAdvOEWg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/fe429cba-3f33-47cb-8d08-4969e6eba9f5.webp" group-title="Football", Sheffield United vs. Wrexham
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream2.pro/hls/24SDAZFcsqnj24.m3u8?st=d_PQ7ejGsV-jeLLFFLUQBAd-Bq0clFKuQoWSv5tWIKk|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
+https://edgestream2.pro/hls/24SDAZFcsqnj24.m3u8?st=g3laDqYy6arwA4qNHF4ugLFUb-Py5zWodERZmv7MDHA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/9cde9d59-fab8-4d9a-8484-ea225b77c29b.webp" group-title="Football", Villarreal vs. Espanyol
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream7.pro/hls/377qj1h2727.m3u8?st=k24dCiaXc9pw9-1Q8dno5W3nHppanGp7QsPQIqhMwEE|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
+https://edgestream4.pro/hls/377qj1h2727.m3u8?st=f4HCk_MShxwzLsXmMqyBazmru8GdiQYAg7FF-_LNyWI|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/992deb22-7cda-4a10-ba56-b08f0119f148.webp" group-title="Football", Lille vs. Lens
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream2.pro/hls/dza5z8f69.m3u8?st=Os8cdHHT380slTqNo8jlaxUcoIIld3C1RvIAzUHLcPE|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
+https://edgestream7.pro/hls/dza5z8f69.m3u8?st=NBxbe7eTPclr7sZ7N9CLZx-pfOStJj4xlklETv3Lcg8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/4ed61aa2-be67-44de-98fb-5a8a736bcf3e.webp" group-title="Football", Casa Pia vs. Sporting CP
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream5.pro/hls/hflfkrtib42.m3u8?st=eM1vcVe4upuolkZVzc4Si2ytPLgBENloKDr9EdJeIuo|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
+https://edgestream6.pro/hls/hflfkrtib42.m3u8?st=zp-4VOspIAgP5GUSOE11JGHXHHX-_GGTXmkBLYplRLk|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="" group-title="Racing", Mexico City Grand Prix — FP2
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
@@ -62,35 +58,35 @@ https://edgestream3.pro/sh/cdn/hls/wfazgsqtrezu66.m3u8|User-Agent=Mozilla/5.0 (W
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/ae652cc7-9bf8-4fa1-8ded-2290a991c592.webp" group-title="Basketball", Detroit Pistons vs. Brooklyn Nets
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream6.pro/hls/hfsdqtaxvb67.m3u8?st=X9rWAh3Au-138RLA4HQAhVxcYopcdeggXx8FF01VR1I|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
+https://edgestream6.pro/hls/hfsdqtaxvb67.m3u8?st=c9wB9c_Q04dZSzKw3o1uaNedLx2u8nPUYTXNrlNuW2Q|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/5587d210-84a7-4697-8a3d-543013b9d427.webp" group-title="Basketball", New York Knicks vs. Philadelphia 76ers
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream2.pro/hls/zayrtezafgvdv68.m3u8?st=YBgOJbW3LY64d2RGTmD4k-yqWcTsB-dWoTC02XN9lqg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
+https://edgestream5.pro/hls/zayrtezafgvdv68.m3u8?st=C8AVD8XD1r42SYJVaUoLPFb9TSJPpCnPfEPcgpY6cCU|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/43949694-e050-403f-8b0d-241cfe3dcf6e.webp" group-title="Basketball", Orlando Magic vs. Toronto Raptors
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream4.pro/hls/zeafwqvhfe69.m3u8?st=Gx7934n3V6l9M7c8HbmLrZcdDZ-wIwUW0bQUaurdRsw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
+https://edgestream2.pro/hls/zeafwqvhfe69.m3u8?st=IEGNFn7IEmC04lDaOLfW_JoqxGq5jl7IDXZjtm5NYXA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/b1c74876-0e79-46fc-be96-7661fe865c04.webp" group-title="Basketball", Indiana Pacers vs. Miami Heat
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream7.pro/hls/bvnsqdfvgha70.m3u8?st=03IYs3rqfGwzj02N2wQippzauDiRJ2pyzuxMobi-7IY|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
+https://edgestream5.pro/hls/bvnsqdfvgha70.m3u8?st=PIZrdSP4oM7CJzKvO7WYDUGXd2gGyJMoCmSBVp0wkTw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/dfe3cb29-7d2f-48e6-a383-39b1f314eb22.webp" group-title="Basketball", Houston Rockets vs. Dallas Mavericks
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream6.pro/hls/ztyarueaghj71.m3u8?st=BEesj03Q5mZ4JQ1xkGnwUKRLcpFef56mHDGIgo6qb74|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
+https://edgestream7.pro/hls/ztyarueaghj71.m3u8?st=4TBOzaBLCZjzK0UtIC_yjS6ddHqAw4Lo6LWCXOz2ekw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/cb466bde-fc22-4665-9465-10ef862ab4de.webp" group-title="Basketball", LA Clippers vs. Minnesota Timberwolves
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream4.pro/hls/pllmazjkdzajh72.m3u8?st=EDY4XV21hoGXtEGydxwVaPiqyC9TZ23b3Dk2xUFw27U|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
+https://edgestream6.pro/hls/pllmazjkdzajh72.m3u8?st=rpsRtuwggES11cnwH_ZaIwoEVRV-6UugCproQ6O3Kcs|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/53d24139-b636-452b-ae08-a417e4db49fa.webp" group-title="Basketball", Los Angeles Lakers vs. Golden State Warriors
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream1.pro/hls/fdgsqdfawa73.m3u8?st=pqF8vwn4voAsrySik3c2wtmIzfZMl3C_qwJ-wKLGH0E|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
+https://edgestream2.pro/hls/fdgsqdfawa73.m3u8?st=NHEArS1B42_vqo2FylSAFks4_cuvIAhVgXjM0KRlpfI|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/0acf1a39-8f3a-48e3-91f3-d16ed98e27cd.webp" group-title="Basketball", Denver Nuggets vs. Phoenix Suns
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-https://edgestream1.pro/hls/yjtzafghvjza74.m3u8?st=2Dm8CIhvQ5Okeh2SR93YhDvbdEu4-rCOxFOQcU99rvU|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
+https://edgestream7.pro/hls/yjtzafghvjza74.m3u8?st=DKuQ5WgsVLTLIuhpkhEYYV9bOV8cezIR6sQvKeXRFE0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://streamcenter.st/api/images/badge/65d82031-40da-456d-8086-7ba918d1a7dd.webp" group-title="American Football", Kent State Golden Flashes vs. Sacramento State Hornets
 #EXTVLCOPT:http-referrer=https://embedcenter.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
