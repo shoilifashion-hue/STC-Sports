@@ -7,7 +7,7 @@ import re
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit
 from zoneinfo import ZoneInfo
 
 import httpx
@@ -15,7 +15,6 @@ from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
 ROOT_DIR = Path(__file__).resolve().parent
 
-# স্ক্রিনশট থেকে পাওয়া আসল ডাটা এপিআই
 API_URL = "https://ovogoal.pages.dev/api/v2/flyembed2.json"
 BASE_URL = "https://pirlotvfr.online"
 TAG = "PIRLOTV"
@@ -84,7 +83,6 @@ def calculate_match_status(start_dt: datetime, early_minutes: int = 15) -> str:
     return "ENDED"
 
 def parse_match_time(time_str: str) -> datetime:
-    """JSON-এর '23:30' বা '01:00' সময় পার্স করে UTC টাইমস্ট্যাম্প তৈরি করে"""
     now = datetime.now(timezone.utc)
     m = re.search(r'(\d{1,2}):(\d{2})', str(time_str))
     if m:
@@ -107,7 +105,7 @@ def extract_m3u8(text: str, base_url: str = "") -> str | None:
 
     clean_text = html.unescape(text).replace(r"\/", "/")
 
-    # ১. tims-001.sytes.net ইত্যাদি প্যাটার্ন
+    # ১. সরাসরি sytes.net বা m3u8 প্যাটার্ন
     secure_match = re.search(r'(https?://[a-zA-Z0-9_\-\.]*sytes\.net[^\s"\'<>\\]*?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
     if secure_match:
         return secure_match.group(1).strip("\"' ")
@@ -122,8 +120,8 @@ def extract_m3u8(text: str, base_url: str = "") -> str | None:
     if generic_match:
         return generic_match.group(1).strip("\"' ")
 
-    # ৪. Base64 atob() চেক
-    for b64 in re.findall(r'atob\(["\']([A-Za-z0-9+/=]{20,})["\']\)', text):
+    # ৪. Base64 atob() থাকলে ডিকোড করে খোঁজা
+    for b64 in re.findall(r'atob\s*\(\s*["\']([A-Za-z0-9+/=]{20,})["\']\s*\)', text):
         try:
             decoded = base64.b64decode(b64).decode("utf-8", errors="ignore")
             found = extract_m3u8(decoded, base_url)
@@ -134,25 +132,34 @@ def extract_m3u8(text: str, base_url: str = "") -> str | None:
 
     return None
 
-async def resolve_pirlo_stream(client: httpx.AsyncClient, iframe_url: str) -> tuple[str | None, str | None]:
-    """m.IframeURL থেকে সরাসরি প্লেয়ার ফেচ করে আসল m3u8 ও Referer বের করে"""
+async def resolve_pirlo_stream(client: httpx.AsyncClient, raw_iframe_url: str) -> tuple[str | None, str | None]:
+    """FlyEmbed প্লেয়ার ও তার ভেতরের আইফ্রেম পেজগুলো থেকে আসল m3u8 বের করে"""
     async with HTTP_SEMAPHORE:
+        # প্রটোকল ফিক্স (যেমন //flyembed.cfd -> https://flyembed.cfd)
+        iframe_url = raw_iframe_url.strip()
+        if iframe_url.startswith("//"):
+            iframe_url = f"https:{iframe_url}"
+        elif not iframe_url.startswith("http"):
+            iframe_url = f"https://{iframe_url}"
+
         try:
             headers = {
                 "User-Agent": STREAM_UA,
-                "Referer": BASE_URL,
+                "Referer": "https://pirlotvfr.online/",
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
             }
 
             resp = await client.get(iframe_url, headers=headers, follow_redirects=True, timeout=12.0)
             if resp.status_code != 200:
+                log.debug(f"Iframe {iframe_url} returned status: {resp.status_code}")
                 return None, None
 
+            # পেজের ভেতর সরাসরি m3u8 থাকলে
             m3u8 = extract_m3u8(resp.text, base_url=str(resp.url))
             if m3u8:
                 return m3u8, str(resp.url)
 
-            # নেস্টেড আইফ্রেম চেক
+            # নেস্টেড আইফ্রেম চেক (যেমন ehgembxe.cfd)
             soup = HTMLParser(resp.content)
             for iframe in soup.css("iframe"):
                 src = iframe.attributes.get("src", "")
@@ -175,7 +182,6 @@ async def resolve_pirlo_stream(client: httpx.AsyncClient, iframe_url: str) -> tu
 async def fetch_pirlotv_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]:
     matches = []
     try:
-        # সরাসরি ব্যাকএন্ড JSON কল
         headers = {"User-Agent": STREAM_UA, "Referer": BASE_URL}
         resp = await client.get(API_URL, headers=headers, timeout=15.0)
         if resp.status_code != 200:
@@ -203,6 +209,9 @@ async def fetch_pirlotv_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]
             main_logo = team_a_logo or m.get("LeagueLogo") or team_b_logo
 
             iframe_url = m.get("IframeURL", "").strip()
+            if iframe_url.startswith("//"):
+                iframe_url = f"https:{iframe_url}"
+
             stream_links = [iframe_url] if iframe_url else []
 
             matches.append(ScrapedMatch(
@@ -219,7 +228,6 @@ async def fetch_pirlotv_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]
     except Exception as e:
         log.error(f"Error fetching API: {e}")
 
-    # ডুপ্লিকেশন দূর করা
     unique_map: dict[str, ScrapedMatch] = {}
     for m in matches:
         slug = create_slug(m.title)
@@ -233,7 +241,7 @@ async def fetch_pirlotv_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]
     return list(unique_map.values())
 
 async def main():
-    log.info(f"Starting Pirlo TV Scraper execution...")
+    log.info("Starting Pirlo TV Scraper execution...")
     async with httpx.AsyncClient(headers={"User-Agent": STREAM_UA}, follow_redirects=True, http2=True) as client:
         matches = await fetch_pirlotv_matches(client)
         if not matches:
@@ -241,13 +249,14 @@ async def main():
             return
 
         final_playlist = []
+        now_utc = datetime.now(timezone.utc)
 
         for m in matches:
             start_bst = m.start_dt.astimezone(BST_TZ)
             start_time_str = start_bst.strftime("%b %d, %Y, %I:%M %p")
             end_time_str = (start_bst + timedelta(hours=3)).strftime("%b %d, %Y, %I:%M %p")
 
-            # স্ট্রিম লিঙ্ক সংগ্রহ
+            # স্ট্রিম লিঙ্ক রেজোলিউশন
             tasks = [resolve_pirlo_stream(client, url) for url in m.stream_urls]
             results = await asyncio.gather(*tasks)
 
@@ -255,17 +264,35 @@ async def main():
             idx = 1
             for req_url, (m3u8_url, referer_used) in zip(m.stream_urls, results):
                 if m3u8_url:
+                    # ১. সক্রিয় m3u8 পাওয়া গেলে সরাসরি m3u8 লিঙ্ক
                     ref = referer_used or "https://flyembed.cfd/"
-                    raw_link = f"{m3u8_url}|User-Agent={STREAM_UA}&Referer={ref}&Origin={ref}"
+                    parsed = urlsplit(ref)
+                    origin = f"{parsed.scheme}://{parsed.netloc}"
+                    raw_link = f"{m3u8_url}|User-Agent={STREAM_UA}&Referer={ref}&Origin={origin}"
                     event_channels.append({
-                        "channel_name": f"Stream #{idx}",
+                        "channel_name": f"Stream #{idx} (HLS)",
                         "stream_type": "HLS",
                         "url": m3u8_url,
                         "raw_link": raw_link,
                         "headers": {
                             "User-Agent": STREAM_UA,
                             "Referer": ref,
-                            "Origin": ref
+                            "Origin": origin
+                        },
+                        "drm_key": None
+                    })
+                    idx += 1
+                elif req_url:
+                    # ২. ফলব্যাক: ম্যাচ শুরু হতে ১ ঘণ্টার বেশি বাকি থাকলে এমবেড প্লেয়ার চ্যানেল
+                    raw_link = f"{req_url}|User-Agent={STREAM_UA}&Referer=https://pirlotvfr.online/"
+                    event_channels.append({
+                        "channel_name": f"Stream #{idx} (Live Player)",
+                        "stream_type": "EMBED",
+                        "url": req_url,
+                        "raw_link": raw_link,
+                        "headers": {
+                            "User-Agent": STREAM_UA,
+                            "Referer": "https://pirlotvfr.online/"
                         },
                         "drm_key": None
                     })
@@ -327,7 +354,7 @@ async def main():
 
         M3U_OUTPUT.write_text("\n".join(m3u_lines) + "\n", encoding="utf-8")
 
-        log.info(f"Done! Successfully generated {len(final_playlist)} matches and {stream_count} active playable streams in M3U.")
+        log.info(f"Done! Saved {len(final_playlist)} matches and {stream_count} channels into JSON and M3U.")
 
 if __name__ == "__main__":
     asyncio.run(main())
