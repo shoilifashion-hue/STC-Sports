@@ -1,1033 +1,782 @@
 {
-  "last_updated": "Oct 31, 2026, 01:15 AM",
-  "event_count": 27,
+  "last_updated": "Oct 31, 2026, 01:50 AM",
+  "event_count": 31,
   "events": {
     "events": [
       {
-        "title": "Moto GP",
-        "sport": "Racing",
-        "sub_category": "Racing",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "moto-gp",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 29, 2026, 01:30 PM",
-          "end_time_bst": "Oct 29, 2026, 04:30 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Moto GP",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Moto GP",
-            "logo": null
-          }
-        },
-        "logo": null,
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream1.pro/hls/oeenzgezcz47.m3u8?st=5yiGKGoSndwnbelxexfUvTJCPRjxrl-q4yQzgdtCVCw",
-            "raw_link": "https://edgestream1.pro/hls/oeenzgezcz47.m3u8?st=5yiGKGoSndwnbelxexfUvTJCPRjxrl-q4yQzgdtCVCw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Nice vs. Stade Rennais",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "nice-vs-stade-rennais",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 12:00 AM",
-          "end_time_bst": "Oct 31, 2026, 03:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Nice",
-            "logo": "https://streamcenter.st/api/images/badge/d5bbc59f-e8d7-45ee-b60f-c426475ba403.webp"
-          },
-          "team_b": {
-            "name": "Stade Rennais",
-            "logo": "https://streamcenter.st/api/images/badge/401bb7dd-310b-4d47-9227-dbff4c61961e.webp"
-          }
-        },
-        "logo": "https://streamcenter.st/api/images/badge/d5bbc59f-e8d7-45ee-b60f-c426475ba403.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/griogoehvn2.m3u8?st=r5GphqVnBZptQSbeMrSOBnyF_e0fDlszNAMSmq2kZcQ",
-            "raw_link": "https://edgestream2.pro/hls/griogoehvn2.m3u8?st=r5GphqVnBZptQSbeMrSOBnyF_e0fDlszNAMSmq2kZcQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
         "title": "Le Havre AC vs. Paris Saint-Germain",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
+        "sport": "Ligue 1",
+        "sub_category": "Ligue 1",
+        "status": "UPCOMING",
+        "is_hot": false,
         "slug": "le-havre-ac-vs-paris-saint-germain",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 12:00 AM",
-          "end_time_bst": "Oct 31, 2026, 03:00 AM"
+          "start_time_bst": "Oct 31, 2026, 05:00 AM",
+          "end_time_bst": "Oct 31, 2026, 08:00 AM"
         },
         "teams": {
           "team_a": {
             "name": "Le Havre AC",
-            "logo": "https://streamcenter.st/api/images/badge/8917ff7a-8c7e-433f-8a3f-4aba60611a51.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png"
           },
           "team_b": {
             "name": "Paris Saint-Germain",
-            "logo": "https://streamcenter.st/api/images/badge/742c5a0d-822d-440c-b2da-929714042583.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/8917ff7a-8c7e-433f-8a3f-4aba60611a51.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream4.pro/hls/dza5z8f69.m3u8?st=Vebaf0wK8nEJyJmOyKv5UjXjgCgFULQ52lA8xariK-E",
-            "raw_link": "https://edgestream4.pro/hls/dza5z8f69.m3u8?st=Vebaf0wK8nEJyJmOyKv5UjXjgCgFULQ52lA8xariK-E|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png",
+        "channels": []
       },
       {
-        "title": "Mexico City Grand Prix — FP1",
-        "sport": "Racing",
-        "sub_category": "Racing",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "mexico-city-grand-prix-fp1",
+        "title": "Nice vs. Stade Rennais",
+        "sport": "Ligue 1",
+        "sub_category": "Ligue 1",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "nice-vs-stade-rennais",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 12:30 AM",
-          "end_time_bst": "Oct 31, 2026, 03:30 AM"
+          "start_time_bst": "Oct 31, 2026, 05:00 AM",
+          "end_time_bst": "Oct 31, 2026, 08:00 AM"
         },
         "teams": {
           "team_a": {
-            "name": "Mexico City Grand Prix — FP1",
-            "logo": null
+            "name": "Nice",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png"
           },
           "team_b": {
-            "name": "Mexico City Grand Prix — FP1",
-            "logo": null
+            "name": "Stade Rennais",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png"
           }
         },
-        "logo": null,
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/hbfkazbkaznc49.m3u8?st=Jw29EZKDlTtHDqMu6kc34MHTIF_9GVW6PxnpG5XvMPU",
-            "raw_link": "https://edgestream5.pro/hls/hbfkazbkaznc49.m3u8?st=Jw29EZKDlTtHDqMu6kc34MHTIF_9GVW6PxnpG5XvMPU|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png",
+        "channels": []
+      },
+      {
+        "title": "Mexico City Grand Prix vs. Sky Sports f1 UK",
+        "sport": "Formula 1",
+        "sub_category": "Formula 1",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "mexico-city-grand-prix-vs-sky-sports-f1-uk",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 05:30 AM",
+          "end_time_bst": "Oct 31, 2026, 08:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Mexico City Grand Prix",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10"
+          },
+          "team_b": {
+            "name": "Sky Sports f1 UK",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10"
           }
-        ]
+        },
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10",
+        "channels": []
+      },
+      {
+        "title": "Mexico City Grand Prix vs. Dazn F1 Spain",
+        "sport": "Formula 1",
+        "sub_category": "Formula 1",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "mexico-city-grand-prix-vs-dazn-f1-spain",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 05:30 AM",
+          "end_time_bst": "Oct 31, 2026, 08:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Mexico City Grand Prix",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10"
+          },
+          "team_b": {
+            "name": "Dazn F1 Spain",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10"
+          }
+        },
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10",
+        "channels": []
+      },
+      {
+        "title": "Mexico City Grand Prix vs. Sky Sports 1 NZ",
+        "sport": "Formula 1",
+        "sub_category": "Formula 1",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "mexico-city-grand-prix-vs-sky-sports-1-nz",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 05:30 AM",
+          "end_time_bst": "Oct 31, 2026, 08:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Mexico City Grand Prix",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10"
+          },
+          "team_b": {
+            "name": "Sky Sports 1 NZ",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10"
+          }
+        },
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10",
+        "channels": []
+      },
+      {
+        "title": "Mexico City Grand Prix vs. Fox Sports 506 AU",
+        "sport": "Formula 1",
+        "sub_category": "Formula 1",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "mexico-city-grand-prix-vs-fox-sports-506-au",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 05:30 AM",
+          "end_time_bst": "Oct 31, 2026, 08:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Mexico City Grand Prix",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10"
+          },
+          "team_b": {
+            "name": "Fox Sports 506 AU",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10"
+          }
+        },
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10",
+        "channels": []
       },
       {
         "title": "SV Elversberg vs. Mainz",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
+        "sport": "German Bundesliga",
+        "sub_category": "German Bundesliga",
+        "status": "UPCOMING",
+        "is_hot": false,
         "slug": "sv-elversberg-vs-mainz",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 01:30 AM",
-          "end_time_bst": "Oct 31, 2026, 04:30 AM"
+          "start_time_bst": "Oct 31, 2026, 06:30 AM",
+          "end_time_bst": "Oct 31, 2026, 09:30 AM"
         },
         "teams": {
           "team_a": {
             "name": "SV Elversberg",
-            "logo": "https://streamcenter.st/api/images/badge/a393c378-5e1f-4327-871c-d9d20a4051b9.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png"
           },
           "team_b": {
             "name": "Mainz",
-            "logo": "https://streamcenter.st/api/images/badge/9d76a860-820a-4b1a-b17c-3bf506a28fd4.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2950.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/a393c378-5e1f-4327-871c-d9d20a4051b9.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/ueyeztrazb4.m3u8?st=IlL7ZQt42wpFzZeMQBjYcCOcQJ8qBJOInAxhwVI63BM",
-            "raw_link": "https://edgestream5.pro/hls/ueyeztrazb4.m3u8?st=IlL7ZQt42wpFzZeMQBjYcCOcQJ8qBJOInAxhwVI63BM|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Sheffield United vs. Wrexham",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "sheffield-united-vs-wrexham",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 02:00 AM",
-          "end_time_bst": "Oct 31, 2026, 05:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Sheffield United",
-            "logo": "https://streamcenter.st/api/images/badge/fe429cba-3f33-47cb-8d08-4969e6eba9f5.webp"
-          },
-          "team_b": {
-            "name": "Wrexham",
-            "logo": "https://streamcenter.st/api/images/badge/a37038ea-c86e-4b6b-a7ca-476a22eaa852.webp"
-          }
-        },
-        "logo": "https://streamcenter.st/api/images/badge/fe429cba-3f33-47cb-8d08-4969e6eba9f5.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream4.pro/hls/24SDAZFcsqnj24.m3u8?st=k_VQAB5nfatkIdfS0fZ1T3HKgL0RTUo7Rdf7pEuOUg4",
-            "raw_link": "https://edgestream4.pro/hls/24SDAZFcsqnj24.m3u8?st=k_VQAB5nfatkIdfS0fZ1T3HKgL0RTUo7Rdf7pEuOUg4|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png",
+        "channels": []
       },
       {
         "title": "Villarreal vs. Espanyol",
-        "sport": "Football",
-        "sub_category": "Football",
+        "sport": "Laliga",
+        "sub_category": "Laliga",
         "status": "UPCOMING",
         "is_hot": false,
         "slug": "villarreal-vs-espanyol",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 02:00 AM",
-          "end_time_bst": "Oct 31, 2026, 05:00 AM"
+          "start_time_bst": "Oct 31, 2026, 07:00 AM",
+          "end_time_bst": "Oct 31, 2026, 10:00 AM"
         },
         "teams": {
           "team_a": {
             "name": "Villarreal",
-            "logo": "https://streamcenter.st/api/images/badge/9cde9d59-fab8-4d9a-8484-ea225b77c29b.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
           },
           "team_b": {
             "name": "Espanyol",
-            "logo": "https://streamcenter.st/api/images/badge/51bbf553-4c9e-4149-8edb-f244c3909c94.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/9cde9d59-fab8-4d9a-8484-ea225b77c29b.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream1.pro/hls/377qj1h2727.m3u8?st=QlZRV9-OcBLiszkbDep26RjNKcoqo-bFcKywbKJnN9U",
-            "raw_link": "https://edgestream1.pro/hls/377qj1h2727.m3u8?st=QlZRV9-OcBLiszkbDep26RjNKcoqo-bFcKywbKJnN9U|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+        "channels": []
+      },
+      {
+        "title": "Sheffield United vs. Wrexham",
+        "sport": "England - Championship",
+        "sub_category": "England - Championship",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "sheffield-united-vs-wrexham",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 07:00 AM",
+          "end_time_bst": "Oct 31, 2026, 10:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Sheffield United",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/398.png"
+          },
+          "team_b": {
+            "name": "Wrexham",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png"
           }
-        ]
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/398.png",
+        "channels": []
       },
       {
         "title": "Lille vs. Lens",
-        "sport": "Football",
-        "sub_category": "Football",
+        "sport": "Ligue 1",
+        "sub_category": "Ligue 1",
         "status": "UPCOMING",
         "is_hot": false,
         "slug": "lille-vs-lens",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 02:05 AM",
-          "end_time_bst": "Oct 31, 2026, 05:05 AM"
+          "start_time_bst": "Oct 31, 2026, 07:05 AM",
+          "end_time_bst": "Oct 31, 2026, 10:05 AM"
         },
         "teams": {
           "team_a": {
             "name": "Lille",
-            "logo": "https://streamcenter.st/api/images/badge/992deb22-7cda-4a10-ba56-b08f0119f148.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png"
           },
           "team_b": {
             "name": "Lens",
-            "logo": "https://streamcenter.st/api/images/badge/98931701-8d05-424c-961a-8f19781b74ca.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/992deb22-7cda-4a10-ba56-b08f0119f148.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream4.pro/hls/dza5z8f69.m3u8?st=pDM5cNx_ajbMzyg8OYmiYl4exIS_2thlkpCVfnwo-hY",
-            "raw_link": "https://edgestream4.pro/hls/dza5z8f69.m3u8?st=pDM5cNx_ajbMzyg8OYmiYl4exIS_2thlkpCVfnwo-hY|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
+        "channels": []
       },
       {
         "title": "Casa Pia vs. Sporting CP",
-        "sport": "Football",
-        "sub_category": "Football",
+        "sport": "Portuguese Primeira Liga",
+        "sub_category": "Portuguese Primeira Liga",
         "status": "UPCOMING",
         "is_hot": false,
         "slug": "casa-pia-vs-sporting-cp",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 02:15 AM",
-          "end_time_bst": "Oct 31, 2026, 05:15 AM"
+          "start_time_bst": "Oct 31, 2026, 07:15 AM",
+          "end_time_bst": "Oct 31, 2026, 10:15 AM"
         },
         "teams": {
           "team_a": {
             "name": "Casa Pia",
-            "logo": "https://streamcenter.st/api/images/badge/4ed61aa2-be67-44de-98fb-5a8a736bcf3e.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21581.png"
           },
           "team_b": {
             "name": "Sporting CP",
-            "logo": "https://streamcenter.st/api/images/badge/24b6435e-a404-4d7b-af71-f85afaba306d.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/4ed61aa2-be67-44de-98fb-5a8a736bcf3e.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/hflfkrtib42.m3u8?st=gY2EcunKrLP7zE4PoCV6EojM4o7Xfe9hEebZOYojXaY",
-            "raw_link": "https://edgestream5.pro/hls/hflfkrtib42.m3u8?st=gY2EcunKrLP7zE4PoCV6EojM4o7Xfe9hEebZOYojXaY|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21581.png",
+        "channels": []
       },
       {
-        "title": "Mexico City Grand Prix — FP2",
-        "sport": "Racing",
-        "sub_category": "Racing",
+        "title": "Vegas Golden Knights vs. New Jersey Devils",
+        "sport": "NHL",
+        "sub_category": "NHL",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "mexico-city-grand-prix-fp2",
+        "slug": "vegas-golden-knights-vs-new-jersey-devils",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:00 AM",
-          "end_time_bst": "Oct 31, 2026, 07:00 AM"
+          "start_time_bst": "Oct 31, 2026, 09:00 AM",
+          "end_time_bst": "Oct 31, 2026, 12:00 PM"
         },
         "teams": {
           "team_a": {
-            "name": "Mexico City Grand Prix — FP2",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Mexico City Grand Prix — FP2",
-            "logo": null
-          }
-        },
-        "logo": null,
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/hbfkazbkaznc49.m3u8?st=yvvaDZB-zBoRkO4QrpgDnWfIU3ulTg4w2WdDbGCSwfk",
-            "raw_link": "https://edgestream2.pro/hls/hbfkazbkaznc49.m3u8?st=yvvaDZB-zBoRkO4QrpgDnWfIU3ulTg4w2WdDbGCSwfk|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "New Jersey Devils vs. Vegas Golden Knights",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "new-jersey-devils-vs-vegas-golden-knights",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:00 AM",
-          "end_time_bst": "Oct 31, 2026, 07:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "New Jersey Devils",
-            "logo": "https://streamcenter.st/api/images/badge/d4a8e77d-7545-40dd-8e1c-65372231e533.webp"
-          },
-          "team_b": {
             "name": "Vegas Golden Knights",
-            "logo": "https://streamcenter.st/api/images/badge/15506e97-07f7-4138-8d2f-48830c5f4445.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png"
+          },
+          "team_b": {
+            "name": "New Jersey Devils",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nj.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/d4a8e77d-7545-40dd-8e1c-65372231e533.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/uyopzarf50.m3u8?st=ipPEbN47u6io6UkrDHo839jeLg6PMFhi8zTHYTscJH4",
-            "raw_link": "https://edgestream5.pro/hls/uyopzarf50.m3u8?st=ipPEbN47u6io6UkrDHo839jeLg6PMFhi8zTHYTscJH4|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png",
+        "channels": []
       },
       {
-        "title": "Harvard crimson vs Dartmouth Big Green",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "Washington Wizards vs. Charlotte Hornets",
+        "sport": "NBA",
+        "sub_category": "NBA",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "harvard-crimson-vs-dartmouth-big-green",
+        "slug": "washington-wizards-vs-charlotte-hornets",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 05:00 AM",
-          "end_time_bst": "Oct 31, 2026, 08:00 AM"
+          "start_time_bst": "Oct 31, 2026, 10:00 AM",
+          "end_time_bst": "Oct 31, 2026, 01:00 PM"
         },
         "teams": {
           "team_a": {
-            "name": "Harvard crimson",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Dartmouth Big Green",
-            "logo": null
-          }
-        },
-        "logo": null,
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream3.pro/sh/cdn/hls/oipozuezeji33.m3u8",
-            "raw_link": "https://edgestream3.pro/sh/cdn/hls/oipozuezeji33.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Tulane Green Wave vs. Charlotte 49ers",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "tulane-green-wave-vs-charlotte-49ers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 05:00 AM",
-          "end_time_bst": "Oct 31, 2026, 08:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Tulane Green Wave",
-            "logo": "https://streamcenter.st/api/images/badge/8d080361-7136-4ab6-ae0e-750ec254b340.webp"
-          },
-          "team_b": {
-            "name": "Charlotte 49ers",
-            "logo": "https://streamcenter.st/api/images/badge/33415c8d-92b5-446e-b33a-649013fa7b06.webp"
-          }
-        },
-        "logo": "https://streamcenter.st/api/images/badge/8d080361-7136-4ab6-ae0e-750ec254b340.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream3.pro/sh/cdn/hls/JHDAJBDnjdna30.m3u8",
-            "raw_link": "https://edgestream3.pro/sh/cdn/hls/JHDAJBDnjdna30.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Charlotte Hornets vs. Washington Wizards",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "charlotte-hornets-vs-washington-wizards",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 05:00 AM",
-          "end_time_bst": "Oct 31, 2026, 08:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Charlotte Hornets",
-            "logo": "https://streamcenter.st/api/images/badge/0494a5d3-2758-4599-8add-b06144a2a4d2.webp"
-          },
-          "team_b": {
             "name": "Washington Wizards",
-            "logo": "https://streamcenter.st/api/images/badge/5209cf6f-a3aa-49c2-a31d-3171d477088e.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png"
+          },
+          "team_b": {
+            "name": "Charlotte Hornets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/0494a5d3-2758-4599-8add-b06144a2a4d2.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream3.pro/sh/cdn/hls/mlkijfezag65.m3u8",
-            "raw_link": "https://edgestream3.pro/sh/cdn/hls/mlkijfezag65.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+        "channels": []
       },
       {
-        "title": "Winnipeg Jets vs. Florida Panthers",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
+        "title": "Florida Panthers vs. Winnipeg Jets",
+        "sport": "NHL",
+        "sub_category": "NHL",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "winnipeg-jets-vs-florida-panthers",
+        "slug": "florida-panthers-vs-winnipeg-jets",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 05:00 AM",
-          "end_time_bst": "Oct 31, 2026, 08:00 AM"
+          "start_time_bst": "Oct 31, 2026, 10:00 AM",
+          "end_time_bst": "Oct 31, 2026, 01:00 PM"
         },
         "teams": {
           "team_a": {
-            "name": "Winnipeg Jets",
-            "logo": "https://streamcenter.st/api/images/badge/e9c9d69e-f985-482e-89b0-d86503d5daa5.webp"
-          },
-          "team_b": {
             "name": "Florida Panthers",
-            "logo": "https://streamcenter.st/api/images/badge/a0eb86ca-70d8-45b3-a484-43668ec8d94d.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png"
+          },
+          "team_b": {
+            "name": "Winnipeg Jets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/e9c9d69e-f985-482e-89b0-d86503d5daa5.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream1.pro/hls/hjksgdfauzy51.m3u8?st=and05DgKUPMc1R9JQ5y2c4AAvrtZpV6dF-RuCXlCyGU",
-            "raw_link": "https://edgestream1.pro/hls/hjksgdfauzy51.m3u8?st=and05DgKUPMc1R9JQ5y2c4AAvrtZpV6dF-RuCXlCyGU|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png",
+        "channels": []
       },
       {
-        "title": "Baylor Bears vs. UCF Knights",
-        "sport": "American Football",
-        "sub_category": "American Football",
+        "title": "Charlotte 49ers vs. Tulane Green Wave",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "baylor-bears-vs-ucf-knights",
+        "slug": "charlotte-49ers-vs-tulane-green-wave",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 05:30 AM",
-          "end_time_bst": "Oct 31, 2026, 08:30 AM"
+          "start_time_bst": "Oct 31, 2026, 10:00 AM",
+          "end_time_bst": "Oct 31, 2026, 01:00 PM"
         },
         "teams": {
           "team_a": {
-            "name": "Baylor Bears",
-            "logo": "https://streamcenter.st/api/images/badge/35a17779-6184-4bb0-8a21-4f5939f9616d.webp"
+            "name": "Charlotte 49ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png"
           },
           "team_b": {
-            "name": "UCF Knights",
-            "logo": "https://streamcenter.st/api/images/badge/38fe1c61-b2a9-4cc1-a8ac-204788be934f.webp"
+            "name": "Tulane Green Wave",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2655.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/35a17779-6184-4bb0-8a21-4f5939f9616d.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream3.pro/sh/cdn/hls/sfjnzabacah31.m3u8",
-            "raw_link": "https://edgestream3.pro/sh/cdn/hls/sfjnzabacah31.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png",
+        "channels": []
       },
       {
-        "title": "Chicago Bulls vs. Boston Celtics",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
+        "title": "Boston Celtics vs. Chicago Bulls",
+        "sport": "NBA",
+        "sub_category": "NBA",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "chicago-bulls-vs-boston-celtics",
+        "slug": "boston-celtics-vs-chicago-bulls",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 05:30 AM",
-          "end_time_bst": "Oct 31, 2026, 08:30 AM"
+          "start_time_bst": "Oct 31, 2026, 10:30 AM",
+          "end_time_bst": "Oct 31, 2026, 01:30 PM"
         },
         "teams": {
           "team_a": {
-            "name": "Chicago Bulls",
-            "logo": "https://streamcenter.st/api/images/badge/37b86493-9307-46a3-aa5c-9a24138ff0cb.webp"
-          },
-          "team_b": {
             "name": "Boston Celtics",
-            "logo": "https://streamcenter.st/api/images/badge/7c16587a-00ec-43f3-934e-b24c84e62545.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png"
+          },
+          "team_b": {
+            "name": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/37b86493-9307-46a3-aa5c-9a24138ff0cb.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream3.pro/sh/cdn/hls/wfazgsqtrezu66.m3u8",
-            "raw_link": "https://edgestream3.pro/sh/cdn/hls/wfazgsqtrezu66.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "channels": []
       },
       {
-        "title": "Detroit Pistons vs. Brooklyn Nets",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
+        "title": "Brooklyn Nets vs. Detroit Pistons",
+        "sport": "NBA",
+        "sub_category": "NBA",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "detroit-pistons-vs-brooklyn-nets",
+        "slug": "brooklyn-nets-vs-detroit-pistons",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 05:30 AM",
-          "end_time_bst": "Oct 31, 2026, 08:30 AM"
+          "start_time_bst": "Oct 31, 2026, 10:30 AM",
+          "end_time_bst": "Oct 31, 2026, 01:30 PM"
         },
         "teams": {
           "team_a": {
-            "name": "Detroit Pistons",
-            "logo": "https://streamcenter.st/api/images/badge/ae652cc7-9bf8-4fa1-8ded-2290a991c592.webp"
-          },
-          "team_b": {
             "name": "Brooklyn Nets",
-            "logo": "https://streamcenter.st/api/images/badge/ff3fac0c-fcff-45f0-b979-8a183d32390c.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png"
+          },
+          "team_b": {
+            "name": "Detroit Pistons",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/ae652cc7-9bf8-4fa1-8ded-2290a991c592.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream6.pro/hls/hfsdqtaxvb67.m3u8?st=7Os7TCRZGy-yg-oc_2EqESBNUbASGXnhTNf_7KdTsjo",
-            "raw_link": "https://edgestream6.pro/hls/hfsdqtaxvb67.m3u8?st=7Os7TCRZGy-yg-oc_2EqESBNUbASGXnhTNf_7KdTsjo|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+        "channels": []
       },
       {
-        "title": "New York Knicks vs. Philadelphia 76ers",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
+        "title": "Philadelphia 76ers vs. New York Knicks",
+        "sport": "NBA",
+        "sub_category": "NBA",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "new-york-knicks-vs-philadelphia-76ers",
+        "slug": "philadelphia-76ers-vs-new-york-knicks",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 05:30 AM",
-          "end_time_bst": "Oct 31, 2026, 08:30 AM"
+          "start_time_bst": "Oct 31, 2026, 10:30 AM",
+          "end_time_bst": "Oct 31, 2026, 01:30 PM"
         },
         "teams": {
           "team_a": {
-            "name": "New York Knicks",
-            "logo": "https://streamcenter.st/api/images/badge/5587d210-84a7-4697-8a3d-543013b9d427.webp"
-          },
-          "team_b": {
             "name": "Philadelphia 76ers",
-            "logo": "https://streamcenter.st/api/images/badge/3f0f83c7-b6fb-4a6d-864c-873a66795e84.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png"
+          },
+          "team_b": {
+            "name": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/5587d210-84a7-4697-8a3d-543013b9d427.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream6.pro/hls/zayrtezafgvdv68.m3u8?st=gR5yM2HWyI7J73BjkoaCAI_TQENNKt4fcIciPkUGk2c",
-            "raw_link": "https://edgestream6.pro/hls/zayrtezafgvdv68.m3u8?st=gR5yM2HWyI7J73BjkoaCAI_TQENNKt4fcIciPkUGk2c|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+        "channels": []
       },
       {
-        "title": "Orlando Magic vs. Toronto Raptors",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
+        "title": "Toronto Raptors vs. Orlando Magic",
+        "sport": "NBA",
+        "sub_category": "NBA",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "orlando-magic-vs-toronto-raptors",
+        "slug": "toronto-raptors-vs-orlando-magic",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 05:30 AM",
-          "end_time_bst": "Oct 31, 2026, 08:30 AM"
+          "start_time_bst": "Oct 31, 2026, 10:30 AM",
+          "end_time_bst": "Oct 31, 2026, 01:30 PM"
         },
         "teams": {
           "team_a": {
-            "name": "Orlando Magic",
-            "logo": "https://streamcenter.st/api/images/badge/43949694-e050-403f-8b0d-241cfe3dcf6e.webp"
-          },
-          "team_b": {
             "name": "Toronto Raptors",
-            "logo": "https://streamcenter.st/api/images/badge/7a826d96-3fb0-4155-8f60-208e8e94e207.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png"
+          },
+          "team_b": {
+            "name": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/43949694-e050-403f-8b0d-241cfe3dcf6e.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream6.pro/hls/zeafwqvhfe69.m3u8?st=wOoH3CTj8ZqTCGTISpfqnhUTGGum1j0LyFuf191kHNU",
-            "raw_link": "https://edgestream6.pro/hls/zeafwqvhfe69.m3u8?st=wOoH3CTj8ZqTCGTISpfqnhUTGGum1j0LyFuf191kHNU|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+        "channels": []
       },
       {
-        "title": "Indiana Pacers vs. Miami Heat",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
+        "title": "UCF Knights vs. Baylor Bears",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "indiana-pacers-vs-miami-heat",
+        "slug": "ucf-knights-vs-baylor-bears",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:00 AM",
-          "end_time_bst": "Oct 31, 2026, 09:00 AM"
+          "start_time_bst": "Oct 31, 2026, 10:30 AM",
+          "end_time_bst": "Oct 31, 2026, 01:30 PM"
         },
         "teams": {
           "team_a": {
-            "name": "Indiana Pacers",
-            "logo": "https://streamcenter.st/api/images/badge/b1c74876-0e79-46fc-be96-7661fe865c04.webp"
+            "name": "UCF Knights",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png"
           },
           "team_b": {
+            "name": "Baylor Bears",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
+        "channels": []
+      },
+      {
+        "title": "Miami Heat vs. Indiana Pacers",
+        "sport": "NBA",
+        "sub_category": "NBA",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "miami-heat-vs-indiana-pacers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 11:00 AM",
+          "end_time_bst": "Oct 31, 2026, 02:00 PM"
+        },
+        "teams": {
+          "team_a": {
             "name": "Miami Heat",
-            "logo": "https://streamcenter.st/api/images/badge/3967b4fa-d3db-4c52-8523-bece9b205c5e.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png"
+          },
+          "team_b": {
+            "name": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/b1c74876-0e79-46fc-be96-7661fe865c04.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8?st=XTB1WHjfvV2XqiaaQIkUnIVdZAHMTh1tgB0t7ZVj0Y0",
-            "raw_link": "https://edgestream2.pro/hls/bvnsqdfvgha70.m3u8?st=XTB1WHjfvV2XqiaaQIkUnIVdZAHMTh1tgB0t7ZVj0Y0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "channels": []
       },
       {
-        "title": "Houston Rockets vs. Dallas Mavericks",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
+        "title": "Dallas Mavericks vs. Houston Rockets",
+        "sport": "NBA",
+        "sub_category": "NBA",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "houston-rockets-vs-dallas-mavericks",
+        "slug": "dallas-mavericks-vs-houston-rockets",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:00 AM",
-          "end_time_bst": "Oct 31, 2026, 09:00 AM"
+          "start_time_bst": "Oct 31, 2026, 11:00 AM",
+          "end_time_bst": "Oct 31, 2026, 02:00 PM"
         },
         "teams": {
           "team_a": {
-            "name": "Houston Rockets",
-            "logo": "https://streamcenter.st/api/images/badge/dfe3cb29-7d2f-48e6-a383-39b1f314eb22.webp"
-          },
-          "team_b": {
             "name": "Dallas Mavericks",
-            "logo": "https://streamcenter.st/api/images/badge/5a3ac75c-7122-4ece-aad5-2dc3550a0e4d.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png"
+          },
+          "team_b": {
+            "name": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/dfe3cb29-7d2f-48e6-a383-39b1f314eb22.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/ztyarueaghj71.m3u8?st=6quhVunM7PHpWL-g20qnsJwI5nin2lXMM8ZMgIvFQy8",
-            "raw_link": "https://edgestream2.pro/hls/ztyarueaghj71.m3u8?st=6quhVunM7PHpWL-g20qnsJwI5nin2lXMM8ZMgIvFQy8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+        "channels": []
       },
       {
-        "title": "LA Clippers vs. Minnesota Timberwolves",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
+        "title": "Minnesota Timberwolves vs. LA Clippers",
+        "sport": "NBA",
+        "sub_category": "NBA",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "la-clippers-vs-minnesota-timberwolves",
+        "slug": "minnesota-timberwolves-vs-la-clippers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:00 AM",
-          "end_time_bst": "Oct 31, 2026, 09:00 AM"
+          "start_time_bst": "Oct 31, 2026, 11:00 AM",
+          "end_time_bst": "Oct 31, 2026, 02:00 PM"
         },
         "teams": {
           "team_a": {
-            "name": "LA Clippers",
-            "logo": "https://streamcenter.st/api/images/badge/cb466bde-fc22-4665-9465-10ef862ab4de.webp"
-          },
-          "team_b": {
             "name": "Minnesota Timberwolves",
-            "logo": "https://streamcenter.st/api/images/badge/1f813ba9-db28-4662-a801-cccecea4dcff.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png"
+          },
+          "team_b": {
+            "name": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/cb466bde-fc22-4665-9465-10ef862ab4de.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/pllmazjkdzajh72.m3u8?st=iqXj5F9GLR2TdTUcRr3l9ic7tdQJOAboetOGJx0o-BM",
-            "raw_link": "https://edgestream2.pro/hls/pllmazjkdzajh72.m3u8?st=iqXj5F9GLR2TdTUcRr3l9ic7tdQJOAboetOGJx0o-BM|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+        "channels": []
       },
       {
-        "title": "Seattle Kraken vs. Calgary Flames",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
+        "title": "Calgary Flames vs. Seattle Kraken",
+        "sport": "NHL",
+        "sub_category": "NHL",
         "status": "UPCOMING",
         "is_hot": false,
-        "slug": "seattle-kraken-vs-calgary-flames",
+        "slug": "calgary-flames-vs-seattle-kraken",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:00 AM",
-          "end_time_bst": "Oct 31, 2026, 09:00 AM"
+          "start_time_bst": "Oct 31, 2026, 11:00 AM",
+          "end_time_bst": "Oct 31, 2026, 02:00 PM"
         },
         "teams": {
           "team_a": {
-            "name": "Seattle Kraken",
-            "logo": "https://streamcenter.st/api/images/badge/58e1055d-df86-4f5b-a9a9-5e32ea674a84.webp"
-          },
-          "team_b": {
             "name": "Calgary Flames",
-            "logo": "https://streamcenter.st/api/images/badge/60a78682-cae9-4dc6-bd8f-9898c18e0dc5.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png"
+          },
+          "team_b": {
+            "name": "Seattle Kraken",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sea.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/58e1055d-df86-4f5b-a9a9-5e32ea674a84.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream6.pro/hls/lmdsjkfgv52.m3u8?st=fHJEV3omelmBC6twyUgUtVyc6B-KFxSENbj12nRDvOE",
-            "raw_link": "https://edgestream6.pro/hls/lmdsjkfgv52.m3u8?st=fHJEV3omelmBC6twyUgUtVyc6B-KFxSENbj12nRDvOE|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png",
+        "channels": []
       },
       {
-        "title": "Los Angeles Lakers vs. Golden State Warriors",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
+        "title": "Atlético de San Luis vs. Atlas",
+        "sport": "Liga MX",
+        "sub_category": "Liga MX",
+        "status": "ENDED",
         "is_hot": false,
-        "slug": "los-angeles-lakers-vs-golden-state-warriors",
+        "slug": "atlético-de-san-luis-vs-atlas",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 08:00 AM",
-          "end_time_bst": "Oct 31, 2026, 11:00 AM"
+          "start_time_bst": "Oct 30, 2026, 12:00 PM",
+          "end_time_bst": "Oct 30, 2026, 03:00 PM"
         },
         "teams": {
           "team_a": {
-            "name": "Los Angeles Lakers",
-            "logo": "https://streamcenter.st/api/images/badge/53d24139-b636-452b-ae08-a417e4db49fa.webp"
+            "name": "Atlético de San Luis",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/15720.png"
           },
           "team_b": {
+            "name": "Atlas",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/216.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/15720.png",
+        "channels": []
+      },
+      {
+        "title": "FC Juárez vs. Querétaro",
+        "sport": "Liga MX",
+        "sub_category": "Liga MX",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "fc-juárez-vs-querétaro",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 30, 2026, 12:00 PM",
+          "end_time_bst": "Oct 30, 2026, 03:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "FC Juárez",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17851.png"
+          },
+          "team_b": {
+            "name": "Querétaro",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/222.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17851.png",
+        "channels": []
+      },
+      {
+        "title": "Golden State Warriors vs. Los Angeles Lakers",
+        "sport": "NBA",
+        "sub_category": "NBA",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "golden-state-warriors-vs-los-angeles-lakers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 30, 2026, 01:00 PM",
+          "end_time_bst": "Oct 30, 2026, 04:00 PM"
+        },
+        "teams": {
+          "team_a": {
             "name": "Golden State Warriors",
-            "logo": "https://streamcenter.st/api/images/badge/bb768ee2-3abb-4176-927b-9953c09c2385.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png"
+          },
+          "team_b": {
+            "name": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/53d24139-b636-452b-ae08-a417e4db49fa.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/fdgsqdfawa73.m3u8?st=GqUQxWPLxVQOMwKuAeY_8Lb7-GkP_hkv1NwoFEDkETE",
-            "raw_link": "https://edgestream2.pro/hls/fdgsqdfawa73.m3u8?st=GqUQxWPLxVQOMwKuAeY_8Lb7-GkP_hkv1NwoFEDkETE|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+        "channels": []
       },
       {
-        "title": "Denver Nuggets vs. Phoenix Suns",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
+        "title": "Phoenix Suns vs. Denver Nuggets",
+        "sport": "NBA",
+        "sub_category": "NBA",
+        "status": "ENDED",
         "is_hot": false,
-        "slug": "denver-nuggets-vs-phoenix-suns",
+        "slug": "phoenix-suns-vs-denver-nuggets",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 08:00 AM",
-          "end_time_bst": "Oct 31, 2026, 11:00 AM"
+          "start_time_bst": "Oct 30, 2026, 01:00 PM",
+          "end_time_bst": "Oct 30, 2026, 04:00 PM"
         },
         "teams": {
           "team_a": {
-            "name": "Denver Nuggets",
-            "logo": "https://streamcenter.st/api/images/badge/0acf1a39-8f3a-48e3-91f3-d16ed98e27cd.webp"
-          },
-          "team_b": {
             "name": "Phoenix Suns",
-            "logo": "https://streamcenter.st/api/images/badge/ccbf7ba3-313c-47a9-a817-65309344418e.webp"
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png"
+          },
+          "team_b": {
+            "name": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/0acf1a39-8f3a-48e3-91f3-d16ed98e27cd.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/yjtzafghvjza74.m3u8?st=Y-vu_oWh0VhYo6A-aKU90UMDg6l-FBdvDmGkJtnAKYo",
-            "raw_link": "https://edgestream2.pro/hls/yjtzafghvjza74.m3u8?st=Y-vu_oWh0VhYo6A-aKU90UMDg6l-FBdvDmGkJtnAKYo|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+        "channels": []
       },
       {
-        "title": "Kent State Golden Flashes vs. Sacramento State Hornets",
-        "sport": "American Football",
-        "sub_category": "American Football",
-        "status": "UPCOMING",
+        "title": "Sacramento State Hornets vs. Kent State Golden Flashes",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
+        "status": "ENDED",
         "is_hot": false,
-        "slug": "kent-state-golden-flashes-vs-sacramento-state-hornets",
+        "slug": "sacramento-state-hornets-vs-kent-state-golden-flashes",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 08:30 AM",
-          "end_time_bst": "Oct 31, 2026, 11:30 AM"
+          "start_time_bst": "Oct 30, 2026, 01:30 PM",
+          "end_time_bst": "Oct 30, 2026, 04:30 PM"
         },
         "teams": {
           "team_a": {
-            "name": "Kent State Golden Flashes",
-            "logo": "https://streamcenter.st/api/images/badge/65d82031-40da-456d-8086-7ba918d1a7dd.webp"
+            "name": "Sacramento State Hornets",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/16.png"
           },
           "team_b": {
-            "name": "Sacramento State Hornets",
-            "logo": "https://streamcenter.st/api/images/badge/e5ca4be0-6da1-40c9-840a-75bec9ff79cd.webp"
+            "name": "Kent State Golden Flashes",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2309.png"
           }
         },
-        "logo": "https://streamcenter.st/api/images/badge/65d82031-40da-456d-8086-7ba918d1a7dd.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream3.pro/sh/cdn/hls/qsdnajbq32.m3u8",
-            "raw_link": "https://edgestream3.pro/sh/cdn/hls/qsdnajbq32.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/16.png",
+        "channels": []
+      },
+      {
+        "title": "Puebla vs. Pumas UNAM",
+        "sport": "Liga MX",
+        "sub_category": "Liga MX",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "puebla-vs-pumas-unam",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 30, 2026, 02:00 PM",
+          "end_time_bst": "Oct 30, 2026, 05:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Puebla",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/231.png"
+          },
+          "team_b": {
+            "name": "Pumas UNAM",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/233.png"
           }
-        ]
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/231.png",
+        "channels": []
+      },
+      {
+        "title": "Moto GP LIVE vs. Tnt 2 Uk",
+        "sport": "Moto GP",
+        "sub_category": "Moto GP",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "moto-gp-live-vs-tnt-2-uk",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 30, 2026, 05:30 PM",
+          "end_time_bst": "Oct 30, 2026, 08:30 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Moto GP LIVE",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gyHzl7LndJz-cy4j0SjhrBxNRKa-ZnDCuGnURhPqmY5TSt9tGhnAo50Q&s=10"
+          },
+          "team_b": {
+            "name": "Tnt 2 Uk",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gyHzl7LndJz-cy4j0SjhrBxNRKa-ZnDCuGnURhPqmY5TSt9tGhnAo50Q&s=10"
+          }
+        },
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gyHzl7LndJz-cy4j0SjhrBxNRKa-ZnDCuGnURhPqmY5TSt9tGhnAo50Q&s=10",
+        "channels": []
       }
     ]
   }
