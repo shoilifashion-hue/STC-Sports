@@ -1,6 +1,6 @@
 {
-  "last_updated": "Oct 30, 2026, 08:21 AM",
-  "event_count": 19,
+  "last_updated": "Oct 30, 2026, 08:26 AM",
+  "event_count": 33,
   "events": {
     "events": [
       {
@@ -30,8 +30,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/oeenzgezcz47.m3u8?st=bwy1ebKVcg9scQ2I3_40BUqFIYiGcg4kHT4ot05lyMQ",
-            "raw_link": "https://edgestream5.pro/hls/oeenzgezcz47.m3u8?st=bwy1ebKVcg9scQ2I3_40BUqFIYiGcg4kHT4ot05lyMQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream5.pro/hls/oeenzgezcz47.m3u8?st=e5cr-pw7A_ufc4Gg8rd1Ifbj8-iymIfOsrIDVgcw78U",
+            "raw_link": "https://edgestream5.pro/hls/oeenzgezcz47.m3u8?st=e5cr-pw7A_ufc4Gg8rd1Ifbj8-iymIfOsrIDVgcw78U|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -68,46 +68,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream4.pro/hls/oipozuezeji33.m3u8?st=sgQTK1CpNqBP2Tm489NYWkutCSe0i1BW3gGUqKpQEbk",
-            "raw_link": "https://edgestream4.pro/hls/oipozuezeji33.m3u8?st=sgQTK1CpNqBP2Tm489NYWkutCSe0i1BW3gGUqKpQEbk|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
-      },
-      {
-        "title": "Utah Mammoth vs. Pittsburgh Penguins",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "utah-mammoth-vs-pittsburgh-penguins",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 30, 2026, 05:00 AM",
-          "end_time_bst": "Oct 30, 2026, 08:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Utah Mammoth",
-            "logo": "https://streamcenter.st/api/images/badge/9bbc874b-2df6-44ce-a6b4-52b0f47d9514.webp"
-          },
-          "team_b": {
-            "name": "Pittsburgh Penguins",
-            "logo": "https://streamcenter.st/api/images/badge/cf193378-d6e6-4cac-aa1b-1d4dde3e7221.webp"
-          }
-        },
-        "logo": "https://streamcenter.st/api/images/badge/9bbc874b-2df6-44ce-a6b4-52b0f47d9514.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream4.pro/hls/hjksgdfauzy51.m3u8?st=FTDfLFauf_3btLcdkyUz58y7SL3qRxVFcm1cuwoCWeo",
-            "raw_link": "https://edgestream4.pro/hls/hjksgdfauzy51.m3u8?st=FTDfLFauf_3btLcdkyUz58y7SL3qRxVFcm1cuwoCWeo|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/oipozuezeji33.m3u8?st=9b-g76CnAZZoJwKTNvkTV4v2tB0xfxDZQUGGexfBH-g",
+            "raw_link": "https://edgestream6.pro/hls/oipozuezeji33.m3u8?st=9b-g76CnAZZoJwKTNvkTV4v2tB0xfxDZQUGGexfBH-g|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -216,20 +178,7 @@
           }
         },
         "logo": "https://streamcenter.st/api/images/badge/6f0a96b8-29f6-4879-95f4-0a46a705cd7c.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream4.pro/hls/rtzaeyvhb53.m3u8?st=SHYv_Hs9y3LnNUiPRH8hePRrI_CX6oqrvp6wZugvn10",
-            "raw_link": "https://edgestream4.pro/hls/rtzaeyvhb53.m3u8?st=SHYv_Hs9y3LnNUiPRH8hePRrI_CX6oqrvp6wZugvn10|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "channels": []
       },
       {
         "title": "Cleveland Cavaliers vs. Atlanta Hawks",
@@ -334,8 +283,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/bnvcxwhfg54.m3u8?st=NN5SJ9wIin69fXWoCAZO1f8fqFBreKGg0wtVELpcMBI",
-            "raw_link": "https://edgestream5.pro/hls/bnvcxwhfg54.m3u8?st=NN5SJ9wIin69fXWoCAZO1f8fqFBreKGg0wtVELpcMBI|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream1.pro/hls/bnvcxwhfg54.m3u8?st=fU7lSr6d8ctfqACuc0evd4RoDl-yLIS1YOG5MtNNnmc",
+            "raw_link": "https://edgestream1.pro/hls/bnvcxwhfg54.m3u8?st=fU7lSr6d8ctfqACuc0evd4RoDl-yLIS1YOG5MtNNnmc|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -372,8 +321,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream6.pro/hls/sdezqfza55.m3u8?st=hPLZDvl3I5FE4ibglsPEYDBoNf6VAyfmvyoD5B_jrLQ",
-            "raw_link": "https://edgestream6.pro/hls/sdezqfza55.m3u8?st=hPLZDvl3I5FE4ibglsPEYDBoNf6VAyfmvyoD5B_jrLQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream7.pro/hls/sdezqfza55.m3u8?st=42n7z1QGI_USdSS1hsOYXxLUIsl1O6arGwYjWEPKIZ8",
+            "raw_link": "https://edgestream7.pro/hls/sdezqfza55.m3u8?st=42n7z1QGI_USdSS1hsOYXxLUIsl1O6arGwYjWEPKIZ8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -410,8 +359,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream1.pro/hls/poiryezafv56.m3u8?st=gQ9URPtqBLNu3HkDf8wMyqrGJ0JPXJpauvdaONA8MG0",
-            "raw_link": "https://edgestream1.pro/hls/poiryezafv56.m3u8?st=gQ9URPtqBLNu3HkDf8wMyqrGJ0JPXJpauvdaONA8MG0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream7.pro/hls/poiryezafv56.m3u8?st=7CvAJQabuCWsQYrJQKfwE3nnw9lafkyeeMbTIItCpxc",
+            "raw_link": "https://edgestream7.pro/hls/poiryezafv56.m3u8?st=7CvAJQabuCWsQYrJQKfwE3nnw9lafkyeeMbTIItCpxc|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -448,8 +397,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/rzavbdyua57.m3u8?st=jPxCi32W5977Oj0fofOaElI1TAXzLC_eBwyykBoa0z0",
-            "raw_link": "https://edgestream5.pro/hls/rzavbdyua57.m3u8?st=jPxCi32W5977Oj0fofOaElI1TAXzLC_eBwyykBoa0z0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream4.pro/hls/rzavbdyua57.m3u8?st=uUiaKe60guY3gfGb5unB4220zzUlXdzMnuM5sSUQUns",
+            "raw_link": "https://edgestream4.pro/hls/rzavbdyua57.m3u8?st=uUiaKe60guY3gfGb5unB4220zzUlXdzMnuM5sSUQUns|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -520,7 +469,20 @@
           }
         },
         "logo": "https://streamcenter.st/api/images/badge/0c0e8af3-39c3-4f52-8133-211109a34e41.webp",
-        "channels": []
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream7.pro/hls/hfsdqtaxvb67.m3u8?st=EBGXdEqrieKQGx422S4SpSzaS-FLniNi6xiW3iaMaAI",
+            "raw_link": "https://edgestream7.pro/hls/hfsdqtaxvb67.m3u8?st=EBGXdEqrieKQGx422S4SpSzaS-FLniNi6xiW3iaMaAI|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
       },
       {
         "title": "Buffalo Sabres vs. Anaheim Ducks",
@@ -549,8 +511,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream4.pro/hls/earzfddshg58.m3u8?st=F_M7N-qPQL33VMRseVB1r9qjFxd23DD1elb0sSz9kGQ",
-            "raw_link": "https://edgestream4.pro/hls/earzfddshg58.m3u8?st=F_M7N-qPQL33VMRseVB1r9qjFxd23DD1elb0sSz9kGQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream1.pro/hls/earzfddshg58.m3u8?st=SiA9Q-HfowUeUiho5c3B7zzFE8SP9nAP5MuPGGalS6M",
+            "raw_link": "https://edgestream1.pro/hls/earzfddshg58.m3u8?st=SiA9Q-HfowUeUiho5c3B7zzFE8SP9nAP5MuPGGalS6M|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -587,8 +549,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/bvnzadfvyt59.m3u8?st=auFx9Dn18_GjPUgeq00hUYSanGUgSIrE6MG9q3ubAwg",
-            "raw_link": "https://edgestream2.pro/hls/bvnzadfvyt59.m3u8?st=auFx9Dn18_GjPUgeq00hUYSanGUgSIrE6MG9q3ubAwg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream1.pro/hls/bvnzadfvyt59.m3u8?st=9ItYthpnRaG3NgIR4CbDp7yzWGAdMnlbx03GlB_Ww0c",
+            "raw_link": "https://edgestream1.pro/hls/bvnzadfvyt59.m3u8?st=9ItYthpnRaG3NgIR4CbDp7yzWGAdMnlbx03GlB_Ww0c|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -625,8 +587,84 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/cwxvbnfghq60.m3u8?st=QOdj2Bfb9pPqGTNgushRnmWk-W4juSXG50yLhEvJROU",
-            "raw_link": "https://edgestream5.pro/hls/cwxvbnfghq60.m3u8?st=QOdj2Bfb9pPqGTNgushRnmWk-W4juSXG50yLhEvJROU|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream1.pro/hls/cwxvbnfghq60.m3u8?st=Wa3whv_Qp0rS2WdHOFWv7hgmFyk-Mk_B2ztiZfoPEsQ",
+            "raw_link": "https://edgestream1.pro/hls/cwxvbnfghq60.m3u8?st=Wa3whv_Qp0rS2WdHOFWv7hgmFyk-Mk_B2ztiZfoPEsQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Nice vs. Stade Rennais",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "nice-vs-stade-rennais",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 12:00 AM",
+          "end_time_bst": "Oct 31, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Nice",
+            "logo": "https://streamcenter.st/api/images/badge/d5bbc59f-e8d7-45ee-b60f-c426475ba403.webp"
+          },
+          "team_b": {
+            "name": "Stade Rennais",
+            "logo": "https://streamcenter.st/api/images/badge/401bb7dd-310b-4d47-9227-dbff4c61961e.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/d5bbc59f-e8d7-45ee-b60f-c426475ba403.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream5.pro/hls/griogoehvn2.m3u8?st=hqrEtLSzQUS2wsKA-rr5tqnfHaGNzP3vIO9joTJYsgs",
+            "raw_link": "https://edgestream5.pro/hls/griogoehvn2.m3u8?st=hqrEtLSzQUS2wsKA-rr5tqnfHaGNzP3vIO9joTJYsgs|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Le Havre AC vs. Paris Saint-Germain",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "le-havre-ac-vs-paris-saint-germain",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 12:00 AM",
+          "end_time_bst": "Oct 31, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Le Havre AC",
+            "logo": "https://streamcenter.st/api/images/badge/8917ff7a-8c7e-433f-8a3f-4aba60611a51.webp"
+          },
+          "team_b": {
+            "name": "Paris Saint-Germain",
+            "logo": "https://streamcenter.st/api/images/badge/742c5a0d-822d-440c-b2da-929714042583.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/8917ff7a-8c7e-433f-8a3f-4aba60611a51.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream5.pro/hls/dza5z8f69.m3u8?st=98OpdxxoMTMPJQQOSBbyPuP74tIT0kjeP_DsH-Omtkw",
+            "raw_link": "https://edgestream5.pro/hls/dza5z8f69.m3u8?st=98OpdxxoMTMPJQQOSBbyPuP74tIT0kjeP_DsH-Omtkw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -675,6 +713,120 @@
         ]
       },
       {
+        "title": "SV Elversberg vs. Mainz",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "sv-elversberg-vs-mainz",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 01:30 AM",
+          "end_time_bst": "Oct 31, 2026, 04:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "SV Elversberg",
+            "logo": "https://streamcenter.st/api/images/badge/a393c378-5e1f-4327-871c-d9d20a4051b9.webp"
+          },
+          "team_b": {
+            "name": "Mainz",
+            "logo": "https://streamcenter.st/api/images/badge/9d76a860-820a-4b1a-b17c-3bf506a28fd4.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/a393c378-5e1f-4327-871c-d9d20a4051b9.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/ueyeztrazb4.m3u8?st=wa79Gr9r5H243ypaYq1TonKm6572IY-NKw5gDohRUSc",
+            "raw_link": "https://edgestream2.pro/hls/ueyeztrazb4.m3u8?st=wa79Gr9r5H243ypaYq1TonKm6572IY-NKw5gDohRUSc|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Villarreal vs. Espanyol",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "villarreal-vs-espanyol",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 02:00 AM",
+          "end_time_bst": "Oct 31, 2026, 05:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Villarreal",
+            "logo": "https://streamcenter.st/api/images/badge/9cde9d59-fab8-4d9a-8484-ea225b77c29b.webp"
+          },
+          "team_b": {
+            "name": "Espanyol",
+            "logo": "https://streamcenter.st/api/images/badge/51bbf553-4c9e-4149-8edb-f244c3909c94.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/9cde9d59-fab8-4d9a-8484-ea225b77c29b.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/377qj1h2727.m3u8?st=Tmc2t5KOH5DtGDfN4dRdBntWvJ0-GOHltF9WvpULGbQ",
+            "raw_link": "https://edgestream2.pro/hls/377qj1h2727.m3u8?st=Tmc2t5KOH5DtGDfN4dRdBntWvJ0-GOHltF9WvpULGbQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Lille vs. Lens",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "lille-vs-lens",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 02:05 AM",
+          "end_time_bst": "Oct 31, 2026, 05:05 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Lille",
+            "logo": "https://streamcenter.st/api/images/badge/992deb22-7cda-4a10-ba56-b08f0119f148.webp"
+          },
+          "team_b": {
+            "name": "Lens",
+            "logo": "https://streamcenter.st/api/images/badge/98931701-8d05-424c-961a-8f19781b74ca.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/992deb22-7cda-4a10-ba56-b08f0119f148.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream2.pro/hls/dza5z8f69.m3u8?st=cg3u2YEp4l5heNWigVYqxV0PYDpd3I1d2SpTK-rH8vE",
+            "raw_link": "https://edgestream2.pro/hls/dza5z8f69.m3u8?st=cg3u2YEp4l5heNWigVYqxV0PYDpd3I1d2SpTK-rH8vE|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
         "title": "Mexico City Grand Prix — FP2",
         "sport": "Racing",
         "sub_category": "Racing",
@@ -703,6 +855,373 @@
             "stream_type": "HLS",
             "url": "https://edgestream3.pro/sh/cdn/hls/hbfkazbkaznc49.m3u8",
             "raw_link": "https://edgestream3.pro/sh/cdn/hls/hbfkazbkaznc49.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Charlotte Hornets vs. Washington Wizards",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "charlotte-hornets-vs-washington-wizards",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 05:00 AM",
+          "end_time_bst": "Oct 31, 2026, 08:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Charlotte Hornets",
+            "logo": "https://streamcenter.st/api/images/badge/0494a5d3-2758-4599-8add-b06144a2a4d2.webp"
+          },
+          "team_b": {
+            "name": "Washington Wizards",
+            "logo": "https://streamcenter.st/api/images/badge/5209cf6f-a3aa-49c2-a31d-3171d477088e.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/0494a5d3-2758-4599-8add-b06144a2a4d2.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream3.pro/sh/cdn/hls/mlkijfezag65.m3u8",
+            "raw_link": "https://edgestream3.pro/sh/cdn/hls/mlkijfezag65.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Chicago Bulls vs. Boston Celtics",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "chicago-bulls-vs-boston-celtics",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 05:30 AM",
+          "end_time_bst": "Oct 31, 2026, 08:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Chicago Bulls",
+            "logo": "https://streamcenter.st/api/images/badge/37b86493-9307-46a3-aa5c-9a24138ff0cb.webp"
+          },
+          "team_b": {
+            "name": "Boston Celtics",
+            "logo": "https://streamcenter.st/api/images/badge/7c16587a-00ec-43f3-934e-b24c84e62545.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/37b86493-9307-46a3-aa5c-9a24138ff0cb.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream3.pro/sh/cdn/hls/wfazgsqtrezu66.m3u8",
+            "raw_link": "https://edgestream3.pro/sh/cdn/hls/wfazgsqtrezu66.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Detroit Pistons vs. Brooklyn Nets",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "detroit-pistons-vs-brooklyn-nets",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 05:30 AM",
+          "end_time_bst": "Oct 31, 2026, 08:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Detroit Pistons",
+            "logo": "https://streamcenter.st/api/images/badge/ae652cc7-9bf8-4fa1-8ded-2290a991c592.webp"
+          },
+          "team_b": {
+            "name": "Brooklyn Nets",
+            "logo": "https://streamcenter.st/api/images/badge/ff3fac0c-fcff-45f0-b979-8a183d32390c.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/ae652cc7-9bf8-4fa1-8ded-2290a991c592.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream6.pro/hls/hfsdqtaxvb67.m3u8?st=mps8LQcH3jbWSNt2kVT7C2bhkrhhCOkI1-4e25HunZM",
+            "raw_link": "https://edgestream6.pro/hls/hfsdqtaxvb67.m3u8?st=mps8LQcH3jbWSNt2kVT7C2bhkrhhCOkI1-4e25HunZM|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "New York Knicks vs. Philadelphia 76ers",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "new-york-knicks-vs-philadelphia-76ers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 05:30 AM",
+          "end_time_bst": "Oct 31, 2026, 08:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "New York Knicks",
+            "logo": "https://streamcenter.st/api/images/badge/5587d210-84a7-4697-8a3d-543013b9d427.webp"
+          },
+          "team_b": {
+            "name": "Philadelphia 76ers",
+            "logo": "https://streamcenter.st/api/images/badge/3f0f83c7-b6fb-4a6d-864c-873a66795e84.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/5587d210-84a7-4697-8a3d-543013b9d427.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream6.pro/hls/zayrtezafgvdv68.m3u8?st=w3N4QJV0xlZYD94SbVC54PvaxxjCJ29j6NOimxrd9xQ",
+            "raw_link": "https://edgestream6.pro/hls/zayrtezafgvdv68.m3u8?st=w3N4QJV0xlZYD94SbVC54PvaxxjCJ29j6NOimxrd9xQ|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Orlando Magic vs. Toronto Raptors",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "orlando-magic-vs-toronto-raptors",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 05:30 AM",
+          "end_time_bst": "Oct 31, 2026, 08:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Orlando Magic",
+            "logo": "https://streamcenter.st/api/images/badge/43949694-e050-403f-8b0d-241cfe3dcf6e.webp"
+          },
+          "team_b": {
+            "name": "Toronto Raptors",
+            "logo": "https://streamcenter.st/api/images/badge/7a826d96-3fb0-4155-8f60-208e8e94e207.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/43949694-e050-403f-8b0d-241cfe3dcf6e.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream6.pro/hls/zeafwqvhfe69.m3u8?st=7mdNzGTnWzJ_ckhH9mypqyJzYciiqRq48W0pZ7kBNLE",
+            "raw_link": "https://edgestream6.pro/hls/zeafwqvhfe69.m3u8?st=7mdNzGTnWzJ_ckhH9mypqyJzYciiqRq48W0pZ7kBNLE|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Indiana Pacers vs. Miami Heat",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "indiana-pacers-vs-miami-heat",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 06:00 AM",
+          "end_time_bst": "Oct 31, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Indiana Pacers",
+            "logo": "https://streamcenter.st/api/images/badge/b1c74876-0e79-46fc-be96-7661fe865c04.webp"
+          },
+          "team_b": {
+            "name": "Miami Heat",
+            "logo": "https://streamcenter.st/api/images/badge/3967b4fa-d3db-4c52-8523-bece9b205c5e.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/b1c74876-0e79-46fc-be96-7661fe865c04.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream6.pro/hls/bvnsqdfvgha70.m3u8?st=2vENJuILg7lS4YsQI6TQVuZqgq2dQ1jG-QLH2_5OnCs",
+            "raw_link": "https://edgestream6.pro/hls/bvnsqdfvgha70.m3u8?st=2vENJuILg7lS4YsQI6TQVuZqgq2dQ1jG-QLH2_5OnCs|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Houston Rockets vs. Dallas Mavericks",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "houston-rockets-vs-dallas-mavericks",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 06:00 AM",
+          "end_time_bst": "Oct 31, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Houston Rockets",
+            "logo": "https://streamcenter.st/api/images/badge/dfe3cb29-7d2f-48e6-a383-39b1f314eb22.webp"
+          },
+          "team_b": {
+            "name": "Dallas Mavericks",
+            "logo": "https://streamcenter.st/api/images/badge/5a3ac75c-7122-4ece-aad5-2dc3550a0e4d.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/dfe3cb29-7d2f-48e6-a383-39b1f314eb22.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream6.pro/hls/ztyarueaghj71.m3u8?st=eO_tymOHfug5AbAmPqmhYTdqbpuzKqNq7DsjWMQ-nlk",
+            "raw_link": "https://edgestream6.pro/hls/ztyarueaghj71.m3u8?st=eO_tymOHfug5AbAmPqmhYTdqbpuzKqNq7DsjWMQ-nlk|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "LA Clippers vs. Minnesota Timberwolves",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "la-clippers-vs-minnesota-timberwolves",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 06:00 AM",
+          "end_time_bst": "Oct 31, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "LA Clippers",
+            "logo": "https://streamcenter.st/api/images/badge/cb466bde-fc22-4665-9465-10ef862ab4de.webp"
+          },
+          "team_b": {
+            "name": "Minnesota Timberwolves",
+            "logo": "https://streamcenter.st/api/images/badge/1f813ba9-db28-4662-a801-cccecea4dcff.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/cb466bde-fc22-4665-9465-10ef862ab4de.webp",
+        "channels": []
+      },
+      {
+        "title": "Los Angeles Lakers vs. Golden State Warriors",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "los-angeles-lakers-vs-golden-state-warriors",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 08:00 AM",
+          "end_time_bst": "Oct 31, 2026, 11:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Los Angeles Lakers",
+            "logo": "https://streamcenter.st/api/images/badge/53d24139-b636-452b-ae08-a417e4db49fa.webp"
+          },
+          "team_b": {
+            "name": "Golden State Warriors",
+            "logo": "https://streamcenter.st/api/images/badge/bb768ee2-3abb-4176-927b-9953c09c2385.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/53d24139-b636-452b-ae08-a417e4db49fa.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream1.pro/hls/fdgsqdfawa73.m3u8?st=GtQL-Co4x4JtsfqFLOPXwz9wbgJzVKNFiuC6ovcH5k0",
+            "raw_link": "https://edgestream1.pro/hls/fdgsqdfawa73.m3u8?st=GtQL-Co4x4JtsfqFLOPXwz9wbgJzVKNFiuC6ovcH5k0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+              "Referer": "https://embedcenter.st",
+              "Origin": "https://embedcenter.st"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Denver Nuggets vs. Phoenix Suns",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "denver-nuggets-vs-phoenix-suns",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 08:00 AM",
+          "end_time_bst": "Oct 31, 2026, 11:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Denver Nuggets",
+            "logo": "https://streamcenter.st/api/images/badge/0acf1a39-8f3a-48e3-91f3-d16ed98e27cd.webp"
+          },
+          "team_b": {
+            "name": "Phoenix Suns",
+            "logo": "https://streamcenter.st/api/images/badge/ccbf7ba3-313c-47a9-a817-65309344418e.webp"
+          }
+        },
+        "logo": "https://streamcenter.st/api/images/badge/0acf1a39-8f3a-48e3-91f3-d16ed98e27cd.webp",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://edgestream5.pro/hls/yjtzafghvjza74.m3u8?st=qwkaK04HNA9oRurqrGp-yoN19JHvTR453SkBOAM2A4s",
+            "raw_link": "https://edgestream5.pro/hls/yjtzafghvjza74.m3u8?st=qwkaK04HNA9oRurqrGp-yoN19JHvTR453SkBOAM2A4s|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
