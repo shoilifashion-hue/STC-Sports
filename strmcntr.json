@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 30, 2026, 06:01 AM",
+  "last_updated": "Oct 30, 2026, 07:46 AM",
   "event_count": 19,
   "events": {
     "events": [
@@ -30,8 +30,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream1.pro/hls/oeenzgezcz47.m3u8?st=s60Er7Dvrzipe8DKxlrhpID4YX20rjvH88BkYBhhu3M",
-            "raw_link": "https://edgestream1.pro/hls/oeenzgezcz47.m3u8?st=s60Er7Dvrzipe8DKxlrhpID4YX20rjvH88BkYBhhu3M|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream7.pro/hls/oeenzgezcz47.m3u8?st=BDt2PsjvcG0OBnw9KENmNRYI1IeQEVC5wogi_-VK6w4",
+            "raw_link": "https://edgestream7.pro/hls/oeenzgezcz47.m3u8?st=BDt2PsjvcG0OBnw9KENmNRYI1IeQEVC5wogi_-VK6w4|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -68,8 +68,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/oipozuezeji33.m3u8?st=E-C0W07hMvXO9vSJK2s1yuaZ0rO35TVRK68GDlUIqHw",
-            "raw_link": "https://edgestream2.pro/hls/oipozuezeji33.m3u8?st=E-C0W07hMvXO9vSJK2s1yuaZ0rO35TVRK68GDlUIqHw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream7.pro/hls/oipozuezeji33.m3u8?st=WMa2fjRicKUWHBlKPP-1CTg-bq_4rpib9Ac6rb7uutw",
+            "raw_link": "https://edgestream7.pro/hls/oipozuezeji33.m3u8?st=WMa2fjRicKUWHBlKPP-1CTg-bq_4rpib9Ac6rb7uutw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -106,8 +106,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream2.pro/hls/uyopzarf50.m3u8?st=vXJeA3Ukb7_lH2AAcQjLvOSSW_La9e3af-1HWMwQowc",
-            "raw_link": "https://edgestream2.pro/hls/uyopzarf50.m3u8?st=vXJeA3Ukb7_lH2AAcQjLvOSSW_La9e3af-1HWMwQowc|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream5.pro/hls/uyopzarf50.m3u8?st=2x2Go7G3dJL7E7fzJmQTxzA5ddaem0cXT1vj1NPNcyc",
+            "raw_link": "https://edgestream5.pro/hls/uyopzarf50.m3u8?st=2x2Go7G3dJL7E7fzJmQTxzA5ddaem0cXT1vj1NPNcyc|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -140,20 +140,7 @@
           }
         },
         "logo": "https://streamcenter.st/api/images/badge/9bbc874b-2df6-44ce-a6b4-52b0f47d9514.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/hjksgdfauzy51.m3u8?st=27dYx5c52Hg0BJQRtVbIvnfiMjOT2fgz6qH0DHC28-0",
-            "raw_link": "https://edgestream5.pro/hls/hjksgdfauzy51.m3u8?st=27dYx5c52Hg0BJQRtVbIvnfiMjOT2fgz6qH0DHC28-0|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "channels": []
       },
       {
         "title": "Columbus Blue Jackets vs. Carolina Hurricanes",
@@ -182,8 +169,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/lmdsjkfgv52.m3u8?st=Wj4tPxzXHvkojuf6fsMZkcLh2DsXpi6flOpDTi-mEqw",
-            "raw_link": "https://edgestream5.pro/hls/lmdsjkfgv52.m3u8?st=Wj4tPxzXHvkojuf6fsMZkcLh2DsXpi6flOpDTi-mEqw|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/lmdsjkfgv52.m3u8?st=YIkY7L-1swO7Wz7twNJjzCp1-YjajiJz1UI3GTVzfoA",
+            "raw_link": "https://edgestream2.pro/hls/lmdsjkfgv52.m3u8?st=YIkY7L-1swO7Wz7twNJjzCp1-YjajiJz1UI3GTVzfoA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -216,20 +203,7 @@
           }
         },
         "logo": "https://streamcenter.st/api/images/badge/be6f5f1b-e8dd-4606-a417-d395f89d4a5d.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream3.pro/sh/cdn/hls/sfjnzabacah31.m3u8",
-            "raw_link": "https://edgestream3.pro/sh/cdn/hls/sfjnzabacah31.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "channels": []
       },
       {
         "title": "Troy Trojans vs. James Madison Dukes",
@@ -296,8 +270,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/rtzaeyvhb53.m3u8?st=zrqq1e-wm32J1K14QPtz17Kkzp7LLEF0dlYp5SAaNI4",
-            "raw_link": "https://edgestream5.pro/hls/rtzaeyvhb53.m3u8?st=zrqq1e-wm32J1K14QPtz17Kkzp7LLEF0dlYp5SAaNI4|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream4.pro/hls/rtzaeyvhb53.m3u8?st=eUMw95YBCgA4lFmwSN-6edW7VpHmw3tveDMxNPSHFsY",
+            "raw_link": "https://edgestream4.pro/hls/rtzaeyvhb53.m3u8?st=eUMw95YBCgA4lFmwSN-6edW7VpHmw3tveDMxNPSHFsY|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -368,20 +342,7 @@
           }
         },
         "logo": "https://streamcenter.st/api/images/badge/90261af4-da9d-483f-b317-7d808e76e3b8.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream3.pro/sh/cdn/hls/wfazgsqtrezu66.m3u8",
-            "raw_link": "https://edgestream3.pro/sh/cdn/hls/wfazgsqtrezu66.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "channels": []
       },
       {
         "title": "Boston Bruins vs. St. Louis Blues",
@@ -410,8 +371,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream6.pro/hls/bnvcxwhfg54.m3u8?st=hJxZ7ouVgFkjTj4QmYbRsc288TP91pZGgpC5cue-qFM",
-            "raw_link": "https://edgestream6.pro/hls/bnvcxwhfg54.m3u8?st=hJxZ7ouVgFkjTj4QmYbRsc288TP91pZGgpC5cue-qFM|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream4.pro/hls/bnvcxwhfg54.m3u8?st=N7WKSfoxEXa5u3ZapLPsXJj3x9-XrIrHuqRTWs7R9lA",
+            "raw_link": "https://edgestream4.pro/hls/bnvcxwhfg54.m3u8?st=N7WKSfoxEXa5u3ZapLPsXJj3x9-XrIrHuqRTWs7R9lA|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -448,8 +409,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream1.pro/hls/sdezqfza55.m3u8?st=15ffhzhCr6EBWY6jIKn1xcb5fcoeRWqsZB2SQ93DMXE",
-            "raw_link": "https://edgestream1.pro/hls/sdezqfza55.m3u8?st=15ffhzhCr6EBWY6jIKn1xcb5fcoeRWqsZB2SQ93DMXE|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream6.pro/hls/sdezqfza55.m3u8?st=HRx-gYQyFgalXYA-u-PoAibWS-QOYwtEWY6XyAA6ZJc",
+            "raw_link": "https://edgestream6.pro/hls/sdezqfza55.m3u8?st=HRx-gYQyFgalXYA-u-PoAibWS-QOYwtEWY6XyAA6ZJc|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -486,8 +447,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream5.pro/hls/poiryezafv56.m3u8?st=n2JMNHN3Qkq9MuH10CVqY3dyH1WaxepQFcNqVg0UNw4",
-            "raw_link": "https://edgestream5.pro/hls/poiryezafv56.m3u8?st=n2JMNHN3Qkq9MuH10CVqY3dyH1WaxepQFcNqVg0UNw4|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream4.pro/hls/poiryezafv56.m3u8?st=5vx2NesdrNBb9Gkvuwn3y2RwrL0Sp7z9qkrFXBORJzg",
+            "raw_link": "https://edgestream4.pro/hls/poiryezafv56.m3u8?st=5vx2NesdrNBb9Gkvuwn3y2RwrL0Sp7z9qkrFXBORJzg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -524,8 +485,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream1.pro/hls/rzavbdyua57.m3u8?st=vGJEvJPWC_q3ATF8zhdMvw5bNT-atLouH5SyQdirTAg",
-            "raw_link": "https://edgestream1.pro/hls/rzavbdyua57.m3u8?st=vGJEvJPWC_q3ATF8zhdMvw5bNT-atLouH5SyQdirTAg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/rzavbdyua57.m3u8?st=RONhxJJz2n0jffkbKBApdL6hj-BWtf0hfDfRA6gxl40",
+            "raw_link": "https://edgestream2.pro/hls/rzavbdyua57.m3u8?st=RONhxJJz2n0jffkbKBApdL6hj-BWtf0hfDfRA6gxl40|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -577,8 +538,8 @@
         "title": "Memphis Grizzlies vs. Portland Trail Blazers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "memphis-grizzlies-vs-portland-trail-blazers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -600,8 +561,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream3.pro/sh/cdn/hls/hfsdqtaxvb67.m3u8",
-            "raw_link": "https://edgestream3.pro/sh/cdn/hls/hfsdqtaxvb67.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream7.pro/hls/hfsdqtaxvb67.m3u8?st=1v58NgJRMi7NKgWUOK4f439jRfng7mquJJDH5vTt3Dg",
+            "raw_link": "https://edgestream7.pro/hls/hfsdqtaxvb67.m3u8?st=1v58NgJRMi7NKgWUOK4f439jRfng7mquJJDH5vTt3Dg|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -615,8 +576,8 @@
         "title": "Buffalo Sabres vs. Anaheim Ducks",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "buffalo-sabres-vs-anaheim-ducks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -638,8 +599,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream4.pro/hls/earzfddshg58.m3u8?st=PHanwedC6XxAAjBAaScOtdauzt3bUClF8FBunNy5y3U",
-            "raw_link": "https://edgestream4.pro/hls/earzfddshg58.m3u8?st=PHanwedC6XxAAjBAaScOtdauzt3bUClF8FBunNy5y3U|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream2.pro/hls/earzfddshg58.m3u8?st=TYP5Ki2INrZTsELbJ9p5NWtXyR3ZZ_uQTjmhNsE04M8",
+            "raw_link": "https://edgestream2.pro/hls/earzfddshg58.m3u8?st=TYP5Ki2INrZTsELbJ9p5NWtXyR3ZZ_uQTjmhNsE04M8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
@@ -653,8 +614,8 @@
         "title": "Ottawa Senators vs. Los Angeles Kings",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ottawa-senators-vs-los-angeles-kings",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -672,27 +633,14 @@
           }
         },
         "logo": "https://streamcenter.st/api/images/badge/967db9c2-4152-4893-b255-df00248b82d1.webp",
-        "channels": [
-          {
-            "channel_name": "Stream #1",
-            "stream_type": "HLS",
-            "url": "https://edgestream7.pro/hls/bvnzadfvyt59.m3u8?st=qkpG79LRVMBPOcHoDeMatJ9vO55sDm1ctLxSrlopmek",
-            "raw_link": "https://edgestream7.pro/hls/bvnzadfvyt59.m3u8?st=qkpG79LRVMBPOcHoDeMatJ9vO55sDm1ctLxSrlopmek|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
-            "headers": {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
-              "Referer": "https://embedcenter.st",
-              "Origin": "https://embedcenter.st"
-            },
-            "drm_key": null
-          }
-        ]
+        "channels": []
       },
       {
         "title": "Vancouver Canucks vs. San Jose Sharks",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "vancouver-canucks-vs-san-jose-sharks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -714,8 +662,8 @@
           {
             "channel_name": "Stream #1",
             "stream_type": "HLS",
-            "url": "https://edgestream4.pro/hls/cwxvbnfghq60.m3u8?st=qfohqPEKGbeV-_--O6mTSYXf9j8FVKCcl-nT6JiWp18",
-            "raw_link": "https://edgestream4.pro/hls/cwxvbnfghq60.m3u8?st=qfohqPEKGbeV-_--O6mTSYXf9j8FVKCcl-nT6JiWp18|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
+            "url": "https://edgestream5.pro/hls/cwxvbnfghq60.m3u8?st=2rS7oW8oEogjgtCqkRzmhhHrPM7XNYlBiGa5GFimVH8",
+            "raw_link": "https://edgestream5.pro/hls/cwxvbnfghq60.m3u8?st=2rS7oW8oEogjgtCqkRzmhhHrPM7XNYlBiGa5GFimVH8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36&Referer=https://embedcenter.st&Origin=https://embedcenter.st",
             "headers": {
               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
               "Referer": "https://embedcenter.st",
