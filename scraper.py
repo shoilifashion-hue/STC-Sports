@@ -7,19 +7,16 @@ import re
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import parse_qs, unquote, urljoin, urlsplit
 from zoneinfo import ZoneInfo
 
 import httpx
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
-# রুট পাথ ও কনফিগারেশন
 ROOT_DIR = Path(__file__).resolve().parent
 
-BASE_URL = "https://streamcenter.st"
-ALT_URL = "https://streamec.st"
-EMBED_REFERER = "https://embedcenter.st"
-TAG = "STRMCNTR"
+BASE_URL = "https://pirlotvfr.online"
+TAG = "PIRLOTV"
 
 JSON_OUTPUT = ROOT_DIR / "strmcntr.json"
 M3U_OUTPUT = ROOT_DIR / "strmcntr.m3u"
@@ -44,7 +41,7 @@ class ScrapedMatch:
     title: str
     row_text: str
     start_dt: datetime
-    stream_links: list[str] = field(default_factory=list)
+    watch_urls: list[str] = field(default_factory=list)
     team_a_logo: str | None = None
     team_b_logo: str | None = None
     logo: str | None = None
@@ -74,79 +71,40 @@ def parse_teams(title: str, team_a_logo: str | None = None, team_b_logo: str | N
         "team_b": {"name": title.strip(), "logo": team_b_logo}
     }
 
-def extract_match_datetime_from_row(row_elem) -> datetime:
-    """পুরো রো স্ক্যান করে খেলা শুরুর আসল সময় বের করা"""
-    for elem in row_elem.css("[datetime], time"):
-        iso_val = elem.attributes.get("datetime", "").strip()
-        if iso_val:
-            try:
-                clean_iso = iso_val.replace("Z", "+00:00")
-                dt = datetime.fromisoformat(clean_iso)
-                return dt.astimezone(timezone.utc)
-            except Exception:
-                pass
-
-    raw_html = row_elem.html or ""
-    m_attr = re.search(r'(?:datetime|data-date|data-time)=["\']([^"\']+)["\']', raw_html)
-    if m_attr:
-        try:
-            clean_iso = m_attr.group(1).replace("Z", "+00:00")
-            dt = datetime.fromisoformat(clean_iso)
-            return dt.astimezone(timezone.utc)
-        except Exception:
-            pass
-
-    clean_txt = cleanup_text(row_elem.text())
-    m = re.search(r'([A-Za-z]{3})\s+(\d{1,2}),?\s+(\d{4}),?\s+(\d{1,2}):(\d{2})\s*(AM|PM)?', clean_txt, re.IGNORECASE)
-    if m:
-        month_map = {
-            "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
-            "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12
-        }
-        try:
-            m_str = m.group(1)[:3].lower()
-            if m_str in month_map:
-                month = month_map[m_str]
-                day = int(m.group(2))
-                year = int(m.group(3))
-                hour = int(m.group(4))
-                minute = int(m.group(5))
-                ampm = m.group(6).upper() if m.group(6) else "AM"
-                if ampm == "PM" and hour < 12:
-                    hour += 12
-                elif ampm == "AM" and hour == 12:
-                    hour = 0
-                return datetime(year, month, day, hour, minute, tzinfo=timezone.utc)
-        except Exception:
-            pass
-
-    return datetime.now(timezone.utc)
-
 def calculate_match_status(start_dt: datetime, row_text: str, early_minutes: int = 15) -> str:
-    """
-    ১. মেইন সোর্সে ended/finish/final হলে কেবল ENDED হবে।
-    ২. শুরু হতে ১৫ মিনিটের বেশি বাকি থাকলে UPCOMING।
-    ৩. ১৫ মিনিট সময় এলে এবং সোর্সে শেষ না হওয়া পর্যন্ত LIVE থাকবে।
-    """
+    """১৫ মিনিট আগে LIVE হবে, এবং সোর্সে শেষ (Finalizada/Ended/FT) হলে কেবল ENDED হবে"""
     upper_txt = row_text.upper()
-
-    # ১. সোর্স চেক: খেলা কি সত্যি শেষ হয়েছে? (ENDED, FINISHED, FINAL, COMPLETED, FT)
-    is_ended_in_source = bool(
-        re.search(r'\b(ENDED|FINISHED|FINAL|COMPLETED|FULL[\s-]?TIME|\bFT\b)\b', upper_txt)
-    )
-    if is_ended_in_source:
+    is_ended = bool(re.search(r'\b(ENDED|FINISHED|FINAL|FINALIZADA|COMPLETED|FULL[\s-]?TIME|\bFT\b)\b', upper_txt))
+    if is_ended:
         return "ENDED"
 
     now_utc = datetime.now(timezone.utc)
     start_utc = start_dt.astimezone(timezone.utc)
-    live_start_window = start_utc - timedelta(minutes=early_minutes)
+    live_start = start_utc - timedelta(minutes=early_minutes)
 
-    # ২. খেলা শুরুর ১৫ মিনিট আগে পর্যন্ত UPCOMING
-    if now_utc < live_start_window:
+    if now_utc < live_start:
         return "UPCOMING"
-
-    # ৩. ১৫ মিনিট পার হয়ে গেলে এবং সোর্সে শেষ না হওয়া পর্যন্ত LIVE থাকবে
     return "LIVE"
+
+def parse_match_time(row_text: str) -> datetime:
+    """সাইটের '23:30 UTC' অথবা '01:00 UTC' ফরম্যাট থেকে নিখুঁত UTC সময় পার্স করে"""
+    now = datetime.now(timezone.utc)
+    m = re.search(r'(\d{1,2}):(\d{2})\s*(?:UTC)?', row_text, re.IGNORECASE)
+    if m:
+        try:
+            hour = int(m.group(1))
+            minute = int(m.group(2))
+            # আজকের দিনের টাইম
+            candidate = datetime(now.year, now.month, now.day, hour, minute, tzinfo=timezone.utc)
+            # যদি সময়টি ইতিমধ্যে ১২ ঘণ্টার বেশি পেছনে চলে যায়, তবে এটি সম্ভবত আগামীকালের ম্যাচ
+            if candidate < now - timedelta(hours=14):
+                candidate += timedelta(days=1)
+            elif candidate > now + timedelta(hours=14):
+                candidate -= timedelta(days=1)
+            return candidate
+        except Exception:
+            pass
+    return now
 
 def extract_m3u8(text: str, base_url: str = "") -> str | None:
     if not text:
@@ -154,18 +112,22 @@ def extract_m3u8(text: str, base_url: str = "") -> str | None:
 
     clean_text = html.unescape(text).replace(r"\/", "/")
 
-    edge_match = re.search(r'(https?://[a-zA-Z0-9_\-\.]*edgestream[^\s"\'<>\\]*?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
-    if edge_match:
-        return edge_match.group(1).strip("\"' ")
+    # ১. tims-001.sytes.net বা secure m3u8 প্যাটার্ন (৩য় স্ক্রিনশট অনুযায়ী)
+    secure_match = re.search(r'(https?://[a-zA-Z0-9_\-\.]*sytes\.net[^\s"\'<>\\]*?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
+    if secure_match:
+        return secure_match.group(1).strip("\"' ")
 
+    # ২. Clappr বা Player কনফিগে source / file / hls
     source_match = re.search(r'(?:source|file|src|stream|hls)\s*[:=]\s*["\'](https?://[^"\']+\.m3u8(?:\?[^"\']*)?)["\']', clean_text, re.IGNORECASE)
     if source_match:
         return source_match.group(1).strip("\"' ")
 
+    # ৩. যেকোনো স্ট্যান্ডার্ড m3u8
     generic_match = re.search(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/[^\s"\'<>\\]+?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
     if generic_match:
         return generic_match.group(1).strip("\"' ")
 
+    # ৪. Base64 atob() থাকলে ডিকোড করে খোঁজা
     for b64 in re.findall(r'atob\(["\']([A-Za-z0-9+/=]{20,})["\']\)', text):
         try:
             decoded = base64.b64decode(b64).decode("utf-8", errors="ignore")
@@ -177,190 +139,184 @@ def extract_m3u8(text: str, base_url: str = "") -> str | None:
 
     return None
 
-async def resolve_full_stream_chain(client: httpx.AsyncClient, link_url: str) -> str | None:
+async def resolve_pirlo_stream(client: httpx.AsyncClient, watch_url: str) -> tuple[str | None, str | None]:
+    """
+    watch?url=... থেকে আসল flyembed প্লেয়ার পেজে ঢুকে টোকেনযুক্ত m3u8 এবং Referer বের করে
+    """
     async with HTTP_SEMAPHORE:
-        visited = set()
-        queue = [link_url]
+        try:
+            # ১. ওয়াচ পেজের কুয়েরি প্যারামিটার থেকে এমবেড লিঙ্ক আলাদা করা
+            qs = parse_qs(urlsplit(watch_url).query)
+            embed_url = qs.get("url", [None])[0]
+            if embed_url:
+                embed_url = unquote(embed_url)
+            else:
+                embed_url = watch_url
 
-        for _ in range(6):
-            if not queue:
-                break
-            current_url = queue.pop(0)
-            if current_url in visited:
+            headers = {
+                "User-Agent": STREAM_UA,
+                "Referer": BASE_URL,
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+            }
+
+            resp = await client.get(embed_url, headers=headers, follow_redirects=True, timeout=12.0)
+            if resp.status_code != 200:
+                return None, None
+
+            # সোর্স থেকে m3u8 খোঁজা
+            m3u8 = extract_m3u8(resp.text, base_url=str(resp.url))
+            if m3u8:
+                return m3u8, str(resp.url)
+
+            # পেজের ভেতর আইফ্রেম থাকলে তাতে যাওয়া
+            soup = HTMLParser(resp.content)
+            for iframe in soup.css("iframe"):
+                src = iframe.attributes.get("src", "")
+                if src and not src.startswith("javascript:"):
+                    iframe_url = urljoin(str(resp.url), src)
+                    resp_iframe = await client.get(
+                        iframe_url,
+                        headers={"User-Agent": STREAM_UA, "Referer": str(resp.url)},
+                        timeout=10.0
+                    )
+                    if resp_iframe.status_code == 200:
+                        inner_m3u8 = extract_m3u8(resp_iframe.text, base_url=iframe_url)
+                        if inner_m3u8:
+                            return inner_m3u8, iframe_url
+
+        except Exception as e:
+            log.debug(f"Stream resolution error for {watch_url}: {e}")
+        return None, None
+
+async def scrape_pirlotv_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]:
+    matches = []
+    try:
+        resp = await client.get(BASE_URL, headers={"User-Agent": STREAM_UA}, timeout=15.0)
+        if resp.status_code != 200:
+            log.error(f"Failed to fetch {BASE_URL}: Status {resp.status_code}")
+            return matches
+
+        soup = HTMLParser(resp.content)
+        # প্রতিটি খেলার রো বা কার্ড খোঁজা
+        rows = soup.css(".match-row, .partido, .evento, [class*='partido'], [class*='match'], tr")
+        if not rows:
+            rows = soup.css("div[class*='row'], li")
+
+        for row in rows:
+            text = row.text()
+            if not ("Ver stream" in text or "watch" in text.lower() or "UTC" in text):
                 continue
-            visited.add(current_url)
 
-            try:
-                headers = {
-                    "User-Agent": STREAM_UA,
-                    "Referer": "https://embedcenter.st/",
-                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
-                }
-                resp = await client.get(current_url, headers=headers, follow_redirects=True, timeout=12.0)
-                if resp.status_code != 200:
-                    continue
+            # বাটনের ওয়াচ লিংক সংগ্রহ
+            links = []
+            for a in row.css("a"):
+                href = a.attributes.get("href", "")
+                if "watch" in href or "url=" in href:
+                    full_link = urljoin(BASE_URL, href)
+                    if full_link not in links:
+                        links.append(full_link)
 
-                m3u8 = extract_m3u8(resp.text, base_url=str(resp.url))
-                if m3u8:
-                    return m3u8
+            if not links:
+                continue
 
-                hls_matches = re.findall(r'["\']([^"\']*hls\.php\?stream=[^"\']+)["\']', resp.text)
-                for hls_path in hls_matches:
-                    full_hls = urljoin(str(resp.url), hls_path)
-                    if full_hls not in visited:
-                        queue.insert(0, full_hls)
+            # টাইটেল ও স্পোর্টস ক্যাটাগরি বের করা
+            title = ""
+            sport = "Football"
 
-                soup = HTMLParser(resp.content)
-                for iframe in soup.css("iframe"):
-                    src = iframe.attributes.get("src", "")
-                    if src and not src.startswith("javascript:"):
-                        iframe_url = urljoin(str(resp.url), src)
-                        if iframe_url not in visited:
-                            if "hls.php" in iframe_url:
-                                queue.insert(0, iframe_url)
-                            else:
-                                queue.append(iframe_url)
+            # স্পোর্টস বা লিগের নাম
+            sport_elem = row.css_first(".sport, .league, .competicion, [class*='league'], [class*='sport']")
+            if sport_elem:
+                sport = cleanup_text(sport_elem.text())
 
-            except Exception:
-                pass
+            # দল দুটির নাম
+            teams_elems = row.css(".team, .equipo, [class*='team'], strong")
+            if len(teams_elems) >= 2:
+                team1 = cleanup_text(teams_elems[0].text())
+                team2 = cleanup_text(teams_elems[1].text())
+                if team1 and team2:
+                    title = f"{team1} vs. {team2}"
 
-        return None
+            if not title:
+                # টেক্সট থেকে vs খোঁজা
+                for line in text.split("\n"):
+                    cl = cleanup_text(line)
+                    if " vs " in cl.lower() or " vs. " in cl.lower():
+                        title = cl
+                        break
 
-def parse_cards_soup(soup: HTMLParser, source_page_url: str) -> list[ScrapedMatch]:
-    raw_matches: list[ScrapedMatch] = []
-    rows = soup.css("article.game-card-row, .game-card-row")
+            if not title or len(title) < 3:
+                continue
 
-    for row in rows:
-        title = ""
-        sources_div = row.css_first(".game-card-sources")
-        if sources_div:
-            label = sources_div.attributes.get("aria-label", "")
-            if "Sources for " in label:
-                title = label.replace("Sources for ", "").strip()
+            title = cleanup_text(title)
+            dt = parse_match_time(text)
 
-        if not title:
-            content_div = row.css_first(".game-card-content, .game-card-side")
-            t_elem = content_div.css_first("h3, h4, .title, strong") if content_div else None
-            title = cleanup_text(t_elem.text()) if t_elem else ""
+            # লোগো সংগ্রহ
+            valid_logos = []
+            for img in row.css("img"):
+                src = img.attributes.get("src", "")
+                if src and not src.startswith("data:"):
+                    full_img = urljoin(BASE_URL, src)
+                    if full_img not in valid_logos:
+                        valid_logos.append(full_img)
 
-        if not title:
-            for line in row.text().split("\n"):
-                cl = cleanup_text(line)
-                if "vs" in cl.lower() or " - " in cl:
-                    title = cl
-                    break
+            team_a_logo = valid_logos[0] if len(valid_logos) >= 1 else None
+            team_b_logo = valid_logos[1] if len(valid_logos) >= 2 else None
+            main_logo = team_a_logo or team_b_logo
 
-        if not title or len(title) < 3:
-            continue
-
-        title = cleanup_text(title)
-        dt = extract_match_datetime_from_row(row)
-
-        sport = "Sports"
-        parent = row.parent
-        while parent:
-            sport_h = parent.css_first("h2, .game-card-group-title, [class*='sport']")
-            if sport_h and sport_h.text().strip():
-                sport = cleanup_text(sport_h.text())
-                break
-            parent = parent.parent
-
-        links = []
-        for a in row.css("a.game-card-open-link, a[href*='/api/stream-link/']"):
-            href = a.attributes.get("href", "")
-            if href:
-                full_url = urljoin(source_page_url, href)
-                if full_url not in links:
-                    links.append(full_url)
-
-        valid_logos = []
-        for img in row.css("img"):
-            for attr in ["src", "data-src", "data-lazy-src", "data-original"]:
-                src = img.attributes.get(attr, "")
-                if src and not src.startswith("data:image/svg") and not src.startswith("data:image/gif"):
-                    full_logo = urljoin(source_page_url, src.strip())
-                    if full_logo not in valid_logos:
-                        valid_logos.append(full_logo)
-                    break
-
-        team_a_logo = valid_logos[0] if len(valid_logos) >= 1 else None
-        team_b_logo = valid_logos[1] if len(valid_logos) >= 2 else None
-        main_logo = team_a_logo or team_b_logo
-
-        if links:
-            raw_matches.append(ScrapedMatch(
+            matches.append(ScrapedMatch(
                 sport=sport,
                 title=title,
-                row_text=row.text(),
+                row_text=text,
                 start_dt=dt,
-                stream_links=links,
+                watch_urls=links,
                 team_a_logo=team_a_logo,
                 team_b_logo=team_b_logo,
                 logo=main_logo
             ))
 
-    unique_matches: dict[str, ScrapedMatch] = {}
-    for m in raw_matches:
+        log.info(f"Successfully scraped {len(matches)} matches from {BASE_URL}")
+    except Exception as e:
+        log.error(f"Error scraping {BASE_URL}: {e}")
+
+    # ডুপ্লিকেশন দূর করা
+    unique_map: dict[str, ScrapedMatch] = {}
+    for m in matches:
         slug = create_slug(m.title)
-        if slug in unique_matches:
-            for lk in m.stream_links:
-                if lk not in unique_matches[slug].stream_links:
-                    unique_matches[slug].stream_links.append(lk)
-            if not unique_matches[slug].team_a_logo and m.team_a_logo:
-                unique_matches[slug].team_a_logo = m.team_a_logo
-                unique_matches[slug].logo = m.team_a_logo
-            if not unique_matches[slug].team_b_logo and m.team_b_logo:
-                unique_matches[slug].team_b_logo = m.team_b_logo
+        if slug in unique_map:
+            for lk in m.watch_urls:
+                if lk not in unique_map[slug].watch_urls:
+                    unique_map[slug].watch_urls.append(lk)
         else:
-            unique_matches[slug] = m
+            unique_map[slug] = m
 
-    return list(unique_matches.values())
-
-async def scrape_all_sources(client: httpx.AsyncClient) -> list[ScrapedMatch]:
-    PAGES_TO_TRY = [
-        f"{BASE_URL}/game-cards",
-        f"{ALT_URL}/game-cards",
-        f"{BASE_URL}/game-cards/embed"
-    ]
-
-    for target_url in PAGES_TO_TRY:
-        try:
-            resp = await client.get(target_url, headers={"User-Agent": STREAM_UA, "Referer": BASE_URL}, timeout=15.0)
-            if resp.status_code == 200:
-                soup = HTMLParser(resp.content)
-                matches = parse_cards_soup(soup, target_url)
-                if matches:
-                    log.info(f"Successfully scraped {len(matches)} matches from {target_url}")
-                    return matches
-        except Exception as e:
-            log.warning(f"Error fetching from {target_url}: {e}")
-
-    return []
+    return list(unique_map.values())
 
 async def main():
-    log.info("Starting STC Scraper execution with complete redirect-chain resolution...")
-    async with httpx.AsyncClient(headers={"User-Agent": STREAM_UA, "Referer": BASE_URL}, follow_redirects=True, http2=True) as client:
-        scraped_matches = await scrape_all_sources(client)
-        if not scraped_matches:
-            log.warning("No matches found from target pages!")
+    log.info(f"Starting Pirlo TV Scraper execution ({BASE_URL})...")
+    async with httpx.AsyncClient(headers={"User-Agent": STREAM_UA}, follow_redirects=True, http2=True) as client:
+        matches = await scrape_pirlotv_matches(client)
+        if not matches:
+            log.warning("No matches found from Pirlo TV!")
             return
 
         final_playlist = []
 
-        for m in scraped_matches:
+        for m in matches:
             start_bst = m.start_dt.astimezone(BST_TZ)
             start_time_str = start_bst.strftime("%b %d, %Y, %I:%M %p")
             end_time_str = (start_bst + timedelta(hours=3)).strftime("%b %d, %Y, %I:%M %p")
 
-            # স্ট্রিম লিঙ্ক সংগ্রহ
-            tasks = [resolve_full_stream_chain(client, url) for url in m.stream_links]
+            # স্ট্রিম লিঙ্ক ফেচিং
+            tasks = [resolve_pirlo_stream(client, url) for url in m.watch_urls]
             results = await asyncio.gather(*tasks)
 
             event_channels = []
             idx = 1
-            for req_url, m3u8_url in zip(m.stream_links, results):
+            for req_url, (m3u8_url, referer_used) in zip(m.watch_urls, results):
                 if m3u8_url:
-                    raw_link = f"{m3u8_url}|User-Agent={STREAM_UA}&Referer={EMBED_REFERER}&Origin={EMBED_REFERER}"
+                    ref = referer_used or "https://flyembed.cfd/"
+                    # স্ক্রিনশট ৩ অনুযায়ী নিখুঁত পাইপলাইন হেডার তৈরি
+                    raw_link = f"{m3u8_url}|User-Agent={STREAM_UA}&Referer={ref}&Origin={ref}"
                     event_channels.append({
                         "channel_name": f"Stream #{idx}",
                         "stream_type": "HLS",
@@ -368,16 +324,14 @@ async def main():
                         "raw_link": raw_link,
                         "headers": {
                             "User-Agent": STREAM_UA,
-                            "Referer": EMBED_REFERER,
-                            "Origin": EMBED_REFERER
+                            "Referer": ref,
+                            "Origin": ref
                         },
                         "drm_key": None
                     })
                     idx += 1
 
-            # আপডেট করা স্ট্যাটাস লজিক (১৫ মিনিট আগে LIVE, এবং সোর্সে শেষ হলেই কেবল ENDED)
             actual_status = calculate_match_status(m.start_dt, m.row_text, early_minutes=15)
-
             teams_data = parse_teams(m.title, team_a_logo=m.team_a_logo, team_b_logo=m.team_b_logo)
             primary_logo = m.team_a_logo or m.logo or m.team_b_logo
 
@@ -399,7 +353,6 @@ async def main():
                 "_timestamp": m.start_dt.timestamp()
             })
 
-        # সর্টিং: LIVE ম্যাচ সবার আগে, তারপর ক্রমান্বয়ে UPCOMING এবং শেষে ENDED
         priority = {"LIVE": 0, "UPCOMING": 1, "ENDED": 2}
         final_playlist.sort(key=lambda x: (priority.get(x["status"], 99), x["_timestamp"]))
         for item in final_playlist:
@@ -425,15 +378,16 @@ async def main():
         for ev in final_playlist:
             for ch in ev.get("channels", []):
                 tvg_logo = ev["logo"] or ""
+                ref_header = ch.get("headers", {}).get("Referer", "https://flyembed.cfd/")
                 m3u_lines.append(f'#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="{tvg_logo}" group-title="{ev["sport"]}", {ev["title"]}')
-                m3u_lines.append(f'#EXTVLCOPT:http-referrer={EMBED_REFERER}')
+                m3u_lines.append(f'#EXTVLCOPT:http-referrer={ref_header}')
                 m3u_lines.append(f'#EXTVLCOPT:http-user-agent={STREAM_UA}')
                 m3u_lines.append(ch["raw_link"])
                 stream_count += 1
 
         M3U_OUTPUT.write_text("\n".join(m3u_lines) + "\n", encoding="utf-8")
 
-        log.info(f"Done! Saved {len(final_playlist)} matches and {stream_count} active live streams in channels.")
+        log.info(f"Done! Successfully generated {len(final_playlist)} matches and {stream_count} active playable streams in M3U.")
 
 if __name__ == "__main__":
     asyncio.run(main())
