@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 31, 2026, 03:56 AM",
+  "last_updated": "Oct 31, 2026, 04:26 AM",
   "event_count": 31,
   "events": {
     "events": [
@@ -732,13 +732,13 @@
         "title": "Puebla vs. Pumas UNAM",
         "sport": "Liga MX",
         "sub_category": "Liga MX",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "puebla-vs-pumas-unam",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 30, 2026, 02:00 PM",
-          "end_time_bst": "Oct 30, 2026, 05:00 PM"
+          "start_time_bst": "Oct 31, 2026, 02:00 PM",
+          "end_time_bst": "Oct 31, 2026, 05:00 PM"
         },
         "teams": {
           "team_a": {
