@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 31, 2026, 05:56 AM",
+  "last_updated": "Oct 31, 2026, 06:06 AM",
   "event_count": 31,
   "events": {
     "events": [
@@ -757,13 +757,13 @@
         "title": "Moto GP LIVE vs. Tnt 2 Uk",
         "sport": "Moto GP",
         "sub_category": "Moto GP",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "moto-gp-live-vs-tnt-2-uk",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 30, 2026, 05:30 PM",
-          "end_time_bst": "Oct 30, 2026, 08:30 PM"
+          "start_time_bst": "Oct 31, 2026, 05:30 PM",
+          "end_time_bst": "Oct 31, 2026, 08:30 PM"
         },
         "teams": {
           "team_a": {
