@@ -1,11 +1,14 @@
 name: Update STC Sports Playlist
 
 on:
+  # ১. Render Watcher থেকে সিগন্যাল এলে চলবে
   repository_dispatch:
     types: [source_updated]
 
+  # ২. GitHub থেকে ম্যানুয়ালি Run Workflow বাটনে ক্লিক করে চালানোর জন্য
   workflow_dispatch:
 
+  # ৩. ব্যাকগ্রাউন্ডে প্রতি ৩০ মিনিট পর পর অটোমেটিক আপডেট হবে
   schedule:
     - cron: '*/30 * * * *'
 
@@ -29,15 +32,15 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install "httpx[http2]" selectolax playwright
+          pip install "httpx[http2]" selectolax playwright tzdata
 
       - name: Install Playwright Chromium with system dependencies
         run: |
           playwright install chromium --with-deps
 
-      - name: Run Scraper
+      - name: Run Scraper inside Virtual Screen (xvfb)
         run: |
-          python scraper.py
+          xvfb-run --auto-servernum python scraper.py
 
       - name: Commit and Push changes
         run: |
