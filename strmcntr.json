@@ -1,739 +1,14 @@
 {
-  "last_updated": "Oct 31, 2026, 12:57 PM",
+  "last_updated": "Oct 31, 2026, 06:29 PM",
   "event_count": 110,
   "events": {
     "events": [
       {
-        "title": "Georgia Southern Eagles vs. App State Mountaineers",
-        "sport": "NCAA - Football",
-        "sub_category": "NCAA - Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "georgia-southern-eagles-vs-app-state-mountaineers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 09:30 AM",
-          "end_time_bst": "Oct 31, 2026, 12:30 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Georgia Southern Eagles",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/290.png"
-          },
-          "team_b": {
-            "name": "App State Mountaineers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2026.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/290.png",
-        "channels": []
-      },
-      {
-        "title": "Pachuca vs. Tigres UANL",
-        "sport": "Liga MX",
-        "sub_category": "Liga MX",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "pachuca-vs-tigres-uanl",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:00 AM",
-          "end_time_bst": "Oct 31, 2026, 01:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Pachuca",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/234.png"
-          },
-          "team_b": {
-            "name": "Tigres UANL",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/232.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/234.png",
-        "channels": []
-      },
-      {
-        "title": "New Orleans Pelicans vs. Atlanta Hawks",
-        "sport": "National Basketball Association",
-        "sub_category": "National Basketball Association",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "new-orleans-pelicans-vs-atlanta-hawks",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:00 AM",
-          "end_time_bst": "Oct 31, 2026, 01:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "New Orleans Pelicans",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png"
-          },
-          "team_b": {
-            "name": "Atlanta Hawks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
-        "channels": []
-      },
-      {
-        "title": "Montreal Canadiens vs. Pittsburgh Penguins",
-        "sport": "National Hockey League",
-        "sub_category": "National Hockey League",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "montreal-canadiens-vs-pittsburgh-penguins",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:00 AM",
-          "end_time_bst": "Oct 31, 2026, 01:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Montreal Canadiens",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png"
-          },
-          "team_b": {
-            "name": "Pittsburgh Penguins",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png",
-        "channels": []
-      },
-      {
-        "title": "Vancouver Canucks vs. Toronto Maple Leafs",
-        "sport": "National Hockey League",
-        "sub_category": "National Hockey League",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "vancouver-canucks-vs-toronto-maple-leafs",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:00 AM",
-          "end_time_bst": "Oct 31, 2026, 01:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Vancouver Canucks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/van.png"
-          },
-          "team_b": {
-            "name": "Toronto Maple Leafs",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/van.png",
-        "channels": []
-      },
-      {
-        "title": "Iowa State Cyclones vs. Oklahoma State Cowboys",
-        "sport": "NCAA - Football",
-        "sub_category": "NCAA - Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "iowa-state-cyclones-vs-oklahoma-state-cowboys",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:00 AM",
-          "end_time_bst": "Oct 31, 2026, 01:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Iowa State Cyclones",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png"
-          },
-          "team_b": {
-            "name": "Oklahoma State Cowboys",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png",
-        "channels": []
-      },
-      {
-        "title": "Florida State Seminoles vs. Clemson Tigers",
-        "sport": "NCAA - Football",
-        "sub_category": "NCAA - Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "florida-state-seminoles-vs-clemson-tigers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:00 AM",
-          "end_time_bst": "Oct 31, 2026, 01:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Florida State Seminoles",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png"
-          },
-          "team_b": {
-            "name": "Clemson Tigers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png",
-        "channels": []
-      },
-      {
-        "title": "San Diego State Aztecs vs. Washington State Cougars",
-        "sport": "NCAA - Football",
-        "sub_category": "NCAA - Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "san-diego-state-aztecs-vs-washington-state-cougars",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:00 AM",
-          "end_time_bst": "Oct 31, 2026, 01:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "San Diego State Aztecs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/21.png"
-          },
-          "team_b": {
-            "name": "Washington State Cougars",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/265.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/21.png",
-        "channels": []
-      },
-      {
-        "title": "North Carolina Tar Heels vs. Miami Hurricanes",
-        "sport": "NCAA - Football",
-        "sub_category": "NCAA - Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "north-carolina-tar-heels-vs-miami-hurricanes",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:30 AM",
-          "end_time_bst": "Oct 31, 2026, 01:30 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "North Carolina Tar Heels",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png"
-          },
-          "team_b": {
-            "name": "Miami Hurricanes",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png",
-        "channels": []
-      },
-      {
-        "title": "USC Trojans vs. Ohio State Buckeyes",
-        "sport": "NCAA - Football",
-        "sub_category": "NCAA - Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "usc-trojans-vs-ohio-state-buckeyes",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:30 AM",
-          "end_time_bst": "Oct 31, 2026, 01:30 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "USC Trojans",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png"
-          },
-          "team_b": {
-            "name": "Ohio State Buckeyes",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png",
-        "channels": []
-      },
-      {
-        "title": "Texas Longhorns vs. Mississippi State Bulldogs",
-        "sport": "NCAA - Football",
-        "sub_category": "NCAA - Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "texas-longhorns-vs-mississippi-state-bulldogs",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:30 AM",
-          "end_time_bst": "Oct 31, 2026, 01:30 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Texas Longhorns",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
-          },
-          "team_b": {
-            "name": "Mississippi State Bulldogs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
-        "channels": []
-      },
-      {
-        "title": "Pittsburgh Panthers vs. Georgia Tech Yellow Jackets",
-        "sport": "NCAA - Football",
-        "sub_category": "NCAA - Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "pittsburgh-panthers-vs-georgia-tech-yellow-jackets",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:30 AM",
-          "end_time_bst": "Oct 31, 2026, 01:30 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Pittsburgh Panthers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png"
-          },
-          "team_b": {
-            "name": "Georgia Tech Yellow Jackets",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/59.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png",
-        "channels": []
-      },
-      {
-        "title": "Arkansas Razorbacks vs. Missouri Tigers",
-        "sport": "NCAA - Football",
-        "sub_category": "NCAA - Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "arkansas-razorbacks-vs-missouri-tigers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:45 AM",
-          "end_time_bst": "Oct 31, 2026, 01:45 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Arkansas Razorbacks",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png"
-          },
-          "team_b": {
-            "name": "Missouri Tigers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
-        "channels": []
-      },
-      {
-        "title": "Atlanta Dream vs. Golden State Valkyries",
-        "sport": "WNBA",
-        "sub_category": "WNBA",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "atlanta-dream-vs-golden-state-valkyries",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 11:00 AM",
-          "end_time_bst": "Oct 31, 2026, 02:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Atlanta Dream",
-            "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png&w=64&h=64&scale=crop&cquality=40&location=origin"
-          },
-          "team_b": {
-            "name": "Golden State Valkyries",
-            "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png&w=64&h=64&scale=crop&cquality=40&location=origin"
-          }
-        },
-        "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png&w=64&h=64&scale=crop&cquality=40&location=origin",
-        "channels": []
-      },
-      {
-        "title": "Memphis Grizzlies vs. Sacramento Kings",
-        "sport": "National Basketball Association",
-        "sub_category": "National Basketball Association",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "memphis-grizzlies-vs-sacramento-kings",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 11:00 AM",
-          "end_time_bst": "Oct 31, 2026, 02:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Memphis Grizzlies",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png"
-          },
-          "team_b": {
-            "name": "Sacramento Kings",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
-        "channels": []
-      },
-      {
-        "title": "Milwaukee Bucks vs. Cleveland Cavaliers",
-        "sport": "National Basketball Association",
-        "sub_category": "National Basketball Association",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "milwaukee-bucks-vs-cleveland-cavaliers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 11:00 AM",
-          "end_time_bst": "Oct 31, 2026, 02:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Milwaukee Bucks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png"
-          },
-          "team_b": {
-            "name": "Cleveland Cavaliers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
-        "channels": []
-      },
-      {
-        "title": "San Antonio Spurs vs. Minnesota Timberwolves",
-        "sport": "National Basketball Association",
-        "sub_category": "National Basketball Association",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "san-antonio-spurs-vs-minnesota-timberwolves",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 11:00 AM",
-          "end_time_bst": "Oct 31, 2026, 02:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "San Antonio Spurs",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png"
-          },
-          "team_b": {
-            "name": "Minnesota Timberwolves",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
-        "channels": []
-      },
-      {
-        "title": "Dallas Stars vs. Columbus Blue Jackets",
-        "sport": "National Hockey League",
-        "sub_category": "National Hockey League",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "dallas-stars-vs-columbus-blue-jackets",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 11:00 AM",
-          "end_time_bst": "Oct 31, 2026, 02:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Dallas Stars",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png"
-          },
-          "team_b": {
-            "name": "Columbus Blue Jackets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cbj.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png",
-        "channels": []
-      },
-      {
-        "title": "Nebraska Cornhuskers vs. Washington Huskies",
-        "sport": "NCAA - Football",
-        "sub_category": "NCAA - Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "nebraska-cornhuskers-vs-washington-huskies",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 11:00 AM",
-          "end_time_bst": "Oct 31, 2026, 02:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Nebraska Cornhuskers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png"
-          },
-          "team_b": {
-            "name": "Washington Huskies",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png",
-        "channels": []
-      },
-      {
-        "title": "Memphis Tigers vs. Army Black Knights",
-        "sport": "NCAA - Football",
-        "sub_category": "NCAA - Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "memphis-tigers-vs-army-black-knights",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 11:00 AM",
-          "end_time_bst": "Oct 31, 2026, 02:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Memphis Tigers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png"
-          },
-          "team_b": {
-            "name": "Army Black Knights",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/349.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png",
-        "channels": []
-      },
-      {
-        "title": "Houston Rockets vs. Oklahoma City Thunder",
-        "sport": "National Basketball Association",
-        "sub_category": "National Basketball Association",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "houston-rockets-vs-oklahoma-city-thunder",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 11:30 AM",
-          "end_time_bst": "Oct 31, 2026, 02:30 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Houston Rockets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png"
-          },
-          "team_b": {
-            "name": "Oklahoma City Thunder",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
-        "channels": []
-      },
-      {
-        "title": "Monterrey vs. Tijuana",
-        "sport": "Liga MX",
-        "sub_category": "Liga MX",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "monterrey-vs-tijuana",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 12:05 PM",
-          "end_time_bst": "Oct 31, 2026, 03:05 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Monterrey",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/220.png"
-          },
-          "team_b": {
-            "name": "Tijuana",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10125.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/220.png",
-        "channels": []
-      },
-      {
-        "title": "Guadalajara vs. Atlante",
-        "sport": "Liga MX",
-        "sub_category": "Liga MX",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "guadalajara-vs-atlante",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 12:07 PM",
-          "end_time_bst": "Oct 31, 2026, 03:07 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Guadalajara",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/219.png"
-          },
-          "team_b": {
-            "name": "Atlante",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/226.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/219.png",
-        "channels": []
-      },
-      {
-        "title": "Colorado Rapids vs. Chicago Fire FC",
-        "sport": "Major League Soccer",
-        "sub_category": "Major League Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "colorado-rapids-vs-chicago-fire-fc",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 12:30 PM",
-          "end_time_bst": "Oct 31, 2026, 03:30 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Colorado Rapids",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png"
-          },
-          "team_b": {
-            "name": "Chicago Fire FC",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
-        "channels": []
-      },
-      {
-        "title": "Colorado Avalanche vs. Calgary Flames",
-        "sport": "National Hockey League",
-        "sub_category": "National Hockey League",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "colorado-avalanche-vs-calgary-flames",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 01:00 PM",
-          "end_time_bst": "Oct 31, 2026, 04:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Colorado Avalanche",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png"
-          },
-          "team_b": {
-            "name": "Calgary Flames",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png",
-        "channels": []
-      },
-      {
-        "title": "Boise State Broncos vs. Texas State Bobcats",
-        "sport": "NCAA - Football",
-        "sub_category": "NCAA - Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "boise-state-broncos-vs-texas-state-bobcats",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 01:00 PM",
-          "end_time_bst": "Oct 31, 2026, 04:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Boise State Broncos",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png"
-          },
-          "team_b": {
-            "name": "Texas State Bobcats",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/326.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png",
-        "channels": []
-      },
-      {
-        "title": "UNLV Rebels vs. Northern Illinois Huskies",
-        "sport": "NCAA - Football",
-        "sub_category": "NCAA - Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "unlv-rebels-vs-northern-illinois-huskies",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 01:30 PM",
-          "end_time_bst": "Oct 31, 2026, 04:30 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "UNLV Rebels",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2439.png"
-          },
-          "team_b": {
-            "name": "Northern Illinois Huskies",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2459.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2439.png",
-        "channels": []
-      },
-      {
-        "title": "Fresno State Bulldogs vs. Oregon State Beavers",
-        "sport": "NCAA - Football",
-        "sub_category": "NCAA - Football",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "fresno-state-bulldogs-vs-oregon-state-beavers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 02:00 PM",
-          "end_time_bst": "Oct 31, 2026, 05:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Fresno State Bulldogs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/278.png"
-          },
-          "team_b": {
-            "name": "Oregon State Beavers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/204.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/278.png",
-        "channels": []
-      },
-      {
-        "title": "América vs. Toluca",
-        "sport": "Liga MX",
-        "sub_category": "Liga MX",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "américa-vs-toluca",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 02:10 PM",
-          "end_time_bst": "Oct 31, 2026, 05:10 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "América",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/227.png"
-          },
-          "team_b": {
-            "name": "Toluca",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/223.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/227.png",
-        "channels": []
-      },
-      {
         "title": "Moto GP vs. Tnt 2 UK",
         "sport": "Moto GP",
         "sub_category": "Moto GP",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "moto-gp-vs-tnt-2-uk",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1132,13 +407,13 @@
         "title": "Navy Midshipmen vs. Notre Dame Fighting Irish",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "navy-midshipmen-vs-notre-dame-fighting-irish",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 03:00 AM",
-          "end_time_bst": "Oct 31, 2026, 06:00 AM"
+          "start_time_bst": "Nov 01, 2026, 03:00 AM",
+          "end_time_bst": "Nov 01, 2026, 06:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1157,13 +432,13 @@
         "title": "Texas Tech Red Raiders vs. Arizona Wildcats",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "texas-tech-red-raiders-vs-arizona-wildcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 03:00 AM",
-          "end_time_bst": "Oct 31, 2026, 06:00 AM"
+          "start_time_bst": "Nov 01, 2026, 03:00 AM",
+          "end_time_bst": "Nov 01, 2026, 06:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1182,13 +457,13 @@
         "title": "Syracuse Orange vs. SMU Mustangs",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "syracuse-orange-vs-smu-mustangs",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 03:00 AM",
-          "end_time_bst": "Oct 31, 2026, 06:00 AM"
+          "start_time_bst": "Nov 01, 2026, 03:00 AM",
+          "end_time_bst": "Nov 01, 2026, 06:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1207,13 +482,13 @@
         "title": "Iowa Hawkeyes vs. Wisconsin Badgers",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "iowa-hawkeyes-vs-wisconsin-badgers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 03:00 AM",
-          "end_time_bst": "Oct 31, 2026, 06:00 AM"
+          "start_time_bst": "Nov 01, 2026, 03:00 AM",
+          "end_time_bst": "Nov 01, 2026, 06:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1232,13 +507,13 @@
         "title": "NC State Wolfpack vs. California Golden Bears",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "nc-state-wolfpack-vs-california-golden-bears",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 03:00 AM",
-          "end_time_bst": "Oct 31, 2026, 06:00 AM"
+          "start_time_bst": "Nov 01, 2026, 03:00 AM",
+          "end_time_bst": "Nov 01, 2026, 06:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1257,13 +532,13 @@
         "title": "Duke Blue Devils vs. Boston College Eagles",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "duke-blue-devils-vs-boston-college-eagles",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 03:00 AM",
-          "end_time_bst": "Oct 31, 2026, 06:00 AM"
+          "start_time_bst": "Nov 01, 2026, 03:00 AM",
+          "end_time_bst": "Nov 01, 2026, 06:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1282,13 +557,13 @@
         "title": "Maryland Terrapins vs. Illinois Fighting Illini",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "maryland-terrapins-vs-illinois-fighting-illini",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 03:00 AM",
-          "end_time_bst": "Oct 31, 2026, 06:00 AM"
+          "start_time_bst": "Nov 01, 2026, 03:00 AM",
+          "end_time_bst": "Nov 01, 2026, 06:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1307,13 +582,13 @@
         "title": "South Florida Bulls vs. UAB Blazers",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "south-florida-bulls-vs-uab-blazers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 03:00 AM",
-          "end_time_bst": "Oct 31, 2026, 06:00 AM"
+          "start_time_bst": "Nov 01, 2026, 03:00 AM",
+          "end_time_bst": "Nov 01, 2026, 06:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1332,13 +607,13 @@
         "title": "Western Michigan Broncos vs. Bowling Green Falcons",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "western-michigan-broncos-vs-bowling-green-falcons",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 03:00 AM",
-          "end_time_bst": "Oct 31, 2026, 06:00 AM"
+          "start_time_bst": "Nov 01, 2026, 03:00 AM",
+          "end_time_bst": "Nov 01, 2026, 06:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1357,13 +632,13 @@
         "title": "Rutgers Scarlet Knights vs. Michigan Wolverines",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "rutgers-scarlet-knights-vs-michigan-wolverines",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 03:30 AM",
-          "end_time_bst": "Oct 31, 2026, 06:30 AM"
+          "start_time_bst": "Nov 01, 2026, 03:30 AM",
+          "end_time_bst": "Nov 01, 2026, 06:30 AM"
         },
         "teams": {
           "team_a": {
@@ -1382,13 +657,13 @@
         "title": "Ole Miss Rebels vs. Auburn Tigers",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "ole-miss-rebels-vs-auburn-tigers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 03:45 AM",
-          "end_time_bst": "Oct 31, 2026, 06:45 AM"
+          "start_time_bst": "Nov 01, 2026, 03:45 AM",
+          "end_time_bst": "Nov 01, 2026, 06:45 AM"
         },
         "teams": {
           "team_a": {
@@ -1407,13 +682,13 @@
         "title": "Christian Mbilli vs. Canelo Alvarez",
         "sport": "Boxing",
         "sub_category": "Boxing",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "christian-mbilli-vs-canelo-alvarez",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:00 AM",
-          "end_time_bst": "Oct 31, 2026, 07:00 AM"
+          "start_time_bst": "Nov 01, 2026, 04:00 AM",
+          "end_time_bst": "Nov 01, 2026, 07:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1432,13 +707,13 @@
         "title": "Charlotte FC vs. Orlando City SC",
         "sport": "Major League Soccer",
         "sub_category": "Major League Soccer",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "charlotte-fc-vs-orlando-city-sc",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:00 AM",
-          "end_time_bst": "Oct 31, 2026, 07:00 AM"
+          "start_time_bst": "Nov 01, 2026, 04:00 AM",
+          "end_time_bst": "Nov 01, 2026, 07:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1457,13 +732,13 @@
         "title": "Udinese vs. AS Roma",
         "sport": "Italian Serie A",
         "sub_category": "Italian Serie A",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "udinese-vs-as-roma",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:00 AM",
-          "end_time_bst": "Oct 31, 2026, 07:00 AM"
+          "start_time_bst": "Nov 01, 2026, 04:00 AM",
+          "end_time_bst": "Nov 01, 2026, 07:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1482,13 +757,13 @@
         "title": "Boston Bruins vs. Chicago Blackhawks",
         "sport": "National Hockey League",
         "sub_category": "National Hockey League",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "boston-bruins-vs-chicago-blackhawks",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:00 AM",
-          "end_time_bst": "Oct 31, 2026, 07:00 AM"
+          "start_time_bst": "Nov 01, 2026, 04:00 AM",
+          "end_time_bst": "Nov 01, 2026, 07:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1507,13 +782,13 @@
         "title": "Detroit Red Wings vs. St. Louis Blues",
         "sport": "National Hockey League",
         "sub_category": "National Hockey League",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "detroit-red-wings-vs-st-louis-blues",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:00 AM",
-          "end_time_bst": "Oct 31, 2026, 07:00 AM"
+          "start_time_bst": "Nov 01, 2026, 04:00 AM",
+          "end_time_bst": "Nov 01, 2026, 07:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1532,13 +807,13 @@
         "title": "Old Dominion Monarchs vs. Marshall Thundering Herd",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "old-dominion-monarchs-vs-marshall-thundering-herd",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:00 AM",
-          "end_time_bst": "Oct 31, 2026, 07:00 AM"
+          "start_time_bst": "Nov 01, 2026, 04:00 AM",
+          "end_time_bst": "Nov 01, 2026, 07:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1557,13 +832,13 @@
         "title": "Mexico City Grand Prix vs. Sky F1 UK",
         "sport": "Formula 1",
         "sub_category": "Formula 1",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "mexico-city-grand-prix-vs-sky-f1-uk",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:30 AM",
-          "end_time_bst": "Oct 31, 2026, 07:30 AM"
+          "start_time_bst": "Nov 01, 2026, 04:30 AM",
+          "end_time_bst": "Nov 01, 2026, 07:30 AM"
         },
         "teams": {
           "team_a": {
@@ -1582,13 +857,13 @@
         "title": "Mexico City Grand Prix vs. Dazn f1 Spain",
         "sport": "Formula 1",
         "sub_category": "Formula 1",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "mexico-city-grand-prix-vs-dazn-f1-spain",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:30 AM",
-          "end_time_bst": "Oct 31, 2026, 07:30 AM"
+          "start_time_bst": "Nov 01, 2026, 04:30 AM",
+          "end_time_bst": "Nov 01, 2026, 07:30 AM"
         },
         "teams": {
           "team_a": {
@@ -1607,13 +882,13 @@
         "title": "Mexico City Grand Prix vs. Sky 1 NZ",
         "sport": "Formula 1",
         "sub_category": "Formula 1",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "mexico-city-grand-prix-vs-sky-1-nz",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:30 AM",
-          "end_time_bst": "Oct 31, 2026, 07:30 AM"
+          "start_time_bst": "Nov 01, 2026, 04:30 AM",
+          "end_time_bst": "Nov 01, 2026, 07:30 AM"
         },
         "teams": {
           "team_a": {
@@ -1632,13 +907,13 @@
         "title": "Mexico City Grand Prix vs. Fox 506 AU",
         "sport": "Formula 1",
         "sub_category": "Formula 1",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "mexico-city-grand-prix-vs-fox-506-au",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:30 AM",
-          "end_time_bst": "Oct 31, 2026, 07:30 AM"
+          "start_time_bst": "Nov 01, 2026, 04:30 AM",
+          "end_time_bst": "Nov 01, 2026, 07:30 AM"
         },
         "teams": {
           "team_a": {
@@ -1657,13 +932,13 @@
         "title": "Tottenham Hotspur vs. Crystal Palace",
         "sport": "English Premier League",
         "sub_category": "English Premier League",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "tottenham-hotspur-vs-crystal-palace",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:30 AM",
-          "end_time_bst": "Oct 31, 2026, 07:30 AM"
+          "start_time_bst": "Nov 01, 2026, 04:30 AM",
+          "end_time_bst": "Nov 01, 2026, 07:30 AM"
         },
         "teams": {
           "team_a": {
@@ -1682,13 +957,13 @@
         "title": "Real Betis vs. Málaga",
         "sport": "Laliga",
         "sub_category": "Laliga",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "real-betis-vs-málaga",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:30 AM",
-          "end_time_bst": "Oct 31, 2026, 07:30 AM"
+          "start_time_bst": "Nov 01, 2026, 04:30 AM",
+          "end_time_bst": "Nov 01, 2026, 07:30 AM"
         },
         "teams": {
           "team_a": {
@@ -1707,13 +982,13 @@
         "title": "Bayern Munich vs. Borussia Dortmund",
         "sport": "German Bundesliga",
         "sub_category": "German Bundesliga",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "bayern-munich-vs-borussia-dortmund",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:30 AM",
-          "end_time_bst": "Oct 31, 2026, 07:30 AM"
+          "start_time_bst": "Nov 01, 2026, 04:30 AM",
+          "end_time_bst": "Nov 01, 2026, 07:30 AM"
         },
         "teams": {
           "team_a": {
@@ -1732,13 +1007,13 @@
         "title": "Columbus Crew vs. D.C. United",
         "sport": "Major League Soccer",
         "sub_category": "Major League Soccer",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "columbus-crew-vs-d-c-united",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 05:00 AM",
-          "end_time_bst": "Oct 31, 2026, 08:00 AM"
+          "start_time_bst": "Nov 01, 2026, 05:00 AM",
+          "end_time_bst": "Nov 01, 2026, 08:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1757,13 +1032,13 @@
         "title": "FC Cincinnati vs. Philadelphia Union",
         "sport": "Major League Soccer",
         "sub_category": "Major League Soccer",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "fc-cincinnati-vs-philadelphia-union",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 05:00 AM",
-          "end_time_bst": "Oct 31, 2026, 08:00 AM"
+          "start_time_bst": "Nov 01, 2026, 05:00 AM",
+          "end_time_bst": "Nov 01, 2026, 08:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1782,13 +1057,13 @@
         "title": "New York City FC vs. CF Montréal",
         "sport": "Major League Soccer",
         "sub_category": "Major League Soccer",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "new-york-city-fc-vs-cf-montréal",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 05:00 AM",
-          "end_time_bst": "Oct 31, 2026, 08:00 AM"
+          "start_time_bst": "Nov 01, 2026, 05:00 AM",
+          "end_time_bst": "Nov 01, 2026, 08:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1807,13 +1082,13 @@
         "title": "Nashville Predators vs. Tampa Bay Lightning",
         "sport": "National Hockey League",
         "sub_category": "National Hockey League",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "nashville-predators-vs-tampa-bay-lightning",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 05:00 AM",
-          "end_time_bst": "Oct 31, 2026, 08:00 AM"
+          "start_time_bst": "Nov 01, 2026, 05:00 AM",
+          "end_time_bst": "Nov 01, 2026, 08:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1832,13 +1107,13 @@
         "title": "New York Islanders vs. Edmonton Oilers",
         "sport": "National Hockey League",
         "sub_category": "National Hockey League",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "new-york-islanders-vs-edmonton-oilers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 05:00 AM",
-          "end_time_bst": "Oct 31, 2026, 08:00 AM"
+          "start_time_bst": "Nov 01, 2026, 05:00 AM",
+          "end_time_bst": "Nov 01, 2026, 08:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1857,13 +1132,13 @@
         "title": "Colorado Buffaloes vs. Kansas State Wildcats",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "colorado-buffaloes-vs-kansas-state-wildcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 05:00 AM",
-          "end_time_bst": "Oct 31, 2026, 08:00 AM"
+          "start_time_bst": "Nov 01, 2026, 05:00 AM",
+          "end_time_bst": "Nov 01, 2026, 08:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1882,13 +1157,13 @@
         "title": "Georgia State Panthers vs. Coastal Carolina Chanticleers",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "georgia-state-panthers-vs-coastal-carolina-chanticleers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 05:00 AM",
-          "end_time_bst": "Oct 31, 2026, 08:00 AM"
+          "start_time_bst": "Nov 01, 2026, 05:00 AM",
+          "end_time_bst": "Nov 01, 2026, 08:00 AM"
         },
         "teams": {
           "team_a": {
@@ -2751,6 +2026,731 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+        "channels": []
+      },
+      {
+        "title": "Georgia Southern Eagles vs. App State Mountaineers",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "georgia-southern-eagles-vs-app-state-mountaineers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 09:30 AM",
+          "end_time_bst": "Oct 31, 2026, 12:30 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Georgia Southern Eagles",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/290.png"
+          },
+          "team_b": {
+            "name": "App State Mountaineers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2026.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/290.png",
+        "channels": []
+      },
+      {
+        "title": "Pachuca vs. Tigres UANL",
+        "sport": "Liga MX",
+        "sub_category": "Liga MX",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "pachuca-vs-tigres-uanl",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 10:00 AM",
+          "end_time_bst": "Oct 31, 2026, 01:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Pachuca",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/234.png"
+          },
+          "team_b": {
+            "name": "Tigres UANL",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/232.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/234.png",
+        "channels": []
+      },
+      {
+        "title": "New Orleans Pelicans vs. Atlanta Hawks",
+        "sport": "National Basketball Association",
+        "sub_category": "National Basketball Association",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "new-orleans-pelicans-vs-atlanta-hawks",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 10:00 AM",
+          "end_time_bst": "Oct 31, 2026, 01:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png"
+          },
+          "team_b": {
+            "name": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+        "channels": []
+      },
+      {
+        "title": "Montreal Canadiens vs. Pittsburgh Penguins",
+        "sport": "National Hockey League",
+        "sub_category": "National Hockey League",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "montreal-canadiens-vs-pittsburgh-penguins",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 10:00 AM",
+          "end_time_bst": "Oct 31, 2026, 01:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Montreal Canadiens",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png"
+          },
+          "team_b": {
+            "name": "Pittsburgh Penguins",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png",
+        "channels": []
+      },
+      {
+        "title": "Vancouver Canucks vs. Toronto Maple Leafs",
+        "sport": "National Hockey League",
+        "sub_category": "National Hockey League",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "vancouver-canucks-vs-toronto-maple-leafs",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 10:00 AM",
+          "end_time_bst": "Oct 31, 2026, 01:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Vancouver Canucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/van.png"
+          },
+          "team_b": {
+            "name": "Toronto Maple Leafs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/van.png",
+        "channels": []
+      },
+      {
+        "title": "Iowa State Cyclones vs. Oklahoma State Cowboys",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "iowa-state-cyclones-vs-oklahoma-state-cowboys",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 10:00 AM",
+          "end_time_bst": "Oct 31, 2026, 01:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Iowa State Cyclones",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png"
+          },
+          "team_b": {
+            "name": "Oklahoma State Cowboys",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png",
+        "channels": []
+      },
+      {
+        "title": "Florida State Seminoles vs. Clemson Tigers",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "florida-state-seminoles-vs-clemson-tigers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 10:00 AM",
+          "end_time_bst": "Oct 31, 2026, 01:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Florida State Seminoles",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png"
+          },
+          "team_b": {
+            "name": "Clemson Tigers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png",
+        "channels": []
+      },
+      {
+        "title": "San Diego State Aztecs vs. Washington State Cougars",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "san-diego-state-aztecs-vs-washington-state-cougars",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 10:00 AM",
+          "end_time_bst": "Oct 31, 2026, 01:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "San Diego State Aztecs",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/21.png"
+          },
+          "team_b": {
+            "name": "Washington State Cougars",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/265.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/21.png",
+        "channels": []
+      },
+      {
+        "title": "North Carolina Tar Heels vs. Miami Hurricanes",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "north-carolina-tar-heels-vs-miami-hurricanes",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 10:30 AM",
+          "end_time_bst": "Oct 31, 2026, 01:30 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "North Carolina Tar Heels",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png"
+          },
+          "team_b": {
+            "name": "Miami Hurricanes",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png",
+        "channels": []
+      },
+      {
+        "title": "USC Trojans vs. Ohio State Buckeyes",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "usc-trojans-vs-ohio-state-buckeyes",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 10:30 AM",
+          "end_time_bst": "Oct 31, 2026, 01:30 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "USC Trojans",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png"
+          },
+          "team_b": {
+            "name": "Ohio State Buckeyes",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png",
+        "channels": []
+      },
+      {
+        "title": "Texas Longhorns vs. Mississippi State Bulldogs",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "texas-longhorns-vs-mississippi-state-bulldogs",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 10:30 AM",
+          "end_time_bst": "Oct 31, 2026, 01:30 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Texas Longhorns",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
+          },
+          "team_b": {
+            "name": "Mississippi State Bulldogs",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
+        "channels": []
+      },
+      {
+        "title": "Pittsburgh Panthers vs. Georgia Tech Yellow Jackets",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "pittsburgh-panthers-vs-georgia-tech-yellow-jackets",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 10:30 AM",
+          "end_time_bst": "Oct 31, 2026, 01:30 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Pittsburgh Panthers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png"
+          },
+          "team_b": {
+            "name": "Georgia Tech Yellow Jackets",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/59.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png",
+        "channels": []
+      },
+      {
+        "title": "Arkansas Razorbacks vs. Missouri Tigers",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "arkansas-razorbacks-vs-missouri-tigers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 10:45 AM",
+          "end_time_bst": "Oct 31, 2026, 01:45 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Arkansas Razorbacks",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png"
+          },
+          "team_b": {
+            "name": "Missouri Tigers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
+        "channels": []
+      },
+      {
+        "title": "Atlanta Dream vs. Golden State Valkyries",
+        "sport": "WNBA",
+        "sub_category": "WNBA",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "atlanta-dream-vs-golden-state-valkyries",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 11:00 AM",
+          "end_time_bst": "Oct 31, 2026, 02:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Atlanta Dream",
+            "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png&w=64&h=64&scale=crop&cquality=40&location=origin"
+          },
+          "team_b": {
+            "name": "Golden State Valkyries",
+            "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png&w=64&h=64&scale=crop&cquality=40&location=origin"
+          }
+        },
+        "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png&w=64&h=64&scale=crop&cquality=40&location=origin",
+        "channels": []
+      },
+      {
+        "title": "Memphis Grizzlies vs. Sacramento Kings",
+        "sport": "National Basketball Association",
+        "sub_category": "National Basketball Association",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "memphis-grizzlies-vs-sacramento-kings",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 11:00 AM",
+          "end_time_bst": "Oct 31, 2026, 02:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png"
+          },
+          "team_b": {
+            "name": "Sacramento Kings",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+        "channels": []
+      },
+      {
+        "title": "Milwaukee Bucks vs. Cleveland Cavaliers",
+        "sport": "National Basketball Association",
+        "sub_category": "National Basketball Association",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "milwaukee-bucks-vs-cleveland-cavaliers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 11:00 AM",
+          "end_time_bst": "Oct 31, 2026, 02:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png"
+          },
+          "team_b": {
+            "name": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+        "channels": []
+      },
+      {
+        "title": "San Antonio Spurs vs. Minnesota Timberwolves",
+        "sport": "National Basketball Association",
+        "sub_category": "National Basketball Association",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "san-antonio-spurs-vs-minnesota-timberwolves",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 11:00 AM",
+          "end_time_bst": "Oct 31, 2026, 02:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png"
+          },
+          "team_b": {
+            "name": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+        "channels": []
+      },
+      {
+        "title": "Dallas Stars vs. Columbus Blue Jackets",
+        "sport": "National Hockey League",
+        "sub_category": "National Hockey League",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "dallas-stars-vs-columbus-blue-jackets",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 11:00 AM",
+          "end_time_bst": "Oct 31, 2026, 02:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Dallas Stars",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png"
+          },
+          "team_b": {
+            "name": "Columbus Blue Jackets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cbj.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png",
+        "channels": []
+      },
+      {
+        "title": "Nebraska Cornhuskers vs. Washington Huskies",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "nebraska-cornhuskers-vs-washington-huskies",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 11:00 AM",
+          "end_time_bst": "Oct 31, 2026, 02:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Nebraska Cornhuskers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png"
+          },
+          "team_b": {
+            "name": "Washington Huskies",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png",
+        "channels": []
+      },
+      {
+        "title": "Memphis Tigers vs. Army Black Knights",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "memphis-tigers-vs-army-black-knights",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 11:00 AM",
+          "end_time_bst": "Oct 31, 2026, 02:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Memphis Tigers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png"
+          },
+          "team_b": {
+            "name": "Army Black Knights",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/349.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png",
+        "channels": []
+      },
+      {
+        "title": "Houston Rockets vs. Oklahoma City Thunder",
+        "sport": "National Basketball Association",
+        "sub_category": "National Basketball Association",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "houston-rockets-vs-oklahoma-city-thunder",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 11:30 AM",
+          "end_time_bst": "Oct 31, 2026, 02:30 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png"
+          },
+          "team_b": {
+            "name": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+        "channels": []
+      },
+      {
+        "title": "Monterrey vs. Tijuana",
+        "sport": "Liga MX",
+        "sub_category": "Liga MX",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "monterrey-vs-tijuana",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 12:05 PM",
+          "end_time_bst": "Oct 31, 2026, 03:05 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Monterrey",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/220.png"
+          },
+          "team_b": {
+            "name": "Tijuana",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10125.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/220.png",
+        "channels": []
+      },
+      {
+        "title": "Guadalajara vs. Atlante",
+        "sport": "Liga MX",
+        "sub_category": "Liga MX",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "guadalajara-vs-atlante",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 12:07 PM",
+          "end_time_bst": "Oct 31, 2026, 03:07 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Guadalajara",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/219.png"
+          },
+          "team_b": {
+            "name": "Atlante",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/226.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/219.png",
+        "channels": []
+      },
+      {
+        "title": "Colorado Rapids vs. Chicago Fire FC",
+        "sport": "Major League Soccer",
+        "sub_category": "Major League Soccer",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "colorado-rapids-vs-chicago-fire-fc",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 12:30 PM",
+          "end_time_bst": "Oct 31, 2026, 03:30 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Colorado Rapids",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png"
+          },
+          "team_b": {
+            "name": "Chicago Fire FC",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png",
+        "channels": []
+      },
+      {
+        "title": "Colorado Avalanche vs. Calgary Flames",
+        "sport": "National Hockey League",
+        "sub_category": "National Hockey League",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "colorado-avalanche-vs-calgary-flames",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 01:00 PM",
+          "end_time_bst": "Oct 31, 2026, 04:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Colorado Avalanche",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png"
+          },
+          "team_b": {
+            "name": "Calgary Flames",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png",
+        "channels": []
+      },
+      {
+        "title": "Boise State Broncos vs. Texas State Bobcats",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "boise-state-broncos-vs-texas-state-bobcats",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 01:00 PM",
+          "end_time_bst": "Oct 31, 2026, 04:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Boise State Broncos",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png"
+          },
+          "team_b": {
+            "name": "Texas State Bobcats",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/326.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png",
+        "channels": []
+      },
+      {
+        "title": "UNLV Rebels vs. Northern Illinois Huskies",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "unlv-rebels-vs-northern-illinois-huskies",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 01:30 PM",
+          "end_time_bst": "Oct 31, 2026, 04:30 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "UNLV Rebels",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2439.png"
+          },
+          "team_b": {
+            "name": "Northern Illinois Huskies",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2459.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2439.png",
+        "channels": []
+      },
+      {
+        "title": "Fresno State Bulldogs vs. Oregon State Beavers",
+        "sport": "NCAA - Football",
+        "sub_category": "NCAA - Football",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "fresno-state-bulldogs-vs-oregon-state-beavers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 02:00 PM",
+          "end_time_bst": "Oct 31, 2026, 05:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Fresno State Bulldogs",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/278.png"
+          },
+          "team_b": {
+            "name": "Oregon State Beavers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/204.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/278.png",
+        "channels": []
+      },
+      {
+        "title": "América vs. Toluca",
+        "sport": "Liga MX",
+        "sub_category": "Liga MX",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "américa-vs-toluca",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 02:10 PM",
+          "end_time_bst": "Oct 31, 2026, 05:10 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "América",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/227.png"
+          },
+          "team_b": {
+            "name": "Toluca",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/223.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/227.png",
         "channels": []
       }
     ]
