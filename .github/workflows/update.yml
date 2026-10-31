@@ -1,14 +1,11 @@
 name: Update STC Sports Playlist
 
 on:
-  # ১. Render Watcher থেকে সিগন্যাল এলে স্বয়ংক্রিয় রান হবে
   repository_dispatch:
     types: [source_updated]
 
-  # ২. GitHub থেকে ম্যানুয়ালি Run Workflow বাটনে ক্লিক করে চালানোর জন্য
   workflow_dispatch:
 
-  # ৩. ব্যাকগ্রাউন্ডে প্রতি ৩০ মিনিট পর পর অটোমেটিক আপডেট হবে
   schedule:
     - cron: '*/30 * * * *'
 
@@ -32,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install httpx selectolax playwright
+          pip install "httpx[http2]" selectolax playwright
 
       - name: Install Playwright Chromium with system dependencies
         run: |
