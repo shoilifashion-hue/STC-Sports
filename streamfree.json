@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 01, 2026, 01:42 AM",
+  "last_updated": "Nov 01, 2026, 01:47 AM",
   "event_count": 76,
   "events": {
     "events": [
@@ -982,8 +982,8 @@
         "title": "Fulham vs Aston Villa",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "fulham-vs-aston-villa",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1007,8 +1007,8 @@
         "title": "Alavés vs Barcelona",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "alavés-vs-barcelona",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1032,8 +1032,8 @@
         "title": "Buffalo Sabres vs Los Angeles Kings",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "buffalo-sabres-vs-los-angeles-kings",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1057,8 +1057,8 @@
         "title": "Ottawa Senators vs San Jose Sharks",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ottawa-senators-vs-san-jose-sharks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1082,8 +1082,8 @@
         "title": "New Mexico Lobos vs San José State Spartans",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "new-mexico-lobos-vs-san-josé-state-spartans",
         "schedule": {
           "timezone": "BST (UTC+6)",
