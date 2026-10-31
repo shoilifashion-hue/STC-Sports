@@ -36,10 +36,10 @@ try:
 except Exception:
     BST_TZ = timezone(timedelta(hours=6))
 
-# একসাথে সর্বোচ্চ ২টি ব্রাউজার ট্যাব প্রসেস করা হবে
+# একসাথে সর্বোচ্চ ২টি ব্রাউজার প্রসেস হবে
 BROWSER_SEMAPHORE = asyncio.Semaphore(2)
 
-# গিটহাবে ব্যাকগ্রাউন্ডে চলবে, নিজের পিসিতে ব্রাউজার স্ক্রিনে ওপেন থাকবে
+# গিটহাবে হেডলেস ব্যাকগ্রাউন্ডে চলবে, নিজের পিসিতে ব্রাউজার স্ক্রিনে ওপেন থাকবে
 IS_CI = os.getenv("CI") == "true" or os.getenv("GITHUB_ACTIONS") == "true"
 
 logging.basicConfig(level=logging.INFO, format="[%(asctime)s] %(levelname)s: %(message)s")
@@ -174,7 +174,7 @@ async def fetch_pirlotv_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]
 
 async def sniff_stream_with_browser(browser, embed_url: str) -> tuple[str | None, str | None]:
     """
-    watch.html পেজটি ওপেন রেখে সর্বোচ্চ ২ মিনিট (১২০ সেকেন্ড) অথবা চ্যানেল চালু হওয়া পর্যন্ত অপেক্ষা করা
+    watch.html পেজটি শান্তভাবে ওপেন রেখে ভিডিও লোড হওয়ার জন্য অপেক্ষা করা
     """
     async with BROWSER_SEMAPHORE:
         m3u8_url = None
@@ -209,7 +209,7 @@ async def sniff_stream_with_browser(browser, embed_url: str) -> tuple[str | None
             await page.goto(target_watch_url, timeout=60000, wait_until="domcontentloaded")
 
             start_wait = asyncio.get_event_loop().time()
-            max_wait_seconds = 120  # সর্বোচ্চ ২ মিনিট (১২০ সেকেন্ড) অপেক্ষা করবে
+            max_wait_seconds = 120  # সর্বোচ্চ ২ মিনিট অপেক্ষা করবে
 
             while not captured_event.is_set():
                 elapsed = int(asyncio.get_event_loop().time() - start_wait)
@@ -219,7 +219,6 @@ async def sniff_stream_with_browser(browser, embed_url: str) -> tuple[str | None
 
                 log.info(f"[{elapsed}s/{max_wait_seconds}s] Player loading naturally on screen, waiting for stream...")
                 try:
-                    # ৫ সেকেন্ড পর পর চেক করবে, স্ট্রিম পেলে তৎক্ষণাৎ বের হয়ে যাবে
                     await asyncio.wait_for(captured_event.wait(), timeout=5.0)
                 except asyncio.TimeoutError:
                     pass
@@ -274,12 +273,14 @@ async def main():
 
     now_utc = datetime.now(timezone.utc)
 
-    # ব্রাউজার সেশন ওপেন
+    # ব্রাউজার সেশন ওপেন (লিনাক্স ও উইন্ডোজ উভয় পরিবেশের জন্য অপটিমাইজড)
     async with async_playwright() as p:
         browser = await p.chromium.launch(
             headless=IS_CI,
             args=[
                 "--no-sandbox",
+                "--disable-setuid-sandbox",
+                "--disable-dev-shm-usage",  # লিনাক্স ও গিটহাব রানারে ক্র্যাশ ঠেকানোর জন্য জরুরি
                 "--autoplay-policy=no-user-gesture-required",
                 "--disable-blink-features=AutomationControlled"
             ]
@@ -338,7 +339,7 @@ async def main():
     for item in final_playlist:
         item.pop("_timestamp", None)
 
-    # JSON ফাইলে সেভ করা
+    # JSON সেভ
     JSON_OUTPUT.write_text(
         json.dumps(
             {
@@ -352,7 +353,7 @@ async def main():
         encoding="utf-8"
     )
 
-    # M3U প্লেলিস্ট সেভ করা
+    # M3U প্লেলিস্ট সেভ
     m3u_lines = ["#EXTM3U"]
     stream_count = 0
     for ev in final_playlist:
