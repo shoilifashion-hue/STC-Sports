@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 01, 2026, 12:47 AM",
-  "event_count": 89,
+  "last_updated": "Nov 01, 2026, 01:02 AM",
+  "event_count": 88,
   "events": {
     "events": [
       {
@@ -451,31 +451,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12011.png",
-        "channels": []
-      },
-      {
-        "title": "AS Roma vs Udinese",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "as-roma-vs-udinese",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 11:00 PM",
-          "end_time_bst": "Nov 01, 2026, 02:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "AS Roma",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png"
-          },
-          "team_b": {
-            "name": "Udinese",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
         "channels": []
       },
       {
@@ -957,8 +932,8 @@
         "title": "Stanford Cardinal vs Louisville Cardinals",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "stanford-cardinal-vs-louisville-cardinals",
         "schedule": {
           "timezone": "BST (UTC+6)",
