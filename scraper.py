@@ -48,6 +48,7 @@ class ScrapedMatch:
     team_a_logo: str | None = None
     team_b_logo: str | None = None
     logo: str | None = None
+    direct_streams: list[str] = field(default_factory=list)
 
 def cleanup_text(text: str) -> str:
     text = text.replace('\xa0', ' ')
@@ -74,44 +75,7 @@ def parse_teams(title: str, team_a_logo: str | None = None, team_b_logo: str | N
         "team_b": {"name": title.strip(), "logo": team_b_logo}
     }
 
-def parse_start_time(text: str, parent_elem) -> datetime:
-    """
-    হোমপেজের কার্ডে থাকা সময় যেমন '2h 18m' অথবা ISO ডেট পার্স করে
-    """
-    now_utc = datetime.now(timezone.utc)
-    
-    # <time datetime="..."> থাকলে
-    time_node = parent_elem.css_first("time") if parent_elem else None
-    if time_node:
-        iso_val = time_node.attributes.get("datetime", "")
-        if iso_val:
-            try:
-                dt = datetime.fromisoformat(iso_val.replace("Z", "+00:00"))
-                return dt.astimezone(timezone.utc)
-            except Exception:
-                pass
-
-    # '2h 18m' বা '5h' ফরম্যাট হ্যান্ডেল করা
-    rel_match = re.search(r'(\d+)\s*h(?:ours?)?\s*(\d+)?\s*m?', text, re.IGNORECASE)
-    if rel_match:
-        hours = int(rel_match.group(1))
-        mins = int(rel_match.group(2)) if rel_match.group(2) else 0
-        return now_utc + timedelta(hours=hours, minutes=mins)
-
-    # শুধু '45m' থাকলে
-    min_match = re.search(r'(\d+)\s*m(?:inutes?)?', text, re.IGNORECASE)
-    if min_match:
-        mins = int(min_match.group(1))
-        return now_utc + timedelta(minutes=mins)
-
-    # সরাসরি লাইভ থাকলে
-    if "LIVE" in text.upper():
-        return now_utc
-
-    return now_utc
-
 def calculate_match_status(start_dt: datetime, site_status: str, early_minutes: int = 15) -> str:
-    """ম্যাচ শুরুর ১৫ মিনিট আগে LIVE হবে, এবং সোর্সে শেষ হলে ENDED হবে"""
     upper_status = site_status.upper()
     if any(k in upper_status for k in ["ENDED", "FINISHED", "FINAL", "FT"]):
         return "ENDED"
@@ -125,33 +89,29 @@ def calculate_match_status(start_dt: datetime, site_status: str, early_minutes: 
 
     return "LIVE"
 
-def extract_m3u8_links(text: str, base_url: str = "") -> list[str]:
-    """জাভাস্ক্রিপ্ট এবং HTML থেকে টোকেনসহ সম্পূর্ণ index.m3u8 লিংক এক্সট্রাক্ট করে"""
+def extract_m3u8_links(text: str) -> list[str]:
+    """টোকেনসহ m3u8 লিংক এক্সট্রাক্ট করে"""
     found = []
     if not text:
         return found
-
     clean_text = html.unescape(text).replace(r"\/", "/")
 
-    # ৪ নম্বর স্ক্রিনশটের মতো index.m3u8 টোকেনসহ লিঙ্ক
-    matches = re.findall(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/[^\s"\'<>\\]*?index\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
-    for m in matches:
+    # index.m3u8?_t=... প্যাটার্ন
+    for m in re.findall(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/[^\s"\'<>\\]*?index\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text):
         link = m.strip("\"' ")
         if link not in found:
             found.append(link)
 
-    # যেকোনো .m3u8 লিঙ্ক
+    # সাধারণ .m3u8
     if not found:
-        generic_matches = re.findall(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/[^\s"\'<>\\]+?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
-        for gm in generic_matches:
-            link = gm.strip("\"' ")
+        for m in re.findall(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/[^\s"\'<>\\]+?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text):
+            link = m.strip("\"' ")
             if link not in found:
                 found.append(link)
 
     return found
 
 async def resolve_stream_from_player(client: httpx.AsyncClient, player_url: str) -> list[str]:
-    """প্লেয়ার পেজ থেকে সরাসরি টোকেনযুক্ত m3u8 এক্সট্রাক্ট করে"""
     async with HTTP_SEMAPHORE:
         stream_urls = []
         try:
@@ -159,51 +119,103 @@ async def resolve_stream_from_player(client: httpx.AsyncClient, player_url: str)
                 "User-Agent": STREAM_UA,
                 "Referer": SITE_REFERER,
                 "Origin": BASE_URL,
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
             }
             resp = await client.get(player_url, headers=headers, follow_redirects=True, timeout=12.0)
-            if resp.status_code != 200:
-                return stream_urls
+            if resp.status_code == 200:
+                stream_urls.extend(extract_m3u8_links(resp.text))
 
-            # ১. প্লেয়ার পেজের টেক্সটে m3u8 আছে কি না
-            stream_urls.extend(extract_m3u8_links(resp.text, base_url=str(resp.url)))
-            if stream_urls:
-                return stream_urls
+                # পেজে __NEXT_DATA__ থাকলে চেক করা
+                soup = HTMLParser(resp.content)
+                next_tag = soup.css_first("script#__NEXT_DATA__")
+                if next_tag and next_tag.text():
+                    stream_urls.extend(extract_m3u8_links(next_tag.text()))
 
-            # ২. ৩য় স্ক্রিনশটে থাকা https://strmfree.st/streams কল করা
-            api_headers = {
-                "User-Agent": STREAM_UA,
-                "Referer": player_url,
-                "Origin": BASE_URL,
-                "Accept": "application/json, text/plain, */*"
-            }
+            # https://strmfree.st/streams API থেকে খোঁজা
             try:
-                api_resp = await client.get(STREAM_API, headers=api_headers, timeout=8.0)
+                api_resp = await client.get(
+                    STREAM_API,
+                    headers={"User-Agent": STREAM_UA, "Referer": player_url, "Origin": BASE_URL},
+                    timeout=8.0
+                )
                 if api_resp.status_code == 200:
-                    api_urls = extract_m3u8_links(api_resp.text, base_url=str(api_resp.url))
-                    stream_urls.extend(api_urls)
+                    stream_urls.extend(extract_m3u8_links(api_resp.text))
             except Exception:
                 pass
 
-            # ৩. পেজের ভেতরের iframe খোঁজা
-            soup = HTMLParser(resp.content)
-            for iframe in soup.css("iframe"):
-                src = iframe.attributes.get("src", "")
-                if src and not src.startswith("javascript:"):
-                    iframe_url = urljoin(str(resp.url), src)
-                    resp_iframe = await client.get(iframe_url, headers={"User-Agent": STREAM_UA, "Referer": player_url}, timeout=10.0)
-                    if resp_iframe.status_code == 200:
-                        iframe_m3u8 = extract_m3u8_links(resp_iframe.text, base_url=iframe_url)
-                        stream_urls.extend(iframe_m3u8)
-
         except Exception as e:
-            log.debug(f"Error fetching player {player_url}: {e}")
+            log.debug(f"Player resolve error for {player_url}: {e}")
 
-        # ডুপ্লিকেট দূর করা
         return list(dict.fromkeys(stream_urls))
 
+def parse_next_data_json(json_data: dict) -> list[ScrapedMatch]:
+    """Next.js এর __NEXT_DATA__ ট্রি থেকে সব ম্যাচ খুঁজে বের করা"""
+    matches = []
+    now_utc = datetime.now(timezone.utc)
+
+    # রিকার্সিভলি অবজেক্ট স্ক্যান করা
+    def scan_obj(obj):
+        if isinstance(obj, dict):
+            # ম্যাচ অবজেক্টের বৈশিষ্ট্য চেক করা
+            if ("title" in obj or "name" in obj or "teams" in obj) and ("slug" in obj or "playerUrl" in obj or "sport" in obj or "category" in obj):
+                title = obj.get("title") or obj.get("name")
+                if not title and isinstance(obj.get("teams"), dict):
+                    t1 = obj["teams"].get("home", {}).get("name", "")
+                    t2 = obj["teams"].get("away", {}).get("name", "")
+                    title = f"{t1} vs {t2}" if t1 and t2 else ""
+
+                sport = (obj.get("sport") or obj.get("category") or "Sports").capitalize()
+                slug = obj.get("slug") or ""
+                
+                player_url = obj.get("playerUrl") or obj.get("url")
+                if not player_url and slug:
+                    player_url = f"{BASE_URL}/player/{sport.lower()}/{slug}"
+                elif player_url:
+                    player_url = urljoin(BASE_URL, player_url)
+
+                if title and player_url:
+                    title = cleanup_text(title)
+                    site_status = str(obj.get("status") or "UPCOMING").upper()
+                    if obj.get("isLive") or obj.get("live"):
+                        site_status = "LIVE"
+
+                    # স্টার্ট টাইম পার্সিং
+                    dt = now_utc
+                    date_val = obj.get("date") or obj.get("startTime") or obj.get("time") or obj.get("start")
+                    if date_val:
+                        try:
+                            if isinstance(date_val, (int, float)):
+                                dt = datetime.fromtimestamp(date_val / 1000 if date_val > 1e11 else date_val, tz=timezone.utc)
+                            elif isinstance(date_val, str):
+                                dt = datetime.fromisoformat(date_val.replace("Z", "+00:00"))
+                        except Exception:
+                            dt = now_utc
+
+                    # লোগো
+                    team_a_logo = obj.get("homeLogo") or obj.get("team1Logo")
+                    team_b_logo = obj.get("awayLogo") or obj.get("team2Logo")
+                    main_logo = obj.get("poster") or obj.get("logo") or team_a_logo
+
+                    matches.append(ScrapedMatch(
+                        sport=sport,
+                        title=title,
+                        site_status=site_status,
+                        start_dt=dt,
+                        player_url=player_url,
+                        team_a_logo=team_a_logo,
+                        team_b_logo=team_b_logo,
+                        logo=main_logo
+                    ))
+
+            for v in obj.values():
+                scan_obj(v)
+        elif isinstance(obj, list):
+            for item in obj:
+                scan_obj(item)
+
+    scan_obj(json_data)
+    return matches
+
 async def scrape_streamfree_homepage(client: httpx.AsyncClient) -> list[ScrapedMatch]:
-    """streamfree.top হোমপেজ থেকে সকল লাইভ ও আপকামিং ম্যাচ স্ক্র্যাপ করে"""
     matches = []
     try:
         resp = await client.get(BASE_URL, headers={"User-Agent": STREAM_UA}, timeout=15.0)
@@ -213,72 +225,49 @@ async def scrape_streamfree_homepage(client: httpx.AsyncClient) -> list[ScrapedM
 
         soup = HTMLParser(resp.content)
 
-        # কার্ডগুলো খোঁজা (Popular Streams এবং প্রতিটি স্পোর্টস সেকশন)
-        cards = soup.css("a[href*='/player/'], div:has(> a[href*='/player/'])")
-        if not cards:
-            cards = soup.css("[class*='card'], [class*='stream']")
+        # ১. Next.js __NEXT_DATA__ স্ক্রিপ্ট থেকে এক্সট্রাক্ট করা (সবচেয়ে নিখুঁত পদ্ধতি)
+        next_data_script = soup.css_first("script#__NEXT_DATA__")
+        if next_data_script and next_data_script.text():
+            try:
+                data = json.loads(next_data_script.text())
+                matches = parse_next_data_json(data)
+                if matches:
+                    log.info(f"Found {len(matches)} matches from __NEXT_DATA__ JSON script!")
+            except Exception as e:
+                log.warning(f"Error parsing __NEXT_DATA__: {e}")
 
-        for card in cards:
-            # প্লেয়ার ইউআরএল
-            link_node = card if card.tag == "a" else card.css_first("a[href*='/player/']")
-            if not link_node:
-                continue
+        # ২. সরাসরি strmfree.st/streams API ব্যাকআপ চেক
+        if not matches:
+            try:
+                api_resp = await client.get(
+                    STREAM_API,
+                    headers={"User-Agent": STREAM_UA, "Referer": SITE_REFERER, "Origin": BASE_URL},
+                    timeout=10.0
+                )
+                if api_resp.status_code == 200:
+                    api_data = api_resp.json()
+                    matches = parse_next_data_json(api_data)
+                    if matches:
+                        log.info(f"Found {len(matches)} matches from {STREAM_API} API!")
+            except Exception as e:
+                log.warning(f"Error calling {STREAM_API}: {e}")
 
-            href = link_node.attributes.get("href", "")
-            if not href or "/player/" not in href:
-                continue
-
-            full_player_url = urljoin(BASE_URL, href)
-
-            # ক্যাটাগরি ও টাইটেল URL বা কার্ড টেক্সট থেকে শনাক্ত
-            # ফরম্যাট: /player/{sport}/{match-slug}
-            slug_match = re.search(r'/player/([^/]+)/([^/?#]+)', href)
-            sport = slug_match.group(1).capitalize() if slug_match else "Sports"
-
-            card_text = cleanup_text(card.text())
-            title_node = card.css_first("h3, h4, .title, strong, [class*='title']")
-            title = cleanup_text(title_node.text()) if title_node else ""
-            
-            if not title:
-                # স্লাগ থেকে টাইটেল তৈরি (যেমন: brighton-hove-albion-vs-manchester-city)
+        # ৩. HTML কার্ড ফলব্যাক (Regex দিয়ে লিঙ্ক খোঁজা)
+        if not matches:
+            # পেজের ভেতর যেখানেই /player/ আছে তা বের করা
+            for player_path in set(re.findall(r'["\'](/player/[^"\']+)["\']', resp.text)):
+                full_player_url = urljoin(BASE_URL, player_path)
+                slug_match = re.search(r'/player/([^/]+)/([^/?#]+)', player_path)
                 if slug_match:
-                    raw_title = slug_match.group(2).replace("-vs-", " vs ").replace("-", " ")
-                    title = raw_title.title()
-                else:
-                    title = card_text
-
-            if not title or len(title) < 3:
-                continue
-
-            # স্ট্যাটাস ও স্টার্ট টাইম
-            site_status = "LIVE" if "LIVE" in card_text.upper() else "UPCOMING"
-            start_dt = parse_start_time(card_text, card)
-
-            # টিম লোগো এক্সট্রাক্ট করা
-            logos = []
-            for img in card.css("img"):
-                for attr in ["src", "data-src"]:
-                    img_src = img.attributes.get(attr, "")
-                    if img_src and not img_src.startswith("data:image"):
-                        full_img = urljoin(BASE_URL, img_src)
-                        if full_img not in logos:
-                            logos.append(full_img)
-                        break
-
-            team_a_logo = logos[0] if len(logos) >= 1 else None
-            team_b_logo = logos[1] if len(logos) >= 2 else None
-            main_logo = team_a_logo or team_b_logo
-
-            matches.append(ScrapedMatch(
-                sport=sport,
-                title=title,
-                site_status=site_status,
-                start_dt=start_dt,
-                player_url=full_player_url,
-                team_a_logo=team_a_logo,
-                team_b_logo=team_b_logo,
-                logo=main_logo
-            ))
+                    sport = slug_match.group(1).capitalize()
+                    title = slug_match.group(2).replace("-vs-", " vs ").replace("-", " ").title()
+                    matches.append(ScrapedMatch(
+                        sport=sport,
+                        title=cleanup_text(title),
+                        site_status="UPCOMING",
+                        start_dt=datetime.now(timezone.utc),
+                        player_url=full_player_url
+                    ))
 
     except Exception as e:
         log.error(f"Error scraping {BASE_URL}: {e}")
@@ -308,13 +297,12 @@ async def main():
             start_time_str = start_bst.strftime("%b %d, %Y, %I:%M %p")
             end_time_str = (start_bst + timedelta(hours=3)).strftime("%b %d, %Y, %I:%M %p")
 
-            # প্লেয়ার পেজ ও স্ট্রিমিং ব্যাকএন্ড থেকে আসল m3u8 খোঁজা
+            # স্ট্রিম লিঙ্ক সংগ্রহ
             stream_urls = await resolve_stream_from_player(client, m.player_url)
 
             event_channels = []
             idx = 1
             for m3u8_url in stream_urls:
-                # হেডার পাইপলাইন (Origin ও Referer সহ)
                 raw_link = f"{m3u8_url}|User-Agent={STREAM_UA}&Referer={SITE_REFERER}&Origin={BASE_URL}"
                 event_channels.append({
                     "channel_name": f"Stream #{idx}",
