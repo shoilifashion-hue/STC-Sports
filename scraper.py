@@ -1,5 +1,4 @@
 import asyncio
-import base64
 import html
 import json
 import logging
@@ -7,11 +6,11 @@ import re
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
 
 import httpx
-from selectolax.lexbor import LexborHTMLParser as HTMLParser
+from playwright.async_api import async_playwright
 
 ROOT_DIR = Path(__file__).resolve().parent
 
@@ -30,7 +29,6 @@ STREAM_UA = (
     "Chrome/111.0.0.0 Safari/537.36"
 )
 
-HTTP_SEMAPHORE = asyncio.Semaphore(5)
 BST_TZ = ZoneInfo("Asia/Dhaka")
 
 logging.basicConfig(level=logging.INFO, format="[%(asctime)s] %(levelname)s: %(message)s")
@@ -102,193 +100,13 @@ def parse_match_time(time_str: str) -> datetime:
             pass
     return now
 
-def unpack_dean_edwards(script: str) -> str:
-    if not script:
-        return ""
-    ALPHABET = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-    def decode_radix(val: str, radix: int) -> int:
-        if radix <= 36:
-            return int(val, radix)
-        num = 0
-        for char in val:
-            idx = ALPHABET.index(char)
-            num = num * radix + idx
-        return num
-
-    pattern = r"}\s*\(\s*['\"](.*?)['\"]\s*,\s*(\d+)\s*,\s*(\d+)\s*,\s*['\"](.*?)['\"]\s*\.split\s*\(\s*['\"][|]['\"]\s*\)"
-    unpacked_pieces = []
-
-    for match in re.finditer(pattern, script, re.DOTALL):
-        payload, radix_str, count_str, symtab_str = match.groups()
-        radix = int(radix_str)
-        symtab = symtab_str.split('|')
-
-        def replace_token(m):
-            token = m.group(0)
-            try:
-                idx = decode_radix(token, radix)
-                if idx < len(symtab) and symtab[idx]:
-                    return symtab[idx]
-            except Exception:
-                pass
-            return token
-
-        unpacked = re.sub(r'\b\w+\b', replace_token, payload)
-        unpacked_pieces.append(unpacked)
-
-    return "\n".join(unpacked_pieces)
-
-def extract_jwplayer_and_m3u8(text: str) -> str | None:
-    """JW Player এবং Obfuscated Script থেকে আসল m3u8 এক্সট্রাক্ট করে"""
-    if not text:
-        return None
-
-    unpacked = unpack_dean_edwards(text)
-    full_text = text + "\n" + unpacked
-    clean_text = html.unescape(full_text).replace(r"\/", "/")
-
-    # ১. tims-001.sytes.net বা /main/secure/ এর টোকেনসহ আসল লিঙ্ক
-    secure_match = re.search(r'(https?://[a-zA-Z0-9_\-\.]*sytes\.net[^\s"\'<>\\]*?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
-    if secure_match:
-        return secure_match.group(1).strip("\"' ")
-
-    # ২. JW Player 8 কনফিগারেশন: jwplayer().setup({file: "...", ...}) অথবা playlist: [{file: "..."}]
-    jw_file_match = re.search(r'(?:file|sources?|src)\s*:\s*["\'](https?://[^"\']+\.m3u8(?:\?[^"\']*)?)["\']', clean_text, re.IGNORECASE)
-    if jw_file_match:
-        return jw_file_match.group(1).strip("\"' ")
-
-    # ৩. স্ক্রিনশট ৩ এ দেখা JWT বা Base64 টোকেন (eyJhbGci...) ডিকোড করা
-    for jwt_token in re.findall(r'(eyJ[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}(?:\.[A-Za-z0-9_-]+)?)', full_text):
-        for part in jwt_token.split('.'):
-            try:
-                # Base64 padding ঠিক করা
-                padded = part + '=' * (-len(part) % 4)
-                decoded = base64.urlsafe_b64decode(padded.encode()).decode('utf-8', errors='ignore')
-                found = extract_jwplayer_and_m3u8(decoded)
-                if found:
-                    return found
-            except Exception:
-                pass
-
-    # ৪. Base64 atob() চেক
-    for b64 in re.findall(r'atob\s*\(\s*["\']([A-Za-z0-9+/=]{20,})["\']\s*\)', full_text):
-        try:
-            decoded = base64.b64decode(b64).decode("utf-8", errors="ignore")
-            found = extract_jwplayer_and_m3u8(decoded)
-            if found:
-                return found
-        except Exception:
-            pass
-
-    # ৫. হেক্স এনকোডেড স্ট্রিং (\x68\x74\x74\x70 = http)
-    if r"\x68\x74\x74\x70" in full_text:
-        try:
-            unescaped_hex = re.sub(r'\\x([0-9a-fA-F]{2})', lambda m: chr(int(m.group(1), 16)), full_text)
-            found = extract_jwplayer_and_m3u8(unescaped_hex)
-            if found:
-                return found
-        except Exception:
-            pass
-
-    # ৬. যেকোনো স্ট্যান্ডার্ড .m3u8 লিংক
-    generic_match = re.search(r'(https?://[^\s"\'<>\\]+?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
-    if generic_match:
-        url = generic_match.group(1).strip("\"' ")
-        if "flyembed" not in url:
-            return url
-
-    return None
-
-async def resolve_pirlo_stream(client: httpx.AsyncClient, raw_iframe_url: str) -> tuple[str | None, str | None]:
-    """
-    flyembed.cfd -> ehgembxe.cfd -> JW Player -> tims-001.sytes.net m3u8
-    """
-    async with HTTP_SEMAPHORE:
-        iframe_url = raw_iframe_url.strip()
-        if iframe_url.startswith("//"):
-            iframe_url = f"https:{iframe_url}"
-        elif not iframe_url.startswith("http"):
-            iframe_url = f"https://{iframe_url}"
-
-        try:
-            # ধাপ ১: flyembed.cfd ফেচ করা
-            headers_fly = {
-                "User-Agent": STREAM_UA,
-                "Referer": "https://pirlotvfr.online/",
-                "Sec-Fetch-Dest": "iframe",
-                "Sec-Fetch-Mode": "navigate",
-                "Sec-Fetch-Site": "cross-site",
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
-            }
-
-            resp = await client.get(iframe_url, headers=headers_fly, follow_redirects=True, timeout=12.0)
-            if resp.status_code != 200:
-                return None, None
-
-            m3u8 = extract_jwplayer_and_m3u8(resp.text)
-            if m3u8:
-                return m3u8, str(resp.url)
-
-            # ধাপ ২: ভেতরের আসল প্লেয়ার লিঙ্ক (ehgembxe.cfd) খোঁজা
-            soup = HTMLParser(resp.content)
-            target_urls = []
-            for iframe in soup.css("iframe"):
-                src = iframe.attributes.get("src", "")
-                if src and not src.startswith("javascript:"):
-                    target_urls.append(urljoin(str(resp.url), src))
-
-            for match_src in re.findall(r'src=["\']([^"\']*(?:ehgembxe|flyemb|player|embed)[^"\']*)["\']', resp.text):
-                full_src = urljoin(str(resp.url), match_src)
-                if full_src not in target_urls:
-                    target_urls.append(full_src)
-
-            # ধাপ ৩: ehgembxe.cfd এর JW Player পেজগুলো ফেচ করা
-            for inner_url in target_urls:
-                parsed_inner = urlsplit(inner_url)
-                origin_inner = f"{parsed_inner.scheme}://{parsed_inner.netloc}"
-
-                headers_ehg = {
-                    "User-Agent": STREAM_UA,
-                    "Referer": str(resp.url),
-                    "Origin": origin_inner,
-                    "Sec-Fetch-Dest": "iframe",
-                    "Sec-Fetch-Mode": "navigate",
-                    "Sec-Fetch-Site": "cross-site",
-                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
-                }
-
-                # follow_redirects=True যাতে ehgembxe.cfd এর 302 রিডাইরেক্ট ফলো করে /flyemb/p1/*** এ পৌঁছায়
-                resp_inner = await client.get(inner_url, headers=headers_ehg, follow_redirects=True, timeout=12.0)
-                if resp_inner.status_code == 200:
-                    found_m3u8 = extract_jwplayer_and_m3u8(resp_inner.text)
-                    if found_m3u8:
-                        return found_m3u8, origin_inner
-
-                    # যদি পেজের ভেতরে স্ক্রিপ্ট ফাইল (.js) লোড হয়, সেগুলোও স্ক্যান করা
-                    js_soup = HTMLParser(resp_inner.content)
-                    for script in js_soup.css("script"):
-                        js_src = script.attributes.get("src", "")
-                        if js_src and not js_src.startswith("http") and "google" not in js_src:
-                            full_js_url = urljoin(str(resp_inner.url), js_src)
-                            resp_js = await client.get(full_js_url, headers=headers_ehg, timeout=8.0)
-                            if resp_js.status_code == 200:
-                                js_m3u8 = extract_jwplayer_and_m3u8(resp_js.text)
-                                if js_m3u8:
-                                    return js_m3u8, origin_inner
-
-        except Exception as e:
-            log.debug(f"Stream resolution error for {iframe_url}: {e}")
-
-        return None, None
-
 async def fetch_pirlotv_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]:
     matches = []
     try:
         headers = {"User-Agent": STREAM_UA, "Referer": BASE_URL}
         resp = await client.get(API_URL, headers=headers, timeout=15.0)
         if resp.status_code != 200:
-            log.error(f"API request failed: {resp.status_code}")
+            log.error(f"API request failed with status: {resp.status_code}")
             return matches
 
         data = resp.json()
@@ -343,49 +161,109 @@ async def fetch_pirlotv_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]
 
     return list(unique_map.values())
 
+async def sniff_stream_with_browser(browser, embed_url: str) -> tuple[str | None, str | None]:
+    """
+    Playwright দিয়ে পেজ রেন্ডার করে WebAssembly/JW Player-এর তৈরি করা .m3u8 রিকোয়েস্ট স্নাইফ করা
+    """
+    m3u8_url = None
+    referer_header = None
+    captured_event = asyncio.Event()
+
+    context = await browser.new_context(
+        user_agent=STREAM_UA,
+        extra_http_headers={"Referer": f"{BASE_URL}/"}
+    )
+    page = await context.new_page()
+
+    async def handle_request(request):
+        nonlocal m3u8_url, referer_header
+        url = request.url
+        # sytes.net বা .m3u8 ফাইল স্নাইফ করা
+        if ".m3u8" in url:
+            m3u8_url = url
+            headers = request.headers
+            referer_header = headers.get("referer") or headers.get("origin")
+            captured_event.set()
+
+    page.on("request", handle_request)
+
+    try:
+        # পেজ লোড হওয়া শুরু করা
+        await page.goto(embed_url, timeout=12000, wait_until="domcontentloaded")
+        # .m3u8 রিকোয়েস্ট তৈরি হওয়া পর্যন্ত সর্বোচ্চ ৮ সেকেন্ড অপেক্ষা করা
+        try:
+            await asyncio.wait_for(captured_event.wait(), timeout=8.0)
+        except asyncio.TimeoutError:
+            pass
+    except Exception as e:
+        log.debug(f"Browser navigation error for {embed_url}: {e}")
+    finally:
+        await context.close()
+
+    return m3u8_url, referer_header
+
 async def main():
-    log.info("Starting Pirlo TV Scraper execution...")
+    log.info("Starting Pirlo TV Scraper execution with Playwright engine...")
+
     async with httpx.AsyncClient(headers={"User-Agent": STREAM_UA}, follow_redirects=True, http2=True) as client:
         matches = await fetch_pirlotv_matches(client)
         if not matches:
             log.warning("No matches found from Pirlo TV API!")
             return
 
-        final_playlist = []
+    final_playlist = []
+    now_utc = datetime.now(timezone.utc)
+
+    # ব্রাউজার সেশন ওপেন
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(
+            headless=True,
+            args=[
+                "--no-sandbox",
+                "--disable-setuid-sandbox",
+                "--disable-dev-shm-usage",
+                "--disable-gpu"
+            ]
+        )
 
         for m in matches:
             start_bst = m.start_dt.astimezone(BST_TZ)
             start_time_str = start_bst.strftime("%b %d, %Y, %I:%M %p")
             end_time_str = (start_bst + timedelta(hours=3)).strftime("%b %d, %Y, %I:%M %p")
 
-            # JW Player থেকে আসল m3u8 লিংক রেজোলিউশন
-            tasks = [resolve_pirlo_stream(client, url) for url in m.stream_urls]
-            results = await asyncio.gather(*tasks)
-
             event_channels = []
             idx = 1
-            for req_url, (m3u8_url, referer_used) in zip(m.stream_urls, results):
-                if m3u8_url:
-                    ref = referer_used or "https://ehgembxe.cfd/"
-                    if not ref.endswith("/"):
-                        ref += "/"
-                    origin = ref.rstrip("/")
 
-                    raw_link = f"{m3u8_url}|User-Agent={STREAM_UA}&Referer={ref}&Origin={origin}"
-                    event_channels.append({
-                        "channel_name": f"Stream #{idx}",
-                        "stream_type": "HLS",
-                        "url": m3u8_url,
-                        "raw_link": raw_link,
-                        "headers": {
-                            "User-Agent": STREAM_UA,
-                            "Referer": ref,
-                            "Origin": origin
-                        },
-                        "drm_key": None
-                    })
-                    log.info(f"[{m.title}] SUCCESS -> Extracted m3u8: {m3u8_url}")
-                    idx += 1
+            # ম্যাচ শুরুর ১ ঘণ্টার মধ্যে থাকলে অথবা অলরেডি শুরু হয়ে থাকলে ব্রাউজারে চেক করা
+            time_until_start = m.start_dt.astimezone(timezone.utc) - now_utc
+            should_sniff = time_until_start <= timedelta(hours=1, minutes=15)
+
+            if should_sniff and m.stream_urls:
+                for stream_url in m.stream_urls:
+                    log.info(f"Checking live stream for: {m.title} -> {stream_url}")
+                    m3u8_url, referer_used = await sniff_stream_with_browser(browser, stream_url)
+
+                    if m3u8_url:
+                        ref = referer_used or "https://ehgembxe.cfd/"
+                        if not ref.endswith("/"):
+                            ref += "/"
+                        origin = ref.rstrip("/")
+
+                        raw_link = f"{m3u8_url}|User-Agent={STREAM_UA}&Referer={ref}&Origin={origin}"
+                        event_channels.append({
+                            "channel_name": f"Stream #{idx}",
+                            "stream_type": "HLS",
+                            "url": m3u8_url,
+                            "raw_link": raw_link,
+                            "headers": {
+                                "User-Agent": STREAM_UA,
+                                "Referer": ref,
+                                "Origin": origin
+                            },
+                            "drm_key": None
+                        })
+                        log.info(f"[{m.title}] SUCCESS -> Captured m3u8: {m3u8_url}")
+                        idx += 1
 
             has_live_stream = len(event_channels) > 0
             actual_status = calculate_match_status(m.start_dt, has_live_stream, early_minutes=15)
@@ -410,41 +288,44 @@ async def main():
                 "_timestamp": m.start_dt.timestamp()
             })
 
-        priority = {"LIVE": 0, "UPCOMING": 1, "ENDED": 2}
-        final_playlist.sort(key=lambda x: (priority.get(x["status"], 99), x["_timestamp"]))
-        for item in final_playlist:
-            item.pop("_timestamp", None)
+        await browser.close()
 
-        # JSON সেভ
-        JSON_OUTPUT.write_text(
-            json.dumps(
-                {
-                    "last_updated": datetime.now(BST_TZ).strftime("%b %d, %Y, %I:%M %p"),
-                    "event_count": len(final_playlist),
-                    "events": {"events": final_playlist}
-                },
-                indent=2,
-                ensure_ascii=False
-            ),
-            encoding="utf-8"
-        )
+    # LIVE ম্যাচগুলোকে প্লেলিস্টের শুরুতে রাখা
+    priority = {"LIVE": 0, "UPCOMING": 1, "ENDED": 2}
+    final_playlist.sort(key=lambda x: (priority.get(x["status"], 99), x["_timestamp"]))
+    for item in final_playlist:
+        item.pop("_timestamp", None)
 
-        # M3U প্লেলিস্ট সেভ
-        m3u_lines = ["#EXTM3U"]
-        stream_count = 0
-        for ev in final_playlist:
-            for ch in ev.get("channels", []):
-                tvg_logo = ev["logo"] or ""
-                ref_header = ch.get("headers", {}).get("Referer", "https://ehgembxe.cfd/")
-                m3u_lines.append(f'#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="{tvg_logo}" group-title="{ev["sport"]}", {ev["title"]}')
-                m3u_lines.append(f'#EXTVLCOPT:http-referrer={ref_header}')
-                m3u_lines.append(f'#EXTVLCOPT:http-user-agent={STREAM_UA}')
-                m3u_lines.append(ch["raw_link"])
-                stream_count += 1
+    # JSON ফাইল সেভ
+    JSON_OUTPUT.write_text(
+        json.dumps(
+            {
+                "last_updated": datetime.now(BST_TZ).strftime("%b %d, %Y, %I:%M %p"),
+                "event_count": len(final_playlist),
+                "events": {"events": final_playlist}
+            },
+            indent=2,
+            ensure_ascii=False
+        ),
+        encoding="utf-8"
+    )
 
-        M3U_OUTPUT.write_text("\n".join(m3u_lines) + "\n", encoding="utf-8")
+    # M3U ফাইল সেভ
+    m3u_lines = ["#EXTM3U"]
+    stream_count = 0
+    for ev in final_playlist:
+        for ch in ev.get("channels", []):
+            tvg_logo = ev["logo"] or ""
+            ref_header = ch.get("headers", {}).get("Referer", "https://ehgembxe.cfd/")
+            m3u_lines.append(f'#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="{tvg_logo}" group-title="{ev["sport"]}", {ev["title"]}')
+            m3u_lines.append(f'#EXTVLCOPT:http-referrer={ref_header}')
+            m3u_lines.append(f'#EXTVLCOPT:http-user-agent={STREAM_UA}')
+            m3u_lines.append(ch["raw_link"])
+            stream_count += 1
 
-        log.info(f"Done! Saved {len(final_playlist)} matches and {stream_count} active live streams in M3U.")
+    M3U_OUTPUT.write_text("\n".join(m3u_lines) + "\n", encoding="utf-8")
+
+    log.info(f"Done! Saved {len(final_playlist)} matches and {stream_count} active live streams in M3U.")
 
 if __name__ == "__main__":
     asyncio.run(main())
