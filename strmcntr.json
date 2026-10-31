@@ -1,33 +1,8 @@
 {
-  "last_updated": "Oct 31, 2026, 07:09 PM",
+  "last_updated": "Oct 31, 2026, 07:50 PM",
   "event_count": 110,
   "events": {
     "events": [
-      {
-        "title": "Moto GP vs. Tnt 2 UK",
-        "sport": "Moto GP",
-        "sub_category": "Moto GP",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "moto-gp-vs-tnt-2-uk",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:00 PM",
-          "end_time_bst": "Oct 31, 2026, 07:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Moto GP",
-            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gyHzl7LndJz-cy4j0SjhrBxNRKa-ZnDCuGnURhPqmY5TSt9tGhnAo50Q&s=10"
-          },
-          "team_b": {
-            "name": "Tnt 2 UK",
-            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gyHzl7LndJz-cy4j0SjhrBxNRKa-ZnDCuGnURhPqmY5TSt9tGhnAo50Q&s=10"
-          }
-        },
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gyHzl7LndJz-cy4j0SjhrBxNRKa-ZnDCuGnURhPqmY5TSt9tGhnAo50Q&s=10",
-        "channels": []
-      },
       {
         "title": "Chelsea vs. Manchester United",
         "sport": "English Premier League",
@@ -2751,6 +2726,31 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/227.png",
+        "channels": []
+      },
+      {
+        "title": "Moto GP vs. Tnt 2 UK",
+        "sport": "Moto GP",
+        "sub_category": "Moto GP",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "moto-gp-vs-tnt-2-uk",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 04:00 PM",
+          "end_time_bst": "Oct 31, 2026, 07:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Moto GP",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gyHzl7LndJz-cy4j0SjhrBxNRKa-ZnDCuGnURhPqmY5TSt9tGhnAo50Q&s=10"
+          },
+          "team_b": {
+            "name": "Tnt 2 UK",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gyHzl7LndJz-cy4j0SjhrBxNRKa-ZnDCuGnURhPqmY5TSt9tGhnAo50Q&s=10"
+          }
+        },
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gyHzl7LndJz-cy4j0SjhrBxNRKa-ZnDCuGnURhPqmY5TSt9tGhnAo50Q&s=10",
         "channels": []
       }
     ]
