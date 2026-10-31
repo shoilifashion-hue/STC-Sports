@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 01, 2026, 04:18 AM",
-  "event_count": 55,
+  "last_updated": "Nov 01, 2026, 04:43 AM",
+  "event_count": 53,
   "events": {
     "events": [
       {
@@ -151,56 +151,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Temple Owls vs East Carolina Pirates",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "temple-owls-vs-east-carolina-pirates",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 01:00 AM",
-          "end_time_bst": "Nov 01, 2026, 04:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Temple Owls",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/218.png"
-          },
-          "team_b": {
-            "name": "East Carolina Pirates",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/151.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/218.png",
-        "channels": []
-      },
-      {
-        "title": "Louisiana Tech Bulldogs vs South Alabama Jaguars",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "louisiana-tech-bulldogs-vs-south-alabama-jaguars",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 01:00 AM",
-          "end_time_bst": "Nov 01, 2026, 04:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Louisiana Tech Bulldogs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2348.png"
-          },
-          "team_b": {
-            "name": "South Alabama Jaguars",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/6.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2348.png",
         "channels": []
       },
       {
