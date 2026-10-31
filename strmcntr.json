@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 31, 2026, 08:30 PM",
+  "last_updated": "Oct 31, 2026, 08:37 PM",
   "event_count": 110,
   "events": {
     "events": [
@@ -1357,13 +1357,13 @@
         "title": "Georgia Bulldogs vs. Florida Gators",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "georgia-bulldogs-vs-florida-gators",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:30 AM",
-          "end_time_bst": "Oct 31, 2026, 09:30 AM"
+          "start_time_bst": "Nov 01, 2026, 06:30 AM",
+          "end_time_bst": "Nov 01, 2026, 09:30 AM"
         },
         "teams": {
           "team_a": {
@@ -1382,13 +1382,13 @@
         "title": "Indiana Hoosiers vs. Minnesota Golden Gophers",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "indiana-hoosiers-vs-minnesota-golden-gophers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:30 AM",
-          "end_time_bst": "Oct 31, 2026, 09:30 AM"
+          "start_time_bst": "Nov 01, 2026, 06:30 AM",
+          "end_time_bst": "Nov 01, 2026, 09:30 AM"
         },
         "teams": {
           "team_a": {
@@ -1407,13 +1407,13 @@
         "title": "BYU Cougars vs. Arizona State Sun Devils",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "byu-cougars-vs-arizona-state-sun-devils",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:30 AM",
-          "end_time_bst": "Oct 31, 2026, 09:30 AM"
+          "start_time_bst": "Nov 01, 2026, 06:30 AM",
+          "end_time_bst": "Nov 01, 2026, 09:30 AM"
         },
         "teams": {
           "team_a": {
@@ -1432,13 +1432,13 @@
         "title": "Oregon Ducks vs. Northwestern Wildcats",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "oregon-ducks-vs-northwestern-wildcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:30 AM",
-          "end_time_bst": "Oct 31, 2026, 09:30 AM"
+          "start_time_bst": "Nov 01, 2026, 06:30 AM",
+          "end_time_bst": "Nov 01, 2026, 09:30 AM"
         },
         "teams": {
           "team_a": {
@@ -1457,13 +1457,13 @@
         "title": "TCU Horned Frogs vs. Kansas Jayhawks",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "tcu-horned-frogs-vs-kansas-jayhawks",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:30 AM",
-          "end_time_bst": "Oct 31, 2026, 09:30 AM"
+          "start_time_bst": "Nov 01, 2026, 06:30 AM",
+          "end_time_bst": "Nov 01, 2026, 09:30 AM"
         },
         "teams": {
           "team_a": {
@@ -1482,13 +1482,13 @@
         "title": "Utah State Aggies vs. Colorado State Rams",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "utah-state-aggies-vs-colorado-state-rams",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:30 AM",
-          "end_time_bst": "Oct 31, 2026, 09:30 AM"
+          "start_time_bst": "Nov 01, 2026, 06:30 AM",
+          "end_time_bst": "Nov 01, 2026, 09:30 AM"
         },
         "teams": {
           "team_a": {
@@ -1507,13 +1507,13 @@
         "title": "North Dakota State Bison vs. UTEP Miners",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "north-dakota-state-bison-vs-utep-miners",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:30 AM",
-          "end_time_bst": "Oct 31, 2026, 09:30 AM"
+          "start_time_bst": "Nov 01, 2026, 06:30 AM",
+          "end_time_bst": "Nov 01, 2026, 09:30 AM"
         },
         "teams": {
           "team_a": {
@@ -1532,13 +1532,13 @@
         "title": "Liberty Flames vs. Florida International Panthers",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "liberty-flames-vs-florida-international-panthers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:30 AM",
-          "end_time_bst": "Oct 31, 2026, 09:30 AM"
+          "start_time_bst": "Nov 01, 2026, 06:30 AM",
+          "end_time_bst": "Nov 01, 2026, 09:30 AM"
         },
         "teams": {
           "team_a": {
@@ -1557,13 +1557,13 @@
         "title": "UL Monroe Warhawks vs. Southern Miss Golden Eagles",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "ul-monroe-warhawks-vs-southern-miss-golden-eagles",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:30 AM",
-          "end_time_bst": "Oct 31, 2026, 09:30 AM"
+          "start_time_bst": "Nov 01, 2026, 06:30 AM",
+          "end_time_bst": "Nov 01, 2026, 09:30 AM"
         },
         "teams": {
           "team_a": {
