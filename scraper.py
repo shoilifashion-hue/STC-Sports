@@ -71,22 +71,43 @@ def calculate_match_status(start_dt: datetime, early_minutes: int = 15) -> str:
         return "UPCOMING"
     return "LIVE"
 
-def extract_m3u8(text: str) -> str | None:
-    """পেজের সোর্স কোড থেকে আসল টোকেনযুক্ত m3u8 লিংক এক্সট্রাক্ট করে"""
+def extract_m3u8(text: str, base_url: str = "") -> str | None:
+    """JW Player এবং HTML/JS থেকে টোকেনসহ m3u8 লিংক এক্সট্রাক্ট করে"""
     if not text:
         return None
+
     clean_text = html.unescape(text).replace(r"\/", "/")
 
-    # index.m3u8?_t=... প্যাটার্ন
-    match = re.search(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/[^\s"\'<>\\]*?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
-    if match:
-        return match.group(1).strip("\"' ")
+    # ১. JW Player এর file / source প্যারামিটার
+    jw_match = re.search(r'(?:file|source|src)\s*:\s*["\'](https?://[^"\']+\.m3u8(?:\?[^"\']*)?)["\']', clean_text, re.IGNORECASE)
+    if jw_match:
+        return jw_match.group(1).strip("\"' ")
 
-    # Base64 ডিকোড চেক
+    # ২. live-externalcdn সরাসরি প্যাটার্ন (স্ক্রিনশটের URL)
+    cdn_match = re.search(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/live-externalcdn/[^\s"\'<>\\]*?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
+    if cdn_match:
+        return cdn_match.group(1).strip("\"' ")
+
+    # ৩. যেকোনো index.m3u8 লিংক (টোকেনসহ)
+    index_match = re.search(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/[^\s"\'<>\\]*?index\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
+    if index_match:
+        return index_match.group(1).strip("\"' ")
+
+    # ৪. রিলেটিভ লিংক থাকলে (/live-externalcdn/.../index.m3u8)
+    rel_match = re.search(r'["\'](/live-externalcdn/[^"\'\s]+\.m3u8(?:\?[^"\'\s]*)?)["\']', clean_text)
+    if rel_match and base_url:
+        return urljoin(base_url, rel_match.group(1)).strip("\"' ")
+
+    # ৫. সাধারণ m3u8 প্যাটার্ন
+    generic_match = re.search(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/[^\s"\'<>\\]+?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
+    if generic_match:
+        return generic_match.group(1).strip("\"' ")
+
+    # ৬. Base64 atob() ডিকোড
     for b64 in re.findall(r'atob\(["\']([A-Za-z0-9+/=]{20,})["\']\)', text):
         try:
             decoded = base64.b64decode(b64).decode("utf-8", errors="ignore")
-            found = extract_m3u8(decoded)
+            found = extract_m3u8(decoded, base_url)
             if found:
                 return found
         except Exception:
@@ -107,11 +128,11 @@ async def resolve_embed_page(client: httpx.AsyncClient, embed_url: str, referer_
         if resp.status_code != 200:
             return None
 
-        m3u8 = extract_m3u8(resp.text)
+        m3u8 = extract_m3u8(resp.text, base_url=str(resp.url))
         if m3u8:
             return m3u8
 
-        # ভেতরের iframe চেক
+        # ভেতরে iframe থাকলে তা ফেচ করা
         soup = HTMLParser(resp.content)
         iframe = soup.css_first("iframe")
         if iframe:
@@ -120,14 +141,14 @@ async def resolve_embed_page(client: httpx.AsyncClient, embed_url: str, referer_
                 inner_url = urljoin(embed_url, src)
                 resp_inner = await client.get(inner_url, headers={"User-Agent": STREAM_UA, "Referer": embed_url}, timeout=8.0)
                 if resp_inner.status_code == 200:
-                    return extract_m3u8(resp_inner.text)
-    except Exception:
-        pass
+                    return extract_m3u8(resp_inner.text, base_url=inner_url)
+    except Exception as e:
+        log.debug(f"Error fetching embed page {embed_url}: {e}")
     return None
 
 async def resolve_match_channels(client: httpx.AsyncClient, match: ScrapedMatch) -> list[dict]:
     """
-    স্ক্রিনশটের আসল এপিআই: https://strmfree.st/api/v1/sources/{stream_key} কল করে FHD ও SD চ্যানেল তৈরি করা
+    https://strmfree.st/api/v1/sources/{stream_key} কল করে FHD ও SD চ্যানেল তৈরি করা
     """
     async with HTTP_SEMAPHORE:
         channels = []
@@ -151,7 +172,6 @@ async def resolve_match_channels(client: httpx.AsyncClient, match: ScrapedMatch)
             if not isinstance(sources_list, list):
                 return channels
 
-            # প্রতিটি সোর্স (FHD, SD) এর m3u8 বের করা
             for s in sources_list:
                 if not isinstance(s, dict):
                     continue
@@ -161,15 +181,14 @@ async def resolve_match_channels(client: httpx.AsyncClient, match: ScrapedMatch)
                 if not embed_url:
                     continue
 
-                # যদি সরাসরি m3u8 লিংক থাকে
                 if ".m3u8" in embed_url:
                     m3u8_link = embed_url
                 else:
-                    # এমবেড পেজ থেকে টোকেনযুক্ত লিঙ্ক সংগ্রহ
                     m3u8_link = await resolve_embed_page(client, embed_url, player_referer)
 
                 if m3u8_link:
-                    raw_link = f"{m3u8_link}|User-Agent={STREAM_UA}&Referer={BASE_URL}/&Origin={BASE_URL}"
+                    # স্ক্রিনশট অনুযায়ী Referer: embed_url এবং Origin: BASE_URL
+                    raw_link = f"{m3u8_link}|User-Agent={STREAM_UA}&Referer={embed_url}&Origin={BASE_URL}"
                     channels.append({
                         "channel_name": f"{quality} Stream",
                         "stream_type": "HLS",
@@ -178,7 +197,7 @@ async def resolve_match_channels(client: httpx.AsyncClient, match: ScrapedMatch)
                         "raw_link": raw_link,
                         "headers": {
                             "User-Agent": STREAM_UA,
-                            "Referer": f"{BASE_URL}/",
+                            "Referer": embed_url,
                             "Origin": BASE_URL
                         },
                         "drm_key": None
@@ -261,9 +280,7 @@ async def main():
             log.warning("No matches found from StreamFree API!")
             return
 
-        now_utc = datetime.now(timezone.utc)
-        
-        # শুধুমাত্র লাইভ অথবা শুরু হতে ১৫ মিনিট বাকি থাকা ম্যাচগুলোর সোর্স ফেচ করা
+        # লাইভ ম্যাচগুলোর জন্য সোর্স ফেচ করা
         live_matches = [
             m for m in matches 
             if calculate_match_status(m.start_dt, early_minutes=15) == "LIVE"
@@ -312,7 +329,7 @@ async def main():
         for item in final_playlist:
             item.pop("_timestamp", None)
 
-        # ১. JSON ফাইল সেভ
+        # JSON ফাইল সেভ
         JSON_OUTPUT.write_text(
             json.dumps(
                 {
@@ -326,7 +343,7 @@ async def main():
             encoding="utf-8"
         )
 
-        # ২. M3U প্লেলিস্ট সেভ
+        # M3U প্লেলিস্ট সেভ
         m3u_lines = ["#EXTM3U"]
         stream_count = 0
         for ev in final_playlist:
@@ -340,7 +357,7 @@ async def main():
 
         M3U_OUTPUT.write_text("\n".join(m3u_lines) + "\n", encoding="utf-8")
 
-        log.info(f"Done! Successfully generated {len(final_playlist)} matches and {stream_count} playable streams. Exiting.")
+        log.info(f"Done! Successfully generated {len(final_playlist)} matches and {stream_count} active playable streams in M3U.")
 
 if __name__ == "__main__":
     asyncio.run(main())
