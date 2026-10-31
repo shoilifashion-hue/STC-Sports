@@ -1,1 +1,55 @@
+name: Update StreamFree Playlist
 
+on:
+  # ১. রেন্ডার ওয়াচার থেকে সিগন্যাল আসলে রান হবে
+  repository_dispatch:
+    types: [source_updated]
+
+  # ২. গিটহাব ড্যাশবোর্ড বা এপিআই থেকে সরাসরি রান করানোর সুবিধা
+  workflow_dispatch:
+
+  # ৩. ব্যাকআপ হিসেবে প্রতি ১ ঘণ্টা পর পর স্বয়ংক্রিয়ভাবে রান হবে
+  schedule:
+    - cron: "0 * * * *"
+
+# ফাইল কমিট ও পুশ করার অনুমতি
+permissions:
+  contents: write
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install httpx selectolax
+
+      - name: Run Scraper
+        run: |
+          python scraper.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add streamfree.json streamfree.m3u
+          
+          # যদি নতুন কোনো আপডেট বা পরিবর্তন থাকে তবেই কমিট করবে
+          if git diff --staged --quiet; then
+            echo "No changes in playlist. Skipping commit."
+          else
+            git commit -m "Auto-update StreamFree playlist [$(TZ='Asia/Dhaka' date '+%Y-%m-%d %I:%M %p BST')]"
+            git push
+          fi
