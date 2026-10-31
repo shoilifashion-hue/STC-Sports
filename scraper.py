@@ -1,46 +1,39 @@
 import asyncio
+import base64
 import html
 import json
 import logging
-import os
 import re
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import quote, urlsplit
+from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
 import httpx
-from playwright.async_api import async_playwright
+from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
+# রুট পাথ ও কনফিগারেশন
 ROOT_DIR = Path(__file__).resolve().parent
 
-API_URL = "https://ovogoal.pages.dev/api/v2/flyembed2.json"
-BASE_URL = "https://pirlotvfr.online"
-TAG = "PIRLOTV"
+BASE_URL = "https://streamfree.top"
+STREAM_API = "https://strmfree.st/streams"
+SITE_REFERER = "https://streamfree.top/"
+TAG = "STRMFREE"
 
-JSON_OUTPUT = ROOT_DIR / "strmcntr.json"
-M3U_OUTPUT = ROOT_DIR / "strmcntr.m3u"
+JSON_OUTPUT = ROOT_DIR / "streamfree.json"
+M3U_OUTPUT = ROOT_DIR / "streamfree.m3u"
 CACHE_DIR = ROOT_DIR / "caches"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
 STREAM_UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/124.0.0.0 Safari/537.36"
+    "Chrome/111.0.0.0 Safari/537.36"
 )
 
-# টাইমজোন হ্যান্ডলিং
-try:
-    BST_TZ = ZoneInfo("Asia/Dhaka")
-except Exception:
-    BST_TZ = timezone(timedelta(hours=6))
-
-# একসাথে সর্বোচ্চ ২টি ব্রাউজার ট্যাব সমান্তরালে চলবে
-BROWSER_SEMAPHORE = asyncio.Semaphore(2)
-
-# গিটহাবে হেডলেস ব্যাকগ্রাউন্ডে চলবে, নিজের পিসিতে ব্রাউজার স্ক্রিনে ওপেন থাকবে
-IS_CI = os.getenv("CI") == "true" or os.getenv("GITHUB_ACTIONS") == "true"
+HTTP_SEMAPHORE = asyncio.Semaphore(5)
+BST_TZ = ZoneInfo("Asia/Dhaka")
 
 logging.basicConfig(level=logging.INFO, format="[%(asctime)s] %(levelname)s: %(message)s")
 log = logging.getLogger(TAG)
@@ -49,8 +42,9 @@ log = logging.getLogger(TAG)
 class ScrapedMatch:
     sport: str
     title: str
+    site_status: str
     start_dt: datetime
-    stream_urls: list[str] = field(default_factory=list)
+    player_url: str
     team_a_logo: str | None = None
     team_b_logo: str | None = None
     logo: str | None = None
@@ -80,9 +74,47 @@ def parse_teams(title: str, team_a_logo: str | None = None, team_b_logo: str | N
         "team_b": {"name": title.strip(), "logo": team_b_logo}
     }
 
-def calculate_match_status(start_dt: datetime, has_live_stream: bool, early_minutes: int = 15) -> str:
-    if has_live_stream:
-        return "LIVE"
+def parse_start_time(text: str, parent_elem) -> datetime:
+    """
+    হোমপেজের কার্ডে থাকা সময় যেমন '2h 18m' অথবা ISO ডেট পার্স করে
+    """
+    now_utc = datetime.now(timezone.utc)
+    
+    # <time datetime="..."> থাকলে
+    time_node = parent_elem.css_first("time") if parent_elem else None
+    if time_node:
+        iso_val = time_node.attributes.get("datetime", "")
+        if iso_val:
+            try:
+                dt = datetime.fromisoformat(iso_val.replace("Z", "+00:00"))
+                return dt.astimezone(timezone.utc)
+            except Exception:
+                pass
+
+    # '2h 18m' বা '5h' ফরম্যাট হ্যান্ডেল করা
+    rel_match = re.search(r'(\d+)\s*h(?:ours?)?\s*(\d+)?\s*m?', text, re.IGNORECASE)
+    if rel_match:
+        hours = int(rel_match.group(1))
+        mins = int(rel_match.group(2)) if rel_match.group(2) else 0
+        return now_utc + timedelta(hours=hours, minutes=mins)
+
+    # শুধু '45m' থাকলে
+    min_match = re.search(r'(\d+)\s*m(?:inutes?)?', text, re.IGNORECASE)
+    if min_match:
+        mins = int(min_match.group(1))
+        return now_utc + timedelta(minutes=mins)
+
+    # সরাসরি লাইভ থাকলে
+    if "LIVE" in text.upper():
+        return now_utc
+
+    return now_utc
+
+def calculate_match_status(start_dt: datetime, site_status: str, early_minutes: int = 15) -> str:
+    """ম্যাচ শুরুর ১৫ মিনিট আগে LIVE হবে, এবং সোর্সে শেষ হলে ENDED হবে"""
+    upper_status = site_status.upper()
+    if any(k in upper_status for k in ["ENDED", "FINISHED", "FINAL", "FT"]):
+        return "ENDED"
 
     now_utc = datetime.now(timezone.utc)
     start_utc = start_dt.astimezone(timezone.utc)
@@ -90,295 +122,270 @@ def calculate_match_status(start_dt: datetime, has_live_stream: bool, early_minu
 
     if now_utc < live_start:
         return "UPCOMING"
-    elif live_start <= now_utc <= (start_utc + timedelta(hours=3, minutes=30)):
-        return "LIVE"
-    return "ENDED"
 
-def parse_match_time(time_str: str) -> datetime:
-    now = datetime.now(timezone.utc)
-    m = re.search(r'(\d{1,2}):(\d{2})', str(time_str))
-    if m:
+    return "LIVE"
+
+def extract_m3u8_links(text: str, base_url: str = "") -> list[str]:
+    """জাভাস্ক্রিপ্ট এবং HTML থেকে টোকেনসহ সম্পূর্ণ index.m3u8 লিংক এক্সট্রাক্ট করে"""
+    found = []
+    if not text:
+        return found
+
+    clean_text = html.unescape(text).replace(r"\/", "/")
+
+    # ৪ নম্বর স্ক্রিনশটের মতো index.m3u8 টোকেনসহ লিঙ্ক
+    matches = re.findall(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/[^\s"\'<>\\]*?index\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
+    for m in matches:
+        link = m.strip("\"' ")
+        if link not in found:
+            found.append(link)
+
+    # যেকোনো .m3u8 লিঙ্ক
+    if not found:
+        generic_matches = re.findall(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/[^\s"\'<>\\]+?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
+        for gm in generic_matches:
+            link = gm.strip("\"' ")
+            if link not in found:
+                found.append(link)
+
+    return found
+
+async def resolve_stream_from_player(client: httpx.AsyncClient, player_url: str) -> list[str]:
+    """প্লেয়ার পেজ থেকে সরাসরি টোকেনযুক্ত m3u8 এক্সট্রাক্ট করে"""
+    async with HTTP_SEMAPHORE:
+        stream_urls = []
         try:
-            hour = int(m.group(1))
-            minute = int(m.group(2))
-            candidate = datetime(now.year, now.month, now.day, hour, minute, tzinfo=timezone.utc)
-            if candidate < now - timedelta(hours=14):
-                candidate += timedelta(days=1)
-            elif candidate > now + timedelta(hours=14):
-                candidate -= timedelta(days=1)
-            return candidate
-        except Exception:
-            pass
-    return now
+            headers = {
+                "User-Agent": STREAM_UA,
+                "Referer": SITE_REFERER,
+                "Origin": BASE_URL,
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+            }
+            resp = await client.get(player_url, headers=headers, follow_redirects=True, timeout=12.0)
+            if resp.status_code != 200:
+                return stream_urls
 
-async def fetch_pirlotv_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]:
+            # ১. প্লেয়ার পেজের টেক্সটে m3u8 আছে কি না
+            stream_urls.extend(extract_m3u8_links(resp.text, base_url=str(resp.url)))
+            if stream_urls:
+                return stream_urls
+
+            # ২. ৩য় স্ক্রিনশটে থাকা https://strmfree.st/streams কল করা
+            api_headers = {
+                "User-Agent": STREAM_UA,
+                "Referer": player_url,
+                "Origin": BASE_URL,
+                "Accept": "application/json, text/plain, */*"
+            }
+            try:
+                api_resp = await client.get(STREAM_API, headers=api_headers, timeout=8.0)
+                if api_resp.status_code == 200:
+                    api_urls = extract_m3u8_links(api_resp.text, base_url=str(api_resp.url))
+                    stream_urls.extend(api_urls)
+            except Exception:
+                pass
+
+            # ৩. পেজের ভেতরের iframe খোঁজা
+            soup = HTMLParser(resp.content)
+            for iframe in soup.css("iframe"):
+                src = iframe.attributes.get("src", "")
+                if src and not src.startswith("javascript:"):
+                    iframe_url = urljoin(str(resp.url), src)
+                    resp_iframe = await client.get(iframe_url, headers={"User-Agent": STREAM_UA, "Referer": player_url}, timeout=10.0)
+                    if resp_iframe.status_code == 200:
+                        iframe_m3u8 = extract_m3u8_links(resp_iframe.text, base_url=iframe_url)
+                        stream_urls.extend(iframe_m3u8)
+
+        except Exception as e:
+            log.debug(f"Error fetching player {player_url}: {e}")
+
+        # ডুপ্লিকেট দূর করা
+        return list(dict.fromkeys(stream_urls))
+
+async def scrape_streamfree_homepage(client: httpx.AsyncClient) -> list[ScrapedMatch]:
+    """streamfree.top হোমপেজ থেকে সকল লাইভ ও আপকামিং ম্যাচ স্ক্র্যাপ করে"""
     matches = []
     try:
-        headers = {"User-Agent": STREAM_UA, "Referer": BASE_URL}
-        resp = await client.get(API_URL, headers=headers, timeout=15.0)
+        resp = await client.get(BASE_URL, headers={"User-Agent": STREAM_UA}, timeout=15.0)
         if resp.status_code != 200:
-            log.error(f"API request failed with status: {resp.status_code}")
+            log.error(f"Failed to fetch homepage: Status {resp.status_code}")
             return matches
 
-        data = resp.json()
-        if not isinstance(data, list):
-            return matches
+        soup = HTMLParser(resp.content)
 
-        for m in data:
-            if not isinstance(m, dict):
+        # কার্ডগুলো খোঁজা (Popular Streams এবং প্রতিটি স্পোর্টস সেকশন)
+        cards = soup.css("a[href*='/player/'], div:has(> a[href*='/player/'])")
+        if not cards:
+            cards = soup.css("[class*='card'], [class*='stream']")
+
+        for card in cards:
+            # প্লেয়ার ইউআরএল
+            link_node = card if card.tag == "a" else card.css_first("a[href*='/player/']")
+            if not link_node:
                 continue
 
-            t1 = cleanup_text(str(m.get("Team1", "")).strip())
-            t2 = cleanup_text(str(m.get("Team2", "")).strip())
-            title = f"{t1} vs. {t2}" if (t1 and t2) else (t1 or t2 or "Sports Event")
+            href = link_node.attributes.get("href", "")
+            if not href or "/player/" not in href:
+                continue
 
-            sport = cleanup_text(str(m.get("League", "") or m.get("Sport", "") or "Football"))
-            start_time_raw = m.get("MatchStartTime", "")
-            dt = parse_match_time(start_time_raw)
+            full_player_url = urljoin(BASE_URL, href)
 
-            team_a_logo = m.get("Team1Logo") or None
-            team_b_logo = m.get("Team2Logo") or None
-            main_logo = team_a_logo or m.get("LeagueLogo") or team_b_logo
+            # ক্যাটাগরি ও টাইটেল URL বা কার্ড টেক্সট থেকে শনাক্ত
+            # ফরম্যাট: /player/{sport}/{match-slug}
+            slug_match = re.search(r'/player/([^/]+)/([^/?#]+)', href)
+            sport = slug_match.group(1).capitalize() if slug_match else "Sports"
 
-            iframe_url = m.get("IframeURL", "").strip()
-            if iframe_url.startswith("//"):
-                iframe_url = f"https:{iframe_url}"
+            card_text = cleanup_text(card.text())
+            title_node = card.css_first("h3, h4, .title, strong, [class*='title']")
+            title = cleanup_text(title_node.text()) if title_node else ""
+            
+            if not title:
+                # স্লাগ থেকে টাইটেল তৈরি (যেমন: brighton-hove-albion-vs-manchester-city)
+                if slug_match:
+                    raw_title = slug_match.group(2).replace("-vs-", " vs ").replace("-", " ")
+                    title = raw_title.title()
+                else:
+                    title = card_text
 
-            stream_links = [iframe_url] if iframe_url else []
+            if not title or len(title) < 3:
+                continue
+
+            # স্ট্যাটাস ও স্টার্ট টাইম
+            site_status = "LIVE" if "LIVE" in card_text.upper() else "UPCOMING"
+            start_dt = parse_start_time(card_text, card)
+
+            # টিম লোগো এক্সট্রাক্ট করা
+            logos = []
+            for img in card.css("img"):
+                for attr in ["src", "data-src"]:
+                    img_src = img.attributes.get(attr, "")
+                    if img_src and not img_src.startswith("data:image"):
+                        full_img = urljoin(BASE_URL, img_src)
+                        if full_img not in logos:
+                            logos.append(full_img)
+                        break
+
+            team_a_logo = logos[0] if len(logos) >= 1 else None
+            team_b_logo = logos[1] if len(logos) >= 2 else None
+            main_logo = team_a_logo or team_b_logo
 
             matches.append(ScrapedMatch(
                 sport=sport,
                 title=title,
-                start_dt=dt,
-                stream_urls=stream_links,
+                site_status=site_status,
+                start_dt=start_dt,
+                player_url=full_player_url,
                 team_a_logo=team_a_logo,
                 team_b_logo=team_b_logo,
                 logo=main_logo
             ))
 
-        log.info(f"Successfully loaded {len(matches)} matches directly from backend API!")
     except Exception as e:
-        log.error(f"Error fetching API: {e}")
+        log.error(f"Error scraping {BASE_URL}: {e}")
 
-    unique_map: dict[str, ScrapedMatch] = {}
+    # ডুপ্লিকেশন দূর করা
+    unique_matches: dict[str, ScrapedMatch] = {}
     for m in matches:
         slug = create_slug(m.title)
-        if slug in unique_map:
-            for lk in m.stream_urls:
-                if lk not in unique_map[slug].stream_urls:
-                    unique_map[slug].stream_urls.append(lk)
-        else:
-            unique_map[slug] = m
+        if slug not in unique_matches:
+            unique_matches[slug] = m
 
-    return list(unique_map.values())
-
-async def sniff_stream_with_browser(browser, embed_url: str) -> tuple[str | None, str | None]:
-    """
-    ইউনিক চ্যানেলের watch.html ওপেন করে লাইভ .m3u8 লিংক ক্যাপচার করা
-    """
-    async with BROWSER_SEMAPHORE:
-        m3u8_url = None
-        referer_header = None
-        captured_event = asyncio.Event()
-
-        target_watch_url = f"{BASE_URL}/watch.html?url={quote(embed_url, safe='')}"
-
-        context = await browser.new_context(
-            user_agent=STREAM_UA,
-            viewport={"width": 1280, "height": 720}
-        )
-        page = await context.new_page()
-
-        def check_request(request):
-            nonlocal m3u8_url, referer_header
-            url = request.url
-            if ".m3u8" in url.lower() and "flyembed" not in url.lower():
-                if not m3u8_url:
-                    log.info(f"\n==========================================")
-                    log.info(f">>> [STREAM FOUND!]: {url}")
-                    log.info(f"==========================================\n")
-                    m3u8_url = url
-                    referer_header = request.headers.get("referer") or request.headers.get("origin") or "https://ehgembxe.cfd/"
-                    captured_event.set()
-
-        page.on("request", check_request)
-        page.on("response", lambda res: check_request(res.request))
-
-        try:
-            log.info(f"Opening browser calmly for channel: {target_watch_url}")
-            await page.goto(target_watch_url, timeout=60000, wait_until="domcontentloaded")
-
-            start_wait = asyncio.get_event_loop().time()
-            max_wait_seconds = 95  # সর্বোচ্চ ৯৫ সেকেন্ড অপেক্ষা করবে (৬৮ সেকেন্ডে লিংক পেলেই বের হবে)
-
-            while not captured_event.is_set():
-                elapsed = int(asyncio.get_event_loop().time() - start_wait)
-                if elapsed >= max_wait_seconds:
-                    log.info(f"Wait limit reached for {embed_url}")
-                    break
-
-                log.info(f"[{elapsed}s/{max_wait_seconds}s] Waiting for stream: {embed_url}...")
-                try:
-                    await asyncio.wait_for(captured_event.wait(), timeout=5.0)
-                except asyncio.TimeoutError:
-                    pass
-
-        except Exception as e:
-            log.warning(f"Browser navigation notice: {e}")
-        finally:
-            await context.close()
-
-        return m3u8_url, referer_header
+    log.info(f"Scraped {len(unique_matches)} unique matches from {BASE_URL}")
+    return list(unique_matches.values())
 
 async def main():
-    log.info("Starting Pirlo TV Scraper execution with Smart Channel Caching...")
-
-    async with httpx.AsyncClient(headers={"User-Agent": STREAM_UA}, follow_redirects=True) as client:
-        matches = await fetch_pirlotv_matches(client)
+    log.info(f"Starting StreamFree Scraper execution on {BASE_URL}...")
+    async with httpx.AsyncClient(headers={"User-Agent": STREAM_UA}, follow_redirects=True, http2=True) as client:
+        matches = await scrape_streamfree_homepage(client)
         if not matches:
-            log.warning("No matches found from Pirlo TV API!")
+            log.warning("No matches found from StreamFree!")
             return
 
-    now_utc = datetime.now(timezone.utc)
+        final_playlist = []
 
-    # ১. আজকের ম্যাচগুলো নির্বাচন (বিগত ৩.৫ ঘণ্টা থেকে পরবর্তী ২৪ ঘণ্টার সব খেলা)
-    today_matches = []
-    unique_channels_to_sniff = set()
+        for m in matches:
+            start_bst = m.start_dt.astimezone(BST_TZ)
+            start_time_str = start_bst.strftime("%b %d, %Y, %I:%M %p")
+            end_time_str = (start_bst + timedelta(hours=3)).strftime("%b %d, %Y, %I:%M %p")
 
-    for m in matches:
-        time_until_start = m.start_dt.astimezone(timezone.utc) - now_utc
-        # বিগত ৩.৫ ঘণ্টা (চলমান লাইভ) থেকে পরবর্তী ২৪ ঘণ্টার (আজকের সকল খেলা)
-        is_today_match = (-timedelta(hours=3, minutes=30)) <= time_until_start <= timedelta(hours=24)
-        is_24_7_sport = any(keyword in m.title.lower() for keyword in ["f1", "formula", "motogp", "sky sports", "tnt"])
+            # প্লেয়ার পেজ ও স্ট্রিমিং ব্যাকএন্ড থেকে আসল m3u8 খোঁজা
+            stream_urls = await resolve_stream_from_player(client, m.player_url)
 
-        if is_today_match or is_24_7_sport:
-            today_matches.append(m)
-            for url in m.stream_urls:
-                if url:
-                    unique_channels_to_sniff.add(url)
+            event_channels = []
+            idx = 1
+            for m3u8_url in stream_urls:
+                # হেডার পাইপলাইন (Origin ও Referer সহ)
+                raw_link = f"{m3u8_url}|User-Agent={STREAM_UA}&Referer={SITE_REFERER}&Origin={BASE_URL}"
+                event_channels.append({
+                    "channel_name": f"Stream #{idx}",
+                    "stream_type": "HLS",
+                    "url": m3u8_url,
+                    "raw_link": raw_link,
+                    "headers": {
+                        "User-Agent": STREAM_UA,
+                        "Referer": SITE_REFERER,
+                        "Origin": BASE_URL
+                    },
+                    "drm_key": None
+                })
+                idx += 1
 
-    log.info(f"Today's matches in 24h window: {len(today_matches)} matches.")
-    log.info(f"Extracted {len(unique_channels_to_sniff)} UNIQUE live TV channels to sniff (No duplicates!).")
+            actual_status = calculate_match_status(m.start_dt, m.site_status, early_minutes=15)
+            teams_data = parse_teams(m.title, team_a_logo=m.team_a_logo, team_b_logo=m.team_b_logo)
+            primary_logo = m.team_a_logo or m.logo or m.team_b_logo
 
-    # ২. প্রতিটি ইউনিক চ্যানেল মাত্র একবার ব্রাউজারে চেক করা
-    resolved_channels: dict[str, tuple[str | None, str | None]] = {}
+            final_playlist.append({
+                "title": m.title,
+                "sport": m.sport,
+                "sub_category": m.sport,
+                "status": actual_status,
+                "is_hot": (actual_status == "LIVE"),
+                "slug": create_slug(m.title),
+                "schedule": {
+                    "timezone": "BST (UTC+6)",
+                    "start_time_bst": start_time_str,
+                    "end_time_bst": end_time_str,
+                },
+                "teams": teams_data,
+                "logo": primary_logo,
+                "channels": event_channels,
+                "_timestamp": m.start_dt.timestamp()
+            })
 
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(
-            headless=IS_CI,
-            args=[
-                "--no-sandbox",
-                "--disable-setuid-sandbox",
-                "--disable-dev-shm-usage",
-                "--autoplay-policy=no-user-gesture-required",
-                "--disable-blink-features=AutomationControlled"
-            ]
+        priority = {"LIVE": 0, "UPCOMING": 1, "ENDED": 2}
+        final_playlist.sort(key=lambda x: (priority.get(x["status"], 99), x["_timestamp"]))
+        for item in final_playlist:
+            item.pop("_timestamp", None)
+
+        # JSON সেভ
+        JSON_OUTPUT.write_text(
+            json.dumps(
+                {
+                    "last_updated": datetime.now(BST_TZ).strftime("%b %d, %Y, %I:%M %p"),
+                    "event_count": len(final_playlist),
+                    "events": {"events": final_playlist}
+                },
+                indent=2,
+                ensure_ascii=False
+            ),
+            encoding="utf-8"
         )
 
-        async def sniff_worker(channel_url: str):
-            res = await sniff_stream_with_browser(browser, channel_url)
-            resolved_channels[channel_url] = res
+        # M3U প্লেলিস্ট সেভ
+        m3u_lines = ["#EXTM3U"]
+        stream_count = 0
+        for ev in final_playlist:
+            for ch in ev.get("channels", []):
+                tvg_logo = ev["logo"] or ""
+                m3u_lines.append(f'#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="{tvg_logo}" group-title="{ev["sport"]}", {ev["title"]}')
+                m3u_lines.append(f'#EXTVLCOPT:http-referrer={SITE_REFERER}')
+                m3u_lines.append(f'#EXTVLCOPT:http-user-agent={STREAM_UA}')
+                m3u_lines.append(ch["raw_link"])
+                stream_count += 1
 
-        # সমান্তরালে ইউনিক চ্যানেলগুলো চেক করা
-        channel_tasks = [sniff_worker(url) for url in sorted(unique_channels_to_sniff)]
-        await asyncio.gather(*channel_tasks)
-        await browser.close()
+        M3U_OUTPUT.write_text("\n".join(m3u_lines) + "\n", encoding="utf-8")
 
-    # ৩. সব ম্যাচের ভেতর সংগৃহীত চ্যানেল লিংক বসিয়ে দেওয়া
-    final_playlist = []
-    total_active_streams = 0
-
-    for m in matches:
-        start_bst = m.start_dt.astimezone(BST_TZ)
-        start_time_str = start_bst.strftime("%b %d, %Y, %I:%M %p")
-        end_time_str = (start_bst + timedelta(hours=3)).strftime("%b %d, %Y, %I:%M %p")
-
-        event_channels = []
-        idx = 1
-        for url in m.stream_urls:
-            if url in resolved_channels:
-                m3u8_url, referer_used = resolved_channels[url]
-                if m3u8_url:
-                    ref = referer_used or "https://ehgembxe.cfd/"
-                    if not ref.endswith("/"):
-                        ref += "/"
-                    origin = ref.rstrip("/")
-
-                    raw_link = f"{m3u8_url}|User-Agent={STREAM_UA}&Referer={ref}&Origin={origin}"
-                    event_channels.append({
-                        "channel_name": f"Stream #{idx}",
-                        "stream_type": "HLS",
-                        "url": m3u8_url,
-                        "raw_link": raw_link,
-                        "headers": {
-                            "User-Agent": STREAM_UA,
-                            "Referer": ref,
-                            "Origin": origin
-                        },
-                        "drm_key": None
-                    })
-                    idx += 1
-                    total_active_streams += 1
-
-        has_live_stream = len(event_channels) > 0
-        actual_status = calculate_match_status(m.start_dt, has_live_stream, early_minutes=15)
-        teams_data = parse_teams(m.title, team_a_logo=m.team_a_logo, team_b_logo=m.team_b_logo)
-        primary_logo = m.team_a_logo or m.logo or m.team_b_logo
-
-        final_playlist.append({
-            "title": m.title,
-            "sport": m.sport,
-            "sub_category": m.sport,
-            "status": actual_status,
-            "is_hot": (actual_status == "LIVE"),
-            "slug": create_slug(m.title),
-            "schedule": {
-                "timezone": "BST (UTC+6)",
-                "start_time_bst": start_time_str,
-                "end_time_bst": end_time_str,
-            },
-            "teams": teams_data,
-            "logo": primary_logo,
-            "channels": event_channels,
-            "_timestamp": m.start_dt.timestamp()
-        })
-
-    # LIVE ম্যাচগুলোকে তালিকার শীর্ষে রাখা
-    priority = {"LIVE": 0, "UPCOMING": 1, "ENDED": 2}
-    final_playlist.sort(key=lambda x: (priority.get(x["status"], 99), x["_timestamp"]))
-    for item in final_playlist:
-        item.pop("_timestamp", None)
-
-    # JSON সেভ
-    JSON_OUTPUT.write_text(
-        json.dumps(
-            {
-                "last_updated": datetime.now(BST_TZ).strftime("%b %d, %Y, %I:%M %p"),
-                "event_count": len(final_playlist),
-                "events": {"events": final_playlist}
-            },
-            indent=2,
-            ensure_ascii=False
-        ),
-        encoding="utf-8"
-    )
-
-    # M3U প্লেলিস্ট সেভ
-    m3u_lines = ["#EXTM3U"]
-    stream_count = 0
-    for ev in final_playlist:
-        for ch in ev.get("channels", []):
-            tvg_logo = ev["logo"] or ""
-            ref_header = ch.get("headers", {}).get("Referer", "https://ehgembxe.cfd/")
-            m3u_lines.append(f'#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="{tvg_logo}" group-title="{ev["sport"]}", {ev["title"]}')
-            m3u_lines.append(f'#EXTVLCOPT:http-referrer={ref_header}')
-            m3u_lines.append(f'#EXTVLCOPT:http-user-agent={STREAM_UA}')
-            m3u_lines.append(ch["raw_link"])
-            stream_count += 1
-
-    M3U_OUTPUT.write_text("\n".join(m3u_lines) + "\n", encoding="utf-8")
-
-    log.info(f"Done! Successfully generated {len(final_playlist)} matches and {stream_count} active live streams in M3U.")
+        log.info(f"Done! Saved {len(final_playlist)} matches and {stream_count} active live streams in M3U.")
 
 if __name__ == "__main__":
     asyncio.run(main())
