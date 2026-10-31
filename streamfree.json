@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 01, 2026, 05:03 AM",
-  "event_count": 46,
+  "last_updated": "Nov 01, 2026, 05:08 AM",
+  "event_count": 45,
   "events": {
     "events": [
       {
@@ -122,31 +122,6 @@
           },
           "team_b": {
             "name": "Sky Sports Tennis",
-            "logo": null
-          }
-        },
-        "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Canelo vs. Mbilli",
-        "sport": "Combat",
-        "sub_category": "Combat",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "canelo-vs-mbilli",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 08:00 PM",
-          "end_time_bst": "Oct 31, 2026, 11:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Canelo vs. Mbilli",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Canelo vs. Mbilli",
             "logo": null
           }
         },
