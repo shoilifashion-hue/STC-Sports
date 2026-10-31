@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 01, 2026, 05:13 AM",
+  "last_updated": "Nov 01, 2026, 05:18 AM",
   "event_count": 42,
   "events": {
     "events": [
@@ -607,8 +607,8 @@
         "title": "Miami Hurricanes vs North Carolina Tar Heels",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "miami-hurricanes-vs-north-carolina-tar-heels",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -632,8 +632,8 @@
         "title": "Ohio State Buckeyes vs USC Trojans",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ohio-state-buckeyes-vs-usc-trojans",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -657,8 +657,8 @@
         "title": "Mississippi State Bulldogs vs Texas Longhorns",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "mississippi-state-bulldogs-vs-texas-longhorns",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -682,8 +682,8 @@
         "title": "Georgia Tech Yellow Jackets vs Pittsburgh Panthers",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "georgia-tech-yellow-jackets-vs-pittsburgh-panthers",
         "schedule": {
           "timezone": "BST (UTC+6)",
