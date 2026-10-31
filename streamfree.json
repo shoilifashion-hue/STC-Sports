@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 01, 2026, 03:23 AM",
-  "event_count": 63,
+  "last_updated": "Nov 01, 2026, 03:48 AM",
+  "event_count": 58,
   "events": {
     "events": [
       {
@@ -151,81 +151,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Kansas State Wildcats vs Colorado Buffaloes",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "kansas-state-wildcats-vs-colorado-buffaloes",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 12:00 AM",
-          "end_time_bst": "Nov 01, 2026, 03:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Kansas State Wildcats",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2306.png"
-          },
-          "team_b": {
-            "name": "Colorado Buffaloes",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2306.png",
-        "channels": []
-      },
-      {
-        "title": "Coastal Carolina Chanticleers vs Georgia State Panthers",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "coastal-carolina-chanticleers-vs-georgia-state-panthers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 12:00 AM",
-          "end_time_bst": "Nov 01, 2026, 03:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Coastal Carolina Chanticleers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/324.png"
-          },
-          "team_b": {
-            "name": "Georgia State Panthers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2247.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/324.png",
-        "channels": []
-      },
-      {
-        "title": "Portland Trail Blazers vs Utah Jazz",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "portland-trail-blazers-vs-utah-jazz",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 01:00 AM",
-          "end_time_bst": "Nov 01, 2026, 04:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Portland Trail Blazers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png"
-          },
-          "team_b": {
-            "name": "Utah Jazz",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
         "channels": []
       },
       {
@@ -551,56 +476,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2572.png",
-        "channels": []
-      },
-      {
-        "title": "Le Mans vs Troyes",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "le-mans-vs-troyes",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 01:45 AM",
-          "end_time_bst": "Nov 01, 2026, 04:45 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Le Mans",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png"
-          },
-          "team_b": {
-            "name": "Troyes",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
-        "channels": []
-      },
-      {
-        "title": "Internazionale vs AC Milan",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "internazionale-vs-ac-milan",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 01:45 AM",
-          "end_time_bst": "Nov 01, 2026, 04:45 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Internazionale",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png"
-          },
-          "team_b": {
-            "name": "AC Milan",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
         "channels": []
       },
       {
@@ -932,8 +807,8 @@
         "title": "Philadelphia 76ers vs Charlotte Hornets",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "philadelphia-76ers-vs-charlotte-hornets",
         "schedule": {
           "timezone": "BST (UTC+6)",
