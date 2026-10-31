@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 01, 2026, 01:27 AM",
-  "event_count": 84,
+  "last_updated": "Nov 01, 2026, 01:32 AM",
+  "event_count": 80,
   "events": {
     "events": [
       {
@@ -204,56 +204,6 @@
         "channels": []
       },
       {
-        "title": "Wisconsin Badgers vs Iowa Hawkeyes",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "wisconsin-badgers-vs-iowa-hawkeyes",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:00 PM",
-          "end_time_bst": "Nov 01, 2026, 01:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Wisconsin Badgers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png"
-          },
-          "team_b": {
-            "name": "Iowa Hawkeyes",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png",
-        "channels": []
-      },
-      {
-        "title": "California Golden Bears vs NC State Wolfpack",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "california-golden-bears-vs-nc-state-wolfpack",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:00 PM",
-          "end_time_bst": "Nov 01, 2026, 01:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "California Golden Bears",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/25.png"
-          },
-          "team_b": {
-            "name": "NC State Wolfpack",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/152.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/25.png",
-        "channels": []
-      },
-      {
         "title": "Boston College Eagles vs Duke Blue Devils",
         "sport": "Football",
         "sub_category": "Football",
@@ -276,31 +226,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
-        "channels": []
-      },
-      {
-        "title": "UAB Blazers vs South Florida Bulls",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "uab-blazers-vs-south-florida-bulls",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:00 PM",
-          "end_time_bst": "Nov 01, 2026, 01:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "UAB Blazers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/5.png"
-          },
-          "team_b": {
-            "name": "South Florida Bulls",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/5.png",
         "channels": []
       },
       {
@@ -426,31 +351,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/276.png",
-        "channels": []
-      },
-      {
-        "title": "Crystal Palace vs Tottenham Hotspur",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "crystal-palace-vs-tottenham-hotspur",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 11:30 PM",
-          "end_time_bst": "Nov 01, 2026, 02:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Crystal Palace",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png"
-          },
-          "team_b": {
-            "name": "Tottenham Hotspur",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
         "channels": []
       },
       {
@@ -1082,8 +982,8 @@
         "title": "Le Mans vs Troyes",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "le-mans-vs-troyes",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1107,8 +1007,8 @@
         "title": "Internazionale vs AC Milan",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "internazionale-vs-ac-milan",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1132,8 +1032,8 @@
         "title": "Utah Utes vs Cincinnati Bearcats",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "utah-utes-vs-cincinnati-bearcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1157,8 +1057,8 @@
         "title": "Virginia Cavaliers vs Wake Forest Demon Deacons",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "virginia-cavaliers-vs-wake-forest-demon-deacons",
         "schedule": {
           "timezone": "BST (UTC+6)",
