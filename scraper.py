@@ -2,11 +2,12 @@ import asyncio
 import html
 import json
 import logging
+import os
 import re
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import quote, urlsplit
 from zoneinfo import ZoneInfo
 
 import httpx
@@ -29,17 +30,20 @@ STREAM_UA = (
     "Chrome/124.0.0.0 Safari/537.36"
 )
 
-BST_TZ = ZoneInfo("Asia/Dhaka")
-BROWSER_SEMAPHORE = asyncio.Semaphore(4)
+# উইন্ডোজ ও লিনাক্স উভয়েই নির্ভরযোগ্য টাইমজোন
+try:
+    BST_TZ = ZoneInfo("Asia/Dhaka")
+except Exception:
+    BST_TZ = timezone(timedelta(hours=6))
+
+# একসাথে সর্বোচ্চ ২টি ব্রাউজার ট্যাব প্রসেস করা হবে
+BROWSER_SEMAPHORE = asyncio.Semaphore(2)
+
+# গিটহাবে ব্যাকগ্রাউন্ডে চলবে, নিজের পিসিতে ব্রাউজার স্ক্রিনে ওপেন থাকবে
+IS_CI = os.getenv("CI") == "true" or os.getenv("GITHUB_ACTIONS") == "true"
 
 logging.basicConfig(level=logging.INFO, format="[%(asctime)s] %(levelname)s: %(message)s")
 log = logging.getLogger(TAG)
-
-# যে যে অ্যান্টি-ডিবাগ ও ট্র্যাকার স্ক্রিপ্ট ব্লক করা হবে
-BLOCKED_PATTERNS = re.compile(
-    r"(disable-devtool|devtools|histats|criteo|id5-sync|ingage|google-analytics|doubleclick)",
-    re.IGNORECASE
-)
 
 @dataclass
 class ScrapedMatch:
@@ -170,66 +174,58 @@ async def fetch_pirlotv_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]
 
 async def sniff_stream_with_browser(browser, embed_url: str) -> tuple[str | None, str | None]:
     """
-    disable-devtool ও অহেতুক ট্র্যাকার ব্লক করে সরাসরি m3u8 ক্যাপচার করা
+    watch.html পেজটি ওপেন রেখে সর্বোচ্চ ২ মিনিট (১২০ সেকেন্ড) অথবা চ্যানেল চালু হওয়া পর্যন্ত অপেক্ষা করা
     """
     async with BROWSER_SEMAPHORE:
         m3u8_url = None
         referer_header = None
         captured_event = asyncio.Event()
 
+        target_watch_url = f"{BASE_URL}/watch.html?url={quote(embed_url, safe='')}"
+
         context = await browser.new_context(
             user_agent=STREAM_UA,
-            extra_http_headers={"Referer": f"{BASE_URL}/"},
             viewport={"width": 1280, "height": 720}
         )
-
-        # ১. অ্যান্টি-বট ও disable-devtool সম্পূর্ণরূপে বাইপাস করা
-        await context.add_init_script("""
-            Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
-            window.navigator.chrome = { runtime: {} };
-            window.disableDevtool = function() {};
-            window.DisableDevtool = function() {};
-        """)
-
-        # ২. disable-devtool.js ও বিজ্ঞাপনী ফাইল ব্লক (যাতে স্ক্রিপ্ট ফ্রিজ না হয়)
-        async def route_filter(route):
-            if BLOCKED_PATTERNS.search(route.request.url):
-                await route.abort()
-            else:
-                await route.continue_()
-
-        await context.route("**/*", route_filter)
-
         page = await context.new_page()
 
-        def check_url(url: str, headers: dict):
+        def check_request(request):
             nonlocal m3u8_url, referer_header
+            url = request.url
             if ".m3u8" in url.lower() and "flyembed" not in url.lower():
                 if not m3u8_url:
+                    log.info(f"\n==========================================")
+                    log.info(f">>> [STREAM FOUND!]: {url}")
+                    log.info(f"==========================================\n")
                     m3u8_url = url
-                    referer_header = headers.get("referer") or headers.get("origin") or "https://ehgembxe.cfd/"
+                    referer_header = request.headers.get("referer") or request.headers.get("origin") or "https://ehgembxe.cfd/"
                     captured_event.set()
 
-        page.on("request", lambda req: check_url(req.url, req.headers))
-        page.on("response", lambda res: check_url(res.url, res.headers))
+        page.on("request", check_request)
+        page.on("response", lambda res: check_request(res.request))
 
         try:
-            # ৩. পেজ লোড হওয়া
-            await page.goto(embed_url, timeout=8000, wait_until="domcontentloaded")
+            log.info(f"Opening browser calmly: {target_watch_url}")
+            await page.goto(target_watch_url, timeout=60000, wait_until="domcontentloaded")
 
-            # ৪. অটোপ্লে ট্রিগার করার জন্য পেজে ক্লিক
-            try:
-                await page.mouse.click(640, 360)
-            except Exception:
-                pass
+            start_wait = asyncio.get_event_loop().time()
+            max_wait_seconds = 120  # সর্বোচ্চ ২ মিনিট (১২০ সেকেন্ড) অপেক্ষা করবে
 
-            # ৫. m3u8 পাওয়ার জন্য সর্বোচ্চ ৪.৫ সেকেন্ড অপেক্ষা
-            try:
-                await asyncio.wait_for(captured_event.wait(), timeout=4.5)
-            except asyncio.TimeoutError:
-                pass
-        except Exception:
-            pass
+            while not captured_event.is_set():
+                elapsed = int(asyncio.get_event_loop().time() - start_wait)
+                if elapsed >= max_wait_seconds:
+                    log.info(f"Wait limit {max_wait_seconds}s reached for {embed_url}")
+                    break
+
+                log.info(f"[{elapsed}s/{max_wait_seconds}s] Player loading naturally on screen, waiting for stream...")
+                try:
+                    # ৫ সেকেন্ড পর পর চেক করবে, স্ট্রিম পেলে তৎক্ষণাৎ বের হয়ে যাবে
+                    await asyncio.wait_for(captured_event.wait(), timeout=5.0)
+                except asyncio.TimeoutError:
+                    pass
+
+        except Exception as e:
+            log.warning(f"Browser navigation notice: {e}")
         finally:
             await context.close()
 
@@ -268,9 +264,9 @@ async def process_match_streams(browser, match, should_sniff):
     return channels
 
 async def main():
-    log.info("Starting Pirlo TV Scraper execution with anti-bot bypass...")
+    log.info("Starting Pirlo TV Scraper execution...")
 
-    async with httpx.AsyncClient(headers={"User-Agent": STREAM_UA}, follow_redirects=True, http2=True) as client:
+    async with httpx.AsyncClient(headers={"User-Agent": STREAM_UA}, follow_redirects=True) as client:
         matches = await fetch_pirlotv_matches(client)
         if not matches:
             log.warning("No matches found from Pirlo TV API!")
@@ -278,15 +274,12 @@ async def main():
 
     now_utc = datetime.now(timezone.utc)
 
-    # ক্রোমিয়াম ব্রাউজার লঞ্চ
+    # ব্রাউজার সেশন ওপেন
     async with async_playwright() as p:
         browser = await p.chromium.launch(
-            headless=True,
+            headless=IS_CI,
             args=[
                 "--no-sandbox",
-                "--disable-setuid-sandbox",
-                "--disable-dev-shm-usage",
-                "--disable-gpu",
                 "--autoplay-policy=no-user-gesture-required",
                 "--disable-blink-features=AutomationControlled"
             ]
@@ -295,12 +288,9 @@ async def main():
         tasks = []
         sniff_targets = []
 
-        # যে ম্যাচগুলো লাইভ বা সক্রিয় সেগুলোর জন্য ব্রাউজার রান করা
         for m in matches:
             time_until_start = m.start_dt.astimezone(timezone.utc) - now_utc
             is_active_window = (-timedelta(hours=3, minutes=30)) <= time_until_start <= timedelta(minutes=60)
-
-            # ফর্মুলা ওয়ান বা ২৪/৭ স্পোর্টস চ্যানেলের ম্যাচগুলোকেও অগ্রাধিকার দেওয়া
             is_24_7_sport = any(keyword in m.title.lower() for keyword in ["f1", "formula", "motogp", "sky sports", "tnt"])
 
             if (is_active_window or is_24_7_sport) and m.stream_urls:
@@ -309,7 +299,7 @@ async def main():
             else:
                 tasks.append(process_match_streams(browser, m, False))
 
-        log.info(f"Checking streams for {len(sniff_targets)} active/live target matches: {sniff_targets}")
+        log.info(f"Checking streams for {len(sniff_targets)} active target matches: {sniff_targets}")
 
         all_channels_results = await asyncio.gather(*tasks)
         await browser.close()
@@ -348,7 +338,7 @@ async def main():
     for item in final_playlist:
         item.pop("_timestamp", None)
 
-    # JSON সেভ
+    # JSON ফাইলে সেভ করা
     JSON_OUTPUT.write_text(
         json.dumps(
             {
@@ -362,7 +352,7 @@ async def main():
         encoding="utf-8"
     )
 
-    # M3U প্লেলিস্ট সেভ
+    # M3U প্লেলিস্ট সেভ করা
     m3u_lines = ["#EXTM3U"]
     stream_count = 0
     for ev in final_playlist:
