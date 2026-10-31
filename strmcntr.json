@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 31, 2026, 07:50 PM",
+  "last_updated": "Oct 31, 2026, 08:30 PM",
   "event_count": 110,
   "events": {
     "events": [
@@ -1157,13 +1157,13 @@
         "title": "Joshua Buatsi vs. Willy Hutchinson",
         "sport": "Boxing",
         "sub_category": "Boxing",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "joshua-buatsi-vs-willy-hutchinson",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:00 AM",
-          "end_time_bst": "Oct 31, 2026, 09:00 AM"
+          "start_time_bst": "Nov 01, 2026, 06:00 AM",
+          "end_time_bst": "Nov 01, 2026, 09:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1182,13 +1182,13 @@
         "title": "Sporting Kansas City vs. FC Dallas",
         "sport": "Major League Soccer",
         "sub_category": "Major League Soccer",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "sporting-kansas-city-vs-fc-dallas",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:00 AM",
-          "end_time_bst": "Oct 31, 2026, 09:00 AM"
+          "start_time_bst": "Nov 01, 2026, 06:00 AM",
+          "end_time_bst": "Nov 01, 2026, 09:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1207,13 +1207,13 @@
         "title": "St. Louis CITY SC vs. San Diego FC",
         "sport": "Major League Soccer",
         "sub_category": "Major League Soccer",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "st-louis-city-sc-vs-san-diego-fc",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:00 AM",
-          "end_time_bst": "Oct 31, 2026, 09:00 AM"
+          "start_time_bst": "Nov 01, 2026, 06:00 AM",
+          "end_time_bst": "Nov 01, 2026, 09:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1232,13 +1232,13 @@
         "title": "Utah Jazz vs. Portland Trail Blazers",
         "sport": "National Basketball Association",
         "sub_category": "National Basketball Association",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "utah-jazz-vs-portland-trail-blazers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:00 AM",
-          "end_time_bst": "Oct 31, 2026, 09:00 AM"
+          "start_time_bst": "Nov 01, 2026, 06:00 AM",
+          "end_time_bst": "Nov 01, 2026, 09:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1257,13 +1257,13 @@
         "title": "Air Force Falcons vs. UConn Huskies",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "air-force-falcons-vs-uconn-huskies",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:00 AM",
-          "end_time_bst": "Oct 31, 2026, 09:00 AM"
+          "start_time_bst": "Nov 01, 2026, 06:00 AM",
+          "end_time_bst": "Nov 01, 2026, 09:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1282,13 +1282,13 @@
         "title": "East Carolina Pirates vs. Temple Owls",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "east-carolina-pirates-vs-temple-owls",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:00 AM",
-          "end_time_bst": "Oct 31, 2026, 09:00 AM"
+          "start_time_bst": "Nov 01, 2026, 06:00 AM",
+          "end_time_bst": "Nov 01, 2026, 09:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1307,13 +1307,13 @@
         "title": "South Alabama Jaguars vs. Louisiana Tech Bulldogs",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "south-alabama-jaguars-vs-louisiana-tech-bulldogs",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:00 AM",
-          "end_time_bst": "Oct 31, 2026, 09:00 AM"
+          "start_time_bst": "Nov 01, 2026, 06:00 AM",
+          "end_time_bst": "Nov 01, 2026, 09:00 AM"
         },
         "teams": {
           "team_a": {
@@ -1332,13 +1332,13 @@
         "title": "Louisville Cardinals vs. Stanford Cardinal",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "louisville-cardinals-vs-stanford-cardinal",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:15 AM",
-          "end_time_bst": "Oct 31, 2026, 09:15 AM"
+          "start_time_bst": "Nov 01, 2026, 06:15 AM",
+          "end_time_bst": "Nov 01, 2026, 09:15 AM"
         },
         "teams": {
           "team_a": {
