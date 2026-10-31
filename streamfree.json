@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 01, 2026, 02:27 AM",
-  "event_count": 68,
+  "last_updated": "Nov 01, 2026, 02:47 AM",
+  "event_count": 66,
   "events": {
     "events": [
       {
@@ -154,31 +154,6 @@
         "channels": []
       },
       {
-        "title": "Marshall Thundering Herd vs Old Dominion Monarchs",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "marshall-thundering-herd-vs-old-dominion-monarchs",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 11:00 PM",
-          "end_time_bst": "Nov 01, 2026, 02:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Marshall Thundering Herd",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/276.png"
-          },
-          "team_b": {
-            "name": "Old Dominion Monarchs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/295.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/276.png",
-        "channels": []
-      },
-      {
         "title": "Tampa Bay Lightning vs Nashville Predators",
         "sport": "Hockey",
         "sub_category": "Hockey",
@@ -201,31 +176,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
-        "channels": []
-      },
-      {
-        "title": "Edmonton Oilers vs New York Islanders",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "edmonton-oilers-vs-new-york-islanders",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 12:00 AM",
-          "end_time_bst": "Nov 01, 2026, 03:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Edmonton Oilers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png"
-          },
-          "team_b": {
-            "name": "New York Islanders",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
         "channels": []
       },
       {
@@ -982,8 +932,8 @@
         "title": "Austin FC vs LA Galaxy",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "austin-fc-vs-la-galaxy",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1007,8 +957,8 @@
         "title": "Real Salt Lake vs San Jose Earthquakes",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "real-salt-lake-vs-san-jose-earthquakes",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1032,8 +982,8 @@
         "title": "UFC Fight Night: Moicano vs. Nolan",
         "sport": "Combat",
         "sub_category": "Combat",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ufc-fight-night-moicano-vs-nolan",
         "schedule": {
           "timezone": "BST (UTC+6)",
