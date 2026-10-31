@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 31, 2026, 11:36 PM",
+  "last_updated": "Oct 31, 2026, 11:46 PM",
   "event_count": 89,
   "events": {
     "events": [
@@ -632,8 +632,8 @@
         "title": "D.C. United vs Columbus Crew",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "d-c-united-vs-columbus-crew",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -657,8 +657,8 @@
         "title": "Philadelphia Union vs FC Cincinnati",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "philadelphia-union-vs-fc-cincinnati",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -682,8 +682,8 @@
         "title": "CF Montréal vs New York City FC",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "cf-montréal-vs-new-york-city-fc",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -707,8 +707,8 @@
         "title": "Tampa Bay Lightning vs Nashville Predators",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "tampa-bay-lightning-vs-nashville-predators",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -732,8 +732,8 @@
         "title": "Edmonton Oilers vs New York Islanders",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "edmonton-oilers-vs-new-york-islanders",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -757,8 +757,8 @@
         "title": "Kansas State Wildcats vs Colorado Buffaloes",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "kansas-state-wildcats-vs-colorado-buffaloes",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -782,8 +782,8 @@
         "title": "Coastal Carolina Chanticleers vs Georgia State Panthers",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "coastal-carolina-chanticleers-vs-georgia-state-panthers",
         "schedule": {
           "timezone": "BST (UTC+6)",
