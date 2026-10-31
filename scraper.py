@@ -11,6 +11,7 @@ from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
 import httpx
+from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
 # রুট পাথ ও কনফিগারেশন
 ROOT_DIR = Path(__file__).resolve().parent
@@ -18,6 +19,7 @@ ROOT_DIR = Path(__file__).resolve().parent
 BASE_URL = "https://strmfree.st"
 ALT_BASE = "https://streamfree.top"
 STREAM_API = "https://strmfree.st/streams"
+SOURCES_API_TEMPLATE = "https://strmfree.st/api/v1/sources/{stream_key}"
 TAG = "STRMFREE"
 
 JSON_OUTPUT = ROOT_DIR / "streamfree.json"
@@ -42,13 +44,13 @@ class ScrapedMatch:
     sport: str
     title: str
     stream_key: str
+    category: str
     start_dt: datetime
     team_a_name: str
     team_b_name: str
     team_a_logo: str | None = None
     team_b_logo: str | None = None
     logo: str | None = None
-    player_url: str = ""
 
 def cleanup_text(text: str) -> str:
     text = text.replace('\xa0', ' ')
@@ -69,48 +71,123 @@ def calculate_match_status(start_dt: datetime, early_minutes: int = 15) -> str:
         return "UPCOMING"
     return "LIVE"
 
-def extract_m3u8_links(text: str) -> list[str]:
-    found = []
+def extract_m3u8(text: str) -> str | None:
+    """পেজের সোর্স কোড থেকে আসল টোকেনযুক্ত m3u8 লিংক এক্সট্রাক্ট করে"""
     if not text:
-        return found
+        return None
     clean_text = html.unescape(text).replace(r"\/", "/")
 
-    for m in re.findall(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/[^\s"\'<>\\]*?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text):
-        link = m.strip("\"' ")
-        if link not in found:
-            found.append(link)
+    # index.m3u8?_t=... প্যাটার্ন
+    match = re.search(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/[^\s"\'<>\\]*?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
+    if match:
+        return match.group(1).strip("\"' ")
 
-    return found
+    # Base64 ডিকোড চেক
+    for b64 in re.findall(r'atob\(["\']([A-Za-z0-9+/=]{20,})["\']\)', text):
+        try:
+            decoded = base64.b64decode(b64).decode("utf-8", errors="ignore")
+            found = extract_m3u8(decoded)
+            if found:
+                return found
+        except Exception:
+            pass
 
-async def resolve_match_streams(client: httpx.AsyncClient, stream_key: str, category: str) -> list[str]:
-    """শুধুমাত্র লাইভ ম্যাচগুলোর স্ট্রিম সোর্স ফেচ করা"""
-    async with HTTP_SEMAPHORE:
-        urls = []
+    return None
+
+async def resolve_embed_page(client: httpx.AsyncClient, embed_url: str, referer_url: str) -> str | None:
+    """যেমন: https://strmfree.st/embed/combat/canelovsmbilli1080p ফেচ করে আসল m3u8 নিয়ে আসা"""
+    try:
         headers = {
             "User-Agent": STREAM_UA,
-            "Referer": f"{BASE_URL}/",
+            "Referer": referer_url,
             "Origin": BASE_URL,
-            "Accept": "*/*"
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+        }
+        resp = await client.get(embed_url, headers=headers, follow_redirects=True, timeout=10.0)
+        if resp.status_code != 200:
+            return None
+
+        m3u8 = extract_m3u8(resp.text)
+        if m3u8:
+            return m3u8
+
+        # ভেতরের iframe চেক
+        soup = HTMLParser(resp.content)
+        iframe = soup.css_first("iframe")
+        if iframe:
+            src = iframe.attributes.get("src", "")
+            if src and not src.startswith("javascript:"):
+                inner_url = urljoin(embed_url, src)
+                resp_inner = await client.get(inner_url, headers={"User-Agent": STREAM_UA, "Referer": embed_url}, timeout=8.0)
+                if resp_inner.status_code == 200:
+                    return extract_m3u8(resp_inner.text)
+    except Exception:
+        pass
+    return None
+
+async def resolve_match_channels(client: httpx.AsyncClient, match: ScrapedMatch) -> list[dict]:
+    """
+    স্ক্রিনশটের আসল এপিআই: https://strmfree.st/api/v1/sources/{stream_key} কল করে FHD ও SD চ্যানেল তৈরি করা
+    """
+    async with HTTP_SEMAPHORE:
+        channels = []
+        sources_url = SOURCES_API_TEMPLATE.format(stream_key=match.stream_key)
+        player_referer = f"{BASE_URL}/player/{match.category}/{match.stream_key}"
+
+        headers = {
+            "User-Agent": STREAM_UA,
+            "Referer": player_referer,
+            "Origin": BASE_URL,
+            "Accept": "application/json, text/plain, */*"
         }
 
-        endpoints_to_try = [
-            f"{BASE_URL}/{stream_key}",
-            f"{BASE_URL}/player/{category}/{stream_key}",
-            f"{ALT_BASE}/player/{category}/{stream_key}"
-        ]
+        try:
+            resp = await client.get(sources_url, headers=headers, timeout=10.0)
+            if resp.status_code != 200:
+                return channels
 
-        for ep in endpoints_to_try:
-            try:
-                resp = await client.get(ep, headers=headers, follow_redirects=True, timeout=8.0)
-                if resp.status_code == 200:
-                    found = extract_m3u8_links(resp.text)
-                    if found:
-                        urls.extend(found)
-                        break
-            except Exception:
-                pass
+            data = resp.json()
+            sources_list = data.get("sources") or data.get("live_sources") or []
+            if not isinstance(sources_list, list):
+                return channels
 
-        return list(dict.fromkeys(urls))
+            # প্রতিটি সোর্স (FHD, SD) এর m3u8 বের করা
+            for s in sources_list:
+                if not isinstance(s, dict):
+                    continue
+
+                quality = s.get("quality", "Direct")
+                embed_url = s.get("url", "")
+                if not embed_url:
+                    continue
+
+                # যদি সরাসরি m3u8 লিংক থাকে
+                if ".m3u8" in embed_url:
+                    m3u8_link = embed_url
+                else:
+                    # এমবেড পেজ থেকে টোকেনযুক্ত লিঙ্ক সংগ্রহ
+                    m3u8_link = await resolve_embed_page(client, embed_url, player_referer)
+
+                if m3u8_link:
+                    raw_link = f"{m3u8_link}|User-Agent={STREAM_UA}&Referer={BASE_URL}/&Origin={BASE_URL}"
+                    channels.append({
+                        "channel_name": f"{quality} Stream",
+                        "stream_type": "HLS",
+                        "quality": quality,
+                        "url": m3u8_link,
+                        "raw_link": raw_link,
+                        "headers": {
+                            "User-Agent": STREAM_UA,
+                            "Referer": f"{BASE_URL}/",
+                            "Origin": BASE_URL
+                        },
+                        "drm_key": None
+                    })
+
+        except Exception as e:
+            log.debug(f"Error resolving sources for {match.stream_key}: {e}")
+
+        return channels
 
 async def fetch_all_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]:
     matches = []
@@ -154,20 +231,19 @@ async def fetch_all_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]:
                     team_b_name = team2.get("name") or title
                     team_a_logo = team1.get("logo")
                     team_b_logo = team2.get("logo")
-
                     main_logo = team_a_logo or team_b_logo
 
                     matches.append(ScrapedMatch(
                         sport=sport,
                         title=title,
                         stream_key=str(stream_key),
+                        category=category_name.lower(),
                         start_dt=dt,
                         team_a_name=team_a_name,
                         team_b_name=team_b_name,
                         team_a_logo=team_a_logo,
                         team_b_logo=team_b_logo,
-                        logo=main_logo,
-                        player_url=f"{BASE_URL}/player/{category_name}/{stream_key}"
+                        logo=main_logo
                     ))
 
         log.info(f"Loaded {len(matches)} matches directly from {STREAM_API}!")
@@ -185,47 +261,27 @@ async def main():
             log.warning("No matches found from StreamFree API!")
             return
 
-        final_playlist = []
-
-        # যে ম্যাচগুলো LIVE অথবা আগামী ৩০ মিনিটে শুরু হবে সেগুলোর স্ট্রিম ফেচ করা
         now_utc = datetime.now(timezone.utc)
-        live_or_soon_matches = [
+        
+        # শুধুমাত্র লাইভ অথবা শুরু হতে ১৫ মিনিট বাকি থাকা ম্যাচগুলোর সোর্স ফেচ করা
+        live_matches = [
             m for m in matches 
-            if calculate_match_status(m.start_dt, early_minutes=15) == "LIVE" 
-            or (m.start_dt - now_utc) <= timedelta(minutes=30)
+            if calculate_match_status(m.start_dt, early_minutes=15) == "LIVE"
         ]
 
-        log.info(f"Resolving streams for {len(live_or_soon_matches)} active/upcoming matches...")
-        stream_tasks = [resolve_match_streams(client, m.stream_key, m.sport.lower()) for m in live_or_soon_matches]
-        resolved_results = await asyncio.gather(*stream_tasks)
-        
-        streams_map = {m.stream_key: res for m, res in zip(live_or_soon_matches, resolved_results)}
+        log.info(f"Fetching active stream links for {len(live_matches)} LIVE matches...")
+        tasks = [resolve_match_channels(client, m) for m in live_matches]
+        resolved_results = await asyncio.gather(*tasks)
 
+        channels_map = {m.stream_key: ch for m, ch in zip(live_matches, resolved_results)}
+
+        final_playlist = []
         for m in matches:
             start_bst = m.start_dt.astimezone(BST_TZ)
             start_time_str = start_bst.strftime("%b %d, %Y, %I:%M %p")
             end_time_str = (start_bst + timedelta(hours=3)).strftime("%b %d, %Y, %I:%M %p")
 
-            stream_urls = streams_map.get(m.stream_key, [])
-
-            event_channels = []
-            idx = 1
-            for m3u8_url in stream_urls:
-                raw_link = f"{m3u8_url}|User-Agent={STREAM_UA}&Referer={BASE_URL}/&Origin={BASE_URL}"
-                event_channels.append({
-                    "channel_name": f"Stream #{idx}",
-                    "stream_type": "HLS",
-                    "url": m3u8_url,
-                    "raw_link": raw_link,
-                    "headers": {
-                        "User-Agent": STREAM_UA,
-                        "Referer": f"{BASE_URL}/",
-                        "Origin": BASE_URL
-                    },
-                    "drm_key": None
-                })
-                idx += 1
-
+            event_channels = channels_map.get(m.stream_key, [])
             actual_status = calculate_match_status(m.start_dt, early_minutes=15)
 
             teams_data = {
@@ -276,7 +332,7 @@ async def main():
         for ev in final_playlist:
             for ch in ev.get("channels", []):
                 tvg_logo = ev["logo"] or ""
-                m3u_lines.append(f'#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="{tvg_logo}" group-title="{ev["sport"]}", {ev["title"]}')
+                m3u_lines.append(f'#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="{tvg_logo}" group-title="{ev["sport"]}", {ev["title"]} | {ch["channel_name"]}')
                 m3u_lines.append(f'#EXTVLCOPT:http-referrer={BASE_URL}/')
                 m3u_lines.append(f'#EXTVLCOPT:http-user-agent={STREAM_UA}')
                 m3u_lines.append(ch["raw_link"])
@@ -284,7 +340,7 @@ async def main():
 
         M3U_OUTPUT.write_text("\n".join(m3u_lines) + "\n", encoding="utf-8")
 
-        log.info(f"Done! Saved {len(final_playlist)} matches and {stream_count} active live streams. Exiting cleanly.")
+        log.info(f"Done! Successfully generated {len(final_playlist)} matches and {stream_count} playable streams. Exiting.")
 
 if __name__ == "__main__":
     asyncio.run(main())
