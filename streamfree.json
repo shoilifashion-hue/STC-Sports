@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 01, 2026, 05:08 AM",
-  "event_count": 45,
+  "last_updated": "Nov 01, 2026, 05:13 AM",
+  "event_count": 42,
   "events": {
     "events": [
       {
@@ -204,31 +204,6 @@
         "channels": []
       },
       {
-        "title": "Northwestern Wildcats vs Oregon Ducks",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "northwestern-wildcats-vs-oregon-ducks",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 01:30 AM",
-          "end_time_bst": "Nov 01, 2026, 04:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Northwestern Wildcats",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png"
-          },
-          "team_b": {
-            "name": "Oregon Ducks",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png",
-        "channels": []
-      },
-      {
         "title": "Kansas Jayhawks vs TCU Horned Frogs",
         "sport": "Football",
         "sub_category": "Football",
@@ -251,31 +226,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png",
-        "channels": []
-      },
-      {
-        "title": "Southern Miss Golden Eagles vs UL Monroe Warhawks",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "southern-miss-golden-eagles-vs-ul-monroe-warhawks",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 01:30 AM",
-          "end_time_bst": "Nov 01, 2026, 04:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Southern Miss Golden Eagles",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2572.png"
-          },
-          "team_b": {
-            "name": "UL Monroe Warhawks",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2433.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2572.png",
         "channels": []
       },
       {
@@ -401,31 +351,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png",
-        "channels": []
-      },
-      {
-        "title": "Austin FC vs LA Galaxy",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "austin-fc-vs-la-galaxy",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 03:00 AM",
-          "end_time_bst": "Nov 01, 2026, 06:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Austin FC",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20906.png"
-          },
-          "team_b": {
-            "name": "LA Galaxy",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/187.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20906.png",
         "channels": []
       },
       {
