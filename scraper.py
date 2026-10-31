@@ -30,14 +30,17 @@ STREAM_UA = (
     "Chrome/124.0.0.0 Safari/537.36"
 )
 
-# উইন্ডোজ ও লিনাক্স উভয়েই নির্ভরযোগ্য টাইমজোন
+# টাইমজোন হ্যান্ডলিং
 try:
     BST_TZ = ZoneInfo("Asia/Dhaka")
 except Exception:
     BST_TZ = timezone(timedelta(hours=6))
 
-# একসাথে সর্বোচ্চ ২টি ব্রাউজার ট্যাব প্রসেস করা হবে
+# একসাথে সর্বোচ্চ ২টি ব্রাউজার ট্যাব সমান্তরালে চলবে
 BROWSER_SEMAPHORE = asyncio.Semaphore(2)
+
+# গিটহাবে হেডলেস ব্যাকগ্রাউন্ডে চলবে, নিজের পিসিতে ব্রাউজার স্ক্রিনে ওপেন থাকবে
+IS_CI = os.getenv("CI") == "true" or os.getenv("GITHUB_ACTIONS") == "true"
 
 logging.basicConfig(level=logging.INFO, format="[%(asctime)s] %(levelname)s: %(message)s")
 log = logging.getLogger(TAG)
@@ -171,7 +174,7 @@ async def fetch_pirlotv_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]
 
 async def sniff_stream_with_browser(browser, embed_url: str) -> tuple[str | None, str | None]:
     """
-    watch.html পেজটি ওপেন রেখে সর্বোচ্চ ২ মিনিট (১২০ সেকেন্ড) অথবা চ্যানেল চালু হওয়া পর্যন্ত অপেক্ষা করা
+    ইউনিক চ্যানেলের watch.html ওপেন করে লাইভ .m3u8 লিংক ক্যাপচার করা
     """
     async with BROWSER_SEMAPHORE:
         m3u8_url = None
@@ -202,25 +205,20 @@ async def sniff_stream_with_browser(browser, embed_url: str) -> tuple[str | None
         page.on("response", lambda res: check_request(res.request))
 
         try:
-            log.info(f"Opening browser: {target_watch_url}")
+            log.info(f"Opening browser calmly for channel: {target_watch_url}")
             await page.goto(target_watch_url, timeout=60000, wait_until="domcontentloaded")
 
-            # পেজ লোড হওয়ার পর টাইটেল লগ করা (যাতে ব্লকিং বা ক্যাপচা থাকলে ধরা পড়ে)
-            page_title = await page.title()
-            log.info(f"Loaded page: {page.url} | Title: '{page_title}'")
-
             start_wait = asyncio.get_event_loop().time()
-            max_wait_seconds = 120  # সর্বোচ্চ ২ মিনিট অপেক্ষা করবে
+            max_wait_seconds = 95  # সর্বোচ্চ ৯৫ সেকেন্ড অপেক্ষা করবে (৬৮ সেকেন্ডে লিংক পেলেই বের হবে)
 
             while not captured_event.is_set():
                 elapsed = int(asyncio.get_event_loop().time() - start_wait)
                 if elapsed >= max_wait_seconds:
-                    log.info(f"Wait limit {max_wait_seconds}s reached for {embed_url}")
+                    log.info(f"Wait limit reached for {embed_url}")
                     break
 
-                log.info(f"[{elapsed}s/{max_wait_seconds}s] Player loading naturally on screen, waiting for stream...")
+                log.info(f"[{elapsed}s/{max_wait_seconds}s] Waiting for stream: {embed_url}...")
                 try:
-                    # ৫ সেকেন্ড পর পর চেক করবে, স্ট্রিম পেলে তৎক্ষণাৎ বের হয়ে যাবে
                     await asyncio.wait_for(captured_event.wait(), timeout=5.0)
                 except asyncio.TimeoutError:
                     pass
@@ -232,40 +230,8 @@ async def sniff_stream_with_browser(browser, embed_url: str) -> tuple[str | None
 
         return m3u8_url, referer_header
 
-async def process_match_streams(browser, match, should_sniff):
-    channels = []
-    if not should_sniff or not match.stream_urls:
-        return channels
-
-    idx = 1
-    for url in match.stream_urls:
-        m3u8_url, referer_used = await sniff_stream_with_browser(browser, url)
-        if m3u8_url:
-            ref = referer_used or "https://ehgembxe.cfd/"
-            if not ref.endswith("/"):
-                ref += "/"
-            origin = ref.rstrip("/")
-
-            raw_link = f"{m3u8_url}|User-Agent={STREAM_UA}&Referer={ref}&Origin={origin}"
-            channels.append({
-                "channel_name": f"Stream #{idx}",
-                "stream_type": "HLS",
-                "url": m3u8_url,
-                "raw_link": raw_link,
-                "headers": {
-                    "User-Agent": STREAM_UA,
-                    "Referer": ref,
-                    "Origin": origin
-                },
-                "drm_key": None
-            })
-            log.info(f"[{match.title}] SUCCESS -> Captured m3u8: {m3u8_url}")
-            idx += 1
-
-    return channels
-
 async def main():
-    log.info("Starting Pirlo TV Scraper execution...")
+    log.info("Starting Pirlo TV Scraper execution with Smart Channel Caching...")
 
     async with httpx.AsyncClient(headers={"User-Agent": STREAM_UA}, follow_redirects=True) as client:
         matches = await fetch_pirlotv_matches(client)
@@ -275,10 +241,31 @@ async def main():
 
     now_utc = datetime.now(timezone.utc)
 
-    # ব্রাউজার সেশন ওপেন (xvfb ভার্চুয়াল স্ক্রিনে চলার জন্য headless=False)
+    # ১. আজকের ম্যাচগুলো নির্বাচন (বিগত ৩.৫ ঘণ্টা থেকে পরবর্তী ২৪ ঘণ্টার সব খেলা)
+    today_matches = []
+    unique_channels_to_sniff = set()
+
+    for m in matches:
+        time_until_start = m.start_dt.astimezone(timezone.utc) - now_utc
+        # বিগত ৩.৫ ঘণ্টা (চলমান লাইভ) থেকে পরবর্তী ২৪ ঘণ্টার (আজকের সকল খেলা)
+        is_today_match = (-timedelta(hours=3, minutes=30)) <= time_until_start <= timedelta(hours=24)
+        is_24_7_sport = any(keyword in m.title.lower() for keyword in ["f1", "formula", "motogp", "sky sports", "tnt"])
+
+        if is_today_match or is_24_7_sport:
+            today_matches.append(m)
+            for url in m.stream_urls:
+                if url:
+                    unique_channels_to_sniff.add(url)
+
+    log.info(f"Today's matches in 24h window: {len(today_matches)} matches.")
+    log.info(f"Extracted {len(unique_channels_to_sniff)} UNIQUE live TV channels to sniff (No duplicates!).")
+
+    # ২. প্রতিটি ইউনিক চ্যানেল মাত্র একবার ব্রাউজারে চেক করা
+    resolved_channels: dict[str, tuple[str | None, str | None]] = {}
+
     async with async_playwright() as p:
         browser = await p.chromium.launch(
-            headless=False,
+            headless=IS_CI,
             args=[
                 "--no-sandbox",
                 "--disable-setuid-sandbox",
@@ -288,30 +275,50 @@ async def main():
             ]
         )
 
-        tasks = []
-        sniff_targets = []
+        async def sniff_worker(channel_url: str):
+            res = await sniff_stream_with_browser(browser, channel_url)
+            resolved_channels[channel_url] = res
 
-        for m in matches:
-            time_until_start = m.start_dt.astimezone(timezone.utc) - now_utc
-            is_active_window = (-timedelta(hours=3, minutes=30)) <= time_until_start <= timedelta(minutes=60)
-            is_24_7_sport = any(keyword in m.title.lower() for keyword in ["f1", "formula", "motogp", "sky sports", "tnt"])
-
-            if (is_active_window or is_24_7_sport) and m.stream_urls:
-                sniff_targets.append(m.title)
-                tasks.append(process_match_streams(browser, m, True))
-            else:
-                tasks.append(process_match_streams(browser, m, False))
-
-        log.info(f"Checking streams for {len(sniff_targets)} active target matches: {sniff_targets}")
-
-        all_channels_results = await asyncio.gather(*tasks)
+        # সমান্তরালে ইউনিক চ্যানেলগুলো চেক করা
+        channel_tasks = [sniff_worker(url) for url in sorted(unique_channels_to_sniff)]
+        await asyncio.gather(*channel_tasks)
         await browser.close()
 
+    # ৩. সব ম্যাচের ভেতর সংগৃহীত চ্যানেল লিংক বসিয়ে দেওয়া
     final_playlist = []
-    for m, event_channels in zip(matches, all_channels_results):
+    total_active_streams = 0
+
+    for m in matches:
         start_bst = m.start_dt.astimezone(BST_TZ)
         start_time_str = start_bst.strftime("%b %d, %Y, %I:%M %p")
         end_time_str = (start_bst + timedelta(hours=3)).strftime("%b %d, %Y, %I:%M %p")
+
+        event_channels = []
+        idx = 1
+        for url in m.stream_urls:
+            if url in resolved_channels:
+                m3u8_url, referer_used = resolved_channels[url]
+                if m3u8_url:
+                    ref = referer_used or "https://ehgembxe.cfd/"
+                    if not ref.endswith("/"):
+                        ref += "/"
+                    origin = ref.rstrip("/")
+
+                    raw_link = f"{m3u8_url}|User-Agent={STREAM_UA}&Referer={ref}&Origin={origin}"
+                    event_channels.append({
+                        "channel_name": f"Stream #{idx}",
+                        "stream_type": "HLS",
+                        "url": m3u8_url,
+                        "raw_link": raw_link,
+                        "headers": {
+                            "User-Agent": STREAM_UA,
+                            "Referer": ref,
+                            "Origin": origin
+                        },
+                        "drm_key": None
+                    })
+                    idx += 1
+                    total_active_streams += 1
 
         has_live_stream = len(event_channels) > 0
         actual_status = calculate_match_status(m.start_dt, has_live_stream, early_minutes=15)
@@ -336,12 +343,13 @@ async def main():
             "_timestamp": m.start_dt.timestamp()
         })
 
+    # LIVE ম্যাচগুলোকে তালিকার শীর্ষে রাখা
     priority = {"LIVE": 0, "UPCOMING": 1, "ENDED": 2}
     final_playlist.sort(key=lambda x: (priority.get(x["status"], 99), x["_timestamp"]))
     for item in final_playlist:
         item.pop("_timestamp", None)
 
-    # JSON ফাইলে সেভ করা
+    # JSON সেভ
     JSON_OUTPUT.write_text(
         json.dumps(
             {
@@ -355,7 +363,7 @@ async def main():
         encoding="utf-8"
     )
 
-    # M3U প্লেলিস্ট সেভ করা
+    # M3U প্লেলিস্ট সেভ
     m3u_lines = ["#EXTM3U"]
     stream_count = 0
     for ev in final_playlist:
@@ -370,7 +378,7 @@ async def main():
 
     M3U_OUTPUT.write_text("\n".join(m3u_lines) + "\n", encoding="utf-8")
 
-    log.info(f"Done! Saved {len(final_playlist)} matches and {stream_count} active live streams in M3U.")
+    log.info(f"Done! Successfully generated {len(final_playlist)} matches and {stream_count} active live streams in M3U.")
 
 if __name__ == "__main__":
     asyncio.run(main())
