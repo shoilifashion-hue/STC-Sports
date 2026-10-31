@@ -1,33 +1,8 @@
 {
-  "last_updated": "Oct 31, 2026, 10:42 AM",
+  "last_updated": "Oct 31, 2026, 11:07 AM",
   "event_count": 31,
   "events": {
     "events": [
-      {
-        "title": "Casa Pia vs. Sporting CP",
-        "sport": "Portuguese Primeira Liga",
-        "sub_category": "Portuguese Primeira Liga",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "casa-pia-vs-sporting-cp",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 07:15 AM",
-          "end_time_bst": "Oct 31, 2026, 10:15 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Casa Pia",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21581.png"
-          },
-          "team_b": {
-            "name": "Sporting CP",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21581.png",
-        "channels": []
-      },
       {
         "title": "Vegas Golden Knights vs. New Jersey Devils",
         "sport": "NHL",
@@ -257,8 +232,8 @@
         "title": "Miami Heat vs. Indiana Pacers",
         "sport": "NBA",
         "sub_category": "NBA",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "miami-heat-vs-indiana-pacers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -282,8 +257,8 @@
         "title": "Dallas Mavericks vs. Houston Rockets",
         "sport": "NBA",
         "sub_category": "NBA",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "dallas-mavericks-vs-houston-rockets",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -307,8 +282,8 @@
         "title": "Minnesota Timberwolves vs. LA Clippers",
         "sport": "NBA",
         "sub_category": "NBA",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "minnesota-timberwolves-vs-la-clippers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -332,8 +307,8 @@
         "title": "Calgary Flames vs. Seattle Kraken",
         "sport": "NHL",
         "sub_category": "NHL",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "calgary-flames-vs-seattle-kraken",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -776,6 +751,31 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
+        "channels": []
+      },
+      {
+        "title": "Casa Pia vs. Sporting CP",
+        "sport": "Portuguese Primeira Liga",
+        "sub_category": "Portuguese Primeira Liga",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "casa-pia-vs-sporting-cp",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 07:15 AM",
+          "end_time_bst": "Oct 31, 2026, 10:15 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Casa Pia",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21581.png"
+          },
+          "team_b": {
+            "name": "Sporting CP",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21581.png",
         "channels": []
       }
     ]
