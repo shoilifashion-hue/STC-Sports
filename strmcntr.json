@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 31, 2026, 06:32 AM",
+  "last_updated": "Oct 31, 2026, 07:12 AM",
   "event_count": 31,
   "events": {
     "events": [
@@ -182,8 +182,8 @@
         "title": "Villarreal vs. Espanyol",
         "sport": "Laliga",
         "sub_category": "Laliga",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "villarreal-vs-espanyol",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -207,8 +207,8 @@
         "title": "Sheffield United vs. Wrexham",
         "sport": "England - Championship",
         "sub_category": "England - Championship",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "sheffield-united-vs-wrexham",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -232,8 +232,8 @@
         "title": "Lille vs. Lens",
         "sport": "Ligue 1",
         "sub_category": "Ligue 1",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "lille-vs-lens",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -257,8 +257,8 @@
         "title": "Casa Pia vs. Sporting CP",
         "sport": "Portuguese Primeira Liga",
         "sub_category": "Portuguese Primeira Liga",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "casa-pia-vs-sporting-cp",
         "schedule": {
           "timezone": "BST (UTC+6)",
