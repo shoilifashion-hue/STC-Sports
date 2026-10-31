@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 01, 2026, 01:47 AM",
-  "event_count": 76,
+  "last_updated": "Nov 01, 2026, 01:52 AM",
+  "event_count": 73,
   "events": {
     "events": [
       {
@@ -151,81 +151,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Arizona Wildcats vs Texas Tech Red Raiders",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "arizona-wildcats-vs-texas-tech-red-raiders",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:00 PM",
-          "end_time_bst": "Nov 01, 2026, 01:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Arizona Wildcats",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png"
-          },
-          "team_b": {
-            "name": "Texas Tech Red Raiders",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png",
-        "channels": []
-      },
-      {
-        "title": "SMU Mustangs vs Syracuse Orange",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "smu-mustangs-vs-syracuse-orange",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:00 PM",
-          "end_time_bst": "Nov 01, 2026, 01:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "SMU Mustangs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png"
-          },
-          "team_b": {
-            "name": "Syracuse Orange",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/183.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png",
-        "channels": []
-      },
-      {
-        "title": "Michigan Wolverines vs Rutgers Scarlet Knights",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "michigan-wolverines-vs-rutgers-scarlet-knights",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:30 PM",
-          "end_time_bst": "Nov 01, 2026, 01:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Michigan Wolverines",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png"
-          },
-          "team_b": {
-            "name": "Rutgers Scarlet Knights",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/164.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
         "channels": []
       },
       {
