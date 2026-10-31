@@ -1,58 +1,8 @@
 {
-  "last_updated": "Oct 31, 2026, 10:27 AM",
+  "last_updated": "Oct 31, 2026, 10:32 AM",
   "event_count": 31,
   "events": {
     "events": [
-      {
-        "title": "Villarreal vs. Espanyol",
-        "sport": "Laliga",
-        "sub_category": "Laliga",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "villarreal-vs-espanyol",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 07:00 AM",
-          "end_time_bst": "Oct 31, 2026, 10:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Villarreal",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
-          },
-          "team_b": {
-            "name": "Espanyol",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
-        "channels": []
-      },
-      {
-        "title": "Sheffield United vs. Wrexham",
-        "sport": "England - Championship",
-        "sub_category": "England - Championship",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "sheffield-united-vs-wrexham",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 07:00 AM",
-          "end_time_bst": "Oct 31, 2026, 10:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Sheffield United",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/398.png"
-          },
-          "team_b": {
-            "name": "Wrexham",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/398.png",
-        "channels": []
-      },
       {
         "title": "Lille vs. Lens",
         "sport": "Ligue 1",
@@ -776,6 +726,56 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png",
+        "channels": []
+      },
+      {
+        "title": "Villarreal vs. Espanyol",
+        "sport": "Laliga",
+        "sub_category": "Laliga",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "villarreal-vs-espanyol",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 07:00 AM",
+          "end_time_bst": "Oct 31, 2026, 10:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Villarreal",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+          },
+          "team_b": {
+            "name": "Espanyol",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+        "channels": []
+      },
+      {
+        "title": "Sheffield United vs. Wrexham",
+        "sport": "England - Championship",
+        "sub_category": "England - Championship",
+        "status": "ENDED",
+        "is_hot": false,
+        "slug": "sheffield-united-vs-wrexham",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 07:00 AM",
+          "end_time_bst": "Oct 31, 2026, 10:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Sheffield United",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/398.png"
+          },
+          "team_b": {
+            "name": "Wrexham",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/398.png",
         "channels": []
       }
     ]
