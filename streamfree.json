@@ -1,0 +1,33 @@
+{
+  "last_updated": "Oct 31, 2026, 10:56 PM",
+  "event_count": 1,
+  "events": {
+    "events": [
+      {
+        "title": "${Encodeuricomponent(Stream.Stream_Key)}",
+        "sport": "${encodeuricomponent(stream.category)}",
+        "sub_category": "${encodeuricomponent(stream.category)}",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "encodeuricomponent-stream-stream-key",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 10:56 PM",
+          "end_time_bst": "Nov 01, 2026, 01:56 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "${Encodeuricomponent(Stream.Stream_Key)}",
+            "logo": null
+          },
+          "team_b": {
+            "name": "${Encodeuricomponent(Stream.Stream_Key)}",
+            "logo": null
+          }
+        },
+        "logo": null,
+        "channels": []
+      }
+    ]
+  }
+}
