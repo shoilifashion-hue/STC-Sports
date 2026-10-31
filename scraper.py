@@ -1,17 +1,14 @@
 import asyncio
-import base64
 import html
 import json
 import logging
 import re
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
 import httpx
-from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
 # রুট পাথ ও কনফিগারেশন
 ROOT_DIR = Path(__file__).resolve().parent
@@ -20,6 +17,7 @@ BASE_URL = "https://strmfree.st"
 ALT_BASE = "https://streamfree.top"
 STREAM_API = "https://strmfree.st/streams"
 SOURCES_API_TEMPLATE = "https://strmfree.st/api/v1/sources/{stream_key}"
+GET_SERVER_TEMPLATE = "https://strmfree.st/get-stream-key/{stream_key}"
 TAG = "STRMFREE"
 
 JSON_OUTPUT = ROOT_DIR / "streamfree.json"
@@ -71,84 +69,58 @@ def calculate_match_status(start_dt: datetime, early_minutes: int = 15) -> str:
         return "UPCOMING"
     return "LIVE"
 
-def extract_m3u8(text: str, base_url: str = "") -> str | None:
-    """JW Player এবং HTML/JS থেকে টোকেনসহ m3u8 লিংক এক্সট্রাক্ট করে"""
-    if not text:
-        return None
+async def get_server_type(client: httpx.AsyncClient, stream_key: str) -> str:
+    """সাইটের window.sfFetch('/get-stream-key/' + stream_key) অনুকূল করা"""
+    try:
+        url = GET_SERVER_TEMPLATE.format(stream_key=stream_key)
+        headers = {
+            "User-Agent": STREAM_UA,
+            "Referer": f"{BASE_URL}/",
+            "Origin": BASE_URL,
+            "Accept": "application/json, text/plain, */*"
+        }
+        resp = await client.get(url, headers=headers, timeout=6.0)
+        if resp.status_code == 200:
+            data = resp.json()
+            return data.get("server_name") or "externalcdn"
+    except Exception:
+        pass
+    return "externalcdn"
 
-    clean_text = html.unescape(text).replace(r"\/", "/")
-
-    # ১. JW Player এর file / source প্যারামিটার
-    jw_match = re.search(r'(?:file|source|src)\s*:\s*["\'](https?://[^"\']+\.m3u8(?:\?[^"\']*)?)["\']', clean_text, re.IGNORECASE)
-    if jw_match:
-        return jw_match.group(1).strip("\"' ")
-
-    # ২. live-externalcdn সরাসরি প্যাটার্ন (স্ক্রিনশটের URL)
-    cdn_match = re.search(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/live-externalcdn/[^\s"\'<>\\]*?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
-    if cdn_match:
-        return cdn_match.group(1).strip("\"' ")
-
-    # ৩. যেকোনো index.m3u8 লিংক (টোকেনসহ)
-    index_match = re.search(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/[^\s"\'<>\\]*?index\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
-    if index_match:
-        return index_match.group(1).strip("\"' ")
-
-    # ৪. রিলেটিভ লিংক থাকলে (/live-externalcdn/.../index.m3u8)
-    rel_match = re.search(r'["\'](/live-externalcdn/[^"\'\s]+\.m3u8(?:\?[^"\'\s]*)?)["\']', clean_text)
-    if rel_match and base_url:
-        return urljoin(base_url, rel_match.group(1)).strip("\"' ")
-
-    # ৫. সাধারণ m3u8 প্যাটার্ন
-    generic_match = re.search(r'(https?://[a-zA-Z0-9_\-\.]+(?::\d+)?/[^\s"\'<>\\]+?\.m3u8(?:\?[^\s"\'<>\\]+)?)', clean_text)
-    if generic_match:
-        return generic_match.group(1).strip("\"' ")
-
-    # ৬. Base64 atob() ডিকোড
-    for b64 in re.findall(r'atob\(["\']([A-Za-z0-9+/=]{20,})["\']\)', text):
-        try:
-            decoded = base64.b64decode(b64).decode("utf-8", errors="ignore")
-            found = extract_m3u8(decoded, base_url)
-            if found:
-                return found
-        except Exception:
-            pass
-
-    return None
-
-async def resolve_embed_page(client: httpx.AsyncClient, embed_url: str, referer_url: str) -> str | None:
-    """যেমন: https://strmfree.st/embed/combat/canelovsmbilli1080p ফেচ করে আসল m3u8 নিয়ে আসা"""
+async def resolve_embed_tokens(client: httpx.AsyncClient, embed_url: str) -> dict:
+    """এমবেড পেজ থেকে const _0x = {...} টোকেন ডিকশনারি ও VARIANT বের করে"""
+    tokens = {}
+    variant = ""
     try:
         headers = {
             "User-Agent": STREAM_UA,
-            "Referer": referer_url,
+            "Referer": f"{BASE_URL}/",
             "Origin": BASE_URL,
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
         }
-        resp = await client.get(embed_url, headers=headers, follow_redirects=True, timeout=10.0)
-        if resp.status_code != 200:
-            return None
+        resp = await client.get(embed_url, headers=headers, follow_redirects=True, timeout=8.0)
+        if resp.status_code == 200:
+            html_text = resp.text
 
-        m3u8 = extract_m3u8(resp.text, base_url=str(resp.url))
-        if m3u8:
-            return m3u8
+            # VARIANT খোঁজা (যেমন: const VARIANT = 'canelovsmbilli' + QUALITY + ...)
+            v_match = re.search(r"const\s+VARIANT\s*=\s*['\"]([^'\"]+)['\"]", html_text)
+            if v_match:
+                variant = v_match.group(1)
 
-        # ভেতরে iframe থাকলে তা ফেচ করা
-        soup = HTMLParser(resp.content)
-        iframe = soup.css_first("iframe")
-        if iframe:
-            src = iframe.attributes.get("src", "")
-            if src and not src.startswith("javascript:"):
-                inner_url = urljoin(embed_url, src)
-                resp_inner = await client.get(inner_url, headers={"User-Agent": STREAM_UA, "Referer": embed_url}, timeout=8.0)
-                if resp_inner.status_code == 200:
-                    return extract_m3u8(resp_inner.text, base_url=inner_url)
+            # _0x টোকেন অবজেক্ট পার্স করা (স্ক্রিনশটের লাইন ১৪৪)
+            # const _0x = {"1080p": {"_e": ..., "_n": ..., "_t": ...}, ...};
+            match_0x = re.search(r"const\s+_0x\s*=\s*(\{.*?\});", html_text)
+            if match_0x:
+                tokens = json.loads(match_0x.group(1))
     except Exception as e:
-        log.debug(f"Error fetching embed page {embed_url}: {e}")
-    return None
+        log.debug(f"Error parsing embed tokens from {embed_url}: {e}")
+
+    return {"tokens": tokens, "variant": variant}
 
 async def resolve_match_channels(client: httpx.AsyncClient, match: ScrapedMatch) -> list[dict]:
     """
-    https://strmfree.st/api/v1/sources/{stream_key} কল করে FHD ও SD চ্যানেল তৈরি করা
+    স্ক্রিনশটের আসল জাভাস্ক্রিপ্ট সূত্রের হুবহু পাইথন বাস্তবায়ন:
+    /live-externalcdn/{VARIANT}/index.m3u8?_t={_t}&_e={_e}&_n={_n}
     """
     async with HTTP_SEMAPHORE:
         channels = []
@@ -163,7 +135,7 @@ async def resolve_match_channels(client: httpx.AsyncClient, match: ScrapedMatch)
         }
 
         try:
-            resp = await client.get(sources_url, headers=headers, timeout=10.0)
+            resp = await client.get(sources_url, headers=headers, timeout=8.0)
             if resp.status_code != 200:
                 return channels
 
@@ -172,22 +144,41 @@ async def resolve_match_channels(client: httpx.AsyncClient, match: ScrapedMatch)
             if not isinstance(sources_list, list):
                 return channels
 
+            # সার্ভার নেম সংগ্রহ (যেমন: externalcdn)
+            server_name = await get_server_type(client, match.stream_key)
+
             for s in sources_list:
                 if not isinstance(s, dict):
                     continue
 
-                quality = s.get("quality", "Direct")
+                quality = s.get("quality", "FHD")
                 embed_url = s.get("url", "")
                 if not embed_url:
                     continue
 
-                if ".m3u8" in embed_url:
-                    m3u8_link = embed_url
-                else:
-                    m3u8_link = await resolve_embed_page(client, embed_url, player_referer)
+                # কোয়ালিটি কী তৈরি (যেমন: 1080p বা 540p)
+                q_key = "1080p" if "1080" in embed_url or quality.upper() == "FHD" else "540p"
+                
+                # এমবেড পেজ থেকে টোকেন সংগ্রহ
+                embed_data = await resolve_embed_tokens(client, embed_url)
+                tokens_dict = embed_data.get("tokens", {})
+                variant = embed_data.get("variant") or f"{match.stream_key}{q_key}"
 
-                if m3u8_link:
-                    # স্ক্রিনশট অনুযায়ী Referer: embed_url এবং Origin: BASE_URL
+                # টোকেন প্যারামিটার (_t, _e, _n)
+                p = tokens_dict.get(q_key) or tokens_dict.get("1080p") or tokens_dict.get("540p")
+                
+                if p and isinstance(p, dict):
+                    # সাইটের লাইন ১৬৮-১৭৭ এর হুবহু সূত্র
+                    if server_name == 'externalcdn':
+                        path = f"/live-externalcdn/{variant}/index.m3u8"
+                    elif server_name != 'origin':
+                        path = f"/live-cdn/{variant}/index.m3u8"
+                    else:
+                        path = f"/live/{variant}/index.m3u8"
+
+                    query = f"?_t={p.get('_t')}&_e={p.get('_e')}&_n={p.get('_n')}"
+                    m3u8_link = f"{BASE_URL}{path}{query}"
+
                     raw_link = f"{m3u8_link}|User-Agent={STREAM_UA}&Referer={embed_url}&Origin={BASE_URL}"
                     channels.append({
                         "channel_name": f"{quality} Stream",
@@ -204,7 +195,7 @@ async def resolve_match_channels(client: httpx.AsyncClient, match: ScrapedMatch)
                     })
 
         except Exception as e:
-            log.debug(f"Error resolving sources for {match.stream_key}: {e}")
+            log.debug(f"Error building channels for {match.stream_key}: {e}")
 
         return channels
 
@@ -280,13 +271,12 @@ async def main():
             log.warning("No matches found from StreamFree API!")
             return
 
-        # লাইভ ম্যাচগুলোর জন্য সোর্স ফেচ করা
         live_matches = [
             m for m in matches 
             if calculate_match_status(m.start_dt, early_minutes=15) == "LIVE"
         ]
 
-        log.info(f"Fetching active stream links for {len(live_matches)} LIVE matches...")
+        log.info(f"Building active stream links for {len(live_matches)} LIVE matches...")
         tasks = [resolve_match_channels(client, m) for m in live_matches]
         resolved_results = await asyncio.gather(*tasks)
 
@@ -329,7 +319,7 @@ async def main():
         for item in final_playlist:
             item.pop("_timestamp", None)
 
-        # JSON ফাইল সেভ
+        # ১. JSON ফাইল সেভ
         JSON_OUTPUT.write_text(
             json.dumps(
                 {
@@ -343,7 +333,7 @@ async def main():
             encoding="utf-8"
         )
 
-        # M3U প্লেলিস্ট সেভ
+        # ২. M3U প্লেলিস্ট সেভ
         m3u_lines = ["#EXTM3U"]
         stream_count = 0
         for ev in final_playlist:
