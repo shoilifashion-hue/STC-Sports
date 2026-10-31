@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 01, 2026, 01:32 AM",
-  "event_count": 80,
+  "last_updated": "Nov 01, 2026, 01:42 AM",
+  "event_count": 76,
   "events": {
     "events": [
       {
@@ -204,31 +204,6 @@
         "channels": []
       },
       {
-        "title": "Boston College Eagles vs Duke Blue Devils",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "boston-college-eagles-vs-duke-blue-devils",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 10:00 PM",
-          "end_time_bst": "Nov 01, 2026, 01:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Boston College Eagles",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png"
-          },
-          "team_b": {
-            "name": "Duke Blue Devils",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
-        "channels": []
-      },
-      {
         "title": "Michigan Wolverines vs Rutgers Scarlet Knights",
         "sport": "Football",
         "sub_category": "Football",
@@ -304,31 +279,6 @@
         "channels": []
       },
       {
-        "title": "St. Louis Blues vs Detroit Red Wings",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "st-louis-blues-vs-detroit-red-wings",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 11:00 PM",
-          "end_time_bst": "Nov 01, 2026, 02:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "St. Louis Blues",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/stl.png"
-          },
-          "team_b": {
-            "name": "Detroit Red Wings",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/stl.png",
-        "channels": []
-      },
-      {
         "title": "Marshall Thundering Herd vs Old Dominion Monarchs",
         "sport": "Football",
         "sub_category": "Football",
@@ -351,56 +301,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/276.png",
-        "channels": []
-      },
-      {
-        "title": "Málaga vs Real Betis",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "málaga-vs-real-betis",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 11:30 PM",
-          "end_time_bst": "Nov 01, 2026, 02:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Málaga",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png"
-          },
-          "team_b": {
-            "name": "Real Betis",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
-        "channels": []
-      },
-      {
-        "title": "Borussia Dortmund vs Bayern Munich",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "borussia-dortmund-vs-bayern-munich",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 11:30 PM",
-          "end_time_bst": "Nov 01, 2026, 02:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Borussia Dortmund",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png"
-          },
-          "team_b": {
-            "name": "Bayern Munich",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
         "channels": []
       },
       {
