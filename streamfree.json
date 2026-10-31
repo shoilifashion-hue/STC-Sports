@@ -1,5 +1,5 @@
 {
-  "last_updated": "Oct 31, 2026, 11:58 PM",
+  "last_updated": "Nov 01, 2026, 12:47 AM",
   "event_count": 89,
   "events": {
     "events": [
@@ -807,8 +807,8 @@
         "title": "FC Dallas vs Sporting Kansas City",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "fc-dallas-vs-sporting-kansas-city",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -832,8 +832,8 @@
         "title": "San Diego FC vs St. Louis CITY SC",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "san-diego-fc-vs-st-louis-city-sc",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -857,8 +857,8 @@
         "title": "Portland Trail Blazers vs Utah Jazz",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "portland-trail-blazers-vs-utah-jazz",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -882,8 +882,8 @@
         "title": "UConn Huskies vs Air Force Falcons",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "uconn-huskies-vs-air-force-falcons",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -907,8 +907,8 @@
         "title": "Temple Owls vs East Carolina Pirates",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "temple-owls-vs-east-carolina-pirates",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -932,8 +932,8 @@
         "title": "Louisiana Tech Bulldogs vs South Alabama Jaguars",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "louisiana-tech-bulldogs-vs-south-alabama-jaguars",
         "schedule": {
           "timezone": "BST (UTC+6)",
