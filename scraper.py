@@ -26,14 +26,20 @@ CACHE_DIR.mkdir(parents=True, exist_ok=True)
 STREAM_UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/111.0.0.0 Safari/537.36"
+    "Chrome/124.0.0.0 Safari/537.36"
 )
 
 BST_TZ = ZoneInfo("Asia/Dhaka")
-BROWSER_SEMAPHORE = asyncio.Semaphore(3)
+BROWSER_SEMAPHORE = asyncio.Semaphore(4)
 
 logging.basicConfig(level=logging.INFO, format="[%(asctime)s] %(levelname)s: %(message)s")
 log = logging.getLogger(TAG)
+
+# যে যে অ্যান্টি-ডিবাগ ও ট্র্যাকার স্ক্রিপ্ট ব্লক করা হবে
+BLOCKED_PATTERNS = re.compile(
+    r"(disable-devtool|devtools|histats|criteo|id5-sync|ingage|google-analytics|doubleclick)",
+    re.IGNORECASE
+)
 
 @dataclass
 class ScrapedMatch:
@@ -164,7 +170,7 @@ async def fetch_pirlotv_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]
 
 async def sniff_stream_with_browser(browser, embed_url: str) -> tuple[str | None, str | None]:
     """
-    JW Player অটোপ্লে এবং ক্লিক ইন্টারঅ্যাকশনসহ ফাস্ট m3u8 ক্যাপচার
+    disable-devtool ও অহেতুক ট্র্যাকার ব্লক করে সরাসরি m3u8 ক্যাপচার করা
     """
     async with BROWSER_SEMAPHORE:
         m3u8_url = None
@@ -176,55 +182,54 @@ async def sniff_stream_with_browser(browser, embed_url: str) -> tuple[str | None
             extra_http_headers={"Referer": f"{BASE_URL}/"},
             viewport={"width": 1280, "height": 720}
         )
+
+        # ১. অ্যান্টি-বট ও disable-devtool সম্পূর্ণরূপে বাইপাস করা
+        await context.add_init_script("""
+            Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+            window.navigator.chrome = { runtime: {} };
+            window.disableDevtool = function() {};
+            window.DisableDevtool = function() {};
+        """)
+
+        # ২. disable-devtool.js ও বিজ্ঞাপনী ফাইল ব্লক (যাতে স্ক্রিপ্ট ফ্রিজ না হয়)
+        async def route_filter(route):
+            if BLOCKED_PATTERNS.search(route.request.url):
+                await route.abort()
+            else:
+                await route.continue_()
+
+        await context.route("**/*", route_filter)
+
         page = await context.new_page()
 
-        # নেটওয়ার্ক রিকোয়েস্ট থেকে m3u8 ধরা
         def check_url(url: str, headers: dict):
             nonlocal m3u8_url, referer_header
-            # flyembed নিজস্ব ইউআরএল ছাড়া আসল m3u8 খোঁজা
-            if ".m3u8" in url and "flyembed" not in url:
+            if ".m3u8" in url.lower() and "flyembed" not in url.lower():
                 if not m3u8_url:
                     m3u8_url = url
-                    referer_header = headers.get("referer") or headers.get("origin")
+                    referer_header = headers.get("referer") or headers.get("origin") or "https://ehgembxe.cfd/"
                     captured_event.set()
 
-        async def handle_request(request):
-            check_url(request.url, request.headers)
-
-        async def handle_response(response):
-            check_url(response.url, response.headers)
-
-        page.on("request", handle_request)
-        page.on("response", handle_response)
+        page.on("request", lambda req: check_url(req.url, req.headers))
+        page.on("response", lambda res: check_url(res.url, res.headers))
 
         try:
-            # ১. পেজ লোড হওয়া
-            await page.goto(embed_url, timeout=9000, wait_until="domcontentloaded")
+            # ৩. পেজ লোড হওয়া
+            await page.goto(embed_url, timeout=8000, wait_until="domcontentloaded")
 
-            # ২. JW Player এর ওপর স্বয়ংক্রিয় ক্লিক করা (যাতে অটোপ্লে শুরু হয়)
+            # ৪. অটোপ্লে ট্রিগার করার জন্য পেজে ক্লিক
             try:
-                # পেজের সব আইফ্রেমের ভেতরে প্লেয়ার খোঁজা
-                for frame in page.frames:
-                    try:
-                        # প্লে বাটনে ক্লিক
-                        play_btn = await frame.query_selector(".jw-display-icon-display, .jw-preview, video, #player, .play-button")
-                        if play_btn:
-                            await play_btn.click(timeout=1500)
-                            break
-                    except Exception:
-                        pass
-                # মূল পেজেও ক্লিক ট্রাই করা
-                await page.click("body", timeout=1000)
+                await page.mouse.click(640, 360)
             except Exception:
                 pass
 
-            # ৩. m3u8 পাওয়ার জন্য সর্বোচ্চ ৫ সেকেন্ড অপেক্ষা
+            # ৫. m3u8 পাওয়ার জন্য সর্বোচ্চ ৪.৫ সেকেন্ড অপেক্ষা
             try:
-                await asyncio.wait_for(captured_event.wait(), timeout=5.0)
+                await asyncio.wait_for(captured_event.wait(), timeout=4.5)
             except asyncio.TimeoutError:
                 pass
-        except Exception as e:
-            log.debug(f"Browser navigation note for {embed_url}: {e}")
+        except Exception:
+            pass
         finally:
             await context.close()
 
@@ -263,7 +268,7 @@ async def process_match_streams(browser, match, should_sniff):
     return channels
 
 async def main():
-    log.info("Starting Pirlo TV Scraper execution with fast Playwright engine...")
+    log.info("Starting Pirlo TV Scraper execution with anti-bot bypass...")
 
     async with httpx.AsyncClient(headers={"User-Agent": STREAM_UA}, follow_redirects=True, http2=True) as client:
         matches = await fetch_pirlotv_matches(client)
@@ -273,7 +278,7 @@ async def main():
 
     now_utc = datetime.now(timezone.utc)
 
-    # ক্রোম চালু করার সময় Autoplay Policy সম্পূর্ণ আনলক করা হয়েছে
+    # ক্রোমিয়াম ব্রাউজার লঞ্চ
     async with async_playwright() as p:
         browser = await p.chromium.launch(
             headless=True,
@@ -282,26 +287,29 @@ async def main():
                 "--disable-setuid-sandbox",
                 "--disable-dev-shm-usage",
                 "--disable-gpu",
-                "--autoplay-policy=no-user-gesture-required",  # ভিডিও সাথে সাথে চালু করার ফ্ল্যাগ
-                "--disable-web-security"
+                "--autoplay-policy=no-user-gesture-required",
+                "--disable-blink-features=AutomationControlled"
             ]
         )
 
         tasks = []
         sniff_targets = []
 
+        # যে ম্যাচগুলো লাইভ বা সক্রিয় সেগুলোর জন্য ব্রাউজার রান করা
         for m in matches:
             time_until_start = m.start_dt.astimezone(timezone.utc) - now_utc
-            # লাইভ অথবা আগামী ১ ঘণ্টার ম্যাচ ফিল্টার
             is_active_window = (-timedelta(hours=3, minutes=30)) <= time_until_start <= timedelta(minutes=60)
 
-            if is_active_window and m.stream_urls:
+            # ফর্মুলা ওয়ান বা ২৪/৭ স্পোর্টস চ্যানেলের ম্যাচগুলোকেও অগ্রাধিকার দেওয়া
+            is_24_7_sport = any(keyword in m.title.lower() for keyword in ["f1", "formula", "motogp", "sky sports", "tnt"])
+
+            if (is_active_window or is_24_7_sport) and m.stream_urls:
                 sniff_targets.append(m.title)
                 tasks.append(process_match_streams(browser, m, True))
             else:
                 tasks.append(process_match_streams(browser, m, False))
 
-        log.info(f"Targeting {len(sniff_targets)} active/live matches for stream capture: {sniff_targets}")
+        log.info(f"Checking streams for {len(sniff_targets)} active/live target matches: {sniff_targets}")
 
         all_channels_results = await asyncio.gather(*tasks)
         await browser.close()
@@ -369,7 +377,7 @@ async def main():
 
     M3U_OUTPUT.write_text("\n".join(m3u_lines) + "\n", encoding="utf-8")
 
-    log.info(f"Done! Successfully generated {len(final_playlist)} matches and {stream_count} active live streams in M3U.")
+    log.info(f"Done! Saved {len(final_playlist)} matches and {stream_count} active live streams in M3U.")
 
 if __name__ == "__main__":
     asyncio.run(main())
