@@ -1,1 +1,13 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gyHzl7LndJz-cy4j0SjhrBxNRKa-ZnDCuGnURhPqmY5TSt9tGhnAo50Q&s=10" group-title="Moto GP", Moto GP vs. Tnt 2 UK
+#EXTVLCOPT:http-referrer=https://ehgembxe.cfd/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+https://tims-001.sytes.net/main/secure/5e585b7fa82127a326c407a447b80cb8f00716d4d41557c61d1bf9c92109598b/1793467074/tntsports2-uk.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36&Referer=https://ehgembxe.cfd/&Origin=https://ehgembxe.cfd
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10" group-title="Formula 1", Mexico City Grand Prix vs. Sky F1 UK
+#EXTVLCOPT:http-referrer=https://ehgembxe.cfd/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+https://tims-001.sytes.net/main/secure/9c979caa10c6630f4d29e3481611157b058e532366f2798e2a10d21ecdf5d84d/1793467072/skysportsf1-uk.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36&Referer=https://ehgembxe.cfd/&Origin=https://ehgembxe.cfd
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10" group-title="Formula 1", Mexico City Grand Prix vs. Dazn f1 Spain
+#EXTVLCOPT:http-referrer=https://ehgembxe.cfd/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+https://tims-001.sytes.net/main/secure/883b4953006e20738f82059d9805689e8d362004fbf60aa03ec8932328abab12/1793467071/daznf1.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36&Referer=https://ehgembxe.cfd/&Origin=https://ehgembxe.cfd

@@ -1,8 +1,122 @@
 {
-  "last_updated": "Oct 31, 2026, 08:37 PM",
+  "last_updated": "Oct 31, 2026, 08:47 PM",
   "event_count": 110,
   "events": {
     "events": [
+      {
+        "title": "Moto GP vs. Tnt 2 UK",
+        "sport": "Moto GP",
+        "sub_category": "Moto GP",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "moto-gp-vs-tnt-2-uk",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Oct 31, 2026, 04:00 PM",
+          "end_time_bst": "Oct 31, 2026, 07:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Moto GP",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gyHzl7LndJz-cy4j0SjhrBxNRKa-ZnDCuGnURhPqmY5TSt9tGhnAo50Q&s=10"
+          },
+          "team_b": {
+            "name": "Tnt 2 UK",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gyHzl7LndJz-cy4j0SjhrBxNRKa-ZnDCuGnURhPqmY5TSt9tGhnAo50Q&s=10"
+          }
+        },
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gyHzl7LndJz-cy4j0SjhrBxNRKa-ZnDCuGnURhPqmY5TSt9tGhnAo50Q&s=10",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://tims-001.sytes.net/main/secure/5e585b7fa82127a326c407a447b80cb8f00716d4d41557c61d1bf9c92109598b/1793467074/tntsports2-uk.m3u8",
+            "raw_link": "https://tims-001.sytes.net/main/secure/5e585b7fa82127a326c407a447b80cb8f00716d4d41557c61d1bf9c92109598b/1793467074/tntsports2-uk.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36&Referer=https://ehgembxe.cfd/&Origin=https://ehgembxe.cfd",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+              "Referer": "https://ehgembxe.cfd/",
+              "Origin": "https://ehgembxe.cfd"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Mexico City Grand Prix vs. Sky F1 UK",
+        "sport": "Formula 1",
+        "sub_category": "Formula 1",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "mexico-city-grand-prix-vs-sky-f1-uk",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 01, 2026, 04:30 AM",
+          "end_time_bst": "Nov 01, 2026, 07:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Mexico City Grand Prix",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10"
+          },
+          "team_b": {
+            "name": "Sky F1 UK",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10"
+          }
+        },
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://tims-001.sytes.net/main/secure/9c979caa10c6630f4d29e3481611157b058e532366f2798e2a10d21ecdf5d84d/1793467072/skysportsf1-uk.m3u8",
+            "raw_link": "https://tims-001.sytes.net/main/secure/9c979caa10c6630f4d29e3481611157b058e532366f2798e2a10d21ecdf5d84d/1793467072/skysportsf1-uk.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36&Referer=https://ehgembxe.cfd/&Origin=https://ehgembxe.cfd",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+              "Referer": "https://ehgembxe.cfd/",
+              "Origin": "https://ehgembxe.cfd"
+            },
+            "drm_key": null
+          }
+        ]
+      },
+      {
+        "title": "Mexico City Grand Prix vs. Dazn f1 Spain",
+        "sport": "Formula 1",
+        "sub_category": "Formula 1",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "mexico-city-grand-prix-vs-dazn-f1-spain",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 01, 2026, 04:30 AM",
+          "end_time_bst": "Nov 01, 2026, 07:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Mexico City Grand Prix",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10"
+          },
+          "team_b": {
+            "name": "Dazn f1 Spain",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10"
+          }
+        },
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10",
+        "channels": [
+          {
+            "channel_name": "Stream #1",
+            "stream_type": "HLS",
+            "url": "https://tims-001.sytes.net/main/secure/883b4953006e20738f82059d9805689e8d362004fbf60aa03ec8932328abab12/1793467071/daznf1.m3u8",
+            "raw_link": "https://tims-001.sytes.net/main/secure/883b4953006e20738f82059d9805689e8d362004fbf60aa03ec8932328abab12/1793467071/daznf1.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36&Referer=https://ehgembxe.cfd/&Origin=https://ehgembxe.cfd",
+            "headers": {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+              "Referer": "https://ehgembxe.cfd/",
+              "Origin": "https://ehgembxe.cfd"
+            },
+            "drm_key": null
+          }
+        ]
+      },
       {
         "title": "Chelsea vs. Manchester United",
         "sport": "English Premier League",
@@ -804,56 +918,6 @@
         "channels": []
       },
       {
-        "title": "Mexico City Grand Prix vs. Sky F1 UK",
-        "sport": "Formula 1",
-        "sub_category": "Formula 1",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "mexico-city-grand-prix-vs-sky-f1-uk",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 04:30 AM",
-          "end_time_bst": "Nov 01, 2026, 07:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Mexico City Grand Prix",
-            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10"
-          },
-          "team_b": {
-            "name": "Sky F1 UK",
-            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10"
-          }
-        },
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10",
-        "channels": []
-      },
-      {
-        "title": "Mexico City Grand Prix vs. Dazn f1 Spain",
-        "sport": "Formula 1",
-        "sub_category": "Formula 1",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "mexico-city-grand-prix-vs-dazn-f1-spain",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 04:30 AM",
-          "end_time_bst": "Nov 01, 2026, 07:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Mexico City Grand Prix",
-            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10"
-          },
-          "team_b": {
-            "name": "Dazn f1 Spain",
-            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10"
-          }
-        },
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRui-_0fwirj7p8leovjjAlR3zR_wYuCxIFDRwCGU8hg&s=10",
-        "channels": []
-      },
-      {
         "title": "Mexico City Grand Prix vs. Sky 1 NZ",
         "sport": "Formula 1",
         "sub_category": "Formula 1",
@@ -1582,13 +1646,13 @@
         "title": "AC Milan vs. Internazionale",
         "sport": "Italian Serie A",
         "sub_category": "Italian Serie A",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "ac-milan-vs-internazionale",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:45 AM",
-          "end_time_bst": "Oct 31, 2026, 09:45 AM"
+          "start_time_bst": "Nov 01, 2026, 06:45 AM",
+          "end_time_bst": "Nov 01, 2026, 09:45 AM"
         },
         "teams": {
           "team_a": {
@@ -1607,13 +1671,13 @@
         "title": "Troyes vs. Le Mans",
         "sport": "Ligue 1",
         "sub_category": "Ligue 1",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "troyes-vs-le-mans",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:45 AM",
-          "end_time_bst": "Oct 31, 2026, 09:45 AM"
+          "start_time_bst": "Nov 01, 2026, 06:45 AM",
+          "end_time_bst": "Nov 01, 2026, 09:45 AM"
         },
         "teams": {
           "team_a": {
@@ -1632,13 +1696,13 @@
         "title": "Cincinnati Bearcats vs. Utah Utes",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "cincinnati-bearcats-vs-utah-utes",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:45 AM",
-          "end_time_bst": "Oct 31, 2026, 09:45 AM"
+          "start_time_bst": "Nov 01, 2026, 06:45 AM",
+          "end_time_bst": "Nov 01, 2026, 09:45 AM"
         },
         "teams": {
           "team_a": {
@@ -1657,13 +1721,13 @@
         "title": "Wake Forest Demon Deacons vs. Virginia Cavaliers",
         "sport": "NCAA - Football",
         "sub_category": "NCAA - Football",
-        "status": "ENDED",
+        "status": "UPCOMING",
         "is_hot": false,
         "slug": "wake-forest-demon-deacons-vs-virginia-cavaliers",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 06:45 AM",
-          "end_time_bst": "Oct 31, 2026, 09:45 AM"
+          "start_time_bst": "Nov 01, 2026, 06:45 AM",
+          "end_time_bst": "Nov 01, 2026, 09:45 AM"
         },
         "teams": {
           "team_a": {
@@ -2726,31 +2790,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/227.png",
-        "channels": []
-      },
-      {
-        "title": "Moto GP vs. Tnt 2 UK",
-        "sport": "Moto GP",
-        "sub_category": "Moto GP",
-        "status": "ENDED",
-        "is_hot": false,
-        "slug": "moto-gp-vs-tnt-2-uk",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Oct 31, 2026, 04:00 PM",
-          "end_time_bst": "Oct 31, 2026, 07:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Moto GP",
-            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gyHzl7LndJz-cy4j0SjhrBxNRKa-ZnDCuGnURhPqmY5TSt9tGhnAo50Q&s=10"
-          },
-          "team_b": {
-            "name": "Tnt 2 UK",
-            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gyHzl7LndJz-cy4j0SjhrBxNRKa-ZnDCuGnURhPqmY5TSt9tGhnAo50Q&s=10"
-          }
-        },
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gyHzl7LndJz-cy4j0SjhrBxNRKa-ZnDCuGnURhPqmY5TSt9tGhnAo50Q&s=10",
         "channels": []
       }
     ]
