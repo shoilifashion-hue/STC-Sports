@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 01, 2026, 09:32 PM",
+  "last_updated": "Nov 01, 2026, 10:02 PM",
   "event_count": 47,
   "events": {
     "events": [
@@ -282,8 +282,8 @@
         "title": "Angers vs Lyon",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "angers-vs-lyon",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -307,8 +307,8 @@
         "title": "AS Monaco vs Paris FC",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "as-monaco-vs-paris-fc",
         "schedule": {
           "timezone": "BST (UTC+6)",
