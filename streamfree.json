@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 02, 2026, 01:58 AM",
+  "last_updated": "Nov 02, 2026, 02:18 AM",
   "event_count": 36,
   "events": {
     "events": [
@@ -432,8 +432,8 @@
         "title": "Seattle Sounders FC vs Vancouver Whitecaps",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "seattle-sounders-fc-vs-vancouver-whitecaps",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -457,8 +457,8 @@
         "title": "Boston Celtics vs Orlando Magic",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "boston-celtics-vs-orlando-magic",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -482,8 +482,8 @@
         "title": "Minnesota Wild vs Washington Capitals",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "minnesota-wild-vs-washington-capitals",
         "schedule": {
           "timezone": "BST (UTC+6)",
