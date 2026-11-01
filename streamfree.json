@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 02, 2026, 02:48 AM",
+  "last_updated": "Nov 02, 2026, 02:53 AM",
   "event_count": 36,
   "events": {
     "events": [
@@ -532,8 +532,8 @@
         "title": "Los Angeles Chargers vs Los Angeles Rams",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "los-angeles-chargers-vs-los-angeles-rams",
         "schedule": {
           "timezone": "BST (UTC+6)",
