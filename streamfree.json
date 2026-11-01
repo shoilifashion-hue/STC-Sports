@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 01, 2026, 07:48 AM",
-  "event_count": 31,
+  "last_updated": "Nov 01, 2026, 08:08 AM",
+  "event_count": 32,
   "events": {
     "events": [
       {
@@ -151,56 +151,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "App State Mountaineers vs Georgia Southern Eagles",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "app-state-mountaineers-vs-georgia-southern-eagles",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 04:30 AM",
-          "end_time_bst": "Nov 01, 2026, 07:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "App State Mountaineers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2026.png"
-          },
-          "team_b": {
-            "name": "Georgia Southern Eagles",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/290.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2026.png",
-        "channels": []
-      },
-      {
-        "title": "Pittsburgh Penguins vs Montreal Canadiens",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "pittsburgh-penguins-vs-montreal-canadiens",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 05:00 AM",
-          "end_time_bst": "Nov 01, 2026, 08:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Pittsburgh Penguins",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png"
-          },
-          "team_b": {
-            "name": "Montreal Canadiens",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png",
         "channels": []
       },
       {
@@ -776,6 +726,81 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
+        "channels": []
+      },
+      {
+        "title": "Torino vs Frosinone",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "torino-vs-frosinone",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 01, 2026, 08:00 PM",
+          "end_time_bst": "Nov 01, 2026, 11:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Torino",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png"
+          },
+          "team_b": {
+            "name": "Frosinone",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4057.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png",
+        "channels": []
+      },
+      {
+        "title": "Cagliari vs Lazio",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "cagliari-vs-lazio",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 01, 2026, 08:00 PM",
+          "end_time_bst": "Nov 01, 2026, 11:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Cagliari",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png"
+          },
+          "team_b": {
+            "name": "Lazio",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
+        "channels": []
+      },
+      {
+        "title": "AJ Auxerre vs Strasbourg",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "aj-auxerre-vs-strasbourg",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 01, 2026, 08:00 PM",
+          "end_time_bst": "Nov 01, 2026, 11:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "AJ Auxerre",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png"
+          },
+          "team_b": {
+            "name": "Strasbourg",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
         "channels": []
       }
     ]
