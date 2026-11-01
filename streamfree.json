@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 01, 2026, 07:13 AM",
-  "event_count": 33,
+  "last_updated": "Nov 01, 2026, 07:48 AM",
+  "event_count": 31,
   "events": {
     "events": [
       {
@@ -179,31 +179,6 @@
         "channels": []
       },
       {
-        "title": "Atlanta Hawks vs New Orleans Pelicans",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "atlanta-hawks-vs-new-orleans-pelicans",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 05:00 AM",
-          "end_time_bst": "Nov 01, 2026, 08:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Atlanta Hawks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png"
-          },
-          "team_b": {
-            "name": "New Orleans Pelicans",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
-        "channels": []
-      },
-      {
         "title": "Pittsburgh Penguins vs Montreal Canadiens",
         "sport": "Hockey",
         "sub_category": "Hockey",
@@ -226,31 +201,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png",
-        "channels": []
-      },
-      {
-        "title": "Toronto Maple Leafs vs Vancouver Canucks",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "toronto-maple-leafs-vs-vancouver-canucks",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 05:00 AM",
-          "end_time_bst": "Nov 01, 2026, 08:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Toronto Maple Leafs",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png"
-          },
-          "team_b": {
-            "name": "Vancouver Canucks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/van.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png",
         "channels": []
       },
       {
@@ -657,8 +607,8 @@
         "title": "Chicago Fire FC vs Colorado Rapids",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "chicago-fire-fc-vs-colorado-rapids",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -682,8 +632,8 @@
         "title": "Calgary Flames vs Colorado Avalanche",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "calgary-flames-vs-colorado-avalanche",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -707,8 +657,8 @@
         "title": "Texas State Bobcats vs Boise State Broncos",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "texas-state-bobcats-vs-boise-state-broncos",
         "schedule": {
           "timezone": "BST (UTC+6)",
