@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 02, 2026, 03:23 AM",
-  "event_count": 30,
+  "last_updated": "Nov 02, 2026, 03:38 AM",
+  "event_count": 29,
   "events": {
     "events": [
       {
@@ -126,31 +126,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Baltimore Ravens vs Buffalo Bills",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "baltimore-ravens-vs-buffalo-bills",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 02, 2026, 12:00 AM",
-          "end_time_bst": "Nov 02, 2026, 03:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Baltimore Ravens",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png"
-          },
-          "team_b": {
-            "name": "Buffalo Bills",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
         "channels": []
       },
       {
