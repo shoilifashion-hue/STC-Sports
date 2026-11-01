@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 01, 2026, 09:04 AM",
-  "event_count": 25,
+  "last_updated": "Nov 01, 2026, 09:14 AM",
+  "event_count": 23,
   "events": {
     "events": [
       {
@@ -151,56 +151,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Oklahoma State Cowboys vs Iowa State Cyclones",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "oklahoma-state-cowboys-vs-iowa-state-cyclones",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 05:00 AM",
-          "end_time_bst": "Nov 01, 2026, 08:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Oklahoma State Cowboys",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png"
-          },
-          "team_b": {
-            "name": "Iowa State Cyclones",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
-        "channels": []
-      },
-      {
-        "title": "Miami Hurricanes vs North Carolina Tar Heels",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "miami-hurricanes-vs-north-carolina-tar-heels",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 05:30 AM",
-          "end_time_bst": "Nov 01, 2026, 08:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Miami Hurricanes",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png"
-          },
-          "team_b": {
-            "name": "North Carolina Tar Heels",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
         "channels": []
       },
       {
