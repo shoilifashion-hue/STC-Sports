@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 01, 2026, 10:49 AM",
+  "last_updated": "Nov 01, 2026, 11:14 AM",
   "event_count": 22,
   "events": {
     "events": [
@@ -151,31 +151,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Calgary Flames vs Colorado Avalanche",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "calgary-flames-vs-colorado-avalanche",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 08:00 AM",
-          "end_time_bst": "Nov 01, 2026, 11:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Calgary Flames",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png"
-          },
-          "team_b": {
-            "name": "Colorado Avalanche",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png",
         "channels": []
       },
       {
@@ -551,6 +526,31 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png",
+        "channels": []
+      },
+      {
+        "title": "Genoa vs Lecce",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "genoa-vs-lecce",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 01, 2026, 11:00 PM",
+          "end_time_bst": "Nov 02, 2026, 02:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Genoa",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png"
+          },
+          "team_b": {
+            "name": "Lecce",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png",
         "channels": []
       }
     ]
