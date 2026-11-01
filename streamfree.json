@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 01, 2026, 08:14 AM",
+  "last_updated": "Nov 01, 2026, 08:18 AM",
   "event_count": 32,
   "events": {
     "events": [
@@ -632,8 +632,8 @@
         "title": "Northern Illinois Huskies vs UNLV Rebels",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "northern-illinois-huskies-vs-unlv-rebels",
         "schedule": {
           "timezone": "BST (UTC+6)",
