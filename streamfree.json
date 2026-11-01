@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 01, 2026, 08:01 PM",
-  "event_count": 47,
+  "last_updated": "Nov 01, 2026, 09:02 PM",
+  "event_count": 48,
   "events": {
     "events": [
       {
@@ -232,8 +232,8 @@
         "title": "FC Cologne vs 1. FC Union Berlin",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "fc-cologne-vs-1-fc-union-berlin",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -257,8 +257,8 @@
         "title": "Notre Dame Fighting Irish vs Villanova Wildcats",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "notre-dame-fighting-irish-vs-villanova-wildcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -282,8 +282,8 @@
         "title": "Real Madrid vs Racing Santander",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "real-madrid-vs-racing-santander",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1176,6 +1176,31 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+        "channels": []
+      },
+      {
+        "title": "Houston Dynamo FC vs Portland Timbers",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "houston-dynamo-fc-vs-portland-timbers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 02, 2026, 08:45 AM",
+          "end_time_bst": "Nov 02, 2026, 11:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Houston Dynamo FC",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png"
+          },
+          "team_b": {
+            "name": "Portland Timbers",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
         "channels": []
       }
     ]
