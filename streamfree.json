@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 02, 2026, 12:58 AM",
-  "event_count": 38,
+  "last_updated": "Nov 02, 2026, 01:28 AM",
+  "event_count": 37,
   "events": {
     "events": [
       {
@@ -126,31 +126,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Genoa vs Lecce",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "genoa-vs-lecce",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 11:00 PM",
-          "end_time_bst": "Nov 02, 2026, 02:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Genoa",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png"
-          },
-          "team_b": {
-            "name": "Lecce",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png",
         "channels": []
       },
       {
