@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 01, 2026, 05:16 PM",
+  "last_updated": "Nov 01, 2026, 06:46 PM",
   "event_count": 43,
   "events": {
     "events": [
@@ -129,31 +129,6 @@
         "channels": []
       },
       {
-        "title": "UFC Fight Night: Moicano vs. Nolan",
-        "sport": "Combat",
-        "sub_category": "Combat",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "ufc-fight-night-moicano-vs-nolan",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 03:00 AM",
-          "end_time_bst": "Nov 01, 2026, 06:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "UFC Fight Night: Moicano vs. Nolan",
-            "logo": null
-          },
-          "team_b": {
-            "name": "UFC Fight Night: Moicano vs. Nolan",
-            "logo": null
-          }
-        },
-        "logo": null,
-        "channels": []
-      },
-      {
         "title": "Venezia vs Como",
         "sport": "Soccer",
         "sub_category": "Soccer",
@@ -182,8 +157,8 @@
         "title": "Sevilla vs Getafe",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "sevilla-vs-getafe",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1076,6 +1051,31 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
+        "channels": []
+      },
+      {
+        "title": "Inter Miami CF vs New England Revolution",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "inter-miami-cf-vs-new-england-revolution",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 02, 2026, 06:00 AM",
+          "end_time_bst": "Nov 02, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Inter Miami CF",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png"
+          },
+          "team_b": {
+            "name": "New England Revolution",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png",
         "channels": []
       }
     ]
