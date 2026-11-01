@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 02, 2026, 02:53 AM",
-  "event_count": 36,
+  "last_updated": "Nov 02, 2026, 03:13 AM",
+  "event_count": 34,
   "events": {
     "events": [
       {
@@ -126,31 +126,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Winnipeg Jets vs Carolina Hurricanes",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "winnipeg-jets-vs-carolina-hurricanes",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 02, 2026, 12:00 AM",
-          "end_time_bst": "Nov 02, 2026, 03:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Winnipeg Jets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png"
-          },
-          "team_b": {
-            "name": "Carolina Hurricanes",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/car.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png",
         "channels": []
       },
       {
@@ -301,31 +276,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
-        "channels": []
-      },
-      {
-        "title": "Atlanta Falcons vs Tampa Bay Buccaneers",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "atlanta-falcons-vs-tampa-bay-buccaneers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 02, 2026, 12:00 AM",
-          "end_time_bst": "Nov 02, 2026, 03:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Atlanta Falcons",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png"
-          },
-          "team_b": {
-            "name": "Tampa Bay Buccaneers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
         "channels": []
       },
       {
@@ -557,8 +507,8 @@
         "title": "Kansas City Chiefs vs Denver Broncos",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "kansas-city-chiefs-vs-denver-broncos",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -582,8 +532,8 @@
         "title": "New England Patriots vs Miami Dolphins",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "new-england-patriots-vs-miami-dolphins",
         "schedule": {
           "timezone": "BST (UTC+6)",
