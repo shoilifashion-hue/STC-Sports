@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 02, 2026, 01:28 AM",
+  "last_updated": "Nov 02, 2026, 01:33 AM",
   "event_count": 37,
   "events": {
     "events": [
@@ -382,8 +382,8 @@
         "title": "Napoli vs Juventus",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "napoli-vs-juventus",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -407,8 +407,8 @@
         "title": "Toulouse vs Marseille",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "toulouse-vs-marseille",
         "schedule": {
           "timezone": "BST (UTC+6)",
