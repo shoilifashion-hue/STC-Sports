@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 01, 2026, 06:46 PM",
-  "event_count": 43,
+  "last_updated": "Nov 01, 2026, 07:46 PM",
+  "event_count": 46,
   "events": {
     "events": [
       {
@@ -129,31 +129,6 @@
         "channels": []
       },
       {
-        "title": "Venezia vs Como",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "venezia-vs-como",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 05:30 PM",
-          "end_time_bst": "Nov 01, 2026, 08:30 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Venezia",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png"
-          },
-          "team_b": {
-            "name": "Como",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png",
-        "channels": []
-      },
-      {
         "title": "Sevilla vs Getafe",
         "sport": "Soccer",
         "sub_category": "Soccer",
@@ -182,8 +157,8 @@
         "title": "Torino vs Frosinone",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "torino-vs-frosinone",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -207,8 +182,8 @@
         "title": "Cagliari vs Lazio",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "cagliari-vs-lazio",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -232,8 +207,8 @@
         "title": "AJ Auxerre vs Strasbourg",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "aj-auxerre-vs-strasbourg",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1076,6 +1051,106 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png",
+        "channels": []
+      },
+      {
+        "title": "Ottawa Senators vs Anaheim Ducks",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "ottawa-senators-vs-anaheim-ducks",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 02, 2026, 07:00 AM",
+          "end_time_bst": "Nov 02, 2026, 10:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Ottawa Senators",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png"
+          },
+          "team_b": {
+            "name": "Anaheim Ducks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png",
+        "channels": []
+      },
+      {
+        "title": "Philadelphia Eagles vs Washington Commanders",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "philadelphia-eagles-vs-washington-commanders",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 02, 2026, 07:20 AM",
+          "end_time_bst": "Nov 02, 2026, 10:20 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Philadelphia Eagles",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
+          },
+          "team_b": {
+            "name": "Washington Commanders",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
+        "channels": []
+      },
+      {
+        "title": "Minnesota United FC vs LAFC",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "minnesota-united-fc-vs-lafc",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 02, 2026, 07:30 AM",
+          "end_time_bst": "Nov 02, 2026, 10:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Minnesota United FC",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png"
+          },
+          "team_b": {
+            "name": "LAFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18966.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png",
+        "channels": []
+      },
+      {
+        "title": "LA Clippers vs Golden State Warriors",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "la-clippers-vs-golden-state-warriors",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 02, 2026, 07:30 AM",
+          "end_time_bst": "Nov 02, 2026, 10:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png"
+          },
+          "team_b": {
+            "name": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
         "channels": []
       }
     ]
