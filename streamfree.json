@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 01, 2026, 05:58 AM",
+  "last_updated": "Nov 01, 2026, 06:18 AM",
   "event_count": 34,
   "events": {
     "events": [
@@ -682,8 +682,8 @@
         "title": "Oklahoma City Thunder vs Houston Rockets",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "oklahoma-city-thunder-vs-houston-rockets",
         "schedule": {
           "timezone": "BST (UTC+6)",
