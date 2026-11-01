@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 01, 2026, 07:46 PM",
-  "event_count": 46,
+  "last_updated": "Nov 01, 2026, 08:01 PM",
+  "event_count": 47,
   "events": {
     "events": [
       {
@@ -1151,6 +1151,31 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+        "channels": []
+      },
+      {
+        "title": "Toronto Raptors vs Los Angeles Lakers",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "toronto-raptors-vs-los-angeles-lakers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 02, 2026, 08:00 AM",
+          "end_time_bst": "Nov 02, 2026, 11:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png"
+          },
+          "team_b": {
+            "name": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
         "channels": []
       }
     ]
