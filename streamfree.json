@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 01, 2026, 09:19 AM",
-  "event_count": 24,
+  "last_updated": "Nov 01, 2026, 09:29 AM",
+  "event_count": 22,
   "events": {
     "events": [
       {
@@ -154,31 +154,6 @@
         "channels": []
       },
       {
-        "title": "Ohio State Buckeyes vs USC Trojans",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "ohio-state-buckeyes-vs-usc-trojans",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 05:30 AM",
-          "end_time_bst": "Nov 01, 2026, 08:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Ohio State Buckeyes",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png"
-          },
-          "team_b": {
-            "name": "USC Trojans",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png",
-        "channels": []
-      },
-      {
         "title": "Georgia Tech Yellow Jackets vs Pittsburgh Panthers",
         "sport": "Football",
         "sub_category": "Football",
@@ -201,31 +176,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/59.png",
-        "channels": []
-      },
-      {
-        "title": "Missouri Tigers vs Arkansas Razorbacks",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "missouri-tigers-vs-arkansas-razorbacks",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 01, 2026, 05:45 AM",
-          "end_time_bst": "Nov 01, 2026, 08:45 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Missouri Tigers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png"
-          },
-          "team_b": {
-            "name": "Arkansas Razorbacks",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png",
         "channels": []
       },
       {
