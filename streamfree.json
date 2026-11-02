@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 02, 2026, 07:04 AM",
+  "last_updated": "Nov 02, 2026, 07:09 AM",
   "event_count": 14,
   "events": {
     "events": [
@@ -207,8 +207,8 @@
         "title": "Philadelphia Eagles vs Washington Commanders",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "philadelphia-eagles-vs-washington-commanders",
         "schedule": {
           "timezone": "BST (UTC+6)",
