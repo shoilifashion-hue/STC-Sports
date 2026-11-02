@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 03, 2026, 04:33 AM",
+  "last_updated": "Nov 03, 2026, 04:48 AM",
   "event_count": 43,
   "events": {
     "events": [
@@ -132,8 +132,8 @@
         "title": "Miami Hurricanes vs Florida Gators",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "miami-hurricanes-vs-florida-gators",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -157,8 +157,8 @@
         "title": "Oakland Golden Grizzlies vs Michigan Wolverines",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "oakland-golden-grizzlies-vs-michigan-wolverines",
         "schedule": {
           "timezone": "BST (UTC+6)",
