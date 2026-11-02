@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 02, 2026, 11:17 PM",
+  "last_updated": "Nov 03, 2026, 01:32 AM",
   "event_count": 48,
   "events": {
     "events": [
@@ -157,8 +157,8 @@
         "title": "Parma vs Atalanta",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "parma-vs-atalanta",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -182,8 +182,8 @@
         "title": "Brest vs Lorient",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "brest-vs-lorient",
         "schedule": {
           "timezone": "BST (UTC+6)",
