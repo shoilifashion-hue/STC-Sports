@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 02, 2026, 07:09 AM",
+  "last_updated": "Nov 02, 2026, 07:19 AM",
   "event_count": 14,
   "events": {
     "events": [
@@ -232,8 +232,8 @@
         "title": "Minnesota United FC vs LAFC",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "minnesota-united-fc-vs-lafc",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -257,8 +257,8 @@
         "title": "LA Clippers vs Golden State Warriors",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "la-clippers-vs-golden-state-warriors",
         "schedule": {
           "timezone": "BST (UTC+6)",
