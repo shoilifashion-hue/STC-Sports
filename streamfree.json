@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 02, 2026, 08:09 AM",
-  "event_count": 13,
+  "last_updated": "Nov 02, 2026, 10:19 AM",
+  "event_count": 9,
   "events": {
     "events": [
       {
@@ -129,56 +129,6 @@
         "channels": []
       },
       {
-        "title": "Inter Miami CF vs New England Revolution",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "inter-miami-cf-vs-new-england-revolution",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 02, 2026, 06:00 AM",
-          "end_time_bst": "Nov 02, 2026, 09:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Inter Miami CF",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png"
-          },
-          "team_b": {
-            "name": "New England Revolution",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png",
-        "channels": []
-      },
-      {
-        "title": "Ottawa Senators vs Anaheim Ducks",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "ottawa-senators-vs-anaheim-ducks",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 02, 2026, 07:00 AM",
-          "end_time_bst": "Nov 02, 2026, 10:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Ottawa Senators",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png"
-          },
-          "team_b": {
-            "name": "Anaheim Ducks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png",
-        "channels": []
-      },
-      {
         "title": "Philadelphia Eagles vs Washington Commanders",
         "sport": "Football",
         "sub_category": "Football",
@@ -201,56 +151,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
-        "channels": []
-      },
-      {
-        "title": "Minnesota United FC vs LAFC",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "minnesota-united-fc-vs-lafc",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 02, 2026, 07:30 AM",
-          "end_time_bst": "Nov 02, 2026, 10:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Minnesota United FC",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png"
-          },
-          "team_b": {
-            "name": "LAFC",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18966.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png",
-        "channels": []
-      },
-      {
-        "title": "LA Clippers vs Golden State Warriors",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "la-clippers-vs-golden-state-warriors",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 02, 2026, 07:30 AM",
-          "end_time_bst": "Nov 02, 2026, 10:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "LA Clippers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png"
-          },
-          "team_b": {
-            "name": "Golden State Warriors",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
         "channels": []
       },
       {
@@ -282,8 +182,8 @@
         "title": "Houston Dynamo FC vs Portland Timbers",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "houston-dynamo-fc-vs-portland-timbers",
         "schedule": {
           "timezone": "BST (UTC+6)",
