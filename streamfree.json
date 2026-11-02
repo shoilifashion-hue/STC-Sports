@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 02, 2026, 10:59 AM",
-  "event_count": 7,
+  "last_updated": "Nov 02, 2026, 06:55 PM",
+  "event_count": 27,
   "events": {
     "events": [
       {
@@ -129,53 +129,553 @@
         "channels": []
       },
       {
-        "title": "Houston Dynamo FC vs Portland Timbers",
+        "title": "Fiorentina vs Sassuolo",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "houston-dynamo-fc-vs-portland-timbers",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "fiorentina-vs-sassuolo",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 02, 2026, 08:45 AM",
-          "end_time_bst": "Nov 02, 2026, 11:45 AM"
+          "start_time_bst": "Nov 02, 2026, 11:30 PM",
+          "end_time_bst": "Nov 03, 2026, 02:30 AM"
         },
         "teams": {
           "team_a": {
-            "name": "Houston Dynamo FC",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png"
+            "name": "Fiorentina",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png"
           },
           "team_b": {
-            "name": "Portland Timbers",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png"
+            "name": "Sassuolo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png"
           }
         },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png",
         "channels": []
       },
       {
-        "title": "Liberty Flames vs High Point Panthers",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "liberty-flames-vs-high-point-panthers",
+        "title": "Parma vs Atalanta",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "parma-vs-atalanta",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 02, 2026, 10:59 AM",
-          "end_time_bst": "Nov 02, 2026, 01:59 PM"
+          "start_time_bst": "Nov 03, 2026, 01:45 AM",
+          "end_time_bst": "Nov 03, 2026, 04:45 AM"
         },
         "teams": {
           "team_a": {
-            "name": "Liberty Flames",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2335.png"
+            "name": "Parma",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png"
           },
           "team_b": {
-            "name": "High Point Panthers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2272.png"
+            "name": "Atalanta",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png"
           }
         },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2335.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png",
+        "channels": []
+      },
+      {
+        "title": "Brest vs Lorient",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "brest-vs-lorient",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 01:45 AM",
+          "end_time_bst": "Nov 03, 2026, 04:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Brest",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png"
+          },
+          "team_b": {
+            "name": "Lorient",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
+        "channels": []
+      },
+      {
+        "title": "Everton vs Newcastle United",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "everton-vs-newcastle-united",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 02:00 AM",
+          "end_time_bst": "Nov 03, 2026, 05:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Everton",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png"
+          },
+          "team_b": {
+            "name": "Newcastle United",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png",
+        "channels": []
+      },
+      {
+        "title": "Osasuna vs Deportivo",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "osasuna-vs-deportivo",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 02:00 AM",
+          "end_time_bst": "Nov 03, 2026, 05:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Osasuna",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
+          },
+          "team_b": {
+            "name": "Deportivo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png",
+        "channels": []
+      },
+      {
+        "title": "Miami Hurricanes vs Florida Gators",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "miami-hurricanes-vs-florida-gators",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 05:00 AM",
+          "end_time_bst": "Nov 03, 2026, 08:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Miami Hurricanes",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png"
+          },
+          "team_b": {
+            "name": "Florida Gators",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
+        "channels": []
+      },
+      {
+        "title": "Oakland Golden Grizzlies vs Michigan Wolverines",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "oakland-golden-grizzlies-vs-michigan-wolverines",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 05:00 AM",
+          "end_time_bst": "Nov 03, 2026, 08:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Oakland Golden Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2473.png"
+          },
+          "team_b": {
+            "name": "Michigan Wolverines",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2473.png",
+        "channels": []
+      },
+      {
+        "title": "Army Black Knights vs Duke Blue Devils",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "army-black-knights-vs-duke-blue-devils",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 05:30 AM",
+          "end_time_bst": "Nov 03, 2026, 08:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Army Black Knights",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/349.png"
+          },
+          "team_b": {
+            "name": "Duke Blue Devils",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/349.png",
+        "channels": []
+      },
+      {
+        "title": "Monmouth Hawks vs St. John's Red Storm",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "monmouth-hawks-vs-st-john-s-red-storm",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 05:30 AM",
+          "end_time_bst": "Nov 03, 2026, 08:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Monmouth Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2405.png"
+          },
+          "team_b": {
+            "name": "St. John's Red Storm",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2599.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2405.png",
+        "channels": []
+      },
+      {
+        "title": "Oklahoma City Thunder vs Cleveland Cavaliers",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "oklahoma-city-thunder-vs-cleveland-cavaliers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 06:00 AM",
+          "end_time_bst": "Nov 03, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
+          },
+          "team_b": {
+            "name": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+        "channels": []
+      },
+      {
+        "title": "Quinnipiac Bobcats vs Michigan State Spartans",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "quinnipiac-bobcats-vs-michigan-state-spartans",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 06:00 AM",
+          "end_time_bst": "Nov 03, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Quinnipiac Bobcats",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2514.png"
+          },
+          "team_b": {
+            "name": "Michigan State Spartans",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2514.png",
+        "channels": []
+      },
+      {
+        "title": "Memphis Tigers vs Iowa State Cyclones",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "memphis-tigers-vs-iowa-state-cyclones",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 06:00 AM",
+          "end_time_bst": "Nov 03, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Memphis Tigers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png"
+          },
+          "team_b": {
+            "name": "Iowa State Cyclones",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png",
+        "channels": []
+      },
+      {
+        "title": "Jackson State Tigers vs Texas Tech Red Raiders",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "jackson-state-tigers-vs-texas-tech-red-raiders",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 06:00 AM",
+          "end_time_bst": "Nov 03, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Jackson State Tigers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2296.png"
+          },
+          "team_b": {
+            "name": "Texas Tech Red Raiders",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2296.png",
+        "channels": []
+      },
+      {
+        "title": "Bellarmine Knights vs Vanderbilt Commodores",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "bellarmine-knights-vs-vanderbilt-commodores",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 06:00 AM",
+          "end_time_bst": "Nov 03, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Bellarmine Knights",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/91.png"
+          },
+          "team_b": {
+            "name": "Vanderbilt Commodores",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/91.png",
+        "channels": []
+      },
+      {
+        "title": "Vegas Golden Knights vs Boston Bruins",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "vegas-golden-knights-vs-boston-bruins",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 06:00 AM",
+          "end_time_bst": "Nov 03, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Vegas Golden Knights",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png"
+          },
+          "team_b": {
+            "name": "Boston Bruins",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png",
+        "channels": []
+      },
+      {
+        "title": "Detroit Red Wings vs Florida Panthers",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "detroit-red-wings-vs-florida-panthers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 06:00 AM",
+          "end_time_bst": "Nov 03, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Detroit Red Wings",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png"
+          },
+          "team_b": {
+            "name": "Florida Panthers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png",
+        "channels": []
+      },
+      {
+        "title": "Detroit Pistons vs Charlotte Hornets",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "detroit-pistons-vs-charlotte-hornets",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 06:30 AM",
+          "end_time_bst": "Nov 03, 2026, 09:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Detroit Pistons",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png"
+          },
+          "team_b": {
+            "name": "Charlotte Hornets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+        "channels": []
+      },
+      {
+        "title": "Atlanta Hawks vs Indiana Pacers",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "atlanta-hawks-vs-indiana-pacers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 06:30 AM",
+          "end_time_bst": "Nov 03, 2026, 09:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png"
+          },
+          "team_b": {
+            "name": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+        "channels": []
+      },
+      {
+        "title": "Brooklyn Nets vs New York Knicks",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "brooklyn-nets-vs-new-york-knicks",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 06:30 AM",
+          "end_time_bst": "Nov 03, 2026, 09:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png"
+          },
+          "team_b": {
+            "name": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+        "channels": []
+      },
+      {
+        "title": "Washington Wizards vs Orlando Magic",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "washington-wizards-vs-orlando-magic",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 06:30 AM",
+          "end_time_bst": "Nov 03, 2026, 09:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png"
+          },
+          "team_b": {
+            "name": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+        "channels": []
+      },
+      {
+        "title": "Chicago Bulls vs Philadelphia 76ers",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "chicago-bulls-vs-philadelphia-76ers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 06:30 AM",
+          "end_time_bst": "Nov 03, 2026, 09:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png"
+          },
+          "team_b": {
+            "name": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+        "channels": []
+      },
+      {
+        "title": "Gonzaga Bulldogs vs Purdue Boilermakers",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "gonzaga-bulldogs-vs-purdue-boilermakers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 03, 2026, 06:30 AM",
+          "end_time_bst": "Nov 03, 2026, 09:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Gonzaga Bulldogs",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2250.png"
+          },
+          "team_b": {
+            "name": "Purdue Boilermakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2250.png",
         "channels": []
       }
     ]
