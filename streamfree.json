@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 03, 2026, 07:03 AM",
+  "last_updated": "Nov 03, 2026, 07:18 AM",
   "event_count": 43,
   "events": {
     "events": [
@@ -732,8 +732,8 @@
         "title": "Boston Celtics vs Houston Rockets",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "boston-celtics-vs-houston-rockets",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -757,8 +757,8 @@
         "title": "Utah Jazz vs San Antonio Spurs",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "utah-jazz-vs-san-antonio-spurs",
         "schedule": {
           "timezone": "BST (UTC+6)",
