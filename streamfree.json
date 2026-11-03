@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 04, 2026, 04:27 AM",
+  "last_updated": "Nov 04, 2026, 04:47 AM",
   "event_count": 23,
   "events": {
     "events": [
@@ -132,8 +132,8 @@
         "title": "Wofford Terriers vs Tennessee Volunteers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "wofford-terriers-vs-tennessee-volunteers",
         "schedule": {
           "timezone": "BST (UTC+6)",
