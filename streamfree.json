@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 03, 2026, 06:18 AM",
+  "last_updated": "Nov 03, 2026, 06:48 AM",
   "event_count": 43,
   "events": {
     "events": [
@@ -557,8 +557,8 @@
         "title": "Sacramento Kings vs Dallas Mavericks",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "sacramento-kings-vs-dallas-mavericks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -582,8 +582,8 @@
         "title": "New Orleans Pelicans vs Memphis Grizzlies",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "new-orleans-pelicans-vs-memphis-grizzlies",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -607,8 +607,8 @@
         "title": "Milwaukee Bucks vs Minnesota Timberwolves",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "milwaukee-bucks-vs-minnesota-timberwolves",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -632,8 +632,8 @@
         "title": "Fairleigh Dickinson Knights vs Illinois Fighting Illini",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "fairleigh-dickinson-knights-vs-illinois-fighting-illini",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -657,8 +657,8 @@
         "title": "Fordham Rams vs Kansas Jayhawks",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "fordham-rams-vs-kansas-jayhawks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -682,8 +682,8 @@
         "title": "Colorado Avalanche vs Chicago Blackhawks",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "colorado-avalanche-vs-chicago-blackhawks",
         "schedule": {
           "timezone": "BST (UTC+6)",
