@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 03, 2026, 08:49 AM",
-  "event_count": 34,
+  "last_updated": "Nov 03, 2026, 09:04 AM",
+  "event_count": 29,
   "events": {
     "events": [
       {
@@ -129,56 +129,6 @@
         "channels": []
       },
       {
-        "title": "Oklahoma City Thunder vs Cleveland Cavaliers",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "oklahoma-city-thunder-vs-cleveland-cavaliers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 03, 2026, 06:00 AM",
-          "end_time_bst": "Nov 03, 2026, 09:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Oklahoma City Thunder",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
-          },
-          "team_b": {
-            "name": "Cleveland Cavaliers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
-        "channels": []
-      },
-      {
-        "title": "Vegas Golden Knights vs Boston Bruins",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "vegas-golden-knights-vs-boston-bruins",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 03, 2026, 06:00 AM",
-          "end_time_bst": "Nov 03, 2026, 09:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Vegas Golden Knights",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png"
-          },
-          "team_b": {
-            "name": "Boston Bruins",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png",
-        "channels": []
-      },
-      {
         "title": "Detroit Pistons vs Charlotte Hornets",
         "sport": "Basketball",
         "sub_category": "Basketball",
@@ -254,31 +204,6 @@
         "channels": []
       },
       {
-        "title": "Washington Wizards vs Orlando Magic",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "washington-wizards-vs-orlando-magic",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 03, 2026, 06:30 AM",
-          "end_time_bst": "Nov 03, 2026, 09:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Washington Wizards",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png"
-          },
-          "team_b": {
-            "name": "Orlando Magic",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
-        "channels": []
-      },
-      {
         "title": "Chicago Bulls vs Philadelphia 76ers",
         "sport": "Basketball",
         "sub_category": "Basketball",
@@ -301,31 +226,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
-        "channels": []
-      },
-      {
-        "title": "Purdue Boilermakers vs Gonzaga Bulldogs",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "purdue-boilermakers-vs-gonzaga-bulldogs",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 03, 2026, 06:30 AM",
-          "end_time_bst": "Nov 03, 2026, 09:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Purdue Boilermakers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png"
-          },
-          "team_b": {
-            "name": "Gonzaga Bulldogs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2250.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png",
         "channels": []
       },
       {
@@ -401,31 +301,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
-        "channels": []
-      },
-      {
-        "title": "Fairleigh Dickinson Knights vs Illinois Fighting Illini",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "fairleigh-dickinson-knights-vs-illinois-fighting-illini",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 03, 2026, 07:00 AM",
-          "end_time_bst": "Nov 03, 2026, 10:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Fairleigh Dickinson Knights",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/161.png"
-          },
-          "team_b": {
-            "name": "Illinois Fighting Illini",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/161.png",
         "channels": []
       },
       {
