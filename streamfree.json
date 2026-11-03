@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 03, 2026, 08:19 AM",
-  "event_count": 36,
+  "last_updated": "Nov 03, 2026, 08:49 AM",
+  "event_count": 34,
   "events": {
     "events": [
       {
@@ -154,31 +154,6 @@
         "channels": []
       },
       {
-        "title": "Memphis Tigers vs Iowa State Cyclones",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "memphis-tigers-vs-iowa-state-cyclones",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 03, 2026, 06:00 AM",
-          "end_time_bst": "Nov 03, 2026, 09:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Memphis Tigers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png"
-          },
-          "team_b": {
-            "name": "Iowa State Cyclones",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png",
-        "channels": []
-      },
-      {
         "title": "Vegas Golden Knights vs Boston Bruins",
         "sport": "Hockey",
         "sub_category": "Hockey",
@@ -201,31 +176,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png",
-        "channels": []
-      },
-      {
-        "title": "Detroit Red Wings vs Florida Panthers",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "detroit-red-wings-vs-florida-panthers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 03, 2026, 06:00 AM",
-          "end_time_bst": "Nov 03, 2026, 09:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Detroit Red Wings",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png"
-          },
-          "team_b": {
-            "name": "Florida Panthers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png",
         "channels": []
       },
       {
@@ -782,8 +732,8 @@
         "title": "Phoenix Suns vs Golden State Warriors",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "phoenix-suns-vs-golden-state-warriors",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -807,8 +757,8 @@
         "title": "Toronto Raptors vs LA Clippers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "toronto-raptors-vs-la-clippers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -832,8 +782,8 @@
         "title": "Miami Heat vs Los Angeles Lakers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "miami-heat-vs-los-angeles-lakers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -857,8 +807,8 @@
         "title": "Arizona Wildcats vs UCLA Bruins",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "arizona-wildcats-vs-ucla-bruins",
         "schedule": {
           "timezone": "BST (UTC+6)",
