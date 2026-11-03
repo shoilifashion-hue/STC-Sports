@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 03, 2026, 06:48 AM",
+  "last_updated": "Nov 03, 2026, 07:03 AM",
   "event_count": 43,
   "events": {
     "events": [
@@ -707,8 +707,8 @@
         "title": "Chicago Bears vs Seattle Seahawks",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "chicago-bears-vs-seattle-seahawks",
         "schedule": {
           "timezone": "BST (UTC+6)",
