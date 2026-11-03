@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 03, 2026, 10:09 AM",
-  "event_count": 20,
+  "last_updated": "Nov 03, 2026, 10:24 AM",
+  "event_count": 16,
   "events": {
     "events": [
       {
@@ -154,56 +154,6 @@
         "channels": []
       },
       {
-        "title": "Boston Celtics vs Houston Rockets",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "boston-celtics-vs-houston-rockets",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 03, 2026, 07:30 AM",
-          "end_time_bst": "Nov 03, 2026, 10:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Boston Celtics",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png"
-          },
-          "team_b": {
-            "name": "Houston Rockets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
-        "channels": []
-      },
-      {
-        "title": "Utah Jazz vs San Antonio Spurs",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "utah-jazz-vs-san-antonio-spurs",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 03, 2026, 07:30 AM",
-          "end_time_bst": "Nov 03, 2026, 10:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Utah Jazz",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png"
-          },
-          "team_b": {
-            "name": "San Antonio Spurs",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
-        "channels": []
-      },
-      {
         "title": "Portland Trail Blazers vs Denver Nuggets",
         "sport": "Basketball",
         "sub_category": "Basketball",
@@ -226,56 +176,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
-        "channels": []
-      },
-      {
-        "title": "Gardner-Webb Runnin' Bulldogs vs UConn Huskies",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "gardner-webb-runnin-bulldogs-vs-uconn-huskies",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 03, 2026, 08:00 AM",
-          "end_time_bst": "Nov 03, 2026, 11:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Gardner-Webb Runnin' Bulldogs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2241.png"
-          },
-          "team_b": {
-            "name": "UConn Huskies",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2241.png",
-        "channels": []
-      },
-      {
-        "title": "Chicago State Cougars vs Texas Longhorns",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "chicago-state-cougars-vs-texas-longhorns",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 03, 2026, 08:00 AM",
-          "end_time_bst": "Nov 03, 2026, 11:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Chicago State Cougars",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2130.png"
-          },
-          "team_b": {
-            "name": "Texas Longhorns",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2130.png",
         "channels": []
       },
       {
