@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 03, 2026, 11:14 AM",
-  "event_count": 10,
+  "last_updated": "Nov 03, 2026, 12:04 PM",
+  "event_count": 11,
   "events": {
     "events": [
       {
@@ -179,78 +179,103 @@
         "channels": []
       },
       {
-        "title": "Miami Heat vs Los Angeles Lakers",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "miami-heat-vs-los-angeles-lakers",
+        "title": "Vf B Stuttgart vs Galatasaray",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "vf-b-stuttgart-vs-galatasaray",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 03, 2026, 09:00 AM",
-          "end_time_bst": "Nov 03, 2026, 12:00 PM"
+          "start_time_bst": "Nov 03, 2026, 11:45 PM",
+          "end_time_bst": "Nov 04, 2026, 02:45 AM"
         },
         "teams": {
           "team_a": {
-            "name": "Miami Heat",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png"
+            "name": "VfB Stuttgart",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png"
           },
           "team_b": {
-            "name": "Los Angeles Lakers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png"
+            "name": "Galatasaray",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png"
           }
         },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
         "channels": []
       },
       {
-        "title": "Arizona Wildcats vs UCLA Bruins",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "arizona-wildcats-vs-ucla-bruins",
+        "title": "Sporting CP vs Shakhtar Donetsk",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "sporting-cp-vs-shakhtar-donetsk",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 03, 2026, 09:00 AM",
-          "end_time_bst": "Nov 03, 2026, 12:00 PM"
+          "start_time_bst": "Nov 03, 2026, 11:45 PM",
+          "end_time_bst": "Nov 04, 2026, 02:45 AM"
         },
         "teams": {
           "team_a": {
-            "name": "Arizona Wildcats",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png"
+            "name": "Sporting CP",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png"
           },
           "team_b": {
-            "name": "UCLA Bruins",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png"
+            "name": "Shakhtar Donetsk",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/493.png"
           }
         },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png",
         "channels": []
       },
       {
-        "title": "Milwaukee Panthers vs USC Trojans",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "milwaukee-panthers-vs-usc-trojans",
+        "title": "Alavés vs Anaitasuna",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "alavés-vs-anaitasuna",
         "schedule": {
           "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 03, 2026, 09:30 AM",
-          "end_time_bst": "Nov 03, 2026, 12:30 PM"
+          "start_time_bst": "Nov 04, 2026, 12:00 AM",
+          "end_time_bst": "Nov 04, 2026, 03:00 AM"
         },
         "teams": {
           "team_a": {
-            "name": "Milwaukee Panthers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/270.png"
+            "name": "Alavés",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
           },
           "team_b": {
-            "name": "USC Trojans",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png"
+            "name": "Alavés vs Anaitasuna",
+            "logo": null
           }
         },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/270.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
+        "channels": []
+      },
+      {
+        "title": "Eibar vs CD Pamplona",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "eibar-vs-cd-pamplona",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 04, 2026, 12:00 AM",
+          "end_time_bst": "Nov 04, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Eibar",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3752.png"
+          },
+          "team_b": {
+            "name": "Eibar vs CD Pamplona",
+            "logo": null
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3752.png",
         "channels": []
       }
     ]
