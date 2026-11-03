@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 04, 2026, 05:44 AM",
+  "last_updated": "Nov 04, 2026, 05:47 AM",
   "event_count": 23,
   "events": {
     "events": [
@@ -157,8 +157,8 @@
         "title": "Manhattan Jaspers vs Kentucky Wildcats",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "manhattan-jaspers-vs-kentucky-wildcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -182,8 +182,8 @@
         "title": "Utah Mammoth vs Toronto Maple Leafs",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "utah-mammoth-vs-toronto-maple-leafs",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -207,8 +207,8 @@
         "title": "Winnipeg Jets vs Montreal Canadiens",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "winnipeg-jets-vs-montreal-canadiens",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -232,8 +232,8 @@
         "title": "Detroit Red Wings vs Tampa Bay Lightning",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "detroit-red-wings-vs-tampa-bay-lightning",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -257,8 +257,8 @@
         "title": "St. Louis Blues vs New York Rangers",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "st-louis-blues-vs-new-york-rangers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -282,8 +282,8 @@
         "title": "Minnesota Wild vs Philadelphia Flyers",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "minnesota-wild-vs-philadelphia-flyers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -307,8 +307,8 @@
         "title": "Vegas Golden Knights vs Pittsburgh Penguins",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "vegas-golden-knights-vs-pittsburgh-penguins",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -332,8 +332,8 @@
         "title": "Dallas Stars vs Washington Capitals",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "dallas-stars-vs-washington-capitals",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -357,8 +357,8 @@
         "title": "Colorado Avalanche vs Columbus Blue Jackets",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "colorado-avalanche-vs-columbus-blue-jackets",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -382,8 +382,8 @@
         "title": "Ohio Bobcats vs Akron Zips",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ohio-bobcats-vs-akron-zips",
         "schedule": {
           "timezone": "BST (UTC+6)",
