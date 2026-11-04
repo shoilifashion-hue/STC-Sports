@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 05, 2026, 12:56 AM",
+  "last_updated": "Nov 05, 2026, 01:31 AM",
   "event_count": 51,
   "events": {
     "events": [
@@ -182,8 +182,8 @@
         "title": "West Ham United vs Cardiff City",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "west-ham-united-vs-cardiff-city",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -207,8 +207,8 @@
         "title": "Middlesbrough vs Wrexham",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "middlesbrough-vs-wrexham",
         "schedule": {
           "timezone": "BST (UTC+6)",
