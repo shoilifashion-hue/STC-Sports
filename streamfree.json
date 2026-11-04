@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 04, 2026, 06:48 AM",
-  "event_count": 23,
+  "last_updated": "Nov 04, 2026, 07:48 AM",
+  "event_count": 22,
   "events": {
     "events": [
       {
@@ -126,31 +126,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Wofford Terriers vs Tennessee Volunteers",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "wofford-terriers-vs-tennessee-volunteers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 04, 2026, 05:00 AM",
-          "end_time_bst": "Nov 04, 2026, 08:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Wofford Terriers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2747.png"
-          },
-          "team_b": {
-            "name": "Tennessee Volunteers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2747.png",
         "channels": []
       },
       {
@@ -557,8 +532,8 @@
         "title": "Anaheim Ducks vs Vancouver Canucks",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "anaheim-ducks-vs-vancouver-canucks",
         "schedule": {
           "timezone": "BST (UTC+6)",
