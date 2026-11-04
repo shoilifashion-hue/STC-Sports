@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 05, 2026, 04:32 AM",
+  "last_updated": "Nov 05, 2026, 05:47 AM",
   "event_count": 39,
   "events": {
     "events": [
@@ -132,8 +132,8 @@
         "title": "Philadelphia 76ers vs Detroit Pistons",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "philadelphia-76ers-vs-detroit-pistons",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -157,8 +157,8 @@
         "title": "Atlanta Hawks vs Washington Wizards",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "atlanta-hawks-vs-washington-wizards",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -182,8 +182,8 @@
         "title": "Concordia Chicago Cougars vs SIU Edwardsville Cougars",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "concordia-chicago-cougars-vs-siu-edwardsville-cougars",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -207,8 +207,8 @@
         "title": "Maryland Eastern Shore Hawks vs High Point Panthers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "maryland-eastern-shore-hawks-vs-high-point-panthers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -232,8 +232,8 @@
         "title": "Longwood Lancers vs Saint Joseph's Hawks",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "longwood-lancers-vs-saint-joseph-s-hawks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -257,8 +257,8 @@
         "title": "Fairleigh Dickinson Knights vs Butler Bulldogs",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "fairleigh-dickinson-knights-vs-butler-bulldogs",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -282,8 +282,8 @@
         "title": "Ball State Cardinals vs Massachusetts Minutemen",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ball-state-cardinals-vs-massachusetts-minutemen",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -307,8 +307,8 @@
         "title": "Toledo Rockets vs Sacramento State Hornets",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "toledo-rockets-vs-sacramento-state-hornets",
         "schedule": {
           "timezone": "BST (UTC+6)",
