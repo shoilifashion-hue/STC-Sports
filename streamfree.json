@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 04, 2026, 06:17 AM",
+  "last_updated": "Nov 04, 2026, 06:48 AM",
   "event_count": 23,
   "events": {
     "events": [
@@ -482,8 +482,8 @@
         "title": "Arkansas-Pine Bluff Golden Lions vs Arkansas Razorbacks",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "arkansas-pine-bluff-golden-lions-vs-arkansas-razorbacks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -507,8 +507,8 @@
         "title": "Carolina Hurricanes vs Nashville Predators",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "carolina-hurricanes-vs-nashville-predators",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -532,8 +532,8 @@
         "title": "Buffalo Bulls vs Miami (OH) Red Hawks",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "buffalo-bulls-vs-miami-oh-red-hawks",
         "schedule": {
           "timezone": "BST (UTC+6)",
