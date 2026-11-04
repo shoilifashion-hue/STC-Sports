@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 04, 2026, 11:31 PM",
-  "event_count": 64,
+  "last_updated": "Nov 04, 2026, 11:58 PM",
+  "event_count": 51,
   "events": {
     "events": [
       {
@@ -429,31 +429,6 @@
         "channels": []
       },
       {
-        "title": "Framingham State Rams vs Dartmouth Big Green",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "framingham-state-rams-vs-dartmouth-big-green",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 05:30 AM",
-          "end_time_bst": "Nov 05, 2026, 08:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Framingham State Rams vs Dartmouth Big Green",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Dartmouth Big Green",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/159.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/159.png",
-        "channels": []
-      },
-      {
         "title": "Philadelphia 76ers vs Detroit Pistons",
         "sport": "Basketball",
         "sub_category": "Basketball",
@@ -504,81 +479,6 @@
         "channels": []
       },
       {
-        "title": "Regent Regent Royals vs Old Dominion Monarchs",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "regent-regent-royals-vs-old-dominion-monarchs",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 06:00 AM",
-          "end_time_bst": "Nov 05, 2026, 09:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Regent Regent Royals vs Old Dominion Monarchs",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Old Dominion Monarchs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/295.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/295.png",
-        "channels": []
-      },
-      {
-        "title": "Christendom Crusaders vs App State Mountaineers",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "christendom-crusaders-vs-app-state-mountaineers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 06:00 AM",
-          "end_time_bst": "Nov 05, 2026, 09:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Christendom Crusaders vs App State Mountaineers",
-            "logo": null
-          },
-          "team_b": {
-            "name": "App State Mountaineers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2026.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2026.png",
-        "channels": []
-      },
-      {
-        "title": "Virginia Lynchburg Dragons vs Morgan State Bears",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "virginia-lynchburg-dragons-vs-morgan-state-bears",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 06:00 AM",
-          "end_time_bst": "Nov 05, 2026, 09:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Virginia Lynchburg Dragons vs Morgan State Bears",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Morgan State Bears",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2415.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2415.png",
-        "channels": []
-      },
-      {
         "title": "Concordia Chicago Cougars vs SIU Edwardsville Cougars",
         "sport": "Basketball",
         "sub_category": "Basketball",
@@ -601,31 +501,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2151.png",
-        "channels": []
-      },
-      {
-        "title": "Erskine Flying Fleet vs UNC Asheville Bulldogs",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "erskine-flying-fleet-vs-unc-asheville-bulldogs",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 06:00 AM",
-          "end_time_bst": "Nov 05, 2026, 09:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Erskine Flying Fleet vs UNC Asheville Bulldogs",
-            "logo": null
-          },
-          "team_b": {
-            "name": "UNC Asheville Bulldogs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2427.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2427.png",
         "channels": []
       },
       {
@@ -854,56 +729,6 @@
         "channels": []
       },
       {
-        "title": "Blue Mountain Christian Toppers vs Tennessee Tech Golden Eagles",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "blue-mountain-christian-toppers-vs-tennessee-tech-golden-eagles",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 06:30 AM",
-          "end_time_bst": "Nov 05, 2026, 09:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Blue Mountain Christian Toppers vs Tennessee Tech Golden Eagles",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Tennessee Tech Golden Eagles",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2635.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2635.png",
-        "channels": []
-      },
-      {
-        "title": "Webster Gorloks vs Southeast Missouri State Redhawks",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "webster-gorloks-vs-southeast-missouri-state-redhawks",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 06:30 AM",
-          "end_time_bst": "Nov 05, 2026, 09:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Webster Gorloks vs Southeast Missouri State Redhawks",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Southeast Missouri State Redhawks",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2546.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2546.png",
-        "channels": []
-      },
-      {
         "title": "Bob Jones Bruins vs Furman Paladins",
         "sport": "Basketball",
         "sub_category": "Basketball",
@@ -951,31 +776,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2463.png",
-        "channels": []
-      },
-      {
-        "title": "Champion Christian Tigers vs UL Monroe Warhawks",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "champion-christian-tigers-vs-ul-monroe-warhawks",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 06:30 AM",
-          "end_time_bst": "Nov 05, 2026, 09:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Champion Christian Tigers vs UL Monroe Warhawks",
-            "logo": null
-          },
-          "team_b": {
-            "name": "UL Monroe Warhawks",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2433.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2433.png",
         "channels": []
       },
       {
@@ -1154,56 +954,6 @@
         "channels": []
       },
       {
-        "title": "Randolph Wildcats vs Norfolk State Spartans",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "randolph-wildcats-vs-norfolk-state-spartans",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 07:00 AM",
-          "end_time_bst": "Nov 05, 2026, 10:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Randolph Wildcats vs Norfolk State Spartans",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Norfolk State Spartans",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2450.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2450.png",
-        "channels": []
-      },
-      {
-        "title": "Saint Mary of the Woods Pomeroys vs Southern Indiana Screaming Eagles",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "saint-mary-of-the-woods-pomeroys-vs-southern-indiana-screaming-eagles",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 07:00 AM",
-          "end_time_bst": "Nov 05, 2026, 10:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Saint Mary of the Woods Pomeroys vs Southern Indiana Screaming Eagles",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Southern Indiana Screaming Eagles",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/88.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/88.png",
-        "channels": []
-      },
-      {
         "title": "SE Louisiana Lions vs Auburn Tigers",
         "sport": "Basketball",
         "sub_category": "Basketball",
@@ -1301,81 +1051,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
-        "channels": []
-      },
-      {
-        "title": "West Coast Baptist Eagles vs Boise State Broncos",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "west-coast-baptist-eagles-vs-boise-state-broncos",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 08:00 AM",
-          "end_time_bst": "Nov 05, 2026, 11:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "West Coast Baptist Eagles vs Boise State Broncos",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Boise State Broncos",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png",
-        "channels": []
-      },
-      {
-        "title": "Grace University Lancers vs Utah Tech Trailblazers",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "grace-university-lancers-vs-utah-tech-trailblazers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 08:00 AM",
-          "end_time_bst": "Nov 05, 2026, 11:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Grace University Lancers vs Utah Tech Trailblazers",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Utah Tech Trailblazers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/3101.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/3101.png",
-        "channels": []
-      },
-      {
-        "title": "Salish Kootenai Bison vs Montana Grizzlies",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "salish-kootenai-bison-vs-montana-grizzlies",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 08:00 AM",
-          "end_time_bst": "Nov 05, 2026, 11:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Salish Kootenai Bison vs Montana Grizzlies",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Montana Grizzlies",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/149.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/149.png",
         "channels": []
       },
       {
