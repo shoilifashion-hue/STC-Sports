@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 05, 2026, 07:17 AM",
+  "last_updated": "Nov 05, 2026, 07:47 AM",
   "event_count": 39,
   "events": {
     "events": [
@@ -707,8 +707,8 @@
         "title": "Toronto Raptors vs Denver Nuggets",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "toronto-raptors-vs-denver-nuggets",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -732,8 +732,8 @@
         "title": "Portland Trail Blazers vs Phoenix Suns",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "portland-trail-blazers-vs-phoenix-suns",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -757,8 +757,8 @@
         "title": "Radford Highlanders vs California Golden Bears",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "radford-highlanders-vs-california-golden-bears",
         "schedule": {
           "timezone": "BST (UTC+6)",
