@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 05, 2026, 11:18 AM",
-  "event_count": 12,
+  "last_updated": "Nov 05, 2026, 11:58 AM",
+  "event_count": 24,
   "events": {
     "events": [
       {
@@ -129,106 +129,6 @@
         "channels": []
       },
       {
-        "title": "Dallas Mavericks vs San Antonio Spurs",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "dallas-mavericks-vs-san-antonio-spurs",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 08:30 AM",
-          "end_time_bst": "Nov 05, 2026, 11:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Dallas Mavericks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png"
-          },
-          "team_b": {
-            "name": "San Antonio Spurs",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
-        "channels": []
-      },
-      {
-        "title": "Los Angeles Lakers vs Sacramento Kings",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "los-angeles-lakers-vs-sacramento-kings",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 09:00 AM",
-          "end_time_bst": "Nov 05, 2026, 12:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Los Angeles Lakers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png"
-          },
-          "team_b": {
-            "name": "Sacramento Kings",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
-        "channels": []
-      },
-      {
-        "title": "Queens University Royals vs Loyola Marymount Lions",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "queens-university-royals-vs-loyola-marymount-lions",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 09:00 AM",
-          "end_time_bst": "Nov 05, 2026, 12:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Queens University Royals",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2511.png"
-          },
-          "team_b": {
-            "name": "Loyola Marymount Lions",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2351.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2511.png",
-        "channels": []
-      },
-      {
-        "title": "Milwaukee Panthers vs Santa Clara Broncos",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "milwaukee-panthers-vs-santa-clara-broncos",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 09:00 AM",
-          "end_time_bst": "Nov 05, 2026, 12:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Milwaukee Panthers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/270.png"
-          },
-          "team_b": {
-            "name": "Santa Clara Broncos",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2541.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/270.png",
-        "channels": []
-      },
-      {
         "title": "San Jose Sharks vs Los Angeles Kings",
         "sport": "Hockey",
         "sub_category": "Hockey",
@@ -254,31 +154,6 @@
         "channels": []
       },
       {
-        "title": "Calgary Flames vs Seattle Kraken",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "calgary-flames-vs-seattle-kraken",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 09:00 AM",
-          "end_time_bst": "Nov 05, 2026, 12:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Calgary Flames",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png"
-          },
-          "team_b": {
-            "name": "Seattle Kraken",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sea.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png",
-        "channels": []
-      },
-      {
         "title": "Miami Heat vs LA Clippers",
         "sport": "Basketball",
         "sub_category": "Basketball",
@@ -301,6 +176,431 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "channels": []
+      },
+      {
+        "title": "Ferencvaros vs AC Milan",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "ferencvaros-vs-ac-milan",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Ferencvaros",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/622.png"
+          },
+          "team_b": {
+            "name": "AC Milan",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/622.png",
+        "channels": []
+      },
+      {
+        "title": "RB Salzburg vs Anderlecht",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "rb-salzburg-vs-anderlecht",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "RB Salzburg",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2790.png"
+          },
+          "team_b": {
+            "name": "Anderlecht",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/441.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2790.png",
+        "channels": []
+      },
+      {
+        "title": "TSG Hoffenheim vs Crystal Palace",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "tsg-hoffenheim-vs-crystal-palace",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "TSG Hoffenheim",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png"
+          },
+          "team_b": {
+            "name": "Crystal Palace",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png",
+        "channels": []
+      },
+      {
+        "title": "Jagiellonia Bialystok vs Le vs ki Sofia",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "jagiellonia-bialystok-vs-le-vs-ki-sofia",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Jagiellonia Bialystok",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11505.png"
+          },
+          "team_b": {
+            "name": "Levski Sofia",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/490.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11505.png",
+        "channels": []
+      },
+      {
+        "title": "Viktoria Plzen vs Lillestrom",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "viktoria-plzen-vs-lillestrom",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Viktoria Plzen",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11706.png"
+          },
+          "team_b": {
+            "name": "Lillestrom",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/987.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11706.png",
+        "channels": []
+      },
+      {
+        "title": "Omonia Nicosia vs NEC Nijmegen",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "omonia-nicosia-vs-nec-nijmegen",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Omonia Nicosia",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/617.png"
+          },
+          "team_b": {
+            "name": "NEC Nijmegen",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/147.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/617.png",
+        "channels": []
+      },
+      {
+        "title": "Lyon vs Real Sociedad",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "lyon-vs-real-sociedad",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Lyon",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png"
+          },
+          "team_b": {
+            "name": "Real Sociedad",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
+        "channels": []
+      },
+      {
+        "title": "AFC Bournemouth vs Sparta Prague",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "afc-bournemouth-vs-sparta-prague",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "AFC Bournemouth",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png"
+          },
+          "team_b": {
+            "name": "Sparta Prague",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/433.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
+        "channels": []
+      },
+      {
+        "title": "Braga vs AGF",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "braga-vs-agf",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Braga",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2994.png"
+          },
+          "team_b": {
+            "name": "AGF",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7853.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2994.png",
+        "channels": []
+      },
+      {
+        "title": "Kairat Almaty vs Atalanta",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "kairat-almaty-vs-atalanta",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Kairat Almaty",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2528.png"
+          },
+          "team_b": {
+            "name": "Atalanta",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2528.png",
+        "channels": []
+      },
+      {
+        "title": "Ajax Amsterdam vs FC Midtjylland",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "ajax-amsterdam-vs-fc-midtjylland",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Ajax Amsterdam",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/139.png"
+          },
+          "team_b": {
+            "name": "FC Midtjylland",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/572.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/139.png",
+        "channels": []
+      },
+      {
+        "title": "Heart of Midlothian vs FC Thun",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "heart-of-midlothian-vs-fc-thun",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Heart of Midlothian",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/262.png"
+          },
+          "team_b": {
+            "name": "FC Thun",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3024.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/262.png",
+        "channels": []
+      },
+      {
+        "title": "KAA Gent vs Ku PS Kuopio",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "kaa-gent-vs-ku-ps-kuopio",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "KAA Gent",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3611.png"
+          },
+          "team_b": {
+            "name": "KuPS Kuopio",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8169.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3611.png",
+        "channels": []
+      },
+      {
+        "title": "Hajduk Split vs Lincoln Red Imps",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "hajduk-split-vs-lincoln-red-imps",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Hajduk Split",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/489.png"
+          },
+          "team_b": {
+            "name": "Lincoln Red Imps",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17856.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/489.png",
+        "channels": []
+      },
+      {
+        "title": "Borac Banja Luka vs Mjällby AIF",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "borac-banja-luka-vs-mjällby-aif",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Borac Banja Luka",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20710.png"
+          },
+          "team_b": {
+            "name": "Mjällby AIF",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20301.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20710.png",
+        "channels": []
+      },
+      {
+        "title": "Inter D'Escaldes vs Red Star Belgrade",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "inter-d-escaldes-vs-red-star-belgrade",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Inter D'Escaldes",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20703.png"
+          },
+          "team_b": {
+            "name": "Red Star Belgrade",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2290.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20703.png",
+        "channels": []
+      },
+      {
+        "title": "SC Freiburg vs Trabzonspor",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "sc-freiburg-vs-trabzonspor",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 05, 2026, 11:45 PM",
+          "end_time_bst": "Nov 06, 2026, 02:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "SC Freiburg",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png"
+          },
+          "team_b": {
+            "name": "Trabzonspor",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/997.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png",
         "channels": []
       }
     ]
