@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 05, 2026, 11:31 PM",
-  "event_count": 64,
+  "last_updated": "Nov 06, 2026, 01:46 AM",
+  "event_count": 61,
   "events": {
     "events": [
       {
@@ -329,31 +329,6 @@
         "channels": []
       },
       {
-        "title": "Braga vs AGF",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "braga-vs-agf",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 11:45 PM",
-          "end_time_bst": "Nov 06, 2026, 02:45 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Braga",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2994.png"
-          },
-          "team_b": {
-            "name": "AGF",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7853.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2994.png",
-        "channels": []
-      },
-      {
         "title": "Kairat Almaty vs Atalanta",
         "sport": "Soccer",
         "sub_category": "Soccer",
@@ -479,31 +454,6 @@
         "channels": []
       },
       {
-        "title": "Borac Banja Luka vs Mjällby AIF",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "borac-banja-luka-vs-mjällby-aif",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 11:45 PM",
-          "end_time_bst": "Nov 06, 2026, 02:45 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Borac Banja Luka",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20710.png"
-          },
-          "team_b": {
-            "name": "Mjällby AIF",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20301.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20710.png",
-        "channels": []
-      },
-      {
         "title": "Inter D'Escaldes vs Red Star Belgrade",
         "sport": "Soccer",
         "sub_category": "Soccer",
@@ -529,36 +479,11 @@
         "channels": []
       },
       {
-        "title": "SC Freiburg vs Trabzonspor",
+        "title": "Juventus vs AZ Alkmaar",
         "sport": "Soccer",
         "sub_category": "Soccer",
         "status": "LIVE",
         "is_hot": true,
-        "slug": "sc-freiburg-vs-trabzonspor",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 11:45 PM",
-          "end_time_bst": "Nov 06, 2026, 02:45 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "SC Freiburg",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png"
-          },
-          "team_b": {
-            "name": "Trabzonspor",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/997.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png",
-        "channels": []
-      },
-      {
-        "title": "Juventus vs AZ Alkmaar",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
         "slug": "juventus-vs-az-alkmaar",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -582,8 +507,8 @@
         "title": "Marseille vs Bayer Leverkusen",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "marseille-vs-bayer-leverkusen",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -607,8 +532,8 @@
         "title": "Lech Poznan vs Benfica",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "lech-poznan-vs-benfica",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -632,8 +557,8 @@
         "title": "Union St.-Gilloise vs Celta Vigo",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "union-st-gilloise-vs-celta-vigo",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -657,8 +582,8 @@
         "title": "Besiktas vs Celtic",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "besiktas-vs-celtic",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -682,8 +607,8 @@
         "title": "OFI Crete vs Hapoel Be'er",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ofi-crete-vs-hapoel-be-er",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -707,8 +632,8 @@
         "title": "NK Celje vs SK Sturm Graz",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "nk-celje-vs-sk-sturm-graz",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -732,8 +657,8 @@
         "title": "Dinamo Zagreb vs Sunderland",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "dinamo-zagreb-vs-sunderland",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -757,8 +682,8 @@
         "title": "Ararat-Armenia vs Torreense",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ararat-armenia-vs-torreense",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -782,8 +707,8 @@
         "title": "FC Nordsjælland vs AS Monaco",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "fc-nordsjælland-vs-as-monaco",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -807,8 +732,8 @@
         "title": "Egnatia vs CSU Craiova",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "egnatia-vs-csu-craiova",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -832,8 +757,8 @@
         "title": "Iberia 1999 vs F.C. København",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "iberia-1999-vs-f-c-københavn",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -857,8 +782,8 @@
         "title": "Kauno Zalgiris vs FC Lugano",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "kauno-zalgiris-vs-fc-lugano",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -882,8 +807,8 @@
         "title": "Pafos vs FC Twente",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "pafos-vs-fc-twente",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -907,8 +832,8 @@
         "title": "Brighton & Hove Albion vs Getafe",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "brighton-hove-albion-vs-getafe",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -932,8 +857,8 @@
         "title": "CSKA Sofia vs Panathinaikos",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "cska-sofia-vs-panathinaikos",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -957,8 +882,8 @@
         "title": "Jablonec vs Riga FC",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "jablonec-vs-riga-fc",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -982,8 +907,8 @@
         "title": "SK Brann vs Sint-Truidense",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "sk-brann-vs-sint-truidense",
         "schedule": {
           "timezone": "BST (UTC+6)",
