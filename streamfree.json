@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 05, 2026, 06:02 AM",
+  "last_updated": "Nov 05, 2026, 06:17 AM",
   "event_count": 39,
   "events": {
     "events": [
@@ -332,8 +332,8 @@
         "title": "Milwaukee Bucks vs Boston Celtics",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "milwaukee-bucks-vs-boston-celtics",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -357,8 +357,8 @@
         "title": "Charlotte Hornets vs Brooklyn Nets",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "charlotte-hornets-vs-brooklyn-nets",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -382,8 +382,8 @@
         "title": "Chicago Bulls vs New York Knicks",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "chicago-bulls-vs-new-york-knicks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -407,8 +407,8 @@
         "title": "Central College Dutch vs Drake Bulldogs",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "central-college-dutch-vs-drake-bulldogs",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -432,8 +432,8 @@
         "title": "Bob Jones Bruins vs Furman Paladins",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "bob-jones-bruins-vs-furman-paladins",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -457,8 +457,8 @@
         "title": "Cal State Northridge Matadors vs Wichita State Shockers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "cal-state-northridge-matadors-vs-wichita-state-shockers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -482,8 +482,8 @@
         "title": "Ottawa Senators vs Buffalo Sabres",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ottawa-senators-vs-buffalo-sabres",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -507,8 +507,8 @@
         "title": "Chicago Blackhawks vs Florida Panthers",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "chicago-blackhawks-vs-florida-panthers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -532,8 +532,8 @@
         "title": "Central Michigan Chippewas vs Eastern Michigan Eagles",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "central-michigan-chippewas-vs-eastern-michigan-eagles",
         "schedule": {
           "timezone": "BST (UTC+6)",
