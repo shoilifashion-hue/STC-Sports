@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 05, 2026, 06:17 AM",
+  "last_updated": "Nov 05, 2026, 06:47 AM",
   "event_count": 39,
   "events": {
     "events": [
@@ -557,8 +557,8 @@
         "title": "Indiana Pacers vs Memphis Grizzlies",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "indiana-pacers-vs-memphis-grizzlies",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -582,8 +582,8 @@
         "title": "Utah Jazz vs New Orleans Pelicans",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "utah-jazz-vs-new-orleans-pelicans",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -607,8 +607,8 @@
         "title": "Cleveland Cavaliers vs Oklahoma City Thunder",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "cleveland-cavaliers-vs-oklahoma-city-thunder",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -632,8 +632,8 @@
         "title": "Northern Kentucky Norse vs South Dakota Coyotes",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "northern-kentucky-norse-vs-south-dakota-coyotes",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -657,8 +657,8 @@
         "title": "SE Louisiana Lions vs Auburn Tigers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "se-louisiana-lions-vs-auburn-tigers",
         "schedule": {
           "timezone": "BST (UTC+6)",
