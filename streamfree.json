@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 05, 2026, 06:47 AM",
+  "last_updated": "Nov 05, 2026, 07:17 AM",
   "event_count": 39,
   "events": {
     "events": [
@@ -682,8 +682,8 @@
         "title": "Minnesota Timberwolves vs Houston Rockets",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "minnesota-timberwolves-vs-houston-rockets",
         "schedule": {
           "timezone": "BST (UTC+6)",
