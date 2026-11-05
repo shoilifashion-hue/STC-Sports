@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 05, 2026, 09:52 PM",
+  "last_updated": "Nov 05, 2026, 11:31 PM",
   "event_count": 64,
   "events": {
     "events": [
@@ -132,8 +132,8 @@
         "title": "Ferencvaros vs AC Milan",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ferencvaros-vs-ac-milan",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -157,8 +157,8 @@
         "title": "RB Salzburg vs Anderlecht",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "rb-salzburg-vs-anderlecht",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -182,8 +182,8 @@
         "title": "TSG Hoffenheim vs Crystal Palace",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "tsg-hoffenheim-vs-crystal-palace",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -207,8 +207,8 @@
         "title": "Jagiellonia Bialystok vs Le vs ki Sofia",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "jagiellonia-bialystok-vs-le-vs-ki-sofia",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -232,8 +232,8 @@
         "title": "Viktoria Plzen vs Lillestrom",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "viktoria-plzen-vs-lillestrom",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -257,8 +257,8 @@
         "title": "Omonia Nicosia vs NEC Nijmegen",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "omonia-nicosia-vs-nec-nijmegen",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -282,8 +282,8 @@
         "title": "Lyon vs Real Sociedad",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "lyon-vs-real-sociedad",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -307,8 +307,8 @@
         "title": "AFC Bournemouth vs Sparta Prague",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "afc-bournemouth-vs-sparta-prague",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -332,8 +332,8 @@
         "title": "Braga vs AGF",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "braga-vs-agf",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -357,8 +357,8 @@
         "title": "Kairat Almaty vs Atalanta",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "kairat-almaty-vs-atalanta",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -382,8 +382,8 @@
         "title": "Ajax Amsterdam vs FC Midtjylland",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ajax-amsterdam-vs-fc-midtjylland",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -407,8 +407,8 @@
         "title": "Heart of Midlothian vs FC Thun",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "heart-of-midlothian-vs-fc-thun",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -432,8 +432,8 @@
         "title": "KAA Gent vs Ku PS Kuopio",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "kaa-gent-vs-ku-ps-kuopio",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -457,8 +457,8 @@
         "title": "Hajduk Split vs Lincoln Red Imps",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "hajduk-split-vs-lincoln-red-imps",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -482,8 +482,8 @@
         "title": "Borac Banja Luka vs Mjällby AIF",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "borac-banja-luka-vs-mjällby-aif",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -507,8 +507,8 @@
         "title": "Inter D'Escaldes vs Red Star Belgrade",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "inter-d-escaldes-vs-red-star-belgrade",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -532,8 +532,8 @@
         "title": "SC Freiburg vs Trabzonspor",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "sc-freiburg-vs-trabzonspor",
         "schedule": {
           "timezone": "BST (UTC+6)",
