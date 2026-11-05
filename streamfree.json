@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 05, 2026, 07:47 AM",
-  "event_count": 39,
+  "last_updated": "Nov 05, 2026, 08:17 AM",
+  "event_count": 35,
   "events": {
     "events": [
       {
@@ -179,56 +179,6 @@
         "channels": []
       },
       {
-        "title": "Concordia Chicago Cougars vs SIU Edwardsville Cougars",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "concordia-chicago-cougars-vs-siu-edwardsville-cougars",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 06:00 AM",
-          "end_time_bst": "Nov 05, 2026, 09:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Concordia Chicago Cougars",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2151.png"
-          },
-          "team_b": {
-            "name": "SIU Edwardsville Cougars",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2565.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2151.png",
-        "channels": []
-      },
-      {
-        "title": "Maryland Eastern Shore Hawks vs High Point Panthers",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "maryland-eastern-shore-hawks-vs-high-point-panthers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 06:00 AM",
-          "end_time_bst": "Nov 05, 2026, 09:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Maryland Eastern Shore Hawks",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2379.png"
-          },
-          "team_b": {
-            "name": "High Point Panthers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2272.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2379.png",
-        "channels": []
-      },
-      {
         "title": "Longwood Lancers vs Saint Joseph's Hawks",
         "sport": "Basketball",
         "sub_category": "Basketball",
@@ -251,31 +201,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2344.png",
-        "channels": []
-      },
-      {
-        "title": "Fairleigh Dickinson Knights vs Butler Bulldogs",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "fairleigh-dickinson-knights-vs-butler-bulldogs",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 06:00 AM",
-          "end_time_bst": "Nov 05, 2026, 09:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Fairleigh Dickinson Knights",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/161.png"
-          },
-          "team_b": {
-            "name": "Butler Bulldogs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2086.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/161.png",
         "channels": []
       },
       {
@@ -426,31 +351,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2964.png",
-        "channels": []
-      },
-      {
-        "title": "Bob Jones Bruins vs Furman Paladins",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "bob-jones-bruins-vs-furman-paladins",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 05, 2026, 06:30 AM",
-          "end_time_bst": "Nov 05, 2026, 09:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Bob Jones Bruins",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/3243.png"
-          },
-          "team_b": {
-            "name": "Furman Paladins",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/231.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/3243.png",
         "channels": []
       },
       {
@@ -782,8 +682,8 @@
         "title": "Dallas Mavericks vs San Antonio Spurs",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "dallas-mavericks-vs-san-antonio-spurs",
         "schedule": {
           "timezone": "BST (UTC+6)",
