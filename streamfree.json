@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 07, 2026, 12:45 AM",
+  "last_updated": "Nov 07, 2026, 01:15 AM",
   "event_count": 39,
   "events": {
     "events": [
@@ -132,8 +132,8 @@
         "title": "Cambridge United vs Bristol Rovers",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "cambridge-united-vs-bristol-rovers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -157,8 +157,8 @@
         "title": "Borussia Mönchengladbach vs Hamburg SV",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "borussia-mönchengladbach-vs-hamburg-sv",
         "schedule": {
           "timezone": "BST (UTC+6)",
