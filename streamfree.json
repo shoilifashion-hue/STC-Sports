@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 07, 2026, 03:56 AM",
-  "event_count": 34,
+  "last_updated": "Nov 07, 2026, 04:11 AM",
+  "event_count": 31,
   "events": {
     "events": [
       {
@@ -126,81 +126,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Coventry City vs Everton",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "coventry-city-vs-everton",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 02:00 AM",
-          "end_time_bst": "Nov 07, 2026, 05:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Coventry City",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png"
-          },
-          "team_b": {
-            "name": "Everton",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
-        "channels": []
-      },
-      {
-        "title": "Alavés vs Sevilla",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "alavés-vs-sevilla",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 02:00 AM",
-          "end_time_bst": "Nov 07, 2026, 05:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Alavés",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
-          },
-          "team_b": {
-            "name": "Sevilla",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
-        "channels": []
-      },
-      {
-        "title": "Bolton Wanderers vs Derby County",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "bolton-wanderers-vs-derby-county",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 02:00 AM",
-          "end_time_bst": "Nov 07, 2026, 05:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Bolton Wanderers",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/358.png"
-          },
-          "team_b": {
-            "name": "Derby County",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/374.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/358.png",
         "channels": []
       },
       {
