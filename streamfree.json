@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 06, 2026, 06:47 AM",
+  "last_updated": "Nov 06, 2026, 07:02 AM",
   "event_count": 29,
   "events": {
     "events": [
@@ -557,8 +557,8 @@
         "title": "Jacksonville Jaguars vs Baltimore Ravens",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "jacksonville-jaguars-vs-baltimore-ravens",
         "schedule": {
           "timezone": "BST (UTC+6)",
