@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 07, 2026, 01:30 AM",
+  "last_updated": "Nov 07, 2026, 01:45 AM",
   "event_count": 39,
   "events": {
     "events": [
@@ -257,8 +257,8 @@
         "title": "Coventry City vs Everton",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "coventry-city-vs-everton",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -282,8 +282,8 @@
         "title": "Alavés vs Sevilla",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "alavés-vs-sevilla",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -307,8 +307,8 @@
         "title": "Bolton Wanderers vs Derby County",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "bolton-wanderers-vs-derby-county",
         "schedule": {
           "timezone": "BST (UTC+6)",
