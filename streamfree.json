@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 06, 2026, 05:47 AM",
+  "last_updated": "Nov 06, 2026, 06:17 AM",
   "event_count": 29,
   "events": {
     "events": [
@@ -357,8 +357,8 @@
         "title": "UTSA Roadrunners vs Florida Atlantic Owls",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "utsa-roadrunners-vs-florida-atlantic-owls",
         "schedule": {
           "timezone": "BST (UTC+6)",
