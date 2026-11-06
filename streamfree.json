@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 06, 2026, 12:08 PM",
-  "event_count": 5,
+  "last_updated": "Nov 06, 2026, 02:38 PM",
+  "event_count": 13,
   "events": {
     "events": [
       {
@@ -126,6 +126,206 @@
           }
         },
         "logo": null,
+        "channels": []
+      },
+      {
+        "title": "Cambridge United vs Bristol Rovers",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "cambridge-united-vs-bristol-rovers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 01:30 AM",
+          "end_time_bst": "Nov 07, 2026, 04:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Cambridge United",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/351.png"
+          },
+          "team_b": {
+            "name": "Bristol Rovers",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/308.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/351.png",
+        "channels": []
+      },
+      {
+        "title": "Borussia Mönchengladbach vs Hamburg SV",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "borussia-mönchengladbach-vs-hamburg-sv",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 01:30 AM",
+          "end_time_bst": "Nov 07, 2026, 04:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Borussia Mönchengladbach",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png"
+          },
+          "team_b": {
+            "name": "Hamburg SV",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
+        "channels": []
+      },
+      {
+        "title": "Leicester City vs Oxford City",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "leicester-city-vs-oxford-city",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 01:45 AM",
+          "end_time_bst": "Nov 07, 2026, 04:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Leicester City",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/375.png"
+          },
+          "team_b": {
+            "name": "Leicester City vs Oxford City",
+            "logo": null
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/375.png",
+        "channels": []
+      },
+      {
+        "title": "Udinese vs Venezia",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "udinese-vs-venezia",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 01:45 AM",
+          "end_time_bst": "Nov 07, 2026, 04:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Udinese",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png"
+          },
+          "team_b": {
+            "name": "Venezia",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png",
+        "channels": []
+      },
+      {
+        "title": "Strasbourg vs Toulouse",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "strasbourg-vs-toulouse",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 01:45 AM",
+          "end_time_bst": "Nov 07, 2026, 04:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Strasbourg",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png"
+          },
+          "team_b": {
+            "name": "Toulouse",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
+        "channels": []
+      },
+      {
+        "title": "Coventry City vs Everton",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "coventry-city-vs-everton",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 02:00 AM",
+          "end_time_bst": "Nov 07, 2026, 05:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Coventry City",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png"
+          },
+          "team_b": {
+            "name": "Everton",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
+        "channels": []
+      },
+      {
+        "title": "Alavés vs Sevilla",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "alavés-vs-sevilla",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 02:00 AM",
+          "end_time_bst": "Nov 07, 2026, 05:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Alavés",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
+          },
+          "team_b": {
+            "name": "Sevilla",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
+        "channels": []
+      },
+      {
+        "title": "Bolton Wanderers vs Derby County",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "bolton-wanderers-vs-derby-county",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 02:00 AM",
+          "end_time_bst": "Nov 07, 2026, 05:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Bolton Wanderers",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/358.png"
+          },
+          "team_b": {
+            "name": "Derby County",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/374.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/358.png",
         "channels": []
       }
     ]
