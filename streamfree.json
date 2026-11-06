@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 06, 2026, 09:12 AM",
+  "last_updated": "Nov 06, 2026, 09:17 AM",
   "event_count": 17,
   "events": {
     "events": [
@@ -407,8 +407,8 @@
         "title": "Cal Poly Mustangs vs Arizona Wildcats",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "cal-poly-mustangs-vs-arizona-wildcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
