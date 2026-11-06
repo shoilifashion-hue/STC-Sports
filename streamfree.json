@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 07, 2026, 01:15 AM",
+  "last_updated": "Nov 07, 2026, 01:30 AM",
   "event_count": 39,
   "events": {
     "events": [
@@ -182,8 +182,8 @@
         "title": "Leicester City vs Oxford City",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "leicester-city-vs-oxford-city",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -207,8 +207,8 @@
         "title": "Udinese vs Venezia",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "udinese-vs-venezia",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -232,8 +232,8 @@
         "title": "Strasbourg vs Toulouse",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "strasbourg-vs-toulouse",
         "schedule": {
           "timezone": "BST (UTC+6)",
