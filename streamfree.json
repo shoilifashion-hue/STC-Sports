@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 07, 2026, 04:31 AM",
+  "last_updated": "Nov 07, 2026, 05:46 AM",
   "event_count": 31,
   "events": {
     "events": [
@@ -157,8 +157,8 @@
         "title": "Washington Wizards vs Atlanta Hawks",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "washington-wizards-vs-atlanta-hawks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -182,8 +182,8 @@
         "title": "Boston Celtics vs Charlotte Hornets",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "boston-celtics-vs-charlotte-hornets",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -207,8 +207,8 @@
         "title": "James Madison Dukes vs Kentucky Wildcats",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "james-madison-dukes-vs-kentucky-wildcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -232,8 +232,8 @@
         "title": "Columbus Blue Jackets vs Buffalo Sabres",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "columbus-blue-jackets-vs-buffalo-sabres",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -257,8 +257,8 @@
         "title": "Virginia Tech Hokies vs SMU Mustangs",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "virginia-tech-hokies-vs-smu-mustangs",
         "schedule": {
           "timezone": "BST (UTC+6)",
