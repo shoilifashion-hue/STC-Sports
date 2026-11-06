@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 06, 2026, 07:51 AM",
+  "last_updated": "Nov 06, 2026, 08:17 AM",
   "event_count": 28,
   "events": {
     "events": [
@@ -632,8 +632,8 @@
         "title": "Nashville Predators vs Colorado Avalanche",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "nashville-predators-vs-colorado-avalanche",
         "schedule": {
           "timezone": "BST (UTC+6)",
