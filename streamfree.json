@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 06, 2026, 06:17 AM",
+  "last_updated": "Nov 06, 2026, 06:47 AM",
   "event_count": 29,
   "events": {
     "events": [
@@ -382,8 +382,8 @@
         "title": "Jacksonville Dolphins vs Florida Gators",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "jacksonville-dolphins-vs-florida-gators",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -407,8 +407,8 @@
         "title": "Coastal Carolina Chanticleers vs Duke Blue Devils",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "coastal-carolina-chanticleers-vs-duke-blue-devils",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -432,8 +432,8 @@
         "title": "Toledo Rockets vs Michigan State Spartans",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "toledo-rockets-vs-michigan-state-spartans",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -457,8 +457,8 @@
         "title": "Gardner-Webb Runnin' Bulldogs vs Texas Longhorns",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "gardner-webb-runnin-bulldogs-vs-texas-longhorns",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -482,8 +482,8 @@
         "title": "Vancouver Canucks vs Winnipeg Jets",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "vancouver-canucks-vs-winnipeg-jets",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -507,8 +507,8 @@
         "title": "Anaheim Ducks vs Edmonton Oilers",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "anaheim-ducks-vs-edmonton-oilers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -532,8 +532,8 @@
         "title": "James Madison Dukes vs Southern Miss Golden Eagles",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "james-madison-dukes-vs-southern-miss-golden-eagles",
         "schedule": {
           "timezone": "BST (UTC+6)",
