@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 07, 2026, 11:45 PM",
-  "event_count": 104,
+  "last_updated": "Nov 08, 2026, 12:05 AM",
+  "event_count": 107,
   "events": {
     "events": [
       {
@@ -226,56 +226,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png",
-        "channels": []
-      },
-      {
-        "title": "Blackpool vs AFC Hornchurch",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "blackpool-vs-afc-hornchurch",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 09:00 PM",
-          "end_time_bst": "Nov 08, 2026, 12:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Blackpool",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/346.png"
-          },
-          "team_b": {
-            "name": "Blackpool vs AFC Hornchurch",
-            "logo": null
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/346.png",
-        "channels": []
-      },
-      {
-        "title": "Rochdale vs Fleetwood Town",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "rochdale-vs-fleetwood-town",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 09:00 PM",
-          "end_time_bst": "Nov 08, 2026, 12:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Rochdale",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/303.png"
-          },
-          "team_b": {
-            "name": "Fleetwood Town",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3891.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/303.png",
         "channels": []
       },
       {
@@ -576,6 +526,56 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+        "channels": []
+      },
+      {
+        "title": "Athletic Club vs Osasuna",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "athletic-club-vs-osasuna",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:30 PM",
+          "end_time_bst": "Nov 08, 2026, 02:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Athletic Club",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
+          },
+          "team_b": {
+            "name": "Osasuna",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
+        "channels": []
+      },
+      {
+        "title": "Werder Bremen vs Vf B Stuttgart",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "LIVE",
+        "is_hot": true,
+        "slug": "werder-bremen-vs-vf-b-stuttgart",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:30 PM",
+          "end_time_bst": "Nov 08, 2026, 02:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Werder Bremen",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png"
+          },
+          "team_b": {
+            "name": "VfB Stuttgart",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
         "channels": []
       },
       {
@@ -2501,6 +2501,81 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png",
+        "channels": []
+      },
+      {
+        "title": "West Virginia Mountaineers vs Texas Tech Red Raiders",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "west-virginia-mountaineers-vs-texas-tech-red-raiders",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 08:30 AM",
+          "end_time_bst": "Nov 08, 2026, 11:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "West Virginia Mountaineers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png"
+          },
+          "team_b": {
+            "name": "Texas Tech Red Raiders",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png",
+        "channels": []
+      },
+      {
+        "title": "Fresno State Bulldogs vs Utah State Aggies",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "fresno-state-bulldogs-vs-utah-state-aggies",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 08:30 AM",
+          "end_time_bst": "Nov 08, 2026, 11:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Fresno State Bulldogs",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/278.png"
+          },
+          "team_b": {
+            "name": "Utah State Aggies",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/328.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/278.png",
+        "channels": []
+      },
+      {
+        "title": "Hawai'i Rainbow Warriors vs UTEP Miners",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "hawai-i-rainbow-warriors-vs-utep-miners",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 08:30 AM",
+          "end_time_bst": "Nov 08, 2026, 11:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Hawai'i Rainbow Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/62.png"
+          },
+          "team_b": {
+            "name": "UTEP Miners",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2638.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/62.png",
         "channels": []
       },
       {
