@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 07, 2026, 10:02 AM",
-  "event_count": 69,
+  "last_updated": "Nov 07, 2026, 10:07 AM",
+  "event_count": 67,
   "events": {
     "events": [
       {
@@ -154,31 +154,6 @@
         "channels": []
       },
       {
-        "title": "South Florida Bulls vs East Carolina Pirates",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "south-florida-bulls-vs-east-carolina-pirates",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 06:30 AM",
-          "end_time_bst": "Nov 07, 2026, 09:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "South Florida Bulls",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png"
-          },
-          "team_b": {
-            "name": "East Carolina Pirates",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/151.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png",
-        "channels": []
-      },
-      {
         "title": "Nebraska Cornhuskers vs Illinois Fighting Illini",
         "sport": "Football",
         "sub_category": "Football",
@@ -251,31 +226,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2393.png",
-        "channels": []
-      },
-      {
-        "title": "Omaha Mavericks vs BYU Cougars",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "omaha-mavericks-vs-byu-cougars",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 08:00 AM",
-          "end_time_bst": "Nov 07, 2026, 11:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Omaha Mavericks",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2437.png"
-          },
-          "team_b": {
-            "name": "BYU Cougars",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2437.png",
         "channels": []
       },
       {
