@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 08, 2026, 05:01 AM",
-  "event_count": 76,
+  "last_updated": "Nov 08, 2026, 05:09 AM",
+  "event_count": 75,
   "events": {
     "events": [
       {
@@ -451,31 +451,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
-        "channels": []
-      },
-      {
-        "title": "Vancouver Whitecaps vs CF Montréal",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "vancouver-whitecaps-vs-cf-montréal",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 03:00 AM",
-          "end_time_bst": "Nov 08, 2026, 06:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Vancouver Whitecaps",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png"
-          },
-          "team_b": {
-            "name": "CF Montréal",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9720.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png",
         "channels": []
       },
       {
