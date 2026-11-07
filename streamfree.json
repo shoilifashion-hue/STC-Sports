@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 07, 2026, 10:24 PM",
+  "last_updated": "Nov 07, 2026, 10:45 PM",
   "event_count": 136,
   "events": {
     "events": [
@@ -1082,8 +1082,8 @@
         "title": "Bologna vs Parma",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "bologna-vs-parma",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1107,8 +1107,8 @@
         "title": "Morehead State Eagles vs Louisville Cardinals",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "morehead-state-eagles-vs-louisville-cardinals",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1132,8 +1132,8 @@
         "title": "BYU Cougars vs Utah Utes",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "byu-cougars-vs-utah-utes",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1157,8 +1157,8 @@
         "title": "Texas Longhorns vs Missouri Tigers",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "texas-longhorns-vs-missouri-tigers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1182,8 +1182,8 @@
         "title": "UCLA Bruins vs Minnesota Golden Gophers",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ucla-bruins-vs-minnesota-golden-gophers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1207,8 +1207,8 @@
         "title": "Iowa State Cyclones vs Baylor Bears",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "iowa-state-cyclones-vs-baylor-bears",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1232,8 +1232,8 @@
         "title": "Clemson Tigers vs Syracuse Orange",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "clemson-tigers-vs-syracuse-orange",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1257,8 +1257,8 @@
         "title": "Florida State Seminoles vs Boston College Eagles",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "florida-state-seminoles-vs-boston-college-eagles",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1282,8 +1282,8 @@
         "title": "North Carolina Tar Heels vs UConn Huskies",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "north-carolina-tar-heels-vs-uconn-huskies",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1307,8 +1307,8 @@
         "title": "Tulsa Golden Hurricane vs Tulane Green Wave",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "tulsa-golden-hurricane-vs-tulane-green-wave",
         "schedule": {
           "timezone": "BST (UTC+6)",
