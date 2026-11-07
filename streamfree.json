@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 08, 2026, 05:36 AM",
+  "last_updated": "Nov 08, 2026, 05:46 AM",
   "event_count": 67,
   "events": {
     "events": [
@@ -732,8 +732,8 @@
         "title": "Portland Timbers vs Austin FC",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "portland-timbers-vs-austin-fc",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -757,8 +757,8 @@
         "title": "Colorado Rapids vs FC Dallas",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "colorado-rapids-vs-fc-dallas",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -782,8 +782,8 @@
         "title": "St. Louis CITY SC vs Houston Dynamo FC",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "st-louis-city-sc-vs-houston-dynamo-fc",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -807,8 +807,8 @@
         "title": "San Jose Earthquakes vs Minnesota United FC",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "san-jose-earthquakes-vs-minnesota-united-fc",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -832,8 +832,8 @@
         "title": "LA Galaxy vs Real Salt Lake",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "la-galaxy-vs-real-salt-lake",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -857,8 +857,8 @@
         "title": "Sporting Kansas City vs San Diego FC",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "sporting-kansas-city-vs-san-diego-fc",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -882,8 +882,8 @@
         "title": "LAFC vs Seattle Sounders FC",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "lafc-vs-seattle-sounders-fc",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -907,8 +907,8 @@
         "title": "Montreal Canadiens vs Toronto Maple Leafs",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "montreal-canadiens-vs-toronto-maple-leafs",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -932,8 +932,8 @@
         "title": "Utah Mammoth vs Ottawa Senators",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "utah-mammoth-vs-ottawa-senators",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -957,8 +957,8 @@
         "title": "New Jersey Devils vs New York Islanders",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "new-jersey-devils-vs-new-york-islanders",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -982,8 +982,8 @@
         "title": "Sam Houston Bearkats vs Jacksonville State Gamecocks",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "sam-houston-bearkats-vs-jacksonville-state-gamecocks",
         "schedule": {
           "timezone": "BST (UTC+6)",
