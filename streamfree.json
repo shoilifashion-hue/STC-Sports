@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 08, 2026, 01:15 AM",
+  "last_updated": "Nov 08, 2026, 01:30 AM",
   "event_count": 101,
   "events": {
     "events": [
@@ -657,8 +657,8 @@
         "title": "Sassuolo vs AS Roma",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "sassuolo-vs-as-roma",
         "schedule": {
           "timezone": "BST (UTC+6)",
