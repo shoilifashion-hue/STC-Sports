@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 07, 2026, 11:07 AM",
-  "event_count": 74,
+  "last_updated": "Nov 07, 2026, 11:42 AM",
+  "event_count": 77,
   "events": {
     "events": [
       {
@@ -151,31 +151,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "New Mexico Lobos vs Nevada Wolf Pack",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "new-mexico-lobos-vs-nevada-wolf-pack",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 08:00 AM",
-          "end_time_bst": "Nov 07, 2026, 11:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "New Mexico Lobos",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/167.png"
-          },
-          "team_b": {
-            "name": "Nevada Wolf Pack",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2440.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/167.png",
         "channels": []
       },
       {
@@ -376,31 +351,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/380.png",
-        "channels": []
-      },
-      {
-        "title": "Racing Santander vs Málaga",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "racing-santander-vs-málaga",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 07:00 PM",
-          "end_time_bst": "Nov 07, 2026, 10:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Racing Santander",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
-          },
-          "team_b": {
-            "name": "Málaga",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
         "channels": []
       },
       {
@@ -1579,31 +1529,6 @@
         "channels": []
       },
       {
-        "title": "Deportivo vs Espanyol",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "deportivo-vs-espanyol",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 09:15 PM",
-          "end_time_bst": "Nov 08, 2026, 12:15 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Deportivo",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png"
-          },
-          "team_b": {
-            "name": "Espanyol",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png",
-        "channels": []
-      },
-      {
         "title": "Bologna vs Parma",
         "sport": "Soccer",
         "sub_category": "Soccer",
@@ -1851,6 +1776,156 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/202.png",
+        "channels": []
+      },
+      {
+        "title": "Notts County vs Altrincham",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "notts-county-vs-altrincham",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:30 PM",
+          "end_time_bst": "Nov 08, 2026, 02:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Notts County",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/340.png"
+          },
+          "team_b": {
+            "name": "Altrincham",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/633.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/340.png",
+        "channels": []
+      },
+      {
+        "title": "Manchester City vs Nottingham Forest",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "manchester-city-vs-nottingham-forest",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:30 PM",
+          "end_time_bst": "Nov 08, 2026, 02:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Manchester City",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png"
+          },
+          "team_b": {
+            "name": "Nottingham Forest",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+        "channels": []
+      },
+      {
+        "title": "Werder Bremen vs Vf B Stuttgart",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "werder-bremen-vs-vf-b-stuttgart",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:30 PM",
+          "end_time_bst": "Nov 08, 2026, 02:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Werder Bremen",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png"
+          },
+          "team_b": {
+            "name": "VfB Stuttgart",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
+        "channels": []
+      },
+      {
+        "title": "Florida Panthers vs Washington Capitals",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "florida-panthers-vs-washington-capitals",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:30 PM",
+          "end_time_bst": "Nov 08, 2026, 02:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Florida Panthers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png"
+          },
+          "team_b": {
+            "name": "Washington Capitals",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wsh.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png",
+        "channels": []
+      },
+      {
+        "title": "Duke Blue Devils vs NC State Wolfpack",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "duke-blue-devils-vs-nc-state-wolfpack",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:30 PM",
+          "end_time_bst": "Nov 08, 2026, 02:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Duke Blue Devils",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png"
+          },
+          "team_b": {
+            "name": "NC State Wolfpack",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/152.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
+        "channels": []
+      },
+      {
+        "title": "Maryland Terrapins vs Purdue Boilermakers",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "maryland-terrapins-vs-purdue-boilermakers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:30 PM",
+          "end_time_bst": "Nov 08, 2026, 02:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Maryland Terrapins",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/120.png"
+          },
+          "team_b": {
+            "name": "Purdue Boilermakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/120.png",
         "channels": []
       }
     ]
