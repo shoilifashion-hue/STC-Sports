@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 07, 2026, 05:46 AM",
+  "last_updated": "Nov 07, 2026, 06:16 AM",
   "event_count": 31,
   "events": {
     "events": [
@@ -282,8 +282,8 @@
         "title": "Philadelphia 76ers vs Cleveland Cavaliers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "philadelphia-76ers-vs-cleveland-cavaliers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -307,8 +307,8 @@
         "title": "Arkansas State Red Wolves vs Alabama Crimson Tide",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "arkansas-state-red-wolves-vs-alabama-crimson-tide",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -332,8 +332,8 @@
         "title": "South Florida Bulls vs East Carolina Pirates",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "south-florida-bulls-vs-east-carolina-pirates",
         "schedule": {
           "timezone": "BST (UTC+6)",
