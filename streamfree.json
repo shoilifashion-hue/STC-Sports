@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 08, 2026, 02:26 AM",
+  "last_updated": "Nov 08, 2026, 02:31 AM",
   "event_count": 94,
   "events": {
     "events": [
@@ -882,8 +882,8 @@
         "title": "UCF Knights vs Kansas Jayhawks",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ucf-knights-vs-kansas-jayhawks",
         "schedule": {
           "timezone": "BST (UTC+6)",
