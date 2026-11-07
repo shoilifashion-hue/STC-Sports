@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 07, 2026, 07:49 PM",
-  "event_count": 131,
+  "last_updated": "Nov 07, 2026, 08:04 PM",
+  "event_count": 134,
   "events": {
     "events": [
       {
@@ -3276,6 +3276,81 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+        "channels": []
+      },
+      {
+        "title": "Houston Rockets vs Phoenix Suns",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "houston-rockets-vs-phoenix-suns",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 08:00 AM",
+          "end_time_bst": "Nov 08, 2026, 11:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png"
+          },
+          "team_b": {
+            "name": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+        "channels": []
+      },
+      {
+        "title": "Detroit Red Wings vs Colorado Avalanche",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "detroit-red-wings-vs-colorado-avalanche",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 08:00 AM",
+          "end_time_bst": "Nov 08, 2026, 11:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Detroit Red Wings",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png"
+          },
+          "team_b": {
+            "name": "Colorado Avalanche",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png",
+        "channels": []
+      },
+      {
+        "title": "Pittsburgh Penguins vs Los Angeles Kings",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "pittsburgh-penguins-vs-los-angeles-kings",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 08:00 AM",
+          "end_time_bst": "Nov 08, 2026, 11:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Pittsburgh Penguins",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png"
+          },
+          "team_b": {
+            "name": "Los Angeles Kings",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/la.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png",
         "channels": []
       }
     ]
