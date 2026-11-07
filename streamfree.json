@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 07, 2026, 06:48 PM",
-  "event_count": 124,
+  "last_updated": "Nov 07, 2026, 07:49 PM",
+  "event_count": 131,
   "events": {
     "events": [
       {
@@ -232,8 +232,8 @@
         "title": "Frosinone vs Cagliari",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "frosinone-vs-cagliari",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -257,8 +257,8 @@
         "title": "Lecce vs Torino",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "lecce-vs-torino",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -3101,6 +3101,181 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png",
+        "channels": []
+      },
+      {
+        "title": "New York Knicks vs Cleveland Cavaliers",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "new-york-knicks-vs-cleveland-cavaliers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 07:00 AM",
+          "end_time_bst": "Nov 08, 2026, 10:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png"
+          },
+          "team_b": {
+            "name": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+        "channels": []
+      },
+      {
+        "title": "Washington Wizards vs Oklahoma City Thunder",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "washington-wizards-vs-oklahoma-city-thunder",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 07:00 AM",
+          "end_time_bst": "Nov 08, 2026, 10:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png"
+          },
+          "team_b": {
+            "name": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+        "channels": []
+      },
+      {
+        "title": "Chicago Blackhawks vs Carolina Hurricanes",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "chicago-blackhawks-vs-carolina-hurricanes",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 07:00 AM",
+          "end_time_bst": "Nov 08, 2026, 10:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Chicago Blackhawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/chi.png"
+          },
+          "team_b": {
+            "name": "Carolina Hurricanes",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/car.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/chi.png",
+        "channels": []
+      },
+      {
+        "title": "San Jose Sharks vs Dallas Stars",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "san-jose-sharks-vs-dallas-stars",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 07:00 AM",
+          "end_time_bst": "Nov 08, 2026, 10:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "San Jose Sharks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sj.png"
+          },
+          "team_b": {
+            "name": "Dallas Stars",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sj.png",
+        "channels": []
+      },
+      {
+        "title": "Tampa Bay Lightning vs Minnesota Wild",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "tampa-bay-lightning-vs-minnesota-wild",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 07:00 AM",
+          "end_time_bst": "Nov 08, 2026, 10:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Tampa Bay Lightning",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png"
+          },
+          "team_b": {
+            "name": "Minnesota Wild",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
+        "channels": []
+      },
+      {
+        "title": "Liberty Flames vs New Mexico State Aggies",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "liberty-flames-vs-new-mexico-state-aggies",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 07:00 AM",
+          "end_time_bst": "Nov 08, 2026, 10:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Liberty Flames",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2335.png"
+          },
+          "team_b": {
+            "name": "New Mexico State Aggies",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/166.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2335.png",
+        "channels": []
+      },
+      {
+        "title": "Orlando Magic vs Golden State Warriors",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "orlando-magic-vs-golden-state-warriors",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 07:30 AM",
+          "end_time_bst": "Nov 08, 2026, 10:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png"
+          },
+          "team_b": {
+            "name": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
         "channels": []
       }
     ]
