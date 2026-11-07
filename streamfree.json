@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 08, 2026, 03:31 AM",
-  "event_count": 84,
+  "last_updated": "Nov 08, 2026, 03:46 AM",
+  "event_count": 80,
   "events": {
     "events": [
       {
@@ -129,81 +129,6 @@
         "channels": []
       },
       {
-        "title": "Arkansas Razorbacks vs Auburn Tigers",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "arkansas-razorbacks-vs-auburn-tigers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 11:45 PM",
-          "end_time_bst": "Nov 08, 2026, 02:45 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Arkansas Razorbacks",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png"
-          },
-          "team_b": {
-            "name": "Auburn Tigers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
-        "channels": []
-      },
-      {
-        "title": "Oklahoma State Cowboys vs Kansas State Wildcats",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "oklahoma-state-cowboys-vs-kansas-state-wildcats",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 12:00 AM",
-          "end_time_bst": "Nov 08, 2026, 03:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Oklahoma State Cowboys",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png"
-          },
-          "team_b": {
-            "name": "Kansas State Wildcats",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2306.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
-        "channels": []
-      },
-      {
-        "title": "Old Dominion Monarchs vs Coastal Carolina Chanticleers",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "old-dominion-monarchs-vs-coastal-carolina-chanticleers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 12:00 AM",
-          "end_time_bst": "Nov 08, 2026, 03:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Old Dominion Monarchs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/295.png"
-          },
-          "team_b": {
-            "name": "Coastal Carolina Chanticleers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/324.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/295.png",
-        "channels": []
-      },
-      {
         "title": "Georgia State Panthers vs App State Mountaineers",
         "sport": "Football",
         "sub_category": "Football",
@@ -226,31 +151,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2247.png",
-        "channels": []
-      },
-      {
-        "title": "Sassuolo vs AS Roma",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "sassuolo-vs-as-roma",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 01:45 AM",
-          "end_time_bst": "Nov 08, 2026, 04:45 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Sassuolo",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png"
-          },
-          "team_b": {
-            "name": "AS Roma",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png",
         "channels": []
       },
       {
@@ -1007,8 +907,8 @@
         "title": "Denver Nuggets vs Indiana Pacers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "denver-nuggets-vs-indiana-pacers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1032,8 +932,8 @@
         "title": "New Mexico State Aggies vs Gonzaga Bulldogs",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "new-mexico-state-aggies-vs-gonzaga-bulldogs",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1057,8 +957,8 @@
         "title": "New York Rangers vs Seattle Kraken",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "new-york-rangers-vs-seattle-kraken",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1082,8 +982,8 @@
         "title": "UFC Fight Night: Cortes Acosta vs. Walker",
         "sport": "Combat",
         "sub_category": "Combat",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ufc-fight-night-cortes-acosta-vs-walker",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1107,8 +1007,8 @@
         "title": "South Alabama Jaguars vs Louisiana Ragin' Cajuns",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "south-alabama-jaguars-vs-louisiana-ragin-cajuns",
         "schedule": {
           "timezone": "BST (UTC+6)",
