@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 07, 2026, 12:37 PM",
-  "event_count": 74,
+  "last_updated": "Nov 07, 2026, 01:42 PM",
+  "event_count": 66,
   "events": {
     "events": [
       {
@@ -126,56 +126,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "MSC Cruises São Paulo Grand Prix",
-        "sport": "Racing",
-        "sub_category": "Racing",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "msc-cruises-são-paulo-grand-prix",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 06, 2026, 09:30 PM",
-          "end_time_bst": "Nov 07, 2026, 12:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "MSC Cruises São Paulo Grand Prix",
-            "logo": null
-          },
-          "team_b": {
-            "name": "MSC Cruises São Paulo Grand Prix",
-            "logo": null
-          }
-        },
-        "logo": null,
-        "channels": []
-      },
-      {
-        "title": "TCU Horned Frogs vs Arizona Wildcats",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "tcu-horned-frogs-vs-arizona-wildcats",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 09:15 AM",
-          "end_time_bst": "Nov 07, 2026, 12:15 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "TCU Horned Frogs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png"
-          },
-          "team_b": {
-            "name": "Arizona Wildcats",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png",
         "channels": []
       },
       {
@@ -454,31 +404,6 @@
         "channels": []
       },
       {
-        "title": "Marine vs Bradford City",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "marine-vs-bradford-city",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 09:00 PM",
-          "end_time_bst": "Nov 08, 2026, 12:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Marine vs Bradford City",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Bradford City",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/387.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/387.png",
-        "channels": []
-      },
-      {
         "title": "Rotherham United vs Bromley",
         "sport": "Soccer",
         "sub_category": "Soccer",
@@ -501,31 +426,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/402.png",
-        "channels": []
-      },
-      {
-        "title": "AFC Rushden & Diamonds vs Burton Albion",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "afc-rushden-diamonds-vs-burton-albion",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 09:00 PM",
-          "end_time_bst": "Nov 08, 2026, 12:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "AFC Rushden & Diamonds vs Burton Albion",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Burton Albion",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2567.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2567.png",
         "channels": []
       },
       {
@@ -601,31 +501,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/284.png",
-        "channels": []
-      },
-      {
-        "title": "Worcester City vs Colchester United",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "worcester-city-vs-colchester-united",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 09:00 PM",
-          "end_time_bst": "Nov 08, 2026, 12:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Worcester City vs Colchester United",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Colchester United",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/339.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/339.png",
         "channels": []
       },
       {
@@ -829,56 +704,6 @@
         "channels": []
       },
       {
-        "title": "Doncaster Rovers vs Kidderminster Harriers",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "doncaster-rovers-vs-kidderminster-harriers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 09:00 PM",
-          "end_time_bst": "Nov 08, 2026, 12:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Doncaster Rovers",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/279.png"
-          },
-          "team_b": {
-            "name": "Doncaster Rovers vs Kidderminster Harriers",
-            "logo": null
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/279.png",
-        "channels": []
-      },
-      {
-        "title": "Harborough Town vs Leyton Orient",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "harborough-town-vs-leyton-orient",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 09:00 PM",
-          "end_time_bst": "Nov 08, 2026, 12:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Harborough Town vs Leyton Orient",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Leyton Orient",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/309.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/309.png",
-        "channels": []
-      },
-      {
         "title": "Forest Green Rovers vs Luton Town",
         "sport": "Soccer",
         "sub_category": "Soccer",
@@ -1004,31 +829,6 @@
         "channels": []
       },
       {
-        "title": "Alvechurch vs Plymouth Argyle",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "alvechurch-vs-plymouth-argyle",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 09:00 PM",
-          "end_time_bst": "Nov 08, 2026, 12:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Alvechurch vs Plymouth Argyle",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Plymouth Argyle",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/307.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/307.png",
-        "channels": []
-      },
-      {
         "title": "Scunthorpe United vs Port Vale",
         "sport": "Soccer",
         "sub_category": "Soccer",
@@ -1051,31 +851,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/313.png",
-        "channels": []
-      },
-      {
-        "title": "Sholing vs Salisbury FC",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "sholing-vs-salisbury-fc",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 09:00 PM",
-          "end_time_bst": "Nov 08, 2026, 12:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Sholing vs Salisbury FC",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Sholing vs Salisbury FC",
-            "logo": null
-          }
-        },
-        "logo": null,
         "channels": []
       },
       {
@@ -1851,6 +1626,31 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/295.png",
+        "channels": []
+      },
+      {
+        "title": "Georgia State Panthers vs App State Mountaineers",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "georgia-state-panthers-vs-app-state-mountaineers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 01:30 AM",
+          "end_time_bst": "Nov 08, 2026, 04:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Georgia State Panthers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2247.png"
+          },
+          "team_b": {
+            "name": "App State Mountaineers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2026.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2247.png",
         "channels": []
       }
     ]
