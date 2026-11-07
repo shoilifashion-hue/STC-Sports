@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 08, 2026, 01:45 AM",
+  "last_updated": "Nov 08, 2026, 01:50 AM",
   "event_count": 98,
   "events": {
     "events": [
@@ -732,8 +732,8 @@
         "title": "Troyes vs Paris Saint-Germain",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "troyes-vs-paris-saint-germain",
         "schedule": {
           "timezone": "BST (UTC+6)",
