@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 08, 2026, 04:31 AM",
+  "last_updated": "Nov 08, 2026, 04:46 AM",
   "event_count": 77,
   "events": {
     "events": [
@@ -957,8 +957,8 @@
         "title": "Boise State Broncos vs Colorado State Rams",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "boise-state-broncos-vs-colorado-state-rams",
         "schedule": {
           "timezone": "BST (UTC+6)",
