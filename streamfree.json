@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 07, 2026, 11:30 PM",
+  "last_updated": "Nov 07, 2026, 11:45 PM",
   "event_count": 104,
   "events": {
     "events": [
@@ -682,8 +682,8 @@
         "title": "Paris FC vs AJ Auxerre",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "paris-fc-vs-aj-auxerre",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -707,8 +707,8 @@
         "title": "St. Louis Blues vs Nashville Predators",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "st-louis-blues-vs-nashville-predators",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -732,8 +732,8 @@
         "title": "Oklahoma State Cowboys vs Kansas State Wildcats",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "oklahoma-state-cowboys-vs-kansas-state-wildcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -757,8 +757,8 @@
         "title": "Old Dominion Monarchs vs Coastal Carolina Chanticleers",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "old-dominion-monarchs-vs-coastal-carolina-chanticleers",
         "schedule": {
           "timezone": "BST (UTC+6)",
