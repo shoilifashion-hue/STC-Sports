@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 07, 2026, 01:53 PM",
-  "event_count": 67,
+  "last_updated": "Nov 07, 2026, 04:48 PM",
+  "event_count": 102,
   "events": {
     "events": [
       {
@@ -1676,6 +1676,881 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png",
+        "channels": []
+      },
+      {
+        "title": "Reading vs Peterborough United",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "reading-vs-peterborough-united",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 02:00 AM",
+          "end_time_bst": "Nov 08, 2026, 05:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Reading",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/338.png"
+          },
+          "team_b": {
+            "name": "Peterborough United",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/342.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/338.png",
+        "channels": []
+      },
+      {
+        "title": "Real Madrid vs Valencia",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "real-madrid-vs-valencia",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 02:00 AM",
+          "end_time_bst": "Nov 08, 2026, 05:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Real Madrid",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
+          },
+          "team_b": {
+            "name": "Valencia",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+        "channels": []
+      },
+      {
+        "title": "Texas A&M Aggies vs South Carolina Gamecocks",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "texas-a-m-aggies-vs-south-carolina-gamecocks",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 02:00 AM",
+          "end_time_bst": "Nov 08, 2026, 05:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Texas A&M Aggies",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/245.png"
+          },
+          "team_b": {
+            "name": "South Carolina Gamecocks",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/245.png",
+        "channels": []
+      },
+      {
+        "title": "UL Monroe Warhawks vs Arkansas State Red Wolves",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "ul-monroe-warhawks-vs-arkansas-state-red-wolves",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 02:00 AM",
+          "end_time_bst": "Nov 08, 2026, 05:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "UL Monroe Warhawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2433.png"
+          },
+          "team_b": {
+            "name": "Arkansas State Red Wolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2032.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2433.png",
+        "channels": []
+      },
+      {
+        "title": "Delaware Blue Hens vs Kennesaw State Owls",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "delaware-blue-hens-vs-kennesaw-state-owls",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 02:00 AM",
+          "end_time_bst": "Nov 08, 2026, 05:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Delaware Blue Hens",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/48.png"
+          },
+          "team_b": {
+            "name": "Kennesaw State Owls",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/338.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/48.png",
+        "channels": []
+      },
+      {
+        "title": "Troyes vs Paris Saint-Germain",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "troyes-vs-paris-saint-germain",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 02:05 AM",
+          "end_time_bst": "Nov 08, 2026, 05:05 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Troyes",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png"
+          },
+          "team_b": {
+            "name": "Paris Saint-Germain",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png",
+        "channels": []
+      },
+      {
+        "title": "Alabama Crimson Tide vs LSU Tigers",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "alabama-crimson-tide-vs-lsu-tigers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 02:30 AM",
+          "end_time_bst": "Nov 08, 2026, 05:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Alabama Crimson Tide",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png"
+          },
+          "team_b": {
+            "name": "LSU Tigers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png",
+        "channels": []
+      },
+      {
+        "title": "Oregon Ducks vs Ohio State Buckeyes",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "oregon-ducks-vs-ohio-state-buckeyes",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 02:30 AM",
+          "end_time_bst": "Nov 08, 2026, 05:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Oregon Ducks",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png"
+          },
+          "team_b": {
+            "name": "Ohio State Buckeyes",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
+        "channels": []
+      },
+      {
+        "title": "Merrimack Warriors vs Wake Forest Demon Deacons",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "merrimack-warriors-vs-wake-forest-demon-deacons",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 02:30 AM",
+          "end_time_bst": "Nov 08, 2026, 05:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Merrimack Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2771.png"
+          },
+          "team_b": {
+            "name": "Wake Forest Demon Deacons",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2771.png",
+        "channels": []
+      },
+      {
+        "title": "Cincinnati Bearcats vs Houston Cougars",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "cincinnati-bearcats-vs-houston-cougars",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 02:30 AM",
+          "end_time_bst": "Nov 08, 2026, 05:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Cincinnati Bearcats",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png"
+          },
+          "team_b": {
+            "name": "Houston Cougars",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png",
+        "channels": []
+      },
+      {
+        "title": "Penn State Nittany Lions vs Washington Huskies",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "penn-state-nittany-lions-vs-washington-huskies",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 02:30 AM",
+          "end_time_bst": "Nov 08, 2026, 05:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Penn State Nittany Lions",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png"
+          },
+          "team_b": {
+            "name": "Washington Huskies",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png",
+        "channels": []
+      },
+      {
+        "title": "Charlotte 49ers vs UAB Blazers",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "charlotte-49ers-vs-uab-blazers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 02:30 AM",
+          "end_time_bst": "Nov 08, 2026, 05:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Charlotte 49ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png"
+          },
+          "team_b": {
+            "name": "UAB Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/5.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png",
+        "channels": []
+      },
+      {
+        "title": "Temple Owls vs Navy Midshipmen",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "temple-owls-vs-navy-midshipmen",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 02:30 AM",
+          "end_time_bst": "Nov 08, 2026, 05:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Temple Owls",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/218.png"
+          },
+          "team_b": {
+            "name": "Navy Midshipmen",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2426.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/218.png",
+        "channels": []
+      },
+      {
+        "title": "Marshall Thundering Herd vs Georgia Southern Eagles",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "marshall-thundering-herd-vs-georgia-southern-eagles",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 02:30 AM",
+          "end_time_bst": "Nov 08, 2026, 05:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Marshall Thundering Herd",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/276.png"
+          },
+          "team_b": {
+            "name": "Georgia Southern Eagles",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/290.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/276.png",
+        "channels": []
+      },
+      {
+        "title": "Western Kentucky Hilltoppers vs Middle Tennessee Blue Raiders",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "western-kentucky-hilltoppers-vs-middle-tennessee-blue-raiders",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 02:30 AM",
+          "end_time_bst": "Nov 08, 2026, 05:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Western Kentucky Hilltoppers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/98.png"
+          },
+          "team_b": {
+            "name": "Middle Tennessee Blue Raiders",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2393.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/98.png",
+        "channels": []
+      },
+      {
+        "title": "UCF Knights vs Kansas Jayhawks",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "ucf-knights-vs-kansas-jayhawks",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 02:45 AM",
+          "end_time_bst": "Nov 08, 2026, 05:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "UCF Knights",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png"
+          },
+          "team_b": {
+            "name": "Kansas Jayhawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
+        "channels": []
+      },
+      {
+        "title": "Vancouver Whitecaps vs CF Montréal",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "vancouver-whitecaps-vs-cf-montréal",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 03:00 AM",
+          "end_time_bst": "Nov 08, 2026, 06:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Vancouver Whitecaps",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png"
+          },
+          "team_b": {
+            "name": "CF Montréal",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9720.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png",
+        "channels": []
+      },
+      {
+        "title": "Columbus Crew vs Chicago Fire FC",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "columbus-crew-vs-chicago-fire-fc",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 03:00 AM",
+          "end_time_bst": "Nov 08, 2026, 06:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Columbus Crew",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png"
+          },
+          "team_b": {
+            "name": "Chicago Fire FC",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png",
+        "channels": []
+      },
+      {
+        "title": "New York City FC vs D.C. United",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "new-york-city-fc-vs-d-c-united",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 03:00 AM",
+          "end_time_bst": "Nov 08, 2026, 06:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "New York City FC",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png"
+          },
+          "team_b": {
+            "name": "D.C. United",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/193.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png",
+        "channels": []
+      },
+      {
+        "title": "Nashville SC vs FC Cincinnati",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "nashville-sc-vs-fc-cincinnati",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 03:00 AM",
+          "end_time_bst": "Nov 08, 2026, 06:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Nashville SC",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png"
+          },
+          "team_b": {
+            "name": "FC Cincinnati",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png",
+        "channels": []
+      },
+      {
+        "title": "Charlotte FC vs Inter Miami CF",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "charlotte-fc-vs-inter-miami-cf",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 03:00 AM",
+          "end_time_bst": "Nov 08, 2026, 06:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Charlotte FC",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21300.png"
+          },
+          "team_b": {
+            "name": "Inter Miami CF",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21300.png",
+        "channels": []
+      },
+      {
+        "title": "New England Revolution vs Orlando City SC",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "new-england-revolution-vs-orlando-city-sc",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 03:00 AM",
+          "end_time_bst": "Nov 08, 2026, 06:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "New England Revolution",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png"
+          },
+          "team_b": {
+            "name": "Orlando City SC",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12011.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png",
+        "channels": []
+      },
+      {
+        "title": "Toronto FC vs Philadelphia Union",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "toronto-fc-vs-philadelphia-union",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 03:00 AM",
+          "end_time_bst": "Nov 08, 2026, 06:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Toronto FC",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png"
+          },
+          "team_b": {
+            "name": "Philadelphia Union",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png",
+        "channels": []
+      },
+      {
+        "title": "Atlanta United FC vs Red Bull New York",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "atlanta-united-fc-vs-red-bull-new-york",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 03:00 AM",
+          "end_time_bst": "Nov 08, 2026, 06:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Atlanta United FC",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png"
+          },
+          "team_b": {
+            "name": "Red Bull New York",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/190.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png",
+        "channels": []
+      },
+      {
+        "title": "Rice Owls vs North Texas Mean Green",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "rice-owls-vs-north-texas-mean-green",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 03:00 AM",
+          "end_time_bst": "Nov 08, 2026, 06:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Rice Owls",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/242.png"
+          },
+          "team_b": {
+            "name": "North Texas Mean Green",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/249.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/242.png",
+        "channels": []
+      },
+      {
+        "title": "Northern Illinois Huskies vs San José State Spartans",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "northern-illinois-huskies-vs-san-josé-state-spartans",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 03:00 AM",
+          "end_time_bst": "Nov 08, 2026, 06:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Northern Illinois Huskies",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2459.png"
+          },
+          "team_b": {
+            "name": "San José State Spartans",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/23.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2459.png",
+        "channels": []
+      },
+      {
+        "title": "Missouri State Bears vs Florida International Panthers",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "missouri-state-bears-vs-florida-international-panthers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 03:00 AM",
+          "end_time_bst": "Nov 08, 2026, 06:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Missouri State Bears",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2623.png"
+          },
+          "team_b": {
+            "name": "Florida International Panthers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2229.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2623.png",
+        "channels": []
+      },
+      {
+        "title": "Louisiana Tech Bulldogs vs Troy Trojans",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "louisiana-tech-bulldogs-vs-troy-trojans",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 03:00 AM",
+          "end_time_bst": "Nov 08, 2026, 06:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Louisiana Tech Bulldogs",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2348.png"
+          },
+          "team_b": {
+            "name": "Troy Trojans",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2653.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2348.png",
+        "channels": []
+      },
+      {
+        "title": "Vanderbilt Commodores vs Mississippi State Bulldogs",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "vanderbilt-commodores-vs-mississippi-state-bulldogs",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 03:15 AM",
+          "end_time_bst": "Nov 08, 2026, 06:15 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Vanderbilt Commodores",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png"
+          },
+          "team_b": {
+            "name": "Mississippi State Bulldogs",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png",
+        "channels": []
+      },
+      {
+        "title": "Rutgers Scarlet Knights vs Wisconsin Badgers",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "rutgers-scarlet-knights-vs-wisconsin-badgers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 03:15 AM",
+          "end_time_bst": "Nov 08, 2026, 06:15 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Rutgers Scarlet Knights",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/164.png"
+          },
+          "team_b": {
+            "name": "Wisconsin Badgers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/164.png",
+        "channels": []
+      },
+      {
+        "title": "Denver Nuggets vs Indiana Pacers",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "denver-nuggets-vs-indiana-pacers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 04:00 AM",
+          "end_time_bst": "Nov 08, 2026, 07:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png"
+          },
+          "team_b": {
+            "name": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+        "channels": []
+      },
+      {
+        "title": "New Mexico State Aggies vs Gonzaga Bulldogs",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "new-mexico-state-aggies-vs-gonzaga-bulldogs",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 04:00 AM",
+          "end_time_bst": "Nov 08, 2026, 07:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "New Mexico State Aggies",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/166.png"
+          },
+          "team_b": {
+            "name": "Gonzaga Bulldogs",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2250.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/166.png",
+        "channels": []
+      },
+      {
+        "title": "New York Rangers vs Seattle Kraken",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "new-york-rangers-vs-seattle-kraken",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 04:00 AM",
+          "end_time_bst": "Nov 08, 2026, 07:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "New York Rangers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyr.png"
+          },
+          "team_b": {
+            "name": "Seattle Kraken",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sea.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyr.png",
+        "channels": []
+      },
+      {
+        "title": "UFC Fight Night: Cortes Acosta vs. Walker",
+        "sport": "Combat",
+        "sub_category": "Combat",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "ufc-fight-night-cortes-acosta-vs-walker",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 04:00 AM",
+          "end_time_bst": "Nov 08, 2026, 07:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "UFC Fight Night: Cortes Acosta vs. Walker",
+            "logo": null
+          },
+          "team_b": {
+            "name": "UFC Fight Night: Cortes Acosta vs. Walker",
+            "logo": null
+          }
+        },
+        "logo": null,
+        "channels": []
+      },
+      {
+        "title": "South Alabama Jaguars vs Louisiana Ragin' Cajuns",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "south-alabama-jaguars-vs-louisiana-ragin-cajuns",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 04:00 AM",
+          "end_time_bst": "Nov 08, 2026, 07:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "South Alabama Jaguars",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/6.png"
+          },
+          "team_b": {
+            "name": "Louisiana Ragin' Cajuns",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/309.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/6.png",
         "channels": []
       }
     ]
