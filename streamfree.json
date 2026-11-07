@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 07, 2026, 10:32 AM",
-  "event_count": 65,
+  "last_updated": "Nov 07, 2026, 11:07 AM",
+  "event_count": 74,
   "events": {
     "events": [
       {
@@ -151,31 +151,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Nebraska Cornhuskers vs Illinois Fighting Illini",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "nebraska-cornhuskers-vs-illinois-fighting-illini",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 07:00 AM",
-          "end_time_bst": "Nov 07, 2026, 10:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Nebraska Cornhuskers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png"
-          },
-          "team_b": {
-            "name": "Illinois Fighting Illini",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png",
         "channels": []
       },
       {
@@ -1626,6 +1601,256 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png",
+        "channels": []
+      },
+      {
+        "title": "Bologna vs Parma",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "bologna-vs-parma",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:00 PM",
+          "end_time_bst": "Nov 08, 2026, 02:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Bologna",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png"
+          },
+          "team_b": {
+            "name": "Parma",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png",
+        "channels": []
+      },
+      {
+        "title": "Morehead State Eagles vs Louisville Cardinals",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "morehead-state-eagles-vs-louisville-cardinals",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:00 PM",
+          "end_time_bst": "Nov 08, 2026, 02:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Morehead State Eagles",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2413.png"
+          },
+          "team_b": {
+            "name": "Louisville Cardinals",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2413.png",
+        "channels": []
+      },
+      {
+        "title": "BYU Cougars vs Utah Utes",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "byu-cougars-vs-utah-utes",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:00 PM",
+          "end_time_bst": "Nov 08, 2026, 02:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "BYU Cougars",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png"
+          },
+          "team_b": {
+            "name": "Utah Utes",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
+        "channels": []
+      },
+      {
+        "title": "Texas Longhorns vs Missouri Tigers",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "texas-longhorns-vs-missouri-tigers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:00 PM",
+          "end_time_bst": "Nov 08, 2026, 02:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Texas Longhorns",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
+          },
+          "team_b": {
+            "name": "Missouri Tigers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
+        "channels": []
+      },
+      {
+        "title": "UCLA Bruins vs Minnesota Golden Gophers",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "ucla-bruins-vs-minnesota-golden-gophers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:00 PM",
+          "end_time_bst": "Nov 08, 2026, 02:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "UCLA Bruins",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png"
+          },
+          "team_b": {
+            "name": "Minnesota Golden Gophers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/135.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
+        "channels": []
+      },
+      {
+        "title": "Iowa State Cyclones vs Baylor Bears",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "iowa-state-cyclones-vs-baylor-bears",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:00 PM",
+          "end_time_bst": "Nov 08, 2026, 02:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Iowa State Cyclones",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png"
+          },
+          "team_b": {
+            "name": "Baylor Bears",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png",
+        "channels": []
+      },
+      {
+        "title": "Clemson Tigers vs Syracuse Orange",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "clemson-tigers-vs-syracuse-orange",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:00 PM",
+          "end_time_bst": "Nov 08, 2026, 02:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Clemson Tigers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png"
+          },
+          "team_b": {
+            "name": "Syracuse Orange",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/183.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png",
+        "channels": []
+      },
+      {
+        "title": "Florida State Seminoles vs Boston College Eagles",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "florida-state-seminoles-vs-boston-college-eagles",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:00 PM",
+          "end_time_bst": "Nov 08, 2026, 02:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Florida State Seminoles",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png"
+          },
+          "team_b": {
+            "name": "Boston College Eagles",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png",
+        "channels": []
+      },
+      {
+        "title": "North Carolina Tar Heels vs UConn Huskies",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "north-carolina-tar-heels-vs-uconn-huskies",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:00 PM",
+          "end_time_bst": "Nov 08, 2026, 02:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "North Carolina Tar Heels",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png"
+          },
+          "team_b": {
+            "name": "UConn Huskies",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png",
+        "channels": []
+      },
+      {
+        "title": "Tulsa Golden Hurricane vs Tulane Green Wave",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "tulsa-golden-hurricane-vs-tulane-green-wave",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 07, 2026, 11:00 PM",
+          "end_time_bst": "Nov 08, 2026, 02:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Tulsa Golden Hurricane",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/202.png"
+          },
+          "team_b": {
+            "name": "Tulane Green Wave",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2655.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/202.png",
         "channels": []
       }
     ]
