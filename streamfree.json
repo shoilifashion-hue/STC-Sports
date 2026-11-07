@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 08, 2026, 05:16 AM",
-  "event_count": 68,
+  "last_updated": "Nov 08, 2026, 05:36 AM",
+  "event_count": 67,
   "events": {
     "events": [
       {
@@ -126,31 +126,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Texas A&M Aggies vs South Carolina Gamecocks",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "texas-a-m-aggies-vs-south-carolina-gamecocks",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 02:00 AM",
-          "end_time_bst": "Nov 08, 2026, 05:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Texas A&M Aggies",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/245.png"
-          },
-          "team_b": {
-            "name": "South Carolina Gamecocks",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/245.png",
         "channels": []
       },
       {
@@ -426,31 +401,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
-        "channels": []
-      },
-      {
-        "title": "Toronto FC vs Philadelphia Union",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "toronto-fc-vs-philadelphia-union",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 03:00 AM",
-          "end_time_bst": "Nov 08, 2026, 06:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Toronto FC",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png"
-          },
-          "team_b": {
-            "name": "Philadelphia Union",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png",
         "channels": []
       },
       {
@@ -1701,6 +1651,31 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2751.png",
+        "channels": []
+      },
+      {
+        "title": "Lazio vs Napoli",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "lazio-vs-napoli",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 05:30 PM",
+          "end_time_bst": "Nov 08, 2026, 08:30 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Lazio",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png"
+          },
+          "team_b": {
+            "name": "Napoli",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
         "channels": []
       }
     ]
