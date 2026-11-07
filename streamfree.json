@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 08, 2026, 02:56 AM",
+  "last_updated": "Nov 08, 2026, 03:01 AM",
   "event_count": 87,
   "events": {
     "events": [
@@ -1032,8 +1032,8 @@
         "title": "Vanderbilt Commodores vs Mississippi State Bulldogs",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "vanderbilt-commodores-vs-mississippi-state-bulldogs",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1057,8 +1057,8 @@
         "title": "Rutgers Scarlet Knights vs Wisconsin Badgers",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "rutgers-scarlet-knights-vs-wisconsin-badgers",
         "schedule": {
           "timezone": "BST (UTC+6)",
