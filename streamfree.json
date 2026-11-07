@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 08, 2026, 01:30 AM",
-  "event_count": 101,
+  "last_updated": "Nov 08, 2026, 01:45 AM",
+  "event_count": 98,
   "events": {
     "events": [
       {
@@ -354,81 +354,6 @@
         "channels": []
       },
       {
-        "title": "Manchester City vs Nottingham Forest",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "manchester-city-vs-nottingham-forest",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 11:30 PM",
-          "end_time_bst": "Nov 08, 2026, 02:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Manchester City",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png"
-          },
-          "team_b": {
-            "name": "Nottingham Forest",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
-        "channels": []
-      },
-      {
-        "title": "Athletic Club vs Osasuna",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "athletic-club-vs-osasuna",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 11:30 PM",
-          "end_time_bst": "Nov 08, 2026, 02:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Athletic Club",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
-          },
-          "team_b": {
-            "name": "Osasuna",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
-        "channels": []
-      },
-      {
-        "title": "Werder Bremen vs Vf B Stuttgart",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "werder-bremen-vs-vf-b-stuttgart",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 07, 2026, 11:30 PM",
-          "end_time_bst": "Nov 08, 2026, 02:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Werder Bremen",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png"
-          },
-          "team_b": {
-            "name": "VfB Stuttgart",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
-        "channels": []
-      },
-      {
         "title": "Florida Panthers vs Washington Capitals",
         "sport": "Hockey",
         "sub_category": "Hockey",
@@ -682,8 +607,8 @@
         "title": "Reading vs Peterborough United",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "reading-vs-peterborough-united",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -707,8 +632,8 @@
         "title": "Real Madrid vs Valencia",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "real-madrid-vs-valencia",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -732,8 +657,8 @@
         "title": "Texas A&M Aggies vs South Carolina Gamecocks",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "texas-a-m-aggies-vs-south-carolina-gamecocks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -757,8 +682,8 @@
         "title": "UL Monroe Warhawks vs Arkansas State Red Wolves",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ul-monroe-warhawks-vs-arkansas-state-red-wolves",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -782,8 +707,8 @@
         "title": "Delaware Blue Hens vs Kennesaw State Owls",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "delaware-blue-hens-vs-kennesaw-state-owls",
         "schedule": {
           "timezone": "BST (UTC+6)",
