@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 08, 2026, 10:22 AM",
-  "event_count": 39,
+  "last_updated": "Nov 08, 2026, 10:37 AM",
+  "event_count": 37,
   "events": {
     "events": [
       {
@@ -154,81 +154,6 @@
         "channels": []
       },
       {
-        "title": "Georgia Bulldogs vs Ole Miss Rebels",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "georgia-bulldogs-vs-ole-miss-rebels",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 06:30 AM",
-          "end_time_bst": "Nov 08, 2026, 09:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Georgia Bulldogs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png"
-          },
-          "team_b": {
-            "name": "Ole Miss Rebels",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
-        "channels": []
-      },
-      {
-        "title": "Michigan State Spartans vs Michigan Wolverines",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "michigan-state-spartans-vs-michigan-wolverines",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 06:30 AM",
-          "end_time_bst": "Nov 08, 2026, 09:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Michigan State Spartans",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png"
-          },
-          "team_b": {
-            "name": "Michigan Wolverines",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
-        "channels": []
-      },
-      {
-        "title": "Liberty Flames vs New Mexico State Aggies",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "liberty-flames-vs-new-mexico-state-aggies",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 07:00 AM",
-          "end_time_bst": "Nov 08, 2026, 10:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Liberty Flames",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2335.png"
-          },
-          "team_b": {
-            "name": "New Mexico State Aggies",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/166.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2335.png",
-        "channels": []
-      },
-      {
         "title": "Orlando Magic vs Golden State Warriors",
         "sport": "Basketball",
         "sub_category": "Basketball",
@@ -251,31 +176,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
-        "channels": []
-      },
-      {
-        "title": "Houston Rockets vs Phoenix Suns",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "houston-rockets-vs-phoenix-suns",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 08:00 AM",
-          "end_time_bst": "Nov 08, 2026, 11:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Houston Rockets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png"
-          },
-          "team_b": {
-            "name": "Phoenix Suns",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
         "channels": []
       },
       {
@@ -976,6 +876,56 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
+        "channels": []
+      },
+      {
+        "title": "Aston Villa vs Manchester United",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "aston-villa-vs-manchester-united",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 10:30 PM",
+          "end_time_bst": "Nov 09, 2026, 01:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Aston Villa",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png"
+          },
+          "team_b": {
+            "name": "Manchester United",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
+        "channels": []
+      },
+      {
+        "title": "1. FC Union Berlin vs SC Freiburg",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "1-fc-union-berlin-vs-sc-freiburg",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 10:30 PM",
+          "end_time_bst": "Nov 09, 2026, 01:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "1. FC Union Berlin",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png"
+          },
+          "team_b": {
+            "name": "SC Freiburg",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png",
         "channels": []
       }
     ]
