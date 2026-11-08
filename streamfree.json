@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 08, 2026, 06:49 PM",
-  "event_count": 57,
+  "last_updated": "Nov 08, 2026, 07:49 PM",
+  "event_count": 59,
   "events": {
     "events": [
       {
@@ -129,56 +129,6 @@
         "channels": []
       },
       {
-        "title": "UFC Fight Night: Cortes Acosta vs. Walker",
-        "sport": "Combat",
-        "sub_category": "Combat",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "ufc-fight-night-cortes-acosta-vs-walker",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 04:00 AM",
-          "end_time_bst": "Nov 08, 2026, 07:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "UFC Fight Night: Cortes Acosta vs. Walker",
-            "logo": null
-          },
-          "team_b": {
-            "name": "UFC Fight Night: Cortes Acosta vs. Walker",
-            "logo": null
-          }
-        },
-        "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Lazio vs Napoli",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "lazio-vs-napoli",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 05:30 PM",
-          "end_time_bst": "Nov 08, 2026, 08:30 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Lazio",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png"
-          },
-          "team_b": {
-            "name": "Napoli",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
-        "channels": []
-      },
-      {
         "title": "Grimsby Town vs Stafford Rangers",
         "sport": "Soccer",
         "sub_category": "Soccer",
@@ -232,8 +182,8 @@
         "title": "Brentford vs Brighton & Hove Albion",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "brentford-vs-brighton-hove-albion",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -257,8 +207,8 @@
         "title": "Liverpool vs Crystal Palace",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "liverpool-vs-crystal-palace",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -282,8 +232,8 @@
         "title": "AFC Bournemouth vs Ipswich Town",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "afc-bournemouth-vs-ipswich-town",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -307,8 +257,8 @@
         "title": "Chelsea vs Sunderland",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "chelsea-vs-sunderland",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -332,8 +282,8 @@
         "title": "AC Milan vs Genoa",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ac-milan-vs-genoa",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -357,8 +307,8 @@
         "title": "Atalanta vs Monza",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "atalanta-vs-monza",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -382,8 +332,8 @@
         "title": "Lille vs Stade Rennais",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "lille-vs-stade-rennais",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1426,6 +1376,106 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+        "channels": []
+      },
+      {
+        "title": "Boston Celtics vs Milwaukee Bucks",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "boston-celtics-vs-milwaukee-bucks",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 09, 2026, 07:00 AM",
+          "end_time_bst": "Nov 09, 2026, 10:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png"
+          },
+          "team_b": {
+            "name": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+        "channels": []
+      },
+      {
+        "title": "Pittsburgh Penguins vs Anaheim Ducks",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "pittsburgh-penguins-vs-anaheim-ducks",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 09, 2026, 07:00 AM",
+          "end_time_bst": "Nov 09, 2026, 10:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Pittsburgh Penguins",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png"
+          },
+          "team_b": {
+            "name": "Anaheim Ducks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png",
+        "channels": []
+      },
+      {
+        "title": "Tampa Bay Buccaneers vs Chicago Bears",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "tampa-bay-buccaneers-vs-chicago-bears",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 09, 2026, 07:20 AM",
+          "end_time_bst": "Nov 09, 2026, 10:20 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Tampa Bay Buccaneers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+          },
+          "team_b": {
+            "name": "Chicago Bears",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+        "channels": []
+      },
+      {
+        "title": "Houston Cougars vs California Golden Bears",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "houston-cougars-vs-california-golden-bears",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 09, 2026, 07:30 AM",
+          "end_time_bst": "Nov 09, 2026, 10:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Houston Cougars",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png"
+          },
+          "team_b": {
+            "name": "California Golden Bears",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/25.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
         "channels": []
       }
     ]
