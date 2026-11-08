@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 08, 2026, 09:49 PM",
-  "event_count": 59,
+  "last_updated": "Nov 08, 2026, 10:04 PM",
+  "event_count": 58,
   "events": {
     "events": [
       {
@@ -254,56 +254,6 @@
         "channels": []
       },
       {
-        "title": "Atalanta vs Monza",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "atalanta-vs-monza",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 08:00 PM",
-          "end_time_bst": "Nov 08, 2026, 11:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Atalanta",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png"
-          },
-          "team_b": {
-            "name": "Monza",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4007.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png",
-        "channels": []
-      },
-      {
-        "title": "Lille vs Stade Rennais",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "lille-vs-stade-rennais",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 08:00 PM",
-          "end_time_bst": "Nov 08, 2026, 11:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Lille",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png"
-          },
-          "team_b": {
-            "name": "Stade Rennais",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
-        "channels": []
-      },
-      {
         "title": "Stockport County vs Cray Wanderers",
         "sport": "Soccer",
         "sub_category": "Soccer",
@@ -432,8 +382,8 @@
         "title": "Nice vs Angers",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "nice-vs-angers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -457,8 +407,8 @@
         "title": "Lyon vs Brest",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "lyon-vs-brest",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -482,8 +432,8 @@
         "title": "Lorient vs Le Havre AC",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "lorient-vs-le-havre-ac",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -507,8 +457,8 @@
         "title": "AS Monaco vs Le Mans",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "as-monaco-vs-le-mans",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1476,6 +1426,31 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+        "channels": []
+      },
+      {
+        "title": "USC Trojans vs Wichita State Shockers",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "usc-trojans-vs-wichita-state-shockers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 09, 2026, 10:00 AM",
+          "end_time_bst": "Nov 09, 2026, 01:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "USC Trojans",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png"
+          },
+          "team_b": {
+            "name": "Wichita State Shockers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2724.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png",
         "channels": []
       }
     ]
