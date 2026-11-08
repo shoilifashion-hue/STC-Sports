@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 09, 2026, 04:31 AM",
+  "last_updated": "Nov 09, 2026, 04:46 AM",
   "event_count": 24,
   "events": {
     "events": [
@@ -282,8 +282,8 @@
         "title": "Los Angeles Lakers vs Detroit Pistons",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "los-angeles-lakers-vs-detroit-pistons",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -307,8 +307,8 @@
         "title": "Tampa Bay Lightning vs Winnipeg Jets",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "tampa-bay-lightning-vs-winnipeg-jets",
         "schedule": {
           "timezone": "BST (UTC+6)",
