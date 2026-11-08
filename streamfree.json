@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 09, 2026, 02:00 AM",
+  "last_updated": "Nov 09, 2026, 02:15 AM",
   "event_count": 37,
   "events": {
     "events": [
@@ -457,8 +457,8 @@
         "title": "Philadelphia 76ers vs Chicago Bulls",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "philadelphia-76ers-vs-chicago-bulls",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -482,8 +482,8 @@
         "title": "Vegas Golden Knights vs Buffalo Sabres",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "vegas-golden-knights-vs-buffalo-sabres",
         "schedule": {
           "timezone": "BST (UTC+6)",
