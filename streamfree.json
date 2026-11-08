@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 08, 2026, 11:12 AM",
-  "event_count": 36,
+  "last_updated": "Nov 08, 2026, 12:07 PM",
+  "event_count": 44,
   "events": {
     "events": [
       {
@@ -176,106 +176,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png",
-        "channels": []
-      },
-      {
-        "title": "Fresno State Bulldogs vs Utah State Aggies",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "fresno-state-bulldogs-vs-utah-state-aggies",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 08:30 AM",
-          "end_time_bst": "Nov 08, 2026, 11:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Fresno State Bulldogs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/278.png"
-          },
-          "team_b": {
-            "name": "Utah State Aggies",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/328.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/278.png",
-        "channels": []
-      },
-      {
-        "title": "Hawai'i Rainbow Warriors vs UTEP Miners",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "hawai-i-rainbow-warriors-vs-utep-miners",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 08:30 AM",
-          "end_time_bst": "Nov 08, 2026, 11:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Hawai'i Rainbow Warriors",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/62.png"
-          },
-          "team_b": {
-            "name": "UTEP Miners",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2638.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/62.png",
-        "channels": []
-      },
-      {
-        "title": "San Antonio Spurs vs Portland Trail Blazers",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "san-antonio-spurs-vs-portland-trail-blazers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 09:00 AM",
-          "end_time_bst": "Nov 08, 2026, 12:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "San Antonio Spurs",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png"
-          },
-          "team_b": {
-            "name": "Portland Trail Blazers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
-        "channels": []
-      },
-      {
-        "title": "Vancouver Canucks vs Edmonton Oilers",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "vancouver-canucks-vs-edmonton-oilers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 09:00 AM",
-          "end_time_bst": "Nov 08, 2026, 12:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Vancouver Canucks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/van.png"
-          },
-          "team_b": {
-            "name": "Edmonton Oilers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/van.png",
         "channels": []
       },
       {
@@ -901,6 +801,306 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/314.png",
+        "channels": []
+      },
+      {
+        "title": "Sheffield Wednesday vs Oldham Athletic",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "sheffield-wednesday-vs-oldham-athletic",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 11:15 PM",
+          "end_time_bst": "Nov 09, 2026, 02:15 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Sheffield Wednesday",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/399.png"
+          },
+          "team_b": {
+            "name": "Oldham Athletic",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/332.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/399.png",
+        "channels": []
+      },
+      {
+        "title": "Levante vs Celta Vigo",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "levante-vs-celta-vigo",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 11:30 PM",
+          "end_time_bst": "Nov 09, 2026, 02:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Levante",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
+          },
+          "team_b": {
+            "name": "Celta Vigo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
+        "channels": []
+      },
+      {
+        "title": "Getafe vs Villarreal",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "getafe-vs-villarreal",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 08, 2026, 11:30 PM",
+          "end_time_bst": "Nov 09, 2026, 02:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Getafe",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
+          },
+          "team_b": {
+            "name": "Villarreal",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png",
+        "channels": []
+      },
+      {
+        "title": "Arkansas Razorbacks vs Virginia Cavaliers",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "arkansas-razorbacks-vs-virginia-cavaliers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 09, 2026, 12:00 AM",
+          "end_time_bst": "Nov 09, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Arkansas Razorbacks",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png"
+          },
+          "team_b": {
+            "name": "Virginia Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/258.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
+        "channels": []
+      },
+      {
+        "title": "Florida Panthers vs Boston Bruins",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "florida-panthers-vs-boston-bruins",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 09, 2026, 12:00 AM",
+          "end_time_bst": "Nov 09, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Florida Panthers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png"
+          },
+          "team_b": {
+            "name": "Boston Bruins",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png",
+        "channels": []
+      },
+      {
+        "title": "Dallas Cowboys vs Indianapolis Colts",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "dallas-cowboys-vs-indianapolis-colts",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 09, 2026, 12:00 AM",
+          "end_time_bst": "Nov 09, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Dallas Cowboys",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png"
+          },
+          "team_b": {
+            "name": "Indianapolis Colts",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+        "channels": []
+      },
+      {
+        "title": "New York Jets vs Kansas City Chiefs",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "new-york-jets-vs-kansas-city-chiefs",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 09, 2026, 12:00 AM",
+          "end_time_bst": "Nov 09, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "New York Jets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png"
+          },
+          "team_b": {
+            "name": "Kansas City Chiefs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
+        "channels": []
+      },
+      {
+        "title": "Detroit Lions vs Miami Dolphins",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "detroit-lions-vs-miami-dolphins",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 09, 2026, 12:00 AM",
+          "end_time_bst": "Nov 09, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Detroit Lions",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png"
+          },
+          "team_b": {
+            "name": "Miami Dolphins",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
+        "channels": []
+      },
+      {
+        "title": "Cleveland Browns vs New Orleans Saints",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "cleveland-browns-vs-new-orleans-saints",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 09, 2026, 12:00 AM",
+          "end_time_bst": "Nov 09, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Cleveland Browns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
+          },
+          "team_b": {
+            "name": "New Orleans Saints",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
+        "channels": []
+      },
+      {
+        "title": "New York Giants vs Philadelphia Eagles",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "new-york-giants-vs-philadelphia-eagles",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 09, 2026, 12:00 AM",
+          "end_time_bst": "Nov 09, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "New York Giants",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+          },
+          "team_b": {
+            "name": "Philadelphia Eagles",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
+        "channels": []
+      },
+      {
+        "title": "Los Angeles Rams vs Washington Commanders",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "los-angeles-rams-vs-washington-commanders",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 09, 2026, 12:00 AM",
+          "end_time_bst": "Nov 09, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Los Angeles Rams",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png"
+          },
+          "team_b": {
+            "name": "Washington Commanders",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
+        "channels": []
+      },
+      {
+        "title": "Denver Broncos vs Carolina Panthers",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "denver-broncos-vs-carolina-panthers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 09, 2026, 12:00 AM",
+          "end_time_bst": "Nov 09, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Denver Broncos",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png"
+          },
+          "team_b": {
+            "name": "Carolina Panthers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
         "channels": []
       }
     ]
