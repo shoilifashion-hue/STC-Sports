@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 09, 2026, 02:49 AM",
+  "last_updated": "Nov 09, 2026, 02:50 AM",
   "event_count": 35,
   "events": {
     "events": [
@@ -457,8 +457,8 @@
         "title": "Houston Texans vs Los Angeles Chargers",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "houston-texans-vs-los-angeles-chargers",
         "schedule": {
           "timezone": "BST (UTC+6)",
