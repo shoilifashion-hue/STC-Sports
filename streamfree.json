@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 08, 2026, 06:26 AM",
+  "last_updated": "Nov 08, 2026, 06:31 AM",
   "event_count": 60,
   "events": {
     "events": [
@@ -1007,8 +1007,8 @@
         "title": "Oklahoma Sooners vs Florida Gators",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "oklahoma-sooners-vs-florida-gators",
         "schedule": {
           "timezone": "BST (UTC+6)",
