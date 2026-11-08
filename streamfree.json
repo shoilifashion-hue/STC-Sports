@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 08, 2026, 09:52 AM",
-  "event_count": 43,
+  "last_updated": "Nov 08, 2026, 09:57 AM",
+  "event_count": 39,
   "events": {
     "events": [
       {
@@ -204,56 +204,6 @@
         "channels": []
       },
       {
-        "title": "Iowa Hawkeyes vs Northwestern Wildcats",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "iowa-hawkeyes-vs-northwestern-wildcats",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 06:30 AM",
-          "end_time_bst": "Nov 08, 2026, 09:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Iowa Hawkeyes",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png"
-          },
-          "team_b": {
-            "name": "Northwestern Wildcats",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
-        "channels": []
-      },
-      {
-        "title": "Colorado Buffaloes vs Arizona State Sun Devils",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "colorado-buffaloes-vs-arizona-state-sun-devils",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 06:30 AM",
-          "end_time_bst": "Nov 08, 2026, 09:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Colorado Buffaloes",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png"
-          },
-          "team_b": {
-            "name": "Arizona State Sun Devils",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/9.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png",
-        "channels": []
-      },
-      {
         "title": "Louisville Cardinals vs Georgia Tech Yellow Jackets",
         "sport": "Football",
         "sub_category": "Football",
@@ -304,31 +254,6 @@
         "channels": []
       },
       {
-        "title": "Air Force Falcons vs Army Black Knights",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "air-force-falcons-vs-army-black-knights",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 06:30 AM",
-          "end_time_bst": "Nov 08, 2026, 09:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Air Force Falcons",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2005.png"
-          },
-          "team_b": {
-            "name": "Army Black Knights",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/349.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2005.png",
-        "channels": []
-      },
-      {
         "title": "Oklahoma Sooners vs Florida Gators",
         "sport": "Football",
         "sub_category": "Football",
@@ -351,31 +276,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png",
-        "channels": []
-      },
-      {
-        "title": "San Jose Sharks vs Dallas Stars",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "san-jose-sharks-vs-dallas-stars",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 08, 2026, 07:00 AM",
-          "end_time_bst": "Nov 08, 2026, 10:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "San Jose Sharks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sj.png"
-          },
-          "team_b": {
-            "name": "Dallas Stars",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sj.png",
         "channels": []
       },
       {
