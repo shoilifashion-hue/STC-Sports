@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 09, 2026, 03:41 AM",
-  "event_count": 29,
+  "last_updated": "Nov 09, 2026, 03:46 AM",
+  "event_count": 27,
   "events": {
     "events": [
       {
@@ -126,56 +126,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Dallas Cowboys vs Indianapolis Colts",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "dallas-cowboys-vs-indianapolis-colts",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 09, 2026, 12:00 AM",
-          "end_time_bst": "Nov 09, 2026, 03:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Dallas Cowboys",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png"
-          },
-          "team_b": {
-            "name": "Indianapolis Colts",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
-        "channels": []
-      },
-      {
-        "title": "Cleveland Browns vs New Orleans Saints",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "cleveland-browns-vs-new-orleans-saints",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 09, 2026, 12:00 AM",
-          "end_time_bst": "Nov 09, 2026, 03:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Cleveland Browns",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png"
-          },
-          "team_b": {
-            "name": "New Orleans Saints",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/no.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
         "channels": []
       },
       {
