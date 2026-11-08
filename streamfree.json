@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 08, 2026, 10:35 PM",
+  "last_updated": "Nov 08, 2026, 10:50 PM",
   "event_count": 52,
   "events": {
     "events": [
@@ -382,8 +382,8 @@
         "title": "Como vs Internazionale",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "como-vs-internazionale",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -407,8 +407,8 @@
         "title": "Iona Gaels vs St. John's Red Storm",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "iona-gaels-vs-st-john-s-red-storm",
         "schedule": {
           "timezone": "BST (UTC+6)",
