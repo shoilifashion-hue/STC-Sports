@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 08, 2026, 07:42 AM",
+  "last_updated": "Nov 08, 2026, 07:47 AM",
   "event_count": 48,
   "events": {
     "events": [
@@ -882,8 +882,8 @@
         "title": "Houston Rockets vs Phoenix Suns",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "houston-rockets-vs-phoenix-suns",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -907,8 +907,8 @@
         "title": "Detroit Red Wings vs Colorado Avalanche",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "detroit-red-wings-vs-colorado-avalanche",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -932,8 +932,8 @@
         "title": "Pittsburgh Penguins vs Los Angeles Kings",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "pittsburgh-penguins-vs-los-angeles-kings",
         "schedule": {
           "timezone": "BST (UTC+6)",
