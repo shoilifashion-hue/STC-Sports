@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 09, 2026, 06:11 AM",
+  "last_updated": "Nov 09, 2026, 06:16 AM",
   "event_count": 22,
   "events": {
     "events": [
@@ -357,8 +357,8 @@
         "title": "Brooklyn Nets vs Dallas Mavericks",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "brooklyn-nets-vs-dallas-mavericks",
         "schedule": {
           "timezone": "BST (UTC+6)",
