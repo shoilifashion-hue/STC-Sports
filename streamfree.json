@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 09, 2026, 06:41 AM",
+  "last_updated": "Nov 09, 2026, 06:46 AM",
   "event_count": 19,
   "events": {
     "events": [
@@ -307,8 +307,8 @@
         "title": "Boston Celtics vs Milwaukee Bucks",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "boston-celtics-vs-milwaukee-bucks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -332,8 +332,8 @@
         "title": "Pittsburgh Penguins vs Anaheim Ducks",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "pittsburgh-penguins-vs-anaheim-ducks",
         "schedule": {
           "timezone": "BST (UTC+6)",
