@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 09, 2026, 07:06 AM",
+  "last_updated": "Nov 09, 2026, 07:16 AM",
   "event_count": 18,
   "events": {
     "events": [
@@ -357,8 +357,8 @@
         "title": "California Golden Bears vs Houston Cougars",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "california-golden-bears-vs-houston-cougars",
         "schedule": {
           "timezone": "BST (UTC+6)",
