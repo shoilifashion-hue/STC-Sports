@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 09, 2026, 07:46 AM",
-  "event_count": 18,
+  "last_updated": "Nov 09, 2026, 08:11 AM",
+  "event_count": 16,
   "events": {
     "events": [
       {
@@ -126,56 +126,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Los Angeles Lakers vs Detroit Pistons",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "los-angeles-lakers-vs-detroit-pistons",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 09, 2026, 05:00 AM",
-          "end_time_bst": "Nov 09, 2026, 08:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Los Angeles Lakers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png"
-          },
-          "team_b": {
-            "name": "Detroit Pistons",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
-        "channels": []
-      },
-      {
-        "title": "Tampa Bay Lightning vs Winnipeg Jets",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "tampa-bay-lightning-vs-winnipeg-jets",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 09, 2026, 05:00 AM",
-          "end_time_bst": "Nov 09, 2026, 08:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Tampa Bay Lightning",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png"
-          },
-          "team_b": {
-            "name": "Winnipeg Jets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
         "channels": []
       },
       {
