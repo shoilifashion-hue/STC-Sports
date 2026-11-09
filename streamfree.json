@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 09, 2026, 07:31 AM",
+  "last_updated": "Nov 09, 2026, 07:46 AM",
   "event_count": 18,
   "events": {
     "events": [
@@ -382,8 +382,8 @@
         "title": "New Orleans Pelicans vs LA Clippers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "new-orleans-pelicans-vs-la-clippers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -407,8 +407,8 @@
         "title": "Miami Heat vs Sacramento Kings",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "miami-heat-vs-sacramento-kings",
         "schedule": {
           "timezone": "BST (UTC+6)",
