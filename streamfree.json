@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 09, 2026, 09:42 AM",
-  "event_count": 11,
+  "last_updated": "Nov 09, 2026, 09:47 AM",
+  "event_count": 10,
   "events": {
     "events": [
       {
@@ -179,31 +179,6 @@
         "channels": []
       },
       {
-        "title": "California Golden Bears vs Houston Cougars",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "california-golden-bears-vs-houston-cougars",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 09, 2026, 07:30 AM",
-          "end_time_bst": "Nov 09, 2026, 10:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "California Golden Bears",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/25.png"
-          },
-          "team_b": {
-            "name": "Houston Cougars",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/25.png",
-        "channels": []
-      },
-      {
         "title": "New Orleans Pelicans vs LA Clippers",
         "sport": "Basketball",
         "sub_category": "Basketball",
@@ -257,8 +232,8 @@
         "title": "Wichita State Shockers vs USC Trojans",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "wichita-state-shockers-vs-usc-trojans",
         "schedule": {
           "timezone": "BST (UTC+6)",
