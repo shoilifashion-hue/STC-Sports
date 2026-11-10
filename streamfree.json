@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 10, 2026, 09:25 AM",
-  "event_count": 13,
+  "last_updated": "Nov 10, 2026, 10:15 AM",
+  "event_count": 10,
   "events": {
     "events": [
       {
@@ -129,56 +129,6 @@
         "channels": []
       },
       {
-        "title": "Indiana Pacers vs Dallas Mavericks",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "indiana-pacers-vs-dallas-mavericks",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 10, 2026, 07:00 AM",
-          "end_time_bst": "Nov 10, 2026, 10:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Indiana Pacers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png"
-          },
-          "team_b": {
-            "name": "Dallas Mavericks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
-        "channels": []
-      },
-      {
-        "title": "New York Rangers vs Edmonton Oilers",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "new-york-rangers-vs-edmonton-oilers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 10, 2026, 07:00 AM",
-          "end_time_bst": "Nov 10, 2026, 10:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "New York Rangers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyr.png"
-          },
-          "team_b": {
-            "name": "Edmonton Oilers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyr.png",
-        "channels": []
-      },
-      {
         "title": "Buffalo Bills vs Minnesota Vikings",
         "sport": "Football",
         "sub_category": "Football",
@@ -201,31 +151,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
-        "channels": []
-      },
-      {
-        "title": "Denver Nuggets vs Houston Rockets",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "denver-nuggets-vs-houston-rockets",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 10, 2026, 07:30 AM",
-          "end_time_bst": "Nov 10, 2026, 10:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Denver Nuggets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png"
-          },
-          "team_b": {
-            "name": "Houston Rockets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
         "channels": []
       },
       {
