@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 10, 2026, 05:50 AM",
+  "last_updated": "Nov 10, 2026, 06:20 AM",
   "event_count": 22,
   "events": {
     "events": [
@@ -307,8 +307,8 @@
         "title": "Memphis Grizzlies vs Toronto Raptors",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "memphis-grizzlies-vs-toronto-raptors",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -332,8 +332,8 @@
         "title": "Oakland Golden Grizzlies vs Alabama Crimson Tide",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "oakland-golden-grizzlies-vs-alabama-crimson-tide",
         "schedule": {
           "timezone": "BST (UTC+6)",
