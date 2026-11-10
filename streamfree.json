@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 10, 2026, 09:51 PM",
-  "event_count": 34,
+  "last_updated": "Nov 11, 2026, 03:30 AM",
+  "event_count": 30,
   "events": {
     "events": [
       {
@@ -129,136 +129,11 @@
         "channels": []
       },
       {
-        "title": "Alavés vs Anaitasuna",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "alavés-vs-anaitasuna",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 11, 2026, 12:00 AM",
-          "end_time_bst": "Nov 11, 2026, 03:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Alavés",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
-          },
-          "team_b": {
-            "name": "Alavés vs Anaitasuna",
-            "logo": null
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
-        "channels": []
-      },
-      {
-        "title": "Eibar vs CD Pamplona",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "eibar-vs-cd-pamplona",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 11, 2026, 12:00 AM",
-          "end_time_bst": "Nov 11, 2026, 03:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Eibar",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3752.png"
-          },
-          "team_b": {
-            "name": "Eibar vs CD Pamplona",
-            "logo": null
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3752.png",
-        "channels": []
-      },
-      {
-        "title": "UD Logroñés vs Amorebieta",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "ud-logroñés-vs-amorebieta",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 11, 2026, 01:00 AM",
-          "end_time_bst": "Nov 11, 2026, 04:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "UD Logroñés",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7206.png"
-          },
-          "team_b": {
-            "name": "Amorebieta",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12587.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7206.png",
-        "channels": []
-      },
-      {
-        "title": "Real Jaen CF vs Mijas Las Lagunas",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "real-jaen-cf-vs-mijas-las-lagunas",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 11, 2026, 01:00 AM",
-          "end_time_bst": "Nov 11, 2026, 04:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Real Jaen CF vs Mijas Las Lagunas",
-            "logo": null
-          },
-          "team_b": {
-            "name": "Real Jaen CF vs Mijas Las Lagunas",
-            "logo": null
-          }
-        },
-        "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Leganés vs Trival Valderas",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
-        "slug": "leganés-vs-trival-valderas",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 11, 2026, 01:00 AM",
-          "end_time_bst": "Nov 11, 2026, 04:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Leganés",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17534.png"
-          },
-          "team_b": {
-            "name": "Leganés vs Trival Valderas",
-            "logo": null
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17534.png",
-        "channels": []
-      },
-      {
         "title": "Valencia vs Tavernes de la Valldigna",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "valencia-vs-tavernes-de-la-valldigna",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -851,6 +726,31 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nsh.png",
+        "channels": []
+      },
+      {
+        "title": "Oklahoma City Thunder vs Portland Trail Blazers",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "oklahoma-city-thunder-vs-portland-trail-blazers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 11, 2026, 10:00 AM",
+          "end_time_bst": "Nov 11, 2026, 01:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
+          },
+          "team_b": {
+            "name": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
         "channels": []
       }
     ]
