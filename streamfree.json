@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 10, 2026, 07:05 AM",
+  "last_updated": "Nov 10, 2026, 07:20 AM",
   "event_count": 22,
   "events": {
     "events": [
@@ -432,8 +432,8 @@
         "title": "Denver Nuggets vs Houston Rockets",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "denver-nuggets-vs-houston-rockets",
         "schedule": {
           "timezone": "BST (UTC+6)",
