@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 10, 2026, 06:54 AM",
+  "last_updated": "Nov 10, 2026, 07:05 AM",
   "event_count": 22,
   "events": {
     "events": [
@@ -407,8 +407,8 @@
         "title": "Buffalo Bills vs Minnesota Vikings",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "buffalo-bills-vs-minnesota-vikings",
         "schedule": {
           "timezone": "BST (UTC+6)",
