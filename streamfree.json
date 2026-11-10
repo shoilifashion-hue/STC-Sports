@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 10, 2026, 07:20 AM",
+  "last_updated": "Nov 10, 2026, 07:45 AM",
   "event_count": 22,
   "events": {
     "events": [
@@ -457,8 +457,8 @@
         "title": "San Antonio Spurs vs Phoenix Suns",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "san-antonio-spurs-vs-phoenix-suns",
         "schedule": {
           "timezone": "BST (UTC+6)",
