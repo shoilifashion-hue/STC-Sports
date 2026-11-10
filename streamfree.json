@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 10, 2026, 06:20 AM",
+  "last_updated": "Nov 10, 2026, 06:50 AM",
   "event_count": 22,
   "events": {
     "events": [
@@ -357,8 +357,8 @@
         "title": "Indiana Pacers vs Dallas Mavericks",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "indiana-pacers-vs-dallas-mavericks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -382,8 +382,8 @@
         "title": "New York Rangers vs Edmonton Oilers",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "new-york-rangers-vs-edmonton-oilers",
         "schedule": {
           "timezone": "BST (UTC+6)",
