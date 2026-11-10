@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 11, 2026, 03:30 AM",
-  "event_count": 30,
+  "last_updated": "Nov 11, 2026, 05:49 AM",
+  "event_count": 29,
   "events": {
     "events": [
       {
@@ -129,36 +129,11 @@
         "channels": []
       },
       {
-        "title": "Valencia vs Tavernes de la Valldigna",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "valencia-vs-tavernes-de-la-valldigna",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 11, 2026, 02:00 AM",
-          "end_time_bst": "Nov 11, 2026, 05:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Valencia",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
-          },
-          "team_b": {
-            "name": "Valencia vs Tavernes de la Valldigna",
-            "logo": null
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png",
-        "channels": []
-      },
-      {
         "title": "Florida Gators vs Florida State Seminoles",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "florida-gators-vs-florida-state-seminoles",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -182,8 +157,8 @@
         "title": "Michigan State Spartans vs Duke Blue Devils",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "michigan-state-spartans-vs-duke-blue-devils",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -207,8 +182,8 @@
         "title": "Colorado Avalanche vs Toronto Maple Leafs",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "colorado-avalanche-vs-toronto-maple-leafs",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -232,8 +207,8 @@
         "title": "Minnesota Wild vs Montreal Canadiens",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "minnesota-wild-vs-montreal-canadiens",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -257,8 +232,8 @@
         "title": "Washington Capitals vs Ottawa Senators",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "washington-capitals-vs-ottawa-senators",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -282,8 +257,8 @@
         "title": "New Jersey Devils vs Winnipeg Jets",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "new-jersey-devils-vs-winnipeg-jets",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -307,8 +282,8 @@
         "title": "Western Michigan Broncos vs Akron Zips",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "western-michigan-broncos-vs-akron-zips",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -332,8 +307,8 @@
         "title": "Kent State Golden Flashes vs Bowling Green Falcons",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "kent-state-golden-flashes-vs-bowling-green-falcons",
         "schedule": {
           "timezone": "BST (UTC+6)",
