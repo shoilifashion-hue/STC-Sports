@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 11, 2026, 11:00 AM",
-  "event_count": 9,
+  "last_updated": "Nov 11, 2026, 11:15 AM",
+  "event_count": 8,
   "events": {
     "events": [
       {
@@ -126,31 +126,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Kansas Jayhawks vs Kentucky Wildcats",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "kansas-jayhawks-vs-kentucky-wildcats",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 11, 2026, 08:30 AM",
-          "end_time_bst": "Nov 11, 2026, 11:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Kansas Jayhawks",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png"
-          },
-          "team_b": {
-            "name": "Kentucky Wildcats",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png",
         "channels": []
       },
       {
