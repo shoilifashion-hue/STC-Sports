@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 11, 2026, 10:25 AM",
-  "event_count": 12,
+  "last_updated": "Nov 11, 2026, 11:00 AM",
+  "event_count": 9,
   "events": {
     "events": [
       {
@@ -126,81 +126,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Ohio Bobcats vs Miami (OH) Red Hawks",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "ohio-bobcats-vs-miami-oh-red-hawks",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 11, 2026, 07:00 AM",
-          "end_time_bst": "Nov 11, 2026, 10:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Ohio Bobcats",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/195.png"
-          },
-          "team_b": {
-            "name": "Miami (OH) RedHawks",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/195.png",
-        "channels": []
-      },
-      {
-        "title": "LA Clippers vs Phoenix Suns",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "la-clippers-vs-phoenix-suns",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 11, 2026, 08:00 AM",
-          "end_time_bst": "Nov 11, 2026, 11:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "LA Clippers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png"
-          },
-          "team_b": {
-            "name": "Phoenix Suns",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
-        "channels": []
-      },
-      {
-        "title": "Miami Heat vs Utah Jazz",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "miami-heat-vs-utah-jazz",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 11, 2026, 08:00 AM",
-          "end_time_bst": "Nov 11, 2026, 11:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Miami Heat",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png"
-          },
-          "team_b": {
-            "name": "Utah Jazz",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
         "channels": []
       },
       {
