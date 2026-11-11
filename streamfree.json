@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 11, 2026, 12:20 PM",
-  "event_count": 6,
+  "last_updated": "Nov 11, 2026, 01:05 PM",
+  "event_count": 5,
   "events": {
     "events": [
       {
@@ -126,31 +126,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Oklahoma City Thunder vs Portland Trail Blazers",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "oklahoma-city-thunder-vs-portland-trail-blazers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 11, 2026, 10:00 AM",
-          "end_time_bst": "Nov 11, 2026, 01:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Oklahoma City Thunder",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
-          },
-          "team_b": {
-            "name": "Portland Trail Blazers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
         "channels": []
       }
     ]
