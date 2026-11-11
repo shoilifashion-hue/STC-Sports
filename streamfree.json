@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 12, 2026, 05:10 AM",
+  "last_updated": "Nov 12, 2026, 05:49 AM",
   "event_count": 31,
   "events": {
     "events": [
@@ -132,8 +132,8 @@
         "title": "Washington Wizards vs Indiana Pacers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "washington-wizards-vs-indiana-pacers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -157,8 +157,8 @@
         "title": "Cleveland Cavaliers vs New York Knicks",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "cleveland-cavaliers-vs-new-york-knicks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -182,8 +182,8 @@
         "title": "Boston Celtics vs Toronto Raptors",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "boston-celtics-vs-toronto-raptors",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -207,8 +207,8 @@
         "title": "Colgate Raiders vs St. John's Red Storm",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "colgate-raiders-vs-st-john-s-red-storm",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -232,8 +232,8 @@
         "title": "Marquette Golden Eagles vs Michigan Wolverines",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "marquette-golden-eagles-vs-michigan-wolverines",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -257,8 +257,8 @@
         "title": "Tampa Bay Lightning vs Buffalo Sabres",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "tampa-bay-lightning-vs-buffalo-sabres",
         "schedule": {
           "timezone": "BST (UTC+6)",
