@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 11, 2026, 09:10 AM",
-  "event_count": 21,
+  "last_updated": "Nov 11, 2026, 09:15 AM",
+  "event_count": 20,
   "events": {
     "events": [
       {
@@ -126,31 +126,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Western Michigan Broncos vs Akron Zips",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "western-michigan-broncos-vs-akron-zips",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 11, 2026, 06:00 AM",
-          "end_time_bst": "Nov 11, 2026, 09:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Western Michigan Broncos",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2711.png"
-          },
-          "team_b": {
-            "name": "Akron Zips",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2006.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2711.png",
         "channels": []
       },
       {
