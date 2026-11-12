@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 12, 2026, 12:35 PM",
-  "event_count": 11,
+  "last_updated": "Nov 12, 2026, 07:22 PM",
+  "event_count": 30,
   "events": {
     "events": [
       {
@@ -276,6 +276,481 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
+        "channels": []
+      },
+      {
+        "title": "Finland vs Albania",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "finland-vs-albania",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 01:45 AM",
+          "end_time_bst": "Nov 13, 2026, 04:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Finland",
+            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fin.png"
+          },
+          "team_b": {
+            "name": "Albania",
+            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alb.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fin.png",
+        "channels": []
+      },
+      {
+        "title": "Spain vs Czechia",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "spain-vs-czechia",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 01:45 AM",
+          "end_time_bst": "Nov 13, 2026, 04:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Spain",
+            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png"
+          },
+          "team_b": {
+            "name": "Czechia",
+            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+        "channels": []
+      },
+      {
+        "title": "Croatia vs England",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "croatia-vs-england",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 01:45 AM",
+          "end_time_bst": "Nov 13, 2026, 04:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Croatia",
+            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png"
+          },
+          "team_b": {
+            "name": "England",
+            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+        "channels": []
+      },
+      {
+        "title": "France vs Italy",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "france-vs-italy",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 01:45 AM",
+          "end_time_bst": "Nov 13, 2026, 04:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "France",
+            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png"
+          },
+          "team_b": {
+            "name": "Italy",
+            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ita.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+        "channels": []
+      },
+      {
+        "title": "Latvia vs Montenegro",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "latvia-vs-montenegro",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 01:45 AM",
+          "end_time_bst": "Nov 13, 2026, 04:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Latvia",
+            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/lva.png"
+          },
+          "team_b": {
+            "name": "Montenegro",
+            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mtg.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/lva.png",
+        "channels": []
+      },
+      {
+        "title": "Belarus vs San Marino",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "belarus-vs-san-marino",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 01:45 AM",
+          "end_time_bst": "Nov 13, 2026, 04:45 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Belarus",
+            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/blr.png"
+          },
+          "team_b": {
+            "name": "San Marino",
+            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/smr.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/blr.png",
+        "channels": []
+      },
+      {
+        "title": "Toronto Raptors vs Philadelphia 76ers",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "toronto-raptors-vs-philadelphia-76ers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 06:00 AM",
+          "end_time_bst": "Nov 13, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png"
+          },
+          "team_b": {
+            "name": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+        "channels": []
+      },
+      {
+        "title": "Detroit Pistons vs Washington Wizards",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "detroit-pistons-vs-washington-wizards",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 06:00 AM",
+          "end_time_bst": "Nov 13, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Detroit Pistons",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png"
+          },
+          "team_b": {
+            "name": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+        "channels": []
+      },
+      {
+        "title": "Montreal Canadiens vs Boston Bruins",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "montreal-canadiens-vs-boston-bruins",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 06:00 AM",
+          "end_time_bst": "Nov 13, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Montreal Canadiens",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png"
+          },
+          "team_b": {
+            "name": "Boston Bruins",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png",
+        "channels": []
+      },
+      {
+        "title": "Minnesota Wild vs Toronto Maple Leafs",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "minnesota-wild-vs-toronto-maple-leafs",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 06:00 AM",
+          "end_time_bst": "Nov 13, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Minnesota Wild",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png"
+          },
+          "team_b": {
+            "name": "Toronto Maple Leafs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
+        "channels": []
+      },
+      {
+        "title": "Colorado Avalanche vs Ottawa Senators",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "colorado-avalanche-vs-ottawa-senators",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 06:00 AM",
+          "end_time_bst": "Nov 13, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Colorado Avalanche",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png"
+          },
+          "team_b": {
+            "name": "Ottawa Senators",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png",
+        "channels": []
+      },
+      {
+        "title": "Washington Capitals vs New Jersey Devils",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "washington-capitals-vs-new-jersey-devils",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 06:00 AM",
+          "end_time_bst": "Nov 13, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Washington Capitals",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wsh.png"
+          },
+          "team_b": {
+            "name": "New Jersey Devils",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nj.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wsh.png",
+        "channels": []
+      },
+      {
+        "title": "Tampa Bay Lightning vs Columbus Blue Jackets",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "tampa-bay-lightning-vs-columbus-blue-jackets",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 06:00 AM",
+          "end_time_bst": "Nov 13, 2026, 09:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Tampa Bay Lightning",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png"
+          },
+          "team_b": {
+            "name": "Columbus Blue Jackets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cbj.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
+        "channels": []
+      },
+      {
+        "title": "Detroit Red Wings vs Florida Panthers",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "detroit-red-wings-vs-florida-panthers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 06:30 AM",
+          "end_time_bst": "Nov 13, 2026, 09:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Detroit Red Wings",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png"
+          },
+          "team_b": {
+            "name": "Florida Panthers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png",
+        "channels": []
+      },
+      {
+        "title": "Dallas Mavericks vs Minnesota Timberwolves",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "dallas-mavericks-vs-minnesota-timberwolves",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 07:00 AM",
+          "end_time_bst": "Nov 13, 2026, 10:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png"
+          },
+          "team_b": {
+            "name": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+        "channels": []
+      },
+      {
+        "title": "Buffalo Sabres vs Chicago Blackhawks",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "buffalo-sabres-vs-chicago-blackhawks",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 07:00 AM",
+          "end_time_bst": "Nov 13, 2026, 10:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Buffalo Sabres",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/buf.png"
+          },
+          "team_b": {
+            "name": "Chicago Blackhawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/chi.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/buf.png",
+        "channels": []
+      },
+      {
+        "title": "Winnipeg Jets vs Dallas Stars",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "winnipeg-jets-vs-dallas-stars",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 07:00 AM",
+          "end_time_bst": "Nov 13, 2026, 10:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Winnipeg Jets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png"
+          },
+          "team_b": {
+            "name": "Dallas Stars",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png",
+        "channels": []
+      },
+      {
+        "title": "Memphis Tigers vs South Florida Bulls",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "memphis-tigers-vs-south-florida-bulls",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 07:00 AM",
+          "end_time_bst": "Nov 13, 2026, 10:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Memphis Tigers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png"
+          },
+          "team_b": {
+            "name": "South Florida Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png",
+        "channels": []
+      },
+      {
+        "title": "Washington Commanders vs New York Giants",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "washington-commanders-vs-new-york-giants",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 07:15 AM",
+          "end_time_bst": "Nov 13, 2026, 10:15 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Washington Commanders",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png"
+          },
+          "team_b": {
+            "name": "New York Giants",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
         "channels": []
       }
     ]
