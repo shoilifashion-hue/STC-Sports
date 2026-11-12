@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 12, 2026, 06:19 AM",
+  "last_updated": "Nov 12, 2026, 06:49 AM",
   "event_count": 31,
   "events": {
     "events": [
@@ -382,8 +382,8 @@
         "title": "San Antonio Spurs vs Chicago Bulls",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "san-antonio-spurs-vs-chicago-bulls",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -407,8 +407,8 @@
         "title": "Denver Nuggets vs Memphis Grizzlies",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "denver-nuggets-vs-memphis-grizzlies",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -432,8 +432,8 @@
         "title": "Los Angeles Lakers vs Milwaukee Bucks",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "los-angeles-lakers-vs-milwaukee-bucks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -457,8 +457,8 @@
         "title": "Brooklyn Nets vs New Orleans Pelicans",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "brooklyn-nets-vs-new-orleans-pelicans",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -482,8 +482,8 @@
         "title": "Jacksonville State Gamecocks vs Houston Cougars",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "jacksonville-state-gamecocks-vs-houston-cougars",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -507,8 +507,8 @@
         "title": "Robert Morris Colonials vs Arkansas Razorbacks",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "robert-morris-colonials-vs-arkansas-razorbacks",
         "schedule": {
           "timezone": "BST (UTC+6)",
