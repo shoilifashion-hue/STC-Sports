@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 12, 2026, 11:14 AM",
-  "event_count": 14,
+  "last_updated": "Nov 12, 2026, 11:44 AM",
+  "event_count": 12,
   "events": {
     "events": [
       {
@@ -126,81 +126,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Golden State Warriors vs Houston Rockets",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "golden-state-warriors-vs-houston-rockets",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 12, 2026, 08:30 AM",
-          "end_time_bst": "Nov 12, 2026, 11:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Golden State Warriors",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png"
-          },
-          "team_b": {
-            "name": "Houston Rockets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
-        "channels": []
-      },
-      {
-        "title": "Utah Mammoth vs Vegas Golden Knights",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "utah-mammoth-vs-vegas-golden-knights",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 12, 2026, 08:30 AM",
-          "end_time_bst": "Nov 12, 2026, 11:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Utah Mammoth",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/uta.png"
-          },
-          "team_b": {
-            "name": "Vegas Golden Knights",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/uta.png",
-        "channels": []
-      },
-      {
-        "title": "Oklahoma City Thunder vs Portland Trail Blazers",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "oklahoma-city-thunder-vs-portland-trail-blazers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 12, 2026, 09:00 AM",
-          "end_time_bst": "Nov 12, 2026, 12:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Oklahoma City Thunder",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
-          },
-          "team_b": {
-            "name": "Portland Trail Blazers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
         "channels": []
       },
       {
@@ -351,6 +276,31 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/car.png",
+        "channels": []
+      },
+      {
+        "title": "Albacete vs CS Puertollano",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "albacete-vs-cs-puertollano",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 12, 2026, 11:30 PM",
+          "end_time_bst": "Nov 13, 2026, 02:30 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Albacete",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2737.png"
+          },
+          "team_b": {
+            "name": "Albacete vs CS Puertollano",
+            "logo": null
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2737.png",
         "channels": []
       }
     ]
