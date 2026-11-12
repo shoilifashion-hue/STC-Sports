@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 12, 2026, 05:49 AM",
+  "last_updated": "Nov 12, 2026, 06:19 AM",
   "event_count": 31,
   "events": {
     "events": [
@@ -282,8 +282,8 @@
         "title": "New York Rangers vs Calgary Flames",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "new-york-rangers-vs-calgary-flames",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -307,8 +307,8 @@
         "title": "Buffalo Bulls vs Ball State Cardinals",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "buffalo-bulls-vs-ball-state-cardinals",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -332,8 +332,8 @@
         "title": "Sacramento State Hornets vs Central Michigan Chippewas",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "sacramento-state-hornets-vs-central-michigan-chippewas",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -357,8 +357,8 @@
         "title": "Massachusetts Minutemen vs Toledo Rockets",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "massachusetts-minutemen-vs-toledo-rockets",
         "schedule": {
           "timezone": "BST (UTC+6)",
