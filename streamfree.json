@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 12, 2026, 06:49 AM",
+  "last_updated": "Nov 12, 2026, 07:49 AM",
   "event_count": 31,
   "events": {
     "events": [
@@ -532,8 +532,8 @@
         "title": "Orlando Magic vs Utah Jazz",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "orlando-magic-vs-utah-jazz",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -557,8 +557,8 @@
         "title": "Arkansas-Pine Bluff Golden Lions vs UCLA Bruins",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "arkansas-pine-bluff-golden-lions-vs-ucla-bruins",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -582,8 +582,8 @@
         "title": "Lindenwood Lions vs Nebraska Cornhuskers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "lindenwood-lions-vs-nebraska-cornhuskers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -607,8 +607,8 @@
         "title": "Philadelphia Flyers vs Edmonton Oilers",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "philadelphia-flyers-vs-edmonton-oilers",
         "schedule": {
           "timezone": "BST (UTC+6)",
