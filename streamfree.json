@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 13, 2026, 04:13 AM",
+  "last_updated": "Nov 13, 2026, 05:48 AM",
   "event_count": 23,
   "events": {
     "events": [
@@ -132,8 +132,8 @@
         "title": "Toronto Raptors vs Philadelphia 76ers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "toronto-raptors-vs-philadelphia-76ers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -157,8 +157,8 @@
         "title": "Detroit Pistons vs Washington Wizards",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "detroit-pistons-vs-washington-wizards",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -182,8 +182,8 @@
         "title": "Montreal Canadiens vs Boston Bruins",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "montreal-canadiens-vs-boston-bruins",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -207,8 +207,8 @@
         "title": "Minnesota Wild vs Toronto Maple Leafs",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "minnesota-wild-vs-toronto-maple-leafs",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -232,8 +232,8 @@
         "title": "Colorado Avalanche vs Ottawa Senators",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "colorado-avalanche-vs-ottawa-senators",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -257,8 +257,8 @@
         "title": "Washington Capitals vs New Jersey Devils",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "washington-capitals-vs-new-jersey-devils",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -282,8 +282,8 @@
         "title": "Tampa Bay Lightning vs Columbus Blue Jackets",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "tampa-bay-lightning-vs-columbus-blue-jackets",
         "schedule": {
           "timezone": "BST (UTC+6)",
