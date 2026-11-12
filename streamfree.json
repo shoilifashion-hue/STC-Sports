@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 12, 2026, 07:22 PM",
-  "event_count": 30,
+  "last_updated": "Nov 12, 2026, 10:47 PM",
+  "event_count": 35,
   "events": {
     "events": [
       {
@@ -132,8 +132,8 @@
         "title": "Cyprus vs Armenia",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "cyprus-vs-armenia",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -157,8 +157,8 @@
         "title": "Belgium vs Türkiye",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "belgium-vs-türkiye",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -182,8 +182,8 @@
         "title": "Carolina Hurricanes vs Seattle Kraken",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "carolina-hurricanes-vs-seattle-kraken",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -751,6 +751,131 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/wsh.png",
+        "channels": []
+      },
+      {
+        "title": "Charlotte Hornets vs Phoenix Suns",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "charlotte-hornets-vs-phoenix-suns",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 08:00 AM",
+          "end_time_bst": "Nov 13, 2026, 11:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Charlotte Hornets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png"
+          },
+          "team_b": {
+            "name": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+        "channels": []
+      },
+      {
+        "title": "Montana State Bobcats vs BYU Cougars",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "montana-state-bobcats-vs-byu-cougars",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 08:00 AM",
+          "end_time_bst": "Nov 13, 2026, 11:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Montana State Bobcats",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/147.png"
+          },
+          "team_b": {
+            "name": "BYU Cougars",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/147.png",
+        "channels": []
+      },
+      {
+        "title": "St. Louis Blues vs Utah Mammoth",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "st-louis-blues-vs-utah-mammoth",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 08:00 AM",
+          "end_time_bst": "Nov 13, 2026, 11:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "St. Louis Blues",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/stl.png"
+          },
+          "team_b": {
+            "name": "Utah Mammoth",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/uta.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/stl.png",
+        "channels": []
+      },
+      {
+        "title": "Louisiana Ragin' Cajuns vs UL Monroe Warhawks",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "louisiana-ragin-cajuns-vs-ul-monroe-warhawks",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 08:00 AM",
+          "end_time_bst": "Nov 13, 2026, 11:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Louisiana Ragin' Cajuns",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/309.png"
+          },
+          "team_b": {
+            "name": "UL Monroe Warhawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2433.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/309.png",
+        "channels": []
+      },
+      {
+        "title": "New York Islanders vs Los Angeles Kings",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "new-york-islanders-vs-los-angeles-kings",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 13, 2026, 09:00 AM",
+          "end_time_bst": "Nov 13, 2026, 12:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "New York Islanders",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png"
+          },
+          "team_b": {
+            "name": "Los Angeles Kings",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/la.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png",
         "channels": []
       }
     ]
