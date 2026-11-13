@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 13, 2026, 05:48 AM",
+  "last_updated": "Nov 13, 2026, 06:18 AM",
   "event_count": 23,
   "events": {
     "events": [
@@ -307,8 +307,8 @@
         "title": "Detroit Red Wings vs Florida Panthers",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "detroit-red-wings-vs-florida-panthers",
         "schedule": {
           "timezone": "BST (UTC+6)",
