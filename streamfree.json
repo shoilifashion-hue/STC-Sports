@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 14, 2026, 01:26 AM",
+  "last_updated": "Nov 14, 2026, 01:31 AM",
   "event_count": 42,
   "events": {
     "events": [
@@ -132,8 +132,8 @@
         "title": "Gibraltar vs Andorra",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "gibraltar-vs-andorra",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -157,8 +157,8 @@
         "title": "Iceland vs Bulgaria",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "iceland-vs-bulgaria",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -182,8 +182,8 @@
         "title": "Azerbaijan vs Liechtenstein",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "azerbaijan-vs-liechtenstein",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -207,8 +207,8 @@
         "title": "Estonia vs Luxembourg",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "estonia-vs-luxembourg",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -232,8 +232,8 @@
         "title": "Greece vs Netherlands",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "greece-vs-netherlands",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -257,8 +257,8 @@
         "title": "North Macedonia vs Scotland",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "north-macedonia-vs-scotland",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -282,8 +282,8 @@
         "title": "Germany vs Serbia",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "germany-vs-serbia",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -307,8 +307,8 @@
         "title": "Faroe Islands vs Slovakia",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "faroe-islands-vs-slovakia",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -332,8 +332,8 @@
         "title": "Switzerland vs Slovenia",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "switzerland-vs-slovenia",
         "schedule": {
           "timezone": "BST (UTC+6)",
