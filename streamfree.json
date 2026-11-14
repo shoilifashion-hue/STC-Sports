@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 14, 2026, 10:45 PM",
+  "last_updated": "Nov 14, 2026, 11:15 PM",
   "event_count": 89,
   "events": {
     "events": [
@@ -357,8 +357,8 @@
         "title": "Georgia Tech Yellow Jackets vs Clemson Tigers",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "georgia-tech-yellow-jackets-vs-clemson-tigers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -382,8 +382,8 @@
         "title": "Nebraska Cornhuskers vs Rutgers Scarlet Knights",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "nebraska-cornhuskers-vs-rutgers-scarlet-knights",
         "schedule": {
           "timezone": "BST (UTC+6)",
