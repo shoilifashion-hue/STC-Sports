@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 15, 2026, 01:26 AM",
+  "last_updated": "Nov 15, 2026, 01:31 AM",
   "event_count": 87,
   "events": {
     "events": [
@@ -557,8 +557,8 @@
         "title": "Republic of Ireland vs Austria",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "republic-of-ireland-vs-austria",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -582,8 +582,8 @@
         "title": "Ukraine vs Northern Ireland",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ukraine-vs-northern-ireland",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -607,8 +607,8 @@
         "title": "Denmark vs Portugal",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "denmark-vs-portugal",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -632,8 +632,8 @@
         "title": "Poland vs Romania",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "poland-vs-romania",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -657,8 +657,8 @@
         "title": "Bosnia-Herzegovina vs Sweden",
         "sport": "Soccer",
         "sub_category": "Soccer",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "bosnia-herzegovina-vs-sweden",
         "schedule": {
           "timezone": "BST (UTC+6)",
