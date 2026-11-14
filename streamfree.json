@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 14, 2026, 11:45 PM",
+  "last_updated": "Nov 15, 2026, 12:46 AM",
   "event_count": 89,
   "events": {
     "events": [
@@ -557,8 +557,8 @@
         "title": "Kansas State Wildcats vs TCU Horned Frogs",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "kansas-state-wildcats-vs-tcu-horned-frogs",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -582,8 +582,8 @@
         "title": "Kennesaw State Owls vs Sam Houston Bearkats",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "kennesaw-state-owls-vs-sam-houston-bearkats",
         "schedule": {
           "timezone": "BST (UTC+6)",
