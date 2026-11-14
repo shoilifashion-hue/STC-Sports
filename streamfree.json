@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 15, 2026, 04:36 AM",
+  "last_updated": "Nov 15, 2026, 04:46 AM",
   "event_count": 65,
   "events": {
     "events": [
@@ -682,8 +682,8 @@
         "title": "Oregon State Beavers vs Boise State Broncos",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "oregon-state-beavers-vs-boise-state-broncos",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -707,8 +707,8 @@
         "title": "App State Mountaineers vs Marshall Thundering Herd",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "app-state-mountaineers-vs-marshall-thundering-herd",
         "schedule": {
           "timezone": "BST (UTC+6)",
