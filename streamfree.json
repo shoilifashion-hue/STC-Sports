@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 15, 2026, 01:46 AM",
+  "last_updated": "Nov 15, 2026, 02:16 AM",
   "event_count": 87,
   "events": {
     "events": [
@@ -757,8 +757,8 @@
         "title": "LSU Tigers vs Gonzaga Bulldogs",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "lsu-tigers-vs-gonzaga-bulldogs",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -782,8 +782,8 @@
         "title": "Winnipeg Jets vs Chicago Blackhawks",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "winnipeg-jets-vs-chicago-blackhawks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -807,8 +807,8 @@
         "title": "Missouri Tigers vs Georgia Bulldogs",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "missouri-tigers-vs-georgia-bulldogs",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -832,8 +832,8 @@
         "title": "Boston College Eagles vs Notre Dame Fighting Irish",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "boston-college-eagles-vs-notre-dame-fighting-irish",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -857,8 +857,8 @@
         "title": "USC Trojans vs Indiana Hoosiers",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "usc-trojans-vs-indiana-hoosiers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -882,8 +882,8 @@
         "title": "Michigan Wolverines vs Oregon Ducks",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "michigan-wolverines-vs-oregon-ducks",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -907,8 +907,8 @@
         "title": "California Golden Bears vs Virginia Cavaliers",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "california-golden-bears-vs-virginia-cavaliers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -932,8 +932,8 @@
         "title": "Nevada Wolf Pack vs Northern Illinois Huskies",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "nevada-wolf-pack-vs-northern-illinois-huskies",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -957,8 +957,8 @@
         "title": "Georgia Southern Eagles vs Georgia State Panthers",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "georgia-southern-eagles-vs-georgia-state-panthers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -982,8 +982,8 @@
         "title": "Jacksonville State Gamecocks vs Western Kentucky Hilltoppers",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "jacksonville-state-gamecocks-vs-western-kentucky-hilltoppers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1007,8 +1007,8 @@
         "title": "Middle Tennessee Blue Raiders vs Liberty Flames",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "middle-tennessee-blue-raiders-vs-liberty-flames",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -1032,8 +1032,8 @@
         "title": "Kansas Jayhawks vs West Virginia Mountaineers",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "kansas-jayhawks-vs-west-virginia-mountaineers",
         "schedule": {
           "timezone": "BST (UTC+6)",
