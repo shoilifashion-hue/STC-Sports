@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 14, 2026, 06:47 AM",
+  "last_updated": "Nov 14, 2026, 07:17 AM",
   "event_count": 31,
   "events": {
     "events": [
@@ -532,8 +532,8 @@
         "title": "Utah Jazz vs Houston Rockets",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "utah-jazz-vs-houston-rockets",
         "schedule": {
           "timezone": "BST (UTC+6)",
