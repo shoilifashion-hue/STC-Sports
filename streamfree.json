@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 15, 2026, 03:11 AM",
+  "last_updated": "Nov 15, 2026, 03:16 AM",
   "event_count": 76,
   "events": {
     "events": [
@@ -832,8 +832,8 @@
         "title": "Tulane Green Wave vs Rice Owls",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "tulane-green-wave-vs-rice-owls",
         "schedule": {
           "timezone": "BST (UTC+6)",
