@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 15, 2026, 03:43 AM",
+  "last_updated": "Nov 15, 2026, 03:46 AM",
   "event_count": 71,
   "events": {
     "events": [
@@ -732,8 +732,8 @@
         "title": "UFC 334: Gane vs. Hokit",
         "sport": "Combat",
         "sub_category": "Combat",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ufc-334-gane-vs-hokit",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -757,8 +757,8 @@
         "title": "Southern Miss Golden Eagles vs Louisiana Tech Bulldogs",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "southern-miss-golden-eagles-vs-louisiana-tech-bulldogs",
         "schedule": {
           "timezone": "BST (UTC+6)",
