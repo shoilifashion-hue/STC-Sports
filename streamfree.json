@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 14, 2026, 11:30 PM",
+  "last_updated": "Nov 14, 2026, 11:45 PM",
   "event_count": 89,
   "events": {
     "events": [
@@ -432,8 +432,8 @@
         "title": "Stonehill Skyhawks vs Texas Tech Red Raiders",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "stonehill-skyhawks-vs-texas-tech-red-raiders",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -457,8 +457,8 @@
         "title": "Seattle Kraken vs Carolina Hurricanes",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "seattle-kraken-vs-carolina-hurricanes",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -482,8 +482,8 @@
         "title": "East Carolina Pirates vs Charlotte 49ers",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "east-carolina-pirates-vs-charlotte-49ers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -507,8 +507,8 @@
         "title": "UAB Blazers vs Temple Owls",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "uab-blazers-vs-temple-owls",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -532,8 +532,8 @@
         "title": "Arkansas State Red Wolves vs Coastal Carolina Chanticleers",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "arkansas-state-red-wolves-vs-coastal-carolina-chanticleers",
         "schedule": {
           "timezone": "BST (UTC+6)",
