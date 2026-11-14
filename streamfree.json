@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 15, 2026, 04:11 AM",
+  "last_updated": "Nov 15, 2026, 04:16 AM",
   "event_count": 67,
   "events": {
     "events": [
@@ -682,8 +682,8 @@
         "title": "Arizona State Sun Devils vs UCF Knights",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "arizona-state-sun-devils-vs-ucf-knights",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -707,8 +707,8 @@
         "title": "Washington Huskies vs Michigan State Spartans",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "washington-huskies-vs-michigan-state-spartans",
         "schedule": {
           "timezone": "BST (UTC+6)",
