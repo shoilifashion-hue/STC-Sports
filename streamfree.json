@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 15, 2026, 01:31 AM",
+  "last_updated": "Nov 15, 2026, 01:46 AM",
   "event_count": 87,
   "events": {
     "events": [
@@ -682,8 +682,8 @@
         "title": "Tennessee Volunteers vs Texas A&M Aggies",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "tennessee-volunteers-vs-texas-a-m-aggies",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -707,8 +707,8 @@
         "title": "New Mexico State Aggies vs Missouri State Bears",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "new-mexico-state-aggies-vs-missouri-state-bears",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -732,8 +732,8 @@
         "title": "Florida International Panthers vs Delaware Blue Hens",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "florida-international-panthers-vs-delaware-blue-hens",
         "schedule": {
           "timezone": "BST (UTC+6)",
