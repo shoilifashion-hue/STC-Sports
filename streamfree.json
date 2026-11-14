@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 15, 2026, 05:42 AM",
+  "last_updated": "Nov 15, 2026, 05:47 AM",
   "event_count": 60,
   "events": {
     "events": [
@@ -632,8 +632,8 @@
         "title": "Denver Nuggets vs New Orleans Pelicans",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "denver-nuggets-vs-new-orleans-pelicans",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -657,8 +657,8 @@
         "title": "Minnesota Wild vs Boston Bruins",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "minnesota-wild-vs-boston-bruins",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -682,8 +682,8 @@
         "title": "Edmonton Oilers vs Toronto Maple Leafs",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "edmonton-oilers-vs-toronto-maple-leafs",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -707,8 +707,8 @@
         "title": "Colorado Avalanche vs Montreal Canadiens",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "colorado-avalanche-vs-montreal-canadiens",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -732,8 +732,8 @@
         "title": "Detroit Red Wings vs Tampa Bay Lightning",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "detroit-red-wings-vs-tampa-bay-lightning",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -757,8 +757,8 @@
         "title": "Ottawa Senators vs Pittsburgh Penguins",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "ottawa-senators-vs-pittsburgh-penguins",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -782,8 +782,8 @@
         "title": "New Jersey Devils vs Washington Capitals",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "new-jersey-devils-vs-washington-capitals",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -807,8 +807,8 @@
         "title": "Philadelphia Flyers vs Columbus Blue Jackets",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "philadelphia-flyers-vs-columbus-blue-jackets",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -832,8 +832,8 @@
         "title": "Florida Panthers vs St. Louis Blues",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "florida-panthers-vs-st-louis-blues",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -857,8 +857,8 @@
         "title": "Baylor Bears vs BYU Cougars",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "baylor-bears-vs-byu-cougars",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -882,8 +882,8 @@
         "title": "Louisville Cardinals vs North Carolina Tar Heels",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "louisville-cardinals-vs-north-carolina-tar-heels",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -907,8 +907,8 @@
         "title": "Minnesota Golden Gophers vs Penn State Nittany Lions",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "minnesota-golden-gophers-vs-penn-state-nittany-lions",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -932,8 +932,8 @@
         "title": "San José State Spartans vs Air Force Falcons",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "san-josé-state-spartans-vs-air-force-falcons",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -957,8 +957,8 @@
         "title": "Troy Trojans vs South Alabama Jaguars",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "troy-trojans-vs-south-alabama-jaguars",
         "schedule": {
           "timezone": "BST (UTC+6)",
