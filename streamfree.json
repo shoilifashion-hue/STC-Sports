@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 14, 2026, 11:58 AM",
-  "event_count": 21,
+  "last_updated": "Nov 14, 2026, 12:13 PM",
+  "event_count": 24,
   "events": {
     "events": [
       {
@@ -129,31 +129,6 @@
         "channels": []
       },
       {
-        "title": "Nashville Predators vs Vegas Golden Knights",
-        "sport": "Hockey",
-        "sub_category": "Hockey",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "nashville-predators-vs-vegas-golden-knights",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 14, 2026, 09:00 AM",
-          "end_time_bst": "Nov 14, 2026, 12:00 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Nashville Predators",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nsh.png"
-          },
-          "team_b": {
-            "name": "Vegas Golden Knights",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nsh.png",
-        "channels": []
-      },
-      {
         "title": "Houston Cougars vs Colorado Buffaloes",
         "sport": "Football",
         "sub_category": "Football",
@@ -176,31 +151,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
-        "channels": []
-      },
-      {
-        "title": "Oklahoma City Thunder vs LA Clippers",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "oklahoma-city-thunder-vs-la-clippers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 14, 2026, 09:30 AM",
-          "end_time_bst": "Nov 14, 2026, 12:30 PM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Oklahoma City Thunder",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
-          },
-          "team_b": {
-            "name": "LA Clippers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
         "channels": []
       },
       {
@@ -526,6 +476,131 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png",
+        "channels": []
+      },
+      {
+        "title": "Stonehill Skyhawks vs Texas Tech Red Raiders",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "stonehill-skyhawks-vs-texas-tech-red-raiders",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 15, 2026, 12:00 AM",
+          "end_time_bst": "Nov 15, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Stonehill Skyhawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/284.png"
+          },
+          "team_b": {
+            "name": "Texas Tech Red Raiders",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/284.png",
+        "channels": []
+      },
+      {
+        "title": "Seattle Kraken vs Carolina Hurricanes",
+        "sport": "Hockey",
+        "sub_category": "Hockey",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "seattle-kraken-vs-carolina-hurricanes",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 15, 2026, 12:00 AM",
+          "end_time_bst": "Nov 15, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Seattle Kraken",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sea.png"
+          },
+          "team_b": {
+            "name": "Carolina Hurricanes",
+            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/car.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sea.png",
+        "channels": []
+      },
+      {
+        "title": "East Carolina Pirates vs Charlotte 49ers",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "east-carolina-pirates-vs-charlotte-49ers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 15, 2026, 12:00 AM",
+          "end_time_bst": "Nov 15, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "East Carolina Pirates",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/151.png"
+          },
+          "team_b": {
+            "name": "Charlotte 49ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/151.png",
+        "channels": []
+      },
+      {
+        "title": "UAB Blazers vs Temple Owls",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "uab-blazers-vs-temple-owls",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 15, 2026, 12:00 AM",
+          "end_time_bst": "Nov 15, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "UAB Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/5.png"
+          },
+          "team_b": {
+            "name": "Temple Owls",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/218.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/5.png",
+        "channels": []
+      },
+      {
+        "title": "Arkansas State Red Wolves vs Coastal Carolina Chanticleers",
+        "sport": "Football",
+        "sub_category": "Football",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "arkansas-state-red-wolves-vs-coastal-carolina-chanticleers",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 15, 2026, 12:00 AM",
+          "end_time_bst": "Nov 15, 2026, 03:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Arkansas State Red Wolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2032.png"
+          },
+          "team_b": {
+            "name": "Coastal Carolina Chanticleers",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/324.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2032.png",
         "channels": []
       }
     ]
