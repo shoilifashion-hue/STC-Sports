@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 15, 2026, 03:36 AM",
-  "event_count": 73,
+  "last_updated": "Nov 15, 2026, 03:43 AM",
+  "event_count": 71,
   "events": {
     "events": [
       {
@@ -201,56 +201,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/338.png",
-        "channels": []
-      },
-      {
-        "title": "Republic of Ireland vs Austria",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "republic-of-ireland-vs-austria",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 15, 2026, 01:45 AM",
-          "end_time_bst": "Nov 15, 2026, 04:45 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Republic of Ireland",
-            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irl.png"
-          },
-          "team_b": {
-            "name": "Austria",
-            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irl.png",
-        "channels": []
-      },
-      {
-        "title": "Ukraine vs Northern Ireland",
-        "sport": "Soccer",
-        "sub_category": "Soccer",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "ukraine-vs-northern-ireland",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 15, 2026, 01:45 AM",
-          "end_time_bst": "Nov 15, 2026, 04:45 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Ukraine",
-            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png"
-          },
-          "team_b": {
-            "name": "Northern Ireland",
-            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nir.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
         "channels": []
       },
       {
