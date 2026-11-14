@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 14, 2026, 08:27 AM",
-  "event_count": 28,
+  "last_updated": "Nov 14, 2026, 08:32 AM",
+  "event_count": 26,
   "events": {
     "events": [
       {
@@ -176,56 +176,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
-        "channels": []
-      },
-      {
-        "title": "Northern Iowa Panthers vs Michigan State Spartans",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "northern-iowa-panthers-vs-michigan-state-spartans",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 14, 2026, 06:00 AM",
-          "end_time_bst": "Nov 14, 2026, 09:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Northern Iowa Panthers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2460.png"
-          },
-          "team_b": {
-            "name": "Michigan State Spartans",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2460.png",
-        "channels": []
-      },
-      {
-        "title": "Tennessee State Tigers vs Tennessee Volunteers",
-        "sport": "Basketball",
-        "sub_category": "Basketball",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "tennessee-state-tigers-vs-tennessee-volunteers",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 14, 2026, 06:00 AM",
-          "end_time_bst": "Nov 14, 2026, 09:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Tennessee State Tigers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2634.png"
-          },
-          "team_b": {
-            "name": "Tennessee Volunteers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2634.png",
         "channels": []
       },
       {
