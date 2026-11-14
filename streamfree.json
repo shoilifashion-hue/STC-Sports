@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 15, 2026, 02:16 AM",
-  "event_count": 87,
+  "last_updated": "Nov 15, 2026, 02:46 AM",
+  "event_count": 81,
   "events": {
     "events": [
       {
@@ -151,156 +151,6 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
-        "channels": []
-      },
-      {
-        "title": "Wake Forest Demon Deacons vs SMU Mustangs",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "wake-forest-demon-deacons-vs-smu-mustangs",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 14, 2026, 11:00 PM",
-          "end_time_bst": "Nov 15, 2026, 02:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Wake Forest Demon Deacons",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png"
-          },
-          "team_b": {
-            "name": "SMU Mustangs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png",
-        "channels": []
-      },
-      {
-        "title": "Northwestern Wildcats vs Ohio State Buckeyes",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "northwestern-wildcats-vs-ohio-state-buckeyes",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 14, 2026, 11:00 PM",
-          "end_time_bst": "Nov 15, 2026, 02:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Northwestern Wildcats",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png"
-          },
-          "team_b": {
-            "name": "Ohio State Buckeyes",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png",
-        "channels": []
-      },
-      {
-        "title": "Cincinnati Bearcats vs Iowa State Cyclones",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "cincinnati-bearcats-vs-iowa-state-cyclones",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 14, 2026, 11:00 PM",
-          "end_time_bst": "Nov 15, 2026, 02:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Cincinnati Bearcats",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png"
-          },
-          "team_b": {
-            "name": "Iowa State Cyclones",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png",
-        "channels": []
-      },
-      {
-        "title": "Syracuse Orange vs NC State Wolfpack",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "syracuse-orange-vs-nc-state-wolfpack",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 14, 2026, 11:00 PM",
-          "end_time_bst": "Nov 15, 2026, 02:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Syracuse Orange",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/183.png"
-          },
-          "team_b": {
-            "name": "NC State Wolfpack",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/152.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/183.png",
-        "channels": []
-      },
-      {
-        "title": "Wisconsin Badgers vs Maryland Terrapins",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "wisconsin-badgers-vs-maryland-terrapins",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 14, 2026, 11:00 PM",
-          "end_time_bst": "Nov 15, 2026, 02:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Wisconsin Badgers",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png"
-          },
-          "team_b": {
-            "name": "Maryland Terrapins",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/120.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png",
-        "channels": []
-      },
-      {
-        "title": "James Madison Dukes vs UConn Huskies",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "james-madison-dukes-vs-uconn-huskies",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 14, 2026, 11:00 PM",
-          "end_time_bst": "Nov 15, 2026, 02:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "James Madison Dukes",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/256.png"
-          },
-          "team_b": {
-            "name": "UConn Huskies",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/256.png",
         "channels": []
       },
       {
@@ -1057,8 +907,8 @@
         "title": "Fresno State Bulldogs vs Texas State Bobcats",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "fresno-state-bulldogs-vs-texas-state-bobcats",
         "schedule": {
           "timezone": "BST (UTC+6)",
