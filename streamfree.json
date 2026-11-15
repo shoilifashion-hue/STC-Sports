@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 15, 2026, 01:58 PM",
-  "event_count": 26,
+  "last_updated": "Nov 15, 2026, 02:30 PM",
+  "event_count": 27,
   "events": {
     "events": [
       {
@@ -651,6 +651,31 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+        "channels": []
+      },
+      {
+        "title": "Baylor Bears vs Texas Longhorns",
+        "sport": "Basketball",
+        "sub_category": "Basketball",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "baylor-bears-vs-texas-longhorns",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 16, 2026, 02:00 AM",
+          "end_time_bst": "Nov 16, 2026, 05:00 AM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Baylor Bears",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png"
+          },
+          "team_b": {
+            "name": "Texas Longhorns",
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png",
         "channels": []
       }
     ]
