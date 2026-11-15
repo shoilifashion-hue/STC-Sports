@@ -1,17 +1,22 @@
-name: Update StreamFree Playlist
+name: Update IPTV Playlist
 
 on:
+  # ১. রেন্ডার ওয়াচার থেকে আসা সিগন্যাল গ্রহণ করবে
   repository_dispatch:
-    types: [source_updated]
+    types: [source_updated, render_trigger, iptv_update]
+
+  # ২. রেন্ডার থেকে সরাসরি workflow_dispatch কল করলে বা ম্যানুয়ালি রান করার জন্য
   workflow_dispatch:
+
+  # ৩. ব্যাকআপ হিসেবে প্রতি ১৫ মিনিট পর পর অটো রান (ঐচ্ছিক ব্যাকআপ)
   schedule:
-    - cron: "0 * * * *"
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
 
 jobs:
-  run-scraper:
+  build-playlist:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,29 +27,26 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: "pip"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install "httpx[http2]" selectolax
+          pip install httpx
 
-      - name: Run Scraper
+      - name: Run IPTV Scraper
         run: |
           python scraper.py
 
-      - name: Commit and Push changes
+      - name: Commit and Push Changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # তৈরি হওয়া ফাইলগুলো যোগ করা
-          git add -A
+          git add playlist.m3u playlist.json
           
-          # যদি নতুন কোনো পরিবর্তন থাকে তবেই পুশ করবে
           if git diff --staged --quiet; then
-            echo "No changes in playlist. Skipping commit."
+            echo "No changes found. Skipping commit."
           else
-            git commit -m "Auto-update StreamFree playlist [$(TZ='Asia/Dhaka' date '+%Y-%m-%d %I:%M %p BST')]"
+            git commit -m "Auto-update IPTV playlist via Render trigger [$(TZ='Asia/Dhaka' date '+%Y-%m-%d %I:%M %p BST')]"
             git push
           fi
