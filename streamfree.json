@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 15, 2026, 07:47 AM",
+  "last_updated": "Nov 15, 2026, 08:07 AM",
   "event_count": 46,
   "events": {
     "events": [
@@ -151,56 +151,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Arizona State Sun Devils vs UCF Knights",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "arizona-state-sun-devils-vs-ucf-knights",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 15, 2026, 04:30 AM",
-          "end_time_bst": "Nov 15, 2026, 07:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Arizona State Sun Devils",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/9.png"
-          },
-          "team_b": {
-            "name": "UCF Knights",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/9.png",
-        "channels": []
-      },
-      {
-        "title": "Washington Huskies vs Michigan State Spartans",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "washington-huskies-vs-michigan-state-spartans",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 15, 2026, 04:30 AM",
-          "end_time_bst": "Nov 15, 2026, 07:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Washington Huskies",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png"
-          },
-          "team_b": {
-            "name": "Michigan State Spartans",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png",
         "channels": []
       },
       {
@@ -1151,6 +1101,56 @@
           }
         },
         "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2449.png",
+        "channels": []
+      },
+      {
+        "title": "Montenegro vs Cyprus",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "montenegro-vs-cyprus",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 15, 2026, 08:00 PM",
+          "end_time_bst": "Nov 15, 2026, 11:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Montenegro",
+            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mtg.png"
+          },
+          "team_b": {
+            "name": "Cyprus",
+            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cyp.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mtg.png",
+        "channels": []
+      },
+      {
+        "title": "Armenia vs Latvia",
+        "sport": "Soccer",
+        "sub_category": "Soccer",
+        "status": "UPCOMING",
+        "is_hot": false,
+        "slug": "armenia-vs-latvia",
+        "schedule": {
+          "timezone": "BST (UTC+6)",
+          "start_time_bst": "Nov 15, 2026, 08:00 PM",
+          "end_time_bst": "Nov 15, 2026, 11:00 PM"
+        },
+        "teams": {
+          "team_a": {
+            "name": "Armenia",
+            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fifa.armenia.png"
+          },
+          "team_b": {
+            "name": "Latvia",
+            "logo": "https://a.espncdn.com/i/teamlogos/countries/500/lva.png"
+          }
+        },
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fifa.armenia.png",
         "channels": []
       }
     ]
