@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 15, 2026, 06:27 AM",
+  "last_updated": "Nov 15, 2026, 06:32 AM",
   "event_count": 50,
   "events": {
     "events": [
@@ -882,8 +882,8 @@
         "title": "South Carolina Gamecocks vs Arkansas Razorbacks",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "south-carolina-gamecocks-vs-arkansas-razorbacks",
         "schedule": {
           "timezone": "BST (UTC+6)",
