@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 15, 2026, 06:12 AM",
+  "last_updated": "Nov 15, 2026, 06:17 AM",
   "event_count": 50,
   "events": {
     "events": [
@@ -757,8 +757,8 @@
         "title": "Dallas Mavericks vs Cleveland Cavaliers",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "dallas-mavericks-vs-cleveland-cavaliers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -782,8 +782,8 @@
         "title": "Texas Longhorns vs LSU Tigers",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "texas-longhorns-vs-lsu-tigers",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -807,8 +807,8 @@
         "title": "Purdue Boilermakers vs Iowa Hawkeyes",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "purdue-boilermakers-vs-iowa-hawkeyes",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -832,8 +832,8 @@
         "title": "Stanford Cardinal vs Virginia Tech Hokies",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "stanford-cardinal-vs-virginia-tech-hokies",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -857,8 +857,8 @@
         "title": "UNLV Rebels vs New Mexico Lobos",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "unlv-rebels-vs-new-mexico-lobos",
         "schedule": {
           "timezone": "BST (UTC+6)",
