@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 15, 2026, 12:33 PM",
-  "event_count": 27,
+  "last_updated": "Nov 15, 2026, 12:43 PM",
+  "event_count": 26,
   "events": {
     "events": [
       {
@@ -151,31 +151,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Texas Tech Red Raiders vs Oklahoma State Cowboys",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "texas-tech-red-raiders-vs-oklahoma-state-cowboys",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 15, 2026, 08:30 AM",
-          "end_time_bst": "Nov 15, 2026, 11:30 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Texas Tech Red Raiders",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png"
-          },
-          "team_b": {
-            "name": "Oklahoma State Cowboys",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
         "channels": []
       },
       {
