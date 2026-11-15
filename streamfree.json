@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 15, 2026, 06:37 AM",
-  "event_count": 50,
+  "last_updated": "Nov 15, 2026, 06:47 AM",
+  "event_count": 49,
   "events": {
     "events": [
       {
@@ -126,31 +126,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Fresno State Bulldogs vs Texas State Bobcats",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "fresno-state-bulldogs-vs-texas-state-bobcats",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 15, 2026, 03:00 AM",
-          "end_time_bst": "Nov 15, 2026, 06:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Fresno State Bulldogs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/278.png"
-          },
-          "team_b": {
-            "name": "Texas State Bobcats",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/326.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/278.png",
         "channels": []
       },
       {
@@ -907,8 +882,8 @@
         "title": "Detroit Pistons vs Miami Heat",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "detroit-pistons-vs-miami-heat",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -932,8 +907,8 @@
         "title": "Brooklyn Nets vs Memphis Grizzlies",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "brooklyn-nets-vs-memphis-grizzlies",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -957,8 +932,8 @@
         "title": "Chicago Bulls vs Minnesota Timberwolves",
         "sport": "Basketball",
         "sub_category": "Basketball",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "chicago-bulls-vs-minnesota-timberwolves",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -982,8 +957,8 @@
         "title": "Buffalo Sabres vs Dallas Stars",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "buffalo-sabres-vs-dallas-stars",
         "schedule": {
           "timezone": "BST (UTC+6)",
