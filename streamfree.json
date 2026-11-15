@@ -1,6 +1,6 @@
 {
-  "last_updated": "Nov 15, 2026, 07:23 AM",
-  "event_count": 47,
+  "last_updated": "Nov 15, 2026, 07:47 AM",
+  "event_count": 46,
   "events": {
     "events": [
       {
@@ -151,31 +151,6 @@
           }
         },
         "logo": null,
-        "channels": []
-      },
-      {
-        "title": "Southern Miss Golden Eagles vs Louisiana Tech Bulldogs",
-        "sport": "Football",
-        "sub_category": "Football",
-        "status": "LIVE",
-        "is_hot": true,
-        "slug": "southern-miss-golden-eagles-vs-louisiana-tech-bulldogs",
-        "schedule": {
-          "timezone": "BST (UTC+6)",
-          "start_time_bst": "Nov 15, 2026, 04:00 AM",
-          "end_time_bst": "Nov 15, 2026, 07:00 AM"
-        },
-        "teams": {
-          "team_a": {
-            "name": "Southern Miss Golden Eagles",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2572.png"
-          },
-          "team_b": {
-            "name": "Louisiana Tech Bulldogs",
-            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2348.png"
-          }
-        },
-        "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2572.png",
         "channels": []
       },
       {
@@ -932,8 +907,8 @@
         "title": "San Jose Sharks vs Utah Mammoth",
         "sport": "Hockey",
         "sub_category": "Hockey",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "san-jose-sharks-vs-utah-mammoth",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -957,8 +932,8 @@
         "title": "North Texas Mean Green vs UTSA Roadrunners",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "north-texas-mean-green-vs-utsa-roadrunners",
         "schedule": {
           "timezone": "BST (UTC+6)",
