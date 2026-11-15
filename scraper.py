@@ -1,353 +1,233 @@
 import asyncio
-import html
 import json
 import logging
 import re
-from dataclasses import dataclass
-from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from zoneinfo import ZoneInfo
-
+from urllib.parse import urljoin
 import httpx
 
-# রুট পাথ ও কনফিগারেশন
+# কনফিগারেশন ও রুট পাথ
 ROOT_DIR = Path(__file__).resolve().parent
 
-BASE_URL = "https://strmfree.st"
-ALT_BASE = "https://streamfree.top"
-STREAM_API = "https://strmfree.st/streams"
-SOURCES_API_TEMPLATE = "https://strmfree.st/api/v1/sources/{stream_key}"
-GET_SERVER_TEMPLATE = "https://strmfree.st/get-stream-key/{stream_key}"
-TAG = "STRMFREE"
+API_BASE = "https://limon-iptv-link.limon20202.workers.dev"
+CHANNELS_API = f"{API_BASE}/api/channels"
+PLAY_API = f"{API_BASE}/api/play"
 
-JSON_OUTPUT = ROOT_DIR / "streamfree.json"
-M3U_OUTPUT = ROOT_DIR / "streamfree.m3u"
-CACHE_DIR = ROOT_DIR / "caches"
-CACHE_DIR.mkdir(parents=True, exist_ok=True)
+REFERER_URL = "https://limon-iptv-pro.vercel.app/"
+ORIGIN_URL = "https://limon-iptv-pro.vercel.app"
 
-STREAM_UA = (
+M3U_OUTPUT = ROOT_DIR / "playlist.m3u"
+JSON_OUTPUT = ROOT_DIR / "playlist.json"
+
+USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/111.0.0.0 Safari/537.36"
+    "Chrome/120.0.0.0 Safari/537.36"
 )
 
-HTTP_SEMAPHORE = asyncio.Semaphore(10)
-BST_TZ = ZoneInfo("Asia/Dhaka")
+HEADERS = {
+    "User-Agent": USER_AGENT,
+    "Referer": REFERER_URL,
+    "Origin": ORIGIN_URL,
+    "Accept": "*/*"
+}
+
+# ক্লাউডফ্লেয়ার যাতে কোনো রিকোয়েস্ট ড্রপ না করে সেজন্য সেমাফোর ৫ রাখা হয়েছে
+SEMAPHORE = asyncio.Semaphore(5)
 
 logging.basicConfig(level=logging.INFO, format="[%(asctime)s] %(levelname)s: %(message)s")
-log = logging.getLogger(TAG)
+log = logging.getLogger("IPTV_SCRAPER")
 
-@dataclass
-class ScrapedMatch:
-    sport: str
-    title: str
-    stream_key: str
-    category: str
-    start_dt: datetime
-    team_a_name: str
-    team_b_name: str
-    team_a_logo: str | None = None
-    team_b_logo: str | None = None
-    logo: str | None = None
 
-def cleanup_text(text: str) -> str:
-    text = text.replace('\xa0', ' ')
-    text = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)
-    text = re.sub(r'(vs\.?)([A-Za-z])', r'\1 \2', text, flags=re.IGNORECASE)
-    text = re.sub(r'([A-Za-z])(vs\.?)', r'\1 \2', text, flags=re.IGNORECASE)
-    return re.sub(r"\s+", " ", text).strip()
-
-def create_slug(text: str) -> str:
-    return re.sub(r"[\W_]+", "-", text.lower().strip()).strip("-")
-
-def calculate_match_status(start_dt: datetime, early_minutes: int = 15) -> str:
-    now_utc = datetime.now(timezone.utc)
-    start_utc = start_dt.astimezone(timezone.utc)
-    live_start = start_utc - timedelta(minutes=early_minutes)
-
-    if now_utc < live_start:
-        return "UPCOMING"
-    return "LIVE"
-
-async def get_server_type(client: httpx.AsyncClient, stream_key: str) -> str:
-    """সাইটের window.sfFetch('/get-stream-key/' + stream_key) অনুকূল করা"""
-    try:
-        url = GET_SERVER_TEMPLATE.format(stream_key=stream_key)
-        headers = {
-            "User-Agent": STREAM_UA,
-            "Referer": f"{BASE_URL}/",
-            "Origin": BASE_URL,
-            "Accept": "application/json, text/plain, */*"
-        }
-        resp = await client.get(url, headers=headers, timeout=6.0)
-        if resp.status_code == 200:
-            data = resp.json()
-            return data.get("server_name") or "externalcdn"
-    except Exception:
-        pass
-    return "externalcdn"
-
-async def resolve_embed_tokens(client: httpx.AsyncClient, embed_url: str) -> dict:
-    """এমবেড পেজ থেকে const _0x = {...} টোকেন ডিকশনারি ও VARIANT বের করে"""
-    tokens = {}
-    variant = ""
-    try:
-        headers = {
-            "User-Agent": STREAM_UA,
-            "Referer": f"{BASE_URL}/",
-            "Origin": BASE_URL,
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
-        }
-        resp = await client.get(embed_url, headers=headers, follow_redirects=True, timeout=8.0)
-        if resp.status_code == 200:
-            html_text = resp.text
-
-            # VARIANT খোঁজা (যেমন: const VARIANT = 'canelovsmbilli' + QUALITY + ...)
-            v_match = re.search(r"const\s+VARIANT\s*=\s*['\"]([^'\"]+)['\"]", html_text)
-            if v_match:
-                variant = v_match.group(1)
-
-            # _0x টোকেন অবজেক্ট পার্স করা (স্ক্রিনশটের লাইন ১৪৪)
-            # const _0x = {"1080p": {"_e": ..., "_n": ..., "_t": ...}, ...};
-            match_0x = re.search(r"const\s+_0x\s*=\s*(\{.*?\});", html_text)
-            if match_0x:
-                tokens = json.loads(match_0x.group(1))
-    except Exception as e:
-        log.debug(f"Error parsing embed tokens from {embed_url}: {e}")
-
-    return {"tokens": tokens, "variant": variant}
-
-async def resolve_match_channels(client: httpx.AsyncClient, match: ScrapedMatch) -> list[dict]:
+def extract_first_r_stream(manifest_text: str, base_url: str) -> str | None:
     """
-    স্ক্রিনশটের আসল জাভাস্ক্রিপ্ট সূত্রের হুবহু পাইথন বাস্তবায়ন:
-    /live-externalcdn/{VARIANT}/index.m3u8?_t={_t}&_e={_e}&_n={_n}
+    মাস্টার প্লেলিস্টে একাধিক /r/ লিঙ্ক থাকলে строго একদম প্রথম (Primary) লিঙ্কটি বের করে।
     """
-    async with HTTP_SEMAPHORE:
-        channels = []
-        sources_url = SOURCES_API_TEMPLATE.format(stream_key=match.stream_key)
-        player_referer = f"{BASE_URL}/player/{match.category}/{match.stream_key}"
+    if not manifest_text:
+        return None
 
-        headers = {
-            "User-Agent": STREAM_UA,
-            "Referer": player_referer,
-            "Origin": BASE_URL,
-            "Accept": "application/json, text/plain, */*"
-        }
+    # ১. লাইন বাই লাইন স্ক্যান করে কমেন্ট (#) বাদে প্রথম /r/ লিঙ্কটি গ্রহণ
+    lines = [line.strip() for line in manifest_text.splitlines() if line.strip()]
+    for line in lines:
+        if line.startswith("#"):
+            continue
+        full_candidate = urljoin(base_url, line)
+        if "/r/" in full_candidate:
+            clean_url = full_candidate.strip("\"' ")
+            if not clean_url.endswith(".m3u8") and "?" not in clean_url:
+                clean_url += ".m3u8"
+            return clean_url
 
-        try:
-            resp = await client.get(sources_url, headers=headers, timeout=8.0)
-            if resp.status_code != 200:
-                return channels
+    # ২. রেজেক্স দিয়ে টেক্সট থেকে ক্রমানুসারে প্রথম /r/ ম্যাচটি খোঁজা (রিলেটিভ বা ফুল ডোমেইন)
+    pattern = r'((?:https?://[^\s"\'<>]+)?/r/[^\s"\'<>]+\.m3u8(?:\?[^\s"\'<>]*)?)'
+    match = re.search(pattern, manifest_text)
+    if match:
+        clean_url = urljoin(base_url, match.group(1).strip("\"' "))
+        return clean_url
 
-            data = resp.json()
-            sources_list = data.get("sources") or data.get("live_sources") or []
-            if not isinstance(sources_list, list):
-                return channels
+    # ৩. এক্সটেনশন ছাড়া থাকলে সেটির ফলব্যাক
+    pattern_fallback = r'((?:https?://[^\s"\'<>]+)?/r/[^\s"\'<>]+)'
+    match_fallback = re.search(pattern_fallback, manifest_text)
+    if match_fallback:
+        clean_url = urljoin(base_url, match_fallback.group(1).strip("\"' "))
+        if not clean_url.endswith(".m3u8") and "?" not in clean_url:
+            clean_url += ".m3u8"
+        return clean_url
 
-            # সার্ভার নেম সংগ্রহ (যেমন: externalcdn)
-            server_name = await get_server_type(client, match.stream_key)
+    return None
 
-            for s in sources_list:
-                if not isinstance(s, dict):
-                    continue
 
-                quality = s.get("quality", "FHD")
-                embed_url = s.get("url", "")
-                if not embed_url:
-                    continue
-
-                # কোয়ালিটি কী তৈরি (যেমন: 1080p বা 540p)
-                q_key = "1080p" if "1080" in embed_url or quality.upper() == "FHD" else "540p"
-                
-                # এমবেড পেজ থেকে টোকেন সংগ্রহ
-                embed_data = await resolve_embed_tokens(client, embed_url)
-                tokens_dict = embed_data.get("tokens", {})
-                variant = embed_data.get("variant") or f"{match.stream_key}{q_key}"
-
-                # টোকেন প্যারামিটার (_t, _e, _n)
-                p = tokens_dict.get(q_key) or tokens_dict.get("1080p") or tokens_dict.get("540p")
-                
-                if p and isinstance(p, dict):
-                    # সাইটের লাইন ১৬৮-১৭৭ এর হুবহু সূত্র
-                    if server_name == 'externalcdn':
-                        path = f"/live-externalcdn/{variant}/index.m3u8"
-                    elif server_name != 'origin':
-                        path = f"/live-cdn/{variant}/index.m3u8"
-                    else:
-                        path = f"/live/{variant}/index.m3u8"
-
-                    query = f"?_t={p.get('_t')}&_e={p.get('_e')}&_n={p.get('_n')}"
-                    m3u8_link = f"{BASE_URL}{path}{query}"
-
-                    raw_link = f"{m3u8_link}|User-Agent={STREAM_UA}&Referer={embed_url}&Origin={BASE_URL}"
-                    channels.append({
-                        "channel_name": f"{quality} Stream",
-                        "stream_type": "HLS",
-                        "quality": quality,
-                        "url": m3u8_link,
-                        "raw_link": raw_link,
-                        "headers": {
-                            "User-Agent": STREAM_UA,
-                            "Referer": embed_url,
-                            "Origin": BASE_URL
-                        },
-                        "drm_key": None
-                    })
-
-        except Exception as e:
-            log.debug(f"Error building channels for {match.stream_key}: {e}")
-
-        return channels
-
-async def fetch_all_matches(client: httpx.AsyncClient) -> list[ScrapedMatch]:
-    matches = []
-    headers = {
-        "User-Agent": STREAM_UA,
-        "Referer": f"{ALT_BASE}/",
-        "Origin": ALT_BASE,
-        "Accept": "application/json, text/plain, */*"
-    }
-
+async def fetch_channels_raw(client: httpx.AsyncClient) -> list[dict]:
+    """চ্যানেল তালিকা ও সংশ্লিষ্ট টোকেন সংগ্রহ করা"""
+    channels = []
     try:
-        resp = await client.get(STREAM_API, headers=headers, timeout=15.0)
+        log.info(f"Fetching channels from {CHANNELS_API} ...")
+        resp = await client.get(CHANNELS_API, headers=HEADERS, timeout=20.0)
         if resp.status_code != 200:
-            log.error(f"Failed to fetch {STREAM_API}: Status {resp.status_code}")
-            return matches
+            log.error(f"Failed to fetch channels: Status {resp.status_code}")
+            return channels
 
-        data = resp.json()
-        streams_dict = data.get("streams", {})
+        lines = resp.text.splitlines()
+        current_extinf = None
 
-        if isinstance(streams_dict, dict):
-            for category_name, match_list in streams_dict.items():
-                if not isinstance(match_list, list):
-                    continue
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
 
-                sport = category_name.capitalize()
-                for item in match_list:
-                    if not isinstance(item, dict):
-                        continue
+            if line.startswith("#EXTINF"):
+                current_extinf = line
+            elif line.startswith("gw:"):
+                token = line[3:].strip()
+                if current_extinf and token:
+                    channels.append({
+                        "extinf": current_extinf,
+                        "token": token
+                    })
+                    current_extinf = None
+            elif line.startswith("http"):
+                if current_extinf:
+                    channels.append({
+                        "extinf": current_extinf,
+                        "direct_url": line
+                    })
+                    current_extinf = None
 
-                    title = cleanup_text(item.get("name") or "")
-                    stream_key = item.get("stream_key") or item.get("id") or ""
-                    if not title or not stream_key:
-                        continue
-
-                    ts = item.get("match_timestamp") or item.get("created_at") or 0
-                    dt = datetime.fromtimestamp(ts, tz=timezone.utc) if ts else datetime.now(timezone.utc)
-
-                    team1 = item.get("team1") or {}
-                    team2 = item.get("team2") or {}
-                    team_a_name = team1.get("name") or title
-                    team_b_name = team2.get("name") or title
-                    team_a_logo = team1.get("logo")
-                    team_b_logo = team2.get("logo")
-                    main_logo = team_a_logo or team_b_logo
-
-                    matches.append(ScrapedMatch(
-                        sport=sport,
-                        title=title,
-                        stream_key=str(stream_key),
-                        category=category_name.lower(),
-                        start_dt=dt,
-                        team_a_name=team_a_name,
-                        team_b_name=team_b_name,
-                        team_a_logo=team_a_logo,
-                        team_b_logo=team_b_logo,
-                        logo=main_logo
-                    ))
-
-        log.info(f"Loaded {len(matches)} matches directly from {STREAM_API}!")
-
+        log.info(f"Parsed {len(channels)} total channels from response.")
     except Exception as e:
-        log.error(f"Error fetching API: {e}")
+        log.error(f"Error reading channels API: {e}")
 
-    return matches
+    return channels
 
-async def main():
-    log.info("Starting StreamFree Scraper execution (One-time generation)...")
-    async with httpx.AsyncClient(headers={"User-Agent": STREAM_UA}, follow_redirects=True, http2=True) as client:
-        matches = await fetch_all_matches(client)
-        if not matches:
-            log.warning("No matches found from StreamFree API!")
-            return
 
-        live_matches = [
-            m for m in matches 
-            if calculate_match_status(m.start_dt, early_minutes=15) == "LIVE"
-        ]
+async def resolve_channel_stream(client: httpx.AsyncClient, channel: dict) -> dict | None:
+    """টোকেন দিয়ে /api/play কল করে শুধুমাত্র প্রথম /r/ লিঙ্কটি নিশ্চিত করা"""
+    if "direct_url" in channel:
+        direct = channel["direct_url"]
+        if "/s/" in direct:
+            direct = direct.replace("/s/", "/r/")
+        return {
+            "extinf": channel["extinf"],
+            "url": direct
+        }
 
-        log.info(f"Building active stream links for {len(live_matches)} LIVE matches...")
-        tasks = [resolve_match_channels(client, m) for m in live_matches]
-        resolved_results = await asyncio.gather(*tasks)
+    token = channel.get("token")
+    if not token:
+        return None
 
-        channels_map = {m.stream_key: ch for m, ch in zip(live_matches, resolved_results)}
+    async with SEMAPHORE:
+        try:
+            # ধাপ ১: /api/play কল করে প্রাথমিক মাস্টার URL নেওয়া
+            params = {"c": token}
+            resp = await client.get(PLAY_API, params=params, headers=HEADERS, timeout=12.0)
+            if resp.status_code != 200:
+                return None
 
-        final_playlist = []
-        for m in matches:
-            start_bst = m.start_dt.astimezone(BST_TZ)
-            start_time_str = start_bst.strftime("%b %d, %Y, %I:%M %p")
-            end_time_str = (start_bst + timedelta(hours=3)).strftime("%b %d, %Y, %I:%M %p")
+            data = resp.json()
+            initial_url = data.get("url")
+            if not initial_url:
+                return None
 
-            event_channels = channels_map.get(m.stream_key, [])
-            actual_status = calculate_match_status(m.start_dt, early_minutes=15)
+            # ধাপ ২: মাস্টার প্লেলিস্ট ফেচ করে সেখান থেকে কেবল সর্বপ্রথম /r/ লিঙ্কটি নেওয়া
+            final_stream_url = None
+            try:
+                manifest_resp = await client.get(initial_url, headers=HEADERS, timeout=10.0)
+                if manifest_resp.status_code == 200:
+                    final_stream_url = extract_first_r_stream(manifest_resp.text, initial_url)
+            except Exception:
+                pass
 
-            teams_data = {
-                "team_a": {"name": m.team_a_name, "logo": m.team_a_logo},
-                "team_b": {"name": m.team_b_name, "logo": m.team_b_logo}
+            # যদি ফেচিং ফেইল করে, সরাসরি রূপান্তর ফলব্যাক
+            if not final_stream_url:
+                if "/s/" in initial_url:
+                    final_stream_url = initial_url.replace("/s/", "/r/")
+                else:
+                    final_stream_url = initial_url
+
+            if "/s/" in final_stream_url:
+                final_stream_url = final_stream_url.replace("/s/", "/r/")
+
+            if not final_stream_url.endswith(".m3u8") and "?" not in final_stream_url:
+                final_stream_url += ".m3u8"
+
+            return {
+                "extinf": channel["extinf"],
+                "url": final_stream_url
             }
 
-            final_playlist.append({
-                "title": m.title,
-                "sport": m.sport,
-                "sub_category": m.sport,
-                "status": actual_status,
-                "is_hot": (actual_status == "LIVE"),
-                "slug": create_slug(m.title),
-                "schedule": {
-                    "timezone": "BST (UTC+6)",
-                    "start_time_bst": start_time_str,
-                    "end_time_bst": end_time_str,
-                },
-                "teams": teams_data,
-                "logo": m.logo,
-                "channels": event_channels,
-                "_timestamp": m.start_dt.timestamp()
+        except Exception as e:
+            log.debug(f"Error resolving token: {e}")
+            return None
+
+
+async def main():
+    log.info("Starting IPTV Playlist Generator...")
+    async with httpx.AsyncClient(headers=HEADERS, follow_redirects=True) as client:
+        raw_channels = await fetch_channels_raw(client)
+        if not raw_channels:
+            log.warning("No channels found! Exiting.")
+            return
+
+        log.info(f"Extracting 1st primary /r/ stream for {len(raw_channels)} channels...")
+        tasks = [resolve_channel_stream(client, ch) for ch in raw_channels]
+        resolved_results = await asyncio.gather(*tasks)
+
+        valid_streams = [res for res in resolved_results if res is not None]
+        log.info(f"Successfully resolved {len(valid_streams)} playable primary streams.")
+
+        # ১. M3U প্লেলিস্ট (শুধুমাত্র #EXTINF এবং প্রথম ক্লিন /r/ লিঙ্ক)
+        m3u_lines = ["#EXTM3U"]
+        
+        # ২. JSON ডেটা (যেখানে রেফারার ও অন্যান্য ডেটা সংরক্ষিত থাকবে)
+        json_data = []
+
+        for item in valid_streams:
+            extinf = item["extinf"]
+            stream_url = item["url"]
+
+            # M3U আউটপুট: কোনো অতিরিক্ত হেডার বা পাইপ ছাড়া একদম ক্লিন লিঙ্ক
+            m3u_lines.append(extinf)
+            m3u_lines.append(stream_url)
+
+            # JSON আউটপুট: সমস্ত হেডার সহ বিস্তারিত ডেটা
+            play_link = f"{stream_url}|Referer={REFERER_URL}&Origin={ORIGIN_URL}&User-Agent={USER_AGENT}"
+            json_data.append({
+                "info": extinf,
+                "url": stream_url,
+                "playable_link": play_link,
+                "headers": {
+                    "Referer": REFERER_URL,
+                    "Origin": ORIGIN_URL,
+                    "User-Agent": USER_AGENT
+                }
             })
 
-        priority = {"LIVE": 0, "UPCOMING": 1, "ENDED": 2}
-        final_playlist.sort(key=lambda x: (priority.get(x["status"], 99), x["_timestamp"]))
-        for item in final_playlist:
-            item.pop("_timestamp", None)
-
-        # ১. JSON ফাইল সেভ
-        JSON_OUTPUT.write_text(
-            json.dumps(
-                {
-                    "last_updated": datetime.now(BST_TZ).strftime("%b %d, %Y, %I:%M %p"),
-                    "event_count": len(final_playlist),
-                    "events": {"events": final_playlist}
-                },
-                indent=2,
-                ensure_ascii=False
-            ),
-            encoding="utf-8"
-        )
-
-        # ২. M3U প্লেলিস্ট সেভ
-        m3u_lines = ["#EXTM3U"]
-        stream_count = 0
-        for ev in final_playlist:
-            for ch in ev.get("channels", []):
-                tvg_logo = ev["logo"] or ""
-                m3u_lines.append(f'#EXTINF:-1 tvg-id="Live.Event.us" tvg-logo="{tvg_logo}" group-title="{ev["sport"]}", {ev["title"]} | {ch["channel_name"]}')
-                m3u_lines.append(f'#EXTVLCOPT:http-referrer={BASE_URL}/')
-                m3u_lines.append(f'#EXTVLCOPT:http-user-agent={STREAM_UA}')
-                m3u_lines.append(ch["raw_link"])
-                stream_count += 1
-
+        # ফাইল সেভ করা
         M3U_OUTPUT.write_text("\n".join(m3u_lines) + "\n", encoding="utf-8")
+        JSON_OUTPUT.write_text(json.dumps(json_data, indent=2, ensure_ascii=False), encoding="utf-8")
 
-        log.info(f"Done! Successfully generated {len(final_playlist)} matches and {stream_count} active playable streams in M3U.")
+        log.info(f"Saved {len(valid_streams)} clean channels to {M3U_OUTPUT.name} and full details to {JSON_OUTPUT.name}.")
+
 
 if __name__ == "__main__":
     asyncio.run(main())
