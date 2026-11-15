@@ -1,5 +1,5 @@
 {
-  "last_updated": "Nov 15, 2026, 08:07 AM",
+  "last_updated": "Nov 15, 2026, 08:17 AM",
   "event_count": 46,
   "events": {
     "events": [
@@ -907,8 +907,8 @@
         "title": "Texas Tech Red Raiders vs Oklahoma State Cowboys",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "texas-tech-red-raiders-vs-oklahoma-state-cowboys",
         "schedule": {
           "timezone": "BST (UTC+6)",
@@ -932,8 +932,8 @@
         "title": "Utah State Aggies vs San Diego State Aztecs",
         "sport": "Football",
         "sub_category": "Football",
-        "status": "UPCOMING",
-        "is_hot": false,
+        "status": "LIVE",
+        "is_hot": true,
         "slug": "utah-state-aggies-vs-san-diego-state-aztecs",
         "schedule": {
           "timezone": "BST (UTC+6)",
